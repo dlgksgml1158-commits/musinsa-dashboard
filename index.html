@@ -462,13 +462,85 @@
     }
     .toast.show { transform: translateY(0); opacity: 1; }
 
+    /* ── MOBILE RESPONSIVE ── */
+    @media (max-width: 768px) {
+      header { padding: 0 16px; height: 52px; }
+      .logo { font-size: 14px; gap: 8px; }
+      .header-meta { gap: 8px; }
+      .refresh-badge { padding: 3px 10px; font-size: 11px; }
+
+      .platform-tabs { padding: 0; }
+      .ptab { flex: 1; text-align: center; padding: 12px 0; font-size: 14px; }
+
+      .category-bar { padding: 8px 12px; gap: 6px; }
+      .cat-btn { padding: 5px 11px; font-size: 12px; }
+
+      main { padding: 12px; gap: 14px; }
+
+      .ranking-card-header { padding: 12px 14px; }
+      .ranking-card-header .title { font-size: 14px; }
+
+      .stat-mini { padding: 12px 14px; }
+      .stat-value { font-size: 18px; }
+
+      .brand-item { padding: 10px 14px; gap: 8px; }
+      .brand-card-header { padding: 12px 14px; font-size: 13px; }
+
+      .ranking-footer { padding: 10px 14px; }
+      .page-btn { padding: 8px 14px; min-height: 40px; font-size: 13px; }
+
+      .toast { bottom: 16px; right: 16px; left: 16px; font-size: 12px; }
+    }
+
+    /* ── 헤더 부제목 모바일 숨김 ── */
+    @media (max-width: 480px) {
+      .header-sub { display: none; }
+
+      /* 테이블: 가격 열 숨김 */
+      #rankingTableWrap thead th:nth-child(4),
+      #rankingTableWrap tbody td:nth-child(4) { display: none; }
+
+      /* 테이블 여백 축소 */
+      thead th { padding: 8px 10px; }
+      #rankingTableWrap tbody td { padding: 10px 10px; }
+
+      /* 상품 썸네일 축소 */
+      .product-thumb { width: 36px; height: 36px; font-size: 15px; }
+      .product-info { gap: 8px; }
+      .product-name { font-size: 12px; }
+      .product-brand { font-size: 10px; }
+
+      /* 순위 번호 */
+      .rank-num { font-size: 13px; }
+      thead th:first-child { width: 40px; }
+      thead th.change-col { width: 48px; }
+
+      /* 통계 카드 */
+      .stat-mini { padding: 10px 12px; }
+      .stat-value { font-size: 16px; }
+      .stat-label { font-size: 10px; }
+      .stat-sub { font-size: 10px; }
+
+      /* 섹션 타이틀 */
+      .section-title { font-size: 12px; }
+    }
+
+    /* ── iOS 노치/홈바 대응 ── */
+    body {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    header {
+      padding-left: max(24px, env(safe-area-inset-left));
+      padding-right: max(24px, env(safe-area-inset-right));
+    }
+
     /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: ��ar(--bg); }
+    ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #444; }
 
-    /* 예위 （） 변️︙ �� */
+    /* 순위 변동 뱃지 */
     .hot-badge {
       background: rgba(239,68,68,.15);
       color: var(--down);
@@ -497,8 +569,8 @@
 <!-- HEADER -->
 <header>
   <div class="logo">
-    <span id="headerTitle">쬗신사 <span class="dot">×</span> 29CM</span>
-    <span style="color:var(--text3);font-weight:400;font-size:13px;">箭킹  대시보드</span>
+    <span id="headerTitle">무신사 <span class="dot">×</span> 29CM</span>
+    <span class="header-sub" style="color:var(--text3);font-weight:400;font-size:13px;">랭킹 대시보드</span>
   </div>
   <div class="header-meta">
     <span id="lastUpdated" style="color:var(--text3);">-</span>
