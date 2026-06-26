@@ -2,12 +2,11 @@ name: 랭킹 데이터 자동 업데이트
 
 on:
   schedule:
-    # 매 1시간마다 실행 (UTC 기준, 한국 시간 = UTC+9)
     - cron: '0 * * * *'
-  workflow_dispatch:  # 수동 실행 버튼
+  workflow_dispatch:
 
 permissions:
-  contents: write  # JSON 파일 커밋을 위해 필요
+  contents: write
 
 jobs:
   update-rankings:
@@ -22,45 +21,20 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
 
       - name: 📦 의존성 설치
-        run: |
-          pip install requests beautifulsoup4 lxml
+        run: pip install requests beautifulsoup4 lxml
 
       - name: 🕷 랭킹 데이터 수집
-        run: |
-          python scripts/fetch_rankings.py
+        run: python scripts/fetch_rankings.py
         env:
           PYTHONIOENCODING: utf-8
-
-      - name: 📊 수집 결과 확인
-        run: |
-          echo "=== 무신사 데이터 ==="
-          python -c "
-          import json
-          with open('data/musinsa.json', encoding='utf-8') as f:
-            d = json.load(f)
-          print(f'업데이트: {d[\"updatedAt\"]}')
-          print(f'상품 수: {len(d[\"items\"])}개')
-          "
-          echo ""
-          echo "=== 29CM 데이터 ==="
-          python -c "
-          import json
-          with open('data/29cm.json', encoding='utf-8') as f:
-            d = json.load(f)
-          print(f'업데이트: {d[\"updatedAt\"]}')
-          print(f'상품 수: {len(d[\"items\"])}개')
-          "
 
       - name: 💾 변경사항 커밋 & 푸시
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "Rankings Bot"
           git add data/musinsa.json data/29cm.json
-
-          # 변경사항이 있을 때만 커밋
           if git diff --staged --quiet; then
             echo "변경사항 없음 — 커밋 스킵"
           else
