@@ -2,8 +2,8 @@
 무신사 & 29CM 랭킹 데이터 수집 스크립트
 GitHub Actions에서 1시간마다 자동 실행됩니다.
 
-- 무신사: client.musinsa.com 공식 API (pans/ranking)
-- 29CM  : display-bff-api.29cm.co.kr 공식 API (plp/best/items, POST)
+- 무신사: client.musinsa.com 공식 API (pans/ranking) - 전체 + 카테고리별 30위
+- 29CM  : display-bff-api.29cm.co.kr 공식 API (plp/best/items, POST) - 전체 30위
 - 이전 데이터와 비교하여 순위 변동 계산
 - data/musinsa.json, data/29cm.json 으로 저장
 """
@@ -29,37 +29,28 @@ BROWSER_UA = (
 
 LIMIT = 30  # 1~30위만 수집
 
+# ── 무신사 카테고리 목록 ──────────────────────────
+MUSINSA_CATEGORIES = [
+    {"code": "",    "api": "000", "label": "전체"},
+    {"code": "001", "api": "001", "label": "상의"},
+    {"code": "002", "api": "002", "label": "아우터"},
+    {"code": "003", "api": "003", "label": "바지"},
+    {"code": "004", "api": "004", "label": "원피스/스커트"},
+    {"code": "005", "api": "005", "label": "스포츠"},
+    {"code": "020", "api": "020", "label": "신발"},
+    {"code": "022", "api": "022", "label": "가방"},
+    {"code": "023", "api": "023", "label": "시계/쥬얼리"},
+    {"code": "024", "api": "024", "label": "패션잡화"},
+    {"code": "026", "api": "026", "label": "화장품/향수"},
+]
+
 
 # ═══════════════════════════════════════════════════
 #  무신사 API
 # ═══════════════════════════════════════════════════
 
-def fetch_musinsa() -> list:
-    """
-    무신사 실시간 랭킹 API (남성, 전체 카테고리, 25-29세 기준)
-    GET https://client.musinsa.com/api/home/web/v5/pans/ranking
-    """
-    print("▶ 무신사 랭킹 수집 시작...")
-    url = (
-        "https://client.musinsa.com/api/home/web/v5/pans/ranking"
-        "?storeCode=musinsa&sectionId=200&gf=M&categoryCode=000&ageBand=AGE_BAND_25"
-    )
-    headers = {
-        "User-Agent": BROWSER_UA,
-        "Referer": "https://www.musinsa.com/",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "ko-KR,ko;q=0.9",
-        "Origin": "https://www.musinsa.com",
-    }
-
-    try:
-        resp = requests.get(url, headers=headers, timeout=20)
-        resp.raise_for_status()
-        data = resp.json()
-    except Exception as e:
-        print(f"  [ERROR] 무신사 API 요청 실패: {e}")
-        return []
-
+def _parse_musinsa_response(data: dict, cat_code: str, cat_label: str) -> list:
+    """무신사 API 응답 파싱 → 상품 리스트"""
     modules = data.get("data", {}).get("modules", [])
     raw_items = []
     for mod in modules:
@@ -68,7 +59,6 @@ def fetch_musinsa() -> list:
                 if item.get("type") == "PRODUCT_COLUMN":
                     raw_items.append(item)
 
-    # rank 기준 정렬 후 상위 30개
     raw_items.sort(key=lambda x: x.get("image", {}).get("rank", 9999))
     raw_items = raw_items[:LIMIT]
 
@@ -90,15 +80,56 @@ def fetch_musinsa() -> list:
             "originalPrice": original_price,
             "discountRate": discount,
             "finalPrice": final_price,
-            "category": "",
-            "categoryLabel": "전체",
+            "category": cat_code,
+            "categoryLabel": cat_label,
             "imgUrl": item.get("image", {}).get("url", ""),
             "productUrl": f"https://www.musinsa.com/goods/{product_id}",
             "change": None,
         })
-
-    print(f"  ✓ 무신사 {len(result)}개 상품 수집 완료")
     return result
+
+
+def fetch_musinsa_category(api_code: str, cat_code: str, cat_label: str) -> list:
+    """무신사 단일 카테고리 랭킹 수집"""
+    url = (
+        f"https://client.musinsa.com/api/home/web/v5/pans/ranking"
+        f"?storeCode=musinsa&sectionId=200&gf=M&categoryCode={api_code}&ageBand=AGE_BAND_25"
+    )
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+        "Origin": "https://www.musinsa.com",
+    }
+    try:
+        resp = requests.get(url, headers=headers, timeout=20)
+        resp.raise_for_status()
+        return _parse_musinsa_response(resp.json(), cat_code, cat_label)
+    except Exception as e:
+        print(f"  [ERROR] 무신사 {cat_label} 수집 실패: {e}")
+        return []
+
+
+def fetch_musinsa() -> dict:
+    """
+    무신사 실시간 랭킹 - 전체 + 카테고리별 30위 수집
+    반환: { "": [...30개], "001": [...30개], ... }
+    """
+    print("▶ 무신사 랭킹 수집 시작 (전체 + 카테고리별)...")
+    categories = {}
+
+    for cat in MUSINSA_CATEGORIES:
+        label = cat["label"]
+        print(f"  - {label} 수집 중...")
+        items = fetch_musinsa_category(cat["api"], cat["code"], label)
+        categories[cat["code"]] = items
+        print(f"    ✓ {len(items)}개")
+        time.sleep(1)  # API 과부하 방지
+
+    total = sum(len(v) for v in categories.values())
+    print(f"  ✓ 무신사 전체 {total}개 상품 수집 완료 ({len(categories)}개 카테고리)")
+    return categories
 
 
 # ═══════════════════════════════════════════════════
@@ -157,7 +188,7 @@ def fetch_29cm() -> list:
             "category": "",
             "categoryLabel": "전체",
             "imgUrl": info.get("thumbnailUrl", ""),
-            "productUrl": item.get("itemUrl", {}).get("webLink", f"https://www.29cm.co.kr/product/catalog/{item_id}"),
+            "productUrl": item.get("itemUrl", {}).get("webLink", f"https://product.29cm.co.kr/catalog/{item_id}"),
             "change": None,
         })
 
@@ -181,19 +212,40 @@ def compute_rank_changes(new_items: list, old_items: list) -> list:
     return new_items
 
 
+def compute_rank_changes_categories(new_cats: dict, old_cats: dict) -> dict:
+    """카테고리 구조에서 순위 변동 계산"""
+    for code, items in new_cats.items():
+        old_items = old_cats.get(code, [])
+        new_cats[code] = compute_rank_changes(items, old_items)
+    return new_cats
+
+
 # ═══════════════════════════════════════════════════
 #  파일 저장 / 로드
 # ═══════════════════════════════════════════════════
 
-def load_existing(platform: str) -> list:
+def load_existing_categories(platform: str) -> dict:
+    """기존 저장된 카테고리별 데이터 로드"""
     path = DATA_DIR / f"{platform}.json"
     if path.exists():
         try:
             with open(path, encoding="utf-8") as f:
-                return json.load(f).get("items", [])
+                saved = json.load(f)
+                # 새 형식: categories 키
+                if "categories" in saved:
+                    return saved["categories"]
+                # 구 형식: items 키 (전체만)
+                if "items" in saved:
+                    return {"": saved["items"]}
         except Exception:
             pass
-    return []
+    return {}
+
+
+def load_existing(platform: str) -> list:
+    """구 형식 호환용 - 전체 items만 반환"""
+    cats = load_existing_categories(platform)
+    return cats.get("", [])
 
 
 def save(platform: str, data: dict):
@@ -212,22 +264,24 @@ def main():
     print(f"  랭킹 수집 시작: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*50}\n")
 
-    # 무신사
-    old_musinsa = load_existing("musinsa")
-    musinsa_items = fetch_musinsa()
-    if musinsa_items:
-        musinsa_items = compute_rank_changes(musinsa_items, old_musinsa)
+    # ── 무신사 (카테고리별) ──
+    old_musinsa_cats = load_existing_categories("musinsa")
+    musinsa_cats = fetch_musinsa()
+    if musinsa_cats:
+        musinsa_cats = compute_rank_changes_categories(musinsa_cats, old_musinsa_cats)
+        # items 필드도 전체 데이터로 채워 구버전 호환 유지
         save("musinsa", {
             "platform": "musinsa",
             "updatedAt": datetime.now(timezone.utc).isoformat(),
-            "items": musinsa_items,
+            "items": musinsa_cats.get("", []),
+            "categories": musinsa_cats,
         })
     else:
         print("  [WARN] 무신사 데이터 없음 - 기존 파일 유지")
 
     time.sleep(2)
 
-    # 29CM
+    # ── 29CM (전체만) ──
     old_29cm = load_existing("29cm")
     cm29_items = fetch_29cm()
     if cm29_items:
@@ -236,6 +290,7 @@ def main():
             "platform": "29cm",
             "updatedAt": datetime.now(timezone.utc).isoformat(),
             "items": cm29_items,
+            "categories": {"": cm29_items},
         })
     else:
         print("  [WARN] 29CM 데이터 없음 - 기존 파일 유지")
