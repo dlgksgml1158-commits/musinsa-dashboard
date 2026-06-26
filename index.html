@@ -560,6 +560,39 @@
       .product-link:active .product-name { color: var(--accent); }
     }
 
+    /* ── TOGGLE SECTION BUTTON ── */
+    .toggle-section-btn {
+      width: 100%;
+      padding: 12px 20px;
+      background: var(--bg3);
+      border: none;
+      border-top: 1px solid var(--border);
+      color: var(--text2);
+      font-size: 13px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: all .15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .toggle-section-btn:hover {
+      background: #242424;
+      color: var(--text);
+    }
+    .toggle-section-btn.open { color: var(--accent); }
+    .toggle-section-btn .t-arrow {
+      font-size: 10px;
+      transition: transform .2s;
+    }
+    .toggle-section-btn.open .t-arrow { transform: rotate(180deg); }
+    .ranking-group { overflow: hidden; }
+    .ranking-group table thead { display: none; }
+    #rankingGroup1 table thead { display: table-header-group; }
+
     /* 순위 변동 뱃지 */
     .hot-badge {
       background: rgba(239,68,68,.15);
@@ -623,7 +656,8 @@
         <span class="title" id="categoryLabel">전체</span>
         <span class="period-tag" id="periodTag">NOW</span>
       </div>
-      <div id="rankingTableWrap">
+      <!-- Group 1: 1-10위 (항상 표시) -->
+      <div class="ranking-group" id="rankingGroup1">
         <table>
           <thead>
             <tr>
@@ -633,8 +667,7 @@
               <th class="price-col">가격</th>
             </tr>
           </thead>
-          <tbody id="rankingTbody">
-            <!-- Skeleton rows -->
+          <tbody id="rankingTbody1">
             <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
             <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
             <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
@@ -643,10 +676,41 @@
           </tbody>
         </table>
       </div>
-      <div class="ranking-footer">
-        <button class="page-btn" id="prevBtn" onclick="changePage(-1)" disabled>← 이전</button>
-        <span class="page-info" id="pageInfo">1 / 1</span>
-        <button class="page-btn" id="nextBtn" onclick="changePage(1)">다음 →</button>
+
+      <!-- Toggle 11-20위 -->
+      <button class="toggle-section-btn" id="toggleBtn2" onclick="toggleSection(2)">
+        <span id="toggleLabel2">11~20위 펼치기</span>
+        <span class="t-arrow">▾</span>
+      </button>
+      <div class="ranking-group" id="rankingGroup2" style="display:none">
+        <table>
+          <thead>
+            <tr>
+              <th>순위</th><th>상품</th>
+              <th class="change-col">변동</th>
+              <th class="price-col">가격</th>
+            </tr>
+          </thead>
+          <tbody id="rankingTbody2"></tbody>
+        </table>
+      </div>
+
+      <!-- Toggle 21-30위 -->
+      <button class="toggle-section-btn" id="toggleBtn3" onclick="toggleSection(3)">
+        <span id="toggleLabel3">21~30위 펼치기</span>
+        <span class="t-arrow">▾</span>
+      </button>
+      <div class="ranking-group" id="rankingGroup3" style="display:none">
+        <table>
+          <thead>
+            <tr>
+              <th>순위</th><th>상품</th>
+              <th class="change-col">변동</th>
+              <th class="price-col">가격</th>
+            </tr>
+          </thead>
+          <tbody id="rankingTbody3"></tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -743,10 +807,9 @@ const EMOJI_BY_CAT = {
 let state = {
   platform: 'musinsa',
   category: '',
-  page: 1,
-  pageSize: 30,
   data: { musinsa: null, '29cm': null },
   filteredItems: [],
+  toggles: { 2: false, 3: false },
 };
 
 /* ===========================
@@ -835,7 +898,7 @@ async function loadData(platform) {
 function switchPlatform(p) {
   state.platform = p;
   state.category = '';
-  state.page = 1;
+  state.toggles = { 2: false, 3: false };
 
   document.getElementById('tab-musinsa').className = 'ptab' + (p === 'musinsa' ? ' active-musinsa' : '');
   document.getElementById('tab-29cm').className = 'ptab' + (p === '29cm' ? ' active-29cm' : '');
@@ -861,7 +924,7 @@ function renderCategoryBar() {
 
 function selectCategory(code, label) {
   state.category = code;
-  state.page = 1;
+  state.toggles = { 2: false, 3: false };
   renderCategoryBar();
   renderRanking();
   renderSidebar();
@@ -871,7 +934,7 @@ function selectCategory(code, label) {
    PRODUCT URL HELPER
 =========================== */
 function getProductUrl(item) {
-  // 실제 데이터에 productUrl 필드가 있으면 우선 사용
+  // productUrl 필드 우선 사용
   if (item.productUrl) return item.productUrl;
 
   const numId = (item.id || '').replace(/^[^-]+-/, '');
@@ -882,9 +945,9 @@ function getProductUrl(item) {
       ? `https://www.musinsa.com/goods/${numId}`
       : `https://www.musinsa.com/search/goods?keyword=${encodeURIComponent(item.brand + ' ' + item.name)}`;
   } else {
-    return isRealId
-      ? `https://www.29cm.co.kr/product/detail?itemNo=${numId}`
-      : `https://search.29cm.co.kr/search?keyword=${encodeURIComponent(item.brand + ' ' + item.name)}`;
+    // 29CM: product.29cm.co.kr/catalog/{id} 형식
+    if (isRealId) return `https://product.29cm.co.kr/catalog/${numId}`;
+    return `https://www.29cm.co.kr/search?query=${encodeURIComponent(item.brand + ' ' + item.name)}`;
   }
 }
 
@@ -894,11 +957,61 @@ function getProductUrl(item) {
 function getFilteredItems() {
   const d = state.data[state.platform];
   if (!d) return [];
-  let items = d.items.slice(0, 30); // 1~30위만 표시
+
+  // 카테고리별 데이터가 있는 경우 (categories 구조)
+  if (d.categories) {
+    const catItems = d.categories[state.category] || d.categories[''] || [];
+    return catItems.slice(0, 30);
+  }
+
+  // 기존 형식 (items 배열)
+  let items = d.items || [];
   if (state.category) {
     items = items.filter(i => i.category === state.category);
   }
-  return items;
+  return items.slice(0, 30);
+}
+
+function buildRowHtml(item, rank) {
+  const rankClass = rank === 1 ? 'rank-1' : rank === 2 ? 'rank-2' : rank === 3 ? 'rank-3' : 'rank-other';
+  const changeHtml = renderChange(item.change);
+  const priceHtml = item.discountRate
+    ? `<span class="discount">-${item.discountRate}%</span>${item.finalPrice.toLocaleString()}원`
+    : `${item.finalPrice.toLocaleString()}원`;
+  const isHot = item.change !== 'NEW' && item.change !== null && item.change >= 5;
+  const isNew = item.change === 'NEW';
+  const url = getProductUrl(item);
+
+  return `<tr onclick="window.open('${url}','_blank','noopener,noreferrer')" style="cursor:pointer">
+    <td><div class="rank-num ${rankClass}">${rank}</div></td>
+    <td>
+      <div class="product-info">
+        <div class="product-thumb">${EMOJI_BY_CAT[item.category] || '👔'}</div>
+        <div>
+          <div class="product-name">
+            ${item.name}
+            ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
+            ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+          </div>
+          <div class="product-brand">${item.brand}</div>
+        </div>
+      </div>
+    </td>
+    <td>${changeHtml}</td>
+    <td><div class="price">${priceHtml}</div></td>
+  </tr>`;
+}
+
+function renderGroup(tbodyId, items, startRank) {
+  const tbody = document.getElementById(tbodyId);
+  if (!tbody) return;
+  if (items.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="4">
+      <div class="empty-state"><div class="icon">🔍</div><p>데이터가 없습니다</p></div>
+    </td></tr>`;
+    return;
+  }
+  tbody.innerHTML = items.map((item, i) => buildRowHtml(item, startRank + i + 1)).join('');
 }
 
 function renderRanking() {
@@ -913,65 +1026,53 @@ function renderRanking() {
   document.getElementById('rankingTitle').textContent = `${state.platform === 'musinsa' ? '무신사' : '29CM'} 실시간 랭킹`;
   document.getElementById('periodTag').textContent = 'NOW';
 
-  const totalPages = Math.max(1, Math.ceil(items.length / state.pageSize));
-  if (state.page > totalPages) state.page = 1;
+  // 3개 그룹으로 분할 렌더링
+  renderGroup('rankingTbody1', items.slice(0, 10), 0);
+  renderGroup('rankingTbody2', items.slice(10, 20), 10);
+  renderGroup('rankingTbody3', items.slice(20, 30), 20);
 
-  const start = (state.page - 1) * state.pageSize;
-  const pageItems = items.slice(start, start + state.pageSize);
+  // 토글 상태 초기화 (카테고리/플랫폼 전환 시)
+  [2, 3].forEach(n => {
+    const grp = document.getElementById(`rankingGroup${n}`);
+    const btn = document.getElementById(`toggleBtn${n}`);
+    if (!grp || !btn) return;
+    if (!state.toggles[n]) {
+      grp.style.display = 'none';
+      btn.classList.remove('open');
+      document.getElementById(`toggleLabel${n}`).textContent = `${n === 2 ? '11~20' : '21~30'}위 펼치기`;
+    }
+  });
 
-  document.getElementById('pageInfo').textContent = `${state.page} / ${totalPages}`;
-  document.getElementById('prevBtn').disabled = state.page <= 1;
-  document.getElementById('nextBtn').disabled = state.page >= totalPages;
+  // 11-20위/21-30위 토글 버튼 숨김 처리 (데이터 부족 시)
+  document.getElementById('toggleBtn2').style.display = items.length > 10 ? '' : 'none';
+  document.getElementById('toggleBtn3').style.display = items.length > 20 ? '' : 'none';
 
-  const tbody = document.getElementById('rankingTbody');
-  if (pageItems.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="4">
-      <div class="empty-state">
-        <div class="icon">🔍</div>
-        <p>해당 카테고리에 데이터가 없습니다</p>
-      </div>
-    </td></tr>`;
-    return;
-  }
-
-  tbody.innerHTML = pageItems.map((item, idx) => {
-    const globalRank = start + idx + 1;
-    const rankClass = globalRank === 1 ? 'rank-1' : globalRank === 2 ? 'rank-2' : globalRank === 3 ? 'rank-3' : 'rank-other';
-    const changeHtml = renderChange(item.change);
-    const priceHtml = item.discountRate
-      ? `<span class="discount">-${item.discountRate}%</span>${item.finalPrice.toLocaleString()}원`
-      : `${item.finalPrice.toLocaleString()}원`;
-
-    const isHot = item.change !== 'NEW' && item.change !== null && item.change >= 5;
-    const isNew = item.change === 'NEW';
-
-    return `<tr>
-      <td><div class="rank-num ${rankClass}">${globalRank}</div></td>
-      <td>
-        <a href="${getProductUrl(item)}" target="_blank" rel="noopener noreferrer" class="product-link">
-          <div class="product-info">
-            <div class="product-thumb">${EMOJI_BY_CAT[item.category] || '👔'}</div>
-            <div>
-              <div class="product-name">
-                ${item.name}
-                ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
-                ${isNew ? '<span class="new-badge">NEW</span>' : ''}
-              </div>
-              <div class="product-brand">${item.brand}</div>
-            </div>
-          </div>
-        </a>
-      </td>
-      <td>${changeHtml}</td>
-      <td><div class="price">${priceHtml}</div></td>
-    </tr>`;
-  }).join('');
-
-  // Update last updated
+  // 마지막 업데이트 시각
   const d = state.data[state.platform];
   if (d?.updatedAt) {
     const dt = new Date(d.updatedAt);
     document.getElementById('lastUpdated').textContent = `업데이트: ${dt.toLocaleString('ko-KR', {month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})}`;
+  }
+}
+
+/* ===========================
+   TOGGLE SECTION
+=========================== */
+function toggleSection(n) {
+  state.toggles[n] = !state.toggles[n];
+  const grp = document.getElementById(`rankingGroup${n}`);
+  const btn = document.getElementById(`toggleBtn${n}`);
+  const lbl = document.getElementById(`toggleLabel${n}`);
+  const range = n === 2 ? '11~20' : '21~30';
+
+  if (state.toggles[n]) {
+    grp.style.display = 'block';
+    btn.classList.add('open');
+    lbl.textContent = `${range}위 접기`;
+  } else {
+    grp.style.display = 'none';
+    btn.classList.remove('open');
+    lbl.textContent = `${range}위 펼치기`;
   }
 }
 
@@ -980,13 +1081,6 @@ function renderChange(change) {
   if (change === null || change === 0) return '<div class="change same">-</div>';
   if (change > 0) return `<div class="change up">▲${change}</div>`;
   return `<div class="change down">▼${Math.abs(change)}</div>`;
-}
-
-function changePage(dir) {
-  const totalPages = Math.ceil(state.filteredItems.length / state.pageSize);
-  state.page = Math.max(1, Math.min(totalPages, state.page + dir));
-  renderRanking();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 /* ===========================
