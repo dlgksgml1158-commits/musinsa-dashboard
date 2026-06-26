@@ -560,10 +560,10 @@
       .product-link:active .product-name { color: var(--accent); }
     }
 
-    /* ── TOGGLE SECTION BUTTON ── */
-    .toggle-section-btn {
+    /* ── ACCORDION ── */
+    .accordion-header {
       width: 100%;
-      padding: 12px 20px;
+      padding: 14px 20px;
       background: var(--bg3);
       border: none;
       border-top: 1px solid var(--border);
@@ -572,24 +572,65 @@
       font-weight: 600;
       font-family: inherit;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background .15s, color .15s;
+      user-select: none;
+    }
+    .accordion-header:hover {
+      background: #1c1c1c;
+      color: var(--text);
+    }
+    .accordion-header.open {
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+    }
+    .accordion-header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .accordion-rank-tag {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 3px 10px;
+      font-size: 12px;
+      color: var(--text3);
+      font-weight: 600;
       letter-spacing: 0.3px;
       transition: all .15s;
+    }
+    .accordion-header.open .accordion-rank-tag {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .accordion-chevron {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      font-size: 11px;
+      transition: transform .3s ease, border-color .15s, color .15s;
+      flex-shrink: 0;
     }
-    .toggle-section-btn:hover {
-      background: #242424;
-      color: var(--text);
+    .accordion-header.open .accordion-chevron {
+      transform: rotate(180deg);
+      border-color: var(--accent);
+      color: var(--accent);
     }
-    .toggle-section-btn.open { color: var(--accent); }
-    .toggle-section-btn .t-arrow {
-      font-size: 10px;
-      transition: transform .2s;
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .toggle-section-btn.open .t-arrow { transform: rotate(180deg); }
-    .ranking-group { overflow: hidden; }
+    .accordion-body.open {
+      max-height: 1200px;
+    }
     .ranking-group table thead { display: none; }
     #rankingGroup1 table thead { display: table-header-group; }
 
@@ -677,40 +718,50 @@
         </table>
       </div>
 
-      <!-- Toggle 11-20위 -->
-      <button class="toggle-section-btn" id="toggleBtn2" onclick="toggleSection(2)">
-        <span id="toggleLabel2">11~20위 펼치기</span>
-        <span class="t-arrow">▾</span>
+      <!-- Accordion 11-20위 -->
+      <button class="accordion-header" id="toggleBtn2" onclick="toggleSection(2)">
+        <div class="accordion-header-left">
+          <span class="accordion-rank-tag">11~20위</span>
+          <span id="toggleLabel2" style="font-size:12px;color:inherit;">펼치기</span>
+        </div>
+        <div class="accordion-chevron">▾</div>
       </button>
-      <div class="ranking-group" id="rankingGroup2" style="display:none">
-        <table>
-          <thead>
-            <tr>
-              <th>순위</th><th>상품</th>
-              <th class="change-col">변동</th>
-              <th class="price-col">가격</th>
-            </tr>
-          </thead>
-          <tbody id="rankingTbody2"></tbody>
-        </table>
+      <div class="accordion-body" id="rankingGroup2">
+        <div class="ranking-group">
+          <table>
+            <thead>
+              <tr>
+                <th>순위</th><th>상품</th>
+                <th class="change-col">변동</th>
+                <th class="price-col">가격</th>
+              </tr>
+            </thead>
+            <tbody id="rankingTbody2"></tbody>
+          </table>
+        </div>
       </div>
 
-      <!-- Toggle 21-30위 -->
-      <button class="toggle-section-btn" id="toggleBtn3" onclick="toggleSection(3)">
-        <span id="toggleLabel3">21~30위 펼치기</span>
-        <span class="t-arrow">▾</span>
+      <!-- Accordion 21-30위 -->
+      <button class="accordion-header" id="toggleBtn3" onclick="toggleSection(3)">
+        <div class="accordion-header-left">
+          <span class="accordion-rank-tag">21~30위</span>
+          <span id="toggleLabel3" style="font-size:12px;color:inherit;">펼치기</span>
+        </div>
+        <div class="accordion-chevron">▾</div>
       </button>
-      <div class="ranking-group" id="rankingGroup3" style="display:none">
-        <table>
-          <thead>
-            <tr>
-              <th>순위</th><th>상품</th>
-              <th class="change-col">변동</th>
-              <th class="price-col">가격</th>
-            </tr>
-          </thead>
-          <tbody id="rankingTbody3"></tbody>
-        </table>
+      <div class="accordion-body" id="rankingGroup3">
+        <div class="ranking-group">
+          <table>
+            <thead>
+              <tr>
+                <th>순위</th><th>상품</th>
+                <th class="change-col">변동</th>
+                <th class="price-col">가격</th>
+              </tr>
+            </thead>
+            <tbody id="rankingTbody3"></tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -1031,21 +1082,24 @@ function renderRanking() {
   renderGroup('rankingTbody2', items.slice(10, 20), 10);
   renderGroup('rankingTbody3', items.slice(20, 30), 20);
 
-  // 토글 상태 초기화 (카테고리/플랫폼 전환 시)
+  // 아코디언 상태 초기화 (카테고리/플랫폼 전환 시)
   [2, 3].forEach(n => {
-    const grp = document.getElementById(`rankingGroup${n}`);
+    const body = document.getElementById(`rankingGroup${n}`);
     const btn = document.getElementById(`toggleBtn${n}`);
-    if (!grp || !btn) return;
+    const lbl = document.getElementById(`toggleLabel${n}`);
+    if (!body || !btn) return;
     if (!state.toggles[n]) {
-      grp.style.display = 'none';
+      body.classList.remove('open');
       btn.classList.remove('open');
-      document.getElementById(`toggleLabel${n}`).textContent = `${n === 2 ? '11~20' : '21~30'}위 펼치기`;
+      if (lbl) lbl.textContent = '펼치기';
     }
   });
 
-  // 11-20위/21-30위 토글 버튼 숨김 처리 (데이터 부족 시)
+  // 데이터 부족 시 아코디언 숨김
   document.getElementById('toggleBtn2').style.display = items.length > 10 ? '' : 'none';
+  document.getElementById('rankingGroup2').style.display = items.length > 10 ? '' : 'none';
   document.getElementById('toggleBtn3').style.display = items.length > 20 ? '' : 'none';
+  document.getElementById('rankingGroup3').style.display = items.length > 20 ? '' : 'none';
 
   // 마지막 업데이트 시각
   const d = state.data[state.platform];
@@ -1056,23 +1110,22 @@ function renderRanking() {
 }
 
 /* ===========================
-   TOGGLE SECTION
+   ACCORDION
 =========================== */
 function toggleSection(n) {
   state.toggles[n] = !state.toggles[n];
-  const grp = document.getElementById(`rankingGroup${n}`);
-  const btn = document.getElementById(`toggleBtn${n}`);
-  const lbl = document.getElementById(`toggleLabel${n}`);
-  const range = n === 2 ? '11~20' : '21~30';
+  const body = document.getElementById(`rankingGroup${n}`);
+  const btn  = document.getElementById(`toggleBtn${n}`);
+  const lbl  = document.getElementById(`toggleLabel${n}`);
 
   if (state.toggles[n]) {
-    grp.style.display = 'block';
+    body.classList.add('open');
     btn.classList.add('open');
-    lbl.textContent = `${range}위 접기`;
+    if (lbl) lbl.textContent = '접기';
   } else {
-    grp.style.display = 'none';
+    body.classList.remove('open');
     btn.classList.remove('open');
-    lbl.textContent = `${range}위 펼치기`;
+    if (lbl) lbl.textContent = '펼치기';
   }
 }
 
