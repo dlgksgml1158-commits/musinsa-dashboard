@@ -540,6 +540,26 @@
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #444; }
 
+    /* 상품 링크 */
+    .product-link {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      border-radius: 6px;
+      transition: background .1s;
+    }
+    .product-link:hover .product-name,
+    .product-link:focus .product-name {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .product-link:active { opacity: 0.8; }
+    /* 모바일 터치 피드백 */
+    @media (hover: none) {
+      .product-link:active .product-name { color: var(--accent); }
+    }
+
     /* 순위 변동 뱃지 */
     .hot-badge {
       background: rgba(239,68,68,.15);
@@ -848,6 +868,27 @@ function selectCategory(code, label) {
 }
 
 /* ===========================
+   PRODUCT URL HELPER
+=========================== */
+function getProductUrl(item) {
+  // 실제 데이터에 productUrl 필드가 있으면 우선 사용
+  if (item.productUrl) return item.productUrl;
+
+  const numId = (item.id || '').replace(/^[^-]+-/, '');
+  const isRealId = numId && !isNaN(numId) && parseInt(numId) > 100;
+
+  if (state.platform === 'musinsa') {
+    return isRealId
+      ? `https://www.musinsa.com/goods/${numId}`
+      : `https://www.musinsa.com/search/goods?keyword=${encodeURIComponent(item.brand + ' ' + item.name)}`;
+  } else {
+    return isRealId
+      ? `https://www.29cm.co.kr/product/detail?itemNo=${numId}`
+      : `https://search.29cm.co.kr/search?keyword=${encodeURIComponent(item.brand + ' ' + item.name)}`;
+  }
+}
+
+/* ===========================
    RANKING TABLE
 =========================== */
 function getFilteredItems() {
@@ -907,17 +948,19 @@ function renderRanking() {
     return `<tr>
       <td><div class="rank-num ${rankClass}">${globalRank}</div></td>
       <td>
-        <div class="product-info">
-          <div class="product-thumb">${EMOJI_BY_CAT[item.category] || '👔'}</div>
-          <div>
-            <div class="product-name">
-              ${item.name}
-              ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
-              ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+        <a href="${getProductUrl(item)}" target="_blank" rel="noopener noreferrer" class="product-link">
+          <div class="product-info">
+            <div class="product-thumb">${EMOJI_BY_CAT[item.category] || '👔'}</div>
+            <div>
+              <div class="product-name">
+                ${item.name}
+                ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
+                ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+              </div>
+              <div class="product-brand">${item.brand}</div>
             </div>
-            <div class="product-brand">${item.brand}</div>
           </div>
-        </div>
+        </a>
       </td>
       <td>${changeHtml}</td>
       <td><div class="price">${priceHtml}</div></td>
