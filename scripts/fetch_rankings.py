@@ -2,21 +2,21 @@
 무신사 & 29CM 랭킹 데이터 수집 스크립트
 GitHub Actions에서 1시간마다 자동 실행됩니다.
 
-- 무신사: client.musinsa.com 공식 API (pans/ranking) - 전체 + 카테고리별 30위
-- 29CM  : display-bff-api.29cm.co.kr 공식 API (plp/best/items, POST) - 전체 30위
+- 무신사: api.musinsa.com/api2/json/rank/goods (카테고리별 전용 랭킹 API)
+          실패 시 ranking 페이지 __NEXT_DATA__ HTML 파싱으로 폴백
+- 29CM  : display-bff-api.29cm.co.kr (전체 30위)
 - 이전 데이터와 비교하여 순위 변동 계산
 - data/musinsa.json, data/29cm.json 으로 저장
 """
 
 import json
 import time
-import os
 from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
+from bs4 import BeautifulSoup
 
-# ── 경로 설정 ──────────────────────────────────────
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
 DATA_DIR.mkdir(exist_ok=True)
@@ -27,30 +27,193 @@ BROWSER_UA = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
-LIMIT = 30  # 1~30위만 수집
+LIMIT = 30
 
-# ── 무신사 카테고리 목록 ──────────────────────────
 MUSINSA_CATEGORIES = [
-    {"code": "",    "api": "000", "label": "전체"},
-    {"code": "001", "api": "001", "label": "상의"},
-    {"code": "002", "api": "002", "label": "아우터"},
-    {"code": "003", "api": "003", "label": "바지"},
-    {"code": "004", "api": "004", "label": "원피스/스커트"},
-    {"code": "005", "api": "005", "label": "스포츠"},
-    {"code": "020", "api": "020", "label": "신발"},
-    {"code": "022", "api": "022", "label": "가방"},
-    {"code": "023", "api": "023", "label": "시계/쥬얼리"},
-    {"code": "024", "api": "024", "label": "패션잡화"},
-    {"code": "026", "api": "026", "label": "화장품/향수"},
+    {"code": "",    "label": "전체"},
+    {"code": "001", "label": "상의"},
+    {"code": "002", "label": "아우터"},
+    {"code": "003", "label": "바지"},
+    {"code": "004", "label": "원피스/스커트"},
+    {"code": "005", "label": "스포츠"},
+    {"code": "020", "label": "신발"},
+    {"code": "022", "label": "가방"},
+    {"code": "023", "label": "시계/쥬얼리"},
+    {"code": "024", "label": "패션잡화"},
+    {"code": "026", "label": "화장품/향수"},
 ]
 
 
 # ═══════════════════════════════════════════════════
-#  무신사 API
+#  공통 유틸
 # ═══════════════════════════════════════════════════
 
-def _parse_musinsa_response(data: dict, cat_code: str, cat_label: str) -> list:
-    """무신사 API 응답 파싱 → 상품 리스트"""
+PRODUCT_KEYS = {"goodsNo", "goodsId", "goodsName", "brandName", "salePrice", "normalPrice"}
+
+def _search_product_list(data, depth=0) -> list:
+    """JSON 트리에서 상품 배열 재귀 탐색"""
+    if depth > 12:
+        return []
+    if isinstance(data, list) and len(data) >= 3:
+        if data and isinstance(data[0], dict) and (set(data[0].keys()) & PRODUCT_KEYS):
+            return data
+    if isinstance(data, dict):
+        for v in data.values():
+            r = _search_product_list(v, depth + 1)
+            if r:
+                return r
+    elif isinstance(data, list):
+        for item in data:
+            r = _search_product_list(item, depth + 1)
+            if r:
+                return r
+    return []
+
+
+def _build_item(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
+    """무신사 상품 raw dict → 표준 포맷 변환 (다양한 키 이름 대응)"""
+    good_no = str(
+        raw.get("goodsNo") or raw.get("goodsId") or raw.get("id") or ""
+    )
+    brand   = raw.get("brandName") or raw.get("brand") or ""
+    name    = raw.get("goodsName") or raw.get("productName") or raw.get("name") or ""
+    normal  = int(raw.get("normalPrice") or raw.get("originalPrice") or raw.get("price") or 0)
+    sale    = int(raw.get("salePrice") or raw.get("finalPrice") or normal)
+    disc    = int(raw.get("discountRate") or raw.get("discountRatio") or 0)
+    img     = raw.get("goodsImgUrl") or raw.get("imageUrl") or raw.get("imgUrl") or ""
+
+    return {
+        "rank": rank,
+        "id": f"ms-{good_no}",
+        "brand": brand,
+        "name": name,
+        "price": normal,
+        "originalPrice": normal,
+        "discountRate": disc,
+        "finalPrice": sale,
+        "category": cat_code,
+        "categoryLabel": cat_label,
+        "imgUrl": img,
+        "productUrl": f"https://www.musinsa.com/products/{good_no}" if good_no else "",
+        "change": None,
+    }
+
+
+# ═══════════════════════════════════════════════════
+#  무신사 — 방법 1: 랭킹 전용 API
+# ═══════════════════════════════════════════════════
+
+def _fetch_via_ranking_api(cat_code: str, cat_label: str) -> list:
+    """api.musinsa.com/api2/json/rank/goods — 카테고리별 실시간 랭킹"""
+    url = "https://api.musinsa.com/api2/json/rank/goods"
+    params = {
+        "period": "REALTIME",
+        "categoryCode": cat_code,
+        "display_cnt": LIMIT,
+        "list_kind": "big",
+        "page": 1,
+        "gf": "A",
+    }
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/ranking/best",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+        "Origin": "https://www.musinsa.com",
+    }
+    resp = requests.get(url, params=params, headers=headers, timeout=20)
+    resp.raise_for_status()
+    data = resp.json()
+
+    goods_list = (
+        data.get("data", {}).get("list")
+        or data.get("data", {}).get("goodsList")
+        or data.get("list")
+        or _search_product_list(data)
+    )
+    if not goods_list:
+        return []
+
+    result = []
+    for idx, item in enumerate(goods_list[:LIMIT]):
+        parsed = _build_item(item, idx + 1, cat_code, cat_label)
+        if parsed["name"]:
+            result.append(parsed)
+    return result
+
+
+# ═══════════════════════════════════════════════════
+#  무신사 — 방법 2: 랭킹 페이지 HTML → __NEXT_DATA__
+# ═══════════════════════════════════════════════════
+
+def _fetch_via_html(cat_code: str, cat_label: str) -> list:
+    """ranking/best HTML 페이지의 __NEXT_DATA__ JSON 파싱"""
+    url = "https://www.musinsa.com/ranking/best"
+    params = {
+        "categoryCode": cat_code,
+        "period": "now",
+        "gf": "A",
+        "display_cnt": LIMIT,
+    }
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+    }
+    resp = requests.get(url, params=params, headers=headers, timeout=30)
+    resp.raise_for_status()
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    script = soup.find("script", {"id": "__NEXT_DATA__"})
+    if not script:
+        print(f"    [DEBUG] __NEXT_DATA__ 태그 없음 (카테고리={cat_code})")
+        return []
+
+    page_data = json.loads(script.string)
+    goods_list = _search_product_list(page_data)
+
+    if not goods_list:
+        # 디버그: 상위 키 구조 출력
+        def _print_keys(d, depth=0):
+            if depth > 3 or not isinstance(d, dict):
+                return
+            for k, v in list(d.items())[:20]:
+                tag = f"[{len(v)}]" if isinstance(v, (list, dict)) else ""
+                print(f"    {'  '*depth}{k}: {type(v).__name__}{tag}")
+                _print_keys(v, depth + 1)
+        print(f"    [DEBUG] __NEXT_DATA__ 구조 (카테고리={cat_code}):")
+        _print_keys(page_data)
+        return []
+
+    result = []
+    for idx, item in enumerate(goods_list[:LIMIT]):
+        parsed = _build_item(item, idx + 1, cat_code, cat_label)
+        if parsed["name"]:
+            result.append(parsed)
+    return result
+
+
+# ═══════════════════════════════════════════════════
+#  무신사 — 방법 3: 구 홈 위젯 API (전체 폴백용)
+# ═══════════════════════════════════════════════════
+
+def _fetch_via_home_widget(cat_label: str) -> list:
+    """전체 랭킹용 기존 홈 위젯 API (카테고리 필터 미지원)"""
+    url = (
+        "https://client.musinsa.com/api/home/web/v5/pans/ranking"
+        "?storeCode=musinsa&sectionId=200&gf=M&categoryCode=000&ageBand=AGE_BAND_25"
+    )
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.musinsa.com",
+    }
+    resp = requests.get(url, headers=headers, timeout=20)
+    resp.raise_for_status()
+    data = resp.json()
+
     modules = data.get("data", {}).get("modules", [])
     raw_items = []
     for mod in modules:
@@ -60,78 +223,88 @@ def _parse_musinsa_response(data: dict, cat_code: str, cat_label: str) -> list:
                     raw_items.append(item)
 
     raw_items.sort(key=lambda x: x.get("image", {}).get("rank", 9999))
-    raw_items = raw_items[:LIMIT]
 
     result = []
-    for item in raw_items:
+    for item in raw_items[:LIMIT]:
         info = item.get("info", {})
-        product_id = item.get("id", "")
-        rank = item.get("image", {}).get("rank", 0)
+        product_id = str(item.get("id", ""))
         final_price = info.get("finalPrice", 0)
         discount = info.get("discountRatio", 0)
         original_price = round(final_price / (1 - discount / 100)) if discount else final_price
 
         result.append({
-            "rank": rank,
+            "rank": item.get("image", {}).get("rank", 0),
             "id": f"ms-{product_id}",
             "brand": info.get("brandName", ""),
             "name": info.get("productName", ""),
-            "price": final_price,
+            "price": original_price,
             "originalPrice": original_price,
             "discountRate": discount,
             "finalPrice": final_price,
-            "category": cat_code,
-            "categoryLabel": cat_label,
+            "category": "",
+            "categoryLabel": "전체",
             "imgUrl": item.get("image", {}).get("url", ""),
             "productUrl": (
-                item.get("link", {}).get("url", "") or
-                f"https://www.musinsa.com/products/{product_id}"
+                item.get("link", {}).get("url", "")
+                or f"https://www.musinsa.com/products/{product_id}"
             ),
             "change": None,
         })
     return result
 
 
-def fetch_musinsa_category(api_code: str, cat_code: str, cat_label: str) -> list:
-    """무신사 단일 카테고리 랭킹 수집"""
-    url = (
-        f"https://client.musinsa.com/api/home/web/v5/pans/ranking"
-        f"?storeCode=musinsa&sectionId=200&gf=M&categoryCode={api_code}&ageBand=AGE_BAND_25"
-    )
-    headers = {
-        "User-Agent": BROWSER_UA,
-        "Referer": "https://www.musinsa.com/",
-        "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "ko-KR,ko;q=0.9",
-        "Origin": "https://www.musinsa.com",
-    }
+# ═══════════════════════════════════════════════════
+#  무신사 메인
+# ═══════════════════════════════════════════════════
+
+def fetch_musinsa_category(cat_code: str, cat_label: str) -> list:
+    """카테고리 랭킹 수집: 랭킹 API → HTML → 홈 위젯(전체만) 순으로 시도"""
+
+    # 방법 1: 랭킹 전용 API
     try:
-        resp = requests.get(url, headers=headers, timeout=20)
-        resp.raise_for_status()
-        return _parse_musinsa_response(resp.json(), cat_code, cat_label)
+        result = _fetch_via_ranking_api(cat_code, cat_label)
+        if result:
+            print(f"    ✓ [랭킹API] {len(result)}개")
+            return result
+        print(f"    [WARN] 랭킹API 빈 응답")
     except Exception as e:
-        print(f"  [ERROR] 무신사 {cat_label} 수집 실패: {e}")
-        return []
+        print(f"    [WARN] 랭킹API 실패: {e}")
+
+    # 방법 2: HTML __NEXT_DATA__
+    try:
+        result = _fetch_via_html(cat_code, cat_label)
+        if result:
+            print(f"    ✓ [HTML] {len(result)}개")
+            return result
+        print(f"    [WARN] HTML 파싱 결과 없음")
+    except Exception as e:
+        print(f"    [WARN] HTML 실패: {e}")
+
+    # 방법 3: 전체 카테고리에만 홈 위젯 API 사용
+    if not cat_code:
+        try:
+            result = _fetch_via_home_widget(cat_label)
+            if result:
+                print(f"    ✓ [홈위젯] {len(result)}개")
+                return result
+        except Exception as e:
+            print(f"    [WARN] 홈위젯 실패: {e}")
+
+    print(f"    [ERROR] 모든 방법 실패")
+    return []
 
 
 def fetch_musinsa() -> dict:
-    """
-    무신사 실시간 랭킹 - 전체 + 카테고리별 30위 수집
-    반환: { "": [...30개], "001": [...30개], ... }
-    """
-    print("▶ 무신사 랭킹 수집 시작 (전체 + 카테고리별)...")
+    print("▶ 무신사 랭킹 수집 시작...")
     categories = {}
-
     for cat in MUSINSA_CATEGORIES:
-        label = cat["label"]
-        print(f"  - {label} 수집 중...")
-        items = fetch_musinsa_category(cat["api"], cat["code"], label)
+        print(f"  - {cat['label']} 수집 중...")
+        items = fetch_musinsa_category(cat["code"], cat["label"])
         categories[cat["code"]] = items
-        print(f"    ✓ {len(items)}개")
-        time.sleep(1)  # API 과부하 방지
+        time.sleep(1.5)
 
     total = sum(len(v) for v in categories.values())
-    print(f"  ✓ 무신사 전체 {total}개 상품 수집 완료 ({len(categories)}개 카테고리)")
+    print(f"  ✓ 무신사 {total}개 수집 완료 ({len(categories)}개 카테고리)")
     return categories
 
 
@@ -140,10 +313,6 @@ def fetch_musinsa() -> dict:
 # ═══════════════════════════════════════════════════
 
 def fetch_29cm() -> list:
-    """
-    29CM 실시간 베스트 랭킹 API (남성, 전체 카테고리, 30대 기준)
-    POST https://display-bff-api.29cm.co.kr/api/v1/plp/best/items
-    """
     print("▶ 29CM 랭킹 수집 시작...")
     url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
     headers = {
@@ -167,7 +336,7 @@ def fetch_29cm() -> list:
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
-        print(f"  [ERROR] 29CM API 요청 실패: {e}")
+        print(f"  [ERROR] 29CM 실패: {e}")
         return []
 
     items_raw = data.get("data", {}).get("list", [])
@@ -178,7 +347,6 @@ def fetch_29cm() -> list:
         display_price = info.get("displayPrice", 0)
         original_price = info.get("originalPrice", display_price)
         sale_rate = info.get("saleRate", 0)
-
         result.append({
             "rank": idx + 1,
             "id": f"cm-{item_id}",
@@ -195,7 +363,7 @@ def fetch_29cm() -> list:
             "change": None,
         })
 
-    print(f"  ✓ 29CM {len(result)}개 상품 수집 완료")
+    print(f"  ✓ 29CM {len(result)}개 수집 완료")
     return result
 
 
@@ -204,9 +372,9 @@ def fetch_29cm() -> list:
 # ═══════════════════════════════════════════════════
 
 def compute_rank_changes(new_items: list, old_items: list) -> list:
-    old_rank_map = {item["id"]: item["rank"] for item in old_items}
+    old_map = {item["id"]: item["rank"] for item in old_items}
     for item in new_items:
-        old_rank = old_rank_map.get(item["id"])
+        old_rank = old_map.get(item["id"])
         if old_rank is None:
             item["change"] = "NEW"
         else:
@@ -216,10 +384,8 @@ def compute_rank_changes(new_items: list, old_items: list) -> list:
 
 
 def compute_rank_changes_categories(new_cats: dict, old_cats: dict) -> dict:
-    """카테고리 구조에서 순위 변동 계산"""
     for code, items in new_cats.items():
-        old_items = old_cats.get(code, [])
-        new_cats[code] = compute_rank_changes(items, old_items)
+        new_cats[code] = compute_rank_changes(items, old_cats.get(code, []))
     return new_cats
 
 
@@ -228,16 +394,13 @@ def compute_rank_changes_categories(new_cats: dict, old_cats: dict) -> dict:
 # ═══════════════════════════════════════════════════
 
 def load_existing_categories(platform: str) -> dict:
-    """기존 저장된 카테고리별 데이터 로드"""
     path = DATA_DIR / f"{platform}.json"
     if path.exists():
         try:
             with open(path, encoding="utf-8") as f:
                 saved = json.load(f)
-                # 새 형식: categories 키
                 if "categories" in saved:
                     return saved["categories"]
-                # 구 형식: items 키 (전체만)
                 if "items" in saved:
                     return {"": saved["items"]}
         except Exception:
@@ -246,16 +409,14 @@ def load_existing_categories(platform: str) -> dict:
 
 
 def load_existing(platform: str) -> list:
-    """구 형식 호환용 - 전체 items만 반환"""
-    cats = load_existing_categories(platform)
-    return cats.get("", [])
+    return load_existing_categories(platform).get("", [])
 
 
 def save(platform: str, data: dict):
     path = DATA_DIR / f"{platform}.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"  💾 저장 완료: {path}")
+    print(f"  💾 저장: {path}")
 
 
 # ═══════════════════════════════════════════════════
@@ -267,12 +428,10 @@ def main():
     print(f"  랭킹 수집 시작: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*50}\n")
 
-    # ── 무신사 (카테고리별) ──
-    old_musinsa_cats = load_existing_categories("musinsa")
+    old_musinsa = load_existing_categories("musinsa")
     musinsa_cats = fetch_musinsa()
     if musinsa_cats:
-        musinsa_cats = compute_rank_changes_categories(musinsa_cats, old_musinsa_cats)
-        # items 필드도 전체 데이터로 채워 구버전 호환 유지
+        musinsa_cats = compute_rank_changes_categories(musinsa_cats, old_musinsa)
         save("musinsa", {
             "platform": "musinsa",
             "updatedAt": datetime.now(timezone.utc).isoformat(),
@@ -284,7 +443,6 @@ def main():
 
     time.sleep(2)
 
-    # ── 29CM (전체만) ──
     old_29cm = load_existing("29cm")
     cm29_items = fetch_29cm()
     if cm29_items:
