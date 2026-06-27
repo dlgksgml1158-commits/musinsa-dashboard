@@ -138,40 +138,53 @@ def _probe_musinsa_category_endpoint() -> str:
     print(f"  [PROBE] 전체 기준 1위: {ref_name[:30]}")
 
     candidates = [
-        # (label, url, params)
-        ("client-pans-cat001-noage",
+        # sectionId 변형
+        ("sec200-cat001-ageM",
+         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+         {"storeCode":"musinsa","sectionId":"200","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"}),
+        ("sec200-cat001-ageA",
+         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+         {"storeCode":"musinsa","sectionId":"200","gf":"A","categoryCode":"001","ageBand":"AGE_BAND_25"}),
+        ("sec200-cat001-noage",
          "https://client.musinsa.com/api/home/web/v5/pans/ranking",
          {"storeCode":"musinsa","sectionId":"200","gf":"A","categoryCode":"001"}),
-        ("client-pans-sec201",
+        ("sec201",
          "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"201","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"}),
-        ("client-pans-sec210",
+         {"storeCode":"musinsa","sectionId":"201","gf":"M","ageBand":"AGE_BAND_25"}),
+        ("sec202",
          "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"210","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"}),
-        ("client-category-ranking",
-         "https://client.musinsa.com/api/category/v1/ranking",
-         {"storeCode":"musinsa","categoryCode":"001","size":30,"gf":"A"}),
-        ("client-store-ranking",
-         "https://client.musinsa.com/api/store/v1/ranking",
-         {"storeCode":"musinsa","categoryCode":"001","size":30}),
-        ("client-goods-ranking",
-         "https://client.musinsa.com/api/goods/v1/ranking",
-         {"storeCode":"musinsa","categoryCode":"001","display":30,"gf":"A"}),
-        ("client-search-ranking",
-         "https://client.musinsa.com/api/search/v1/goods",
-         {"storeCode":"musinsa","categoryCode":"001","sort":"RANKING","size":30}),
-        ("client-ranking-v1",
-         "https://client.musinsa.com/api/ranking/v1/goods",
-         {"storeCode":"musinsa","categoryCode":"001","size":30,"period":"REALTIME","gf":"A"}),
-        ("musinsa-ranking-page-api",
-         "https://www.musinsa.com/api/ranking/best",
-         {"categoryCode":"001","period":"now","gf":"A","display":30}),
-        ("musinsa-goods-best",
-         "https://www.musinsa.com/api/goods/v1/best",
-         {"categoryCode":"001","size":30,"gf":"A"}),
-        ("musinsa-category-best",
-         "https://www.musinsa.com/api/category/v1/best",
-         {"categoryCode":"001","size":30}),
+         {"storeCode":"musinsa","sectionId":"202","gf":"M","ageBand":"AGE_BAND_25"}),
+        ("sec210",
+         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+         {"storeCode":"musinsa","sectionId":"210","gf":"M","ageBand":"AGE_BAND_25"}),
+        # 검색 API (인기순)
+        ("search-popular",
+         "https://search.musinsa.com/api/goods/v1/list",
+         {"storeCode":"musinsa","categoryCode":"001","sort":"POPULAR","size":30,"page":1}),
+        ("search-ranking",
+         "https://search.musinsa.com/api/goods/v1/list",
+         {"storeCode":"musinsa","categoryCode":"001","sort":"RANKING","size":30,"page":1}),
+        # 상품 랭킹 API 변형
+        ("app-rank-goods",
+         "https://api.musinsa.com/api2/json/rank/goods",
+         {"cate":"001","price":"","fromSise":"","toSise":"","page":1,"pageSize":30}),
+        ("app2-rank-goods",
+         "https://api2.musinsa.com/api2/json/rank/goods",
+         {"cate":"001","page":1,"pageSize":30}),
+        # ranking 페이지 HTML (변형 URL 시도)
+        ("ranking-html-v2",
+         "https://www.musinsa.com/store/ranking/best",
+         {"categoryCode":"001","period":"now","gf":"A","display_cnt":30}),
+        ("ranking-html-store",
+         "https://www.musinsa.com/store/best",
+         {"categoryCode":"001","gf":"A","display":30}),
+        # goods 리스트 API
+        ("goods-list-pop",
+         "https://www.musinsa.com/app/goods/lists",
+         {"category":"001","sort":"POPULAR","display_cnt":30}),
+        ("client-goods-list",
+         "https://client.musinsa.com/api/goods/v2/list",
+         {"storeCode":"musinsa","categoryCode":"001","sort":"POPULAR","size":30}),
     ]
 
     for label, url, params in candidates:
@@ -194,9 +207,18 @@ def _probe_musinsa_category_endpoint() -> str:
             elif first:
                 print(f"  [PROBE] {label}: 응답OK BUT 전체와 동일 1위={first[:30]}")
             else:
-                # 데이터 구조 로그
-                top_keys = list(data.keys())[:5] if isinstance(data, dict) else type(data).__name__
-                print(f"  [PROBE] {label}: HTTP {r.status_code}, 상품 없음, keys={top_keys}")
+                # 데이터 구조 디버그 로그 (상세)
+                top_keys = list(data.keys())[:8] if isinstance(data, dict) else type(data).__name__
+                data_val = data.get("data") if isinstance(data, dict) else None
+                if isinstance(data_val, dict):
+                    data_keys = list(data_val.keys())[:8]
+                    print(f"  [PROBE] {label}: HTTP 200, 상품없음 keys={top_keys} data.keys={data_keys}")
+                elif isinstance(data_val, list):
+                    print(f"  [PROBE] {label}: HTTP 200, 상품없음 keys={top_keys} data=[{len(data_val)}]")
+                else:
+                    # 상세 구조 출력
+                    raw = r.text[:200]
+                    print(f"  [PROBE] {label}: HTTP 200, 상품없음 keys={top_keys} raw={raw}")
         except Exception as e:
             print(f"  [PROBE] {label}: 오류={e}")
 
@@ -460,18 +482,16 @@ def _probe_29cm_category_endpoint() -> str:
         pass
     print(f"  [PROBE-29CM] 전체 기준 1위: {ref_name[:30]}")
 
-    # 카테고리 파라미터 후보 (상의 계열 ID로 테스트)
-    cat_candidates = [
-        ("front_category_id=268",  {"front_category_id": 268}),
-        ("front_category_id=1",    {"front_category_id": 1}),
-        ("category_id=268",        {"category_id": 268}),
-        ("categoryCode=TOP",       {"categoryCode": "TOP"}),
-        ("categoryCode=001",       {"categoryCode": "001"}),
-        ("itemClassCode=268",      {"itemClassCode": 268}),
-        ("departmentCode=268",     {"departmentCode": "268"}),
+    # BFF API — 본문 파라미터 변형
+    post_candidates = [
+        ("facet-category-268",  {"categoryFacetInput": {"categoryId": 268}}),
+        ("facet-category-1",    {"categoryFacetInput": {"categoryId": 1}}),
+        ("front_category_id=268", {"front_category_id": 268}),
+        ("category_id=268",     {"category_id": 268}),
+        ("itemClassCode=268",   {"itemClassCode": 268}),
     ]
 
-    for label, extra_params in cat_candidates:
+    for label, extra_params in post_candidates:
         try:
             payload = {
                 "pageRequest": {"page": 1, "size": LIMIT},
@@ -479,9 +499,14 @@ def _probe_29cm_category_endpoint() -> str:
                 "facets": {
                     "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
                     "rankingFacetInput": {"type": "POPULARITY"},
+                    **extra_params,
+                } if label.startswith("facet") else {
+                    "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
+                    "rankingFacetInput": {"type": "POPULARITY"},
                 },
-                **extra_params,
             }
+            if not label.startswith("facet"):
+                payload.update(extra_params)
             r = requests.post(url, json=payload, headers=headers, timeout=10)
             if not r.ok:
                 print(f"  [PROBE-29CM] {label}: HTTP {r.status_code}")
@@ -495,6 +520,29 @@ def _probe_29cm_category_endpoint() -> str:
                 print(f"  [PROBE-29CM] {label}: 응답OK BUT 전체와 동일 1위={first[:30]}")
             else:
                 print(f"  [PROBE-29CM] {label}: 응답OK 상품없음 keys={list(r.json().keys())[:5]}")
+        except Exception as e:
+            print(f"  [PROBE-29CM] {label}: 오류={e}")
+
+    # 다른 엔드포인트 시도 (GET)
+    get_candidates = [
+        ("GET-best-category", "https://display-bff-api.29cm.co.kr/api/v1/plp/best/category/items",
+         {"categoryId": 268, "size": 30}),
+        ("GET-category-best", "https://display-bff-api.29cm.co.kr/api/v1/plp/category/best",
+         {"categoryId": 268, "size": 30}),
+        ("GET-category-rank", "https://api.29cm.co.kr/api/v1/products/ranking",
+         {"categoryCode": "TOP", "size": 30}),
+    ]
+    for label, g_url, g_params in get_candidates:
+        try:
+            r = requests.get(g_url, params=g_params, headers=headers, timeout=8)
+            print(f"  [PROBE-29CM] {label}: HTTP {r.status_code} url={g_url}")
+            if r.ok:
+                items = r.json().get("data", {}).get("list", []) if isinstance(r.json(), dict) else []
+                first = items[0].get("itemInfo", {}).get("productName", "") if items else ""
+                if first and first != ref_name:
+                    print(f"  [PROBE-29CM] ✓ 카테고리 데이터! {label}: 1위={first[:30]}")
+                    # GET 방식 엔드포인트는 별도 표시
+                    return "GET|" + label + "|" + g_url + "|" + json.dumps(g_params)
         except Exception as e:
             print(f"  [PROBE-29CM] {label}: 오류={e}")
 
