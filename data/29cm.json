@@ -1,6 +1,6 @@
 {
   "platform": "29cm",
-  "updatedAt": "2026-06-27T15:55:45.903688+00:00",
+  "updatedAt": "2026-06-27T16:01:41.392235+00:00",
   "items": [
     {
       "rank": 1,
@@ -34,21 +34,6 @@
     },
     {
       "rank": 3,
-      "id": "cm-3377182",
-      "brand": "아디다스",
-      "name": "[29CM단독 재입고] SL 72 OG - 브라운 / JR7527",
-      "price": 103200,
-      "originalPrice": 129000,
-      "discountRate": 20.0,
-      "finalPrice": 103200,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202606/11f1717ad923647bb357cd0bc1ff68e7.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3377182",
-      "change": 2
-    },
-    {
-      "rank": 4,
       "id": "cm-3412405",
       "brand": "캘빈클라인 언더웨어",
       "name": "남성 마이크로 스트레치 3PK 로우 라이즈 트렁크 [NB4409UB1]",
@@ -60,10 +45,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202508/11f0734465e08a8688935fff247012b2.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3412405",
-      "change": "NEW"
+      "change": 1
     },
     {
-      "rank": 5,
+      "rank": 4,
       "id": "cm-3978649",
       "brand": "스크럽 대디",
       "name": "[한정판] 스크럽 대디 토이 스토리5 랜덤 박스 (수세미 1개 + 스크린 대디 1개 구성)",
@@ -75,7 +60,22 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f1540492f99b8c83a403bb77d79db8.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3978649",
-      "change": -2
+      "change": 1
+    },
+    {
+      "rank": 5,
+      "id": "cm-4051838",
+      "brand": "어나더오피스",
+      "name": "[SS] Santiago Slacks Standard Flexible (Graphite)",
+      "price": 151200,
+      "originalPrice": 168000,
+      "discountRate": 10.0,
+      "finalPrice": 151200,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ae1b663b73b9090f56e6e1deea9.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/4051838",
+      "change": 2
     },
     {
       "rank": 6,
@@ -90,25 +90,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202508/11f0775c580fc350964ad1c0dd7a285f.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3423059",
-      "change": -2
+      "change": 0
     },
     {
       "rank": 7,
-      "id": "cm-4051838",
-      "brand": "어나더오피스",
-      "name": "[SS] Santiago Slacks Standard Flexible (Graphite)",
-      "price": 151200,
-      "originalPrice": 168000,
-      "discountRate": 10.0,
-      "finalPrice": 151200,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ae1b663b73b9090f56e6e1deea9.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/4051838",
-      "change": -1
-    },
-    {
-      "rank": 8,
       "id": "cm-3049899",
       "brand": "컬럼비아",
       "name": "컬럼비아 페퍼 락 23L 백팩 블랙(010)",
@@ -120,7 +105,22 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202502/11efe818982141ed85218990218cce9f.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3049899",
-      "change": "NEW"
+      "change": 1
+    },
+    {
+      "rank": 8,
+      "id": "cm-3377281",
+      "brand": "카키스",
+      "name": "Border S/S Tee",
+      "price": 50400,
+      "originalPrice": 72000,
+      "discountRate": 30.0,
+      "finalPrice": 50400,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202507/11f0639ffb31a5fd890983fa713ee8c4.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3377281",
+      "change": 2
     },
     {
       "rank": 9,
@@ -135,40 +135,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202606/11f15fd89747ddd59f7f177f72e8ab20.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/4027546",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 10,
-      "id": "cm-3377281",
-      "brand": "카키스",
-      "name": "Border S/S Tee",
-      "price": 50400,
-      "originalPrice": 72000,
-      "discountRate": 30.0,
-      "finalPrice": 50400,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202507/11f0639ffb31a5fd890983fa713ee8c4.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3377281",
-      "change": -3
-    },
-    {
-      "rank": 11,
-      "id": "cm-3970601",
-      "brand": "브라운야드",
-      "name": "Waist Cut T Shirt, Grey",
-      "price": 58000,
-      "originalPrice": 58000,
-      "discountRate": 0.0,
-      "finalPrice": 58000,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202605/11f148f78660f95285eec1af34fc8b01.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3970601",
-      "change": "NEW"
-    },
-    {
-      "rank": 12,
       "id": "cm-3294455",
       "brand": "이코르",
       "name": "스트라이프 크로쉐 니트 셔츠_블루",
@@ -180,10 +150,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ad2b1abf8c3b3571dc2f8829e90.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3294455",
-      "change": "NEW"
+      "change": 2
     },
     {
-      "rank": 13,
+      "rank": 11,
       "id": "cm-4026759",
       "brand": "고낙",
       "name": "Washed Henley Half Sleeve Dusty Navy",
@@ -195,10 +165,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202606/11f15fee4b8d91039f7fd31fd227fde3.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/4026759",
-      "change": "NEW"
+      "change": 2
     },
     {
-      "rank": 14,
+      "rank": 12,
       "id": "cm-3830116",
       "brand": "오르디",
       "name": "NEW 아르베 에어터치 순면 60수 고정밴드 플로팅 양면 침대패드 SS/Q/K/LK 7컬러",
@@ -210,10 +180,25 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f11858ea92e51ea3c055b69c52baec.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3830116",
-      "change": -6
+      "change": 2
     },
     {
-      "rank": 15,
+      "rank": 13,
+      "id": "cm-3598433",
+      "brand": "테켓",
+      "name": "Folder Tee Charcoal",
+      "price": 55000,
+      "originalPrice": 55000,
+      "discountRate": 0.0,
+      "finalPrice": 55000,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202602/11f10005930d1390a3c0dbcaa0d31c81.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3598433",
+      "change": "NEW"
+    },
+    {
+      "rank": 14,
       "id": "cm-3240133",
       "brand": "수아레",
       "name": "[XXL 추가]쿨 코튼 워셔블 카라 하프 니트 - 6 COLOR",
@@ -225,25 +210,25 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202504/11f02412f2381c42b1318d4655f0007f.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3240133",
-      "change": -5
+      "change": 1
+    },
+    {
+      "rank": 15,
+      "id": "cm-3598435",
+      "brand": "테켓",
+      "name": "Folder Tee White",
+      "price": 52250,
+      "originalPrice": 55000,
+      "discountRate": 5.0,
+      "finalPrice": 52250,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202602/11f1000585ee75f2a540477629e9309a.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3598435",
+      "change": "NEW"
     },
     {
       "rank": 16,
-      "id": "cm-1501688",
-      "brand": "쿠어",
-      "name": "[2PACK] 수피마 코튼 티셔츠",
-      "price": 44900,
-      "originalPrice": 82000,
-      "discountRate": 45.0,
-      "finalPrice": 44900,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202603/11f11c3ad18b8ab8a540f9c1365ea0e2.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/1501688",
-      "change": 0
-    },
-    {
-      "rank": 17,
       "id": "cm-3997794",
       "brand": "보나츠",
       "name": "티니 뽀니 쁘띠 스윔웨어",
@@ -255,25 +240,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557323635bfba709bb080362cfa3.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3997794",
-      "change": -6
+      "change": 1
     },
     {
-      "rank": 18,
-      "id": "cm-4051857",
-      "brand": "므므브",
-      "name": "레트로 스트라이프 반팔 TS 3color",
-      "price": 25000,
-      "originalPrice": 25000,
-      "discountRate": 0.0,
-      "finalPrice": 25000,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202606/11f16abe699970b39090adba67707d12.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/4051857",
-      "change": -6
-    },
-    {
-      "rank": 19,
+      "rank": 17,
       "id": "cm-313317",
       "brand": "마틸라",
       "name": "스테이 먼지없는 홑/누빔매트리스커버(SS/Q/K) 9종",
@@ -285,10 +255,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202507/11f062218b150a198909672abcf5131b.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/313317",
-      "change": -6
+      "change": 2
     },
     {
-      "rank": 20,
+      "rank": 18,
       "id": "cm-3997795",
       "brand": "보나츠",
       "name": "티니 뽀니 스윔 플랩캡",
@@ -300,10 +270,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557343e70774bdf5eb120dcb19ea.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3997795",
-      "change": -6
+      "change": 2
     },
     {
-      "rank": 21,
+      "rank": 19,
       "id": "cm-3909202",
       "brand": "챔피온",
       "name": "베이직 그래픽 와플 티셔츠 Olive",
@@ -315,25 +285,25 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/09/244610a6839446fa9223578d05967444_20260409083107.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3909202",
+      "change": 2
+    },
+    {
+      "rank": 20,
+      "id": "cm-3258899",
+      "brand": "제이엘브",
+      "name": "무지 머슬핏 숏슬리브",
+      "price": 21600,
+      "originalPrice": 56000,
+      "discountRate": 61.0,
+      "finalPrice": 21600,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202604/11f1429ece17d3adbc92ada2c5fe42e3.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3258899",
       "change": "NEW"
     },
     {
-      "rank": 22,
-      "id": "cm-3917049",
-      "brand": "호아따따",
-      "name": "민트브라키오셋업",
-      "price": 34000,
-      "originalPrice": 34000,
-      "discountRate": 0.0,
-      "finalPrice": 34000,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202604/11f133f08b6c3d1e9ec5f324a7002b27.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3917049",
-      "change": -7
-    },
-    {
-      "rank": 23,
+      "rank": 21,
       "id": "cm-2135947",
       "brand": "아워피에르",
       "name": "LOVE SKINNY BEADS NECKLACE BLACK (M)",
@@ -345,10 +315,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202307/11ee1cdf5ffaa2fdaa4fc33ca373ad14.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/2135947",
-      "change": -6
+      "change": 2
     },
     {
-      "rank": 24,
+      "rank": 22,
       "id": "cm-3916916",
       "brand": "해피프린스",
       "name": "샤인 반팔 티셔츠",
@@ -360,10 +330,25 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/15/973f9f8d8c1c4f9baedd7cf80b457fe9_20260415140154.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3916916",
-      "change": -6
+      "change": 2
     },
     {
-      "rank": 25,
+      "rank": 23,
+      "id": "cm-3831286",
+      "brand": "크록스",
+      "name": "에코 클로그 - 본/블랙 / 207937-2YJ",
+      "price": 57970,
+      "originalPrice": 94900,
+      "discountRate": 39.0,
+      "finalPrice": 57970,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202603/11f11b4aa8884a02a3c0274fc03e8a04.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3831286",
+      "change": "NEW"
+    },
+    {
+      "rank": 24,
       "id": "cm-2280080",
       "brand": "일룸",
       "name": "업모션 테이블 1600폭 타원형 (강화 사틴유리)",
@@ -375,25 +360,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202310/11ee683342f7c9f98a7f171de03c1b30.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/2280080",
-      "change": -6
+      "change": 1
     },
     {
-      "rank": 26,
-      "id": "cm-4017651",
-      "brand": "언어펙티드",
-      "name": "UNAFFECTED X OOFOS CLOG / BLACK",
-      "price": 149000,
-      "originalPrice": 149000,
-      "discountRate": 0.0,
-      "finalPrice": 149000,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202606/11f16b8450869bfbb357090f48c64d3f.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/4017651",
-      "change": -6
-    },
-    {
-      "rank": 27,
+      "rank": 25,
       "id": "cm-3917300",
       "brand": "해피프린스",
       "name": "베르 원피스",
@@ -405,10 +375,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/20/2f104cb5a80a4afd9444dc1caff2bf69_20260420112932.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3917300",
-      "change": -6
+      "change": 2
     },
     {
-      "rank": 28,
+      "rank": 26,
       "id": "cm-3904773",
       "brand": "해피프린스",
       "name": "마인 니트 가디건",
@@ -420,25 +390,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/03/b0dad110813f44feb1d9e414ae4758e0_20260403152319.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3904773",
-      "change": -6
+      "change": 2
     },
     {
-      "rank": 29,
-      "id": "cm-3711195",
-      "brand": "르꼬끄스포르티브",
-      "name": "드래곤 비트 V3 - 화이트 QR123LCR15",
-      "price": 122550,
-      "originalPrice": 129000,
-      "discountRate": 5.0,
-      "finalPrice": 122550,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/next-product/2026/03/06/05d3abe3f0f84a6c938ae741464ddc9b_20260306153841.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3711195",
-      "change": -6
-    },
-    {
-      "rank": 30,
+      "rank": 27,
       "id": "cm-3820929",
       "brand": "108파운드",
       "name": "Slim Shoulder Bag_Black",
@@ -450,7 +405,52 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f129335eb09e3bb493178084beda31.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3820929",
-      "change": -6
+      "change": 3
+    },
+    {
+      "rank": 28,
+      "id": "cm-2152377",
+      "brand": "버켄스탁",
+      "name": "보스턴 SFB 타우페 네로우 (560773)",
+      "price": 239000,
+      "originalPrice": 239000,
+      "discountRate": 0.0,
+      "finalPrice": 239000,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202307/11ee2d3fc0a3e4a7bdfacf9d279bd7b6.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/2152377",
+      "change": "NEW"
+    },
+    {
+      "rank": 29,
+      "id": "cm-3953729",
+      "brand": "래쉬",
+      "name": "[29CM단독] [RAY CODE] DAKOTA (S) 오벌 선글라스 / 편광 렌즈 2colors",
+      "price": 81900,
+      "originalPrice": 123000,
+      "discountRate": 33.0,
+      "finalPrice": 81900,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202604/11f13fb63a21b04fbc92d7357a78ab39.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3953729",
+      "change": "NEW"
+    },
+    {
+      "rank": 30,
+      "id": "cm-3943404",
+      "brand": "아웃스탠딩",
+      "name": "JAPANESE TENJIKU JERSEY TUBULAR TEE_ASH BLACK",
+      "price": 48600,
+      "originalPrice": 54000,
+      "discountRate": 10.0,
+      "finalPrice": 48600,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202604/11f14379ba6b645285ee2bb5a6c995b3.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3943404",
+      "change": "NEW"
     }
   ],
   "categories": {
@@ -487,21 +487,6 @@
       },
       {
         "rank": 3,
-        "id": "cm-3377182",
-        "brand": "아디다스",
-        "name": "[29CM단독 재입고] SL 72 OG - 브라운 / JR7527",
-        "price": 103200,
-        "originalPrice": 129000,
-        "discountRate": 20.0,
-        "finalPrice": 103200,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202606/11f1717ad923647bb357cd0bc1ff68e7.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3377182",
-        "change": 2
-      },
-      {
-        "rank": 4,
         "id": "cm-3412405",
         "brand": "캘빈클라인 언더웨어",
         "name": "남성 마이크로 스트레치 3PK 로우 라이즈 트렁크 [NB4409UB1]",
@@ -513,10 +498,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202508/11f0734465e08a8688935fff247012b2.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3412405",
-        "change": "NEW"
+        "change": 1
       },
       {
-        "rank": 5,
+        "rank": 4,
         "id": "cm-3978649",
         "brand": "스크럽 대디",
         "name": "[한정판] 스크럽 대디 토이 스토리5 랜덤 박스 (수세미 1개 + 스크린 대디 1개 구성)",
@@ -528,7 +513,22 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f1540492f99b8c83a403bb77d79db8.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3978649",
-        "change": -2
+        "change": 1
+      },
+      {
+        "rank": 5,
+        "id": "cm-4051838",
+        "brand": "어나더오피스",
+        "name": "[SS] Santiago Slacks Standard Flexible (Graphite)",
+        "price": 151200,
+        "originalPrice": 168000,
+        "discountRate": 10.0,
+        "finalPrice": 151200,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ae1b663b73b9090f56e6e1deea9.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/4051838",
+        "change": 2
       },
       {
         "rank": 6,
@@ -543,25 +543,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202508/11f0775c580fc350964ad1c0dd7a285f.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3423059",
-        "change": -2
+        "change": 0
       },
       {
         "rank": 7,
-        "id": "cm-4051838",
-        "brand": "어나더오피스",
-        "name": "[SS] Santiago Slacks Standard Flexible (Graphite)",
-        "price": 151200,
-        "originalPrice": 168000,
-        "discountRate": 10.0,
-        "finalPrice": 151200,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ae1b663b73b9090f56e6e1deea9.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/4051838",
-        "change": -1
-      },
-      {
-        "rank": 8,
         "id": "cm-3049899",
         "brand": "컬럼비아",
         "name": "컬럼비아 페퍼 락 23L 백팩 블랙(010)",
@@ -573,7 +558,22 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202502/11efe818982141ed85218990218cce9f.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3049899",
-        "change": "NEW"
+        "change": 1
+      },
+      {
+        "rank": 8,
+        "id": "cm-3377281",
+        "brand": "카키스",
+        "name": "Border S/S Tee",
+        "price": 50400,
+        "originalPrice": 72000,
+        "discountRate": 30.0,
+        "finalPrice": 50400,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202507/11f0639ffb31a5fd890983fa713ee8c4.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3377281",
+        "change": 2
       },
       {
         "rank": 9,
@@ -588,40 +588,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202606/11f15fd89747ddd59f7f177f72e8ab20.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/4027546",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 10,
-        "id": "cm-3377281",
-        "brand": "카키스",
-        "name": "Border S/S Tee",
-        "price": 50400,
-        "originalPrice": 72000,
-        "discountRate": 30.0,
-        "finalPrice": 50400,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202507/11f0639ffb31a5fd890983fa713ee8c4.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3377281",
-        "change": -3
-      },
-      {
-        "rank": 11,
-        "id": "cm-3970601",
-        "brand": "브라운야드",
-        "name": "Waist Cut T Shirt, Grey",
-        "price": 58000,
-        "originalPrice": 58000,
-        "discountRate": 0.0,
-        "finalPrice": 58000,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202605/11f148f78660f95285eec1af34fc8b01.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3970601",
-        "change": "NEW"
-      },
-      {
-        "rank": 12,
         "id": "cm-3294455",
         "brand": "이코르",
         "name": "스트라이프 크로쉐 니트 셔츠_블루",
@@ -633,10 +603,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ad2b1abf8c3b3571dc2f8829e90.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3294455",
-        "change": "NEW"
+        "change": 2
       },
       {
-        "rank": 13,
+        "rank": 11,
         "id": "cm-4026759",
         "brand": "고낙",
         "name": "Washed Henley Half Sleeve Dusty Navy",
@@ -648,10 +618,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202606/11f15fee4b8d91039f7fd31fd227fde3.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/4026759",
-        "change": "NEW"
+        "change": 2
       },
       {
-        "rank": 14,
+        "rank": 12,
         "id": "cm-3830116",
         "brand": "오르디",
         "name": "NEW 아르베 에어터치 순면 60수 고정밴드 플로팅 양면 침대패드 SS/Q/K/LK 7컬러",
@@ -663,10 +633,25 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f11858ea92e51ea3c055b69c52baec.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3830116",
-        "change": -6
+        "change": 2
       },
       {
-        "rank": 15,
+        "rank": 13,
+        "id": "cm-3598433",
+        "brand": "테켓",
+        "name": "Folder Tee Charcoal",
+        "price": 55000,
+        "originalPrice": 55000,
+        "discountRate": 0.0,
+        "finalPrice": 55000,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202602/11f10005930d1390a3c0dbcaa0d31c81.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3598433",
+        "change": "NEW"
+      },
+      {
+        "rank": 14,
         "id": "cm-3240133",
         "brand": "수아레",
         "name": "[XXL 추가]쿨 코튼 워셔블 카라 하프 니트 - 6 COLOR",
@@ -678,25 +663,25 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202504/11f02412f2381c42b1318d4655f0007f.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3240133",
-        "change": -5
+        "change": 1
+      },
+      {
+        "rank": 15,
+        "id": "cm-3598435",
+        "brand": "테켓",
+        "name": "Folder Tee White",
+        "price": 52250,
+        "originalPrice": 55000,
+        "discountRate": 5.0,
+        "finalPrice": 52250,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202602/11f1000585ee75f2a540477629e9309a.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3598435",
+        "change": "NEW"
       },
       {
         "rank": 16,
-        "id": "cm-1501688",
-        "brand": "쿠어",
-        "name": "[2PACK] 수피마 코튼 티셔츠",
-        "price": 44900,
-        "originalPrice": 82000,
-        "discountRate": 45.0,
-        "finalPrice": 44900,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202603/11f11c3ad18b8ab8a540f9c1365ea0e2.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/1501688",
-        "change": 0
-      },
-      {
-        "rank": 17,
         "id": "cm-3997794",
         "brand": "보나츠",
         "name": "티니 뽀니 쁘띠 스윔웨어",
@@ -708,25 +693,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557323635bfba709bb080362cfa3.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3997794",
-        "change": -6
+        "change": 1
       },
       {
-        "rank": 18,
-        "id": "cm-4051857",
-        "brand": "므므브",
-        "name": "레트로 스트라이프 반팔 TS 3color",
-        "price": 25000,
-        "originalPrice": 25000,
-        "discountRate": 0.0,
-        "finalPrice": 25000,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202606/11f16abe699970b39090adba67707d12.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/4051857",
-        "change": -6
-      },
-      {
-        "rank": 19,
+        "rank": 17,
         "id": "cm-313317",
         "brand": "마틸라",
         "name": "스테이 먼지없는 홑/누빔매트리스커버(SS/Q/K) 9종",
@@ -738,10 +708,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202507/11f062218b150a198909672abcf5131b.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/313317",
-        "change": -6
+        "change": 2
       },
       {
-        "rank": 20,
+        "rank": 18,
         "id": "cm-3997795",
         "brand": "보나츠",
         "name": "티니 뽀니 스윔 플랩캡",
@@ -753,10 +723,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557343e70774bdf5eb120dcb19ea.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3997795",
-        "change": -6
+        "change": 2
       },
       {
-        "rank": 21,
+        "rank": 19,
         "id": "cm-3909202",
         "brand": "챔피온",
         "name": "베이직 그래픽 와플 티셔츠 Olive",
@@ -768,25 +738,25 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/09/244610a6839446fa9223578d05967444_20260409083107.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3909202",
+        "change": 2
+      },
+      {
+        "rank": 20,
+        "id": "cm-3258899",
+        "brand": "제이엘브",
+        "name": "무지 머슬핏 숏슬리브",
+        "price": 21600,
+        "originalPrice": 56000,
+        "discountRate": 61.0,
+        "finalPrice": 21600,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202604/11f1429ece17d3adbc92ada2c5fe42e3.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3258899",
         "change": "NEW"
       },
       {
-        "rank": 22,
-        "id": "cm-3917049",
-        "brand": "호아따따",
-        "name": "민트브라키오셋업",
-        "price": 34000,
-        "originalPrice": 34000,
-        "discountRate": 0.0,
-        "finalPrice": 34000,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202604/11f133f08b6c3d1e9ec5f324a7002b27.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3917049",
-        "change": -7
-      },
-      {
-        "rank": 23,
+        "rank": 21,
         "id": "cm-2135947",
         "brand": "아워피에르",
         "name": "LOVE SKINNY BEADS NECKLACE BLACK (M)",
@@ -798,10 +768,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202307/11ee1cdf5ffaa2fdaa4fc33ca373ad14.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/2135947",
-        "change": -6
+        "change": 2
       },
       {
-        "rank": 24,
+        "rank": 22,
         "id": "cm-3916916",
         "brand": "해피프린스",
         "name": "샤인 반팔 티셔츠",
@@ -813,10 +783,25 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/15/973f9f8d8c1c4f9baedd7cf80b457fe9_20260415140154.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3916916",
-        "change": -6
+        "change": 2
       },
       {
-        "rank": 25,
+        "rank": 23,
+        "id": "cm-3831286",
+        "brand": "크록스",
+        "name": "에코 클로그 - 본/블랙 / 207937-2YJ",
+        "price": 57970,
+        "originalPrice": 94900,
+        "discountRate": 39.0,
+        "finalPrice": 57970,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202603/11f11b4aa8884a02a3c0274fc03e8a04.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3831286",
+        "change": "NEW"
+      },
+      {
+        "rank": 24,
         "id": "cm-2280080",
         "brand": "일룸",
         "name": "업모션 테이블 1600폭 타원형 (강화 사틴유리)",
@@ -828,25 +813,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202310/11ee683342f7c9f98a7f171de03c1b30.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/2280080",
-        "change": -6
+        "change": 1
       },
       {
-        "rank": 26,
-        "id": "cm-4017651",
-        "brand": "언어펙티드",
-        "name": "UNAFFECTED X OOFOS CLOG / BLACK",
-        "price": 149000,
-        "originalPrice": 149000,
-        "discountRate": 0.0,
-        "finalPrice": 149000,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202606/11f16b8450869bfbb357090f48c64d3f.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/4017651",
-        "change": -6
-      },
-      {
-        "rank": 27,
+        "rank": 25,
         "id": "cm-3917300",
         "brand": "해피프린스",
         "name": "베르 원피스",
@@ -858,10 +828,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/20/2f104cb5a80a4afd9444dc1caff2bf69_20260420112932.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3917300",
-        "change": -6
+        "change": 2
       },
       {
-        "rank": 28,
+        "rank": 26,
         "id": "cm-3904773",
         "brand": "해피프린스",
         "name": "마인 니트 가디건",
@@ -873,25 +843,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/03/b0dad110813f44feb1d9e414ae4758e0_20260403152319.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3904773",
-        "change": -6
+        "change": 2
       },
       {
-        "rank": 29,
-        "id": "cm-3711195",
-        "brand": "르꼬끄스포르티브",
-        "name": "드래곤 비트 V3 - 화이트 QR123LCR15",
-        "price": 122550,
-        "originalPrice": 129000,
-        "discountRate": 5.0,
-        "finalPrice": 122550,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/next-product/2026/03/06/05d3abe3f0f84a6c938ae741464ddc9b_20260306153841.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3711195",
-        "change": -6
-      },
-      {
-        "rank": 30,
+        "rank": 27,
         "id": "cm-3820929",
         "brand": "108파운드",
         "name": "Slim Shoulder Bag_Black",
@@ -903,7 +858,52 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f129335eb09e3bb493178084beda31.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3820929",
-        "change": -6
+        "change": 3
+      },
+      {
+        "rank": 28,
+        "id": "cm-2152377",
+        "brand": "버켄스탁",
+        "name": "보스턴 SFB 타우페 네로우 (560773)",
+        "price": 239000,
+        "originalPrice": 239000,
+        "discountRate": 0.0,
+        "finalPrice": 239000,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202307/11ee2d3fc0a3e4a7bdfacf9d279bd7b6.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/2152377",
+        "change": "NEW"
+      },
+      {
+        "rank": 29,
+        "id": "cm-3953729",
+        "brand": "래쉬",
+        "name": "[29CM단독] [RAY CODE] DAKOTA (S) 오벌 선글라스 / 편광 렌즈 2colors",
+        "price": 81900,
+        "originalPrice": 123000,
+        "discountRate": 33.0,
+        "finalPrice": 81900,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202604/11f13fb63a21b04fbc92d7357a78ab39.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3953729",
+        "change": "NEW"
+      },
+      {
+        "rank": 30,
+        "id": "cm-3943404",
+        "brand": "아웃스탠딩",
+        "name": "JAPANESE TENJIKU JERSEY TUBULAR TEE_ASH BLACK",
+        "price": 48600,
+        "originalPrice": 54000,
+        "discountRate": 10.0,
+        "finalPrice": 48600,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202604/11f14379ba6b645285ee2bb5a6c995b3.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3943404",
+        "change": "NEW"
       }
     ],
     "tops": [],
