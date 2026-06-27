@@ -137,6 +137,23 @@ def _probe_musinsa_category_endpoint() -> str:
         pass
     print(f"  [PROBE] 전체 기준 1위: {ref_name[:30]}")
 
+    # sec200 + categoryCode=001 modules 구조 상세 디버그
+    try:
+        r2 = requests.get(
+            "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+            params={"storeCode":"musinsa","sectionId":"200","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"},
+            headers=headers_json, timeout=10,
+        )
+        mods2 = r2.json().get("data",{}).get("modules",[])
+        print(f"  [PROBE-DEBUG] sec200+cat001: modules={len(mods2)}개")
+        for i, m in enumerate(mods2[:5]):
+            items2 = m.get("items", [])
+            print(f"  [PROBE-DEBUG]   mod[{i}] type={m.get('type')} items={len(items2)}")
+            if items2:
+                print(f"  [PROBE-DEBUG]     item[0] type={items2[0].get('type')} keys={list(items2[0].keys())[:8]}")
+    except Exception as e:
+        print(f"  [PROBE-DEBUG] sec200+cat001 오류: {e}")
+
     candidates = [
         # sectionId 변형
         ("sec200-cat001-ageM",
@@ -185,6 +202,23 @@ def _probe_musinsa_category_endpoint() -> str:
         ("client-goods-list",
          "https://client.musinsa.com/api/goods/v2/list",
          {"storeCode":"musinsa","categoryCode":"001","sort":"POPULAR","size":30}),
+        # 새 랭킹 URL 후보
+        ("ranking-no-best",
+         "https://www.musinsa.com/ranking",
+         {"categoryCode":"001","period":"now","gf":"A"}),
+        ("store-ranking",
+         "https://www.musinsa.com/store/ranking",
+         {"categoryCode":"001","period":"now","gf":"A"}),
+        ("best-items",
+         "https://www.musinsa.com/best",
+         {"categoryCode":"001","gf":"A"}),
+        # client API 새 경로
+        ("client-ranking-best",
+         "https://client.musinsa.com/api/ranking/v2/best",
+         {"storeCode":"musinsa","categoryCode":"001","size":30,"gf":"A"}),
+        ("client-pans-v6",
+         "https://client.musinsa.com/api/home/web/v6/pans/ranking",
+         {"storeCode":"musinsa","sectionId":"200","categoryCode":"001","gf":"A"}),
     ]
 
     for label, url, params in candidates:
