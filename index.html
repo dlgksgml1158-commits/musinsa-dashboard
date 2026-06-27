@@ -1033,17 +1033,19 @@ function buildRowHtml(item, rank) {
   const isNew = item.change === 'NEW';
   const url = getProductUrl(item);
 
-  return `<tr onclick="window.open('${url}','_blank','noopener,noreferrer')" style="cursor:pointer">
+  return `<tr>
     <td><div class="rank-num ${rankClass}">${rank}</div></td>
     <td>
       <div class="product-info">
         <div class="product-thumb">${EMOJI_BY_CAT[item.category] || '👔'}</div>
         <div>
-          <div class="product-name">
-            ${item.name}
-            ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
-            ${isNew ? '<span class="new-badge">NEW</span>' : ''}
-          </div>
+          <a href="${url}" target="_blank" rel="noopener noreferrer" class="product-link">
+            <div class="product-name">
+              ${item.name}
+              ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
+              ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+            </div>
+          </a>
           <div class="product-brand">${item.brand}</div>
         </div>
       </div>
