@@ -985,21 +985,15 @@ function selectCategory(code, label) {
    PRODUCT URL HELPER
 =========================== */
 function getProductUrl(item) {
-  // productUrl 필드 우선 사용
-  if (item.productUrl) return item.productUrl;
-
-  const numId = (item.id || '').replace(/^[^-]+-/, '');
-  const isRealId = numId && !isNaN(numId) && parseInt(numId) > 100;
-
-  if (state.platform === 'musinsa') {
-    return isRealId
-      ? `https://www.musinsa.com/goods/${numId}`
-      : `https://www.musinsa.com/search/goods?keyword=${encodeURIComponent(item.brand + ' ' + item.name)}`;
-  } else {
-    // 29CM: product.29cm.co.kr/catalog/{id} 형식
-    if (isRealId) return `https://product.29cm.co.kr/catalog/${numId}`;
+  if (state.platform === '29cm') {
+    // 29CM: productUrl 우선, 없으면 catalog URL
+    if (item.productUrl) return item.productUrl;
+    const numId = (item.id || '').replace(/^[^-]+-/, '');
+    if (numId && !isNaN(numId)) return `https://product.29cm.co.kr/catalog/${numId}`;
     return `https://www.29cm.co.kr/search?query=${encodeURIComponent(item.brand + ' ' + item.name)}`;
   }
+  // 무신사: 상품명 기반 검색 URL (goods/{id} 형식은 현재 무신사에서 미지원)
+  return `https://www.musinsa.com/search/goods?keyword=${encodeURIComponent(item.name)}`;
 }
 
 /* ===========================
