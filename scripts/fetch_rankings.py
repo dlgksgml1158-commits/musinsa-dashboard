@@ -353,19 +353,24 @@ def _fetch_via_html(cat_code: str, cat_label: str) -> list:
 #  무신사 — 방법 3: 구 홈 위젯 API (전체 폴백용)
 # ═══════════════════════════════════════════════════
 
-def _fetch_via_home_widget(cat_label: str) -> list:
-    """전체 랭킹용 기존 홈 위젯 API (카테고리 필터 미지원)"""
-    url = (
-        "https://client.musinsa.com/api/home/web/v5/pans/ranking"
-        "?storeCode=musinsa&sectionId=200&gf=M&categoryCode=000&ageBand=AGE_BAND_25"
-    )
+def _fetch_via_home_widget(cat_code: str, cat_label: str) -> list:
+    """홈 위젯 API — sectionId=200, categoryCode 지원 (카테고리별 필터링)"""
+    api_cat = cat_code if cat_code else "000"
+    url = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
+    params = {
+        "storeCode": "musinsa",
+        "sectionId": "200",
+        "gf": "M",
+        "categoryCode": api_cat,
+        "ageBand": "AGE_BAND_25",
+    }
     headers = {
         "User-Agent": BROWSER_UA,
         "Referer": "https://www.musinsa.com/",
         "Accept": "application/json, text/plain, */*",
         "Origin": "https://www.musinsa.com",
     }
-    resp = requests.get(url, headers=headers, timeout=20)
+    resp = requests.get(url, params=params, headers=headers, timeout=20)
     resp.raise_for_status()
     data = resp.json()
 
@@ -396,8 +401,8 @@ def _fetch_via_home_widget(cat_label: str) -> list:
             "originalPrice": original_price,
             "discountRate": discount,
             "finalPrice": final_price,
-            "category": "",
-            "categoryLabel": "전체",
+            "category": cat_code,
+            "categoryLabel": cat_label,
             "imgUrl": item.get("image", {}).get("url", ""),
             "productUrl": (
                 item.get("link", {}).get("url", "")
@@ -435,15 +440,15 @@ def fetch_musinsa_category(cat_code: str, cat_label: str) -> list:
     except Exception as e:
         print(f"    [WARN] HTML 실패: {e}")
 
-    # 방법 3: 전체 카테고리에만 홈 위젯 API 사용
-    if not cat_code:
-        try:
-            result = _fetch_via_home_widget(cat_label)
-            if result:
-                print(f"    ✓ [홈위젯] {len(result)}개")
-                return result
-        except Exception as e:
-            print(f"    [WARN] 홈위젯 실패: {e}")
+    # 방법 3: 홈 위젯 API — 전체 및 카테고리 모두 지원
+    try:
+        result = _fetch_via_home_widget(cat_code, cat_label)
+        if result:
+            print(f"    ✓ [홈위젯] {len(result)}개")
+            return result
+        print(f"    [WARN] 홈위젯 빈 응답")
+    except Exception as e:
+        print(f"    [WARN] 홈위젯 실패: {e}")
 
     print(f"    [ERROR] 모든 방법 실패")
     return []
