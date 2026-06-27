@@ -199,8 +199,38 @@ def _fetch_all_musinsa_via_homepage() -> dict:
     results = {}
 
     try:
-        page.goto("https://www.musinsa.com/", wait_until="networkidle", timeout=30000)
-        page.wait_for_timeout(2000)
+        # 무신사는 www.musinsa.com 접속 시 글로벌 국가 선택 페이지로 리디렉션됨
+        # 한국 사이트로 직접 진입: store.musinsa.com 또는 국가 선택 후 이동
+        korean_home_candidates = [
+            "https://store.musinsa.com/",
+            "https://www.musinsa.com/store",
+            "https://www.musinsa.com/?country=kr",
+        ]
+
+        landed_korean = False
+        for home_url in korean_home_candidates:
+            page.goto(home_url, wait_until="domcontentloaded", timeout=20000)
+            page.wait_for_timeout(2000)
+            current_url = page.url
+            print(f"    [HOME] 접속 시도: {home_url} → {current_url[:60]}")
+            # 한국 페이지 여부 확인 (URL에 'store' 포함 또는 API 응답 캡처)
+            if last_captured or "store" in current_url or "kr" in current_url.lower():
+                landed_korean = True
+                break
+
+        # 국가 선택 페이지에 있다면 Korea 버튼 클릭
+        if not landed_korean:
+            try:
+                korea_btn = page.locator('a:has-text("Korea"), button:has-text("Korea"), a:has-text("한국")').first
+                if korea_btn.is_visible(timeout=3000):
+                    korea_btn.click()
+                    page.wait_for_timeout(2000)
+                    print(f"    [HOME] Korea 버튼 클릭 → {page.url[:60]}")
+            except Exception:
+                pass
+
+        # 추가 대기 후 랭킹 API 응답 확인
+        page.wait_for_timeout(3000)
 
         # 전체 (페이지 초기 로드 데이터)
         all_items = list(last_captured)
@@ -208,9 +238,9 @@ def _fetch_all_musinsa_via_homepage() -> dict:
             results[""] = all_items
             print(f"    [HOME] 전체: {len(all_items)}개 (초기 로드)")
         else:
-            print("    [HOME] 전체 초기 로드 실패")
+            print(f"    [HOME] 전체 초기 로드 실패 (현재URL={page.url[:60]})")
 
-        # 랭킹 섹션 내 카테고리 탭 목록 로그 (디버그)
+        # 현재 페이지 탭/버튼 목록 로그 (디버그)
         try:
             tabs_text = page.evaluate("""
                 () => {
@@ -222,7 +252,7 @@ def _fetch_all_musinsa_via_homepage() -> dict:
                         .slice(0, 50);
                 }
             """)
-            print(f"    [HOME] 페이지 탭/버튼 목록: {tabs_text[:20]}")
+            print(f"    [HOME] 페이지 탭/버튼 목록: {tabs_text[:30]}")
         except Exception:
             pass
 
