@@ -2,8 +2,9 @@
 무신사 & 29CM 랭킹 데이터 수집 스크립트
 GitHub Actions에서 1시간마다 자동 실행됩니다.
 
-- 무신사: api.musinsa.com/api2/json/rank/goods (카테고리별 전용 랭킹 API)
-          실패 시 ranking 페이지 __NEXT_DATA__ HTML 파싱으로 폴백
+- 무신사: api.musinsa.com/api2/json/rank/goods (카테고리별 전용 랭킹 API 1순위)
+          client.musinsa.com home widget (전체 폴백)
+          Playwright 홈페이지 탭 클릭 (최후 수단)
 - 29CM  : display-bff-api.29cm.co.kr (전체 30위)
 - 이전 데이터와 비교하여 순위 변동 계산
 - data/musinsa.json, data/29cm.json 으로 저장
@@ -43,42 +44,13 @@ MUSINSA_CATEGORIES = [
     {"code": "026", "label": "화장품/향수"},
 ]
 
-_MUSINSA_CAT_ENDPOINT = ""
-_MUSINSA_SECTION_IDS: dict = {}  # sectionId -> first product name (probe 결과)
-
-# 무신사 카테고리 코드 → sectionId 매핑 후보 (probe 결과에 따라 결정됨)
-# 현재는 unknown이므로 probe 후 자동 매핑 시도
-MUSINSA_CAT_TO_SECTION: dict = {}  # code -> sectionId (str)
-
 
 # ═══════════════════════════════════════════════════
 #  공통 유틸
 # ═══════════════════════════════════════════════════
 
-PRODUCT_KEYS = {"goodsNo", "goodsId", "goodsName", "brandName", "salePrice", "normalPrice"}
-
-def _search_product_list(data, depth=0) -> list:
-    """JSON 트리에서 상품 배열 재귀 탐색"""
-    if depth > 12:
-        return []
-    if isinstance(data, list) and len(data) >= 3:
-        if data and isinstance(data[0], dict) and (set(data[0].keys()) & PRODUCT_KEYS):
-            return data
-    if isinstance(data, dict):
-        for v in data.values():
-            r = _search_product_list(v, depth + 1)
-            if r:
-                return r
-    elif isinstance(data, list):
-        for item in data:
-            r = _search_product_list(item, depth + 1)
-            if r:
-                return r
-    return []
-
-
 def _build_item(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
-    """무신사 상품 raw dict → 표준 포맷 변환 (다양한 키 이름 대응)"""
+    """무신사 상품 raw dict → 표준 포맷 변환"""
     good_no = str(
         raw.get("goodsNo") or raw.get("goodsId") or raw.get("id") or ""
     )
@@ -107,7 +79,86 @@ def _build_item(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
 
 
 # ═══════════════════════════════════════════════════
-#  무신사 — 방법 1: 랭킹 전용 API
+#  무신사 — 방법 1: 카테고리별 랭킹 전용 API
+# ═══════════════════════════════════════════════════
+
+_MUSINSA_API_WORKING = None  # None=미확인, True=동작, False=불가
+
+def _fetch_musinsa_category_api(cat_code: str) -> list:
+    """
+    api.musinsa.com/api2/json/rank/goods 로 카테고리별 랭킹 수집.
+    cat_code="" → 전체, "001" → 상의 등
+    """
+    url = "https://api.musinsa.com/api2/json/rank/goods"
+    params: dict = {"page": 1, "size": LIMIT, "storeCode": "musinsa"}
+    if cat_code:
+        params["contentsCode"] = cat_code
+
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/ranking/best",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+        "Origin": "https://www.musinsa.com",
+    }
+    try:
+        resp = requests.get(url, params=params, headers=headers, timeout=15)
+        if resp.status_code != 200:
+            return []
+        data = resp.json()
+        # 응답 형식 탐색: data.list 또는 data.goods 또는 list 최상위
+        candidates = [
+            data.get("data", {}).get("list", []),
+            data.get("data", {}).get("goods", []),
+            data.get("list", []),
+            data.get("goods", []),
+        ]
+        for candidate in candidates:
+            if candidate and isinstance(candidate, list) and isinstance(candidate[0], dict):
+                return candidate
+        return []
+    except Exception:
+        return []
+
+
+def _probe_musinsa_api() -> bool:
+    """api.musinsa.com 엔드포인트가 동작하는지 확인하고 전체와 상의 결과가 다른지 검증"""
+    global _MUSINSA_API_WORKING
+    if _MUSINSA_API_WORKING is not None:
+        return _MUSINSA_API_WORKING
+
+    all_items = _fetch_musinsa_category_api("")
+    top_items = _fetch_musinsa_category_api("001")
+
+    if not all_items or not top_items:
+        print(f"  [API-MS] 카테고리 API 응답 없음 (전체:{len(all_items)}, 상의:{len(top_items)})")
+        _MUSINSA_API_WORKING = False
+        return False
+
+    # 1위 상품명 비교
+    def _first_name(items):
+        r = items[0]
+        return r.get("goodsName") or r.get("productName") or r.get("name") or ""
+
+    all_first = _first_name(all_items)
+    top_first = _first_name(top_items)
+    print(f"  [API-MS] 전체 1위: {all_first[:30]}")
+    print(f"  [API-MS] 상의 1위: {top_first[:30]}")
+
+    if all_first and top_first and all_first != top_first:
+        print("  [API-MS] ✓ 카테고리별 다른 결과 확인 → API 사용")
+        _MUSINSA_API_WORKING = True
+    elif all_first:
+        print("  [API-MS] 전체와 상의 결과 동일 → API 무효 (categoryCode 미지원)")
+        _MUSINSA_API_WORKING = False
+    else:
+        _MUSINSA_API_WORKING = False
+
+    return _MUSINSA_API_WORKING
+
+
+# ═══════════════════════════════════════════════════
+#  무신사 — 방법 2: 홈 위젯 API (전체 전용)
 # ═══════════════════════════════════════════════════
 
 def _extract_multicolumn_products(modules: list) -> list:
@@ -152,151 +203,30 @@ def _multicolumn_to_items(raw_items: list, cat_code: str, cat_label: str) -> lis
     return result
 
 
-def _fetch_all_musinsa_via_homepage() -> dict:
-    """
-    Playwright로 무신사 홈페이지를 열고 랭킹 섹션의 카테고리 탭을 클릭하며
-    각 카테고리 API 응답을 인터셉트해서 반환.
-    반환: {cat_code: [items]} 또는 빈 dict (실패 시)
-    """
-    if not _init_playwright():
-        return {}
-
-    # 카테고리 탭 레이블 (홈페이지 DOM에서 찾을 텍스트)
-    cat_tab_map = [
-        ("001", "상의"),
-        ("002", "아우터"),
-        ("003", "바지"),
-        ("004", "원피스/스커트"),
-        ("005", "스포츠"),
-        ("020", "신발"),
-        ("022", "가방"),
-        ("023", "시계/쥬얼리"),
-        ("024", "패션잡화"),
-        ("026", "화장품/향수"),
-    ]
-
-    context = _PW_BROWSER.new_context(
-        user_agent=BROWSER_UA,
-        locale="ko-KR",
-        extra_http_headers={"Accept-Language": "ko-KR,ko;q=0.9"},
-    )
-    page = context.new_page()
-    last_captured = []  # 가장 최근 랭킹 API 응답
-
-    def on_response(response):
-        nonlocal last_captured
-        if "client.musinsa.com/api" in response.url and response.status == 200:
-            try:
-                body = response.json()
-                mods = body.get("data", {}).get("modules", [])
-                items = _extract_multicolumn_products(mods)
-                if items:
-                    last_captured = items
-            except Exception:
-                pass
-
-    page.on("response", on_response)
-    results = {}
-
-    try:
-        # 무신사는 www.musinsa.com 접속 시 글로벌 국가 선택 페이지로 리디렉션됨
-        # 한국 사이트로 직접 진입: store.musinsa.com 또는 국가 선택 후 이동
-        korean_home_candidates = [
-            "https://store.musinsa.com/",
-            "https://www.musinsa.com/store",
-            "https://www.musinsa.com/?country=kr",
-        ]
-
-        landed_korean = False
-        for home_url in korean_home_candidates:
-            page.goto(home_url, wait_until="domcontentloaded", timeout=20000)
-            page.wait_for_timeout(2000)
-            current_url = page.url
-            print(f"    [HOME] 접속 시도: {home_url} → {current_url[:60]}")
-            # 한국 페이지 여부 확인 (URL에 'store' 포함 또는 API 응답 캡처)
-            if last_captured or "store" in current_url or "kr" in current_url.lower():
-                landed_korean = True
-                break
-
-        # 국가 선택 페이지에 있다면 Korea 버튼 클릭
-        if not landed_korean:
-            try:
-                korea_btn = page.locator('a:has-text("Korea"), button:has-text("Korea"), a:has-text("한국")').first
-                if korea_btn.is_visible(timeout=3000):
-                    korea_btn.click()
-                    page.wait_for_timeout(2000)
-                    print(f"    [HOME] Korea 버튼 클릭 → {page.url[:60]}")
-            except Exception:
-                pass
-
-        # 추가 대기 후 랭킹 API 응답 확인
-        page.wait_for_timeout(3000)
-
-        # 전체 (페이지 초기 로드 데이터)
-        all_items = list(last_captured)
-        if all_items:
-            results[""] = all_items
-            print(f"    [HOME] 전체: {len(all_items)}개 (초기 로드)")
-        else:
-            print(f"    [HOME] 전체 초기 로드 실패 (현재URL={page.url[:60]})")
-
-        # 현재 페이지 탭/버튼 목록 로그 (디버그)
-        try:
-            tabs_text = page.evaluate("""
-                () => {
-                    const allButtons = [...document.querySelectorAll('button, [role="tab"], li')];
-                    return allButtons
-                        .filter(el => el.offsetParent !== null)
-                        .map(el => el.textContent.trim())
-                        .filter(t => t.length > 0 && t.length < 30)
-                        .slice(0, 50);
-                }
-            """)
-            print(f"    [HOME] 페이지 탭/버튼 목록: {tabs_text[:30]}")
-        except Exception:
-            pass
-
-        # 각 카테고리 탭 클릭
-        for cat_code, cat_label in cat_tab_map:
-            last_captured = []
-            clicked = False
-            selectors = [
-                f'button:text-is("{cat_label}")',
-                f'[role="tab"]:text-is("{cat_label}")',
-                f'li:text-is("{cat_label}")',
-                f'span:text-is("{cat_label}")',
-                f'a:text-is("{cat_label}")',
-                f'button:has-text("{cat_label}")',
-            ]
-            for sel in selectors:
-                try:
-                    el = page.locator(sel).first
-                    if el.is_visible(timeout=1500):
-                        el.click()
-                        page.wait_for_timeout(2000)
-                        clicked = True
-                        break
-                except Exception:
-                    continue
-
-            if clicked and last_captured:
-                results[cat_code] = list(last_captured)
-                print(f"    [HOME] {cat_label}: {len(last_captured)}개 (탭 클릭)")
-            elif clicked:
-                print(f"    [HOME] {cat_label}: 탭 클릭했으나 API 응답 없음 → 전체 데이터 사용")
-            else:
-                print(f"    [HOME] {cat_label}: 탭 미발견")
-
-    except Exception as e:
-        print(f"    [HOME] 홈페이지 오류: {e}")
-    finally:
-        context.close()
-
-    return results
+def _fetch_via_home_widget_all() -> list:
+    """sectionId=200 홈 위젯으로 전체 랭킹 수집"""
+    url = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
+    params = {
+        "storeCode": "musinsa",
+        "sectionId": "200",
+        "gf": "M",
+        "categoryCode": "000",
+        "ageBand": "AGE_BAND_25",
+    }
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.musinsa.com",
+    }
+    resp = requests.get(url, params=params, headers=headers, timeout=20)
+    resp.raise_for_status()
+    mods = resp.json().get("data", {}).get("modules", [])
+    return _extract_multicolumn_products(mods)
 
 
 # ═══════════════════════════════════════════════════
-#  무신사 — Playwright 공유 브라우저 인스턴스
+#  무신사 — 방법 3: Playwright (최후 수단)
 # ═══════════════════════════════════════════════════
 
 _PW_BROWSER = None
@@ -332,30 +262,166 @@ def _close_playwright():
     _PW_INSTANCE = None
 
 
-# ═══════════════════════════════════════════════════
-#  무신사 — 홈 위젯 API (전체 폴백)
-# ═══════════════════════════════════════════════════
+def _fetch_all_musinsa_via_playwright() -> dict:
+    """
+    Playwright로 무신사 한국 홈페이지에 접속하여 카테고리 탭을 클릭하며
+    각 카테고리 API 응답을 인터셉트.
+    반환: {cat_code: [PRODUCT_COLUMN items]}
+    """
+    if not _init_playwright():
+        return {}
 
-def _fetch_via_home_widget_all() -> list:
-    """sectionId=200 홈 위젯으로 전체 랭킹 30개 수집"""
-    url = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
-    params = {
-        "storeCode": "musinsa",
-        "sectionId": "200",
-        "gf": "M",
-        "categoryCode": "000",
-        "ageBand": "AGE_BAND_25",
-    }
-    headers = {
-        "User-Agent": BROWSER_UA,
-        "Referer": "https://www.musinsa.com/",
-        "Accept": "application/json, text/plain, */*",
-        "Origin": "https://www.musinsa.com",
-    }
-    resp = requests.get(url, params=params, headers=headers, timeout=20)
-    resp.raise_for_status()
-    mods = resp.json().get("data", {}).get("modules", [])
-    return _extract_multicolumn_products(mods)
+    cat_tab_map = [
+        ("001", "상의"),
+        ("002", "아우터"),
+        ("003", "바지"),
+        ("004", "원피스/스커트"),
+        ("005", "스포츠"),
+        ("020", "신발"),
+        ("022", "가방"),
+        ("023", "시계/쥬얼리"),
+        ("024", "패션잡화"),
+        ("026", "화장품/향수"),
+    ]
+
+    context = _PW_BROWSER.new_context(
+        user_agent=BROWSER_UA,
+        locale="ko-KR",
+        extra_http_headers={"Accept-Language": "ko-KR,ko;q=0.9"},
+    )
+    page = context.new_page()
+    last_captured = []
+
+    def on_response(response):
+        nonlocal last_captured
+        if "client.musinsa.com/api" in response.url and response.status == 200:
+            try:
+                body = response.json()
+                mods = body.get("data", {}).get("modules", [])
+                items = _extract_multicolumn_products(mods)
+                if items:
+                    last_captured = items
+            except Exception:
+                pass
+
+    page.on("response", on_response)
+    results = {}
+
+    try:
+        # 1단계: 글로벌 국가 선택 페이지 → 한국 선택
+        print("    [PW] 글로벌 국가 선택 페이지 접속...")
+        page.goto("https://global.musinsa.com/choose-location", wait_until="domcontentloaded", timeout=20000)
+        page.wait_for_timeout(2000)
+        print(f"    [PW] 현재 URL: {page.url[:70]}")
+
+        # Korea 링크/버튼 클릭
+        korea_clicked = False
+        for sel in [
+            'a[href*="musinsa.com"]:has-text("Korea")',
+            'a:has-text("Korea")',
+            'button:has-text("Korea")',
+            'a:has-text("한국")',
+            '[data-country="KR"]',
+            'a[href*="/kr"]',
+        ]:
+            try:
+                el = page.locator(sel).first
+                if el.is_visible(timeout=2000):
+                    href = el.get_attribute("href") or ""
+                    print(f"    [PW] Korea 링크 발견: {sel} href={href[:50]}")
+                    el.click()
+                    page.wait_for_timeout(3000)
+                    korea_clicked = True
+                    print(f"    [PW] 클릭 후 URL: {page.url[:70]}")
+                    break
+            except Exception:
+                continue
+
+        if not korea_clicked:
+            # DOM 내 링크 목록 출력 (디버그)
+            try:
+                links = page.evaluate("""
+                    () => [...document.querySelectorAll('a[href]')]
+                        .map(a => a.href + ' | ' + a.textContent.trim())
+                        .filter(s => s.length < 100)
+                        .slice(0, 20)
+                """)
+                print(f"    [PW] 페이지 링크 목록: {links}")
+            except Exception:
+                pass
+            print("    [PW] Korea 버튼 미발견 — www.musinsa.com/store 직접 시도")
+
+        # 2단계: 무신사 스토어 홈 접속 (랭킹 섹션 로드 대기)
+        store_urls = [
+            "https://www.musinsa.com/store",
+            "https://www.musinsa.com/",
+        ]
+        for store_url in store_urls:
+            last_captured = []
+            page.goto(store_url, wait_until="domcontentloaded", timeout=20000)
+            page.wait_for_timeout(5000)  # React hydration 대기
+            print(f"    [PW] 스토어 접속: {store_url} → {page.url[:70]}")
+            if last_captured:
+                print(f"    [PW] 초기 로드 {len(last_captured)}개 상품 캡처")
+                break
+
+        # 전체 데이터 (초기 로드)
+        all_items = list(last_captured)
+        if all_items:
+            results[""] = all_items
+
+        # 탭 목록 확인 (디버그)
+        try:
+            tabs_text = page.evaluate("""
+                () => {
+                    const els = [...document.querySelectorAll('button, [role="tab"], li')];
+                    return els
+                        .filter(el => el.offsetParent !== null)
+                        .map(el => el.textContent.trim())
+                        .filter(t => t.length > 0 && t.length < 20)
+                        .slice(0, 30);
+                }
+            """)
+            print(f"    [PW] 페이지 탭/버튼: {tabs_text}")
+        except Exception:
+            pass
+
+        # 3단계: 카테고리 탭 클릭
+        for cat_code, cat_label in cat_tab_map:
+            last_captured = []
+            clicked = False
+            for sel in [
+                f'button:text-is("{cat_label}")',
+                f'[role="tab"]:text-is("{cat_label}")',
+                f'li:text-is("{cat_label}")',
+                f'span:text-is("{cat_label}")',
+                f'a:text-is("{cat_label}")',
+                f'button:has-text("{cat_label}")',
+            ]:
+                try:
+                    el = page.locator(sel).first
+                    if el.is_visible(timeout=1500):
+                        el.click()
+                        page.wait_for_timeout(2000)
+                        clicked = True
+                        break
+                except Exception:
+                    continue
+
+            if clicked and last_captured:
+                results[cat_code] = list(last_captured)
+                print(f"    [PW] {cat_label}: {len(last_captured)}개 (탭 클릭)")
+            elif clicked:
+                print(f"    [PW] {cat_label}: 클릭했으나 API 응답 없음")
+            else:
+                print(f"    [PW] {cat_label}: 탭 미발견")
+
+    except Exception as e:
+        print(f"    [PW] 오류: {e}")
+    finally:
+        context.close()
+
+    return results
 
 
 # ═══════════════════════════════════════════════════
@@ -365,15 +431,37 @@ def _fetch_via_home_widget_all() -> list:
 def fetch_musinsa() -> dict:
     print("▶ 무신사 랭킹 수집 시작...")
 
-    # 방법 1: Playwright 홈페이지 + 카테고리 탭 클릭으로 모든 카테고리 일괄 수집
-    homepage_results = {}
-    try:
-        homepage_results = _fetch_all_musinsa_via_homepage()
-        print(f"  [HOME] 홈페이지에서 {len(homepage_results)}개 카테고리 수집")
-    except Exception as e:
-        print(f"  [WARN] 홈페이지 수집 실패: {e}")
+    # ── 방법 1: 카테고리별 전용 API ──────────────────
+    api_works = _probe_musinsa_api()
+    if api_works:
+        categories = {}
+        for cat in MUSINSA_CATEGORIES:
+            cat_code = cat["code"]
+            cat_label = cat["label"]
+            print(f"  - {cat_label} 수집 중...")
+            raw = _fetch_musinsa_category_api(cat_code)
+            if raw:
+                items = [_build_item(r, idx + 1, cat_code, cat_label) for idx, r in enumerate(raw[:LIMIT])]
+                categories[cat_code] = items
+                print(f"    ✓ [API] {len(items)}개")
+            else:
+                categories[cat_code] = []
+                print(f"    [WARN] {cat_label}: API 응답 없음")
+            time.sleep(0.5)
+        total = sum(len(v) for v in categories.values())
+        print(f"  ✓ 무신사 {total}개 수집 완료 (카테고리별 API)")
+        return categories
 
-    # 방법 2: 홈 위젯 API로 전체 랭킹 수집 (homepage_results에 없는 경우)
+    # ── 방법 2: Playwright 홈페이지 탭 클릭 ──────────
+    print("  [WARN] 카테고리 API 무효 → Playwright 홈페이지 시도")
+    playwright_results = {}
+    try:
+        playwright_results = _fetch_all_musinsa_via_playwright()
+        print(f"  [PW] {len(playwright_results)}개 카테고리 수집")
+    except Exception as e:
+        print(f"  [WARN] Playwright 실패: {e}")
+
+    # ── 방법 3: 홈 위젯 API (전체 폴백) ──────────────
     fallback_all = []
     try:
         fallback_all = _fetch_via_home_widget_all()
@@ -387,20 +475,18 @@ def fetch_musinsa() -> dict:
         cat_label = cat["label"]
         print(f"  - {cat_label} 수집 중...")
 
-        raw_items = homepage_results.get(cat_code)
+        raw_items = playwright_results.get(cat_code)
         if raw_items:
             items = _multicolumn_to_items(raw_items, cat_code, cat_label)
             if items:
                 categories[cat_code] = items
-                print(f"    ✓ [홈-탭] {len(items)}개")
+                print(f"    ✓ [PW-탭] {len(items)}개")
                 continue
 
-        # 전체 카테고리 폴백: 홈 위젯 데이터 사용
         if not cat_code and fallback_all:
             categories[cat_code] = _multicolumn_to_items(fallback_all, cat_code, cat_label)
-            print(f"    ✓ [홈위젯-폴백] {len(categories[cat_code])}개")
+            print(f"    ✓ [홈위젯] {len(categories[cat_code])}개")
         else:
-            # 카테고리 탭도 실패 → 전체 데이터로 채움 (임시)
             if fallback_all:
                 categories[cat_code] = _multicolumn_to_items(fallback_all, cat_code, cat_label)
                 print(f"    [임시] {cat_label}: 전체 데이터 사용 ({len(categories[cat_code])}개)")
@@ -430,11 +516,11 @@ CM29_CATEGORIES = [
     {"code": "life",    "label": "라이프",      "param": {"front_category_id": 284}},
 ]
 
-_CM29_CAT_PARAM_KEY = ""  # 'front_category_id' or other key discovered by probe
+_CM29_CAT_PARAM_KEY = ""
 
 
 def _probe_29cm_category_endpoint() -> str:
-    """29CM 카테고리별 베스트 API 파라미터 탐색. 상의 카테고리로 테스트."""
+    """29CM 카테고리별 베스트 API 파라미터 탐색"""
     url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
     headers = {
         "User-Agent": BROWSER_UA,
@@ -444,7 +530,6 @@ def _probe_29cm_category_endpoint() -> str:
         "Origin": "https://www.29cm.co.kr",
     }
 
-    # 전체 1위 기준
     ref_name = ""
     try:
         base_payload = {
@@ -463,7 +548,6 @@ def _probe_29cm_category_endpoint() -> str:
         pass
     print(f"  [PROBE-29CM] 전체 기준 1위: {ref_name[:30]}")
 
-    # BFF API — 본문 파라미터 변형
     post_candidates = [
         ("facet-category-268",  {"categoryFacetInput": {"categoryId": 268}}),
         ("facet-category-1",    {"categoryFacetInput": {"categoryId": 1}}),
@@ -500,11 +584,10 @@ def _probe_29cm_category_endpoint() -> str:
             elif first:
                 print(f"  [PROBE-29CM] {label}: 응답OK BUT 전체와 동일 1위={first[:30]}")
             else:
-                print(f"  [PROBE-29CM] {label}: 응답OK 상품없음 keys={list(r.json().keys())[:5]}")
+                print(f"  [PROBE-29CM] {label}: 상품없음")
         except Exception as e:
             print(f"  [PROBE-29CM] {label}: 오류={e}")
 
-    # 다른 엔드포인트 시도 (GET)
     get_candidates = [
         ("GET-best-category", "https://display-bff-api.29cm.co.kr/api/v1/plp/best/category/items",
          {"categoryId": 268, "size": 30}),
@@ -522,7 +605,6 @@ def _probe_29cm_category_endpoint() -> str:
                 first = items[0].get("itemInfo", {}).get("productName", "") if items else ""
                 if first and first != ref_name:
                     print(f"  [PROBE-29CM] ✓ 카테고리 데이터! {label}: 1위={first[:30]}")
-                    # GET 방식 엔드포인트는 별도 표시
                     return "GET|" + label + "|" + g_url + "|" + json.dumps(g_params)
         except Exception as e:
             print(f"  [PROBE-29CM] {label}: 오류={e}")
@@ -591,7 +673,6 @@ def fetch_29cm() -> dict:
         label = cat["label"]
         param = cat["param"]
 
-        # 카테고리 API 미발견 시 전체만
         if code and not _CM29_CAT_PARAM_KEY:
             categories[code] = []
             continue
@@ -655,10 +736,6 @@ def load_existing_categories(platform: str) -> dict:
     return {}
 
 
-def load_existing(platform: str) -> list:
-    return load_existing_categories(platform).get("", [])
-
-
 def save(platform: str, data: dict):
     path = DATA_DIR / f"{platform}.json"
     with open(path, "w", encoding="utf-8") as f:
@@ -702,6 +779,8 @@ def main():
         })
     else:
         print("  [WARN] 29CM 데이터 없음 - 기존 파일 유지")
+
+    _close_playwright()
 
     print(f"\n{'='*50}")
     print(f"  ✅ 완료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
