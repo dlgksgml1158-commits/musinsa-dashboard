@@ -23,7 +23,10 @@ jobs:
           python-version: '3.11'
 
       - name: 📦 의존성 설치
-        run: pip install requests beautifulsoup4 lxml
+        run: pip install requests beautifulsoup4 lxml playwright
+
+      - name: 🌐 Playwright 브라우저 설치
+        run: playwright install --with-deps chromium
 
       - name: 🕷 랭킹 데이터 수집
         run: python scripts/fetch_rankings.py

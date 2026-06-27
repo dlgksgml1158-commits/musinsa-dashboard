@@ -414,23 +414,147 @@ def _fetch_via_home_widget(cat_code: str, cat_label: str) -> list:
 
 
 # ═══════════════════════════════════════════════════
+#  무신사 — 방법 4: Playwright 브라우저 스크래핑
+# ═══════════════════════════════════════════════════
+
+# Playwright 브라우저 인스턴스 공유 (전체 실행 동안 1개)
+_PW_BROWSER = None
+_PW_INSTANCE = None
+
+def _init_playwright():
+    global _PW_BROWSER, _PW_INSTANCE
+    if _PW_BROWSER is not None:
+        return True
+    try:
+        from playwright.sync_api import sync_playwright
+        _PW_INSTANCE = sync_playwright().start()
+        _PW_BROWSER = _PW_INSTANCE.chromium.launch(
+            headless=True,
+            args=["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"],
+        )
+        print("  [PW] 브라우저 초기화 완료")
+        return True
+    except Exception as e:
+        print(f"  [PW] 브라우저 초기화 실패: {e}")
+        return False
+
+def _close_playwright():
+    global _PW_BROWSER, _PW_INSTANCE
+    try:
+        if _PW_BROWSER:
+            _PW_BROWSER.close()
+        if _PW_INSTANCE:
+            _PW_INSTANCE.stop()
+    except Exception:
+        pass
+    _PW_BROWSER = None
+    _PW_INSTANCE = None
+
+
+def _fetch_via_playwright(cat_code: str, cat_label: str) -> list:
+    """Playwright 브라우저로 무신사 카테고리 랭킹 페이지 스크래핑"""
+    if not _init_playwright():
+        return []
+
+    api_cat = cat_code if cat_code else "000"
+    # 시도할 URL 목록 (카테고리 있는 경우와 없는 경우)
+    candidate_urls = [
+        f"https://www.musinsa.com/ranking/best?categoryCode={api_cat}&period=now&gf=A&display_cnt=30",
+        f"https://www.musinsa.com/store/ranking/best?categoryCode={api_cat}&period=now&gf=A",
+        f"https://www.musinsa.com/ranking?categoryCode={api_cat}",
+        f"https://www.musinsa.com/store/best?categoryCode={api_cat}",
+    ]
+
+    context = _PW_BROWSER.new_context(
+        user_agent=BROWSER_UA,
+        locale="ko-KR",
+        extra_http_headers={"Accept-Language": "ko-KR,ko;q=0.9"},
+    )
+    page = context.new_page()
+
+    try:
+        for url in candidate_urls:
+            try:
+                resp = page.goto(url, wait_until="domcontentloaded", timeout=20000)
+                status = resp.status if resp else 0
+                print(f"    [PW] {url.split('?')[0]}: HTTP {status}")
+                if status == 404:
+                    continue
+
+                # __NEXT_DATA__ 추출
+                next_data = page.evaluate("""
+                    () => {
+                        const el = document.getElementById('__NEXT_DATA__');
+                        return el ? el.textContent : null;
+                    }
+                """)
+                if next_data:
+                    page_data = json.loads(next_data)
+                    goods_list = _search_product_list(page_data)
+                    if goods_list:
+                        result = []
+                        for idx, item in enumerate(goods_list[:LIMIT]):
+                            parsed = _build_item(item, idx + 1, cat_code, cat_label)
+                            if parsed["name"]:
+                                result.append(parsed)
+                        if result:
+                            print(f"    [PW] __NEXT_DATA__ {len(result)}개")
+                            return result
+
+                # ranking-list 클래스 기반 추출 시도
+                try:
+                    page.wait_for_selector(
+                        "[class*='RankingListItem'], [class*='ranking-item'], [data-goods-no], li[class*='list-item']",
+                        timeout=8000
+                    )
+                except Exception:
+                    pass
+
+                # 페이지 내 API 응답 인터셉트로 상품 추출
+                content = page.content()
+                soup = BeautifulSoup(content, "html.parser")
+                script = soup.find("script", {"id": "__NEXT_DATA__"})
+                if script:
+                    page_data = json.loads(script.string)
+                    goods_list = _search_product_list(page_data)
+                    if goods_list:
+                        result = []
+                        for idx, item in enumerate(goods_list[:LIMIT]):
+                            parsed = _build_item(item, idx + 1, cat_code, cat_label)
+                            if parsed["name"]:
+                                result.append(parsed)
+                        if result:
+                            print(f"    [PW] HTML파싱 {len(result)}개")
+                            return result
+
+                print(f"    [PW] {url.split('?')[0]}: 상품 없음 (현재URL={page.url[:60]})")
+
+            except Exception as e:
+                print(f"    [PW] 오류: {e}")
+                continue
+    finally:
+        context.close()
+
+    return []
+
+
+# ═══════════════════════════════════════════════════
 #  무신사 메인
 # ═══════════════════════════════════════════════════
 
 def fetch_musinsa_category(cat_code: str, cat_label: str) -> list:
-    """카테고리 랭킹 수집: 랭킹 API → HTML → 홈 위젯(전체만) 순으로 시도"""
+    """카테고리 랭킹 수집: Playwright → HTML → 홈 위젯 순으로 시도"""
 
-    # 방법 1: 랭킹 전용 API
+    # 방법 1: Playwright 브라우저
     try:
-        result = _fetch_via_ranking_api(cat_code, cat_label)
+        result = _fetch_via_playwright(cat_code, cat_label)
         if result:
-            print(f"    ✓ [랭킹API] {len(result)}개")
+            print(f"    ✓ [Playwright] {len(result)}개")
             return result
-        print(f"    [WARN] 랭킹API 빈 응답")
     except Exception as e:
-        print(f"    [WARN] 랭킹API 실패: {e}")
+        print(f"    [WARN] Playwright 실패: {e}")
 
-    # 방법 2: HTML __NEXT_DATA__
+    # 방법 2: HTML __NEXT_DATA__ (requests)
     try:
         result = _fetch_via_html(cat_code, cat_label)
         if result:
@@ -440,15 +564,15 @@ def fetch_musinsa_category(cat_code: str, cat_label: str) -> list:
     except Exception as e:
         print(f"    [WARN] HTML 실패: {e}")
 
-    # 방법 3: 홈 위젯 API — 전체 및 카테고리 모두 지원
-    try:
-        result = _fetch_via_home_widget(cat_code, cat_label)
-        if result:
-            print(f"    ✓ [홈위젯] {len(result)}개")
-            return result
-        print(f"    [WARN] 홈위젯 빈 응답")
-    except Exception as e:
-        print(f"    [WARN] 홈위젯 실패: {e}")
+    # 방법 3: 홈 위젯 API (전체 전용 폴백)
+    if not cat_code:
+        try:
+            result = _fetch_via_home_widget(cat_code, cat_label)
+            if result:
+                print(f"    ✓ [홈위젯] {len(result)}개")
+                return result
+        except Exception as e:
+            print(f"    [WARN] 홈위젯 실패: {e}")
 
     print(f"    [ERROR] 모든 방법 실패")
     return []
