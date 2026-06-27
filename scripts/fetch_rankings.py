@@ -43,6 +43,8 @@ MUSINSA_CATEGORIES = [
     {"code": "026", "label": "화장품/향수"},
 ]
 
+_MUSINSA_CAT_ENDPOINT = ""
+
 
 # ═══════════════════════════════════════════════════
 #  공통 유틸
@@ -103,20 +105,122 @@ def _build_item(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
 #  무신사 — 방법 1: 랭킹 전용 API
 # ═══════════════════════════════════════════════════
 
-def _fetch_via_ranking_api(cat_code: str, cat_label: str) -> list:
-    """api.musinsa.com/api2/json/rank/goods — 카테고리별 실시간 랭킹"""
-    url = "https://api.musinsa.com/api2/json/rank/goods"
-    params = {
-        "period": "REALTIME",
-        "categoryCode": cat_code,
-        "display_cnt": LIMIT,
-        "list_kind": "big",
-        "page": 1,
-        "gf": "A",
+def _probe_musinsa_category_endpoint() -> str:
+    """
+    무신사 카테고리 랭킹 API 탐색 — 상의(001)로 테스트해서
+    전체(sectionId=200)와 다른 1위 상품을 반환하는 첫 번째 엔드포인트를 반환.
+    """
+    headers_json = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+        "Origin": "https://www.musinsa.com",
     }
+
+    # sectionId=200 전체 1위 상품명 (비교 기준)
+    ref_name = ""
+    try:
+        r = requests.get(
+            "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+            params={"storeCode":"musinsa","sectionId":"200","gf":"M","categoryCode":"000","ageBand":"AGE_BAND_25"},
+            headers=headers_json, timeout=10,
+        )
+        mods = r.json().get("data",{}).get("modules",[])
+        for mod in mods:
+            if mod.get("type") == "MULTICOLUMN":
+                items = [i for i in mod.get("items",[]) if i.get("type")=="PRODUCT_COLUMN"]
+                if items:
+                    ref_name = items[0].get("info",{}).get("productName","")
+                    break
+    except Exception:
+        pass
+    print(f"  [PROBE] 전체 기준 1위: {ref_name[:30]}")
+
+    candidates = [
+        # (label, url, params)
+        ("client-pans-cat001-noage",
+         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+         {"storeCode":"musinsa","sectionId":"200","gf":"A","categoryCode":"001"}),
+        ("client-pans-sec201",
+         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+         {"storeCode":"musinsa","sectionId":"201","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"}),
+        ("client-pans-sec210",
+         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+         {"storeCode":"musinsa","sectionId":"210","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"}),
+        ("client-category-ranking",
+         "https://client.musinsa.com/api/category/v1/ranking",
+         {"storeCode":"musinsa","categoryCode":"001","size":30,"gf":"A"}),
+        ("client-store-ranking",
+         "https://client.musinsa.com/api/store/v1/ranking",
+         {"storeCode":"musinsa","categoryCode":"001","size":30}),
+        ("client-goods-ranking",
+         "https://client.musinsa.com/api/goods/v1/ranking",
+         {"storeCode":"musinsa","categoryCode":"001","display":30,"gf":"A"}),
+        ("client-search-ranking",
+         "https://client.musinsa.com/api/search/v1/goods",
+         {"storeCode":"musinsa","categoryCode":"001","sort":"RANKING","size":30}),
+        ("client-ranking-v1",
+         "https://client.musinsa.com/api/ranking/v1/goods",
+         {"storeCode":"musinsa","categoryCode":"001","size":30,"period":"REALTIME","gf":"A"}),
+        ("musinsa-ranking-page-api",
+         "https://www.musinsa.com/api/ranking/best",
+         {"categoryCode":"001","period":"now","gf":"A","display":30}),
+        ("musinsa-goods-best",
+         "https://www.musinsa.com/api/goods/v1/best",
+         {"categoryCode":"001","size":30,"gf":"A"}),
+        ("musinsa-category-best",
+         "https://www.musinsa.com/api/category/v1/best",
+         {"categoryCode":"001","size":30}),
+    ]
+
+    for label, url, params in candidates:
+        try:
+            r = requests.get(url, params=params, headers=headers_json, timeout=8)
+            if not r.ok:
+                print(f"  [PROBE] {label}: HTTP {r.status_code}")
+                continue
+            data = r.json()
+            # 응답에서 상품명 추출 시도
+            goods = _search_product_list(data)
+            first = ""
+            if goods:
+                first = (goods[0].get("goodsName") or goods[0].get("productName")
+                         or goods[0].get("name") or "")
+            # 전체와 다른 결과인지 확인
+            if first and first != ref_name:
+                print(f"  [PROBE] ✓ 카테고리 데이터 발견! {label}: 1위={first[:30]}")
+                return label + "|" + url + "|" + json.dumps(params)
+            elif first:
+                print(f"  [PROBE] {label}: 응답OK BUT 전체와 동일 1위={first[:30]}")
+            else:
+                # 데이터 구조 로그
+                top_keys = list(data.keys())[:5] if isinstance(data, dict) else type(data).__name__
+                print(f"  [PROBE] {label}: HTTP {r.status_code}, 상품 없음, keys={top_keys}")
+        except Exception as e:
+            print(f"  [PROBE] {label}: 오류={e}")
+
+    print("  [PROBE] 카테고리 전용 API 미발견")
+    return ""
+
+
+def _fetch_via_ranking_api(cat_code: str, cat_label: str) -> list:
+    """탐색된 카테고리 API 엔드포인트로 수집"""
+    global _MUSINSA_CAT_ENDPOINT
+    if not _MUSINSA_CAT_ENDPOINT:
+        return []
+
+    parts = _MUSINSA_CAT_ENDPOINT.split("|", 2)
+    if len(parts) < 3:
+        return []
+    _, url, params_template = parts
+    params = json.loads(params_template)
+    # categoryCode를 현재 카테고리로 교체
+    params["categoryCode"] = cat_code
+
     headers = {
         "User-Agent": BROWSER_UA,
-        "Referer": "https://www.musinsa.com/ranking/best",
+        "Referer": "https://www.musinsa.com/",
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "ko-KR,ko;q=0.9",
         "Origin": "https://www.musinsa.com",
@@ -125,12 +229,7 @@ def _fetch_via_ranking_api(cat_code: str, cat_label: str) -> list:
     resp.raise_for_status()
     data = resp.json()
 
-    goods_list = (
-        data.get("data", {}).get("list")
-        or data.get("data", {}).get("goodsList")
-        or data.get("list")
-        or _search_product_list(data)
-    )
+    goods_list = _search_product_list(data)
     if not goods_list:
         return []
 
@@ -295,7 +394,10 @@ def fetch_musinsa_category(cat_code: str, cat_label: str) -> list:
 
 
 def fetch_musinsa() -> dict:
+    global _MUSINSA_CAT_ENDPOINT
     print("▶ 무신사 랭킹 수집 시작...")
+    print("  카테고리 API 탐색 중...")
+    _MUSINSA_CAT_ENDPOINT = _probe_musinsa_category_endpoint()
     categories = {}
     for cat in MUSINSA_CATEGORIES:
         print(f"  - {cat['label']} 수집 중...")
@@ -312,8 +414,95 @@ def fetch_musinsa() -> dict:
 #  29CM API
 # ═══════════════════════════════════════════════════
 
-def fetch_29cm() -> list:
-    print("▶ 29CM 랭킹 수집 시작...")
+CM29_CATEGORIES = [
+    {"code": "",        "label": "전체",        "param": None},
+    {"code": "tops",    "label": "상의",        "param": {"front_category_id": 268}},
+    {"code": "outer",   "label": "아우터",      "param": {"front_category_id": 269}},
+    {"code": "bottoms", "label": "하의",        "param": {"front_category_id": 270}},
+    {"code": "dress",   "label": "원피스",      "param": {"front_category_id": 271}},
+    {"code": "shoes",   "label": "신발",        "param": {"front_category_id": 278}},
+    {"code": "bag",     "label": "가방",        "param": {"front_category_id": 280}},
+    {"code": "acc",     "label": "액세서리",    "param": {"front_category_id": 282}},
+    {"code": "beauty",  "label": "뷰티",        "param": {"front_category_id": 283}},
+    {"code": "life",    "label": "라이프",      "param": {"front_category_id": 284}},
+]
+
+_CM29_CAT_PARAM_KEY = ""  # 'front_category_id' or other key discovered by probe
+
+
+def _probe_29cm_category_endpoint() -> str:
+    """29CM 카테고리별 베스트 API 파라미터 탐색. 상의 카테고리로 테스트."""
+    url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.29cm.co.kr/best-products",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Origin": "https://www.29cm.co.kr",
+    }
+
+    # 전체 1위 기준
+    ref_name = ""
+    try:
+        base_payload = {
+            "pageRequest": {"page": 1, "size": LIMIT},
+            "userSegment": {"gender": "M", "age": "THIRTIES"},
+            "facets": {
+                "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
+                "rankingFacetInput": {"type": "POPULARITY"},
+            },
+        }
+        r = requests.post(url, json=base_payload, headers=headers, timeout=15)
+        items = r.json().get("data", {}).get("list", [])
+        if items:
+            ref_name = items[0].get("itemInfo", {}).get("productName", "")
+    except Exception:
+        pass
+    print(f"  [PROBE-29CM] 전체 기준 1위: {ref_name[:30]}")
+
+    # 카테고리 파라미터 후보 (상의 계열 ID로 테스트)
+    cat_candidates = [
+        ("front_category_id=268",  {"front_category_id": 268}),
+        ("front_category_id=1",    {"front_category_id": 1}),
+        ("category_id=268",        {"category_id": 268}),
+        ("categoryCode=TOP",       {"categoryCode": "TOP"}),
+        ("categoryCode=001",       {"categoryCode": "001"}),
+        ("itemClassCode=268",      {"itemClassCode": 268}),
+        ("departmentCode=268",     {"departmentCode": "268"}),
+    ]
+
+    for label, extra_params in cat_candidates:
+        try:
+            payload = {
+                "pageRequest": {"page": 1, "size": LIMIT},
+                "userSegment": {"gender": "M", "age": "THIRTIES"},
+                "facets": {
+                    "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
+                    "rankingFacetInput": {"type": "POPULARITY"},
+                },
+                **extra_params,
+            }
+            r = requests.post(url, json=payload, headers=headers, timeout=10)
+            if not r.ok:
+                print(f"  [PROBE-29CM] {label}: HTTP {r.status_code}")
+                continue
+            items = r.json().get("data", {}).get("list", [])
+            first = items[0].get("itemInfo", {}).get("productName", "") if items else ""
+            if first and first != ref_name:
+                print(f"  [PROBE-29CM] ✓ 카테고리 데이터! {label}: 1위={first[:30]}")
+                return label
+            elif first:
+                print(f"  [PROBE-29CM] {label}: 응답OK BUT 전체와 동일 1위={first[:30]}")
+            else:
+                print(f"  [PROBE-29CM] {label}: 응답OK 상품없음 keys={list(r.json().keys())[:5]}")
+        except Exception as e:
+            print(f"  [PROBE-29CM] {label}: 오류={e}")
+
+    print("  [PROBE-29CM] 카테고리 파라미터 미발견, 전체만 수집")
+    return ""
+
+
+def _fetch_29cm_items(extra_params: dict | None) -> list:
     url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
     headers = {
         "User-Agent": BROWSER_UA,
@@ -330,41 +519,70 @@ def fetch_29cm() -> list:
             "rankingFacetInput": {"type": "POPULARITY"},
         },
     }
+    if extra_params:
+        payload.update(extra_params)
 
-    try:
-        resp = requests.post(url, json=payload, headers=headers, timeout=20)
-        resp.raise_for_status()
-        data = resp.json()
-    except Exception as e:
-        print(f"  [ERROR] 29CM 실패: {e}")
-        return []
+    resp = requests.post(url, json=payload, headers=headers, timeout=20)
+    resp.raise_for_status()
+    return resp.json().get("data", {}).get("list", [])
 
-    items_raw = data.get("data", {}).get("list", [])
-    result = []
-    for idx, item in enumerate(items_raw[:LIMIT]):
-        info = item.get("itemInfo", {})
-        item_id = str(item.get("itemId", idx + 1))
-        display_price = info.get("displayPrice", 0)
-        original_price = info.get("originalPrice", display_price)
-        sale_rate = info.get("saleRate", 0)
-        result.append({
-            "rank": idx + 1,
-            "id": f"cm-{item_id}",
-            "brand": info.get("brandName", ""),
-            "name": info.get("productName", ""),
-            "price": display_price,
-            "originalPrice": original_price,
-            "discountRate": sale_rate,
-            "finalPrice": display_price,
-            "category": "",
-            "categoryLabel": "전체",
-            "imgUrl": info.get("thumbnailUrl", ""),
-            "productUrl": item.get("itemUrl", {}).get("webLink", f"https://product.29cm.co.kr/catalog/{item_id}"),
-            "change": None,
-        })
 
-    print(f"  ✓ 29CM {len(result)}개 수집 완료")
-    return result
+def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> dict:
+    info = item.get("itemInfo", {})
+    item_id = str(item.get("itemId", ""))
+    display_price = info.get("displayPrice", 0)
+    original_price = info.get("originalPrice", display_price)
+    sale_rate = info.get("saleRate", 0)
+    return {
+        "rank": rank,
+        "id": f"cm-{item_id}",
+        "brand": info.get("brandName", ""),
+        "name": info.get("productName", ""),
+        "price": display_price,
+        "originalPrice": original_price,
+        "discountRate": sale_rate,
+        "finalPrice": display_price,
+        "category": cat_code,
+        "categoryLabel": cat_label,
+        "imgUrl": info.get("thumbnailUrl", ""),
+        "productUrl": item.get("itemUrl", {}).get("webLink", f"https://product.29cm.co.kr/catalog/{item_id}"),
+        "change": None,
+    }
+
+
+def fetch_29cm() -> dict:
+    global _CM29_CAT_PARAM_KEY
+    print("▶ 29CM 랭킹 수집 시작...")
+    print("  카테고리 API 탐색 중...")
+    _CM29_CAT_PARAM_KEY = _probe_29cm_category_endpoint()
+
+    categories = {}
+    for cat in CM29_CATEGORIES:
+        code = cat["code"]
+        label = cat["label"]
+        param = cat["param"]
+
+        # 카테고리 API 미발견 시 전체만
+        if code and not _CM29_CAT_PARAM_KEY:
+            categories[code] = []
+            continue
+
+        try:
+            raw_items = _fetch_29cm_items(param)
+            result = [
+                _build_29cm_item(item, idx + 1, code, label)
+                for idx, item in enumerate(raw_items[:LIMIT])
+            ]
+            categories[code] = result
+            print(f"    ✓ [{label}] {len(result)}개")
+        except Exception as e:
+            print(f"    [WARN] 29CM [{label}] 실패: {e}")
+            categories[code] = []
+        time.sleep(1)
+
+    total = sum(len(v) for v in categories.values())
+    print(f"  ✓ 29CM {total}개 수집 완료 ({len(categories)}개 카테고리)")
+    return categories
 
 
 # ═══════════════════════════════════════════════════
@@ -443,15 +661,15 @@ def main():
 
     time.sleep(2)
 
-    old_29cm = load_existing("29cm")
-    cm29_items = fetch_29cm()
-    if cm29_items:
-        cm29_items = compute_rank_changes(cm29_items, old_29cm)
+    old_29cm_cats = load_existing_categories("29cm")
+    cm29_cats = fetch_29cm()
+    if cm29_cats and any(cm29_cats.values()):
+        cm29_cats = compute_rank_changes_categories(cm29_cats, old_29cm_cats)
         save("29cm", {
             "platform": "29cm",
             "updatedAt": datetime.now(timezone.utc).isoformat(),
-            "items": cm29_items,
-            "categories": {"": cm29_items},
+            "items": cm29_cats.get("", []),
+            "categories": cm29_cats,
         })
     else:
         print("  [WARN] 29CM 데이터 없음 - 기존 파일 유지")
