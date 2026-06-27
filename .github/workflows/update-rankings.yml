@@ -43,6 +43,7 @@ jobs:
           else
             TIMESTAMP=$(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST')
             git commit -m "📊 랭킹 업데이트: $TIMESTAMP"
+            git pull --rebase origin main
             git push
             echo "✅ 커밋 완료"
           fi
