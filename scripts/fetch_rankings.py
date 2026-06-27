@@ -44,6 +44,11 @@ MUSINSA_CATEGORIES = [
 ]
 
 _MUSINSA_CAT_ENDPOINT = ""
+_MUSINSA_SECTION_IDS: dict = {}  # sectionId -> first product name (probe 결과)
+
+# 무신사 카테고리 코드 → sectionId 매핑 후보 (probe 결과에 따라 결정됨)
+# 현재는 unknown이므로 probe 후 자동 매핑 시도
+MUSINSA_CAT_TO_SECTION: dict = {}  # code -> sectionId (str)
 
 
 # ═══════════════════════════════════════════════════
@@ -105,10 +110,23 @@ def _build_item(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
 #  무신사 — 방법 1: 랭킹 전용 API
 # ═══════════════════════════════════════════════════
 
+def _extract_multicolumn_products(modules: list) -> list:
+    """MULTICOLUMN/PRODUCT_COLUMN 구조에서 상품 목록 추출"""
+    raw_items = []
+    for mod in modules:
+        if mod.get("type") == "MULTICOLUMN" and mod.get("items"):
+            for item in mod["items"]:
+                if item.get("type") == "PRODUCT_COLUMN":
+                    raw_items.append(item)
+    raw_items.sort(key=lambda x: x.get("image", {}).get("rank", 9999))
+    return raw_items
+
+
 def _probe_musinsa_category_endpoint() -> str:
     """
-    무신사 카테고리 랭킹 API 탐색 — 상의(001)로 테스트해서
-    전체(sectionId=200)와 다른 1위 상품을 반환하는 첫 번째 엔드포인트를 반환.
+    무신사 카테고리 랭킹 API 탐색.
+    1) sectionId=200 전체 기준 1위 수집
+    2) sectionId=200~230 범위를 MULTICOLUMN 파싱으로 탐색, 전체와 다른 첫 번째 sectionId 발견 시 반환
     """
     headers_json = {
         "User-Agent": BROWSER_UA,
@@ -117,146 +135,55 @@ def _probe_musinsa_category_endpoint() -> str:
         "Accept-Language": "ko-KR,ko;q=0.9",
         "Origin": "https://www.musinsa.com",
     }
+    base_url = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
 
     # sectionId=200 전체 1위 상품명 (비교 기준)
     ref_name = ""
+    ref_items = []
     try:
         r = requests.get(
-            "https://client.musinsa.com/api/home/web/v5/pans/ranking",
+            base_url,
             params={"storeCode":"musinsa","sectionId":"200","gf":"M","categoryCode":"000","ageBand":"AGE_BAND_25"},
             headers=headers_json, timeout=10,
         )
         mods = r.json().get("data",{}).get("modules",[])
-        for mod in mods:
-            if mod.get("type") == "MULTICOLUMN":
-                items = [i for i in mod.get("items",[]) if i.get("type")=="PRODUCT_COLUMN"]
-                if items:
-                    ref_name = items[0].get("info",{}).get("productName","")
-                    break
+        ref_items = _extract_multicolumn_products(mods)
+        if ref_items:
+            ref_name = ref_items[0].get("info",{}).get("productName","")
     except Exception:
         pass
     print(f"  [PROBE] 전체 기준 1위: {ref_name[:30]}")
 
-    # sec200 + categoryCode=001 modules 구조 상세 디버그
-    try:
-        r2 = requests.get(
-            "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-            params={"storeCode":"musinsa","sectionId":"200","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"},
-            headers=headers_json, timeout=10,
-        )
-        mods2 = r2.json().get("data",{}).get("modules",[])
-        print(f"  [PROBE-DEBUG] sec200+cat001: modules={len(mods2)}개")
-        for i, m in enumerate(mods2[:5]):
-            items2 = m.get("items", [])
-            print(f"  [PROBE-DEBUG]   mod[{i}] type={m.get('type')} items={len(items2)}")
-            if items2:
-                print(f"  [PROBE-DEBUG]     item[0] type={items2[0].get('type')} keys={list(items2[0].keys())[:8]}")
-    except Exception as e:
-        print(f"  [PROBE-DEBUG] sec200+cat001 오류: {e}")
-
-    candidates = [
-        # sectionId 변형
-        ("sec200-cat001-ageM",
-         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"200","gf":"M","categoryCode":"001","ageBand":"AGE_BAND_25"}),
-        ("sec200-cat001-ageA",
-         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"200","gf":"A","categoryCode":"001","ageBand":"AGE_BAND_25"}),
-        ("sec200-cat001-noage",
-         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"200","gf":"A","categoryCode":"001"}),
-        ("sec201",
-         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"201","gf":"M","ageBand":"AGE_BAND_25"}),
-        ("sec202",
-         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"202","gf":"M","ageBand":"AGE_BAND_25"}),
-        ("sec210",
-         "https://client.musinsa.com/api/home/web/v5/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"210","gf":"M","ageBand":"AGE_BAND_25"}),
-        # 검색 API (인기순)
-        ("search-popular",
-         "https://search.musinsa.com/api/goods/v1/list",
-         {"storeCode":"musinsa","categoryCode":"001","sort":"POPULAR","size":30,"page":1}),
-        ("search-ranking",
-         "https://search.musinsa.com/api/goods/v1/list",
-         {"storeCode":"musinsa","categoryCode":"001","sort":"RANKING","size":30,"page":1}),
-        # 상품 랭킹 API 변형
-        ("app-rank-goods",
-         "https://api.musinsa.com/api2/json/rank/goods",
-         {"cate":"001","price":"","fromSise":"","toSise":"","page":1,"pageSize":30}),
-        ("app2-rank-goods",
-         "https://api2.musinsa.com/api2/json/rank/goods",
-         {"cate":"001","page":1,"pageSize":30}),
-        # ranking 페이지 HTML (변형 URL 시도)
-        ("ranking-html-v2",
-         "https://www.musinsa.com/store/ranking/best",
-         {"categoryCode":"001","period":"now","gf":"A","display_cnt":30}),
-        ("ranking-html-store",
-         "https://www.musinsa.com/store/best",
-         {"categoryCode":"001","gf":"A","display":30}),
-        # goods 리스트 API
-        ("goods-list-pop",
-         "https://www.musinsa.com/app/goods/lists",
-         {"category":"001","sort":"POPULAR","display_cnt":30}),
-        ("client-goods-list",
-         "https://client.musinsa.com/api/goods/v2/list",
-         {"storeCode":"musinsa","categoryCode":"001","sort":"POPULAR","size":30}),
-        # 새 랭킹 URL 후보
-        ("ranking-no-best",
-         "https://www.musinsa.com/ranking",
-         {"categoryCode":"001","period":"now","gf":"A"}),
-        ("store-ranking",
-         "https://www.musinsa.com/store/ranking",
-         {"categoryCode":"001","period":"now","gf":"A"}),
-        ("best-items",
-         "https://www.musinsa.com/best",
-         {"categoryCode":"001","gf":"A"}),
-        # client API 새 경로
-        ("client-ranking-best",
-         "https://client.musinsa.com/api/ranking/v2/best",
-         {"storeCode":"musinsa","categoryCode":"001","size":30,"gf":"A"}),
-        ("client-pans-v6",
-         "https://client.musinsa.com/api/home/web/v6/pans/ranking",
-         {"storeCode":"musinsa","sectionId":"200","categoryCode":"001","gf":"A"}),
-    ]
-
-    for label, url, params in candidates:
+    # sectionId 200~230 탐색 (MULTICOLUMN 방식으로)
+    print("  [PROBE] sectionId 200~230 탐색 중...")
+    section_map = {}  # sectionId -> first product name
+    for sid in range(200, 231):
         try:
-            r = requests.get(url, params=params, headers=headers_json, timeout=8)
+            r = requests.get(
+                base_url,
+                params={"storeCode":"musinsa","sectionId":str(sid),"gf":"M","ageBand":"AGE_BAND_25"},
+                headers=headers_json, timeout=8,
+            )
             if not r.ok:
-                print(f"  [PROBE] {label}: HTTP {r.status_code}")
                 continue
-            data = r.json()
-            # 응답에서 상품명 추출 시도
-            goods = _search_product_list(data)
-            first = ""
-            if goods:
-                first = (goods[0].get("goodsName") or goods[0].get("productName")
-                         or goods[0].get("name") or "")
-            # 전체와 다른 결과인지 확인
-            if first and first != ref_name:
-                print(f"  [PROBE] ✓ 카테고리 데이터 발견! {label}: 1위={first[:30]}")
-                return label + "|" + url + "|" + json.dumps(params)
-            elif first:
-                print(f"  [PROBE] {label}: 응답OK BUT 전체와 동일 1위={first[:30]}")
-            else:
-                # 데이터 구조 디버그 로그 (상세)
-                top_keys = list(data.keys())[:8] if isinstance(data, dict) else type(data).__name__
-                data_val = data.get("data") if isinstance(data, dict) else None
-                if isinstance(data_val, dict):
-                    data_keys = list(data_val.keys())[:8]
-                    print(f"  [PROBE] {label}: HTTP 200, 상품없음 keys={top_keys} data.keys={data_keys}")
-                elif isinstance(data_val, list):
-                    print(f"  [PROBE] {label}: HTTP 200, 상품없음 keys={top_keys} data=[{len(data_val)}]")
-                else:
-                    # 상세 구조 출력
-                    raw = r.text[:200]
-                    print(f"  [PROBE] {label}: HTTP 200, 상품없음 keys={top_keys} raw={raw}")
+            mods = r.json().get("data",{}).get("modules",[])
+            items = _extract_multicolumn_products(mods)
+            if items:
+                first_name = items[0].get("info",{}).get("productName","")
+                section_map[sid] = {"name": first_name, "count": len(items)}
+                diff = "✓ 다름" if first_name != ref_name else "= 동일"
+                print(f"  [PROBE] sec{sid}: {diff} 1위={first_name[:25]} ({len(items)}개)")
         except Exception as e:
-            print(f"  [PROBE] {label}: 오류={e}")
+            pass
 
-    print("  [PROBE] 카테고리 전용 API 미발견")
+    # 전체(200)와 다른 sectionId 목록
+    different = {sid: v for sid, v in section_map.items() if sid != 200 and v["name"] != ref_name}
+    if different:
+        sids = sorted(different.keys())
+        print(f"  [PROBE] ✓ 카테고리별 sectionId 발견: {sids}")
+        return "section_map|" + json.dumps({str(k): v["name"] for k, v in different.items()})
+    print(f"  [PROBE] sectionId 변화 없음 — 동일 상품")
+
     return ""
 
 
@@ -578,14 +505,87 @@ def fetch_musinsa_category(cat_code: str, cat_label: str) -> list:
     return []
 
 
+def _fetch_via_section_id(section_id: str, cat_code: str, cat_label: str) -> list:
+    """특정 sectionId로 홈 위젯 API 호출하여 MULTICOLUMN 상품 추출"""
+    url = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
+    params = {
+        "storeCode": "musinsa",
+        "sectionId": section_id,
+        "gf": "M",
+        "ageBand": "AGE_BAND_25",
+    }
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.musinsa.com",
+    }
+    resp = requests.get(url, params=params, headers=headers, timeout=20)
+    resp.raise_for_status()
+    mods = resp.json().get("data", {}).get("modules", [])
+    raw_items = _extract_multicolumn_products(mods)
+    result = []
+    for item in raw_items[:LIMIT]:
+        info = item.get("info", {})
+        product_id = str(item.get("id", ""))
+        final_price = info.get("finalPrice", 0)
+        discount = info.get("discountRatio", 0)
+        original_price = round(final_price / (1 - discount / 100)) if discount else final_price
+        result.append({
+            "rank": item.get("image", {}).get("rank", 0),
+            "id": f"ms-{product_id}",
+            "brand": info.get("brandName", ""),
+            "name": info.get("productName", ""),
+            "price": original_price,
+            "originalPrice": original_price,
+            "discountRate": discount,
+            "finalPrice": final_price,
+            "category": cat_code,
+            "categoryLabel": cat_label,
+            "imgUrl": item.get("image", {}).get("url", ""),
+            "productUrl": (
+                item.get("link", {}).get("url", "")
+                or f"https://www.musinsa.com/products/{product_id}"
+            ),
+            "change": None,
+        })
+    return result
+
+
 def fetch_musinsa() -> dict:
-    global _MUSINSA_CAT_ENDPOINT
+    global _MUSINSA_CAT_ENDPOINT, MUSINSA_CAT_TO_SECTION
     print("▶ 무신사 랭킹 수집 시작...")
     print("  카테고리 API 탐색 중...")
-    _MUSINSA_CAT_ENDPOINT = _probe_musinsa_category_endpoint()
+    probe_result = _probe_musinsa_category_endpoint()
+    _MUSINSA_CAT_ENDPOINT = probe_result
+
+    # probe 결과에서 sectionId 목록 파싱
+    different_sids = []
+    if probe_result.startswith("section_map|"):
+        sid_map = json.loads(probe_result[len("section_map|"):])
+        different_sids = sorted(int(k) for k in sid_map.keys())
+        print(f"  [매핑] 전체와 다른 sectionId들: {different_sids}")
+        # 카테고리 순서대로 sectionId 할당 (전체 제외)
+        non_all_cats = [c for c in MUSINSA_CATEGORIES if c["code"]]
+        for i, cat in enumerate(non_all_cats):
+            if i < len(different_sids):
+                MUSINSA_CAT_TO_SECTION[cat["code"]] = str(different_sids[i])
+
     categories = {}
     for cat in MUSINSA_CATEGORIES:
         print(f"  - {cat['label']} 수집 중...")
+        # sectionId 매핑이 있으면 우선 사용
+        if cat["code"] and cat["code"] in MUSINSA_CAT_TO_SECTION:
+            sid = MUSINSA_CAT_TO_SECTION[cat["code"]]
+            try:
+                items = _fetch_via_section_id(sid, cat["code"], cat["label"])
+                if items:
+                    print(f"    ✓ [sectionId={sid}] {len(items)}개")
+                    categories[cat["code"]] = items
+                    time.sleep(1)
+                    continue
+            except Exception as e:
+                print(f"    [WARN] sectionId={sid} 실패: {e}")
         items = fetch_musinsa_category(cat["code"], cat["label"])
         categories[cat["code"]] = items
         time.sleep(1.5)
