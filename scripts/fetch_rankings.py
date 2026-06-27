@@ -262,66 +262,87 @@ def _close_playwright():
     _PW_INSTANCE = None
 
 
-def _probe_client_musinsa_section_ids() -> dict:
+def _fetch_client_musinsa_by_category(cat_code: str) -> list:
     """
-    client.musinsa.com/api/home/web/v5/pans/ranking 에서 카테고리별 sectionId를 탐색.
-    전체(sectionId=200) 1위와 다른 결과를 반환하는 sectionId를 찾음.
-    반환: {cat_code: raw_items}
+    client.musinsa.com/api/home/web/v5/pans/ranking 로 카테고리별 랭킹 수집.
+    sectionId=201 + categoryCode=xxx 조합이 카테고리별 독립 데이터를 반환함.
+    cat_code="" → 전체 (sectionId=200 사용)
     """
     url = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
-    base_headers = {
+    headers = {
         "User-Agent": BROWSER_UA,
         "Referer": "https://www.musinsa.com/",
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "ko-KR,ko;q=0.9",
         "Origin": "https://www.musinsa.com",
     }
-
-    # 전체 1위 기준
-    ref_first_id = None
-    try:
-        r = requests.get(url, params={
+    if cat_code:
+        params = {
+            "storeCode": "musinsa", "sectionId": "201", "gf": "M",
+            "categoryCode": cat_code, "ageBand": "AGE_BAND_25",
+        }
+    else:
+        params = {
             "storeCode": "musinsa", "sectionId": "200", "gf": "M",
             "categoryCode": "000", "ageBand": "AGE_BAND_25",
-        }, headers=base_headers, timeout=15)
+        }
+    try:
+        r = requests.get(url, params=params, headers=headers, timeout=15)
+        if not r.ok:
+            return []
         mods = r.json().get("data", {}).get("modules", [])
-        items = _extract_multicolumn_products(mods)
-        if items:
-            ref_first_id = items[0].get("id")
+        return _extract_multicolumn_products(mods)
     except Exception:
-        pass
+        return []
 
-    # 탐색할 sectionId 범위 (카테고리별 섹션을 찾기 위해 넓은 범위 탐색)
-    results = {}
+
+def _fetch_all_musinsa_via_section_api() -> dict:
+    """
+    sectionId=201 + categoryCode 조합으로 전체 카테고리 랭킹 수집.
+    전체는 sectionId=200 사용.
+    반환: {cat_code: raw_items}
+    """
+    # 전체 기준 1위 상품 ID (카테고리별 데이터 검증용)
+    all_items = _fetch_client_musinsa_by_category("")
+    if not all_items:
+        print(f"    [SECTION] 전체 랭킹 수집 실패")
+        return {}
+    ref_id = all_items[0].get("id")
+
+    results: dict = {"": all_items}
     cat_codes = ["001", "002", "003", "004", "005", "020", "022", "023", "024", "026"]
-    found_codes = set()
+    found = 0
 
-    # categoryCode 파라미터를 직접 시도 (다른 storeCode나 apiVersion도)
     for cat_code in cat_codes:
-        for extra in [
-            {"categoryCode": cat_code, "sectionId": "200"},
-            {"categoryCode": cat_code, "sectionId": "201"},
-            {"contentsCode": cat_code, "sectionId": "200"},
-        ]:
-            try:
-                params = {"storeCode": "musinsa", "gf": "M", "ageBand": "AGE_BAND_25", **extra}
-                r = requests.get(url, params=params, headers=base_headers, timeout=10)
-                if not r.ok:
+        items = _fetch_client_musinsa_by_category(cat_code)
+        if items and items[0].get("id") != ref_id:
+            results[cat_code] = items
+            found += 1
+        else:
+            # 전체와 동일하거나 빈 경우: 더 넓은 sectionId 범위 탐색
+            for sid in range(202, 220):
+                try:
+                    url = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
+                    r = requests.get(url, params={
+                        "storeCode": "musinsa", "sectionId": str(sid), "gf": "M",
+                        "categoryCode": cat_code, "ageBand": "AGE_BAND_25",
+                    }, headers={
+                        "User-Agent": BROWSER_UA, "Referer": "https://www.musinsa.com/",
+                        "Accept": "application/json", "Origin": "https://www.musinsa.com",
+                    }, timeout=8)
+                    if not r.ok:
+                        continue
+                    mods = r.json().get("data", {}).get("modules", [])
+                    sid_items = _extract_multicolumn_products(mods)
+                    if sid_items and sid_items[0].get("id") != ref_id:
+                        results[cat_code] = sid_items
+                        found += 1
+                        print(f"    [SECTION] ✓ {cat_code} sectionId={sid}에서 발견")
+                        break
+                except Exception:
                     continue
-                mods = r.json().get("data", {}).get("modules", [])
-                items = _extract_multicolumn_products(mods)
-                if items and ref_first_id and items[0].get("id") != ref_first_id:
-                    results[cat_code] = items
-                    found_codes.add(cat_code)
-                    print(f"    [SECTION] ✓ {cat_code} 카테고리 데이터 발견: {extra}")
-                    break
-            except Exception:
-                continue
 
-    if found_codes:
-        print(f"    [SECTION] {len(found_codes)}개 카테고리 발견: {found_codes}")
-    else:
-        print(f"    [SECTION] 카테고리별 sectionId 탐색 실패")
+    print(f"    [SECTION] {found}개 카테고리 수집 완료 (전체 포함 {len(results)}개)")
     return results
 
 
@@ -527,38 +548,10 @@ def fetch_musinsa() -> dict:
         print(f"  ✓ 무신사 {total}개 수집 완료 (카테고리별 API)")
         return categories
 
-    # ── 방법 1b: client.musinsa.com sectionId 탐색 ──────
-    print("  [WARN] 카테고리 API 무효 → sectionId 탐색 시도")
-    section_results = {}
-    try:
-        section_results = _probe_client_musinsa_section_ids()
-    except Exception as e:
-        print(f"  [WARN] sectionId 탐색 실패: {e}")
-    if section_results:
-        categories = {}
-        fallback_all2 = []
-        try:
-            fallback_all2 = _fetch_via_home_widget_all()
-        except Exception:
-            pass
-        for cat in MUSINSA_CATEGORIES:
-            cat_code = cat["code"]
-            cat_label = cat["label"]
-            raw_items = section_results.get(cat_code)
-            if raw_items:
-                categories[cat_code] = _multicolumn_to_items(raw_items, cat_code, cat_label)
-                print(f"    ✓ [SECTION] {cat_label}: {len(categories[cat_code])}개")
-            elif not cat_code and fallback_all2:
-                categories[cat_code] = _multicolumn_to_items(fallback_all2, cat_code, cat_label)
-                print(f"    ✓ [홈위젯] {cat_label}: {len(categories[cat_code])}개")
-            else:
-                categories[cat_code] = []
-        total = sum(len(v) for v in categories.values())
-        print(f"  ✓ 무신사 {total}개 수집 완료 (sectionId 탐색)")
-        return categories
-
-    # ── 방법 2: Playwright 랭킹 페이지 직접 접속 ──────
-    print("  [WARN] sectionId 탐색 실패 → Playwright 랭킹 페이지 시도")
+    # ── 방법 2: Playwright - /store/ranking/best URL 직접 접속 ──────
+    # 주의: sectionId=201 + categoryCode 조합은 패션 카테고리가 아닌
+    # 홈페이지 편집 섹션을 반환하므로 사용하지 않음
+    print("  [WARN] 카테고리 API 무효 → Playwright 랭킹 페이지 시도")
     playwright_results = {}
     try:
         playwright_results = _fetch_all_musinsa_via_playwright()
@@ -578,26 +571,22 @@ def fetch_musinsa() -> dict:
     for cat in MUSINSA_CATEGORIES:
         cat_code = cat["code"]
         cat_label = cat["label"]
-        print(f"  - {cat_label} 수집 중...")
 
         raw_items = playwright_results.get(cat_code)
         if raw_items:
             items = _multicolumn_to_items(raw_items, cat_code, cat_label)
             if items:
                 categories[cat_code] = items
-                print(f"    ✓ [PW-탭] {len(items)}개")
+                print(f"    ✓ [PW] {cat_label}: {len(items)}개")
                 continue
 
         if not cat_code and fallback_all:
             categories[cat_code] = _multicolumn_to_items(fallback_all, cat_code, cat_label)
-            print(f"    ✓ [홈위젯] {len(categories[cat_code])}개")
+            print(f"    ✓ [홈위젯] 전체: {len(categories[cat_code])}개")
         else:
-            if fallback_all:
-                categories[cat_code] = _multicolumn_to_items(fallback_all, cat_code, cat_label)
-                print(f"    [임시] {cat_label}: 전체 데이터 사용 ({len(categories[cat_code])}개)")
-            else:
-                categories[cat_code] = []
-                print(f"    [ERROR] {cat_label}: 수집 실패")
+            # 카테고리 데이터 없음 - 빈 목록 (잘못된 데이터 표시 방지)
+            categories[cat_code] = []
+            print(f"    [빈목록] {cat_label}: 카테고리 데이터 수집 실패")
 
     total = sum(len(v) for v in categories.values())
     print(f"  ✓ 무신사 {total}개 수집 완료 ({len(categories)}개 카테고리)")
