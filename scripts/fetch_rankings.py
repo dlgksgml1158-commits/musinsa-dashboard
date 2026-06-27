@@ -83,7 +83,10 @@ def _parse_musinsa_response(data: dict, cat_code: str, cat_label: str) -> list:
             "category": cat_code,
             "categoryLabel": cat_label,
             "imgUrl": item.get("image", {}).get("url", ""),
-            "productUrl": f"https://www.musinsa.com/search/goods?keyword={requests.utils.quote(info.get('productName', ''), safe='')}",
+            "productUrl": (
+                item.get("link", {}).get("url", "") or
+                f"https://www.musinsa.com/products/{product_id}"
+            ),
             "change": None,
         })
     return result
