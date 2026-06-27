@@ -1,6 +1,6 @@
 {
   "platform": "29cm",
-  "updatedAt": "2026-06-27T16:23:09.720703+00:00",
+  "updatedAt": "2026-06-27T16:27:41.155592+00:00",
   "items": [
     {
       "rank": 1,
@@ -60,7 +60,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202409/11ef711bce24d232856adbd76415806b.png",
       "productUrl": "https://product.29cm.co.kr/catalog/2834714",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 5,
@@ -75,7 +75,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202508/11f0775c580fc350964ad1c0dd7a285f.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3423059",
-      "change": -1
+      "change": 0
     },
     {
       "rank": 6,
@@ -90,7 +90,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202504/11f023ebf4c0d4ddb170fb729d5eec51.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3240132",
-      "change": -1
+      "change": 0
     },
     {
       "rank": 7,
@@ -105,7 +105,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202502/11efe818982141ed85218990218cce9f.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3049899",
-      "change": -1
+      "change": 0
     },
     {
       "rank": 8,
@@ -120,7 +120,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2023/08/04/304b760f62854f37b11f8d0ef361ac3a_20230804171936.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/2161780",
-      "change": -1
+      "change": 0
     },
     {
       "rank": 9,
@@ -135,7 +135,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ad2b1abf8c3b3571dc2f8829e90.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3294455",
-      "change": -1
+      "change": 0
     },
     {
       "rank": 10,
@@ -150,7 +150,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f123892d1f1797a540b99238666c72.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3870019",
-      "change": 10
+      "change": 0
     },
     {
       "rank": 11,
@@ -165,7 +165,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202602/11f10894a50a6582a3c029e67f9656ff.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3791746",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 12,
@@ -180,40 +180,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202506/11f0481cadc72997afc04572dca938e5.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3316078",
-      "change": -3
+      "change": 0
     },
     {
       "rank": 13,
-      "id": "cm-3812629",
-      "brand": "오와이",
-      "name": "SPRAY HEART TEE - MELANGE",
-      "price": 47700,
-      "originalPrice": 53000,
-      "discountRate": 10.0,
-      "finalPrice": 47700,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202602/11f11217e45c7c80a3c0658e04640f39.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3812629",
-      "change": "NEW"
-    },
-    {
-      "rank": 14,
-      "id": "cm-2161781",
-      "brand": "카펙",
-      "name": "카펙 아바카 플러스 콘 커피 필터 - 1컵 화이트(100P)",
-      "price": 4190,
-      "originalPrice": 6800,
-      "discountRate": 38.0,
-      "finalPrice": 4190,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/next-product/2023/08/04/554940e9f1ae46e0994610fa3402d1f3_20230804171929.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/2161781",
-      "change": -4
-    },
-    {
-      "rank": 15,
       "id": "cm-3943353",
       "brand": "케일",
       "name": "STRIPE B.L. SHORT SLEEVE (Blue)",
@@ -225,7 +195,37 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f149ce66935c71bc920d7315218b97.png",
       "productUrl": "https://product.29cm.co.kr/catalog/3943353",
-      "change": -4
+      "change": 2
+    },
+    {
+      "rank": 14,
+      "id": "cm-3812629",
+      "brand": "오와이",
+      "name": "SPRAY HEART TEE - MELANGE",
+      "price": 47700,
+      "originalPrice": 53000,
+      "discountRate": 10.0,
+      "finalPrice": 47700,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202602/11f11217e45c7c80a3c0658e04640f39.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3812629",
+      "change": -1
+    },
+    {
+      "rank": 15,
+      "id": "cm-2161781",
+      "brand": "카펙",
+      "name": "카펙 아바카 플러스 콘 커피 필터 - 1컵 화이트(100P)",
+      "price": 4190,
+      "originalPrice": 6800,
+      "discountRate": 38.0,
+      "finalPrice": 4190,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/next-product/2023/08/04/554940e9f1ae46e0994610fa3402d1f3_20230804171929.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/2161781",
+      "change": -1
     },
     {
       "rank": 16,
@@ -240,7 +240,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2025/02/14/fe20a85e55f149caadefb82ea390e012_20250214193002.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3078161",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 17,
@@ -255,7 +255,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557323635bfba709bb080362cfa3.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3997794",
-      "change": -5
+      "change": 0
     },
     {
       "rank": 18,
@@ -270,7 +270,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557343e70774bdf5eb120dcb19ea.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3997795",
-      "change": -5
+      "change": 0
     },
     {
       "rank": 19,
@@ -285,7 +285,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202306/11ee1649c4b6296085910ddd49b3534b.jpeg",
       "productUrl": "https://product.29cm.co.kr/catalog/2129528",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 20,
@@ -300,7 +300,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202511/11f0c9dc3c178dcfab9d836cd36c6907.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3664393",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 21,
@@ -315,7 +315,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202604/11f1429ece17d3adbc92ada2c5fe42e3.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3258899",
-      "change": -7
+      "change": 0
     },
     {
       "rank": 22,
@@ -330,25 +330,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/15/973f9f8d8c1c4f9baedd7cf80b457fe9_20260415140154.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3916916",
-      "change": -7
+      "change": 0
     },
     {
       "rank": 23,
-      "id": "cm-2280080",
-      "brand": "일룸",
-      "name": "업모션 테이블 1600폭 타원형 (강화 사틴유리)",
-      "price": 1390000,
-      "originalPrice": 1390000,
-      "discountRate": 0.0,
-      "finalPrice": 1390000,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202310/11ee683342f7c9f98a7f171de03c1b30.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/2280080",
-      "change": -7
-    },
-    {
-      "rank": 24,
       "id": "cm-3911708",
       "brand": "카키스",
       "name": "Heather S/S Tee Teal",
@@ -360,10 +345,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202604/11f13285cb8eaba69ec5e315450f9993.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3911708",
-      "change": "NEW"
+      "change": 1
     },
     {
-      "rank": 25,
+      "rank": 24,
       "id": "cm-3917300",
       "brand": "해피프린스",
       "name": "베르 원피스",
@@ -375,10 +360,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/20/2f104cb5a80a4afd9444dc1caff2bf69_20260420112932.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3917300",
-      "change": -8
+      "change": 1
     },
     {
-      "rank": 26,
+      "rank": 25,
       "id": "cm-3904773",
       "brand": "해피프린스",
       "name": "마인 니트 가디건",
@@ -390,10 +375,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/03/b0dad110813f44feb1d9e414ae4758e0_20260403152319.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3904773",
-      "change": -8
+      "change": 1
     },
     {
-      "rank": 27,
+      "rank": 26,
       "id": "cm-3913155",
       "brand": "유니폼브릿지",
       "name": "marathon duck s/s t-shirt oatmeal melange",
@@ -405,7 +390,22 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202604/11f133241651b9f09ec5df25147ae6d9.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3913155",
-      "change": -8
+      "change": 1
+    },
+    {
+      "rank": 27,
+      "id": "cm-3377182",
+      "brand": "아디다스",
+      "name": "[29CM단독 재입고] SL 72 OG - 브라운 / JR7527",
+      "price": 103200,
+      "originalPrice": 129000,
+      "discountRate": 20.0,
+      "finalPrice": 103200,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202606/11f1717ad923647bb357cd0bc1ff68e7.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3377182",
+      "change": "NEW"
     },
     {
       "rank": 28,
@@ -420,7 +420,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202602/11f10ff18f9d9476a540b9711d972b36.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3803310",
-      "change": -7
+      "change": 0
     },
     {
       "rank": 29,
@@ -435,7 +435,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202508/11f0734465e08a8688935fff247012b2.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3412405",
-      "change": -7
+      "change": 0
     },
     {
       "rank": 30,
@@ -450,7 +450,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202604/11f13fb63a21b04fbc92d7357a78ab39.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3953729",
-      "change": -7
+      "change": 0
     }
   ],
   "categories": {
@@ -513,7 +513,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202409/11ef711bce24d232856adbd76415806b.png",
         "productUrl": "https://product.29cm.co.kr/catalog/2834714",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 5,
@@ -528,7 +528,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202508/11f0775c580fc350964ad1c0dd7a285f.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3423059",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 6,
@@ -543,7 +543,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202504/11f023ebf4c0d4ddb170fb729d5eec51.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3240132",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 7,
@@ -558,7 +558,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202502/11efe818982141ed85218990218cce9f.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3049899",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 8,
@@ -573,7 +573,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2023/08/04/304b760f62854f37b11f8d0ef361ac3a_20230804171936.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/2161780",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 9,
@@ -588,7 +588,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202606/11f16ad2b1abf8c3b3571dc2f8829e90.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3294455",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 10,
@@ -603,7 +603,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f123892d1f1797a540b99238666c72.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3870019",
-        "change": 10
+        "change": 0
       },
       {
         "rank": 11,
@@ -618,7 +618,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202602/11f10894a50a6582a3c029e67f9656ff.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3791746",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 12,
@@ -633,40 +633,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202506/11f0481cadc72997afc04572dca938e5.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3316078",
-        "change": -3
+        "change": 0
       },
       {
         "rank": 13,
-        "id": "cm-3812629",
-        "brand": "오와이",
-        "name": "SPRAY HEART TEE - MELANGE",
-        "price": 47700,
-        "originalPrice": 53000,
-        "discountRate": 10.0,
-        "finalPrice": 47700,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202602/11f11217e45c7c80a3c0658e04640f39.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3812629",
-        "change": "NEW"
-      },
-      {
-        "rank": 14,
-        "id": "cm-2161781",
-        "brand": "카펙",
-        "name": "카펙 아바카 플러스 콘 커피 필터 - 1컵 화이트(100P)",
-        "price": 4190,
-        "originalPrice": 6800,
-        "discountRate": 38.0,
-        "finalPrice": 4190,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/next-product/2023/08/04/554940e9f1ae46e0994610fa3402d1f3_20230804171929.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/2161781",
-        "change": -4
-      },
-      {
-        "rank": 15,
         "id": "cm-3943353",
         "brand": "케일",
         "name": "STRIPE B.L. SHORT SLEEVE (Blue)",
@@ -678,7 +648,37 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f149ce66935c71bc920d7315218b97.png",
         "productUrl": "https://product.29cm.co.kr/catalog/3943353",
-        "change": -4
+        "change": 2
+      },
+      {
+        "rank": 14,
+        "id": "cm-3812629",
+        "brand": "오와이",
+        "name": "SPRAY HEART TEE - MELANGE",
+        "price": 47700,
+        "originalPrice": 53000,
+        "discountRate": 10.0,
+        "finalPrice": 47700,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202602/11f11217e45c7c80a3c0658e04640f39.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3812629",
+        "change": -1
+      },
+      {
+        "rank": 15,
+        "id": "cm-2161781",
+        "brand": "카펙",
+        "name": "카펙 아바카 플러스 콘 커피 필터 - 1컵 화이트(100P)",
+        "price": 4190,
+        "originalPrice": 6800,
+        "discountRate": 38.0,
+        "finalPrice": 4190,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/next-product/2023/08/04/554940e9f1ae46e0994610fa3402d1f3_20230804171929.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/2161781",
+        "change": -1
       },
       {
         "rank": 16,
@@ -693,7 +693,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2025/02/14/fe20a85e55f149caadefb82ea390e012_20250214193002.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3078161",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 17,
@@ -708,7 +708,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557323635bfba709bb080362cfa3.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3997794",
-        "change": -5
+        "change": 0
       },
       {
         "rank": 18,
@@ -723,7 +723,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f1557343e70774bdf5eb120dcb19ea.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3997795",
-        "change": -5
+        "change": 0
       },
       {
         "rank": 19,
@@ -738,7 +738,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202306/11ee1649c4b6296085910ddd49b3534b.jpeg",
         "productUrl": "https://product.29cm.co.kr/catalog/2129528",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 20,
@@ -753,7 +753,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202511/11f0c9dc3c178dcfab9d836cd36c6907.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3664393",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 21,
@@ -768,7 +768,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202604/11f1429ece17d3adbc92ada2c5fe42e3.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3258899",
-        "change": -7
+        "change": 0
       },
       {
         "rank": 22,
@@ -783,25 +783,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/15/973f9f8d8c1c4f9baedd7cf80b457fe9_20260415140154.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3916916",
-        "change": -7
+        "change": 0
       },
       {
         "rank": 23,
-        "id": "cm-2280080",
-        "brand": "일룸",
-        "name": "업모션 테이블 1600폭 타원형 (강화 사틴유리)",
-        "price": 1390000,
-        "originalPrice": 1390000,
-        "discountRate": 0.0,
-        "finalPrice": 1390000,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202310/11ee683342f7c9f98a7f171de03c1b30.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/2280080",
-        "change": -7
-      },
-      {
-        "rank": 24,
         "id": "cm-3911708",
         "brand": "카키스",
         "name": "Heather S/S Tee Teal",
@@ -813,10 +798,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202604/11f13285cb8eaba69ec5e315450f9993.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3911708",
-        "change": "NEW"
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "cm-3917300",
         "brand": "해피프린스",
         "name": "베르 원피스",
@@ -828,10 +813,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/20/2f104cb5a80a4afd9444dc1caff2bf69_20260420112932.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3917300",
-        "change": -8
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "cm-3904773",
         "brand": "해피프린스",
         "name": "마인 니트 가디건",
@@ -843,10 +828,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/next-product/2026/04/03/b0dad110813f44feb1d9e414ae4758e0_20260403152319.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3904773",
-        "change": -8
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "cm-3913155",
         "brand": "유니폼브릿지",
         "name": "marathon duck s/s t-shirt oatmeal melange",
@@ -858,7 +843,22 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202604/11f133241651b9f09ec5df25147ae6d9.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3913155",
-        "change": -8
+        "change": 1
+      },
+      {
+        "rank": 27,
+        "id": "cm-3377182",
+        "brand": "아디다스",
+        "name": "[29CM단독 재입고] SL 72 OG - 브라운 / JR7527",
+        "price": 103200,
+        "originalPrice": 129000,
+        "discountRate": 20.0,
+        "finalPrice": 103200,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202606/11f1717ad923647bb357cd0bc1ff68e7.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3377182",
+        "change": "NEW"
       },
       {
         "rank": 28,
@@ -873,7 +873,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202602/11f10ff18f9d9476a540b9711d972b36.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3803310",
-        "change": -7
+        "change": 0
       },
       {
         "rank": 29,
@@ -888,7 +888,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202508/11f0734465e08a8688935fff247012b2.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3412405",
-        "change": -7
+        "change": 0
       },
       {
         "rank": 30,
@@ -903,7 +903,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202604/11f13fb63a21b04fbc92d7357a78ab39.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3953729",
-        "change": -7
+        "change": 0
       }
     ],
     "tops": [],
