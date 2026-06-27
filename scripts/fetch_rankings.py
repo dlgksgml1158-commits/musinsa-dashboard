@@ -1,14 +1,4 @@
-"""
-무신사 & 29CM 랭킹 데이터 수집 스크립트
-GitHub Actions에서 1시간마다 자동 실행됩니다.
-
-- 무신사: api.musinsa.com/api2/json/rank/goods (카테고리별 전용 랭킹 API 1순위)
-          client.musinsa.com home widget (전체 폴백)
-          Playwright 홈페이지 탭 클릭 (최후 수단)
-- 29CM  : display-bff-api.29cm.co.kr (전체 30위)
-- 이전 데이터와 비교하여 순위 변동 계산
-- data/musinsa.json, data/29cm.json 으로 저장
-"""
+"""\n무신사 & 29CM 랭킹 데이터 수집 스크립트\nGitHub Actions에서 1시간마다 자동 실행됩니다.\n\n- 무신사: api.musinsa.com/api2/json/rank/goods (카테고리별 전용 랭킹 API 1순위)\n          client.musinsa.com home widget (전체 폴백)\n          Playwright 홈페이지 탭 클릭 (최후 수단)\n- 29CM  : display-bff-api.29cm.co.kr (전체 30위)\n- 이전 데이터와 비교하여 순위 변동 계산\n- data/musinsa.json, data/29cm.json 으로 저장\n"""
 
 import json
 import time
@@ -375,19 +365,34 @@ def _fetch_all_musinsa_via_playwright() -> dict:
         extra_http_headers={"Accept-Language": "ko-KR,ko;q=0.9"},
     )
     page = context.new_page()
-    all_captured: list[dict] = []  # (url, items) 순서대로
     last_captured = []
+
+    # 모든 API 응답 캡처 (도메인 무관)
+    all_api_calls: list[dict] = []
 
     def on_response(response):
         nonlocal last_captured
-        if "client.musinsa.com/api" in response.url and response.status == 200:
+        url = response.url
+        # client.musinsa.com 또는 다른 API 도메인의 JSON 응답 캡처
+        if response.status == 200 and ("musinsa" in url or "ranking" in url.lower()):
             try:
                 body = response.json()
+                # MULTICOLUMN/PRODUCT_COLUMN 구조 확인
                 mods = body.get("data", {}).get("modules", [])
                 items = _extract_multicolumn_products(mods)
                 if items:
                     last_captured = items
-                    all_captured.append({"url": response.url, "items": items})
+                    all_api_calls.append({"url": url, "count": len(items)})
+                # 다른 상품 목록 구조도 확인
+                elif isinstance(body, dict):
+                    for key in ["list", "goods", "items", "products", "data"]:
+                        val = body.get(key, [])
+                        if isinstance(val, list) and len(val) > 5:
+                            if isinstance(val[0], dict) and any(
+                                k in val[0] for k in ["id", "goodsNo", "itemId", "productId"]
+                            ):
+                                all_api_calls.append({"url": url, "count": len(val), "key": key})
+                                break
             except Exception:
                 pass
 
@@ -395,68 +400,62 @@ def _fetch_all_musinsa_via_playwright() -> dict:
     results = {}
 
     try:
-        # www.musinsa.com/store 경로는 Korean IP 없이도 접근 가능
-        # 여기서 ranking 관련 하위 경로들을 시도
+        # 사용자가 제공한 URL 포함, 다양한 무신사 경로 시도
+        # /main/musinsa, /store 경로는 Korean IP 없이 접근 가능
         ranking_urls = [
+            "https://www.musinsa.com/main/musinsa/recommend?gf=A",
+            "https://www.musinsa.com/main/musinsa/recommend",
             "https://www.musinsa.com/store/ranking/best",
             "https://www.musinsa.com/store/ranking",
-            "https://www.musinsa.com/store/best",
             "https://www.musinsa.com/store",
         ]
 
+        best_url = None
         for try_url in ranking_urls:
             last_captured = []
             try:
                 page.goto(try_url, wait_until="domcontentloaded", timeout=20000)
-                page.wait_for_timeout(5000)
+                page.wait_for_timeout(6000)  # React hydration 충분히 대기
                 landed = page.url
-                print(f"    [PW] {try_url} → {landed[:70]}")
 
                 if "global.musinsa.com" in landed or "choose-location" in landed:
-                    print(f"    [PW] geo-redirect 감지, 스킵")
+                    print(f"    [PW] {try_url[:50]} → geo-redirect, 스킵")
                     continue
 
-                if last_captured:
-                    print(f"    [PW] {try_url} 에서 {len(last_captured)}개 상품 캡처!")
-                    results[""] = list(last_captured)
-                    break  # 랭킹 데이터 있는 URL 발견
-                else:
-                    print(f"    [PW] {try_url} 데이터 없음")
-            except Exception as e:
-                print(f"    [PW] {try_url} 오류: {e}")
+                # 페이지 제목과 기본 정보 로그
+                try:
+                    title = page.title()
+                    print(f"    [PW] {try_url[:55]} → {landed[:55]}")
+                    print(f"    [PW] 페이지 제목: {title[:50]}")
+                except Exception:
+                    print(f"    [PW] {try_url[:55]} → {landed[:55]}")
 
-        # __NEXT_DATA__ 파싱 시도 (SSR 데이터)
-        if not results:
-            try:
-                next_data_raw = page.evaluate("""
-                    () => {
-                        const el = document.getElementById('__NEXT_DATA__');
-                        return el ? el.textContent : null;
-                    }
-                """)
-                if next_data_raw:
-                    next_data = json.loads(next_data_raw)
-                    print(f"    [PW] __NEXT_DATA__ 발견, 탐색 중...")
-                    # 상품 배열 탐색
-                    products = _search_next_data_products(next_data)
-                    if products:
-                        print(f"    [PW] __NEXT_DATA__ 상품 {len(products)}개 발견")
-            except Exception:
-                pass
+                if last_captured:
+                    print(f"    [PW] {len(last_captured)}개 상품 API 캡처!")
+                    results[""] = list(last_captured)
+                    best_url = try_url
+                    break
+                else:
+                    # API 캡처 없어도 캡처된 호출 목록 확인
+                    if all_api_calls:
+                        print(f"    [PW] 비MULTICOLUMN API 캡처: {all_api_calls[-3:]}")
+                    print(f"    [PW] {try_url[:50]} 데이터 없음")
+            except Exception as e:
+                print(f"    [PW] {try_url[:50]} 오류: {str(e)[:60]}")
 
         # 탭 목록 확인 (디버그)
         try:
             tabs_text = page.evaluate("""
                 () => {
-                    const els = [...document.querySelectorAll('button, [role="tab"], li')];
+                    const els = [...document.querySelectorAll('button, [role="tab"], li, a')];
                     return els
                         .filter(el => el.offsetParent !== null)
                         .map(el => el.textContent.trim())
-                        .filter(t => t.length > 0 && t.length < 20)
+                        .filter(t => t.length > 0 && t.length < 15)
                         .slice(0, 30);
                 }
             """)
-            print(f"    [PW] 현재 페이지 탭/버튼: {tabs_text}")
+            print(f"    [PW] 현재 페이지 탭/버튼/링크: {tabs_text}")
         except Exception:
             pass
 
@@ -476,7 +475,7 @@ def _fetch_all_musinsa_via_playwright() -> dict:
                     el = page.locator(sel).first
                     if el.is_visible(timeout=1500):
                         el.click()
-                        page.wait_for_timeout(2000)
+                        page.wait_for_timeout(2500)
                         clicked = True
                         break
                 except Exception:
