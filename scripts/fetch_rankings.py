@@ -938,82 +938,55 @@ def _diag_29cm_endpoints():
 
     def on_req(req):
         u = req.url
-        if "29cm" in u and ("best" in u or "plp" in u or "rank" in u or "category" in u):
-            if req.method == "POST":
-                try:
-                    captured.append((u, req.post_data))
-                except Exception:
-                    captured.append((u, None))
+        # display-bff-api 모든 호출 캡처 (best/items, plp 등)
+        if "display-bff-api.29cm" in u or ("29cm" in u and "/api/" in u):
+            try:
+                captured.append((req.method, u, req.post_data))
+            except Exception:
+                captured.append((req.method, u, None))
 
     page.on("request", on_req)
 
-    candidate_pages = [
-        "https://www.29cm.co.kr/store/best-items",
-        "https://www.29cm.co.kr/best",
-        "https://www.29cm.co.kr/best-products",
+    # 카테고리별 URL 직접 이동 → best/items 실제 요청 payload 캡처
+    # GA 이벤트로 확인된 카테고리 코드: 268103100=상의, 268102100=아우터
+    cat_urls = [
+        ("상의", "https://www.29cm.co.kr/store/best-items?category_large_no=268100100&category_mid_no=268103100"),
+        ("아우터", "https://www.29cm.co.kr/store/best-items?category_large_no=268100100&category_mid_no=268102100"),
     ]
-    landed_ok = None
-    for purl in candidate_pages:
+    for label, purl in cat_urls:
+        captured.clear()
         try:
-            page.goto(purl, wait_until="domcontentloaded", timeout=30000)
-            page.wait_for_timeout(4000)
-            cur = page.url
-            print(f"  [진단-29CM] {purl[:45]} → landed {cur[:55]}")
-            if "29cm.co.kr" in cur and "best" in cur:
-                landed_ok = cur
-                break
+            page.goto(purl, wait_until="networkidle", timeout=35000)
+            page.wait_for_timeout(3000)
+            print(f"  [진단-29CM] '{label}' landed {page.url[:70]}")
+            shown = 0
+            for method, u, pd in captured:
+                if "best" in u or "plp" in u:
+                    print(f"  [진단-29CM] '{label}' {method} {u[:60]}")
+                    if pd:
+                        print(f"             payload={str(pd)[:400]}")
+                    shown += 1
+                    if shown >= 3:
+                        break
+            if shown == 0 and captured:
+                m, u, pd = captured[0]
+                print(f"  [진단-29CM] '{label}' (기타) {m} {u[:60]} payload={str(pd)[:300]}")
         except Exception as e:
-            print(f"  [진단-29CM] {purl[:45]} 오류 {str(e)[:45]}")
+            print(f"  [진단-29CM] '{label}' 오류 {str(e)[:50]}")
 
-    if not landed_ok:
-        print("  [진단-29CM] 베스트 페이지 접근 실패")
-        # 최초 로드시 캡처된 payload라도 출력
-        for u, pd in captured[:3]:
-            print(f"  [진단-29CM] (초기) {u[:55]} payload={str(pd)[:280]}")
-        ctx.close()
-        print("  ===== [진단-29CM] 종료 =====")
-        return
-
-    # 페이지에 보이는 탭/버튼 텍스트 출력 (카테고리 탭 이름 확인)
+    # DOM에서 카테고리 메뉴/링크 추출 (전체 카테고리 코드 수집)
     try:
-        tabs = page.evaluate("""
-            () => [...document.querySelectorAll('button,a,li,span')]
-                .filter(e=>e.offsetParent)
-                .map(e=>e.textContent.trim())
-                .filter(t=>t.length>0 && t.length<10)
+        cats = page.evaluate("""
+            () => [...document.querySelectorAll('a[href*="category_mid_no"],a[href*="category_large_no"]')]
+                .map(a => a.textContent.trim().slice(0,10) + '|' + a.getAttribute('href'))
+                .filter((v,i,arr) => arr.indexOf(v)===i)
                 .slice(0,40)
         """)
-        print(f"  [진단-29CM] 페이지 요소: {tabs[:25]}")
-    except Exception:
-        pass
-
-    # 초기 로드 payload
-    for u, pd in captured[:2]:
-        print(f"  [진단-29CM] [초기로드] {u[:50]} payload={str(pd)[:300]}")
-
-    # 카테고리 탭 클릭 시도
-    for label in ["상의", "아우터", "바지", "신발", "가방", "뷰티"]:
-        captured.clear()
-        clicked = False
-        for sel in [f'button:has-text("{label}")', f'a:has-text("{label}")',
-                    f'li:has-text("{label}")', f'text="{label}"']:
-            try:
-                el = page.locator(sel).first
-                if el.is_visible(timeout=800):
-                    el.click(timeout=2500)
-                    page.wait_for_timeout(2500)
-                    clicked = True
-                    break
-            except Exception:
-                continue
-        if not clicked:
-            print(f"  [진단-29CM] '{label}' 탭 못찾음")
-            continue
-        if captured:
-            u, pd = captured[-1]
-            print(f"  [진단-29CM] '{label}' 클릭 → {u[:50]} payload={str(pd)[:320]}")
-        else:
-            print(f"  [진단-29CM] '{label}' 클릭했으나 POST 캡처 없음")
+        print(f"  [진단-29CM] 카테고리 링크 {len(cats)}개:")
+        for c in cats[:40]:
+            print(f"             {c[:110]}")
+    except Exception as e:
+        print(f"  [진단-29CM] 카테고리 추출 오류 {str(e)[:50]}")
 
     ctx.close()
     print("  ===== [진단-29CM] 종료 =====")
