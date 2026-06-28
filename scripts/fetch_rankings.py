@@ -584,8 +584,81 @@ def _search_next_data_products(data, depth=0) -> list:
 #  무신사 메인
 # ═══════════════════════════════════════════════════
 
+def _diag_category_ranking_endpoints():
+    """
+    [진단] categoryCode 파라미터가 실제 필터로 작동하는 엔드포인트 탐색.
+    여러 URL/파라미터 조합에 대해 categoryCode=001(상의) vs 020(신발) 결과가
+    달라지는지 비교 → 다르면 그 엔드포인트가 진짜 카테고리 랭킹 API.
+    """
+    print("  ===== [진단] 카테고리 랭킹 엔드포인트 탐색 =====")
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+        "Origin": "https://www.musinsa.com",
+    }
+
+    def first3(items):
+        out = []
+        for it in items[:3]:
+            info = it.get("info", {})
+            out.append(info.get("productName", "")[:24])
+        return out
+
+    # 후보 1: home/web/v5/pans/ranking 에서 sectionId 고정 + categoryCode 변화
+    base = "https://client.musinsa.com/api/home/web/v5/pans/ranking"
+    for sid in [199, 200, 201, 204, 205, 206, 209, 210]:
+        res = {}
+        for cc in ["001", "020"]:
+            try:
+                r = requests.get(base, params={
+                    "storeCode": "musinsa", "sectionId": str(sid), "gf": "A",
+                    "categoryCode": cc, "ageBand": "AGE_BAND_25",
+                }, headers=headers, timeout=10)
+                mods = r.json().get("data", {}).get("modules", [])
+                res[cc] = _extract_multicolumn_products(mods)
+            except Exception as e:
+                res[cc] = []
+        t1, t20 = first3(res.get("001", [])), first3(res.get("020", []))
+        differ = t1 != t20 and t1 and t20
+        flag = "★다름★" if differ else "동일"
+        print(f"  [진단] sectionId={sid} categoryCode필터 {flag}")
+        print(f"         001(상의)={t1}")
+        print(f"         020(신발)={t20}")
+
+    # 후보 2: 다른 ranking 경로들
+    alt_urls = [
+        ("api2/hm-ranking", "https://client.musinsa.com/api2/hm/web/v5/pans/ranking"),
+        ("display-v2", "https://client.musinsa.com/api/display/v2/ranking"),
+        ("display-v3", "https://client.musinsa.com/api/display/v3/ranking"),
+        ("dp-plp", "https://client.musinsa.com/api2/dp/v1/plp/goods"),
+    ]
+    for label, u in alt_urls:
+        try:
+            r = requests.get(u, params={
+                "storeCode": "musinsa", "gf": "A", "categoryCode": "001",
+                "category": "001000", "sectionId": "200", "sortCode": "POPULAR",
+                "page": 1, "size": 5,
+            }, headers=headers, timeout=10)
+            print(f"  [진단] {label}: HTTP {r.status_code} ({u})")
+            if r.ok:
+                try:
+                    print(f"         body앞부분: {json.dumps(r.json())[:200]}")
+                except Exception:
+                    print(f"         text앞부분: {r.text[:200]}")
+        except Exception as e:
+            print(f"  [진단] {label}: 오류 {str(e)[:60]}")
+    print("  ===== [진단] 종료 =====")
+
+
 def fetch_musinsa() -> dict:
     print("▶ 무신사 랭킹 수집 시작...")
+
+    try:
+        _diag_category_ranking_endpoints()
+    except Exception as e:
+        print(f"  [진단] 실패: {e}")
 
     # ── 방법 1: 카테고리별 전용 API ──────────────────
     api_works = _probe_musinsa_api()
