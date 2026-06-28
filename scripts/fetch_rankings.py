@@ -920,76 +920,44 @@ def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> di
 
 def _diag_29cm_endpoints():
     """
-    [진단] Playwright로 29CM 베스트 페이지를 열어, 카테고리 탭 클릭 시
-    실제로 호출되는 best/items API 요청 payload 를 캡처한다.
-    이로써 카테고리 필터의 정확한 파라미터 이름/값을 알아낸다.
+    [진단] recommend-api.29cm.co.kr/api/v4/best 의 categories / items 구조 파악.
+    Playwright 캡처로 발견한 진짜 카테고리 베스트 API.
     """
-    print("  ===== [진단-29CM] Playwright API 캡처 =====")
-    if not _init_playwright():
-        print("  [진단-29CM] Playwright 초기화 실패")
-        return
+    print("  ===== [진단-29CM-v4] recommend-api 구조 =====")
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.29cm.co.kr/",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.29cm.co.kr",
+    }
 
-    ctx = _PW_BROWSER.new_context(
-        user_agent=BROWSER_UA, locale="ko-KR",
-        extra_http_headers={"Accept-Language": "ko-KR,ko;q=0.9"},
-    )
-    page = ctx.new_page()
-    captured = []
-
-    def on_req(req):
-        u = req.url
-        # display-bff-api 모든 호출 캡처 (best/items, plp 등)
-        if "display-bff-api.29cm" in u or ("29cm" in u and "/api/" in u):
-            try:
-                captured.append((req.method, u, req.post_data))
-            except Exception:
-                captured.append((req.method, u, None))
-
-    page.on("request", on_req)
-
-    # 카테고리별 URL 직접 이동 → best/items 실제 요청 payload 캡처
-    # GA 이벤트로 확인된 카테고리 코드: 268103100=상의, 268102100=아우터
-    cat_urls = [
-        ("상의", "https://www.29cm.co.kr/store/best-items?category_large_no=268100100&category_mid_no=268103100"),
-        ("아우터", "https://www.29cm.co.kr/store/best-items?category_large_no=268100100&category_mid_no=268102100"),
-    ]
-    for label, purl in cat_urls:
-        captured.clear()
-        try:
-            page.goto(purl, wait_until="networkidle", timeout=35000)
-            page.wait_for_timeout(3000)
-            print(f"  [진단-29CM] '{label}' landed {page.url[:70]}")
-            shown = 0
-            for method, u, pd in captured:
-                if "best" in u or "plp" in u:
-                    print(f"  [진단-29CM] '{label}' {method} {u[:60]}")
-                    if pd:
-                        print(f"             payload={str(pd)[:400]}")
-                    shown += 1
-                    if shown >= 3:
-                        break
-            if shown == 0 and captured:
-                m, u, pd = captured[0]
-                print(f"  [진단-29CM] '{label}' (기타) {m} {u[:60]} payload={str(pd)[:300]}")
-        except Exception as e:
-            print(f"  [진단-29CM] '{label}' 오류 {str(e)[:50]}")
-
-    # DOM에서 카테고리 메뉴/링크 추출 (전체 카테고리 코드 수집)
+    # 1. 카테고리 목록
     try:
-        cats = page.evaluate("""
-            () => [...document.querySelectorAll('a[href*="category_mid_no"],a[href*="category_large_no"]')]
-                .map(a => a.textContent.trim().slice(0,10) + '|' + a.getAttribute('href'))
-                .filter((v,i,arr) => arr.indexOf(v)===i)
-                .slice(0,40)
-        """)
-        print(f"  [진단-29CM] 카테고리 링크 {len(cats)}개:")
-        for c in cats[:40]:
-            print(f"             {c[:110]}")
+        r = requests.get("https://recommend-api.29cm.co.kr/api/v4/best/categories",
+                         headers=headers, timeout=12)
+        print(f"  [진단-29CM-v4] categories HTTP {r.status_code}")
+        print(f"  [진단-29CM-v4] categories body: {r.text[:1800]}")
     except Exception as e:
-        print(f"  [진단-29CM] 카테고리 추출 오류 {str(e)[:50]}")
+        print(f"  [진단-29CM-v4] categories 오류 {str(e)[:60]}")
 
-    ctx.close()
-    print("  ===== [진단-29CM] 종료 =====")
+    # 2. 카테고리별 items — 파라미터명 후보 시도 (268100100=의류 대분류)
+    param_variants = [
+        {"categoryLargeCode": "268100100"},
+        {"category_large_code": "268100100"},
+        {"largeCategoryCode": "268100100"},
+        {"categoryLargeCode": "268100100", "periodType": "DAILY"},
+    ]
+    for params in param_variants:
+        try:
+            r = requests.get("https://recommend-api.29cm.co.kr/api/v4/best/items",
+                            params=params, headers=headers, timeout=12)
+            body = r.text[:600]
+            print(f"  [진단-29CM-v4] items {params} HTTP {r.status_code} len={len(r.text)}")
+            print(f"             body: {body}")
+        except Exception as e:
+            print(f"  [진단-29CM-v4] items {params} 오류 {str(e)[:50]}")
+
+    print("  ===== [진단-29CM-v4] 종료 =====")
 
 
 def fetch_29cm() -> dict:
