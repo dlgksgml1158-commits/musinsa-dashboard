@@ -1,6 +1,6 @@
 {
   "platform": "29cm",
-  "updatedAt": "2026-06-28T14:43:48.540201+00:00",
+  "updatedAt": "2026-06-28T14:49:47.124380+00:00",
   "items": [
     {
       "rank": 1,
@@ -139,6 +139,21 @@
     },
     {
       "rank": 10,
+      "id": "cm-1649411",
+      "brand": "애습",
+      "name": "스테디 셔츠 - 라이트 그레이",
+      "price": 55480,
+      "originalPrice": 73000,
+      "discountRate": 24.0,
+      "finalPrice": 55480,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202507/11f061eab5e32903afc05dea7cfcabb5.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/1649411",
+      "change": "NEW"
+    },
+    {
+      "rank": 11,
       "id": "cm-3333146",
       "brand": "매너그램",
       "name": "레귤러 스트레이트 데님팬츠 미디엄블루",
@@ -150,10 +165,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236c6a356408a3c0ed6bbb9998f5.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3333146",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 11,
+      "rank": 12,
       "id": "cm-3031937",
       "brand": "콜린스",
       "name": "차량용/인테리어 사쉐 방향제(5종 택1)",
@@ -165,10 +180,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202509/11f09200f8927bb694a2bf97a672ddd8.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3031937",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 12,
+      "rank": 13,
       "id": "cm-3333141",
       "brand": "매너그램",
       "name": "1950 클래식 로드사이드 퍼티그 팬츠 라이트베이지",
@@ -180,10 +195,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f11ddcbf1ceabca3c0177a36d0b5e7.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3333141",
-      "change": 2
+      "change": -1
     },
     {
-      "rank": 13,
+      "rank": 14,
       "id": "cm-3302918",
       "brand": "매너그램",
       "name": "[칸디아니 이태리 수입원단] 뉴 칸디아니 스트레이트 투턱 미디엄블루",
@@ -195,10 +210,25 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236cc1f2a226a540af142cadb4f2.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3302918",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 14,
+      "rank": 15,
+      "id": "cm-3950331",
+      "brand": "마인드브릿지 맨",
+      "name": "크롭 오버핏 데일리 반팔 티셔츠 - 3color M1TS3150",
+      "price": 19460,
+      "originalPrice": 49900,
+      "discountRate": 61.0,
+      "finalPrice": 19460,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202606/11f16079b6890c0d909027281cb84951.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3950331",
+      "change": "NEW"
+    },
+    {
+      "rank": 16,
       "id": "cm-3101947",
       "brand": "킨",
       "name": "하이퍼포트 H2 샌들 Alloy Skyway",
@@ -213,7 +243,7 @@
       "change": -2
     },
     {
-      "rank": 15,
+      "rank": 17,
       "id": "cm-3240169",
       "brand": "본투윈",
       "name": "SMALL B EMBROIDERY SOCKS [WHITE]",
@@ -225,10 +255,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202504/11f020a9b31cdb41b1704fc88631c597.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3240169",
-      "change": 0
+      "change": -2
     },
     {
-      "rank": 16,
+      "rank": 18,
       "id": "cm-3302915",
       "brand": "매너그램",
       "name": "[칸디아니 이태리 수입원단] 뉴 칸디아니 스트레이트 투턱 라이트블루",
@@ -240,10 +270,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236cae6f0f60a3c06fd5b3cbd606.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3302915",
-      "change": 0
+      "change": -2
     },
     {
-      "rank": 17,
+      "rank": 19,
       "id": "cm-3377281",
       "brand": "카키스",
       "name": "Border S/S Tee",
@@ -255,10 +285,40 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202507/11f0639ffb31a5fd890983fa713ee8c4.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3377281",
-      "change": 0
+      "change": -2
     },
     {
-      "rank": 18,
+      "rank": 20,
+      "id": "cm-3333143",
+      "brand": "매너그램",
+      "name": "1950 클래식 로드사이드 퍼티그 팬츠 네이비",
+      "price": 34790,
+      "originalPrice": 150000,
+      "discountRate": 77.0,
+      "finalPrice": 34790,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236c802def66a540d9ebe40671b2.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3333143",
+      "change": "NEW"
+    },
+    {
+      "rank": 21,
+      "id": "cm-3400867",
+      "brand": "유에스엠",
+      "name": "USM Haller Storage 1x2_ver2 (750/1door)_14 Colors",
+      "price": 2179000,
+      "originalPrice": 2179000,
+      "discountRate": 0.0,
+      "finalPrice": 2179000,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202508/11f0736f44c1c9a4964a57fe8a8ce8b9.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3400867",
+      "change": "NEW"
+    },
+    {
+      "rank": 22,
       "id": "cm-2590570",
       "brand": "토마스모어",
       "name": "TG2-PT03 코튼 린넨 스트링 팬츠 - [블랙]",
@@ -270,10 +330,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202504/11f02583b11719f0b13163e2183dd43a.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/2590570",
-      "change": 0
+      "change": -4
     },
     {
-      "rank": 19,
+      "rank": 23,
       "id": "cm-3871392",
       "brand": "티세르",
       "name": "[uni] 넛티 시어서커 커플 반팔 잠옷 세트",
@@ -285,55 +345,25 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f1282d766b03db9454fd1896d9d22e.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3871392",
-      "change": 0
+      "change": -4
     },
     {
-      "rank": 20,
-      "id": "cm-4009785",
-      "brand": "무드인사이드",
-      "name": "리브드 머슬 라운드 하프티_White Melange",
-      "price": 28330,
-      "originalPrice": 59900,
-      "discountRate": 53.0,
-      "finalPrice": 28330,
+      "rank": 24,
+      "id": "cm-3898576",
+      "brand": "매너그램",
+      "name": "[UEYAMA 일본 수입원단] 마이크로 체크 캠프카라 셔츠",
+      "price": 29330,
+      "originalPrice": 219000,
+      "discountRate": 87.0,
+      "finalPrice": 29330,
       "category": "",
       "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202605/11f154d198f29a0ebdf56df2e8d8b7f6.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/4009785",
-      "change": 0
+      "imgUrl": "https://img.29cm.co.kr/item/202604/11f12da504ad35b994548db6fc772eef.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3898576",
+      "change": "NEW"
     },
     {
-      "rank": 21,
-      "id": "cm-3355216",
-      "brand": "브론슨",
-      "name": "9oz USA Cotton Tubular Tee White",
-      "price": 22050,
-      "originalPrice": 35000,
-      "discountRate": 37.0,
-      "finalPrice": 22050,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202605/11f14a7cbe3fac9a85eee54b823ad72d.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3355216",
-      "change": 2
-    },
-    {
-      "rank": 22,
-      "id": "cm-3999033",
-      "brand": "킨",
-      "name": "KEEN 코나 플립 TG Black",
-      "price": 69300,
-      "originalPrice": 99000,
-      "discountRate": 30.0,
-      "finalPrice": 69300,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/next-product/2026/05/15/5b19af4e6e48417f94290a6eaca13c1a_20260515154650.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3999033",
-      "change": -1
-    },
-    {
-      "rank": 23,
+      "rank": 25,
       "id": "cm-3873762",
       "brand": "토마스모어",
       "name": "TG2-TS14 인디고 씬 스트라이프 티",
@@ -345,10 +375,55 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f127ed187e9fc1b493eb3eff9d6d5f.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3873762",
-      "change": -1
+      "change": -2
     },
     {
-      "rank": 24,
+      "rank": 26,
+      "id": "cm-3355216",
+      "brand": "브론슨",
+      "name": "9oz USA Cotton Tubular Tee White",
+      "price": 22050,
+      "originalPrice": 35000,
+      "discountRate": 37.0,
+      "finalPrice": 22050,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202605/11f14a7cbe3fac9a85eee54b823ad72d.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3355216",
+      "change": -5
+    },
+    {
+      "rank": 27,
+      "id": "cm-3999033",
+      "brand": "킨",
+      "name": "KEEN 코나 플립 TG Black",
+      "price": 69300,
+      "originalPrice": 99000,
+      "discountRate": 30.0,
+      "finalPrice": 69300,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/next-product/2026/05/15/5b19af4e6e48417f94290a6eaca13c1a_20260515154650.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/3999033",
+      "change": -5
+    },
+    {
+      "rank": 28,
+      "id": "cm-4009785",
+      "brand": "무드인사이드",
+      "name": "리브드 머슬 라운드 하프티_White Melange",
+      "price": 28330,
+      "originalPrice": 59900,
+      "discountRate": 53.0,
+      "finalPrice": 28330,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202605/11f154d198f29a0ebdf56df2e8d8b7f6.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/4009785",
+      "change": -8
+    },
+    {
+      "rank": 29,
       "id": "cm-1732855",
       "brand": "야세",
       "name": "우든 홀스하이드 더비 슈즈 블랙",
@@ -360,10 +435,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202312/11eea63f6c00b51791eb7bd20d64b7b2.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/1732855",
-      "change": 2
+      "change": -5
     },
     {
-      "rank": 25,
+      "rank": 30,
       "id": "cm-2440066",
       "brand": "비비홈",
       "name": "[뉴컬러] 부드러운 데일리 항균 컬러 베개커버 21colors",
@@ -375,82 +450,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202401/11eebf1d5ddff8d191eba305c7718626.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/2440066",
-      "change": -1
-    },
-    {
-      "rank": 26,
-      "id": "cm-789949",
-      "brand": "블런드스톤",
-      "name": "블런드스톤 ORIGINAL #500 첼시부츠_스타우트 브라운",
-      "price": 279000,
-      "originalPrice": 279000,
-      "discountRate": 0.0,
-      "finalPrice": 279000,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/next-product/2020/08/24/a5b459ad060a44139f0becf34f50bc54_20200824114252.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/789949",
-      "change": -1
-    },
-    {
-      "rank": 27,
-      "id": "cm-3696589",
-      "brand": "레드 토네이도",
-      "name": "1955 Heritage Selvedge Denim Jeans Ecru",
-      "price": 134100,
-      "originalPrice": 149000,
-      "discountRate": 10.0,
-      "finalPrice": 134100,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202512/11f0dfc7c549cf14a3c0834e59f1986e.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3696589",
-      "change": 0
-    },
-    {
-      "rank": 28,
-      "id": "cm-1627387",
-      "brand": "일오공칠",
-      "name": "[무료배송][5PACK] 1507 쿨맥스 히든 삭스 - 스노우화이트",
-      "price": 7840,
-      "originalPrice": 11200,
-      "discountRate": 30.0,
-      "finalPrice": 7840,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/next-product/2022/07/07/51bf28f820e4487b9b6ceb0732605b84_20220707165454.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/1627387",
-      "change": 0
-    },
-    {
-      "rank": 29,
-      "id": "cm-3953651",
-      "brand": "노스페이스",
-      "name": "NS6NS01J 올레마 쇼츠 BLK",
-      "price": 58140,
-      "originalPrice": 68000,
-      "discountRate": 15.0,
-      "finalPrice": 58140,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202605/11f159735db770dd9f7f5b1ed55d4690.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3953651",
-      "change": "NEW"
-    },
-    {
-      "rank": 30,
-      "id": "cm-3333145",
-      "brand": "매너그램",
-      "name": "레귤러 스트레이트 데님팬츠 라이트블루",
-      "price": 22370,
-      "originalPrice": 150000,
-      "discountRate": 85.0,
-      "finalPrice": 22370,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236c7632b2bea5406f03aabd8584.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3333145",
-      "change": -1
+      "change": -5
     }
   ],
   "categories": {
@@ -592,6 +592,21 @@
       },
       {
         "rank": 10,
+        "id": "cm-1649411",
+        "brand": "애습",
+        "name": "스테디 셔츠 - 라이트 그레이",
+        "price": 55480,
+        "originalPrice": 73000,
+        "discountRate": 24.0,
+        "finalPrice": 55480,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202507/11f061eab5e32903afc05dea7cfcabb5.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/1649411",
+        "change": "NEW"
+      },
+      {
+        "rank": 11,
         "id": "cm-3333146",
         "brand": "매너그램",
         "name": "레귤러 스트레이트 데님팬츠 미디엄블루",
@@ -603,10 +618,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236c6a356408a3c0ed6bbb9998f5.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3333146",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "cm-3031937",
         "brand": "콜린스",
         "name": "차량용/인테리어 사쉐 방향제(5종 택1)",
@@ -618,10 +633,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202509/11f09200f8927bb694a2bf97a672ddd8.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3031937",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "cm-3333141",
         "brand": "매너그램",
         "name": "1950 클래식 로드사이드 퍼티그 팬츠 라이트베이지",
@@ -633,10 +648,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f11ddcbf1ceabca3c0177a36d0b5e7.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3333141",
-        "change": 2
+        "change": -1
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "cm-3302918",
         "brand": "매너그램",
         "name": "[칸디아니 이태리 수입원단] 뉴 칸디아니 스트레이트 투턱 미디엄블루",
@@ -648,10 +663,25 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236cc1f2a226a540af142cadb4f2.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3302918",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 14,
+        "rank": 15,
+        "id": "cm-3950331",
+        "brand": "마인드브릿지 맨",
+        "name": "크롭 오버핏 데일리 반팔 티셔츠 - 3color M1TS3150",
+        "price": 19460,
+        "originalPrice": 49900,
+        "discountRate": 61.0,
+        "finalPrice": 19460,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202606/11f16079b6890c0d909027281cb84951.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3950331",
+        "change": "NEW"
+      },
+      {
+        "rank": 16,
         "id": "cm-3101947",
         "brand": "킨",
         "name": "하이퍼포트 H2 샌들 Alloy Skyway",
@@ -666,7 +696,7 @@
         "change": -2
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "cm-3240169",
         "brand": "본투윈",
         "name": "SMALL B EMBROIDERY SOCKS [WHITE]",
@@ -678,10 +708,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202504/11f020a9b31cdb41b1704fc88631c597.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3240169",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "cm-3302915",
         "brand": "매너그램",
         "name": "[칸디아니 이태리 수입원단] 뉴 칸디아니 스트레이트 투턱 라이트블루",
@@ -693,10 +723,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236cae6f0f60a3c06fd5b3cbd606.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3302915",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "cm-3377281",
         "brand": "카키스",
         "name": "Border S/S Tee",
@@ -708,10 +738,40 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202507/11f0639ffb31a5fd890983fa713ee8c4.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3377281",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 18,
+        "rank": 20,
+        "id": "cm-3333143",
+        "brand": "매너그램",
+        "name": "1950 클래식 로드사이드 퍼티그 팬츠 네이비",
+        "price": 34790,
+        "originalPrice": 150000,
+        "discountRate": 77.0,
+        "finalPrice": 34790,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236c802def66a540d9ebe40671b2.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3333143",
+        "change": "NEW"
+      },
+      {
+        "rank": 21,
+        "id": "cm-3400867",
+        "brand": "유에스엠",
+        "name": "USM Haller Storage 1x2_ver2 (750/1door)_14 Colors",
+        "price": 2179000,
+        "originalPrice": 2179000,
+        "discountRate": 0.0,
+        "finalPrice": 2179000,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202508/11f0736f44c1c9a4964a57fe8a8ce8b9.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3400867",
+        "change": "NEW"
+      },
+      {
+        "rank": 22,
         "id": "cm-2590570",
         "brand": "토마스모어",
         "name": "TG2-PT03 코튼 린넨 스트링 팬츠 - [블랙]",
@@ -723,10 +783,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202504/11f02583b11719f0b13163e2183dd43a.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/2590570",
-        "change": 0
+        "change": -4
       },
       {
-        "rank": 19,
+        "rank": 23,
         "id": "cm-3871392",
         "brand": "티세르",
         "name": "[uni] 넛티 시어서커 커플 반팔 잠옷 세트",
@@ -738,55 +798,25 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f1282d766b03db9454fd1896d9d22e.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3871392",
-        "change": 0
+        "change": -4
       },
       {
-        "rank": 20,
-        "id": "cm-4009785",
-        "brand": "무드인사이드",
-        "name": "리브드 머슬 라운드 하프티_White Melange",
-        "price": 28330,
-        "originalPrice": 59900,
-        "discountRate": 53.0,
-        "finalPrice": 28330,
+        "rank": 24,
+        "id": "cm-3898576",
+        "brand": "매너그램",
+        "name": "[UEYAMA 일본 수입원단] 마이크로 체크 캠프카라 셔츠",
+        "price": 29330,
+        "originalPrice": 219000,
+        "discountRate": 87.0,
+        "finalPrice": 29330,
         "category": "",
         "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202605/11f154d198f29a0ebdf56df2e8d8b7f6.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/4009785",
-        "change": 0
+        "imgUrl": "https://img.29cm.co.kr/item/202604/11f12da504ad35b994548db6fc772eef.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3898576",
+        "change": "NEW"
       },
       {
-        "rank": 21,
-        "id": "cm-3355216",
-        "brand": "브론슨",
-        "name": "9oz USA Cotton Tubular Tee White",
-        "price": 22050,
-        "originalPrice": 35000,
-        "discountRate": 37.0,
-        "finalPrice": 22050,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202605/11f14a7cbe3fac9a85eee54b823ad72d.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3355216",
-        "change": 2
-      },
-      {
-        "rank": 22,
-        "id": "cm-3999033",
-        "brand": "킨",
-        "name": "KEEN 코나 플립 TG Black",
-        "price": 69300,
-        "originalPrice": 99000,
-        "discountRate": 30.0,
-        "finalPrice": 69300,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/next-product/2026/05/15/5b19af4e6e48417f94290a6eaca13c1a_20260515154650.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3999033",
-        "change": -1
-      },
-      {
-        "rank": 23,
+        "rank": 25,
         "id": "cm-3873762",
         "brand": "토마스모어",
         "name": "TG2-TS14 인디고 씬 스트라이프 티",
@@ -798,10 +828,55 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f127ed187e9fc1b493eb3eff9d6d5f.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3873762",
-        "change": -1
+        "change": -2
       },
       {
-        "rank": 24,
+        "rank": 26,
+        "id": "cm-3355216",
+        "brand": "브론슨",
+        "name": "9oz USA Cotton Tubular Tee White",
+        "price": 22050,
+        "originalPrice": 35000,
+        "discountRate": 37.0,
+        "finalPrice": 22050,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202605/11f14a7cbe3fac9a85eee54b823ad72d.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3355216",
+        "change": -5
+      },
+      {
+        "rank": 27,
+        "id": "cm-3999033",
+        "brand": "킨",
+        "name": "KEEN 코나 플립 TG Black",
+        "price": 69300,
+        "originalPrice": 99000,
+        "discountRate": 30.0,
+        "finalPrice": 69300,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/next-product/2026/05/15/5b19af4e6e48417f94290a6eaca13c1a_20260515154650.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/3999033",
+        "change": -5
+      },
+      {
+        "rank": 28,
+        "id": "cm-4009785",
+        "brand": "무드인사이드",
+        "name": "리브드 머슬 라운드 하프티_White Melange",
+        "price": 28330,
+        "originalPrice": 59900,
+        "discountRate": 53.0,
+        "finalPrice": 28330,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202605/11f154d198f29a0ebdf56df2e8d8b7f6.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/4009785",
+        "change": -8
+      },
+      {
+        "rank": 29,
         "id": "cm-1732855",
         "brand": "야세",
         "name": "우든 홀스하이드 더비 슈즈 블랙",
@@ -813,10 +888,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202312/11eea63f6c00b51791eb7bd20d64b7b2.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/1732855",
-        "change": 2
+        "change": -5
       },
       {
-        "rank": 25,
+        "rank": 30,
         "id": "cm-2440066",
         "brand": "비비홈",
         "name": "[뉴컬러] 부드러운 데일리 항균 컬러 베개커버 21colors",
@@ -828,82 +903,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202401/11eebf1d5ddff8d191eba305c7718626.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/2440066",
-        "change": -1
-      },
-      {
-        "rank": 26,
-        "id": "cm-789949",
-        "brand": "블런드스톤",
-        "name": "블런드스톤 ORIGINAL #500 첼시부츠_스타우트 브라운",
-        "price": 279000,
-        "originalPrice": 279000,
-        "discountRate": 0.0,
-        "finalPrice": 279000,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/next-product/2020/08/24/a5b459ad060a44139f0becf34f50bc54_20200824114252.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/789949",
-        "change": -1
-      },
-      {
-        "rank": 27,
-        "id": "cm-3696589",
-        "brand": "레드 토네이도",
-        "name": "1955 Heritage Selvedge Denim Jeans Ecru",
-        "price": 134100,
-        "originalPrice": 149000,
-        "discountRate": 10.0,
-        "finalPrice": 134100,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202512/11f0dfc7c549cf14a3c0834e59f1986e.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3696589",
-        "change": 0
-      },
-      {
-        "rank": 28,
-        "id": "cm-1627387",
-        "brand": "일오공칠",
-        "name": "[무료배송][5PACK] 1507 쿨맥스 히든 삭스 - 스노우화이트",
-        "price": 7840,
-        "originalPrice": 11200,
-        "discountRate": 30.0,
-        "finalPrice": 7840,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/next-product/2022/07/07/51bf28f820e4487b9b6ceb0732605b84_20220707165454.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/1627387",
-        "change": 0
-      },
-      {
-        "rank": 29,
-        "id": "cm-3953651",
-        "brand": "노스페이스",
-        "name": "NS6NS01J 올레마 쇼츠 BLK",
-        "price": 58140,
-        "originalPrice": 68000,
-        "discountRate": 15.0,
-        "finalPrice": 58140,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202605/11f159735db770dd9f7f5b1ed55d4690.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3953651",
-        "change": "NEW"
-      },
-      {
-        "rank": 30,
-        "id": "cm-3333145",
-        "brand": "매너그램",
-        "name": "레귤러 스트레이트 데님팬츠 라이트블루",
-        "price": 22370,
-        "originalPrice": 150000,
-        "discountRate": 85.0,
-        "finalPrice": 22370,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202603/11f1236c7632b2bea5406f03aabd8584.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3333145",
-        "change": -1
+        "change": -5
       }
     ],
     "tops": [],
