@@ -920,69 +920,102 @@ def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> di
 
 def _diag_29cm_endpoints():
     """
-    [진단] 29CM best/items 에서 카테고리 필터가 실제 작동하는 payload 형식 탐색.
-    tops(268) vs shoes(278) 결과가 달라지면 그 형식이 진짜 카테고리 필터.
+    [진단] Playwright로 29CM 베스트 페이지를 열어, 카테고리 탭 클릭 시
+    실제로 호출되는 best/items API 요청 payload 를 캡처한다.
+    이로써 카테고리 필터의 정확한 파라미터 이름/값을 알아낸다.
     """
-    print("  ===== [진단-29CM] 카테고리 필터 탐색 =====")
-    url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
-    headers = {
-        "User-Agent": BROWSER_UA,
-        "Referer": "https://www.29cm.co.kr/best",
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "Origin": "https://www.29cm.co.kr",
-    }
-    base = {
-        "pageRequest": {"page": 1, "size": 5},
-        "facets": {
-            "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
-            "rankingFacetInput": {"type": "POPULARITY"},
-        },
-    }
+    print("  ===== [진단-29CM] Playwright API 캡처 =====")
+    if not _init_playwright():
+        print("  [진단-29CM] Playwright 초기화 실패")
+        return
 
-    def first1(items):
-        return items[0].get("itemInfo", {}).get("productName", "")[:26] if items else ""
+    ctx = _PW_BROWSER.new_context(
+        user_agent=BROWSER_UA, locale="ko-KR",
+        extra_http_headers={"Accept-Language": "ko-KR,ko;q=0.9"},
+    )
+    page = ctx.new_page()
+    captured = []
 
+    def on_req(req):
+        u = req.url
+        if "29cm" in u and ("best" in u or "plp" in u or "rank" in u or "category" in u):
+            if req.method == "POST":
+                try:
+                    captured.append((u, req.post_data))
+                except Exception:
+                    captured.append((u, None))
+
+    page.on("request", on_req)
+
+    candidate_pages = [
+        "https://www.29cm.co.kr/store/best-items",
+        "https://www.29cm.co.kr/best",
+        "https://www.29cm.co.kr/best-products",
+    ]
+    landed_ok = None
+    for purl in candidate_pages:
+        try:
+            page.goto(purl, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(4000)
+            cur = page.url
+            print(f"  [진단-29CM] {purl[:45]} → landed {cur[:55]}")
+            if "29cm.co.kr" in cur and "best" in cur:
+                landed_ok = cur
+                break
+        except Exception as e:
+            print(f"  [진단-29CM] {purl[:45]} 오류 {str(e)[:45]}")
+
+    if not landed_ok:
+        print("  [진단-29CM] 베스트 페이지 접근 실패")
+        # 최초 로드시 캡처된 payload라도 출력
+        for u, pd in captured[:3]:
+            print(f"  [진단-29CM] (초기) {u[:55]} payload={str(pd)[:280]}")
+        ctx.close()
+        print("  ===== [진단-29CM] 종료 =====")
+        return
+
+    # 페이지에 보이는 탭/버튼 텍스트 출력 (카테고리 탭 이름 확인)
     try:
-        r = requests.post(url, json=base, headers=headers, timeout=10)
-        ref = first1(r.json().get("data", {}).get("list", [])) if r.ok else f"HTTP{r.status_code}"
-        print(f"  [진단-29CM] 전체 기준 1위: {ref}")
-    except Exception as e:
-        print(f"  [진단-29CM] 기준 호출 실패: {str(e)[:60]}")
-
-    f = base["facets"]
-
-    def first_brand_name(items):
-        if not items:
-            return ""
-        info = items[0].get("itemInfo", {})
-        return f"[{info.get('brandName','')[:10]}] {info.get('productName','')[:24]}"
-
-    # pageRequest.frontCategoryId 가 필터로 작동함 — 올바른 카테고리 ID 스캔.
-    # 전체 기준과 다른 결과가 나오는 frontCategoryId 를 카테고리별로 식별.
-    print("  [진단-29CM] frontCategoryId 스캔 (전체와 다른 ID 탐색)")
-    ref_full = ""
-    try:
-        rr = requests.post(url, json=base, headers=headers, timeout=10)
-        ref_full = first1(rr.json().get("data", {}).get("list", []))
+        tabs = page.evaluate("""
+            () => [...document.querySelectorAll('button,a,li,span')]
+                .filter(e=>e.offsetParent)
+                .map(e=>e.textContent.trim())
+                .filter(t=>t.length>0 && t.length<10)
+                .slice(0,40)
+        """)
+        print(f"  [진단-29CM] 페이지 요소: {tabs[:25]}")
     except Exception:
         pass
-    scan_ids = list(range(1, 31)) + list(range(260, 296))
-    for cid in scan_ids:
-        try:
-            payload = {"pageRequest": {"page": 1, "size": 3, "frontCategoryId": cid}, "facets": f}
-            rr = requests.post(url, json=payload, headers=headers, timeout=8)
-            if not rr.ok:
+
+    # 초기 로드 payload
+    for u, pd in captured[:2]:
+        print(f"  [진단-29CM] [초기로드] {u[:50]} payload={str(pd)[:300]}")
+
+    # 카테고리 탭 클릭 시도
+    for label in ["상의", "아우터", "바지", "신발", "가방", "뷰티"]:
+        captured.clear()
+        clicked = False
+        for sel in [f'button:has-text("{label}")', f'a:has-text("{label}")',
+                    f'li:has-text("{label}")', f'text="{label}"']:
+            try:
+                el = page.locator(sel).first
+                if el.is_visible(timeout=800):
+                    el.click(timeout=2500)
+                    page.wait_for_timeout(2500)
+                    clicked = True
+                    break
+            except Exception:
                 continue
-            items = rr.json().get("data", {}).get("list", [])
-            top = first_brand_name(items)
-            ref_short = ref_full[:24]
-            same = top[:24].endswith(ref_short) or (ref_short and ref_short in top)
-            mark = "  =전체" if same else " ★"
-            if top:
-                print(f"  [진단-29CM] frontCategoryId={cid}{mark}: {top}")
-        except Exception:
+        if not clicked:
+            print(f"  [진단-29CM] '{label}' 탭 못찾음")
             continue
+        if captured:
+            u, pd = captured[-1]
+            print(f"  [진단-29CM] '{label}' 클릭 → {u[:50]} payload={str(pd)[:320]}")
+        else:
+            print(f"  [진단-29CM] '{label}' 클릭했으나 POST 캡처 없음")
+
+    ctx.close()
     print("  ===== [진단-29CM] 종료 =====")
 
 
