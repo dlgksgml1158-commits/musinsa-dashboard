@@ -780,9 +780,10 @@ def _fetch_29cm_recommend(large_code) -> list:
         "Accept": "application/json, text/plain, */*",
         "Origin": "https://www.29cm.co.kr",
     }
-    params = {}
+    # 실제 29CM 베스트 페이지가 호출하는 파라미터: categoryList + periodSort
+    params = {"periodSort": "NOW", "limit": 100, "offset": 0}
     if large_code:
-        params["categoryLargeCode"] = large_code
+        params["categoryList"] = large_code
     resp = requests.get(url, params=params, headers=headers, timeout=20)
     resp.raise_for_status()
     return resp.json().get("data", {}).get("content", []) or []
@@ -815,67 +816,8 @@ def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> di
     }
 
 
-def _diag_29cm_v5():
-    """[diag] best/items real URL capture + per-param first item compare."""
-    print("  ===== [v5-DIAG] =====")
-    headers = {
-        "User-Agent": BROWSER_UA, "Referer": "https://www.29cm.co.kr/",
-        "Accept": "application/json, text/plain, */*", "Origin": "https://www.29cm.co.kr",
-    }
-    base = "https://recommend-api.29cm.co.kr/api/v4/best/items"
-
-    def first(params):
-        try:
-            r = requests.get(base, params=params, headers=headers, timeout=12)
-            c = r.json().get("data", {}).get("content", [])
-            return (c[0].get("itemName", "")[:28] if c else f"HTTP{r.status_code}/len{len(r.text)}")
-        except Exception as e:
-            return str(e)[:40]
-
-    print(f"  [v5] all(no-param): {first({})}")
-    for nm, p in [
-        ("categoryLargeCode=268", {"categoryLargeCode": "268100100"}),
-        ("categoryLargeCode=266", {"categoryLargeCode": "266100100"}),
-        ("categoryCode=268", {"categoryCode": "268100100"}),
-        ("categoryCode=266", {"categoryCode": "266100100"}),
-        ("largeCategoryCode=266", {"largeCategoryCode": "266100100"}),
-        ("category=266", {"category": "266100100"}),
-    ]:
-        print(f"  [v5] {nm}: {first(p)}")
-
-    try:
-        if _init_playwright():
-            ctx = _PW_BROWSER.new_context(user_agent=BROWSER_UA, locale="ko-KR")
-            page = ctx.new_page()
-            urls = []
-            page.on("request", lambda req: urls.append(req.url)
-                    if "recommend-api.29cm.co.kr/api/v4/best/items" in req.url else None)
-            for label, q in [("268", "category_large_code=268100100"),
-                             ("266", "category_large_code=266100100")]:
-                urls.clear()
-                try:
-                    page.goto(f"https://www.29cm.co.kr/store/best-items?{q}",
-                              wait_until="networkidle", timeout=35000)
-                    page.wait_for_timeout(3500)
-                    for u in urls[:5]:
-                        print(f"  [v5-PW] '{label}' realURL: {u}")
-                    if not urls:
-                        print(f"  [v5-PW] '{label}' no best/items call")
-                except Exception as e:
-                    print(f"  [v5-PW] '{label}' err {str(e)[:40]}")
-            ctx.close()
-    except Exception as e:
-        print(f"  [v5-PW] fail {str(e)[:50]}")
-    print("  ===== [v5-DIAG] end =====")
-
-
 def fetch_29cm() -> dict:
     print("▶ 29CM \ub7ad\ud0b9 \uc218\uc9d1 \uc2dc\uc791...")
-
-    try:
-        _diag_29cm_v5()
-    except Exception as e:
-        print(f"  [v5] fail: {e}")
 
     categories = {}
     for cat in CM29_CATEGORIES:
