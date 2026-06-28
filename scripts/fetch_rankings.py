@@ -918,9 +918,95 @@ def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> di
     }
 
 
+def _diag_29cm_endpoints():
+    """
+    [진단] 29CM best/items 에서 카테고리 필터가 실제 작동하는 payload 형식 탐색.
+    tops(268) vs shoes(278) 결과가 달라지면 그 형식이 진짜 카테고리 필터.
+    """
+    print("  ===== [진단-29CM] 카테고리 필터 탐색 =====")
+    url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.29cm.co.kr/best",
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Origin": "https://www.29cm.co.kr",
+    }
+    base = {
+        "pageRequest": {"page": 1, "size": 5},
+        "facets": {
+            "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
+            "rankingFacetInput": {"type": "POPULARITY"},
+        },
+    }
+
+    def first1(items):
+        return items[0].get("itemInfo", {}).get("productName", "")[:26] if items else ""
+
+    try:
+        r = requests.post(url, json=base, headers=headers, timeout=10)
+        ref = first1(r.json().get("data", {}).get("list", [])) if r.ok else f"HTTP{r.status_code}"
+        print(f"  [진단-29CM] 전체 기준 1위: {ref}")
+    except Exception as e:
+        print(f"  [진단-29CM] 기준 호출 실패: {str(e)[:60]}")
+
+    f = base["facets"]
+    pr = base["pageRequest"]
+    builders = [
+        ("facets.categoryFacetInput.categoryIds[]",
+         lambda cid: {"pageRequest": pr, "facets": {**f, "categoryFacetInput": {"categoryIds": [cid]}}}),
+        ("facets.categoryFacetInput.categoryId",
+         lambda cid: {"pageRequest": pr, "facets": {**f, "categoryFacetInput": {"categoryId": cid}}}),
+        ("facets.frontCategoryFacetInput.frontCategoryId",
+         lambda cid: {"pageRequest": pr, "facets": {**f, "frontCategoryFacetInput": {"frontCategoryId": cid}}}),
+        ("facets.frontCategoryFacetInput.frontCategoryIds[]",
+         lambda cid: {"pageRequest": pr, "facets": {**f, "frontCategoryFacetInput": {"frontCategoryIds": [cid]}}}),
+        ("top.categoryIds[]",
+         lambda cid: {"pageRequest": pr, "facets": f, "categoryIds": [cid]}),
+        ("top.frontCategoryIds[]",
+         lambda cid: {"pageRequest": pr, "facets": f, "frontCategoryIds": [cid]}),
+        ("pageRequest.frontCategoryId",
+         lambda cid: {"pageRequest": {"page": 1, "size": 5, "frontCategoryId": cid}, "facets": f}),
+    ]
+    # 268=상의, 278=신발
+    for label, build in builders:
+        try:
+            res = {}
+            for cid in (268, 278):
+                rr = requests.post(url, json=build(cid), headers=headers, timeout=10)
+                res[cid] = first1(rr.json().get("data", {}).get("list", [])) if rr.ok else f"HTTP{rr.status_code}"
+            a, b = res[268], res[278]
+            differ = a and b and a != b and not str(a).startswith("HTTP")
+            flag = "★다름★" if differ else "동일/실패"
+            print(f"  [진단-29CM] {label} {flag}: 268={a} | 278={b}")
+        except Exception as e:
+            print(f"  [진단-29CM] {label} 오류: {str(e)[:50]}")
+
+    # GET 방식 best with category 후보
+    get_urls = [
+        ("GET best?categoryLargeCode", url, {"categoryLargeCode": "268", "page": 1, "size": 5}),
+        ("GET best?frontCategoryId", url, {"frontCategoryId": "268", "page": 1, "size": 5}),
+        ("GET category-best", "https://display-bff-api.29cm.co.kr/api/v1/plp/category-best/items",
+         {"categoryId": "268", "page": 1, "size": 5}),
+    ]
+    for label, u, p in get_urls:
+        try:
+            rr = requests.get(u, params=p, headers=headers, timeout=8)
+            print(f"  [진단-29CM] {label}: HTTP {rr.status_code}")
+        except Exception as e:
+            print(f"  [진단-29CM] {label} 오류: {str(e)[:50]}")
+    print("  ===== [진단-29CM] 종료 =====")
+
+
 def fetch_29cm() -> dict:
     global _CM29_CAT_PARAM_KEY
     print("▶ 29CM 랭킹 수집 시작...")
+
+    try:
+        _diag_29cm_endpoints()
+    except Exception as e:
+        print(f"  [진단-29CM] 실패: {e}")
+
     print("  카테고리 API 탐색 중...")
     _CM29_CAT_PARAM_KEY = _probe_29cm_category_endpoint()
 
