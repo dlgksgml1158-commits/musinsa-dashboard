@@ -655,11 +655,6 @@ def _diag_category_ranking_endpoints():
 def fetch_musinsa() -> dict:
     print("▶ 무신사 랭킹 수집 시작...")
 
-    try:
-        _diag_category_ranking_endpoints()
-    except Exception as e:
-        print(f"  [진단] 실패: {e}")
-
     # ── 방법 1: 카테고리별 전용 API ──────────────────
     api_works = _probe_musinsa_api()
     if api_works:
@@ -761,243 +756,90 @@ def fetch_musinsa() -> dict:
 # ═══════════════════════════════════════════════════
 
 CM29_CATEGORIES = [
-    {"code": "",        "label": "전체",        "param": None},
-    {"code": "tops",    "label": "상의",        "param": {"front_category_id": 268}},
-    {"code": "outer",   "label": "아우터",      "param": {"front_category_id": 269}},
-    {"code": "bottoms", "label": "하의",        "param": {"front_category_id": 270}},
-    {"code": "dress",   "label": "원피스",      "param": {"front_category_id": 271}},
-    {"code": "shoes",   "label": "신발",        "param": {"front_category_id": 278}},
-    {"code": "bag",     "label": "가방",        "param": {"front_category_id": 280}},
-    {"code": "acc",     "label": "액세서리",    "param": {"front_category_id": 282}},
-    {"code": "beauty",  "label": "뷰티",        "param": {"front_category_id": 283}},
-    {"code": "life",    "label": "라이프",      "param": {"front_category_id": 284}},
+    {"code": "",        "label": "전체",      "largeCode": None},
+    {"code": "women",   "label": "여성의류",  "largeCode": "268100100"},
+    {"code": "men",     "label": "남성의류",  "largeCode": "272100100"},
+    {"code": "shoes",   "label": "신발",      "largeCode": "270100100"},
+    {"code": "bag",     "label": "가방",      "largeCode": "269100100"},
+    {"code": "acc",     "label": "액세서리",  "largeCode": "271100100"},
+    {"code": "jewelry", "label": "주얼리",    "largeCode": "305100100"},
+    {"code": "beauty",  "label": "뷰티",      "largeCode": "266100100"},
+    {"code": "life",    "label": "라이프",    "largeCode": "292100100"},
 ]
 
-_CM29_CAT_PARAM_KEY = ""
 
-
-def _probe_29cm_category_endpoint() -> str:
-    """29CM 카테고리별 베스트 API 파라미터 탐색"""
-    url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
-    headers = {
-        "User-Agent": BROWSER_UA,
-        "Referer": "https://www.29cm.co.kr/best-products",
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "Origin": "https://www.29cm.co.kr",
-    }
-
-    ref_name = ""
-    try:
-        base_payload = {
-            "pageRequest": {"page": 1, "size": LIMIT},
-            "userSegment": {"gender": "M", "age": "THIRTIES"},
-            "facets": {
-                "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
-                "rankingFacetInput": {"type": "POPULARITY"},
-            },
-        }
-        r = requests.post(url, json=base_payload, headers=headers, timeout=15)
-        items = r.json().get("data", {}).get("list", [])
-        if items:
-            ref_name = items[0].get("itemInfo", {}).get("productName", "")
-    except Exception:
-        pass
-    print(f"  [PROBE-29CM] 전체 기준 1위: {ref_name[:30]}")
-
-    post_candidates = [
-        ("facet-category-268",  {"categoryFacetInput": {"categoryId": 268}}),
-        ("facet-category-1",    {"categoryFacetInput": {"categoryId": 1}}),
-        ("front_category_id=268", {"front_category_id": 268}),
-        ("category_id=268",     {"category_id": 268}),
-        ("itemClassCode=268",   {"itemClassCode": 268}),
-    ]
-
-    for label, extra_params in post_candidates:
-        try:
-            payload = {
-                "pageRequest": {"page": 1, "size": LIMIT},
-                "userSegment": {"gender": "M", "age": "THIRTIES"},
-                "facets": {
-                    "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
-                    "rankingFacetInput": {"type": "POPULARITY"},
-                    **extra_params,
-                } if label.startswith("facet") else {
-                    "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
-                    "rankingFacetInput": {"type": "POPULARITY"},
-                },
-            }
-            if not label.startswith("facet"):
-                payload.update(extra_params)
-            r = requests.post(url, json=payload, headers=headers, timeout=10)
-            if not r.ok:
-                print(f"  [PROBE-29CM] {label}: HTTP {r.status_code}")
-                continue
-            items = r.json().get("data", {}).get("list", [])
-            first = items[0].get("itemInfo", {}).get("productName", "") if items else ""
-            if first and first != ref_name:
-                print(f"  [PROBE-29CM] ✓ 카테고리 데이터! {label}: 1위={first[:30]}")
-                return label
-            elif first:
-                print(f"  [PROBE-29CM] {label}: 응답OK BUT 전체와 동일 1위={first[:30]}")
-            else:
-                print(f"  [PROBE-29CM] {label}: 상품없음")
-        except Exception as e:
-            print(f"  [PROBE-29CM] {label}: 오류={e}")
-
-    get_candidates = [
-        ("GET-best-category", "https://display-bff-api.29cm.co.kr/api/v1/plp/best/category/items",
-         {"categoryId": 268, "size": 30}),
-        ("GET-category-best", "https://display-bff-api.29cm.co.kr/api/v1/plp/category/best",
-         {"categoryId": 268, "size": 30}),
-        ("GET-category-rank", "https://api.29cm.co.kr/api/v1/products/ranking",
-         {"categoryCode": "TOP", "size": 30}),
-    ]
-    for label, g_url, g_params in get_candidates:
-        try:
-            r = requests.get(g_url, params=g_params, headers=headers, timeout=8)
-            print(f"  [PROBE-29CM] {label}: HTTP {r.status_code} url={g_url}")
-            if r.ok:
-                items = r.json().get("data", {}).get("list", []) if isinstance(r.json(), dict) else []
-                first = items[0].get("itemInfo", {}).get("productName", "") if items else ""
-                if first and first != ref_name:
-                    print(f"  [PROBE-29CM] ✓ 카테고리 데이터! {label}: 1위={first[:30]}")
-                    return "GET|" + label + "|" + g_url + "|" + json.dumps(g_params)
-        except Exception as e:
-            print(f"  [PROBE-29CM] {label}: 오류={e}")
-
-    print("  [PROBE-29CM] 카테고리 파라미터 미발견, 전체만 수집")
-    return ""
-
-
-def _fetch_29cm_items(extra_params: dict | None) -> list:
-    url = "https://display-bff-api.29cm.co.kr/api/v1/plp/best/items"
-    headers = {
-        "User-Agent": BROWSER_UA,
-        "Referer": "https://www.29cm.co.kr/best-products",
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "Origin": "https://www.29cm.co.kr",
-    }
-    payload = {
-        "pageRequest": {"page": 1, "size": LIMIT},
-        "userSegment": {"gender": "M", "age": "THIRTIES"},
-        "facets": {
-            "periodFacetInput": {"type": "HOURLY", "order": "DESC"},
-            "rankingFacetInput": {"type": "POPULARITY"},
-        },
-    }
-    if extra_params:
-        payload.update(extra_params)
-
-    resp = requests.post(url, json=payload, headers=headers, timeout=20)
-    resp.raise_for_status()
-    return resp.json().get("data", {}).get("list", [])
-
-
-def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> dict:
-    info = item.get("itemInfo", {})
-    item_id = str(item.get("itemId", ""))
-    display_price = info.get("displayPrice", 0)
-    original_price = info.get("originalPrice", display_price)
-    sale_rate = info.get("saleRate", 0)
-    return {
-        "rank": rank,
-        "id": f"cm-{item_id}",
-        "brand": info.get("brandName", ""),
-        "name": info.get("productName", ""),
-        "price": display_price,
-        "originalPrice": original_price,
-        "discountRate": sale_rate,
-        "finalPrice": display_price,
-        "category": cat_code,
-        "categoryLabel": cat_label,
-        "imgUrl": info.get("thumbnailUrl", ""),
-        "productUrl": item.get("itemUrl", {}).get("webLink", f"https://product.29cm.co.kr/catalog/{item_id}"),
-        "change": None,
-    }
-
-
-def _diag_29cm_endpoints():
+def _fetch_29cm_recommend(large_code) -> list:
     """
-    [진단] recommend-api.29cm.co.kr/api/v4/best 의 categories / items 구조 파악.
-    Playwright 캡처로 발견한 진짜 카테고리 베스트 API.
+    recommend-api.29cm.co.kr/api/v4/best/items 로 카테고리별 베스트 수집.
+    large_code=None -> 전체 베스트.
     """
-    print("  ===== [진단-29CM-v4] recommend-api 구조 =====")
+    url = "https://recommend-api.29cm.co.kr/api/v4/best/items"
     headers = {
         "User-Agent": BROWSER_UA,
         "Referer": "https://www.29cm.co.kr/",
         "Accept": "application/json, text/plain, */*",
         "Origin": "https://www.29cm.co.kr",
     }
+    params = {}
+    if large_code:
+        params["categoryLargeCode"] = large_code
+    resp = requests.get(url, params=params, headers=headers, timeout=20)
+    resp.raise_for_status()
+    return resp.json().get("data", {}).get("content", []) or []
 
-    # 1. 카테고리 목록
-    try:
-        r = requests.get("https://recommend-api.29cm.co.kr/api/v4/best/categories",
-                         headers=headers, timeout=12)
-        print(f"  [진단-29CM-v4] categories HTTP {r.status_code}")
-        print(f"  [진단-29CM-v4] categories body: {r.text[:1800]}")
-    except Exception as e:
-        print(f"  [진단-29CM-v4] categories 오류 {str(e)[:60]}")
 
-    # 2. 카테고리별 items — 파라미터명 후보 시도 (268100100=의류 대분류)
-    param_variants = [
-        {"categoryLargeCode": "268100100"},
-        {"category_large_code": "268100100"},
-        {"largeCategoryCode": "268100100"},
-        {"categoryLargeCode": "268100100", "periodType": "DAILY"},
-    ]
-    for params in param_variants:
-        try:
-            r = requests.get("https://recommend-api.29cm.co.kr/api/v4/best/items",
-                            params=params, headers=headers, timeout=12)
-            body = r.text[:600]
-            print(f"  [진단-29CM-v4] items {params} HTTP {r.status_code} len={len(r.text)}")
-            print(f"             body: {body}")
-        except Exception as e:
-            print(f"  [진단-29CM-v4] items {params} 오류 {str(e)[:50]}")
-
-    print("  ===== [진단-29CM-v4] 종료 =====")
+def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> dict:
+    item_no = str(item.get("itemNo", ""))
+    name = item.get("itemName", "")
+    brand = item.get("frontBrandNameKor") or item.get("frontBrandNameEng") or ""
+    original = int(item.get("consumerPrice") or 0)
+    final = int(item.get("lastSalePrice") or original)
+    disc = int(item.get("lastSalePercent") or 0)
+    img = item.get("imageUrl", "") or ""
+    if img.startswith("/"):
+        img = "https://img.29cm.co.kr" + img
+    return {
+        "rank": rank,
+        "id": f"cm-{item_no}",
+        "brand": brand,
+        "name": name,
+        "price": original,
+        "originalPrice": original,
+        "discountRate": disc,
+        "finalPrice": final,
+        "category": cat_code,
+        "categoryLabel": cat_label,
+        "imgUrl": img,
+        "productUrl": f"https://product.29cm.co.kr/catalog/{item_no}",
+        "change": None,
+    }
 
 
 def fetch_29cm() -> dict:
-    global _CM29_CAT_PARAM_KEY
-    print("▶ 29CM 랭킹 수집 시작...")
-
-    try:
-        _diag_29cm_endpoints()
-    except Exception as e:
-        print(f"  [진단-29CM] 실패: {e}")
-
-    print("  카테고리 API 탐색 중...")
-    _CM29_CAT_PARAM_KEY = _probe_29cm_category_endpoint()
+    print("▶ 29CM \ub7ad\ud0b9 \uc218\uc9d1 \uc2dc\uc791...")
 
     categories = {}
     for cat in CM29_CATEGORIES:
         code = cat["code"]
         label = cat["label"]
-        param = cat["param"]
-
-        if code and not _CM29_CAT_PARAM_KEY:
-            categories[code] = []
-            continue
-
+        large = cat["largeCode"]
         try:
-            raw_items = _fetch_29cm_items(param)
+            raw_items = _fetch_29cm_recommend(large)
             result = [
                 _build_29cm_item(item, idx + 1, code, label)
                 for idx, item in enumerate(raw_items[:LIMIT])
             ]
             categories[code] = result
-            print(f"    ✓ [{label}] {len(result)}개")
+            print(f"    ✓ [{label}] {len(result)}\uac1c")
         except Exception as e:
-            print(f"    [WARN] 29CM [{label}] 실패: {e}")
+            print(f"    [WARN] 29CM [{label}] \uc2e4\ud328: {e}")
             categories[code] = []
-        time.sleep(1)
+        time.sleep(0.4)
 
     total = sum(len(v) for v in categories.values())
-    print(f"  ✓ 29CM {total}개 수집 완료 ({len(categories)}개 카테고리)")
+    print(f"  ✓ 29CM {total}\uac1c \uc218\uc9d1 \uc644\ub8cc ({len(categories)}\uac1c \uce74\ud14c\uace0\ub9ac)")
     return categories
+
 
 
 # ═══════════════════════════════════════════════════
