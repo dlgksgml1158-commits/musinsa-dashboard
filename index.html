@@ -6,25 +6,25 @@
   <title>무신사 × 29CM 랭킹 대시보드</title>
   <style>
     :root {
-      --bg: #0d0d0d;
-      --bg2: #161616;
-      --bg3: #1f1f1f;
-      --border: #2a2a2a;
-      --text: #e8e8e8;
-      --text2: #999;
-      --text3: #666;
-      --musinsa: #ffffff;
-      --musinsa-dim: #cccccc;
+      --bg: #ffffff;
+      --bg2: #f7f7f8;
+      --bg3: #eef0f2;
+      --border: #e2e4e8;
+      --text: #1a1a1a;
+      --text2: #5a5a5a;
+      --text3: #8a8a8a;
+      --musinsa: #111111;
+      --musinsa-dim: #444444;
       --29cm: #ff5a3c;
       --29cm-dim: #cc4830;
-      --up: #22c55e;
-      --down: #ef4444;
-      --neutral: #555;
-      --accent: #3b82f6;
-      --gold: #f59e0b;
-      --silver: #94a3b8;
-      --bronze: #d97706;
-      --card-shadow: 0 2px 12px rgba(0,0,0,.5);
+      --up: #16a34a;
+      --down: #dc2626;
+      --neutral: #999;
+      --accent: #2563eb;
+      --gold: #d99e00;
+      --silver: #8a96a8;
+      --bronze: #c2671a;
+      --card-shadow: 0 1px 8px rgba(0,0,0,.08);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -138,7 +138,7 @@
       transition: all .15s;
       font-family: inherit;
     }
-    .cat-btn:hover { border-color: #444; color: var(--text); }
+    .cat-btn:hover { border-color: #bbb; color: var(--text); }
     .cat-btn.active {
       background: var(--text);
       border-color: var(--text);
@@ -148,7 +148,7 @@
     .cat-btn.active.musinsa-active {
       background: var(--musinsa);
       border-color: var(--musinsa);
-      color: #000;
+      color: #fff;
     }
     .cat-btn.active.cm-active {
       background: var(--29cm);
@@ -454,7 +454,7 @@
       padding: 12px 18px;
       font-size: 13px;
       color: var(--text);
-      box-shadow: 0 4px 20px rgba(0,0,0,.6);
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
       transform: translateY(100px);
       opacity: 0;
       transition: all .3s;
@@ -538,7 +538,7 @@
     ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #444; }
+    ::-webkit-scrollbar-thumb:hover { background: #bbb; }
 
     /* 상품 링크 */
     .product-link {
@@ -579,7 +579,7 @@
       user-select: none;
     }
     .accordion-header:hover {
-      background: #1c1c1c;
+      background: var(--bg3);
       color: var(--text);
     }
     .accordion-header.open {
@@ -1162,7 +1162,7 @@ function renderSidebar() {
   });
   const brandsSorted = Object.entries(brandCounts).sort((a,b) => b[1]-a[1]).slice(0, 10);
 
-  const accentColor = state.platform === 'musinsa' ? '#ffffff' : 'var(--29cm)';
+  const accentColor = state.platform === 'musinsa' ? 'var(--musinsa)' : 'var(--29cm)';
 
   document.getElementById('brandList').innerHTML = brandsSorted.length === 0
     ? '<div class="empty-state"><p>데이터 없음</p></div>'
