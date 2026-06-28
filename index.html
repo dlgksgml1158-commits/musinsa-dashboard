@@ -1184,22 +1184,46 @@ function renderSidebar() {
 /* ===========================
    AUTO REFRESH
 =========================== */
-let refreshInterval = 30 * 60; // 30 min
-let countdown = refreshInterval;
+// 매일 오전 9시(KST) 기준 갱신 — 다음 오전 9시까지 카운트다운
+function nextNineAM() {
+  const now = new Date();
+  const t = new Date();
+  t.setHours(9, 0, 0, 0);
+  if (now >= t) t.setDate(t.getDate() + 1);
+  return t;
+}
 
 function startRefreshTimer() {
+  let target = nextNineAM();
+  let lastReload = Date.now();
+  const pad = n => n.toString().padStart(2, '0');
+
   setInterval(async () => {
-    countdown--;
-    if (countdown <= 0) {
-      countdown = refreshInterval;
+    const now = Date.now();
+    let diff = Math.floor((target - now) / 1000);
+
+    if (diff <= 0) {
+      // 오전 9시 도달 → 새 데이터 로드 (워크플로우 배포 반영)
+      target = nextNineAM();
       await loadData(state.platform);
       renderRanking();
       renderSidebar();
-      showToast('🔄 데이터 새로고침 완료');
+      showToast('🔄 오전 9시 랭킹 갱신 완료');
+      lastReload = now;
+      diff = Math.floor((target - Date.now()) / 1000);
+    } else if (now - lastReload > 10 * 60 * 1000) {
+      // 9시 직후 Pages 배포 지연 대응: 10분마다 조용히 최신 데이터 반영
+      lastReload = now;
+      await loadData(state.platform);
+      renderRanking();
+      renderSidebar();
     }
-    const m = Math.floor(countdown / 60);
-    const s = countdown % 60;
-    document.getElementById('refreshTimer').textContent = `${m}:${s.toString().padStart(2,'0')} 후 갱신`;
+
+    const h = Math.floor(diff / 3600);
+    const m = Math.floor((diff % 3600) / 60);
+    const s = diff % 60;
+    document.getElementById('refreshTimer').textContent =
+      `${pad(h)}:${pad(m)}:${pad(s)} 후 갱신`;
   }, 1000);
 }
 
