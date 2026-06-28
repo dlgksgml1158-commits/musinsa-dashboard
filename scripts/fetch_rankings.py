@@ -951,50 +951,38 @@ def _diag_29cm_endpoints():
         print(f"  [진단-29CM] 기준 호출 실패: {str(e)[:60]}")
 
     f = base["facets"]
-    pr = base["pageRequest"]
-    builders = [
-        ("facets.categoryFacetInput.categoryIds[]",
-         lambda cid: {"pageRequest": pr, "facets": {**f, "categoryFacetInput": {"categoryIds": [cid]}}}),
-        ("facets.categoryFacetInput.categoryId",
-         lambda cid: {"pageRequest": pr, "facets": {**f, "categoryFacetInput": {"categoryId": cid}}}),
-        ("facets.frontCategoryFacetInput.frontCategoryId",
-         lambda cid: {"pageRequest": pr, "facets": {**f, "frontCategoryFacetInput": {"frontCategoryId": cid}}}),
-        ("facets.frontCategoryFacetInput.frontCategoryIds[]",
-         lambda cid: {"pageRequest": pr, "facets": {**f, "frontCategoryFacetInput": {"frontCategoryIds": [cid]}}}),
-        ("top.categoryIds[]",
-         lambda cid: {"pageRequest": pr, "facets": f, "categoryIds": [cid]}),
-        ("top.frontCategoryIds[]",
-         lambda cid: {"pageRequest": pr, "facets": f, "frontCategoryIds": [cid]}),
-        ("pageRequest.frontCategoryId",
-         lambda cid: {"pageRequest": {"page": 1, "size": 5, "frontCategoryId": cid}, "facets": f}),
-    ]
-    # 268=상의, 278=신발
-    for label, build in builders:
-        try:
-            res = {}
-            for cid in (268, 278):
-                rr = requests.post(url, json=build(cid), headers=headers, timeout=10)
-                res[cid] = first1(rr.json().get("data", {}).get("list", [])) if rr.ok else f"HTTP{rr.status_code}"
-            a, b = res[268], res[278]
-            differ = a and b and a != b and not str(a).startswith("HTTP")
-            flag = "★다름★" if differ else "동일/실패"
-            print(f"  [진단-29CM] {label} {flag}: 268={a} | 278={b}")
-        except Exception as e:
-            print(f"  [진단-29CM] {label} 오류: {str(e)[:50]}")
 
-    # GET 방식 best with category 후보
-    get_urls = [
-        ("GET best?categoryLargeCode", url, {"categoryLargeCode": "268", "page": 1, "size": 5}),
-        ("GET best?frontCategoryId", url, {"frontCategoryId": "268", "page": 1, "size": 5}),
-        ("GET category-best", "https://display-bff-api.29cm.co.kr/api/v1/plp/category-best/items",
-         {"categoryId": "268", "page": 1, "size": 5}),
-    ]
-    for label, u, p in get_urls:
+    def first_brand_name(items):
+        if not items:
+            return ""
+        info = items[0].get("itemInfo", {})
+        return f"[{info.get('brandName','')[:10]}] {info.get('productName','')[:24]}"
+
+    # pageRequest.frontCategoryId 가 필터로 작동함 — 올바른 카테고리 ID 스캔.
+    # 전체 기준과 다른 결과가 나오는 frontCategoryId 를 카테고리별로 식별.
+    print("  [진단-29CM] frontCategoryId 스캔 (전체와 다른 ID 탐색)")
+    ref_full = ""
+    try:
+        rr = requests.post(url, json=base, headers=headers, timeout=10)
+        ref_full = first1(rr.json().get("data", {}).get("list", []))
+    except Exception:
+        pass
+    scan_ids = list(range(1, 31)) + list(range(260, 296))
+    for cid in scan_ids:
         try:
-            rr = requests.get(u, params=p, headers=headers, timeout=8)
-            print(f"  [진단-29CM] {label}: HTTP {rr.status_code}")
-        except Exception as e:
-            print(f"  [진단-29CM] {label} 오류: {str(e)[:50]}")
+            payload = {"pageRequest": {"page": 1, "size": 3, "frontCategoryId": cid}, "facets": f}
+            rr = requests.post(url, json=payload, headers=headers, timeout=8)
+            if not rr.ok:
+                continue
+            items = rr.json().get("data", {}).get("list", [])
+            top = first_brand_name(items)
+            ref_short = ref_full[:24]
+            same = top[:24].endswith(ref_short) or (ref_short and ref_short in top)
+            mark = "  =전체" if same else " ★"
+            if top:
+                print(f"  [진단-29CM] frontCategoryId={cid}{mark}: {top}")
+        except Exception:
+            continue
     print("  ===== [진단-29CM] 종료 =====")
 
 
