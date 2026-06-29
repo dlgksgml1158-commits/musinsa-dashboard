@@ -841,9 +841,20 @@
       gap: 4px;
       flex: 1;
       max-width: 22px;
+      transform-origin: bottom center;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
-    .price-bar-col:hover .price-group-bars {
-      transform: scaleY(1.12) scaleX(1.18);
+    /* 전체 평균 막대: 기본 흐리게 */
+    .price-group-bar-wrap[data-type="avg"] .price-bar-col-fill {
+      opacity: 0.45;
+    }
+    /* 호버 시: 브랜드 막대 크게 확대 */
+    .price-bar-col:hover .price-group-bar-wrap[data-type="brand"] {
+      transform: scaleY(1.22) scaleX(1.4);
+    }
+    /* 호버 시: 전체 평균 막대 소폭 확대 */
+    .price-bar-col:hover .price-group-bar-wrap[data-type="avg"] {
+      transform: scaleY(1.08) scaleX(1.15);
     }
     .price-bar-col-val {
       font-size: 11px;
@@ -1993,12 +2004,12 @@ function renderPriceChart() {
     return `
       <div class="price-bar-col" data-idx="${i}">
         <div class="price-group-bars">
-          <div class="price-group-bar-wrap">
+          <div class="price-group-bar-wrap" data-type="avg">
             <div class="price-bar-col-fill" style="height:${barH}px;background:${cat.color};"></div>
           </div>
           ${brand ? `
-          <div class="price-group-bar-wrap">
-            <div class="price-bar-col-fill" style="height:${brandBarH}px;background:${BRAND_COLOR};opacity:0.85;"></div>
+          <div class="price-group-bar-wrap" data-type="brand">
+            <div class="price-bar-col-fill" style="height:${brandBarH}px;background:${BRAND_COLOR};"></div>
           </div>` : ''}
         </div>
         <div class="price-bar-col-label">${cat.label}</div>
