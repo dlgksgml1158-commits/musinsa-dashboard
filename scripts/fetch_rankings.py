@@ -996,6 +996,105 @@ def compute_29cm_price_stats(categories_data: dict, categories_meta: list) -> di
 
 
 # ═══════════════════════════════════════════════════
+#  브랜드 카테고리별 가격 통계
+# ═══════════════════════════════════════════════════
+
+COMPARE_BRANDS = [
+    {"name": "커넥트킨록", "code": "connectkinrok"},
+]
+
+def fetch_brand_category_prices(brand_code: str, brand_name: str, categories: list) -> dict:
+    """
+    무신사 브랜드 상품 검색 API로 카테고리별 평균가 수집.
+    반환: {cat_code: {label, avg, min, max, count}}
+    """
+    print(f"  ▶ 브랜드 [{brand_name}] 카테고리별 가격 수집...")
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": f"https://www.musinsa.com/brands/{brand_code}",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.musinsa.com",
+    }
+
+    def _fetch_brand_goods(cat_code: str, page: int = 1) -> list:
+        """브랜드 상품 목록 수집 (여러 엔드포인트 시도)"""
+        # 방법1: 무신사 PLP API
+        endpoints = [
+            {
+                "url": "https://api.musinsa.com/api2/json/plp/goods",
+                "params": {
+                    "brand": brand_code,
+                    "sortCode": "pop_category",
+                    "page": page, "size": 60,
+                    **({"category": cat_code} if cat_code else {}),
+                },
+            },
+            {
+                "url": f"https://www.musinsa.com/brands/{brand_code}/goods",
+                "params": {
+                    "sortCode": "pop_category",
+                    "page": page, "size": 60,
+                    **({"categoryCode": cat_code} if cat_code else {}),
+                },
+            },
+        ]
+        for ep in endpoints:
+            try:
+                r = requests.get(ep["url"], params=ep["params"], headers=headers, timeout=12)
+                if not r.ok:
+                    continue
+                data = r.json()
+                # 다양한 응답 구조 탐색
+                goods = (
+                    data.get("data", {}).get("list")
+                    or data.get("data", {}).get("goods")
+                    or data.get("list")
+                    or data.get("goods")
+                    or []
+                )
+                if goods:
+                    return goods
+            except Exception:
+                continue
+        return []
+
+    stats = {}
+    for cat in categories:
+        code = cat["code"]
+        label = cat["label"]
+        prices = []
+        for page in range(1, 4):
+            goods = _fetch_brand_goods(code, page)
+            if not goods:
+                break
+            for g in goods:
+                p = int(
+                    g.get("salePrice") or g.get("finalPrice")
+                    or g.get("goodsSalePrice") or g.get("price") or 0
+                )
+                if p > 0:
+                    prices.append(p)
+            if len(goods) < 30:
+                break
+            time.sleep(0.3)
+
+        if prices:
+            stats[code] = {
+                "label": label,
+                "avg": round(sum(prices) / len(prices)),
+                "min": min(prices),
+                "max": max(prices),
+                "count": len(prices),
+            }
+            print(f"    {label}: 평균 {stats[code]['avg']:,}원 ({len(prices)}개)")
+        else:
+            print(f"    {label}: 데이터 없음")
+        time.sleep(0.4)
+
+    return stats
+
+
+# ═══════════════════════════════════════════════════
 #  메인
 # ═══════════════════════════════════════════════════
 
@@ -1009,12 +1108,19 @@ def main():
     if musinsa_cats:
         musinsa_cats = compute_rank_changes_categories(musinsa_cats, old_musinsa)
         price_stats = compute_price_stats(musinsa_cats, MUSINSA_CATEGORIES)
+        brand_price_stats = {}
+        for brand in COMPARE_BRANDS:
+            brand_price_stats[brand["name"]] = fetch_brand_category_prices(
+                brand["code"], brand["name"], MUSINSA_CATEGORIES
+            )
+            time.sleep(1)
         save("musinsa", {
             "platform": "musinsa",
             "updatedAt": datetime.now(timezone.utc).isoformat(),
             "items": musinsa_cats.get("", []),
             "categories": musinsa_cats,
             "priceStats": price_stats,
+            "brandPriceStats": brand_price_stats,
         })
     else:
         print("  [WARN] 무신사 데이터 없음 - 기존 파일 유지")

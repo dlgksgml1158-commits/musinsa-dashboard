@@ -819,12 +819,25 @@
       justify-content: flex-end;
       gap: 6px;
       flex: 1;
-      min-width: 50px;
-      max-width: 50px;
+      min-width: 80px;
+      max-width: 120px;
       cursor: pointer;
       transition: opacity 0.2s;
       padding-bottom: 48px;
       position: relative;
+    }
+    .price-group-bars {
+      display: flex;
+      align-items: flex-end;
+      gap: 4px;
+      width: 100%;
+    }
+    .price-group-bar-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
     }
     .price-bar-col-val {
       font-size: 11px;
@@ -1194,13 +1207,7 @@
 </div>
 
 <div class="toast" id="toast"></div>
-<div class="price-tooltip" id="priceTooltip">
-  <div class="price-tooltip-cat" id="ttCat"></div>
-  <div class="price-tooltip-row"><span class="label">평균가</span><span class="val" id="ttAvg"></span></div>
-  <div class="price-tooltip-row"><span class="label">최저가</span><span class="val" id="ttMin"></span></div>
-  <div class="price-tooltip-row"><span class="label">최고가</span><span class="val" id="ttMax"></span></div>
-  <div class="price-tooltip-row"><span class="label">상품 수</span><span class="val" id="ttCount"></span></div>
-</div>
+<div class="price-tooltip" id="priceTooltip"></div>
 
 <script>
 /* ===========================
@@ -1863,15 +1870,27 @@ const PRICE_COLORS_29CM = [
 const tooltip = (() => {
   const el = document.getElementById('priceTooltip');
   let hideTimer = null;
-  function show(cat) {
+  function showBrand(cat, brand, brandName) {
     clearTimeout(hideTimer);
-    document.getElementById('ttCat').textContent = cat.label;
-    document.getElementById('ttAvg').textContent = cat.avg.toLocaleString() + '원';
-    document.getElementById('ttMin').textContent = cat.min.toLocaleString() + '원';
-    document.getElementById('ttMax').textContent = cat.max.toLocaleString() + '원';
-    document.getElementById('ttCount').textContent = cat.count + '개';
+    const fmt = v => v?.toLocaleString() + '원';
+    el.innerHTML = `
+      <div class="price-tooltip-cat">${cat.label}</div>
+      <div class="price-tooltip-row"><span class="label">전체 평균가</span><span class="val">${fmt(cat.avg)}</span></div>
+      <div class="price-tooltip-row"><span class="label">전체 최저가</span><span class="val">${fmt(cat.min)}</span></div>
+      <div class="price-tooltip-row"><span class="label">전체 최고가</span><span class="val">${fmt(cat.max)}</span></div>
+      ${brand ? `
+      <div class="price-tooltip-row" style="margin-top:6px;border-top:1px solid rgba(255,255,255,0.15);padding-top:6px;">
+        <span class="label" style="color:#fb923c;">${brandName} 평균가</span>
+        <span class="val" style="color:#fb923c;">${fmt(brand.avg)}</span>
+      </div>
+      <div class="price-tooltip-row"><span class="label" style="color:#fb923c;">${brandName} 최저가</span><span class="val">${fmt(brand.min)}</span></div>
+      <div class="price-tooltip-row"><span class="label" style="color:#fb923c;">${brandName} 최고가</span><span class="val">${fmt(brand.max)}</span></div>
+      <div class="price-tooltip-row"><span class="label">차이</span><span class="val" style="color:${brand.avg > cat.avg ? '#f87171':'#4ade80'};">${brand.avg > cat.avg ? '▲' : '▼'}${Math.abs(brand.avg - cat.avg).toLocaleString()}원</span></div>
+      ` : '<div class="price-tooltip-row"><span class="label" style="color:#fb923c;">커넥트킨록 데이터 없음</span></div>'}
+    `;
     el.classList.add('show');
   }
+  function show(cat) { showBrand(cat, null, ''); }
   function move(e) {
     const pad = 14;
     const tw = el.offsetWidth, th = el.offsetHeight;
@@ -1884,7 +1903,7 @@ const tooltip = (() => {
   function hide() {
     hideTimer = setTimeout(() => el.classList.remove('show'), 80);
   }
-  return { show, move, hide };
+  return { show, showBrand, move, hide };
 })();
 
 function renderPriceChart() {
@@ -1940,30 +1959,58 @@ function renderPriceChart() {
   document.getElementById('priceChartSub').textContent =
     `${isMusinsa ? '무신사' : '29CM'} ${totalSamples}개 상품 기준`;
 
-  const MAX_BAR_HEIGHT = 160; // px
+  // 브랜드 비교 데이터 (커넥트킨록)
+  const BRAND_NAME = '커넥트킨록';
+  const BRAND_COLOR = '#f97316';
+  const brandPriceStats = d.brandPriceStats?.[BRAND_NAME] || null;
+
+  // 전체 max 계산 (브랜드 포함)
+  let maxAvgAll = maxAvg;
+  if (brandPriceStats) {
+    catStats.forEach(cat => {
+      const b = brandPriceStats[cat.code];
+      if (b && b.avg > maxAvgAll) maxAvgAll = b.avg;
+    });
+  }
+
+  const MAX_BAR_HEIGHT = 160;
+  const fmt = v => v >= 10000
+    ? (v / 10000).toFixed(1).replace(/\.0$/, '') + '만'
+    : v.toLocaleString();
+
   const body = document.getElementById('priceChartBody');
   body.innerHTML = catStats.map((cat, i) => {
-    const barH = Math.max(8, Math.round(cat.avg / maxAvg * MAX_BAR_HEIGHT));
-    const shortVal = cat.avg >= 10000
-      ? (cat.avg / 10000).toFixed(1).replace(/\.0$/, '') + '만'
-      : cat.avg.toLocaleString();
+    const barH = Math.max(8, Math.round(cat.avg / maxAvgAll * MAX_BAR_HEIGHT));
+    const brand = brandPriceStats ? brandPriceStats[cat.code] : null;
+    const brandBarH = brand ? Math.max(8, Math.round(brand.avg / maxAvgAll * MAX_BAR_HEIGHT)) : 0;
+
     return `
       <div class="price-bar-col" data-idx="${i}">
-        <div class="price-bar-col-val">${shortVal}원</div>
-        <div class="price-bar-col-fill" style="height:${barH}px;background:${cat.color};"></div>
+        <div class="price-group-bars">
+          <div class="price-group-bar-wrap">
+            <div class="price-bar-col-val">${fmt(cat.avg)}원</div>
+            <div class="price-bar-col-fill" style="height:${barH}px;background:${cat.color};"></div>
+          </div>
+          ${brand ? `
+          <div class="price-group-bar-wrap">
+            <div class="price-bar-col-val" style="color:${BRAND_COLOR};">${fmt(brand.avg)}원</div>
+            <div class="price-bar-col-fill" style="height:${brandBarH}px;background:${BRAND_COLOR};opacity:0.85;"></div>
+          </div>` : ''}
+        </div>
         <div class="price-bar-col-label">${cat.label}</div>
         <div class="price-bar-col-count">${cat.count}개</div>
       </div>
     `;
   }).join('');
 
-  // 호버 이벤트: 해당 막대만 선명, 나머지 80% 흐리게
+  // 호버 이벤트
   const cols = body.querySelectorAll('.price-bar-col');
   cols.forEach((col, i) => {
+    const brand = brandPriceStats ? brandPriceStats[catStats[i].code] : null;
     col.addEventListener('mouseenter', (e) => {
       body.classList.add('has-hover');
       col.style.opacity = '1';
-      tooltip.show(catStats[i]);
+      tooltip.showBrand(catStats[i], brand, BRAND_NAME);
       tooltip.move(e);
     });
     col.addEventListener('mousemove', tooltip.move);
@@ -1977,15 +2024,15 @@ function renderPriceChart() {
   document.getElementById('priceChartLegend').innerHTML = `
     <div class="legend-item">
       <div class="legend-dot" style="background:${colors[0]};"></div>
-      <span>평균가 높음</span>
+      <span>전체 평균</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background:${BRAND_COLOR};"></div>
+      <span>${BRAND_NAME}</span>
     </div>
     <div class="legend-item">
       <div class="legend-dot" style="background:${colors[Math.floor(colors.length/2)]};"></div>
       <span>전체 평균: ${allAvg.toLocaleString()}원</span>
-    </div>
-    <div class="legend-item">
-      <div class="legend-dot" style="background:${colors[colors.length-1]};"></div>
-      <span>평균가 낮음</span>
     </div>
     <div class="legend-item" style="margin-left:auto;font-size:11px;color:var(--text3);">
       막대 위에 마우스를 올리면 상세 정보 표시
