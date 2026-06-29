@@ -1534,13 +1534,14 @@ const NAVER_29CM_KEYWORDS = [
 function naverSearchRow(item, rank) {
   const rankClass = rank === 1 ? 'r1' : rank === 2 ? 'r2' : rank === 3 ? 'r3' : 'rn';
   const changeClass = item.change;
+  const searchUrl = `https://search.naver.com/search.naver?query=${encodeURIComponent(item.keyword)}`;
   return `
-    <div class="naver-search-row">
+    <a class="naver-search-row" href="${searchUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">
       <div class="naver-rank ${rankClass}">${rank}</div>
       <div class="naver-keyword">${item.keyword}</div>
       <span class="naver-cat-tag" style="background:${item.catColor};color:${item.catText};">${item.cat}</span>
       <div class="naver-change ${changeClass}">${item.changeVal}</div>
-    </div>`;
+    </a>`;
 }
 
 function renderNaverSearch() {
