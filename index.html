@@ -1737,12 +1737,13 @@ function reasonTagHtml(reason) {
 function risingRow(item, hasChangeData = true) {
   const url = getProductUrl(item);
   const reason = getReason(item);
-  const metaHtml = hasChangeData
-    ? `<div class="trend-meta-main rise">▲${item.change}</div>`
-    : ``;
+  const badgeHtml = hasChangeData
+    ? `<div class="trend-rank-badge" style="background:#dcfce7;border-color:#86efac;color:var(--up);font-size:10px;">▲${item.change}</div>`
+    : `<div class="trend-rank-badge">${item.rank}</div>`;
+  const metaHtml = hasChangeData ? `` : ``;
   return `
     <a class="trend-product-row" href="${url}" target="_blank" rel="noopener noreferrer">
-      <div class="trend-rank-badge">${item.rank}</div>
+      ${badgeHtml}
       <div class="trend-product-info">
         <div class="trend-product-name">${item.name}</div>
         <div class="trend-product-brand">${item.brand}</div>
