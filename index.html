@@ -174,10 +174,11 @@
       gap: 20px;
       max-width: 1380px;
       margin: 0 auto;
-      align-items: stretch;
+      align-items: start;
     }
     @media (max-width: 960px) {
       main { grid-template-columns: 1fr; padding: 16px; }
+      .ranking-card { height: auto !important; }
     }
 
     /* ── SECTION TITLE ── */
@@ -1157,9 +1158,9 @@
 <!-- MAIN -->
 <main>
   <!-- LEFT: 랭킹 테이블 -->
-  <div style="display:flex;flex-direction:column;">
+  <div id="rankingCol" style="display:flex;flex-direction:column;">
     <div class="section-title" id="rankingTitle">무신사 실시간 랭킹</div>
-    <div class="ranking-card">
+    <div class="ranking-card" id="rankingCard">
       <div class="ranking-card-header">
         <span class="title" id="categoryLabel">전체</span>
         <div class="card-header-right">
@@ -1361,6 +1362,21 @@ async function init() {
   renderNaverSearch();
   renderPriceChart();
   startRefreshTimer();
+  syncRankingHeight();
+}
+
+/* 랭킹 카드 높이를 사이드바(네이버 접힌 상태) 높이에 고정.
+   네이버 펼치기/접기는 이 높이에 영향을 주지 않음. */
+function syncRankingHeight() {
+  if (window.matchMedia('(max-width: 960px)').matches) return;
+  requestAnimationFrame(() => {
+    const sidebar = document.querySelector('.sidebar');
+    const card = document.getElementById('rankingCard');
+    if (!sidebar || !card) return;
+    // 사이드바 높이 - 섹션 타이틀 영역(약 27px) 보정
+    const h = sidebar.offsetHeight - 27;
+    if (h > 0) card.style.height = h + 'px';
+  });
 }
 
 async function loadData(platform) {
@@ -1392,6 +1408,7 @@ function switchPlatform(p) {
   renderSidebar();
   renderNaverSearch();
   renderPriceChart();
+  syncRankingHeight();
 }
 
 /* ===========================
@@ -2200,6 +2217,12 @@ function showToast(msg, dur = 2500) {
 }
 
 init();
+
+let _rsTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(_rsTimer);
+  _rsTimer = setTimeout(syncRankingHeight, 150);
+});
 </script>
 </body>
 </html>
