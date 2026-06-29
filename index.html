@@ -646,6 +646,13 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: var(--card-shadow);
+      display: flex;
+      flex-direction: column;
+    }
+    .trend-card-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
     }
     .trend-card-header {
       padding: 14px 18px;
@@ -681,19 +688,21 @@
       color: var(--text3);
       font-weight: 400;
     }
-    .trend-card-body { display: flex; flex-direction: column; }
+    /* .trend-card-body moved to .trend-card block above */
     .trend-product-row {
       display: flex;
       align-items: center;
       gap: 12px;
-      padding: 11px 18px;
+      padding: 0 18px;
       border-bottom: 1px solid var(--border);
       transition: background .12s;
       cursor: pointer;
       text-decoration: none;
       color: inherit;
+      flex: 1;
+      min-height: 56px;
     }
-    .trend-product-row:last-child { border-bottom: none; }
+    .trend-product-row:last-of-type { border-bottom: none; }
     .trend-product-row:hover { background: #f8faff; }
     .trend-rank-badge {
       width: 22px; height: 22px;
@@ -746,28 +755,32 @@
     }
     .deal-toggle-btn {
       width: 100%;
-      padding: 10px 18px;
+      padding: 6px 18px;
       border: none;
       border-top: 1px solid var(--border);
-      background: #fafbfd;
-      color: var(--text2);
-      font-size: 12px;
-      font-weight: 600;
+      background: transparent;
+      color: var(--text3);
+      font-size: 11px;
+      font-weight: 500;
       font-family: inherit;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      transition: background .15s;
+      gap: 4px;
+      transition: color .15s;
     }
-    .deal-toggle-btn:hover { background: #f0f4ff; color: var(--accent); }
+    .deal-toggle-btn:hover { color: var(--accent); }
     .deal-toggle-chevron {
-      font-size: 11px;
+      font-size: 10px;
       transition: transform 0.25s ease;
       display: inline-block;
     }
     .deal-toggle-chevron.open { transform: rotate(180deg); }
+    .trend-product-row {
+      padding: 11px 18px;
+      flex: 1;
+    }
 
     /* 이유 태그 */
     .reason-tag {
