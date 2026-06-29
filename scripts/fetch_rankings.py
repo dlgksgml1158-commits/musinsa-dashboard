@@ -1000,7 +1000,7 @@ def compute_29cm_price_stats(categories_data: dict, categories_meta: list) -> di
 # ═══════════════════════════════════════════════════
 
 COMPARE_BRANDS = [
-    {"name": "커넥트킨록", "code": "connectkinrok"},
+    {"name": "커넥트킨록", "code": "kinloch"},
 ]
 
 def fetch_brand_category_prices(brand_code: str, brand_name: str, categories: list) -> dict:
