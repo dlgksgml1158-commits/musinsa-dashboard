@@ -1003,6 +1003,15 @@ COMPARE_BRANDS = [
     {"name": "커넥트킨록", "code": "kinloch"},
 ]
 
+# 브랜드 API 수집 실패 시 사용할 폴백 데이터 (수동 조사 기준)
+BRAND_FALLBACK = {
+    "커넥트킨록": {
+        "001": {"label": "상의", "avg": 53000, "min": 30000, "max": 77000, "count": 6},
+        "002": {"label": "아우터", "avg": 264000, "min": 34640, "max": 392390, "count": 7},
+        "003": {"label": "바지", "avg": 71100, "min": 71100, "max": 71100, "count": 1},
+    },
+}
+
 def fetch_brand_category_prices(brand_code: str, brand_name: str, categories: list) -> dict:
     """
     무신사 브랜드 상품 검색 API로 카테고리별 평균가 수집.
@@ -1110,9 +1119,14 @@ def main():
         price_stats = compute_price_stats(musinsa_cats, MUSINSA_CATEGORIES)
         brand_price_stats = {}
         for brand in COMPARE_BRANDS:
-            brand_price_stats[brand["name"]] = fetch_brand_category_prices(
+            fetched = fetch_brand_category_prices(
                 brand["code"], brand["name"], MUSINSA_CATEGORIES
             )
+            # API 수집 실패(빈 결과) 시 폴백 데이터 사용
+            if not fetched and brand["name"] in BRAND_FALLBACK:
+                print(f"    [폴백] {brand['name']} 하드코딩 데이터 사용")
+                fetched = BRAND_FALLBACK[brand["name"]]
+            brand_price_stats[brand["name"]] = fetched
             time.sleep(1)
         save("musinsa", {
             "platform": "musinsa",
