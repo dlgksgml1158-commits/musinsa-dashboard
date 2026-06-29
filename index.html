@@ -1940,7 +1940,7 @@ function renderPriceChart() {
       return {
         label: cat.label, code: cat.code,
         avg: s.avg, min: s.min, max: s.max, count: s.count,
-        color: colors[i % colors.length],
+        color: isMusinsa ? '#2563eb' : '#ff5a3c',
       };
     }).filter(Boolean).sort((a, b) => b.avg - a.avg);
   } else {
@@ -1957,7 +1957,7 @@ function renderPriceChart() {
         label: cat.label, code: cat.code, avg,
         min: Math.min(...prices), max: Math.max(...prices),
         count: catItems.length,
-        color: colors[i % colors.length],
+        color: isMusinsa ? '#2563eb' : '#ff5a3c',
       };
     }).filter(Boolean).sort((a, b) => b.avg - a.avg);
   }
