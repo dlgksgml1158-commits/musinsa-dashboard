@@ -1935,9 +1935,10 @@ function renderPriceChart() {
   const maxAvg = Math.max(...catStats.map(c => c.avg), 1);
   const allAvg = Math.round(catStats.reduce((a, b) => a + b.avg, 0) / catStats.length);
 
+  const totalSamples = catStats.reduce((a, c) => a + c.count, 0);
   document.getElementById('priceChartTitle').textContent = '카테고리별 평균 가격대';
   document.getElementById('priceChartSub').textContent =
-    `${isMusinsa ? '무신사' : '29CM'} 랭킹 내 ${allItems.length}개 상품 기준`;
+    `${isMusinsa ? '무신사' : '29CM'} ${totalSamples}개 상품 기준`;
 
   const MAX_BAR_HEIGHT = 160; // px
   const body = document.getElementById('priceChartBody');
