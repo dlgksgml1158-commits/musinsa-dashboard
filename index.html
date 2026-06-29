@@ -1696,7 +1696,6 @@ function renderSidebar() {
   const brandCounts = {};
   top30.forEach(i => { brandCounts[i.brand] = (brandCounts[i.brand] || 0) + 1; });
   const brandsSorted = Object.entries(brandCounts).sort((a,b) => b[1]-a[1]).slice(0, 10);
-  const medals = ['👑', '🥈', '🥉'];
   const countClass = isMusinsa ? 'brand-count' : 'brand-count cm-count';
 
   document.getElementById('brandList').innerHTML = brandsSorted.length === 0
@@ -1706,7 +1705,6 @@ function renderSidebar() {
         <div class="brand-rank-num">${i + 1}</div>
         <div class="brand-name">${brand}</div>
         <div class="${countClass}">${count}개</div>
-        <div class="brand-medal">${medals[i] || '·'}</div>
       </div>
     `).join('');
 
