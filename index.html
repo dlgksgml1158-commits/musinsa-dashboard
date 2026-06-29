@@ -844,17 +844,17 @@
       transform-origin: bottom center;
       transition: transform 0.2s ease, opacity 0.2s ease;
     }
-    /* 전체 평균 막대: 기본 흐리게 */
+    /* 전체 평균 막대: 항상 40% 투명도 */
     .price-group-bar-wrap[data-type="avg"] .price-bar-col-fill {
-      opacity: 0.45;
+      opacity: 0.4;
     }
-    /* 호버 시: 브랜드 막대 크게 확대 */
+    /* 호버 시: 커넥트킨록 막대 크게 확대 */
     .price-bar-col:hover .price-group-bar-wrap[data-type="brand"] {
-      transform: scaleY(1.22) scaleX(1.4);
+      transform: scaleY(1.35) scaleX(1.6);
     }
-    /* 호버 시: 전체 평균 막대 소폭 확대 */
+    /* 호버 시: 전체 평균 막대는 확대 없음, 40% 유지 */
     .price-bar-col:hover .price-group-bar-wrap[data-type="avg"] {
-      transform: scaleY(1.08) scaleX(1.15);
+      transform: none;
     }
     .price-bar-col-val {
       font-size: 11px;
