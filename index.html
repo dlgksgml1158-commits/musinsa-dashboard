@@ -205,6 +205,10 @@
     .ranking-card .ranking-group {
       flex-shrink: 0;
     }
+    .ranking-card #rankingGroup1 {
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
     #toggleBtnRest {
       margin-top: auto;
     }
@@ -271,6 +275,21 @@
     td {
       padding: 13px 16px;
       vertical-align: middle;
+    }
+    #rankingGroup1 {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    #rankingGroup1 table {
+      height: 100%;
+      width: 100%;
+    }
+    #rankingGroup1 tbody {
+      height: 100%;
+    }
+    #rankingGroup1 tbody tr {
+      height: calc(100% / 10);
     }
 
     /* Rank number */
@@ -1143,8 +1162,6 @@
       <div class="ranking-card-header">
         <span class="title" id="categoryLabel">전체</span>
         <div class="card-header-right">
-          <span class="count-tag" id="totalCount">-</span>
-          <span class="now-badge" id="nowBadge">NOW</span>
         </div>
       </div>
 
