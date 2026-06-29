@@ -826,6 +826,7 @@
       padding-top: 8px;
       width: 52px;
       flex-shrink: 0;
+      pointer-events: none;
     }
     .price-y-axis-tick {
       font-size: 11px;
@@ -1384,7 +1385,7 @@ function switchPlatform(p) {
   document.getElementById('tab-musinsa').className = 'ptab' + (p === 'musinsa' ? ' active-musinsa' : '');
   document.getElementById('tab-29cm').className = 'ptab' + (p === '29cm' ? ' active-29cm' : '');
   const badge = document.getElementById('nowBadge');
-  badge.className = 'now-badge' + (p === '29cm' ? ' cm' : '');
+  if (badge) badge.className = 'now-badge' + (p === '29cm' ? ' cm' : '');
   renderCategoryBar();
   renderTrendCards();
   renderRanking();
@@ -1509,7 +1510,7 @@ function renderRanking() {
   const catLabel = cats.find(c => c.code === state.category)?.label || '전체';
 
   document.getElementById('categoryLabel').textContent = catLabel;
-  document.getElementById('totalCount').textContent = `${items.length}개`;
+  const _tc = document.getElementById('totalCount'); if (_tc) _tc.textContent = `${items.length}개`;
   document.getElementById('rankingTitle').textContent = `${state.platform === 'musinsa' ? '무신사' : '29CM'} 실시간 랭킹`;
 
   renderGroup('rankingTbody1', items.slice(0, 10), 0);
@@ -1659,7 +1660,7 @@ function renderSidebar() {
   const upItems = items.filter(i => typeof i.change === 'number' && i.change > 0).sort((a,b) => b.change - a.change);
   const downItems = items.filter(i => typeof i.change === 'number' && i.change < 0).sort((a,b) => a.change - b.change);
 
-  document.getElementById('statTotal').textContent = items.length.toLocaleString();
+  const _st = document.getElementById('statTotal'); if (_st) _st.textContent = items.length.toLocaleString();
   document.getElementById('statNew').textContent = newItems.length;
   const _su = document.getElementById('statTopUp'); if (_su) _su.textContent = upItems[0] ? `▲${upItems[0].change}` : '—';
   const _sub = document.getElementById('statTopUpBrand'); if (_sub) _sub.textContent = upItems[0]?.brand || '—';
