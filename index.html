@@ -1594,7 +1594,7 @@ function risingRow(item, hasChangeData = true) {
   const reason = getReason(item);
   const metaHtml = hasChangeData
     ? `<div class="trend-meta-main rise">▲${item.change}</div>`
-    : `<div class="trend-meta-main rise"># ${item.rank}</div>`;
+    : ``;
   return `
     <a class="trend-product-row" href="${url}" target="_blank" rel="noopener noreferrer">
       <div class="trend-rank-badge">${item.rank}</div>
