@@ -9,33 +9,31 @@
       --bg: #f1f5fb;
       --surface: #ffffff;
       --border: #e2e8f2;
-      --border-strong: #c7d5ea;
-      --text: #0f172a;
-      --text2: #475569;
+      --border2: #d0d9e8;
+      --text: #1a1a2e;
+      --text2: #4a5568;
       --text3: #94a3b8;
-      --blue: #2563eb;
-      --blue-dim: #1d4ed8;
-      --blue-light: #dbeafe;
-      --blue-mid: #93c5fd;
-      --coral: #f43f5e;
-      --coral-light: #ffe4e6;
-      --up: #10b981;
+      --musinsa: #2563eb;
+      --musinsa-dim: #1d4ed8;
+      --29cm: #ff5a3c;
+      --29cm-dim: #cc4830;
+      --up: #16a34a;
       --down: #ef4444;
+      --neutral: #94a3b8;
+      --accent: #2563eb;
       --gold: #f59e0b;
-      --silver: #94a3b8;
-      --bronze: #d97706;
-      --shadow: 0 1px 4px rgba(15,23,42,.06), 0 4px 16px rgba(15,23,42,.04);
-      --shadow-md: 0 2px 8px rgba(15,23,42,.08), 0 8px 24px rgba(15,23,42,.06);
+      --silver: #6b7280;
+      --bronze: #b45309;
+      --card-shadow: 0 1px 6px rgba(0,0,0,.07);
+      --card-shadow-md: 0 4px 16px rgba(0,0,0,.10);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
       min-height: 100vh;
       font-size: 14px;
-      -webkit-font-smoothing: antialiased;
-      padding-bottom: env(safe-area-inset-bottom);
     }
 
     /* ── HEADER ── */
@@ -50,64 +48,66 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 1px 0 var(--border);
+      box-shadow: 0 1px 4px rgba(0,0,0,.05);
     }
     .logo {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
-    .logo-mark {
-      width: 28px; height: 28px;
-      background: var(--blue);
-      border-radius: 7px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 14px;
-      flex-shrink: 0;
+    .logo-icon {
+      width: 32px; height: 32px;
+      background: var(--musinsa);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #fff;
+      font-weight: 900;
     }
     .logo-text {
       font-size: 15px;
       font-weight: 700;
-      letter-spacing: -0.4px;
+      letter-spacing: -0.3px;
       color: var(--text);
     }
-    .logo-text .accent { color: var(--blue); }
+    .logo-text .dot { color: var(--text3); margin: 0 4px; }
     .logo-sub {
       font-size: 12px;
       color: var(--text3);
       font-weight: 400;
-      border-left: 1px solid var(--border);
-      padding-left: 12px;
       margin-left: 4px;
     }
     .header-meta {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       font-size: 12px;
       color: var(--text3);
     }
+    #lastUpdated { color: var(--text3); }
     .refresh-badge {
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
+      background: var(--surface);
+      border: 1.5px solid #22c55e;
       border-radius: 20px;
       padding: 4px 12px;
       display: flex;
       align-items: center;
       gap: 6px;
+      color: var(--text2);
+      font-weight: 600;
       font-size: 12px;
-      color: #16a34a;
-      font-weight: 500;
     }
     .refresh-dot {
-      width: 6px; height: 6px;
+      width: 7px; height: 7px;
       border-radius: 50%;
       background: #22c55e;
-      animation: livepulse 2s infinite;
+      animation: pulse 2s infinite;
     }
-    @keyframes livepulse {
+    @keyframes pulse {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.8); }
+      50% { opacity: 0.4; transform: scale(0.85); }
     }
 
     /* ── PLATFORM TABS ── */
@@ -116,31 +116,39 @@
       border-bottom: 1px solid var(--border);
       padding: 0 28px;
       display: flex;
+      gap: 0;
     }
     .ptab {
-      padding: 0 24px;
-      height: 46px;
+      padding: 13px 24px;
       cursor: pointer;
-      border-bottom: 2px solid transparent;
+      border-bottom: 2.5px solid transparent;
       font-weight: 600;
       font-size: 14px;
       color: var(--text3);
-      transition: all .18s;
+      transition: all .2s;
+      letter-spacing: -0.2px;
+      user-select: none;
       display: flex;
       align-items: center;
       gap: 7px;
-      user-select: none;
-      letter-spacing: -0.2px;
     }
-    .ptab:hover:not(.active-musinsa):not(.active-29cm) { color: var(--text2); }
-    .ptab.active-musinsa { color: var(--blue); border-bottom-color: var(--blue); }
-    .ptab.active-29cm { color: var(--coral); border-bottom-color: var(--coral); }
-    .ptab-pip {
-      width: 7px; height: 7px;
+    .ptab-dot {
+      width: 8px; height: 8px;
       border-radius: 50%;
-      background: currentColor;
-      opacity: 0.7;
+      background: var(--border2);
+      transition: background .2s;
     }
+    .ptab.active-musinsa {
+      color: var(--musinsa);
+      border-bottom-color: var(--musinsa);
+    }
+    .ptab.active-musinsa .ptab-dot { background: var(--musinsa); }
+    .ptab.active-29cm {
+      color: var(--29cm);
+      border-bottom-color: var(--29cm);
+    }
+    .ptab.active-29cm .ptab-dot { background: var(--29cm); }
+    .ptab:hover:not(.active-musinsa):not(.active-29cm) { color: var(--text2); }
 
     /* ── CATEGORY BAR ── */
     .category-bar {
@@ -148,27 +156,37 @@
       border-bottom: 1px solid var(--border);
       padding: 10px 28px;
       display: flex;
-      gap: 6px;
+      gap: 8px;
       overflow-x: auto;
       scrollbar-width: none;
     }
     .category-bar::-webkit-scrollbar { display: none; }
     .cat-btn {
-      background: transparent;
-      border: 1px solid var(--border);
+      background: var(--bg);
+      border: 1.5px solid var(--border);
       border-radius: 20px;
-      padding: 5px 14px;
+      padding: 6px 15px;
       cursor: pointer;
       white-space: nowrap;
       color: var(--text2);
-      font-size: 12.5px;
+      font-size: 13px;
       font-weight: 500;
       transition: all .15s;
       font-family: inherit;
     }
-    .cat-btn:hover { border-color: var(--blue-mid); color: var(--blue); background: var(--blue-light); }
-    .cat-btn.active.musinsa-active { background: var(--blue); border-color: var(--blue); color: #fff; font-weight: 600; }
-    .cat-btn.active.cm-active { background: var(--coral); border-color: var(--coral); color: #fff; font-weight: 600; }
+    .cat-btn:hover { border-color: var(--border2); color: var(--text); }
+    .cat-btn.active.musinsa-active {
+      background: var(--musinsa);
+      border-color: var(--musinsa);
+      color: #fff;
+      font-weight: 700;
+    }
+    .cat-btn.active.cm-active {
+      background: var(--29cm);
+      border-color: var(--29cm);
+      color: #fff;
+      font-weight: 700;
+    }
 
     /* ── MAIN LAYOUT ── */
     main {
@@ -176,39 +194,33 @@
       display: grid;
       grid-template-columns: 1fr 320px;
       gap: 20px;
-      max-width: 1360px;
+      max-width: 1380px;
       margin: 0 auto;
     }
-    @media (max-width: 960px) { main { grid-template-columns: 1fr; padding: 16px; } }
+    @media (max-width: 960px) {
+      main { grid-template-columns: 1fr; padding: 16px; }
+    }
 
     /* ── SECTION TITLE ── */
     .section-title {
-      font-size: 11px;
+      font-size: 12px;
       font-weight: 600;
       color: var(--text3);
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 12px;
     }
-    .section-title .badge {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 1px 6px;
-      font-size: 11px;
-      color: var(--text3);
-    }
 
     /* ── RANKING CARD ── */
     .ranking-card {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 14px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: var(--shadow);
+      box-shadow: var(--card-shadow);
     }
     .ranking-card-header {
-      padding: 16px 20px;
+      padding: 16px 22px;
       border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
@@ -216,177 +228,119 @@
     }
     .ranking-card-header .title {
       font-weight: 700;
-      font-size: 14px;
+      font-size: 16px;
+      color: var(--text);
+    }
+    .card-header-right {
       display: flex;
       align-items: center;
-      gap: 8px;
-      letter-spacing: -0.3px;
+      gap: 10px;
     }
-    .period-tag {
-      background: var(--blue-light);
-      color: var(--blue);
+    .count-tag {
+      font-size: 13px;
+      color: var(--text3);
+      font-weight: 500;
+    }
+    .now-badge {
+      background: var(--musinsa);
+      color: #fff;
       border-radius: 6px;
       padding: 3px 10px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.3px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
     }
-    table { width: 100%; border-collapse: collapse; }
-    thead tr { background: #f8fafd; }
+    .now-badge.cm { background: var(--29cm); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    thead tr {
+      background: #fafbfd;
+      border-bottom: 1px solid var(--border);
+    }
     thead th {
-      padding: 9px 16px;
+      padding: 10px 16px;
       text-align: left;
       font-size: 11px;
       font-weight: 600;
       color: var(--text3);
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      border-bottom: 1px solid var(--border);
     }
-    thead th:first-child { width: 50px; text-align: center; }
-    thead th.change-col { width: 58px; text-align: center; }
-    thead th.price-col { width: 96px; text-align: right; }
+    thead th:first-child { width: 56px; text-align: center; }
+    thead th.change-col { width: 64px; text-align: center; }
+    thead th.price-col { width: 110px; text-align: right; }
+    thead th.discount-col { width: 72px; text-align: right; }
     tbody tr {
       border-bottom: 1px solid var(--border);
-      transition: background .1s;
-      cursor: pointer;
+      transition: background .12s;
     }
-    tbody tr:hover { background: #f8fafd; }
+    tbody tr:hover { background: #f8faff; }
     tbody tr:last-child { border-bottom: none; }
-    td { padding: 11px 16px; vertical-align: middle; }
+    td {
+      padding: 13px 16px;
+      vertical-align: middle;
+    }
 
     /* Rank number */
-    .rank-num { text-align: center; font-weight: 700; font-size: 15px; }
+    .rank-num {
+      text-align: center;
+      font-weight: 800;
+      font-size: 15px;
+    }
     .rank-num.rank-1 { color: var(--gold); }
     .rank-num.rank-2 { color: var(--silver); }
     .rank-num.rank-3 { color: var(--bronze); }
-    .rank-num.rank-other { color: var(--text3); font-size: 13px; }
+    .rank-num.rank-other { color: var(--text3); font-weight: 600; }
 
     /* Product info */
-    .product-info { display: flex; align-items: center; gap: 11px; }
-    .product-thumb {
-      width: 42px; height: 42px;
-      border-radius: 10px;
-      background: var(--blue-light);
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 17px;
-      flex-shrink: 0;
+    .product-info { display: flex; flex-direction: column; gap: 3px; }
+    .product-name { font-weight: 600; font-size: 13px; color: var(--text); line-height: 1.35; }
+    .product-brand {
+      font-size: 11px;
+      color: var(--text3);
+      font-weight: 500;
     }
-    .product-name { font-weight: 600; font-size: 13px; line-height: 1.35; color: var(--text); }
-    .product-brand { font-size: 11px; color: var(--text3); margin-top: 2px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
 
     /* Change indicator */
     .change { text-align: center; font-size: 12px; font-weight: 700; }
     .change.up { color: var(--up); }
     .change.down { color: var(--down); }
-    .change.same { color: var(--text3); }
-    .change.new {
-      color: var(--blue); font-size: 10px; letter-spacing: 0.5px;
-      border: 1px solid var(--blue); border-radius: 4px; padding: 1px 5px;
+    .change.same { color: var(--neutral); }
+    .change.new-entry {
+      color: var(--musinsa);
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      border: 1px solid var(--musinsa);
+      border-radius: 4px;
+      padding: 1px 5px;
+      display: inline-block;
     }
 
     /* Price */
-    .price { text-align: right; font-weight: 600; font-size: 13px; color: var(--text); }
-    .price .discount { font-size: 10px; color: var(--down); font-weight: 700; display: block; }
-
-    /* ── SIDEBAR ── */
-    .sidebar { display: flex; flex-direction: column; gap: 16px; }
-
-    /* Brand card */
-    .brand-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
+    .price-cell { text-align: right; }
+    .price-main { font-weight: 700; font-size: 13px; color: var(--text); }
+    .price-original {
+      font-size: 11px;
+      color: var(--text3);
+      text-decoration: line-through;
+      display: block;
+      margin-top: 1px;
     }
-    .brand-card-header {
-      padding: 16px 20px;
-      border-bottom: 1px solid var(--border);
+    .discount-rate {
+      text-align: right;
       font-weight: 700;
-      font-size: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      letter-spacing: -0.3px;
+      font-size: 12px;
+      color: var(--down);
     }
-    .brand-item {
-      padding: 11px 18px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .brand-item:last-child { border-bottom: none; }
-    .brand-rank-num { font-size: 12px; font-weight: 700; color: var(--text3); width: 18px; flex-shrink: 0; }
-    .brand-name { font-weight: 600; font-size: 13px; flex: 1; color: var(--text); }
-    .brand-count {
-      font-size: 12px; color: var(--text2);
-      background: var(--bg); border: 1px solid var(--border);
-      border-radius: 20px; padding: 2px 9px;
-    }
-    .brand-change { font-size: 13px; }
-
-    /* Stats mini cards */
-    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    .stat-mini {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 14px 16px;
-      box-shadow: var(--shadow);
-    }
-    .stat-label { font-size: 11px; color: var(--text3); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
-    .stat-value { font-size: 22px; font-weight: 700; line-height: 1; color: var(--text); }
-    .stat-sub { font-size: 11px; color: var(--text3); margin-top: 4px; }
-
-    /* Trend chart bar */
-    .trend-item {
-      padding: 9px 18px;
-      border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; gap: 10px;
-    }
-    .trend-item:last-child { border-bottom: none; }
-    .trend-label { font-size: 12px; font-weight: 600; width: 76px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text2); }
-    .trend-bar-wrap { flex: 1; background: var(--bg); border-radius: 4px; height: 5px; }
-    .trend-bar { height: 5px; border-radius: 4px; transition: width 0.55s ease; }
-    .trend-num { font-size: 11px; color: var(--text3); width: 26px; text-align: right; }
-
-    /* Loading skeleton */
-    .skeleton {
-      background: linear-gradient(90deg, #f0f4fb 25%, #e2e8f2 50%, #f0f4fb 75%);
-      background-size: 200% 100%;
-      animation: shimmer 1.4s infinite;
-      border-radius: 6px;
-    }
-    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
-
-    /* Empty state */
-    .empty-state { padding: 40px 16px; text-align: center; color: var(--text3); }
-    .empty-state .icon { font-size: 36px; margin-bottom: 12px; }
-    .empty-state p { font-size: 13px; }
-
-    /* Toast */
-    .toast {
-      position: fixed; bottom: 24px; right: 24px;
-      background: var(--text); color: #fff;
-      border-radius: 10px; padding: 11px 18px;
-      font-size: 13px; box-shadow: var(--shadow-md);
-      transform: translateY(80px); opacity: 0;
-      transition: all .28s; z-index: 999;
-    }
-    .toast.show { transform: translateY(0); opacity: 1; }
-
-    /* 상품 링크 */
-    .product-link { color: inherit; text-decoration: none; }
-    .product-link:hover .product-name { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
 
     /* ── ACCORDION ── */
     .accordion-header {
       width: 100%;
-      padding: 13px 20px;
-      background: #f8fafd;
+      padding: 13px 22px;
+      background: #fafbfd;
       border: none;
       border-top: 1px solid var(--border);
       color: var(--text2);
@@ -396,64 +350,251 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 6px;
-      transition: background .15s, color .15s;
+      justify-content: space-between;
+      transition: background .15s;
       user-select: none;
     }
-    .accordion-header:hover { background: var(--blue-light); color: var(--blue); }
-    .accordion-header.open { color: var(--blue); }
-    .accordion-header-left { display: flex; align-items: center; gap: 9px; }
+    .accordion-header:hover { background: #f0f4ff; }
+    .accordion-header.open { color: var(--accent); }
+    .accordion-header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
     .accordion-rank-tag {
-      background: var(--surface);
+      background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 20px;
       padding: 2px 10px;
-      font-size: 11.5px;
+      font-size: 12px;
       color: var(--text3);
       font-weight: 600;
-      transition: all .15s;
     }
-    .accordion-header.open .accordion-rank-tag { border-color: var(--blue); color: var(--blue); background: var(--blue-light); }
+    .accordion-header.open .accordion-rank-tag {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
     .accordion-chevron {
-      font-size: 12px;
-      transition: transform .28s ease;
-      color: var(--text3);
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      transition: transform .3s ease, border-color .15s;
+      flex-shrink: 0;
     }
-    .accordion-header.open .accordion-chevron { transform: rotate(180deg); color: var(--blue); }
-    .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.36s cubic-bezier(0.4,0,0.2,1); }
-    .accordion-body.open { max-height: 1400px; }
+    .accordion-header.open .accordion-chevron {
+      transform: rotate(180deg);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);
+    }
+    .accordion-body.open { max-height: 2000px; }
     .ranking-group table thead { display: none; }
     #rankingGroup1 table thead { display: table-header-group; }
 
-    /* 뱃지 */
+    /* Badges */
     .hot-badge {
-      background: rgba(239,68,68,.12); color: var(--down);
-      border: 1px solid rgba(239,68,68,.2); border-radius: 4px;
-      font-size: 10px; font-weight: 700; padding: 1px 5px; margin-left: 5px;
+      background: rgba(239,68,68,.1);
+      color: var(--down);
+      border: 1px solid rgba(239,68,68,.25);
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 5px;
+      margin-left: 5px;
     }
-    .new-badge {
-      background: var(--blue-light); color: var(--blue);
-      border: 1px solid #bfdbfe; border-radius: 4px;
-      font-size: 10px; font-weight: 700; padding: 1px 5px; margin-left: 5px;
+    .new-badge-inline {
+      background: rgba(37,99,235,.1);
+      color: var(--musinsa);
+      border: 1px solid rgba(37,99,235,.25);
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 1px 5px;
+      margin-left: 5px;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar { display: flex; flex-direction: column; gap: 16px; }
+
+    /* Stats grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .stat-mini {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: var(--card-shadow);
+    }
+    .stat-label {
+      font-size: 11px;
+      color: var(--text3);
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .stat-value {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--text);
+    }
+    .stat-value.up { color: var(--up); }
+    .stat-value.down { color: var(--down); }
+    .stat-sub { font-size: 11px; color: var(--text3); margin-top: 5px; }
+
+    /* Brand card */
+    .brand-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+    .brand-card-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 700;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text);
+    }
+    .brand-card-sub { font-size: 11px; color: var(--text3); font-weight: 400; }
+    .brand-item {
+      padding: 11px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-item:last-child { border-bottom: none; }
+    .brand-rank-num {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text3);
+      width: 18px;
+      flex-shrink: 0;
+      text-align: center;
+    }
+    .brand-name { font-weight: 600; font-size: 13px; flex: 1; color: var(--text); }
+    .brand-count {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--musinsa);
+      background: #eff6ff;
+      border-radius: 20px;
+      padding: 2px 9px;
+      border: 1px solid #dbeafe;
+    }
+    .brand-count.cm-count {
+      color: var(--29cm);
+      background: #fff5f3;
+      border-color: #fed7d0;
+    }
+    .brand-medal { font-size: 14px; flex-shrink: 0; }
+
+    /* Category chart */
+    .trend-item {
+      padding: 10px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .trend-item:last-child { border-bottom: none; }
+    .trend-label { font-size: 12px; font-weight: 600; width: 80px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text2); }
+    .trend-bar-wrap { flex: 1; background: var(--bg); border-radius: 4px; height: 5px; }
+    .trend-bar { height: 5px; border-radius: 4px; transition: width 0.6s ease; }
+    .trend-num { font-size: 11px; color: var(--text3); width: 28px; text-align: right; }
+
+    /* Skeleton */
+    .skeleton {
+      background: linear-gradient(90deg, var(--bg) 25%, var(--border) 50%, var(--bg) 75%);
+      background-size: 200% 100%;
+      animation: shimmer 1.5s infinite;
+      border-radius: 6px;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* Empty state */
+    .empty-state {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text3);
+    }
+    .empty-state .icon { font-size: 32px; margin-bottom: 10px; }
+    .empty-state p { font-size: 13px; }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--text);
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-size: 13px;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,.2);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all .3s;
+      z-index: 999;
+    }
+    .toast.show { transform: translateY(0); opacity: 1; }
+
+    /* Product link */
+    .product-link {
+      color: inherit;
+      text-decoration: none;
+    }
+    .product-link:hover .product-name {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
     }
 
     /* Scrollbar */
     ::-webkit-scrollbar { width: 5px; height: 5px; }
     ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--border2); }
 
     /* ── MOBILE ── */
-    @media (max-width: 600px) {
-      header { padding: 0 16px; }
-      .platform-tabs { padding: 0; }
-      .ptab { flex: 1; justify-content: center; padding: 0 12px; font-size: 13px; }
-      .category-bar { padding: 8px 14px; }
-      main { padding: 12px 14px; }
+    @media (max-width: 768px) {
+      header { padding: 0 16px; height: 52px; }
+      .logo-text { font-size: 14px; }
       .logo-sub { display: none; }
+      .platform-tabs { padding: 0; }
+      .ptab { flex: 1; text-align: center; padding: 12px 0; font-size: 13px; justify-content: center; }
+      .category-bar { padding: 8px 14px; }
+      main { padding: 12px; gap: 14px; }
+      .ranking-card-header { padding: 12px 16px; }
     }
-    @media (max-width: 420px) {
-      thead th.price-col, tbody td:nth-child(4) { display: none; }
+    @media (max-width: 480px) {
+      thead th.discount-col,
+      tbody td.discount-col { display: none; }
+      thead th.price-col { width: 88px; }
+    }
+    body { padding-bottom: env(safe-area-inset-bottom); }
+    header {
+      padding-left: max(28px, env(safe-area-inset-left));
+      padding-right: max(28px, env(safe-area-inset-right));
     }
   </style>
 </head>
@@ -462,12 +603,14 @@
 <!-- HEADER -->
 <header>
   <div class="logo">
-    <div class="logo-mark">📊</div>
-    <div class="logo-text">무신사 <span class="accent">×</span> 29CM</div>
-    <div class="logo-sub">랭킹 대시보드</div>
+    <div class="logo-icon">M</div>
+    <span class="logo-text">
+      무신사 <span class="dot">×</span> 29CM
+      <span class="logo-sub">랭킹 대시보드</span>
+    </span>
   </div>
   <div class="header-meta">
-    <span id="lastUpdated"></span>
+    <span id="lastUpdated">-</span>
     <div class="refresh-badge">
       <div class="refresh-dot"></div>
       <span id="refreshTimer">Live</span>
@@ -478,10 +621,10 @@
 <!-- PLATFORM TABS -->
 <div class="platform-tabs">
   <div class="ptab active-musinsa" id="tab-musinsa" onclick="switchPlatform('musinsa')">
-    <div class="ptab-pip"></div>무신사
+    <div class="ptab-dot"></div>무신사
   </div>
   <div class="ptab" id="tab-29cm" onclick="switchPlatform('29cm')">
-    <div class="ptab-pip"></div>29CM
+    <div class="ptab-dot"></div>29CM
   </div>
 </div>
 
@@ -492,16 +635,17 @@
 <main>
   <!-- LEFT: 랭킹 테이블 -->
   <div>
-    <div class="section-title">
-      <span id="rankingTitle">실시간 랭킹</span>
-      <span class="badge" id="totalCount">-</span>
-    </div>
+    <div class="section-title" id="rankingTitle">무신사 실시간 랭킹</div>
     <div class="ranking-card">
       <div class="ranking-card-header">
         <span class="title" id="categoryLabel">전체</span>
-        <span class="period-tag" id="periodTag">NOW</span>
+        <div class="card-header-right">
+          <span class="count-tag" id="totalCount">-</span>
+          <span class="now-badge" id="nowBadge">NOW</span>
+        </div>
       </div>
-      <!-- Group 1: 1-10위 (항상 표시) -->
+
+      <!-- 1~10위 -->
       <div class="ranking-group" id="rankingGroup1">
         <table>
           <thead>
@@ -510,14 +654,15 @@
               <th>상품</th>
               <th class="change-col">변동</th>
               <th class="price-col">가격</th>
+              <th class="discount-col">할인율</th>
             </tr>
           </thead>
           <tbody id="rankingTbody1">
-            <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
-            <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
-            <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
-            <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
-            <tr><td colspan="4"><div class="skeleton" style="height:52px;margin:8px 16px;"></div></td></tr>
+            <tr><td colspan="5"><div class="skeleton" style="height:48px;margin:10px 16px;"></div></td></tr>
+            <tr><td colspan="5"><div class="skeleton" style="height:48px;margin:10px 16px;"></div></td></tr>
+            <tr><td colspan="5"><div class="skeleton" style="height:48px;margin:10px 16px;"></div></td></tr>
+            <tr><td colspan="5"><div class="skeleton" style="height:48px;margin:10px 16px;"></div></td></tr>
+            <tr><td colspan="5"><div class="skeleton" style="height:48px;margin:10px 16px;"></div></td></tr>
           </tbody>
         </table>
       </div>
@@ -526,40 +671,27 @@
       <button class="accordion-header" id="toggleBtnRest" onclick="toggleRest()">
         <div class="accordion-header-left">
           <span class="accordion-rank-tag">11~30위</span>
-          <span style="font-size:12px;color:inherit;">펼치기</span>
+          <span style="font-size:12px;">펼치기</span>
         </div>
         <div class="accordion-chevron">▾</div>
       </button>
       <div class="accordion-body" id="rankingRest">
         <div class="ranking-group" id="rankingGroup2">
           <table>
-            <thead>
-              <tr>
-                <th>순위</th><th>상품</th>
-                <th class="change-col">변동</th>
-                <th class="price-col">가격</th>
-              </tr>
-            </thead>
+            <thead><tr><th>순위</th><th>상품</th><th class="change-col">변동</th><th class="price-col">가격</th><th class="discount-col">할인율</th></tr></thead>
             <tbody id="rankingTbody2"></tbody>
           </table>
         </div>
         <div class="ranking-group" id="rankingGroup3">
           <table>
-            <thead>
-              <tr>
-                <th>순위</th><th>상품</th>
-                <th class="change-col">변동</th>
-                <th class="price-col">가격</th>
-              </tr>
-            </thead>
+            <thead><tr><th>순위</th><th>상품</th><th class="change-col">변동</th><th class="price-col">가격</th><th class="discount-col">할인율</th></tr></thead>
             <tbody id="rankingTbody3"></tbody>
           </table>
         </div>
-        <!-- 하단 접기 버튼 -->
         <button class="accordion-header" id="toggleBtnRestBottom" onclick="toggleRest()" style="display:none;">
           <div class="accordion-header-left">
             <span class="accordion-rank-tag">11~30위</span>
-            <span style="font-size:12px;color:inherit;">접기</span>
+            <span style="font-size:12px;">접기</span>
           </div>
           <div class="accordion-chevron" style="transform:rotate(180deg);">▾</div>
         </button>
@@ -572,23 +704,23 @@
     <!-- 통계 카드 -->
     <div class="stats-grid">
       <div class="stat-mini">
-        <div class="stat-label">총 노출 상품</div>
+        <div class="stat-label">총 노출</div>
         <div class="stat-value" id="statTotal">-</div>
-        <div class="stat-sub" id="statTotalSub">카테고리 합계</div>
+        <div class="stat-sub" id="statTotalSub">상품 수</div>
       </div>
       <div class="stat-mini">
         <div class="stat-label">신규 진입</div>
-        <div class="stat-value" style="color:var(--up)" id="statNew">-</div>
+        <div class="stat-value up" id="statNew">-</div>
         <div class="stat-sub">이번 회차 NEW</div>
       </div>
       <div class="stat-mini">
         <div class="stat-label">최대 상승</div>
-        <div class="stat-value" style="color:var(--up)" id="statTopUp">-</div>
+        <div class="stat-value up" id="statTopUp">-</div>
         <div class="stat-sub" id="statTopUpBrand">-</div>
       </div>
       <div class="stat-mini">
         <div class="stat-label">최대 하락</div>
-        <div class="stat-value" style="color:var(--down)" id="statTopDown">-</div>
+        <div class="stat-value down" id="statTopDown">-</div>
         <div class="stat-sub" id="statTopDownBrand">-</div>
       </div>
     </div>
@@ -596,8 +728,8 @@
     <!-- 브랜드 노출 현황 -->
     <div class="brand-card">
       <div class="brand-card-header">
-        <span>🏷 브랜드 노출 현황</span>
-        <span style="font-size:12px;color:var(--text3);font-weight:400;">TOP10 내 집계</span>
+        <span>브랜드 노출 현황</span>
+        <span class="brand-card-sub">TOP10 내</span>
       </div>
       <div id="brandList">
         <div class="empty-state"><p>데이터 로딩 중...</p></div>
@@ -607,7 +739,7 @@
     <!-- 카테고리별 분포 -->
     <div class="brand-card">
       <div class="brand-card-header">
-        <span>📊 카테고리 인기도</span>
+        <span>카테고리 인기도</span>
       </div>
       <div id="categoryChart">
         <div class="empty-state"><p>데이터 로딩 중...</p></div>
@@ -616,7 +748,6 @@
   </div>
 </main>
 
-<!-- TOAST -->
 <div class="toast" id="toast"></div>
 
 <script>
@@ -649,10 +780,10 @@ const CM29_CATS = [
 ];
 
 const EMOJI_BY_CAT = {
-  '': '🏆', '001':'👕', '002':'🧥', '003':'👖', '004':'👗',
-  '005':'🏃', '020':'👟', '022':'👜', '023':'⌚', '024':'🕶',
-  '026':'💄', women:'👚', men:'👔', shoes:'👟', bag:'👜',
-  acc:'💍', jewelry:'💎', beauty:'💄', life:'🏠'
+  '':'🏆','001':'👕','002':'🧥','003':'👖','004':'👗',
+  '005':'🏃','020':'👟','022':'👜','023':'⌚','024':'🕶',
+  '026':'💄',women:'👚',men:'👔',shoes:'👟',bag:'👜',
+  acc:'💍',jewelry:'💎',beauty:'💄',life:'🏠'
 };
 
 let state = {
@@ -664,62 +795,46 @@ let state = {
 };
 
 /* ===========================
-   SAMPLE DATA (fallback)
+   SAMPLE DATA
 =========================== */
 function generateSampleData(platform) {
   const brands = platform === 'musinsa'
     ? ['커버낫','디스이즈네버댓','마르지엘라','나이키','아디다스','뉴발란스','폴로','톰브라운','우영미','앤더슨벨','아크네','스톤아일랜드','메종키츠네','오프화이트','암부시']
     : ['아더에러','엔더스키마','우영미','자크뮈스','아미','그라프','더콜디스트모먼트','마뗑킴','오이오이','로로피아나','브루넬로','꼼데가르송','이자벨마랑','가니','세쿤두스'];
-
   const products = [
-    '오버핏 코튼 셔츠', '와이드 데님 팬츠', '울 블렌드 코트', '레더 스니커즈',
-    '나일론 크로스백', '캐시미어 니트', '테크 플리스 재킷', '실크 블라우스',
-    '카고 팬츠', '첼시 부츠', '미니 숄더백', '트위드 재킷', '조거 팬츠',
-    '롱 트렌치코트', '메시 스니커즈', '토트백', '크롭 후드티', '스키니 진',
-    '패딩 베스트', '니트 가디건'
+    '오버핏 코튼 셔츠','와이드 데님 팬츠','울 블렌드 코트','레더 스니커즈',
+    '나일론 크로스백','캐시미어 니트','테크 플리스 재킷','실크 블라우스',
+    '카고 팬츠','첼시 부츠','미니 숄더백','트위드 재킷','조거 팬츠',
+    '롱 트렌치코트','메시 스니커즈','토트백','크롭 후드티','스키니 진',
+    '패딩 베스트','니트 가디건'
   ];
-
-  const prevRanks = {};
   const items = [];
   for (let i = 1; i <= 100; i++) {
     const brand = brands[Math.floor(Math.random() * brands.length)];
     const product = products[Math.floor(Math.random() * products.length)];
     const price = (Math.floor(Math.random() * 30) + 1) * 10000 + 9000;
-    const discount = Math.random() > 0.5 ? Math.floor(Math.random() * 40) + 10 : 0;
+    const discount = Math.random() > 0.5 ? Math.floor(Math.random() * 45) + 10 : 0;
     const cats = platform === 'musinsa' ? MUSINSA_CATS : CM29_CATS;
     const cat = cats[Math.floor(Math.random() * (cats.length - 1)) + 1];
-
-    // Simulated rank change
-    const changeOptions = [null, 1, 2, 3, 5, -1, -2, -3, -5, 'NEW'];
+    const changeOptions = [null, 1, 2, 3, 5, 8, -1, -2, -3, -5, 'NEW'];
     const change = changeOptions[Math.floor(Math.random() * changeOptions.length)];
-
     items.push({
-      rank: i,
-      brand,
+      rank: i, brand,
       name: `${brand} ${product}`,
-      price,
-      discountRate: discount,
+      price, discountRate: discount,
       finalPrice: discount ? Math.round(price * (1 - discount / 100)) : price,
-      category: cat.code,
-      categoryLabel: cat.label,
-      change,
-      thumbnail: null,
+      category: cat.code, categoryLabel: cat.label, change,
       id: `${platform}-${i}`,
     });
   }
-  return {
-    platform,
-    updatedAt: new Date().toISOString(),
-    items,
-  };
+  return { platform, updatedAt: new Date().toISOString(), items };
 }
 
 /* ===========================
    INIT
 =========================== */
 async function init() {
-  await loadData('musinsa');
-  await loadData('29cm');
+  await Promise.all([loadData('musinsa'), loadData('29cm')]);
   renderCategoryBar();
   renderRanking();
   renderSidebar();
@@ -728,18 +843,13 @@ async function init() {
 
 async function loadData(platform) {
   try {
-    // Try to load real data from JSON files (populated by GitHub Actions)
     const res = await fetch(`data/${platform === 'musinsa' ? 'musinsa' : '29cm'}.json?t=${Date.now()}`);
-    if (!res.ok) throw new Error('No data file');
-    const json = await res.json();
-    state.data[platform] = json;
-    showToast(`${platform === 'musinsa' ? '무신사' : '29CM'} 데이터 로드 완료 ✓`);
+    if (!res.ok) throw new Error('No data');
+    state.data[platform] = await res.json();
+    if (platform === state.platform) showToast(`${platform === 'musinsa' ? '무신사' : '29CM'} 데이터 로드 완료 ✓`);
   } catch {
-    // Fallback to sample data
     state.data[platform] = generateSampleData(platform);
-    if (platform === state.platform) {
-      showToast('⚠ 샘플 데이터로 표시 중 (GitHub Actions 미실행)', 4000);
-    }
+    if (platform === state.platform) showToast('⚠ 샘플 데이터 표시 중 (GitHub Actions 미실행)', 4000);
   }
 }
 
@@ -750,10 +860,10 @@ function switchPlatform(p) {
   state.platform = p;
   state.category = '';
   state.restOpen = false;
-
   document.getElementById('tab-musinsa').className = 'ptab' + (p === 'musinsa' ? ' active-musinsa' : '');
   document.getElementById('tab-29cm').className = 'ptab' + (p === '29cm' ? ' active-29cm' : '');
-
+  const badge = document.getElementById('nowBadge');
+  badge.className = 'now-badge' + (p === '29cm' ? ' cm' : '');
   renderCategoryBar();
   renderRanking();
   renderSidebar();
@@ -764,11 +874,11 @@ function switchPlatform(p) {
 =========================== */
 function renderCategoryBar() {
   const cats = state.platform === 'musinsa' ? MUSINSA_CATS : CM29_CATS;
-  const bar = document.getElementById('categoryBar');
-  bar.innerHTML = cats.map(c => `
-    <button class="cat-btn ${state.category === c.code ? 'active ' + (state.platform === 'musinsa' ? 'musinsa-active' : 'cm-active') : ''}"
+  const activeClass = state.platform === 'musinsa' ? 'musinsa-active' : 'cm-active';
+  document.getElementById('categoryBar').innerHTML = cats.map(c => `
+    <button class="cat-btn ${state.category === c.code ? 'active ' + activeClass : ''}"
       onclick="selectCategory('${c.code}','${c.label}')">
-      ${EMOJI_BY_CAT[c.code] || '📦'} ${c.label}
+      ${c.label}
     </button>
   `).join('');
 }
@@ -782,7 +892,7 @@ function selectCategory(code, label) {
 }
 
 /* ===========================
-   PRODUCT URL HELPER
+   PRODUCT URL
 =========================== */
 function getProductUrl(item) {
   if (state.platform === '29cm') {
@@ -791,10 +901,8 @@ function getProductUrl(item) {
     if (numId && !isNaN(numId)) return `https://product.29cm.co.kr/catalog/${numId}`;
     return `https://www.29cm.co.kr/search?query=${encodeURIComponent(item.brand + ' ' + item.name)}`;
   }
-  // 무신사: /products/{id} 형식 사용 (구 /goods/{id}는 404)
   const numId = (item.id || '').replace(/^ms-/, '');
   if (numId && !isNaN(numId)) return `https://www.musinsa.com/products/${numId}`;
-  // productUrl에서 ID 추출 시도 (검색URL 또는 구 goods URL 대응)
   const urlMatch = (item.productUrl || '').match(/\/(\d+)(?:[?#]|$)/);
   if (urlMatch) return `https://www.musinsa.com/products/${urlMatch[1]}`;
   return `https://www.musinsa.com/search/goods?keyword=${encodeURIComponent(item.name)}`;
@@ -806,50 +914,50 @@ function getProductUrl(item) {
 function getFilteredItems() {
   const d = state.data[state.platform];
   if (!d) return [];
-
-  // 카테고리별 데이터가 있는 경우 (categories 구조)
   if (d.categories) {
-    const catItems = d.categories[state.category] || d.categories[''] || [];
-    return catItems.slice(0, 30);
+    return (d.categories[state.category] || d.categories[''] || []).slice(0, 30);
   }
-
-  // 기존 형식 (items 배열)
   let items = d.items || [];
-  if (state.category) {
-    items = items.filter(i => i.category === state.category);
-  }
+  if (state.category) items = items.filter(i => i.category === state.category);
   return items.slice(0, 30);
+}
+
+function renderChange(change) {
+  if (change === 'NEW') return '<div class="change new-entry">NEW</div>';
+  if (change === null || change === 0) return '<div class="change same">—</div>';
+  if (change > 0) return `<div class="change up">▲${change}</div>`;
+  return `<div class="change down">▼${Math.abs(change)}</div>`;
 }
 
 function buildRowHtml(item, rank) {
   const rankClass = rank === 1 ? 'rank-1' : rank === 2 ? 'rank-2' : rank === 3 ? 'rank-3' : 'rank-other';
-  const changeHtml = renderChange(item.change);
-  const priceHtml = item.discountRate
-    ? `<span class="discount">-${item.discountRate}%</span>${item.finalPrice.toLocaleString()}원`
-    : `${item.finalPrice.toLocaleString()}원`;
   const isHot = item.change !== 'NEW' && item.change !== null && item.change >= 5;
   const isNew = item.change === 'NEW';
   const url = getProductUrl(item);
+  const priceStr = item.finalPrice.toLocaleString() + '원';
+  const origStr = item.discountRate ? item.price.toLocaleString() + '원' : '';
+  const discountStr = item.discountRate ? `-${item.discountRate}%` : '—';
 
   return `<tr>
     <td><div class="rank-num ${rankClass}">${rank}</div></td>
     <td>
       <div class="product-info">
-        <div class="product-thumb">${EMOJI_BY_CAT[item.category] || '👔'}</div>
-        <div>
-          <a href="${url}" target="_blank" rel="noopener noreferrer" class="product-link">
-            <div class="product-name">
-              ${item.name}
-              ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
-              ${isNew ? '<span class="new-badge">NEW</span>' : ''}
-            </div>
-          </a>
-          <div class="product-brand">${item.brand}</div>
-        </div>
+        <a href="${url}" target="_blank" rel="noopener noreferrer" class="product-link">
+          <div class="product-name">
+            ${item.name}
+            ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
+            ${isNew ? '<span class="new-badge-inline">NEW</span>' : ''}
+          </div>
+        </a>
+        <div class="product-brand">${item.brand}</div>
       </div>
     </td>
-    <td>${changeHtml}</td>
-    <td><div class="price">${priceHtml}</div></td>
+    <td>${renderChange(item.change)}</td>
+    <td class="price-cell">
+      <div class="price-main">${priceStr}</div>
+      ${origStr ? `<span class="price-original">${origStr}</span>` : ''}
+    </td>
+    <td class="discount-col discount-rate">${item.discountRate ? discountStr : '<span style="color:var(--text3)">—</span>'}</td>
   </tr>`;
 }
 
@@ -857,9 +965,7 @@ function renderGroup(tbodyId, items, startRank) {
   const tbody = document.getElementById(tbodyId);
   if (!tbody) return;
   if (items.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="4">
-      <div class="empty-state"><div class="icon">🔍</div><p>데이터가 없습니다</p></div>
-    </td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="5"><div class="empty-state"><div class="icon">🔍</div><p>데이터가 없습니다</p></div></td></tr>`;
     return;
   }
   tbody.innerHTML = items.map((item, i) => buildRowHtml(item, startRank + i + 1)).join('');
@@ -875,23 +981,18 @@ function renderRanking() {
   document.getElementById('categoryLabel').textContent = catLabel;
   document.getElementById('totalCount').textContent = `${items.length}개`;
   document.getElementById('rankingTitle').textContent = `${state.platform === 'musinsa' ? '무신사' : '29CM'} 실시간 랭킹`;
-  document.getElementById('periodTag').textContent = 'NOW';
 
-  // 3개 그룹으로 분할 렌더링
   renderGroup('rankingTbody1', items.slice(0, 10), 0);
   renderGroup('rankingTbody2', items.slice(10, 20), 10);
   renderGroup('rankingTbody3', items.slice(20, 30), 20);
 
-  // 1~10위는 항상 표시, 11~30위는 아코디언
   document.getElementById('rankingGroup2').style.display = items.length > 10 ? '' : 'none';
   document.getElementById('rankingGroup3').style.display = items.length > 20 ? '' : 'none';
 
-  // 11위 이상 데이터가 있을 때만 아코디언 헤더 노출
   const hasRest = items.length > 10;
   document.getElementById('toggleBtnRest').style.display = hasRest ? '' : 'none';
   if (!hasRest) state.restOpen = false;
 
-  // 아코디언 열림 상태 복원 (카테고리/플랫폼 전환 시 유지)
   const restBody = document.getElementById('rankingRest');
   const restBtn = document.getElementById('toggleBtnRest');
   const restBtnBottom = document.getElementById('toggleBtnRestBottom');
@@ -901,25 +1002,25 @@ function renderRanking() {
     if (restBtnBottom) restBtnBottom.style.display = '';
   } else {
     restBody.classList.remove('open'); restBtn.classList.remove('open');
-    restBtn.style.display = '';
+    restBtn.style.display = hasRest ? '' : 'none';
     if (restBtnBottom) restBtnBottom.style.display = 'none';
   }
 
-  // 마지막 업데이트 시각
   const d = state.data[state.platform];
   if (d?.updatedAt) {
     const dt = new Date(d.updatedAt);
-    document.getElementById('lastUpdated').textContent = `업데이트: ${dt.toLocaleString('ko-KR', {month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'})}`;
+    document.getElementById('lastUpdated').textContent =
+      `업데이트 ${dt.toLocaleString('ko-KR', {month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit'})}`;
   }
 }
 
 /* ===========================
-   ACCORDION (11~30위)
+   ACCORDION
 =========================== */
 function toggleRest() {
   state.restOpen = !state.restOpen;
   const body = document.getElementById('rankingRest');
-  const btn  = document.getElementById('toggleBtnRest');
+  const btn = document.getElementById('toggleBtnRest');
   const btnBottom = document.getElementById('toggleBtnRestBottom');
   if (state.restOpen) {
     body.classList.add('open'); btn.classList.add('open');
@@ -932,41 +1033,31 @@ function toggleRest() {
   }
 }
 
-function renderChange(change) {
-  if (change === 'NEW') return '<div class="change new">NEW</div>';
-  if (change === null || change === 0) return '<div class="change same">-</div>';
-  if (change > 0) return `<div class="change up">▲${change}</div>`;
-  return `<div class="change down">▼${Math.abs(change)}</div>`;
-}
-
 /* ===========================
    SIDEBAR
 =========================== */
 function renderSidebar() {
   const items = getFilteredItems();
+  const isMusinsa = state.platform === 'musinsa';
 
-  // Stats
   const newItems = items.filter(i => i.change === 'NEW');
   const upItems = items.filter(i => typeof i.change === 'number' && i.change > 0).sort((a,b) => b.change - a.change);
   const downItems = items.filter(i => typeof i.change === 'number' && i.change < 0).sort((a,b) => a.change - b.change);
 
   document.getElementById('statTotal').textContent = items.length.toLocaleString();
   document.getElementById('statNew').textContent = newItems.length;
-  document.getElementById('statTopUp').textContent = upItems[0] ? `▲${upItems[0].change}` : '-';
-  document.getElementById('statTopUpBrand').textContent = upItems[0]?.brand || '-';
-  document.getElementById('statTopDown').textContent = downItems[0] ? `▼${Math.abs(downItems[0].change)}` : '-';
-  document.getElementById('statTopDownBrand').textContent = downItems[0]?.brand || '-';
+  document.getElementById('statTopUp').textContent = upItems[0] ? `▲${upItems[0].change}` : '—';
+  document.getElementById('statTopUpBrand').textContent = upItems[0]?.brand || '—';
+  document.getElementById('statTopDown').textContent = downItems[0] ? `▼${Math.abs(downItems[0].change)}` : '—';
+  document.getElementById('statTopDownBrand').textContent = downItems[0]?.brand || '—';
 
-  // Brand exposure (from top 50)
-  const top50 = items.slice(0, 50);
+  // Brand exposure (top 30)
+  const top30 = items.slice(0, 30);
   const brandCounts = {};
-  top50.forEach(i => {
-    brandCounts[i.brand] = (brandCounts[i.brand] || 0) + 1;
-  });
+  top30.forEach(i => { brandCounts[i.brand] = (brandCounts[i.brand] || 0) + 1; });
   const brandsSorted = Object.entries(brandCounts).sort((a,b) => b[1]-a[1]).slice(0, 10);
-
-  const accentColor = state.platform === 'musinsa' ? 'var(--blue)' : 'var(--coral)';
-  const accentBg = state.platform === 'musinsa' ? 'var(--blue-light)' : 'var(--coral-light)';
+  const medals = ['👑', '🥈', '🥉'];
+  const countClass = isMusinsa ? 'brand-count' : 'brand-count cm-count';
 
   document.getElementById('brandList').innerHTML = brandsSorted.length === 0
     ? '<div class="empty-state"><p>데이터 없음</p></div>'
@@ -974,33 +1065,28 @@ function renderSidebar() {
       <div class="brand-item">
         <div class="brand-rank-num">${i + 1}</div>
         <div class="brand-name">${brand}</div>
-        <div class="brand-count">${count}개</div>
-        <div class="brand-change" style="color:${i < 3 ? accentColor : 'var(--text3)'}">
-          ${i === 0 ? '👑' : i < 3 ? '●' : '○'}
-        </div>
+        <div class="${countClass}">${count}개</div>
+        <div class="brand-medal">${medals[i] || '·'}</div>
       </div>
     `).join('');
 
-  // 브랜드 count 배지 색상 업데이트
-  document.querySelectorAll('.brand-count').forEach((el, i) => {
-    if (i < 3) { el.style.background = accentBg; el.style.color = accentColor; el.style.borderColor = accentColor; }
-  });
-
-  // Category chart (only for 전체 view)
-  const cats = state.platform === 'musinsa' ? MUSINSA_CATS : CM29_CATS;
-  const catData = cats.slice(1).map(c => ({
+  // Category chart
+  const cats = (isMusinsa ? MUSINSA_CATS : CM29_CATS).slice(1);
+  const catData = cats.map(c => ({
     label: c.label,
     count: items.filter(i => i.category === c.code).length,
   })).filter(c => c.count > 0).sort((a,b) => b.count-a.count).slice(0, 8);
 
   const maxCount = Math.max(...catData.map(c => c.count), 1);
+  const barColor = isMusinsa ? 'var(--musinsa)' : 'var(--29cm)';
+
   document.getElementById('categoryChart').innerHTML = catData.length === 0
     ? '<div class="empty-state"><p>전체 카테고리 선택 시 표시됩니다</p></div>'
     : catData.map(c => `
       <div class="trend-item">
         <div class="trend-label">${c.label}</div>
         <div class="trend-bar-wrap">
-          <div class="trend-bar" style="width:${Math.round(c.count/maxCount*100)}%;background:${accentColor};opacity:0.8;"></div>
+          <div class="trend-bar" style="width:${Math.round(c.count/maxCount*100)}%;background:${barColor};opacity:0.7;"></div>
         </div>
         <div class="trend-num">${c.count}</div>
       </div>
@@ -1010,12 +1096,10 @@ function renderSidebar() {
 /* ===========================
    AUTO REFRESH
 =========================== */
-// 매일 오전 9시(KST) 기준 갱신 — 다음 오전 9시까지 카운트다운
 function nextNineAM() {
-  const now = new Date();
   const t = new Date();
   t.setHours(9, 0, 0, 0);
-  if (now >= t) t.setDate(t.getDate() + 1);
+  if (new Date() >= t) t.setDate(t.getDate() + 1);
   return t;
 }
 
@@ -1027,29 +1111,22 @@ function startRefreshTimer() {
   setInterval(async () => {
     const now = Date.now();
     let diff = Math.floor((target - now) / 1000);
-
     if (diff <= 0) {
-      // 오전 9시 도달 → 새 데이터 로드 (워크플로우 배포 반영)
       target = nextNineAM();
       await loadData(state.platform);
-      renderRanking();
-      renderSidebar();
+      renderRanking(); renderSidebar();
       showToast('🔄 오전 9시 랭킹 갱신 완료');
       lastReload = now;
       diff = Math.floor((target - Date.now()) / 1000);
     } else if (now - lastReload > 10 * 60 * 1000) {
-      // 9시 직후 Pages 배포 지연 대응: 10분마다 조용히 최신 데이터 반영
       lastReload = now;
       await loadData(state.platform);
-      renderRanking();
-      renderSidebar();
+      renderRanking(); renderSidebar();
     }
-
     const h = Math.floor(diff / 3600);
     const m = Math.floor((diff % 3600) / 60);
     const s = diff % 60;
-    document.getElementById('refreshTimer').textContent =
-      `${pad(h)}:${pad(m)}:${pad(s)} 후 갱신`;
+    document.getElementById('refreshTimer').textContent = `${pad(h)}:${pad(m)}:${pad(s)} 후 갱신`;
   }, 1000);
 }
 
@@ -1063,9 +1140,6 @@ function showToast(msg, dur = 2500) {
   setTimeout(() => t.classList.remove('show'), dur);
 }
 
-/* ===========================
-   START
-=========================== */
 init();
 </script>
 </body>
