@@ -778,31 +778,57 @@
       color: var(--text3);
     }
 
+    /* 차트 래퍼: Y축 + 바 영역 */
+    .price-chart-wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      padding: 24px 28px 0;
+      gap: 0;
+    }
+
+    /* Y축 레이블 */
+    .price-y-axis {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      padding-bottom: 48px;
+      padding-top: 8px;
+      width: 52px;
+      flex-shrink: 0;
+    }
+    .price-y-axis-tick {
+      font-size: 11px;
+      color: var(--text3);
+      text-align: right;
+      padding-right: 8px;
+      line-height: 1;
+    }
+
     /* 세로 막대 그래프 (가로 나열) */
     .price-chart-body {
-      padding: 24px 28px 0;
+      flex: 1;
       display: flex;
       flex-direction: row;
       align-items: flex-end;
       justify-content: center;
       gap: 40px;
-      padding-right: 28px;
       position: relative;
       overflow-x: auto;
       scrollbar-width: none;
-      min-height: 240px;
+      min-height: 320px;
     }
     .price-chart-body::-webkit-scrollbar { display: none; }
 
-    /* Y축 가이드라인 */
-    .price-chart-body::before {
-      content: '';
+    /* 수평 점선 그리드 */
+    .price-gridline {
       position: absolute;
-      bottom: 48px;
-      left: 28px;
-      right: 28px;
-      height: 1px;
-      background: var(--border);
+      left: 0;
+      right: 0;
+      height: 0;
+      border-top: 1px dashed var(--border);
+      pointer-events: none;
+      z-index: 0;
     }
 
     .price-chart-body.has-hover .price-bar-col {
@@ -1216,8 +1242,11 @@
       <span class="title" id="priceChartTitle">카테고리별 평균 가격대</span>
       <span class="sub" id="priceChartSub">랭킹 내 상품 기준</span>
     </div>
-    <div class="price-chart-body" id="priceChartBody">
-      <div class="price-no-data">데이터 로딩 중...</div>
+    <div class="price-chart-wrap">
+      <div class="price-y-axis" id="priceYAxis"></div>
+      <div class="price-chart-body" id="priceChartBody">
+        <div class="price-no-data">데이터 로딩 중...</div>
+      </div>
     </div>
     <div class="price-chart-legend" id="priceChartLegend"></div>
   </div>
@@ -1991,12 +2020,43 @@ function renderPriceChart() {
     });
   }
 
-  const MAX_BAR_HEIGHT = 160;
+  const MAX_BAR_HEIGHT = 240;
+  const Y_LEVELS = [30000, 50000, 100000, 150000, 200000]; // 점선 기준 가격
   const fmt = v => v >= 10000
     ? (v / 10000).toFixed(1).replace(/\.0$/, '') + '만'
     : v.toLocaleString();
 
+  // Y축 레이블 + 점선 렌더
+  const yAxis = document.getElementById('priceYAxis');
   const body = document.getElementById('priceChartBody');
+
+  // 점선 + Y축: maxAvgAll 기준으로 높이 비율 계산
+  const gridLines = Y_LEVELS.filter(p => p <= maxAvgAll * 1.1).map(price => {
+    const ratio = price / maxAvgAll;
+    const bottomPx = Math.round(ratio * MAX_BAR_HEIGHT) + 48; // 48 = padding-bottom of bar-col
+    return { price, bottomPx, ratio };
+  });
+
+  if (yAxis) {
+    yAxis.innerHTML = '';
+    // Y축은 column-reverse flex로 그냥 균등 분할 대신, absolute 배치 사용
+    yAxis.style.position = 'relative';
+    gridLines.forEach(({ price, bottomPx }) => {
+      const tick = document.createElement('div');
+      tick.className = 'price-y-axis-tick';
+      tick.style.position = 'absolute';
+      tick.style.bottom = bottomPx + 'px';
+      tick.style.right = '8px';
+      tick.style.transform = 'translateY(50%)';
+      tick.textContent = fmt(price);
+      yAxis.appendChild(tick);
+    });
+  }
+
+  // 점선 그리드
+  const existingGrids = body.querySelectorAll('.price-gridline');
+  existingGrids.forEach(el => el.remove());
+
   body.innerHTML = catStats.map((cat, i) => {
     const barH = Math.max(8, Math.round(cat.avg / maxAvgAll * MAX_BAR_HEIGHT));
     const brand = brandPriceStats ? brandPriceStats[cat.code] : null;
@@ -2017,6 +2077,14 @@ function renderPriceChart() {
       </div>
     `;
   }).join('');
+
+  // 점선 그리드 삽입
+  gridLines.forEach(({ bottomPx }) => {
+    const line = document.createElement('div');
+    line.className = 'price-gridline';
+    line.style.bottom = bottomPx + 'px';
+    body.appendChild(line);
+  });
 
   // 호버 이벤트
   const cols = body.querySelectorAll('.price-bar-col');
