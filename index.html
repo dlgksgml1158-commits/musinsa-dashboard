@@ -6,183 +6,192 @@
   <title>무신사 × 29CM 랭킹 대시보드</title>
   <style>
     :root {
-      --bg: #ffffff;
-      --bg2: #e8f3d6;
-      --bg3: #d6e9b8;
-      --border: #b9d68c;
-      --text: #1a1a1a;
-      --text2: #4f6238;
-      --text3: #75895a;
-      --musinsa: #5a9216;
-      --musinsa-dim: #4a7d12;
-      --29cm: #ff5a3c;
-      --29cm-dim: #cc4830;
-      --up: #16a34a;
-      --down: #dc2626;
-      --neutral: #999;
-      --accent: #4a7d12;
-      --gold: #d99e00;
-      --silver: #8a96a8;
-      --bronze: #c2671a;
-      --card-shadow: 0 1px 8px rgba(0,0,0,.08);
+      --bg: #f1f5fb;
+      --surface: #ffffff;
+      --border: #e2e8f2;
+      --border-strong: #c7d5ea;
+      --text: #0f172a;
+      --text2: #475569;
+      --text3: #94a3b8;
+      --blue: #2563eb;
+      --blue-dim: #1d4ed8;
+      --blue-light: #dbeafe;
+      --blue-mid: #93c5fd;
+      --coral: #f43f5e;
+      --coral-light: #ffe4e6;
+      --up: #10b981;
+      --down: #ef4444;
+      --gold: #f59e0b;
+      --silver: #94a3b8;
+      --bronze: #d97706;
+      --shadow: 0 1px 4px rgba(15,23,42,.06), 0 4px 16px rgba(15,23,42,.04);
+      --shadow-md: 0 2px 8px rgba(15,23,42,.08), 0 8px 24px rgba(15,23,42,.06);
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background: var(--bg);
       color: var(--text);
-      font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', -apple-system, BlinkMacSystemFont, sans-serif;
       min-height: 100vh;
       font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: env(safe-area-inset-bottom);
     }
 
     /* ── HEADER ── */
     header {
-      background: var(--bg2);
+      background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 0 24px;
+      padding: 0 28px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: 60px;
+      height: 58px;
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 1px 0 var(--border);
     }
     .logo {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: -0.3px;
+      gap: 12px;
     }
-    .logo .dot { color: var(--29cm); }
+    .logo-mark {
+      width: 28px; height: 28px;
+      background: var(--blue);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .logo-text {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+      color: var(--text);
+    }
+    .logo-text .accent { color: var(--blue); }
+    .logo-sub {
+      font-size: 12px;
+      color: var(--text3);
+      font-weight: 400;
+      border-left: 1px solid var(--border);
+      padding-left: 12px;
+      margin-left: 4px;
+    }
     .header-meta {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
       font-size: 12px;
       color: var(--text3);
     }
     .refresh-badge {
-      background: var(--bg3);
-      border: 1px solid var(--border);
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
       border-radius: 20px;
       padding: 4px 12px;
       display: flex;
       align-items: center;
       gap: 6px;
+      font-size: 12px;
+      color: #16a34a;
+      font-weight: 500;
     }
     .refresh-dot {
       width: 6px; height: 6px;
       border-radius: 50%;
-      background: var(--up);
-      animation: pulse 2s infinite;
+      background: #22c55e;
+      animation: livepulse 2s infinite;
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.3; }
+    @keyframes livepulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
     }
 
     /* ── PLATFORM TABS ── */
     .platform-tabs {
-      background: var(--bg2);
+      background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 0 24px;
+      padding: 0 28px;
       display: flex;
-      gap: 0;
     }
     .ptab {
-      padding: 14px 28px;
+      padding: 0 24px;
+      height: 46px;
       cursor: pointer;
-      border-bottom: 3px solid transparent;
+      border-bottom: 2px solid transparent;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 14px;
       color: var(--text3);
-      transition: all .2s;
-      letter-spacing: -0.3px;
+      transition: all .18s;
+      display: flex;
+      align-items: center;
+      gap: 7px;
       user-select: none;
+      letter-spacing: -0.2px;
     }
-    .ptab.active-musinsa {
-      color: var(--musinsa);
-      border-bottom-color: var(--musinsa);
-    }
-    .ptab.active-29cm {
-      color: var(--29cm);
-      border-bottom-color: var(--29cm);
-    }
-    .ptab:hover:not(.active-musinsa):not(.active-29cm) {
-      color: var(--text2);
+    .ptab:hover:not(.active-musinsa):not(.active-29cm) { color: var(--text2); }
+    .ptab.active-musinsa { color: var(--blue); border-bottom-color: var(--blue); }
+    .ptab.active-29cm { color: var(--coral); border-bottom-color: var(--coral); }
+    .ptab-pip {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: currentColor;
+      opacity: 0.7;
     }
 
     /* ── CATEGORY BAR ── */
     .category-bar {
-      background: var(--bg2);
+      background: var(--surface);
       border-bottom: 1px solid var(--border);
-      padding: 10px 24px;
+      padding: 10px 28px;
       display: flex;
-      gap: 8px;
+      gap: 6px;
       overflow-x: auto;
       scrollbar-width: none;
     }
     .category-bar::-webkit-scrollbar { display: none; }
     .cat-btn {
-      background: var(--bg3);
+      background: transparent;
       border: 1px solid var(--border);
       border-radius: 20px;
-      padding: 6px 14px;
+      padding: 5px 14px;
       cursor: pointer;
       white-space: nowrap;
       color: var(--text2);
-      font-size: 13px;
+      font-size: 12.5px;
+      font-weight: 500;
       transition: all .15s;
       font-family: inherit;
     }
-    .cat-btn:hover { border-color: #a8c97a; color: var(--text); }
-    .cat-btn.active {
-      background: var(--text);
-      border-color: var(--text);
-      color: var(--bg);
-      font-weight: 600;
-    }
-    .cat-btn.active.musinsa-active {
-      background: var(--musinsa);
-      border-color: var(--musinsa);
-      color: #fff;
-    }
-    .cat-btn.active.cm-active {
-      background: var(--29cm);
-      border-color: var(--29cm);
-      color: #fff;
-    }
+    .cat-btn:hover { border-color: var(--blue-mid); color: var(--blue); background: var(--blue-light); }
+    .cat-btn.active.musinsa-active { background: var(--blue); border-color: var(--blue); color: #fff; font-weight: 600; }
+    .cat-btn.active.cm-active { background: var(--coral); border-color: var(--coral); color: #fff; font-weight: 600; }
 
     /* ── MAIN LAYOUT ── */
     main {
-      padding: 24px;
+      padding: 24px 28px;
       display: grid;
-      grid-template-columns: 1fr 340px;
+      grid-template-columns: 1fr 320px;
       gap: 20px;
-      max-width: 1400px;
+      max-width: 1360px;
       margin: 0 auto;
     }
-    @media (max-width: 900px) {
-      main { grid-template-columns: 1fr; padding: 16px; }
-    }
+    @media (max-width: 960px) { main { grid-template-columns: 1fr; padding: 16px; } }
 
     /* ── SECTION TITLE ── */
     .section-title {
-      font-size: 13px;
+      font-size: 11px;
       font-weight: 600;
-      color: var(--text2);
+      color: var(--text3);
       text-transform: uppercase;
       letter-spacing: 1px;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin-bottom: 12px;
     }
     .section-title .badge {
-      background: var(--bg3);
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 4px;
       padding: 1px 6px;
@@ -190,13 +199,13 @@
       color: var(--text3);
     }
 
-    /* ── RANKING TABLE ── */
+    /* ── RANKING CARD ── */
     .ranking-card {
-      background: var(--bg2);
+      background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: var(--card-shadow);
+      box-shadow: var(--shadow);
     }
     .ranking-card-header {
       padding: 16px 20px;
@@ -207,364 +216,177 @@
     }
     .ranking-card-header .title {
       font-weight: 700;
-      font-size: 15px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: -0.3px;
     }
     .period-tag {
-      background: var(--bg3);
-      border: 1px solid var(--border);
+      background: var(--blue-light);
+      color: var(--blue);
       border-radius: 6px;
       padding: 3px 10px;
-      font-size: 12px;
-      color: var(--text2);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    thead tr {
-      background: var(--bg3);
-    }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: #f8fafd; }
     thead th {
-      padding: 10px 16px;
+      padding: 9px 16px;
       text-align: left;
       font-size: 11px;
       font-weight: 600;
       color: var(--text3);
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border);
     }
-    thead th:first-child { width: 52px; text-align: center; }
-    thead th.change-col { width: 60px; text-align: center; }
-    thead th.price-col { width: 100px; text-align: right; }
+    thead th:first-child { width: 50px; text-align: center; }
+    thead th.change-col { width: 58px; text-align: center; }
+    thead th.price-col { width: 96px; text-align: right; }
     tbody tr {
       border-bottom: 1px solid var(--border);
       transition: background .1s;
       cursor: pointer;
     }
-    tbody tr:hover { background: var(--bg3); }
+    tbody tr:hover { background: #f8fafd; }
     tbody tr:last-child { border-bottom: none; }
-    td {
-      padding: 12px 16px;
-      vertical-align: middle;
-    }
+    td { padding: 11px 16px; vertical-align: middle; }
 
     /* Rank number */
-    .rank-num {
-      text-align: center;
-      font-weight: 700;
-      font-size: 16px;
-    }
+    .rank-num { text-align: center; font-weight: 700; font-size: 15px; }
     .rank-num.rank-1 { color: var(--gold); }
     .rank-num.rank-2 { color: var(--silver); }
     .rank-num.rank-3 { color: var(--bronze); }
-    .rank-num.rank-other { color: var(--text3); }
+    .rank-num.rank-other { color: var(--text3); font-size: 13px; }
 
     /* Product info */
-    .product-info { display: flex; align-items: center; gap: 12px; }
+    .product-info { display: flex; align-items: center; gap: 11px; }
     .product-thumb {
-      width: 44px; height: 44px;
-      border-radius: 6px;
-      background: var(--bg3);
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: var(--blue-light);
       border: 1px solid var(--border);
-      object-fit: cover;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px;
       flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
     }
-    .product-name { font-weight: 600; font-size: 13px; line-height: 1.3; }
-    .product-brand {
-      font-size: 11px;
-      color: var(--text3);
-      margin-top: 2px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-    }
+    .product-name { font-weight: 600; font-size: 13px; line-height: 1.35; color: var(--text); }
+    .product-brand { font-size: 11px; color: var(--text3); margin-top: 2px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
 
     /* Change indicator */
     .change { text-align: center; font-size: 12px; font-weight: 700; }
     .change.up { color: var(--up); }
     .change.down { color: var(--down); }
-    .change.same { color: var(--neutral); }
+    .change.same { color: var(--text3); }
     .change.new {
-      color: var(--29cm);
-      font-size: 10px;
-      letter-spacing: 0.5px;
-      border: 1px solid var(--29cm);
-      border-radius: 4px;
-      padding: 1px 5px;
+      color: var(--blue); font-size: 10px; letter-spacing: 0.5px;
+      border: 1px solid var(--blue); border-radius: 4px; padding: 1px 5px;
     }
 
     /* Price */
-    .price { text-align: right; font-weight: 600; font-size: 13px; }
-    .price .discount {
-      font-size: 10px;
-      color: var(--down);
-      font-weight: 700;
-      display: block;
-    }
-
-    /* Pagination */
-    .ranking-footer {
-      padding: 12px 20px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: var(--bg3);
-    }
-    .page-btn {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 5px 14px;
-      cursor: pointer;
-      color: var(--text2);
-      font-size: 12px;
-      font-family: inherit;
-      transition: all .15s;
-    }
-    .page-btn:hover:not(:disabled) { border-color: #555; color: var(--text); }
-    .page-btn:disabled { opacity: 0.3; cursor: not-allowed; }
-    .page-info { font-size: 12px; color: var(--text3); }
+    .price { text-align: right; font-weight: 600; font-size: 13px; color: var(--text); }
+    .price .discount { font-size: 10px; color: var(--down); font-weight: 700; display: block; }
 
     /* ── SIDEBAR ── */
-    .sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar { display: flex; flex-direction: column; gap: 16px; }
 
-    /* Brand Exposure Card */
+    /* Brand card */
     .brand-card {
-      background: var(--bg2);
+      background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: var(--card-shadow);
+      box-shadow: var(--shadow);
     }
     .brand-card-header {
-      padding: 14px 18px;
+      padding: 16px 20px;
       border-bottom: 1px solid var(--border);
       font-weight: 700;
       font-size: 14px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      letter-spacing: -0.3px;
     }
     .brand-item {
-      padding: 12px 18px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .brand-item:last-child { border-bottom: none; }
-    .brand-rank-num {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text3);
-      width: 20px;
-      flex-shrink: 0;
-    }
-    .brand-name { font-weight: 600; font-size: 13px; flex: 1; }
-    .brand-count {
-      font-size: 12px;
-      color: var(--text2);
-      background: var(--bg3);
-      border-radius: 20px;
-      padding: 2px 8px;
-    }
-    .brand-change {
-      font-size: 11px;
-      font-weight: 700;
-      width: 32px;
-      text-align: right;
-    }
-
-    /* Stats mini cards */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .stat-mini {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 14px 16px;
-      box-shadow: var(--card-shadow);
-    }
-    .stat-label {
-      font-size: 11px;
-      color: var(--text3);
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 6px;
-    }
-    .stat-value {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1;
-    }
-    .stat-sub { font-size: 11px; color: var(--text3); margin-top: 4px; }
-
-    /* Trend chart bar */
-    .trend-item {
-      padding: 10px 18px;
+      padding: 11px 18px;
       border-bottom: 1px solid var(--border);
       display: flex;
       align-items: center;
       gap: 10px;
     }
+    .brand-item:last-child { border-bottom: none; }
+    .brand-rank-num { font-size: 12px; font-weight: 700; color: var(--text3); width: 18px; flex-shrink: 0; }
+    .brand-name { font-weight: 600; font-size: 13px; flex: 1; color: var(--text); }
+    .brand-count {
+      font-size: 12px; color: var(--text2);
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 20px; padding: 2px 9px;
+    }
+    .brand-change { font-size: 13px; }
+
+    /* Stats mini cards */
+    .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stat-mini {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+    .stat-label { font-size: 11px; color: var(--text3); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+    .stat-value { font-size: 22px; font-weight: 700; line-height: 1; color: var(--text); }
+    .stat-sub { font-size: 11px; color: var(--text3); margin-top: 4px; }
+
+    /* Trend chart bar */
+    .trend-item {
+      padding: 9px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }
     .trend-item:last-child { border-bottom: none; }
-    .trend-label { font-size: 12px; font-weight: 600; width: 80px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .trend-bar-wrap { flex: 1; background: var(--bg3); border-radius: 4px; height: 6px; }
-    .trend-bar { height: 6px; border-radius: 4px; transition: width 0.6s ease; }
-    .trend-num { font-size: 11px; color: var(--text3); width: 28px; text-align: right; }
+    .trend-label { font-size: 12px; font-weight: 600; width: 76px; flex-shrink: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text2); }
+    .trend-bar-wrap { flex: 1; background: var(--bg); border-radius: 4px; height: 5px; }
+    .trend-bar { height: 5px; border-radius: 4px; transition: width 0.55s ease; }
+    .trend-num { font-size: 11px; color: var(--text3); width: 26px; text-align: right; }
 
     /* Loading skeleton */
     .skeleton {
-      background: linear-gradient(90deg, var(--bg3) 25%, var(--border) 50%, var(--bg3) 75%);
+      background: linear-gradient(90deg, #f0f4fb 25%, #e2e8f2 50%, #f0f4fb 75%);
       background-size: 200% 100%;
-      animation: shimmer 1.5s infinite;
-      border-radius: 4px;
+      animation: shimmer 1.4s infinite;
+      border-radius: 6px;
     }
-    @keyframes shimmer {
-      0% { background-position: 200% 0; }
-      100% { background-position: -200% 0; }
-    }
+    @keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
 
-    /* Error/empty state */
-    .empty-state {
-      padding: 48px 20px;
-      text-align: center;
-      color: var(--text3);
-    }
+    /* Empty state */
+    .empty-state { padding: 40px 16px; text-align: center; color: var(--text3); }
     .empty-state .icon { font-size: 36px; margin-bottom: 12px; }
     .empty-state p { font-size: 13px; }
 
     /* Toast */
     .toast {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 12px 18px;
-      font-size: 13px;
-      color: var(--text);
-      box-shadow: 0 4px 20px rgba(0,0,0,.15);
-      transform: translateY(100px);
-      opacity: 0;
-      transition: all .3s;
-      z-index: 999;
+      position: fixed; bottom: 24px; right: 24px;
+      background: var(--text); color: #fff;
+      border-radius: 10px; padding: 11px 18px;
+      font-size: 13px; box-shadow: var(--shadow-md);
+      transform: translateY(80px); opacity: 0;
+      transition: all .28s; z-index: 999;
     }
     .toast.show { transform: translateY(0); opacity: 1; }
 
-    /* ── MOBILE RESPONSIVE ── */
-    @media (max-width: 768px) {
-      header { padding: 0 16px; height: 52px; }
-      .logo { font-size: 14px; gap: 8px; }
-      .header-meta { gap: 8px; }
-      .refresh-badge { padding: 3px 10px; font-size: 11px; }
-
-      .platform-tabs { padding: 0; }
-      .ptab { flex: 1; text-align: center; padding: 12px 0; font-size: 14px; }
-
-      .category-bar { padding: 8px 12px; gap: 6px; }
-      .cat-btn { padding: 5px 11px; font-size: 12px; }
-
-      main { padding: 12px; gap: 14px; }
-
-      .ranking-card-header { padding: 12px 14px; }
-      .ranking-card-header .title { font-size: 14px; }
-
-      .stat-mini { padding: 12px 14px; }
-      .stat-value { font-size: 18px; }
-
-      .brand-item { padding: 10px 14px; gap: 8px; }
-      .brand-card-header { padding: 12px 14px; font-size: 13px; }
-
-      .ranking-footer { padding: 10px 14px; }
-      .page-btn { padding: 8px 14px; min-height: 40px; font-size: 13px; }
-
-      .toast { bottom: 16px; right: 16px; left: 16px; font-size: 12px; }
-    }
-
-    /* ── 헤더 부제목 모바일 숨김 ── */
-    @media (max-width: 480px) {
-      .header-sub { display: none; }
-
-      /* 테이블: 가격 열 숨김 */
-      #rankingTableWrap thead th:nth-child(4),
-      #rankingTableWrap tbody td:nth-child(4) { display: none; }
-
-      /* 테이블 여백 축소 */
-      thead th { padding: 8px 10px; }
-      #rankingTableWrap tbody td { padding: 10px 10px; }
-
-      /* 상품 썸네일 축소 */
-      .product-thumb { width: 36px; height: 36px; font-size: 15px; }
-      .product-info { gap: 8px; }
-      .product-name { font-size: 12px; }
-      .product-brand { font-size: 10px; }
-
-      /* 순위 번호 */
-      .rank-num { font-size: 13px; }
-      thead th:first-child { width: 40px; }
-      thead th.change-col { width: 48px; }
-
-      /* 통계 카드 */
-      .stat-mini { padding: 10px 12px; }
-      .stat-value { font-size: 16px; }
-      .stat-label { font-size: 10px; }
-      .stat-sub { font-size: 10px; }
-
-      /* 섹션 타이틀 */
-      .section-title { font-size: 12px; }
-    }
-
-    /* ── iOS 노치/홈바 대응 ── */
-    body {
-      padding-bottom: env(safe-area-inset-bottom);
-    }
-    header {
-      padding-left: max(24px, env(safe-area-inset-left));
-      padding-right: max(24px, env(safe-area-inset-right));
-    }
-
-    /* Scrollbar */
-    ::-webkit-scrollbar { width: 6px; height: 6px; }
-    ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: #bbb; }
-
     /* 상품 링크 */
-    .product-link {
-      color: inherit;
-      text-decoration: none;
-      display: block;
-      border-radius: 6px;
-      transition: background .1s;
-    }
-    .product-link:hover .product-name,
-    .product-link:focus .product-name {
-      color: var(--accent);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-    .product-link:active { opacity: 0.8; }
-    /* 모바일 터치 피드백 */
-    @media (hover: none) {
-      .product-link:active .product-name { color: var(--accent); }
-    }
+    .product-link { color: inherit; text-decoration: none; }
+    .product-link:hover .product-name { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
 
     /* ── ACCORDION ── */
     .accordion-header {
       width: 100%;
-      padding: 14px 20px;
-      background: var(--bg3);
+      padding: 13px 20px;
+      background: #f8fafd;
       border: none;
       border-top: 1px solid var(--border);
       color: var(--text2);
@@ -574,87 +396,64 @@
       cursor: pointer;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 6px;
       transition: background .15s, color .15s;
       user-select: none;
     }
-    .accordion-header:hover {
-      background: var(--bg3);
-      color: var(--text);
-    }
-    .accordion-header.open {
-      color: var(--accent);
-      border-bottom: 1px solid var(--border);
-    }
-    .accordion-header-left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+    .accordion-header:hover { background: var(--blue-light); color: var(--blue); }
+    .accordion-header.open { color: var(--blue); }
+    .accordion-header-left { display: flex; align-items: center; gap: 9px; }
     .accordion-rank-tag {
-      background: var(--bg);
+      background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 20px;
-      padding: 3px 10px;
-      font-size: 12px;
+      padding: 2px 10px;
+      font-size: 11.5px;
       color: var(--text3);
       font-weight: 600;
-      letter-spacing: 0.3px;
       transition: all .15s;
     }
-    .accordion-header.open .accordion-rank-tag {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
+    .accordion-header.open .accordion-rank-tag { border-color: var(--blue); color: var(--blue); background: var(--blue-light); }
     .accordion-chevron {
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      border: 1.5px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      transition: transform .3s ease, border-color .15s, color .15s;
-      flex-shrink: 0;
+      font-size: 12px;
+      transition: transform .28s ease;
+      color: var(--text3);
     }
-    .accordion-header.open .accordion-chevron {
-      transform: rotate(180deg);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-    .accordion-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.38s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    .accordion-body.open {
-      max-height: 1200px;
-    }
+    .accordion-header.open .accordion-chevron { transform: rotate(180deg); color: var(--blue); }
+    .accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.36s cubic-bezier(0.4,0,0.2,1); }
+    .accordion-body.open { max-height: 1400px; }
     .ranking-group table thead { display: none; }
     #rankingGroup1 table thead { display: table-header-group; }
 
-    /* 순위 변동 뱃지 */
+    /* 뱃지 */
     .hot-badge {
-      background: rgba(239,68,68,.15);
-      color: var(--down);
-      border: 1px solid rgba(239,68,68,.3);
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 1px 5px;
-      margin-left: 6px;
-      letter-spacing: 0.3px;
+      background: rgba(239,68,68,.12); color: var(--down);
+      border: 1px solid rgba(239,68,68,.2); border-radius: 4px;
+      font-size: 10px; font-weight: 700; padding: 1px 5px; margin-left: 5px;
     }
     .new-badge {
-      background: rgba(255,90,60,.15);
-      color: var(--29cm);
-      border: 1px solid rgba(255,90,60,.3);
-      border-radius: 4px;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 1px 5px;
-      margin-left: 6px;
+      background: var(--blue-light); color: var(--blue);
+      border: 1px solid #bfdbfe; border-radius: 4px;
+      font-size: 10px; font-weight: 700; padding: 1px 5px; margin-left: 5px;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 4px; }
+
+    /* ── MOBILE ── */
+    @media (max-width: 600px) {
+      header { padding: 0 16px; }
+      .platform-tabs { padding: 0; }
+      .ptab { flex: 1; justify-content: center; padding: 0 12px; font-size: 13px; }
+      .category-bar { padding: 8px 14px; }
+      main { padding: 12px 14px; }
+      .logo-sub { display: none; }
+    }
+    @media (max-width: 420px) {
+      thead th.price-col, tbody td:nth-child(4) { display: none; }
     }
   </style>
 </head>
@@ -663,11 +462,12 @@
 <!-- HEADER -->
 <header>
   <div class="logo">
-    <span id="headerTitle">무신사 <span class="dot">×</span> 29CM</span>
-    <span class="header-sub" style="color:var(--text3);font-weight:400;font-size:13px;">랭킹 대시보드</span>
+    <div class="logo-mark">📊</div>
+    <div class="logo-text">무신사 <span class="accent">×</span> 29CM</div>
+    <div class="logo-sub">랭킹 대시보드</div>
   </div>
   <div class="header-meta">
-    <span id="lastUpdated" style="color:var(--text3);">-</span>
+    <span id="lastUpdated"></span>
     <div class="refresh-badge">
       <div class="refresh-dot"></div>
       <span id="refreshTimer">Live</span>
@@ -677,8 +477,12 @@
 
 <!-- PLATFORM TABS -->
 <div class="platform-tabs">
-  <div class="ptab active-musinsa" id="tab-musinsa" onclick="switchPlatform('musinsa')">무신사</div>
-  <div class="ptab" id="tab-29cm" onclick="switchPlatform('29cm')">29CM</div>
+  <div class="ptab active-musinsa" id="tab-musinsa" onclick="switchPlatform('musinsa')">
+    <div class="ptab-pip"></div>무신사
+  </div>
+  <div class="ptab" id="tab-29cm" onclick="switchPlatform('29cm')">
+    <div class="ptab-pip"></div>29CM
+  </div>
 </div>
 
 <!-- CATEGORY BAR -->
@@ -1161,7 +965,8 @@ function renderSidebar() {
   });
   const brandsSorted = Object.entries(brandCounts).sort((a,b) => b[1]-a[1]).slice(0, 10);
 
-  const accentColor = state.platform === 'musinsa' ? 'var(--musinsa)' : 'var(--29cm)';
+  const accentColor = state.platform === 'musinsa' ? 'var(--blue)' : 'var(--coral)';
+  const accentBg = state.platform === 'musinsa' ? 'var(--blue-light)' : 'var(--coral-light)';
 
   document.getElementById('brandList').innerHTML = brandsSorted.length === 0
     ? '<div class="empty-state"><p>데이터 없음</p></div>'
@@ -1175,6 +980,11 @@ function renderSidebar() {
         </div>
       </div>
     `).join('');
+
+  // 브랜드 count 배지 색상 업데이트
+  document.querySelectorAll('.brand-count').forEach((el, i) => {
+    if (i < 3) { el.style.background = accentBg; el.style.color = accentColor; el.style.borderColor = accentColor; }
+  });
 
   // Category chart (only for 전체 view)
   const cats = state.platform === 'musinsa' ? MUSINSA_CATS : CM29_CATS;
