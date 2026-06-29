@@ -831,6 +831,8 @@
       align-items: flex-end;
       gap: 3px;
       width: 100%;
+      transition: transform 0.2s ease;
+      transform-origin: bottom center;
     }
     .price-group-bar-wrap {
       display: flex;
@@ -839,6 +841,9 @@
       gap: 4px;
       flex: 1;
       max-width: 22px;
+    }
+    .price-bar-col:hover .price-group-bars {
+      transform: scaleY(1.12) scaleX(1.18);
     }
     .price-bar-col-val {
       font-size: 11px;
@@ -1989,12 +1994,10 @@ function renderPriceChart() {
       <div class="price-bar-col" data-idx="${i}">
         <div class="price-group-bars">
           <div class="price-group-bar-wrap">
-            <div class="price-bar-col-val">${fmt(cat.avg)}원</div>
             <div class="price-bar-col-fill" style="height:${barH}px;background:${cat.color};"></div>
           </div>
           ${brand ? `
           <div class="price-group-bar-wrap">
-            <div class="price-bar-col-val" style="color:${BRAND_COLOR};">${fmt(brand.avg)}원</div>
             <div class="price-bar-col-fill" style="height:${brandBarH}px;background:${BRAND_COLOR};opacity:0.85;"></div>
           </div>` : ''}
         </div>
