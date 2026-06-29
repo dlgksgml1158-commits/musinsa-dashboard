@@ -87,28 +87,6 @@
       color: var(--text3);
     }
     #lastUpdated { color: var(--text3); }
-    .refresh-badge {
-      background: var(--surface);
-      border: 1.5px solid #22c55e;
-      border-radius: 20px;
-      padding: 4px 12px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: var(--text2);
-      font-weight: 600;
-      font-size: 12px;
-    }
-    .refresh-dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: #22c55e;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
-    }
 
     /* ── PLATFORM TABS ── */
     .platform-tabs {
@@ -1096,10 +1074,7 @@
   </div>
   <div class="header-meta">
     <span id="lastUpdated">-</span>
-    <div class="refresh-badge">
-      <div class="refresh-dot"></div>
-      <span id="refreshTimer">Live</span>
-    </div>
+    <span id="nextUpdateLabel" style="color:var(--text3);font-size:12px;">다음 업데이트 내일 오전 9시</span>
   </div>
 </header>
 
@@ -1798,10 +1773,6 @@ function startRefreshTimer() {
       await loadData(state.platform);
       renderRanking(); renderSidebar();
     }
-    const h = Math.floor(diff / 3600);
-    const m = Math.floor((diff % 3600) / 60);
-    const s = diff % 60;
-    document.getElementById('refreshTimer').textContent = `${pad(h)}:${pad(m)}:${pad(s)} 후 갱신`;
   }, 1000);
 }
 
