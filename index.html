@@ -411,7 +411,7 @@
     }
 
     /* ── SIDEBAR ── */
-    .sidebar { display: flex; flex-direction: column; gap: 16px; }
+    .sidebar { display: flex; flex-direction: column; gap: 16px; padding-top: 27px; }
 
     /* Stats grid */
     .stats-grid {
@@ -1197,17 +1197,10 @@
   <!-- RIGHT: 사이드바 -->
   <div class="sidebar">
     <!-- 통계 카드 -->
-    <div class="stats-grid">
-      <div class="stat-mini">
-        <div class="stat-label">총 노출</div>
-        <div class="stat-value" id="statTotal">-</div>
-        <div class="stat-sub" id="statTotalSub">상품 수</div>
-      </div>
-      <div class="stat-mini">
-        <div class="stat-label">신규 진입</div>
-        <div class="stat-value up" id="statNew">-</div>
-        <div class="stat-sub">이번 회차 NEW</div>
-      </div>
+    <div class="stat-mini">
+      <div class="stat-label">신규 진입</div>
+      <div class="stat-value up" id="statNew">-</div>
+      <div class="stat-sub">이번 회차 NEW</div>
     </div>
 
     <!-- 브랜드 노출 현황 -->
