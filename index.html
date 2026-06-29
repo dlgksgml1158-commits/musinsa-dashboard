@@ -981,7 +981,7 @@
         <span class="trend-icon rise">▲</span>
         인기 급상승
       </div>
-      <span class="trend-card-sub">순위 상승폭 TOP 5</span>
+      <span class="trend-card-sub" id="trendRiseSub">순위 상승폭 TOP 5</span>
     </div>
     <div class="trend-card-body" id="trendRise"></div>
   </div>
@@ -1589,9 +1589,12 @@ function reasonTagHtml(reason) {
   return `<span class="reason-tag ${reason.tag}">${reason.text}</span>`;
 }
 
-function risingRow(item) {
+function risingRow(item, hasChangeData = true) {
   const url = getProductUrl(item);
   const reason = getReason(item);
+  const metaHtml = hasChangeData
+    ? `<div class="trend-meta-main rise">▲${item.change}</div>`
+    : `<div class="trend-meta-main rise"># ${item.rank}</div>`;
   return `
     <a class="trend-product-row" href="${url}" target="_blank" rel="noopener noreferrer">
       <div class="trend-rank-badge">${item.rank}</div>
@@ -1601,7 +1604,7 @@ function risingRow(item) {
         ${reasonTagHtml(reason)}
       </div>
       <div class="trend-product-meta">
-        <div class="trend-meta-main rise">▲${item.change}</div>
+        ${metaHtml}
         <div class="trend-meta-sub">${item.finalPrice.toLocaleString()}원</div>
       </div>
     </a>`;
@@ -1647,15 +1650,19 @@ function dealRow(item) {
 function renderTrendCards() {
   const items = getFilteredItems();
 
-  // 1. 급상승 (현재 플랫폼 기준)
+  // 1. 급상승 — 변동 데이터 있으면 우선 사용, 없으면 TOP 랭킹으로 대체
   const rising = items
     .filter(i => typeof i.change === 'number' && i.change > 0)
     .sort((a, b) => b.change - a.change)
     .slice(0, 5);
 
-  document.getElementById('trendRise').innerHTML = rising.length
-    ? rising.map(i => risingRow(i)).join('')
-    : '<div class="trend-empty">순위 상승 상품이 없습니다</div>';
+  const hasChangeData = rising.length > 0;
+  const riseItems = hasChangeData ? rising : items.slice(0, 5);
+
+  document.getElementById('trendRiseSub').textContent = hasChangeData ? '순위 상승폭 TOP 5' : '현재 인기 TOP 5';
+  document.getElementById('trendRise').innerHTML = riseItems.length
+    ? riseItems.map(i => risingRow(i, hasChangeData)).join('')
+    : '<div class="trend-empty">상품 데이터가 없습니다</div>';
 
   // 2. 신규 진입 — 무신사 + 29CM 모두
   const muData = state.data['musinsa'];
