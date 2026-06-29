@@ -1675,13 +1675,6 @@ function renderTrendCards() {
     </div>`;
     newHtml += muNew.map(i => newEntryRow(i, 'musinsa')).join('');
   }
-  if (cmNew.length) {
-    newHtml += `<div class="platform-divider">
-      <div class="platform-divider-dot" style="background:var(--29cm);"></div>
-      <span class="platform-divider-label" style="color:var(--29cm);">29CM</span>
-    </div>`;
-    newHtml += cmNew.map(i => newEntryRow(i, '29cm')).join('');
-  }
   document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">신규 진입 상품이 없습니다</div>';
 
   // 3. 할인 특가
