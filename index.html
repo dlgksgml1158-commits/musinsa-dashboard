@@ -606,63 +606,120 @@
       font-size: 12px;
       color: var(--text3);
     }
+
+    /* 가로 막대 그래프 */
     .price-chart-body {
-      padding: 20px 24px;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 14px;
-    }
-    .price-bar-item {
+      padding: 24px 28px 20px;
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 0;
+      position: relative;
     }
-    .price-bar-top {
+    .price-chart-body.has-hover .price-bar-row {
+      opacity: 0.2;
+      transition: opacity 0.2s;
+    }
+    .price-chart-body.has-hover .price-bar-row:hover {
+      opacity: 1;
+    }
+    .price-bar-row {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 0;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: opacity 0.2s;
+      position: relative;
     }
-    .price-bar-label {
+    .price-bar-row:last-child { border-bottom: none; }
+    .price-bar-cat-label {
+      width: 100px;
+      flex-shrink: 0;
       font-size: 13px;
       font-weight: 600;
       color: var(--text2);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .price-bar-label .cat-emoji { font-size: 14px; }
-    .price-bar-value {
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text);
-    }
-    .price-bar-count {
-      font-size: 11px;
-      color: var(--text3);
-      margin-top: -4px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: 12px;
     }
     .price-bar-track {
+      flex: 1;
       background: var(--bg);
       border-radius: 6px;
-      height: 10px;
+      height: 28px;
       overflow: hidden;
-      border: 1px solid var(--border);
+      position: relative;
     }
     .price-bar-fill {
-      height: 10px;
+      height: 28px;
       border-radius: 6px;
-      transition: width 0.7s cubic-bezier(0.4,0,0.2,1);
+      transition: width 0.75s cubic-bezier(0.4,0,0.2,1);
       position: relative;
+      display: flex;
+      align-items: center;
+      min-width: 40px;
     }
     .price-bar-fill::after {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(90deg, transparent 60%, rgba(255,255,255,0.25));
+      inset: 0;
+      background: linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.18));
       border-radius: 6px;
     }
+    .price-bar-inline-val {
+      position: absolute;
+      right: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      white-space: nowrap;
+      z-index: 1;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    }
+    .price-bar-right {
+      width: 90px;
+      flex-shrink: 0;
+      text-align: right;
+      padding-left: 14px;
+      font-size: 12px;
+      color: var(--text3);
+    }
+
+    /* 툴팁 */
+    .price-tooltip {
+      position: fixed;
+      background: var(--text);
+      color: #fff;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 13px;
+      pointer-events: none;
+      z-index: 9000;
+      opacity: 0;
+      transition: opacity 0.15s;
+      min-width: 180px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.2);
+    }
+    .price-tooltip.show { opacity: 1; }
+    .price-tooltip-cat {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .price-tooltip-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+    .price-tooltip-row .label { color: rgba(255,255,255,0.65); }
+    .price-tooltip-row .val { font-weight: 600; }
+
     .price-chart-legend {
-      padding: 14px 24px;
+      padding: 12px 28px;
       border-top: 1px solid var(--border);
       display: flex;
       align-items: center;
@@ -883,6 +940,13 @@
 </div>
 
 <div class="toast" id="toast"></div>
+<div class="price-tooltip" id="priceTooltip">
+  <div class="price-tooltip-cat" id="ttCat"></div>
+  <div class="price-tooltip-row"><span class="label">평균가</span><span class="val" id="ttAvg"></span></div>
+  <div class="price-tooltip-row"><span class="label">최저가</span><span class="val" id="ttMin"></span></div>
+  <div class="price-tooltip-row"><span class="label">최고가</span><span class="val" id="ttMax"></span></div>
+  <div class="price-tooltip-row"><span class="label">상품 수</span><span class="val" id="ttCount"></span></div>
+</div>
 
 <script>
 /* ===========================
@@ -1271,11 +1335,38 @@ function startRefreshTimer() {
    PRICE CHART
 =========================== */
 const PRICE_COLORS_MUSINSA = [
-  '#2563eb','#3b82f6','#60a5fa','#93c5fd','#1d4ed8','#1e40af','#1e3a8a','#3730a3','#4338ca','#6366f1','#7c3aed'
+  '#1d4ed8','#2563eb','#3b82f6','#60a5fa','#1e40af','#4338ca','#6366f1','#7c3aed','#4f46e5','#2563eb','#1e3a8a'
 ];
 const PRICE_COLORS_29CM = [
-  '#ff5a3c','#fb923c','#f97316','#ea580c','#dc2626','#ef4444','#f87171','#fca5a5','#cc4830'
+  '#b91c1c','#dc2626','#ef4444','#ff5a3c','#ea580c','#f97316','#fb923c','#cc4830','#9a3412'
 ];
+
+const tooltip = (() => {
+  const el = document.getElementById('priceTooltip');
+  let hideTimer = null;
+  function show(cat) {
+    clearTimeout(hideTimer);
+    document.getElementById('ttCat').textContent = cat.label;
+    document.getElementById('ttAvg').textContent = cat.avg.toLocaleString() + '원';
+    document.getElementById('ttMin').textContent = cat.min.toLocaleString() + '원';
+    document.getElementById('ttMax').textContent = cat.max.toLocaleString() + '원';
+    document.getElementById('ttCount').textContent = cat.count + '개';
+    el.classList.add('show');
+  }
+  function move(e) {
+    const pad = 14;
+    const tw = el.offsetWidth, th = el.offsetHeight;
+    let x = e.clientX + pad, y = e.clientY + pad;
+    if (x + tw > window.innerWidth - 8) x = e.clientX - tw - pad;
+    if (y + th > window.innerHeight - 8) y = e.clientY - th - pad;
+    el.style.left = x + 'px';
+    el.style.top = y + 'px';
+  }
+  function hide() {
+    hideTimer = setTimeout(() => el.classList.remove('show'), 80);
+  }
+  return { show, move, hide };
+})();
 
 function renderPriceChart() {
   const isMusinsa = state.platform === 'musinsa';
@@ -1288,16 +1379,18 @@ function renderPriceChart() {
     ? Object.values(d.categories).flat()
     : (d.items || []);
 
-  // 카테고리별 평균가 계산
   const catStats = cats.map((cat, i) => {
     const catItems = allItems.filter(item => item.category === cat.code);
     if (catItems.length === 0) return null;
     const prices = catItems.map(item => item.finalPrice || item.price || 0).filter(p => p > 0);
     const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
-    const min = prices.length ? Math.min(...prices) : 0;
-    const max = prices.length ? Math.max(...prices) : 0;
-    return { label: cat.label, code: cat.code, avg, min, max, count: catItems.length, color: colors[i % colors.length] };
-  }).filter(Boolean);
+    return {
+      label: cat.label, code: cat.code, avg,
+      min: Math.min(...prices), max: Math.max(...prices),
+      count: catItems.length,
+      color: colors[i % colors.length],
+    };
+  }).filter(Boolean).sort((a, b) => b.avg - a.avg);
 
   if (catStats.length === 0) {
     document.getElementById('priceChartBody').innerHTML = '<div class="price-no-data">카테고리 데이터가 없습니다</div>';
@@ -1306,29 +1399,45 @@ function renderPriceChart() {
   }
 
   const maxAvg = Math.max(...catStats.map(c => c.avg), 1);
-
-  document.getElementById('priceChartTitle').textContent = `카테고리별 평균 가격대`;
-  document.getElementById('priceChartSub').textContent = `${isMusinsa ? '무신사' : '29CM'} 랭킹 내 ${allItems.length}개 상품 기준`;
-
-  document.getElementById('priceChartBody').innerHTML = catStats
-    .sort((a, b) => b.avg - a.avg)
-    .map(cat => `
-      <div class="price-bar-item">
-        <div class="price-bar-top">
-          <div class="price-bar-label">
-            <span>${cat.label}</span>
-          </div>
-          <div class="price-bar-value">${cat.avg.toLocaleString()}원</div>
-        </div>
-        <div class="price-bar-count">${cat.count}개 상품 · 최저 ${cat.min.toLocaleString()}원 ~ 최고 ${cat.max.toLocaleString()}원</div>
-        <div class="price-bar-track">
-          <div class="price-bar-fill" style="width:${Math.round(cat.avg / maxAvg * 100)}%;background:${cat.color};"></div>
-        </div>
-      </div>
-    `).join('');
-
-  // 범례: 가격 구간 표시
   const allAvg = Math.round(catStats.reduce((a, b) => a + b.avg, 0) / catStats.length);
+
+  document.getElementById('priceChartTitle').textContent = '카테고리별 평균 가격대';
+  document.getElementById('priceChartSub').textContent =
+    `${isMusinsa ? '무신사' : '29CM'} 랭킹 내 ${allItems.length}개 상품 기준`;
+
+  const body = document.getElementById('priceChartBody');
+  body.innerHTML = catStats.map((cat, i) => {
+    const pct = Math.round(cat.avg / maxAvg * 100);
+    return `
+      <div class="price-bar-row" data-idx="${i}">
+        <div class="price-bar-cat-label">${cat.label}</div>
+        <div class="price-bar-track">
+          <div class="price-bar-fill" style="width:${pct}%;background:${cat.color};">
+            <span class="price-bar-inline-val">${cat.avg.toLocaleString()}원</span>
+          </div>
+        </div>
+        <div class="price-bar-right">${cat.count}개</div>
+      </div>
+    `;
+  }).join('');
+
+  // 호버 이벤트: 해당 막대만 선명, 나머지 80% 흐리게
+  const rows = body.querySelectorAll('.price-bar-row');
+  rows.forEach((row, i) => {
+    row.addEventListener('mouseenter', (e) => {
+      body.classList.add('has-hover');
+      row.style.opacity = '1';
+      tooltip.show(catStats[i]);
+      tooltip.move(e);
+    });
+    row.addEventListener('mousemove', tooltip.move);
+    row.addEventListener('mouseleave', () => {
+      body.classList.remove('has-hover');
+      row.style.opacity = '';
+      tooltip.hide();
+    });
+  });
+
   document.getElementById('priceChartLegend').innerHTML = `
     <div class="legend-item">
       <div class="legend-dot" style="background:${colors[0]};"></div>
@@ -1342,8 +1451,8 @@ function renderPriceChart() {
       <div class="legend-dot" style="background:${colors[colors.length-1]};"></div>
       <span>평균가 낮음</span>
     </div>
-    <div class="legend-item" style="margin-left:auto;">
-      <span>막대 길이 = 카테고리 평균가 비율</span>
+    <div class="legend-item" style="margin-left:auto;font-size:11px;color:var(--text3);">
+      막대 위에 마우스를 올리면 상세 정보 표시
     </div>
   `;
 }
