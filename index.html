@@ -744,6 +744,30 @@
       font-size: 12px;
       color: var(--text3);
     }
+    .deal-toggle-btn {
+      width: 100%;
+      padding: 10px 18px;
+      border: none;
+      border-top: 1px solid var(--border);
+      background: #fafbfd;
+      color: var(--text2);
+      font-size: 12px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background .15s;
+    }
+    .deal-toggle-btn:hover { background: #f0f4ff; color: var(--accent); }
+    .deal-toggle-chevron {
+      font-size: 11px;
+      transition: transform 0.25s ease;
+      display: inline-block;
+    }
+    .deal-toggle-chevron.open { transform: rotate(180deg); }
 
     /* 이유 태그 */
     .reason-tag {
@@ -1060,7 +1084,7 @@
         <span class="trend-icon deal">%</span>
         할인 특가
       </div>
-      <span class="trend-card-sub">할인율 TOP 5</span>
+      <span class="trend-card-sub">할인율 TOP 10</span>
     </div>
     <div class="trend-card-body" id="trendDeal"></div>
   </div>
@@ -1514,6 +1538,20 @@ function renderRanking() {
 }
 
 /* ===========================
+   DEAL TOGGLE
+=========================== */
+function toggleDealRest() {
+  const rest = document.getElementById('dealRest');
+  const label = document.getElementById('dealToggleLabel');
+  const chevron = document.getElementById('dealToggleChevron');
+  if (!rest) return;
+  const isOpen = rest.style.display !== 'none';
+  rest.style.display = isOpen ? 'none' : 'block';
+  label.textContent = isOpen ? '6~10위 더보기' : '접기';
+  chevron.classList.toggle('open', !isOpen);
+}
+
+/* ===========================
    PRODUCT ROW EXPAND
 =========================== */
 function toggleProductDetail(rowId, tr) {
@@ -1742,7 +1780,6 @@ function dealRow(item) {
   const url = getProductUrl(item);
   return `
     <a class="trend-product-row" href="${url}" target="_blank" rel="noopener noreferrer">
-      <div class="trend-rank-badge">${item.rank}</div>
       <div class="trend-product-info">
         <div class="trend-product-name">${item.name}</div>
         <div class="trend-product-brand">${item.brand}</div>
@@ -1791,15 +1828,29 @@ function renderTrendCards() {
   }
   document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">신규 진입 상품이 없습니다</div>';
 
-  // 3. 할인 특가
+  // 3. 할인 특가 (TOP 10, 1~5 고정 노출 / 6~10 토글)
   const deals = items
     .filter(i => i.discountRate > 0)
     .sort((a, b) => b.discountRate - a.discountRate)
-    .slice(0, 5);
+    .slice(0, 10);
 
-  document.getElementById('trendDeal').innerHTML = deals.length
-    ? deals.map(i => dealRow(i)).join('')
-    : '<div class="trend-empty">할인 상품이 없습니다</div>';
+  if (!deals.length) {
+    document.getElementById('trendDeal').innerHTML = '<div class="trend-empty">할인 상품이 없습니다</div>';
+  } else {
+    const top5 = deals.slice(0, 5);
+    const rest5 = deals.slice(5);
+    const toggleHtml = rest5.length ? `
+      <div class="deal-rest" id="dealRest" style="display:none;">
+        ${rest5.map(i => dealRow(i)).join('')}
+      </div>
+      <button class="deal-toggle-btn" id="dealToggleBtn" onclick="toggleDealRest()">
+        <span id="dealToggleLabel">6~10위 더보기</span>
+        <span class="deal-toggle-chevron" id="dealToggleChevron">▾</span>
+      </button>
+    ` : '';
+    document.getElementById('trendDeal').innerHTML =
+      top5.map(i => dealRow(i)).join('') + toggleHtml;
+  }
 }
 
 /* ===========================
