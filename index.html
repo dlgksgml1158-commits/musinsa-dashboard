@@ -2099,23 +2099,71 @@ function renderPriceChart() {
     body.appendChild(line);
   });
 
-  // 호버 이벤트
+  // 호버/터치 이벤트
   const cols = body.querySelectorAll('.price-bar-col');
+  let activeCol = null;
+
+  function clearActive() {
+    if (activeCol) { activeCol.style.opacity = ''; activeCol = null; }
+    body.classList.remove('has-hover');
+    tooltip.hide();
+  }
+
   cols.forEach((col, i) => {
     const brand = brandPriceStats ? brandPriceStats[catStats[i].code] : null;
+
+    // 마우스 (데스크톱)
     col.addEventListener('mouseenter', (e) => {
+      if (window.matchMedia('(pointer: coarse)').matches) return;
       body.classList.add('has-hover');
       col.style.opacity = '1';
       tooltip.showBrand(catStats[i], brand, BRAND_NAME);
       tooltip.move(e);
     });
-    col.addEventListener('mousemove', tooltip.move);
+    col.addEventListener('mousemove', (e) => {
+      if (window.matchMedia('(pointer: coarse)').matches) return;
+      tooltip.move(e);
+    });
     col.addEventListener('mouseleave', () => {
+      if (window.matchMedia('(pointer: coarse)').matches) return;
       body.classList.remove('has-hover');
       col.style.opacity = '';
       tooltip.hide();
     });
+
+    // 터치 (모바일) - 토글
+    col.addEventListener('touchend', (e) => {
+      e.preventDefault();
+      const el = document.getElementById('priceTooltip');
+      if (activeCol === col) {
+        // 같은 바 다시 터치 → 닫기
+        clearActive();
+        return;
+      }
+      clearActive();
+      activeCol = col;
+      body.classList.add('has-hover');
+      col.style.opacity = '1';
+      tooltip.showBrand(catStats[i], brand, BRAND_NAME);
+      // 모바일: 화면 하단 고정
+      el.style.left = '50%';
+      el.style.transform = 'translateX(-50%)';
+      el.style.top = 'auto';
+      el.style.bottom = '16px';
+      el.style.position = 'fixed';
+    });
   });
+
+  // 툴팁 외부 터치 시 닫기
+  document.addEventListener('touchend', (e) => {
+    if (activeCol && !activeCol.contains(e.target)) {
+      clearActive();
+      const el = document.getElementById('priceTooltip');
+      el.style.position = '';
+      el.style.bottom = '';
+      el.style.transform = '';
+    }
+  }, { passive: true });
 
   document.getElementById('priceChartLegend').innerHTML = `
     <div class="legend-item">
