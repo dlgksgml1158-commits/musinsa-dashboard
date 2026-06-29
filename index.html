@@ -722,7 +722,7 @@
       <button class="accordion-header" id="toggleBtnRest" onclick="toggleRest()">
         <div class="accordion-header-left">
           <span class="accordion-rank-tag">11~30위</span>
-          <span id="toggleLabelRest" style="font-size:12px;color:inherit;">펼치기</span>
+          <span style="font-size:12px;color:inherit;">펼치기</span>
         </div>
         <div class="accordion-chevron">▾</div>
       </button>
@@ -751,6 +751,14 @@
             <tbody id="rankingTbody3"></tbody>
           </table>
         </div>
+        <!-- 하단 접기 버튼 -->
+        <button class="accordion-header" id="toggleBtnRestBottom" onclick="toggleRest()" style="display:none;">
+          <div class="accordion-header-left">
+            <span class="accordion-rank-tag">11~30위</span>
+            <span style="font-size:12px;color:inherit;">접기</span>
+          </div>
+          <div class="accordion-chevron" style="transform:rotate(180deg);">▾</div>
+        </button>
       </div>
     </div>
   </div>
@@ -1082,11 +1090,15 @@ function renderRanking() {
   // 아코디언 열림 상태 복원 (카테고리/플랫폼 전환 시 유지)
   const restBody = document.getElementById('rankingRest');
   const restBtn = document.getElementById('toggleBtnRest');
-  const restLbl = document.getElementById('toggleLabelRest');
+  const restBtnBottom = document.getElementById('toggleBtnRestBottom');
   if (state.restOpen) {
-    restBody.classList.add('open'); restBtn.classList.add('open'); restLbl.textContent = '접기';
+    restBody.classList.add('open'); restBtn.classList.add('open');
+    restBtn.style.display = 'none';
+    if (restBtnBottom) restBtnBottom.style.display = '';
   } else {
-    restBody.classList.remove('open'); restBtn.classList.remove('open'); restLbl.textContent = '펼치기';
+    restBody.classList.remove('open'); restBtn.classList.remove('open');
+    restBtn.style.display = '';
+    if (restBtnBottom) restBtnBottom.style.display = 'none';
   }
 
   // 마지막 업데이트 시각
@@ -1104,11 +1116,15 @@ function toggleRest() {
   state.restOpen = !state.restOpen;
   const body = document.getElementById('rankingRest');
   const btn  = document.getElementById('toggleBtnRest');
-  const lbl  = document.getElementById('toggleLabelRest');
+  const btnBottom = document.getElementById('toggleBtnRestBottom');
   if (state.restOpen) {
-    body.classList.add('open'); btn.classList.add('open'); lbl.textContent = '접기';
+    body.classList.add('open'); btn.classList.add('open');
+    btn.style.display = 'none';
+    if (btnBottom) btnBottom.style.display = '';
   } else {
-    body.classList.remove('open'); btn.classList.remove('open'); lbl.textContent = '펼치기';
+    body.classList.remove('open'); btn.classList.remove('open');
+    btn.style.display = '';
+    if (btnBottom) btnBottom.style.display = 'none';
   }
 }
 
