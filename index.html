@@ -446,11 +446,16 @@
       padding: 16px;
       box-shadow: var(--card-shadow);
     }
+    .stat-mini-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
     .stat-label {
       font-size: 11px;
       color: var(--text3);
       font-weight: 500;
-      margin-bottom: 8px;
     }
     .stat-value {
       font-size: 26px;
@@ -1217,9 +1222,11 @@
   <div class="sidebar">
     <!-- 통계 카드 -->
     <div class="stat-mini">
-      <div class="stat-label">신규 진입</div>
-      <div class="stat-value up" id="statNew">-</div>
-      <div class="stat-sub">이번 회차 NEW</div>
+      <div class="stat-mini-top">
+        <div class="stat-label">신규 진입</div>
+        <div class="stat-sub">이번 회차 NEW</div>
+      </div>
+      <div class="stat-value up" id="statNew" style="text-align:right;">-</div>
     </div>
 
     <!-- 브랜드 노출 현황 -->
