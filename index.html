@@ -169,27 +169,14 @@
     /* ── MAIN LAYOUT ── */
     main {
       padding: 24px 28px;
-      display: flex;
-      flex-direction: column;
+      display: grid;
+      grid-template-columns: 1fr 320px;
       gap: 20px;
       max-width: 1380px;
       margin: 0 auto;
     }
-    .sidebar-row {
-      display: grid;
-      grid-template-columns: auto 1fr 1fr;
-      gap: 16px;
-      align-items: start;
-    }
-    .sidebar-row-stats {
-      min-width: 200px;
-    }
-    .ranking-full-row {
-      width: 100%;
-    }
     @media (max-width: 960px) {
-      main { padding: 16px; }
-      .sidebar-row { grid-template-columns: 1fr; }
+      main { grid-template-columns: 1fr; padding: 16px; }
     }
 
     /* ── SECTION TITLE ── */
@@ -1138,50 +1125,8 @@
 
 <!-- MAIN -->
 <main>
-  <!-- TOP ROW: 사이드바 위젯 (가로 배치) -->
-  <div class="sidebar-row">
-    <!-- 통계 카드 -->
-    <div class="stats-grid sidebar-row-stats">
-      <div class="stat-mini">
-        <div class="stat-label">총 노출</div>
-        <div class="stat-value" id="statTotal">-</div>
-        <div class="stat-sub" id="statTotalSub">상품 수</div>
-      </div>
-      <div class="stat-mini">
-        <div class="stat-label">신규 진입</div>
-        <div class="stat-value up" id="statNew">-</div>
-        <div class="stat-sub">이번 회차 NEW</div>
-      </div>
-    </div>
-
-    <!-- 브랜드 노출 현황 -->
-    <div class="brand-card sidebar-row-brand">
-      <div class="brand-card-header">
-        <span>브랜드 노출 현황</span>
-        <span class="brand-card-sub">TOP10 내</span>
-      </div>
-      <div id="brandList">
-        <div class="empty-state"><p>데이터 로딩 중...</p></div>
-      </div>
-    </div>
-
-    <!-- 네이버 인기 검색어 -->
-    <div class="brand-card sidebar-row-naver">
-      <div class="brand-card-header">
-        <span>네이버 인기 검색어</span>
-        <span class="brand-card-sub" id="naverSearchSub">패션 TOP 10</span>
-      </div>
-      <div id="naverSearchList"></div>
-      <div id="naverSearchRest" style="display:none;"></div>
-      <button class="deal-toggle-btn" id="naverToggleBtn" onclick="toggleNaverRest()">
-        <span id="naverToggleLabel">6~10위 더보기</span>
-        <span class="deal-toggle-chevron" id="naverToggleChevron">▾</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- BOTTOM ROW: 랭킹 테이블 (전체 너비) -->
-  <div class="ranking-full-row">
+  <!-- LEFT: 랭킹 테이블 -->
+  <div>
     <div class="section-title" id="rankingTitle">무신사 실시간 랭킹</div>
     <div class="ranking-card">
       <div class="ranking-card-header">
@@ -1214,9 +1159,10 @@
         </table>
       </div>
 
-      <!-- 펼치기 아코디언 -->
+      <!-- 11~30위 아코디언 -->
       <button class="accordion-header" id="toggleBtnRest" onclick="toggleRest()">
-        <div class="accordion-header-left" style="justify-content:center;width:100%;">
+        <div class="accordion-header-left">
+          <span class="accordion-rank-tag">11~30위</span>
           <span style="font-size:12px;">펼치기</span>
         </div>
         <div class="accordion-chevron">▾</div>
@@ -1235,12 +1181,55 @@
           </table>
         </div>
         <button class="accordion-header" id="toggleBtnRestBottom" onclick="toggleRest()" style="display:none;">
-          <div class="accordion-header-left" style="justify-content:center;width:100%;">
+          <div class="accordion-header-left">
+            <span class="accordion-rank-tag">11~30위</span>
             <span style="font-size:12px;">접기</span>
           </div>
           <div class="accordion-chevron" style="transform:rotate(180deg);">▾</div>
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: 사이드바 -->
+  <div class="sidebar">
+    <!-- 통계 카드 -->
+    <div class="stats-grid">
+      <div class="stat-mini">
+        <div class="stat-label">총 노출</div>
+        <div class="stat-value" id="statTotal">-</div>
+        <div class="stat-sub" id="statTotalSub">상품 수</div>
+      </div>
+      <div class="stat-mini">
+        <div class="stat-label">신규 진입</div>
+        <div class="stat-value up" id="statNew">-</div>
+        <div class="stat-sub">이번 회차 NEW</div>
+      </div>
+    </div>
+
+    <!-- 브랜드 노출 현황 -->
+    <div class="brand-card">
+      <div class="brand-card-header">
+        <span>브랜드 노출 현황</span>
+        <span class="brand-card-sub">TOP10 내</span>
+      </div>
+      <div id="brandList">
+        <div class="empty-state"><p>데이터 로딩 중...</p></div>
+      </div>
+    </div>
+
+    <!-- 네이버 인기 검색어 -->
+    <div class="brand-card">
+      <div class="brand-card-header">
+        <span>네이버 인기 검색어</span>
+        <span class="brand-card-sub" id="naverSearchSub">패션 TOP 10</span>
+      </div>
+      <div id="naverSearchList"></div>
+      <div id="naverSearchRest" style="display:none;"></div>
+      <button class="deal-toggle-btn" id="naverToggleBtn" onclick="toggleNaverRest()">
+        <span id="naverToggleLabel">6~10위 더보기</span>
+        <span class="deal-toggle-chevron" id="naverToggleChevron">▾</span>
+      </button>
     </div>
   </div>
 </main>
