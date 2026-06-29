@@ -547,64 +547,6 @@
       text-underline-offset: 3px;
     }
 
-    /* 상품 행 펼치기 화살표 */
-    .product-row-wrap { position: relative; }
-    .product-expand-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 18px; height: 18px;
-      border-radius: 4px;
-      border: 1.5px solid var(--border);
-      background: var(--bg);
-      cursor: pointer;
-      font-size: 9px;
-      color: var(--text3);
-      transition: transform 0.25s ease, border-color 0.15s, color 0.15s;
-      flex-shrink: 0;
-      margin-left: 6px;
-      vertical-align: middle;
-      user-select: none;
-    }
-    .product-expand-btn.open {
-      transform: rotate(180deg);
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-    .product-detail-row td {
-      padding: 0;
-      background: #f8faff;
-    }
-    .product-detail-inner {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s cubic-bezier(0.4,0,0.2,1);
-    }
-    .product-detail-inner.open { max-height: 120px; }
-    .product-detail-content {
-      display: flex;
-      gap: 24px;
-      padding: 12px 16px 12px 72px;
-      border-top: 1px solid var(--border);
-      flex-wrap: wrap;
-    }
-    .product-detail-item {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
-    .product-detail-label {
-      font-size: 10px;
-      color: var(--text3);
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-    .product-detail-value {
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text);
-    }
 
     /* ── TREND CARDS ── */
     .trend-section {
@@ -1458,18 +1400,17 @@ function buildRowHtml(item, rank) {
   const discountStr = item.discountRate ? `-${item.discountRate}%` : '—';
   const rowId = `detail-${rank}`;
 
-  return `<tr class="product-row-wrap" onclick="toggleProductDetail('${rowId}', this)">
+  return `<tr class="product-row-wrap">
     <td><div class="rank-num ${rankClass}">${rank}</div></td>
     <td>
       <div class="product-info">
         <div>
-          <div class="product-name" style="display:flex;align-items:center;gap:4px;">
-            <a href="${url}" target="_blank" rel="noopener noreferrer" class="product-link" onclick="event.stopPropagation()">
+          <div class="product-name">
+            <a href="${url}" target="_blank" rel="noopener noreferrer" class="product-link">
               ${item.name}
               ${isHot ? '<span class="hot-badge">HOT</span>' : ''}
               ${isNew ? '<span class="new-badge-inline">NEW</span>' : ''}
             </a>
-            <span class="product-expand-btn" id="btn-${rowId}">▾</span>
           </div>
           <div class="product-brand">${item.brand}</div>
         </div>
@@ -1481,38 +1422,6 @@ function buildRowHtml(item, rank) {
       ${origStr ? `<span class="price-original">${origStr}</span>` : ''}
     </td>
     <td class="discount-col discount-rate">${item.discountRate ? discountStr : '<span style="color:var(--text3)">—</span>'}</td>
-  </tr>
-  <tr class="product-detail-row">
-    <td colspan="5">
-      <div class="product-detail-inner" id="${rowId}">
-        <div class="product-detail-content">
-          <div class="product-detail-item">
-            <span class="product-detail-label">카테고리</span>
-            <span class="product-detail-value">${item.categoryLabel || '전체'}</span>
-          </div>
-          <div class="product-detail-item">
-            <span class="product-detail-label">정가</span>
-            <span class="product-detail-value">${item.price.toLocaleString()}원</span>
-          </div>
-          <div class="product-detail-item">
-            <span class="product-detail-label">판매가</span>
-            <span class="product-detail-value" style="color:var(--musinsa)">${priceStr}</span>
-          </div>
-          ${item.discountRate ? `<div class="product-detail-item">
-            <span class="product-detail-label">할인율</span>
-            <span class="product-detail-value" style="color:var(--down)">${discountStr}</span>
-          </div>` : ''}
-          <div class="product-detail-item">
-            <span class="product-detail-label">순위 변동</span>
-            <span class="product-detail-value">${item.change === 'NEW' ? '신규 진입' : item.change > 0 ? `▲${item.change}` : item.change < 0 ? `▼${Math.abs(item.change)}` : '변동 없음'}</span>
-          </div>
-          <div class="product-detail-item">
-            <span class="product-detail-label">상품 페이지</span>
-            <a href="${url}" target="_blank" rel="noopener noreferrer" class="product-detail-value" style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;" onclick="event.stopPropagation()">바로가기 →</a>
-          </div>
-        </div>
-      </div>
-    </td>
   </tr>`;
 }
 
@@ -1652,17 +1561,6 @@ function toggleDealRest() {
   chevron.classList.toggle('open', !isOpen);
 }
 
-/* ===========================
-   PRODUCT ROW EXPAND
-=========================== */
-function toggleProductDetail(rowId, tr) {
-  const detail = document.getElementById(rowId);
-  const btn = document.getElementById('btn-' + rowId);
-  if (!detail) return;
-  const isOpen = detail.classList.contains('open');
-  detail.classList.toggle('open', !isOpen);
-  if (btn) btn.classList.toggle('open', !isOpen);
-}
 
 /* ===========================
    ACCORDION
@@ -1996,22 +1894,37 @@ function renderPriceChart() {
   const d = state.data[state.platform];
   if (!d) return;
 
-  const allItems = d.categories
-    ? Object.values(d.categories).flat()
-    : (d.items || []);
+  let catStats;
 
-  const catStats = cats.map((cat, i) => {
-    const catItems = allItems.filter(item => item.category === cat.code);
-    if (catItems.length === 0) return null;
-    const prices = catItems.map(item => item.finalPrice || item.price || 0).filter(p => p > 0);
-    const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
-    return {
-      label: cat.label, code: cat.code, avg,
-      min: Math.min(...prices), max: Math.max(...prices),
-      count: catItems.length,
-      color: colors[i % colors.length],
-    };
-  }).filter(Boolean).sort((a, b) => b.avg - a.avg);
+  // priceStats가 있으면 서버에서 계산한 값 우선 사용 (더 많은 샘플)
+  if (d.priceStats) {
+    catStats = cats.map((cat, i) => {
+      const s = d.priceStats[cat.code];
+      if (!s) return null;
+      return {
+        label: cat.label, code: cat.code,
+        avg: s.avg, min: s.min, max: s.max, count: s.count,
+        color: colors[i % colors.length],
+      };
+    }).filter(Boolean).sort((a, b) => b.avg - a.avg);
+  } else {
+    // fallback: 랭킹 데이터에서 직접 계산
+    const allItems = d.categories
+      ? Object.values(d.categories).flat()
+      : (d.items || []);
+    catStats = cats.map((cat, i) => {
+      const catItems = allItems.filter(item => item.category === cat.code);
+      if (catItems.length === 0) return null;
+      const prices = catItems.map(item => item.finalPrice || item.price || 0).filter(p => p > 0);
+      const avg = prices.length ? Math.round(prices.reduce((a, b) => a + b, 0) / prices.length) : 0;
+      return {
+        label: cat.label, code: cat.code, avg,
+        min: Math.min(...prices), max: Math.max(...prices),
+        count: catItems.length,
+        color: colors[i % colors.length],
+      };
+    }).filter(Boolean).sort((a, b) => b.avg - a.avg);
+  }
 
   if (catStats.length === 0) {
     document.getElementById('priceChartBody').innerHTML = '<div class="price-no-data">카테고리 데이터가 없습니다</div>';

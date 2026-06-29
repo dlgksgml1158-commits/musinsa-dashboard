@@ -892,6 +892,110 @@ def save(platform: str, data: dict):
 
 
 # ═══════════════════════════════════════════════════
+#  가격 통계 (카테고리별 평균/최저/최고가)
+# ═══════════════════════════════════════════════════
+
+def _fetch_musinsa_prices_extra(cat_code: str, existing_prices: list) -> list:
+    """랭킹 API 2~4페이지 추가 수집으로 가격 샘플 확대"""
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": "https://www.musinsa.com/ranking/best",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": "https://www.musinsa.com",
+    }
+    prices = list(existing_prices)
+    for page in range(2, 5):
+        try:
+            params: dict = {"page": page, "size": 30, "storeCode": "musinsa"}
+            if cat_code:
+                params["contentsCode"] = cat_code
+            r = requests.get(
+                "https://api.musinsa.com/api2/json/rank/goods",
+                params=params, headers=headers, timeout=12
+            )
+            if not r.ok:
+                break
+            data = r.json()
+            raw = (
+                data.get("data", {}).get("list")
+                or data.get("data", {}).get("goods")
+                or data.get("list")
+                or []
+            )
+            if not raw:
+                break
+            for item in raw:
+                p = int(item.get("salePrice") or item.get("finalPrice") or item.get("normalPrice") or 0)
+                if p > 0:
+                    prices.append(p)
+            time.sleep(0.4)
+        except Exception:
+            break
+    return prices
+
+
+def compute_price_stats(categories_data: dict, categories_meta: list) -> dict:
+    """카테고리별 가격 통계 계산. 가능하면 API 추가 페이지로 샘플 확장."""
+    print("▶ 가격 통계 계산 중...")
+    stats = {}
+    api_works = _MUSINSA_API_WORKING  # 이미 검증된 상태 재사용
+
+    for cat in categories_meta:
+        code = cat["code"]
+        label = cat["label"]
+
+        items = categories_data.get(code, [])
+        prices = [
+            i.get("finalPrice") or i.get("price") or 0
+            for i in items
+        ]
+        prices = [p for p in prices if p > 0]
+
+        # API가 동작 중이면 추가 페이지 수집으로 샘플 확장
+        if api_works and code:
+            prices = _fetch_musinsa_prices_extra(code, prices)
+            time.sleep(0.3)
+
+        if not prices:
+            continue
+
+        stats[code] = {
+            "label": label,
+            "avg": round(sum(prices) / len(prices)),
+            "min": min(prices),
+            "max": max(prices),
+            "count": len(prices),
+        }
+        print(f"  {label}: 평균 {stats[code]['avg']:,}원 ({len(prices)}개 샘플)")
+
+    return stats
+
+
+def compute_29cm_price_stats(categories_data: dict, categories_meta: list) -> dict:
+    """29CM 카테고리별 가격 통계 (이미 100개 수집됨)"""
+    stats = {}
+    for cat in categories_meta:
+        code = cat["code"]
+        label = cat["label"]
+        items = categories_data.get(code, [])
+        prices = [
+            i.get("finalPrice") or i.get("price") or 0
+            for i in items
+        ]
+        prices = [p for p in prices if p > 0]
+        if not prices:
+            continue
+        stats[code] = {
+            "label": label,
+            "avg": round(sum(prices) / len(prices)),
+            "min": min(prices),
+            "max": max(prices),
+            "count": len(prices),
+        }
+    return stats
+
+
+# ═══════════════════════════════════════════════════
 #  메인
 # ═══════════════════════════════════════════════════
 
@@ -904,11 +1008,13 @@ def main():
     musinsa_cats = fetch_musinsa()
     if musinsa_cats:
         musinsa_cats = compute_rank_changes_categories(musinsa_cats, old_musinsa)
+        price_stats = compute_price_stats(musinsa_cats, MUSINSA_CATEGORIES)
         save("musinsa", {
             "platform": "musinsa",
             "updatedAt": datetime.now(timezone.utc).isoformat(),
             "items": musinsa_cats.get("", []),
             "categories": musinsa_cats,
+            "priceStats": price_stats,
         })
     else:
         print("  [WARN] 무신사 데이터 없음 - 기존 파일 유지")
@@ -919,11 +1025,13 @@ def main():
     cm29_cats = fetch_29cm()
     if cm29_cats and any(cm29_cats.values()):
         cm29_cats = compute_rank_changes_categories(cm29_cats, old_29cm_cats)
+        cm29_price_stats = compute_29cm_price_stats(cm29_cats, CM29_CATEGORIES)
         save("29cm", {
             "platform": "29cm",
             "updatedAt": datetime.now(timezone.utc).isoformat(),
             "items": cm29_cats.get("", []),
             "categories": cm29_cats,
+            "priceStats": cm29_price_stats,
         })
     else:
         print("  [WARN] 29CM 데이터 없음 - 기존 파일 유지")
