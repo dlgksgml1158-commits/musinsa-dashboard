@@ -607,83 +607,92 @@
       color: var(--text3);
     }
 
-    /* 가로 막대 그래프 */
+    /* 세로 막대 그래프 (가로 나열) */
     .price-chart-body {
-      padding: 24px 28px 20px;
+      padding: 24px 28px 0;
       display: flex;
-      flex-direction: column;
-      gap: 0;
+      flex-direction: row;
+      align-items: flex-end;
+      gap: 10px;
       position: relative;
+      overflow-x: auto;
+      scrollbar-width: none;
+      min-height: 240px;
     }
-    .price-chart-body.has-hover .price-bar-row {
+    .price-chart-body::-webkit-scrollbar { display: none; }
+
+    /* Y축 가이드라인 */
+    .price-chart-body::before {
+      content: '';
+      position: absolute;
+      bottom: 48px;
+      left: 28px;
+      right: 28px;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .price-chart-body.has-hover .price-bar-col {
       opacity: 0.2;
       transition: opacity 0.2s;
     }
-    .price-chart-body.has-hover .price-bar-row:hover {
+    .price-chart-body.has-hover .price-bar-col:hover {
       opacity: 1;
     }
-    .price-bar-row {
+    .price-bar-col {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 0;
-      padding: 8px 0;
-      border-bottom: 1px solid var(--border);
+      justify-content: flex-end;
+      gap: 6px;
+      flex: 1;
+      min-width: 60px;
+      max-width: 120px;
       cursor: pointer;
       transition: opacity 0.2s;
+      padding-bottom: 48px;
       position: relative;
     }
-    .price-bar-row:last-child { border-bottom: none; }
-    .price-bar-cat-label {
-      width: 100px;
-      flex-shrink: 0;
-      font-size: 13px;
+    .price-bar-col-val {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text2);
+      white-space: nowrap;
+      text-align: center;
+    }
+    .price-bar-col-fill {
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+      transition: height 0.75s cubic-bezier(0.4,0,0.2,1);
+      position: relative;
+      min-height: 8px;
+    }
+    .price-bar-col-fill::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+      border-radius: 6px 6px 0 0;
+    }
+    .price-bar-col-label {
+      position: absolute;
+      bottom: 16px;
+      left: 0; right: 0;
+      text-align: center;
+      font-size: 11px;
       font-weight: 600;
       color: var(--text2);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      padding-right: 12px;
+      padding: 0 4px;
     }
-    .price-bar-track {
-      flex: 1;
-      background: var(--bg);
-      border-radius: 6px;
-      height: 28px;
-      overflow: hidden;
-      position: relative;
-    }
-    .price-bar-fill {
-      height: 28px;
-      border-radius: 6px;
-      transition: width 0.75s cubic-bezier(0.4,0,0.2,1);
-      position: relative;
-      display: flex;
-      align-items: center;
-      min-width: 40px;
-    }
-    .price-bar-fill::after {
-      content: '';
+    .price-bar-col-count {
       position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.18));
-      border-radius: 6px;
-    }
-    .price-bar-inline-val {
-      position: absolute;
-      right: 10px;
-      font-size: 12px;
-      font-weight: 700;
-      color: #fff;
-      white-space: nowrap;
-      z-index: 1;
-      text-shadow: 0 1px 3px rgba(0,0,0,0.25);
-    }
-    .price-bar-right {
-      width: 90px;
-      flex-shrink: 0;
-      text-align: right;
-      padding-left: 14px;
-      font-size: 12px;
+      bottom: 2px;
+      left: 0; right: 0;
+      text-align: center;
+      font-size: 10px;
       color: var(--text3);
     }
 
@@ -1405,35 +1414,36 @@ function renderPriceChart() {
   document.getElementById('priceChartSub').textContent =
     `${isMusinsa ? '무신사' : '29CM'} 랭킹 내 ${allItems.length}개 상품 기준`;
 
+  const MAX_BAR_HEIGHT = 160; // px
   const body = document.getElementById('priceChartBody');
   body.innerHTML = catStats.map((cat, i) => {
-    const pct = Math.round(cat.avg / maxAvg * 100);
+    const barH = Math.max(8, Math.round(cat.avg / maxAvg * MAX_BAR_HEIGHT));
+    const shortVal = cat.avg >= 10000
+      ? (cat.avg / 10000).toFixed(1).replace(/\.0$/, '') + '만'
+      : cat.avg.toLocaleString();
     return `
-      <div class="price-bar-row" data-idx="${i}">
-        <div class="price-bar-cat-label">${cat.label}</div>
-        <div class="price-bar-track">
-          <div class="price-bar-fill" style="width:${pct}%;background:${cat.color};">
-            <span class="price-bar-inline-val">${cat.avg.toLocaleString()}원</span>
-          </div>
-        </div>
-        <div class="price-bar-right">${cat.count}개</div>
+      <div class="price-bar-col" data-idx="${i}">
+        <div class="price-bar-col-val">${shortVal}원</div>
+        <div class="price-bar-col-fill" style="height:${barH}px;background:${cat.color};"></div>
+        <div class="price-bar-col-label">${cat.label}</div>
+        <div class="price-bar-col-count">${cat.count}개</div>
       </div>
     `;
   }).join('');
 
   // 호버 이벤트: 해당 막대만 선명, 나머지 80% 흐리게
-  const rows = body.querySelectorAll('.price-bar-row');
-  rows.forEach((row, i) => {
-    row.addEventListener('mouseenter', (e) => {
+  const cols = body.querySelectorAll('.price-bar-col');
+  cols.forEach((col, i) => {
+    col.addEventListener('mouseenter', (e) => {
       body.classList.add('has-hover');
-      row.style.opacity = '1';
+      col.style.opacity = '1';
       tooltip.show(catStats[i]);
       tooltip.move(e);
     });
-    row.addEventListener('mousemove', tooltip.move);
-    row.addEventListener('mouseleave', () => {
+    col.addEventListener('mousemove', tooltip.move);
+    col.addEventListener('mouseleave', () => {
       body.classList.remove('has-hover');
-      row.style.opacity = '';
+      col.style.opacity = '';
       tooltip.hide();
     });
   });
