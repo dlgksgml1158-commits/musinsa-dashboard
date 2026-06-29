@@ -569,6 +569,123 @@
       text-underline-offset: 3px;
     }
 
+    /* ── TREND CARDS ── */
+    .trend-section {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 24px 28px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 900px) {
+      .trend-section { grid-template-columns: 1fr; padding: 16px 16px 0; }
+    }
+    .trend-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+    .trend-card-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fafbfd;
+    }
+    .trend-card-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text);
+    }
+    .trend-icon {
+      width: 24px; height: 24px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .trend-icon.rise { background: #dcfce7; color: var(--up); }
+    .trend-icon.new  { background: #dbeafe; color: var(--musinsa); }
+    .trend-icon.deal { background: #fee2e2; color: var(--down); }
+    .trend-card-sub {
+      font-size: 11px;
+      color: var(--text3);
+      font-weight: 400;
+    }
+    .trend-card-body { display: flex; flex-direction: column; }
+    .trend-product-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 18px;
+      border-bottom: 1px solid var(--border);
+      transition: background .12s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+    .trend-product-row:last-child { border-bottom: none; }
+    .trend-product-row:hover { background: #f8faff; }
+    .trend-rank-badge {
+      width: 22px; height: 22px;
+      border-radius: 6px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text3);
+      flex-shrink: 0;
+    }
+    .trend-product-info { flex: 1; min-width: 0; }
+    .trend-product-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .trend-product-brand {
+      font-size: 11px;
+      color: var(--text3);
+      margin-top: 2px;
+    }
+    .trend-product-meta {
+      flex-shrink: 0;
+      text-align: right;
+    }
+    .trend-meta-main {
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .trend-meta-main.rise { color: var(--up); }
+    .trend-meta-main.new  { color: var(--musinsa); }
+    .trend-meta-main.deal { color: var(--down); }
+    .trend-meta-sub {
+      font-size: 10px;
+      color: var(--text3);
+      margin-top: 1px;
+    }
+    .trend-empty {
+      padding: 32px 16px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text3);
+    }
+
     /* ── PRICE CHART SECTION ── */
     .price-section {
       max-width: 1380px;
@@ -818,6 +935,40 @@
 <!-- CATEGORY BAR -->
 <div class="category-bar" id="categoryBar"></div>
 
+<!-- TREND CARDS -->
+<div class="trend-section" id="trendSection">
+  <div class="trend-card">
+    <div class="trend-card-header">
+      <div class="trend-card-title">
+        <span class="trend-icon rise">▲</span>
+        인기 급상승
+      </div>
+      <span class="trend-card-sub">순위 상승폭 TOP 5</span>
+    </div>
+    <div class="trend-card-body" id="trendRise"></div>
+  </div>
+  <div class="trend-card">
+    <div class="trend-card-header">
+      <div class="trend-card-title">
+        <span class="trend-icon new">N</span>
+        신규 진입
+      </div>
+      <span class="trend-card-sub">이번 회차 NEW</span>
+    </div>
+    <div class="trend-card-body" id="trendNew"></div>
+  </div>
+  <div class="trend-card">
+    <div class="trend-card-header">
+      <div class="trend-card-title">
+        <span class="trend-icon deal">%</span>
+        할인 특가
+      </div>
+      <span class="trend-card-sub">할인율 TOP 5</span>
+    </div>
+    <div class="trend-card-body" id="trendDeal"></div>
+  </div>
+</div>
+
 <!-- MAIN -->
 <main>
   <!-- LEFT: 랭킹 테이블 -->
@@ -1045,6 +1196,7 @@ function generateSampleData(platform) {
 async function init() {
   await Promise.all([loadData('musinsa'), loadData('29cm')]);
   renderCategoryBar();
+  renderTrendCards();
   renderRanking();
   renderSidebar();
   renderPriceChart();
@@ -1075,6 +1227,7 @@ function switchPlatform(p) {
   const badge = document.getElementById('nowBadge');
   badge.className = 'now-badge' + (p === '29cm' ? ' cm' : '');
   renderCategoryBar();
+  renderTrendCards();
   renderRanking();
   renderSidebar();
   renderPriceChart();
@@ -1098,6 +1251,7 @@ function selectCategory(code, label) {
   state.category = code;
   state.restOpen = false;
   renderCategoryBar();
+  renderTrendCards();
   renderRanking();
   renderSidebar();
   renderPriceChart();
@@ -1340,6 +1494,57 @@ function startRefreshTimer() {
     const s = diff % 60;
     document.getElementById('refreshTimer').textContent = `${pad(h)}:${pad(m)}:${pad(s)} 후 갱신`;
   }, 1000);
+}
+
+/* ===========================
+   TREND CARDS
+=========================== */
+function renderTrendCards() {
+  const items = getFilteredItems();
+  const isMusinsa = state.platform === 'musinsa';
+
+  // 1. 급상승
+  const rising = items
+    .filter(i => typeof i.change === 'number' && i.change > 0)
+    .sort((a, b) => b.change - a.change)
+    .slice(0, 5);
+
+  // 2. 신규 진입
+  const newItems = items.filter(i => i.change === 'NEW').slice(0, 5);
+
+  // 3. 할인 특가
+  const deals = items
+    .filter(i => i.discountRate > 0)
+    .sort((a, b) => b.discountRate - a.discountRate)
+    .slice(0, 5);
+
+  function productRow(item, metaHtml, metaClass) {
+    const url = getProductUrl(item);
+    return `
+      <a class="trend-product-row" href="${url}" target="_blank" rel="noopener noreferrer">
+        <div class="trend-rank-badge">${item.rank}</div>
+        <div class="trend-product-info">
+          <div class="trend-product-name">${item.name}</div>
+          <div class="trend-product-brand">${item.brand}</div>
+        </div>
+        <div class="trend-product-meta">
+          <div class="trend-meta-main ${metaClass}">${metaHtml}</div>
+          <div class="trend-meta-sub">${item.finalPrice.toLocaleString()}원</div>
+        </div>
+      </a>`;
+  }
+
+  document.getElementById('trendRise').innerHTML = rising.length
+    ? rising.map(i => productRow(i, `▲${i.change}`, 'rise')).join('')
+    : '<div class="trend-empty">순위 상승 상품 없음</div>';
+
+  document.getElementById('trendNew').innerHTML = newItems.length
+    ? newItems.map(i => productRow(i, 'NEW', 'new')).join('')
+    : '<div class="trend-empty">신규 진입 상품 없음</div>';
+
+  document.getElementById('trendDeal').innerHTML = deals.length
+    ? deals.map(i => productRow(i, `-${i.discountRate}%`, 'deal')).join('')
+    : '<div class="trend-empty">할인 상품 없음</div>';
 }
 
 /* ===========================
