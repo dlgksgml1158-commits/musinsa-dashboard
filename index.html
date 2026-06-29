@@ -960,21 +960,21 @@
       position: fixed;
       background: var(--text);
       color: #fff;
-      border-radius: 10px;
-      padding: 12px 16px;
-      font-size: 13px;
+      border-radius: 8px;
+      padding: 8px 11px;
+      font-size: 11px;
       pointer-events: none;
       z-index: 9000;
       opacity: 0;
       transition: opacity 0.15s;
-      min-width: 180px;
-      box-shadow: 0 8px 24px rgba(0,0,0,.2);
+      min-width: 140px;
+      box-shadow: 0 4px 14px rgba(0,0,0,.2);
     }
     .price-tooltip.show { opacity: 1; }
     .price-tooltip-cat {
       font-weight: 700;
-      font-size: 14px;
-      margin-bottom: 8px;
+      font-size: 12px;
+      margin-bottom: 6px;
     }
     .price-tooltip-row {
       display: flex;
@@ -2145,11 +2145,18 @@ function renderPriceChart() {
       body.classList.add('has-hover');
       col.style.opacity = '1';
       tooltip.showBrand(catStats[i], brand, BRAND_NAME);
-      // 모바일: 화면 하단 고정
-      el.style.left = '50%';
-      el.style.transform = 'translateX(-50%)';
-      el.style.top = 'auto';
-      el.style.bottom = '16px';
+      // 모바일: 탭 위치 근처 표시
+      const touch = e.changedTouches[0];
+      const tw = el.offsetWidth || 150;
+      const th = el.offsetHeight || 160;
+      let tx = touch.clientX + 12;
+      let ty = touch.clientY - th - 12;
+      if (tx + tw > window.innerWidth - 8) tx = touch.clientX - tw - 12;
+      if (ty < 8) ty = touch.clientY + 12;
+      el.style.left = tx + 'px';
+      el.style.top = ty + 'px';
+      el.style.bottom = '';
+      el.style.transform = '';
       el.style.position = 'fixed';
     });
   });
