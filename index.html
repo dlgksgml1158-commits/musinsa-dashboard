@@ -2021,7 +2021,7 @@ function renderPriceChart() {
   }
 
   const MAX_BAR_HEIGHT = 240;
-  const Y_LEVELS = [30000, 50000, 100000, 150000, 200000]; // 점선 기준 가격
+  const Y_LEVELS = [50000, 100000, 150000, 200000]; // 점선 기준 가격
   const fmt = v => v >= 10000
     ? (v / 10000).toFixed(1).replace(/\.0$/, '') + '만'
     : v.toLocaleString();
