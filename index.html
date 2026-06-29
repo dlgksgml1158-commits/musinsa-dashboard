@@ -1696,10 +1696,10 @@ function renderSidebar() {
 
   document.getElementById('statTotal').textContent = items.length.toLocaleString();
   document.getElementById('statNew').textContent = newItems.length;
-  document.getElementById('statTopUp').textContent = upItems[0] ? `▲${upItems[0].change}` : '—';
-  document.getElementById('statTopUpBrand').textContent = upItems[0]?.brand || '—';
-  document.getElementById('statTopDown').textContent = downItems[0] ? `▼${Math.abs(downItems[0].change)}` : '—';
-  document.getElementById('statTopDownBrand').textContent = downItems[0]?.brand || '—';
+  const _su = document.getElementById('statTopUp'); if (_su) _su.textContent = upItems[0] ? `▲${upItems[0].change}` : '—';
+  const _sub = document.getElementById('statTopUpBrand'); if (_sub) _sub.textContent = upItems[0]?.brand || '—';
+  const _sd = document.getElementById('statTopDown'); if (_sd) _sd.textContent = downItems[0] ? `▼${Math.abs(downItems[0].change)}` : '—';
+  const _sdb = document.getElementById('statTopDownBrand'); if (_sdb) _sdb.textContent = downItems[0]?.brand || '—';
 
   // Brand exposure (top 30)
   const top30 = items.slice(0, 30);
@@ -1730,7 +1730,8 @@ function renderSidebar() {
   const maxCount = Math.max(...catData.map(c => c.count), 1);
   const barColor = isMusinsa ? 'var(--musinsa)' : 'var(--29cm)';
 
-  document.getElementById('categoryChart').innerHTML = catData.length === 0
+  const _cc = document.getElementById('categoryChart'); if (!_cc) return;
+  _cc.innerHTML = catData.length === 0
     ? '<div class="empty-state"><p>전체 카테고리 선택 시 표시됩니다</p></div>'
     : catData.map(c => `
       <div class="trend-item">
