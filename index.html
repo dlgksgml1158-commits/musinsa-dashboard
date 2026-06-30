@@ -609,6 +609,26 @@
     }
 
 
+    /* ── CONTENTS TOP ── */
+    .contents-top {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 24px 28px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .contents-top-col {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      min-height: 80px;
+      box-shadow: var(--card-shadow);
+    }
+    @media (max-width: 900px) {
+      .contents-top { grid-template-columns: 1fr; padding: 16px 16px 0; }
+    }
+
     /* ── TREND CARDS ── */
     .trend-section {
       max-width: 1380px;
@@ -1158,6 +1178,13 @@
 <!-- CATEGORY BAR -->
 <div class="category-bar">
   <div class="nav-inner" id="categoryBar" style="display:flex;gap:8px;flex-wrap:nowrap;"></div>
+</div>
+
+<!-- CONTENTS TOP -->
+<div class="contents-top" id="contentsTop">
+  <div class="contents-top-col"></div>
+  <div class="contents-top-col"></div>
+  <div class="contents-top-col"></div>
 </div>
 
 <!-- TREND CARDS -->
