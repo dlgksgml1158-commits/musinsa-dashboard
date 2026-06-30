@@ -656,6 +656,29 @@ def _diag_category_ranking_endpoints():
     print("  ===== [진단] 종료 =====")
 
 
+def _rebuild_all_from_subcats(categories: dict, limit: int):
+    """개별 서브카테고리 아이템만으로 전체(빈 코드) 목록을 재구성.
+    신발/가방 등 제거된 카테고리 상품이 전체 랭킹에 노출되지 않도록 한다."""
+    seen_ids = set()
+    merged = []
+    for code, items in categories.items():
+        if not code:  # 전체 자신은 건너뜀
+            continue
+        for item in items:
+            uid = item.get("id") or item.get("name", "")
+            if uid not in seen_ids:
+                seen_ids.add(uid)
+                merged.append(item)
+    if merged:
+        merged.sort(key=lambda x: x.get("rank", 9999))
+        # 순위를 1부터 재부여
+        for idx, item in enumerate(merged[:limit]):
+            item = dict(item)
+            item["rank"] = idx + 1
+            merged[idx] = item
+        categories[""] = merged[:limit]
+
+
 def fetch_musinsa() -> dict:
     print("▶ 무신사 랭킹 수집 시작...")
 
@@ -676,6 +699,7 @@ def fetch_musinsa() -> dict:
                 categories[cat_code] = []
                 print(f"    [WARN] {cat_label}: API 응답 없음")
             time.sleep(0.5)
+        _rebuild_all_from_subcats(categories, LIMIT)
         total = sum(len(v) for v in categories.values())
         print(f"  ✓ 무신사 {total}개 수집 완료 (카테고리별 API)")
         return categories
@@ -750,6 +774,7 @@ def fetch_musinsa() -> dict:
             categories[cat_code] = []
             print(f"    [빈목록] {cat_label}: 전용 섹션 없음")
 
+    _rebuild_all_from_subcats(categories, LIMIT)
     total = sum(len(v) for v in categories.values())
     print(f"  ✓ 무신사 {total}개 수집 완료 ({len(categories)}개 카테고리)")
     return categories

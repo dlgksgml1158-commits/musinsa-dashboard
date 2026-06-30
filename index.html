@@ -1896,6 +1896,20 @@ function dealRow(item) {
     </a>`;
 }
 
+// 허용된 카테고리에 속하지 않는 아이템 필터링 (신발/가방/잡화 등 제거된 카테고리 제외)
+const ALLOWED_MUSINSA_CODES = new Set(MUSINSA_CATS.filter(c => c.code).map(c => c.code));
+const ALLOWED_29CM_CODES = new Set(CM29_CATS.filter(c => c.code).map(c => c.code));
+
+function filterAllowedItems(items) {
+  const allowedCodes = state.platform === 'musinsa' ? ALLOWED_MUSINSA_CODES : ALLOWED_29CM_CODES;
+  // 카테고리 코드가 있는 아이템은 허용 목록으로 필터, 없으면(전체 아이템) 통과
+  return items.filter(i => {
+    if (!i.category) return true; // category 코드 없으면 통과 (전체 데이터)
+    // 허용된 코드 또는 그 상위코드로 시작하는 경우 허용
+    return [...allowedCodes].some(code => i.category === code || i.category.startsWith(code));
+  });
+}
+
 function renderTrendCards() {
   const items = getFilteredItems();
 
@@ -1929,17 +1943,29 @@ function renderTrendCards() {
   const muNew = muAll.filter(i => i.change === 'NEW' && bothPlatformBrands.has(i.brand));
   const cmNew = cmAll.filter(i => i.change === 'NEW' && bothPlatformBrands.has(i.brand));
 
-  // 신규 진입한 브랜드 목록을 무신사 순위 기준 상위 3개로 추출
-  const brandRankMap = {};
+  // 브랜드별 베스트 순위 상품 1개씩 추출 후 순위 기준 TOP 3만 노출
+  const brandBestItem = {};
   [...muNew, ...cmNew].forEach(i => {
-    if (!brandRankMap[i.brand] || i.rank < brandRankMap[i.brand]) brandRankMap[i.brand] = i.rank;
+    if (!brandBestItem[i.brand] || i.rank < brandBestItem[i.brand].rank) {
+      brandBestItem[i.brand] = i;
+    }
   });
-  const topNewBrands = Object.keys(brandRankMap)
-    .sort((a, b) => brandRankMap[a] - brandRankMap[b])
+  const topNewItems = Object.values(brandBestItem)
+    .sort((a, b) => a.rank - b.rank)
     .slice(0, 3);
+  const topNewBrands = new Set(topNewItems.map(i => i.brand));
 
-  const muCommonNew = muNew.filter(i => topNewBrands.includes(i.brand));
-  const cmCommonNew = cmNew.filter(i => topNewBrands.includes(i.brand));
+  // 각 플랫폼에서 TOP 3 브랜드 상품만 추출 (브랜드당 1개)
+  const muCommonNew = [];
+  const cmCommonNew = [];
+  const muShown = new Set();
+  const cmShown = new Set();
+  muNew.filter(i => topNewBrands.has(i.brand)).sort((a, b) => a.rank - b.rank).forEach(i => {
+    if (!muShown.has(i.brand)) { muShown.add(i.brand); muCommonNew.push(i); }
+  });
+  cmNew.filter(i => topNewBrands.has(i.brand)).sort((a, b) => a.rank - b.rank).forEach(i => {
+    if (!cmShown.has(i.brand)) { cmShown.add(i.brand); cmCommonNew.push(i); }
+  });
 
   let newHtml = '';
   if (muCommonNew.length || cmCommonNew.length) {
