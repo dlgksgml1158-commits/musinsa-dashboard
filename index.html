@@ -1911,22 +1911,16 @@ function renderTrendCards() {
   const muNewBrands = new Set(muAll.filter(i => i.change === 'NEW').map(i => i.brand));
   const cmNewBrands = new Set(cmAll.filter(i => i.change === 'NEW').map(i => i.brand));
 
-  // 무신사 + 29CM 양쪽 모두 신규 진입한 공통 브랜드의 상품만 표시
-  const commonBrands = new Set([...muNewBrands].filter(b => cmNewBrands.has(b)));
+  // 무신사 + 29CM 양쪽 모두 신규 진입한 공통 브랜드 최대 3개만 표시
+  const commonBrands = [...muNewBrands].filter(b => cmNewBrands.has(b)).slice(0, 3);
 
-  const muCommonNew = muAll.filter(i => i.change === 'NEW' && commonBrands.has(i.brand));
-  const cmCommonNew = cmAll.filter(i => i.change === 'NEW' && commonBrands.has(i.brand));
+  const muCommonNew = muAll.filter(i => i.change === 'NEW' && commonBrands.includes(i.brand));
+  const cmCommonNew = cmAll.filter(i => i.change === 'NEW' && commonBrands.includes(i.brand));
 
   let newHtml = '';
   if (muCommonNew.length || cmCommonNew.length) {
-    // 무신사 항목
-    muCommonNew.forEach(i => {
-      newHtml += newEntryRow(i, 'musinsa');
-    });
-    // 29CM 항목
-    cmCommonNew.forEach(i => {
-      newHtml += newEntryRow(i, '29cm');
-    });
+    muCommonNew.forEach(i => { newHtml += newEntryRow(i, 'musinsa'); });
+    cmCommonNew.forEach(i => { newHtml += newEntryRow(i, '29cm'); });
   }
   document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">양 플랫폼 공통 신규 진입 브랜드가 없습니다</div>';
 
