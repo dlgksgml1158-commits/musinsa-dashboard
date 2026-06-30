@@ -1189,7 +1189,7 @@
 
       <!-- 11~30위 아코디언 -->
       <button class="accordion-header" id="toggleBtnRest" onclick="toggleRest()" style="justify-content:center;">
-        <span style="font-size:12px;">펼치기</span>
+        <span style="font-size:12px;">더보기</span>
       </button>
       <div class="accordion-body" id="rankingRest">
         <div class="ranking-group" id="rankingGroup2">
@@ -1244,7 +1244,7 @@
       <div id="naverSearchList"></div>
       <div id="naverSearchRest" style="display:none;"></div>
       <button class="deal-toggle-btn" id="naverToggleBtn" onclick="toggleNaverRest()">
-        <span id="naverToggleLabel">6~10위 더보기</span>
+        <span id="naverToggleLabel">더보기</span>
         <span class="deal-toggle-chevron" id="naverToggleChevron">▾</span>
       </button>
     </div>
@@ -1279,10 +1279,10 @@
 const MUSINSA_CATS = [
   {code:'', label:'전체'},
   // 상의
-  {code:'001001', label:'반팔 티셔츠'},
-  {code:'001002', label:'긴팔 티셔츠'},
+  {code:'001001', label:'반팔티'},
+  {code:'001002', label:'긴팔티'},
   {code:'001003', label:'맨투맨/스웨트'},
-  {code:'001004', label:'후드 티셔츠'},
+  {code:'001004', label:'후드티'},
   {code:'001005', label:'셔츠/블라우스'},
   {code:'001006', label:'니트/스웨터'},
   // 아우터
@@ -1621,7 +1621,7 @@ function renderNaverSearch() {
 
   // 토글 초기화
   document.getElementById('naverSearchRest').style.display = 'none';
-  document.getElementById('naverToggleLabel').textContent = '6~10위 더보기';
+  document.getElementById('naverToggleLabel').textContent = '더보기';
   document.getElementById('naverToggleChevron').classList.remove('open');
 }
 
@@ -1631,7 +1631,7 @@ function toggleNaverRest() {
   const chevron = document.getElementById('naverToggleChevron');
   const isOpen = rest.style.display !== 'none';
   rest.style.display = isOpen ? 'none' : 'block';
-  label.textContent = isOpen ? '6~10위 더보기' : '접기';
+  label.textContent = isOpen ? '더보기' : '접기';
   chevron.classList.toggle('open', !isOpen);
 }
 
@@ -1645,7 +1645,7 @@ function toggleDealRest() {
   if (!rest) return;
   const isOpen = rest.style.display !== 'none';
   rest.style.display = isOpen ? 'none' : 'block';
-  label.textContent = isOpen ? '6~10위 더보기' : '접기';
+  label.textContent = isOpen ? '더보기' : '접기';
   chevron.classList.toggle('open', !isOpen);
 }
 
@@ -1947,7 +1947,7 @@ function renderTrendCards() {
         ${rest5.map(i => dealRow(i)).join('')}
       </div>
       <button class="deal-toggle-btn" id="dealToggleBtn" onclick="toggleDealRest()">
-        <span id="dealToggleLabel">6~10위 더보기</span>
+        <span id="dealToggleLabel">더보기</span>
         <span class="deal-toggle-chevron" id="dealToggleChevron">▾</span>
       </button>
     ` : '';
