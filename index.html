@@ -450,8 +450,7 @@
     .sidebar { display: flex; flex-direction: column; gap: 16px; padding-top: 27px; }
     .stat-mini-sticky {
       position: fixed;
-      left: 50%;
-      transform: translateX(-50%);
+      right: max(12px, calc((100vw - 1380px) / 4));
       top: 168px;
       z-index: 200;
       width: 160px;
