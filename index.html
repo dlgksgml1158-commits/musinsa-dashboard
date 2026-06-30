@@ -721,6 +721,57 @@
       line-height: 1.4;
     }
 
+    /* ── PROMOTION CARD ── */
+    #promotionCard {
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .promotion-list {
+      flex: 1;
+      overflow-y: auto;
+      scrollbar-width: thin;
+    }
+    .promotion-item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      color: inherit;
+      transition: background .12s;
+    }
+    .promotion-item:last-child { border-bottom: none; }
+    .promotion-item:hover { background: #f8faff; }
+    .promotion-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #dbeafe;
+      color: var(--musinsa);
+      width: fit-content;
+    }
+    .promotion-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+    .promotion-period {
+      font-size: 11px;
+      color: var(--text3);
+    }
+    .promotion-loading {
+      padding: 20px 16px;
+      font-size: 12px;
+      color: var(--text3);
+      text-align: center;
+    }
+
     /* ── FASHION NEWS ── */
     #fashionNewsCard {
       padding: 0;
@@ -1400,7 +1451,16 @@
       <div class="fashion-news-loading">뉴스 로딩 중...</div>
     </div>
   </div>
-  <div class="contents-top-col"></div>
+  <!-- 프로모션 카드 -->
+  <div class="contents-top-col" id="promotionCard">
+    <div class="weather-header">
+      <span class="weather-location">무신사 프로모션</span>
+      <span class="weather-date" id="promotionDate">-</span>
+    </div>
+    <div class="promotion-list" id="promotionList">
+      <div class="promotion-loading">프로모션 정보 준비 중...</div>
+    </div>
+  </div>
 </div>
 
 <!-- TREND CARDS -->
