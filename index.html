@@ -1519,17 +1519,40 @@ function getProductUrl(item) {
 /* ===========================
    RANKING TABLE
 =========================== */
+const SHOE_BAG_KEYWORDS = ['샌들','슬리퍼','스니커','운동화','플립플랍','플립플롭','슬라이드','뮬','로퍼','스니커즈','구두','부츠','아쿠아슈즈','클로그','토트백','숄더백','크로스백','클러치','백팩','지갑','파우치','에코백'];
+function filterByName(items) {
+  return items.filter(i => {
+    const name = (i.name || '').toLowerCase();
+    return !SHOE_BAG_KEYWORDS.some(kw => name.includes(kw));
+  });
+}
+
 function getFilteredItems() {
   const d = state.data[state.platform];
   if (!d) return [];
+
+  const allowedCodes = state.platform === 'musinsa'
+    ? MUSINSA_CATS.filter(c => c.code).map(c => c.code)
+    : CM29_CATS.filter(c => c.code).map(c => c.code);
+
   if (d.categories) {
-    // 해당 카테고리 데이터가 있으면 사용
-    if (d.categories[state.category] !== undefined) {
-      return d.categories[state.category].slice(0, 30);
+    // 특정 서브카테고리 선택
+    if (state.category) {
+      return (d.categories[state.category] || []).slice(0, 30);
     }
-    // 특정 카테고리 선택 시 데이터 없으면 빈 배열 (전체로 fallback 안 함)
-    if (state.category) return [];
-    return (d.categories[''] || []).slice(0, 30);
+    // 전체: 허용된 서브카테고리 데이터만 합쳐서 재구성 (신발/가방 원천 제거)
+    const subData = allowedCodes.flatMap(code => d.categories[code] || []);
+    if (subData.length > 0) {
+      // 중복 제거 후 rank 순 정렬
+      const seen = new Set();
+      const merged = subData
+        .filter(i => { const id = i.id || i.name; if (seen.has(id)) return false; seen.add(id); return true; })
+        .sort((a, b) => (a.rank || 99) - (b.rank || 99))
+        .slice(0, 30);
+      return merged;
+    }
+    // 서브카테고리 데이터가 전혀 없으면 전체 원본에서 이름 키워드 필터 적용
+    return filterByName((d.categories[''] || []).slice(0, 30));
   }
   let items = d.items || [];
   if (state.category) items = items.filter(i => i.category === state.category);
@@ -1973,15 +1996,6 @@ function filterAllowedItems(items) {
   });
 }
 
-// 전체(category='') 아이템에서 허용 카테고리 외 상품명 기반으로 추가 제거
-const SHOE_BAG_KEYWORDS = ['샌들','슬리퍼','스니커','운동화','플립플랍','플립플롭','슬라이드','뮬','로퍼','스니커즈','구두','부츠','아쿠아슈즈','클로그','토트백','숄더백','크로스백','클러치','백팩','지갑','파우치','에코백'];
-function filterByName(items) {
-  return items.filter(i => {
-    if (i.category) return true; // 카테고리 코드 있으면 이미 위에서 검증됨
-    const name = (i.name || '').toLowerCase();
-    return !SHOE_BAG_KEYWORDS.some(kw => name.includes(kw));
-  });
-}
 
 const TREND_SLOT_COUNT = 5;
 
