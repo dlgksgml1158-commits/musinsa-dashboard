@@ -1718,6 +1718,10 @@ async function loadFashionNews() {
     }
   } catch(e) { /* 샘플 사용 */ }
 
+  // 태그 우선순위 정렬: 트렌드 > 브랜드 > 신상 > 셀럽 > 세일
+  const TAG_ORDER = { trend: 0, brand: 1, new: 2, celeb: 3, sale: 4 };
+  news = [...news].sort((a, b) => (TAG_ORDER[a.tag] ?? 9) - (TAG_ORDER[b.tag] ?? 9));
+
   const tagClass = { celeb:'tag-celeb', brand:'tag-brand', trend:'tag-trend', sale:'tag-sale', new:'tag-new' };
   listEl.innerHTML = news.map(n => {
     const href = n.url || `https://search.naver.com/search.naver?query=${encodeURIComponent(n.title)}`;
