@@ -866,9 +866,11 @@
     /* .trend-card-body moved to .trend-card block above */
     .trend-product-row {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 12px;
       padding: 14px 18px;
+      min-height: 72px;
+      box-sizing: border-box;
       border-bottom: 1px solid var(--border);
       transition: background .12s;
       cursor: pointer;
@@ -955,9 +957,6 @@
       display: inline-block;
     }
     .deal-toggle-chevron.open { transform: rotate(180deg); }
-    .trend-product-row {
-      padding: 14px 18px;
-    }
 
     /* 이유 태그 */
     .reason-tag {
