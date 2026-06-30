@@ -1153,7 +1153,7 @@
         <span class="trend-icon deal">%</span>
         할인 특가
       </div>
-      <span class="trend-card-sub">할인율 TOP 10</span>
+      <span class="trend-card-sub" id="trendDealSub">할인율 TOP 10</span>
     </div>
     <div class="trend-card-body" id="trendDeal"></div>
   </div>
@@ -1470,7 +1470,17 @@ function getFilteredItems() {
   const d = state.data[state.platform];
   if (!d) return [];
   if (d.categories) {
-    return (d.categories[state.category] || d.categories[''] || []).slice(0, 30);
+    // 해당 카테고리 데이터가 있으면 사용
+    if (d.categories[state.category]) {
+      return d.categories[state.category].slice(0, 30);
+    }
+    // 없으면 전체에서 category 필드로 필터링 시도
+    const allItems = d.categories[''] || [];
+    if (state.category) {
+      const filtered = allItems.filter(i => i.category === state.category);
+      if (filtered.length > 0) return filtered.slice(0, 30);
+    }
+    return allItems.slice(0, 30);
   }
   let items = d.items || [];
   if (state.category) items = items.filter(i => i.category === state.category);
@@ -1939,6 +1949,14 @@ function renderTrendCards() {
   document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">양 플랫폼 공통 신규 진입 브랜드가 없습니다</div>';
 
   // 3. 할인 특가 (TOP 10, 1~5 고정 노출 / 6~10 토글)
+  // 선택된 카테고리가 있으면 해당 카테고리 아이템만 사용, 없으면 전체
+  const cats = state.platform === 'musinsa' ? MUSINSA_CATS : CM29_CATS;
+  const selectedCat = cats.find(c => c.code === state.category);
+  const dealSubEl = document.getElementById('trendDealSub');
+  if (dealSubEl) {
+    dealSubEl.textContent = selectedCat && state.category ? `${selectedCat.label} 할인율 TOP 10` : '할인율 TOP 10';
+  }
+
   const deals = items
     .filter(i => i.discountRate > 0)
     .sort((a, b) => b.discountRate - a.discountRate)
