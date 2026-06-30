@@ -1675,8 +1675,10 @@ function toggleRest() {
     body.classList.remove('open'); btn.classList.remove('open');
     btn.style.display = '';
     if (btnBottom) btnBottom.style.display = 'none';
-    if (card) { card.style.overflow = 'hidden'; }
-    syncRankingHeight();
+    setTimeout(() => {
+      if (card) { card.style.overflow = 'hidden'; }
+      syncRankingHeight();
+    }, 400);
   }
 }
 
