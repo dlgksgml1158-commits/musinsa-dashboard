@@ -609,6 +609,157 @@
     }
 
 
+    /* ── WEATHER CARD ── */
+    #weatherCard {
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .weather-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px 8px;
+      border-bottom: 1px solid var(--border);
+      background: #fafbfd;
+    }
+    .weather-location {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .weather-date {
+      font-size: 11px;
+      color: var(--text3);
+    }
+    .weather-body {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+    }
+    .weather-main {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+    }
+    .weather-icon {
+      font-size: 36px;
+      line-height: 1;
+    }
+    .weather-temp-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .weather-temp {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1;
+    }
+    .weather-desc {
+      font-size: 12px;
+      color: var(--text2);
+      font-weight: 500;
+    }
+    .weather-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      min-width: 90px;
+    }
+    .weather-detail-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text3);
+    }
+    .weather-val-up { color: var(--down); font-weight: 700; }
+    .weather-val-down { color: var(--musinsa); font-weight: 700; }
+    .weather-val { color: var(--text2); font-weight: 600; }
+    .weather-news {
+      padding: 10px 16px 14px;
+      border-top: 1px solid var(--border);
+      background: #f8faff;
+      flex: 1;
+    }
+    .weather-news-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text3);
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+    .weather-news-body {
+      font-size: 12px;
+      color: var(--text2);
+      line-height: 1.6;
+    }
+
+    /* ── FASHION NEWS ── */
+    #fashionNewsCard {
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .fashion-news-list {
+      flex: 1;
+      overflow-y: auto;
+      max-height: 260px;
+      scrollbar-width: thin;
+    }
+    .fashion-news-item {
+      display: flex;
+      gap: 10px;
+      padding: 10px 16px;
+      border-bottom: 1px solid var(--border);
+      transition: background .12s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .fashion-news-item:last-child { border-bottom: none; }
+    .fashion-news-item:hover { background: #f8faff; }
+    .fashion-news-tag {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-top: 1px;
+    }
+    .tag-celeb { background: #fce7f3; color: #9d174d; }
+    .tag-brand { background: #dbeafe; color: #1d4ed8; }
+    .tag-trend { background: #f3e8ff; color: #7e22ce; }
+    .tag-sale  { background: #fee2e2; color: #b91c1c; }
+    .tag-new   { background: #dcfce7; color: #15803d; }
+    .fashion-news-content { flex: 1; min-width: 0; }
+    .fashion-news-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .fashion-news-sub {
+      font-size: 11px;
+      color: var(--text3);
+    }
+    .fashion-news-loading {
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text3);
+    }
+
     /* ── CONTENTS TOP ── */
     .contents-top {
       max-width: 1380px;
@@ -1182,8 +1333,50 @@
 
 <!-- CONTENTS TOP -->
 <div class="contents-top" id="contentsTop">
-  <div class="contents-top-col"></div>
-  <div class="contents-top-col"></div>
+  <!-- 날씨 카드 -->
+  <div class="contents-top-col" id="weatherCard">
+    <div class="weather-header">
+      <span class="weather-location">📍 서울</span>
+      <span class="weather-date" id="weatherDate">-</span>
+    </div>
+    <div class="weather-body">
+      <div class="weather-main">
+        <span class="weather-icon" id="weatherIcon">⏳</span>
+        <div class="weather-temp-wrap">
+          <span class="weather-temp" id="weatherTemp">--</span>
+          <span class="weather-desc" id="weatherDesc">로딩 중...</span>
+        </div>
+      </div>
+      <div class="weather-detail">
+        <div class="weather-detail-row">
+          <span>최고</span><span id="weatherMax" class="weather-val-up">--</span>
+        </div>
+        <div class="weather-detail-row">
+          <span>최저</span><span id="weatherMin" class="weather-val-down">--</span>
+        </div>
+        <div class="weather-detail-row">
+          <span>바람</span><span id="weatherWind" class="weather-val">--</span>
+        </div>
+        <div class="weather-detail-row">
+          <span>강수</span><span id="weatherRain" class="weather-val">--</span>
+        </div>
+      </div>
+    </div>
+    <div class="weather-news" id="weatherNews">
+      <div class="weather-news-title">🗞 오늘의 날씨 요약</div>
+      <div class="weather-news-body" id="weatherNewsSummary">날씨 데이터 로딩 중...</div>
+    </div>
+  </div>
+  <!-- 패션 뉴스 카드 -->
+  <div class="contents-top-col" id="fashionNewsCard">
+    <div class="weather-header">
+      <span class="weather-location">🗞 패션 이슈</span>
+      <span class="weather-date" id="fashionNewsDate">-</span>
+    </div>
+    <div class="fashion-news-list" id="fashionNewsList">
+      <div class="fashion-news-loading">뉴스 로딩 중...</div>
+    </div>
+  </div>
   <div class="contents-top-col"></div>
 </div>
 
@@ -1439,8 +1632,141 @@ function generateSampleData(platform) {
 /* ===========================
    INIT
 =========================== */
+/* ===========================
+   WEATHER (Seoul, Open-Meteo)
+=========================== */
+const WMO_CODE = {
+  0:'맑음',1:'대체로 맑음',2:'구름 조금',3:'흐림',
+  45:'안개',48:'서리 안개',
+  51:'가벼운 이슬비',53:'이슬비',55:'강한 이슬비',
+  61:'약한 비',63:'비',65:'강한 비',
+  71:'약한 눈',73:'눈',75:'강한 눈',
+  77:'싸락눈',
+  80:'약한 소나기',81:'소나기',82:'강한 소나기',
+  85:'약한 눈 소나기',86:'눈 소나기',
+  95:'뇌우',96:'우박 뇌우',99:'강한 우박 뇌우',
+};
+const WMO_ICON = {
+  0:'☀️',1:'🌤',2:'⛅',3:'☁️',
+  45:'🌫',48:'🌫',
+  51:'🌦',53:'🌦',55:'🌧',
+  61:'🌧',63:'🌧',65:'🌧',
+  71:'🌨',73:'❄️',75:'❄️',77:'🌨',
+  80:'🌦',81:'🌧',82:'⛈',
+  85:'🌨',86:'❄️',
+  95:'⛈',96:'⛈',99:'⛈',
+};
+
+function getWeatherSummary(code, tempMax, tempMin, wind, rain) {
+  const desc = WMO_CODE[code] || '알 수 없음';
+  const isRainy = [51,53,55,61,63,65,80,81,82,95,96,99].includes(code);
+  const isSnowy = [71,73,75,77,85,86].includes(code);
+  const isClear = [0,1,2].includes(code);
+  const month = new Date().getMonth() + 1;
+  const isSummer = month >= 6 && month <= 8;
+  const isWinter = month === 12 || month <= 2;
+
+  let summary = `오늘 서울은 ${desc} 날씨입니다. 최고 ${tempMax}°C, 최저 ${tempMin}°C로 `;
+  if (tempMax >= 30) summary += '무더운 하루가 예상됩니다. ';
+  else if (tempMax >= 25) summary += '따뜻한 날씨입니다. ';
+  else if (tempMax >= 15) summary += '쾌적한 날씨입니다. ';
+  else if (tempMax >= 5) summary += '쌀쌀한 날씨입니다. ';
+  else summary += '매우 추운 날씨입니다. ';
+
+  if (isRainy) summary += `강수가 예상되니 우산을 챙기세요. `;
+  if (isSnowy) summary += `눈이 내릴 수 있으니 미끄럼에 주의하세요. `;
+  if (isClear && isSummer) summary += `자외선이 강하니 선크림을 바르세요. `;
+  if (wind >= 20) summary += `바람이 강하게 불 예정입니다.`;
+  else if (isClear) summary += `야외 활동하기 좋은 날씨입니다.`;
+
+  return summary;
+}
+
+/* ===========================
+   FASHION NEWS
+=========================== */
+// GitHub Actions로 수집한 패션 뉴스 JSON 로드
+// 없을 경우 큐레이션된 샘플 노출
+const FASHION_NEWS_SAMPLE = [
+  { tag: 'celeb', tagLabel: '셀럽', title: '뉴진스 하니, 버버리 2025 S/S 앰배서더 공식 선정', sub: '버버리 공식 SNS 발표' },
+  { tag: 'celeb', tagLabel: '셀럽', title: '아이유, 구찌 가든 익스클루시브 컬렉션 착용 포착', sub: '서울 팝업 스토어 방문' },
+  { tag: 'trend', tagLabel: '트렌드', title: '2025 여름 키워드: 린넨 셔츠 + 와이드 팬츠 조합 폭발적 인기', sub: '무신사 검색량 전주 대비 ▲47%' },
+  { tag: 'brand', tagLabel: '브랜드', title: '디스이즈네버댓 × 뉴발란스 콜라보 발매 예고', sub: '6/28 한정 발매 예정' },
+  { tag: 'new', tagLabel: '신상', title: '아더에러 2025 여름 드롭 2탄 공개 — 그래픽 반팔 주목', sub: '온라인 단독 선발매' },
+  { tag: 'sale', tagLabel: '세일', title: '무신사 여름 빅세일 시작 — 최대 60% 할인', sub: '6/27~7/7 한정' },
+  { tag: 'trend', tagLabel: '트렌드', title: '카고 팬츠 → 슬랙스 전환 트렌드, MZ세대 중심 확산', sub: '29CM 슬랙스 판매량 전월 대비 ▲32%' },
+  { tag: 'celeb', tagLabel: '셀럽', title: 'BTS 뷔, 셀린느 글로벌 앰배서더 3년 연속 재계약', sub: '파리 패션위크 초청 예정' },
+];
+
+async function loadFashionNews() {
+  const dateEl = document.getElementById('fashionNewsDate');
+  const listEl = document.getElementById('fashionNewsList');
+
+  const now = new Date();
+  const today = now.toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
+  const yesterday = new Date(now - 86400000).toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
+  if (dateEl) dateEl.textContent = `${yesterday} ~ ${today}`;
+
+  let news = FASHION_NEWS_SAMPLE;
+
+  // data/fashion_news.json 있으면 우선 사용 (GitHub Actions 수집 데이터)
+  try {
+    const res = await fetch(`data/fashion_news.json?t=${Date.now()}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data) && data.length > 0) news = data;
+    }
+  } catch(e) { /* 샘플 사용 */ }
+
+  const tagClass = { celeb:'tag-celeb', brand:'tag-brand', trend:'tag-trend', sale:'tag-sale', new:'tag-new' };
+  listEl.innerHTML = news.map(n => `
+    <div class="fashion-news-item">
+      <span class="fashion-news-tag ${tagClass[n.tag] || 'tag-trend'}">${n.tagLabel || n.tag}</span>
+      <div class="fashion-news-content">
+        <div class="fashion-news-title">${n.title}</div>
+        <div class="fashion-news-sub">${n.sub || ''}</div>
+      </div>
+    </div>
+  `).join('');
+}
+
+async function loadWeather() {
+  try {
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current=temperature_2m,weathercode,windspeed_10m,precipitation&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Asia%2FSeoul&forecast_days=1';
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('weather api error');
+    const data = await res.json();
+
+    const cur = data.current;
+    const daily = data.daily;
+    const code = cur.weathercode;
+    const temp = Math.round(cur.temperature_2m);
+    const wind = Math.round(cur.windspeed_10m);
+    const rain = cur.precipitation ?? 0;
+    const tMax = Math.round(daily.temperature_2m_max[0]);
+    const tMin = Math.round(daily.temperature_2m_min[0]);
+    const rainSum = (daily.precipitation_sum[0] ?? 0).toFixed(1);
+
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'short' });
+
+    document.getElementById('weatherDate').textContent = dateStr;
+    document.getElementById('weatherIcon').textContent = WMO_ICON[code] || '🌡';
+    document.getElementById('weatherTemp').textContent = `${temp}°C`;
+    document.getElementById('weatherDesc').textContent = WMO_CODE[code] || '-';
+    document.getElementById('weatherMax').textContent = `${tMax}°C`;
+    document.getElementById('weatherMin').textContent = `${tMin}°C`;
+    document.getElementById('weatherWind').textContent = `${wind}km/h`;
+    document.getElementById('weatherRain').textContent = `${rainSum}mm`;
+    document.getElementById('weatherNewsSummary').textContent = getWeatherSummary(code, tMax, tMin, wind, rainSum);
+  } catch(e) {
+    document.getElementById('weatherDesc').textContent = '날씨 데이터 불러오기 실패';
+    document.getElementById('weatherNewsSummary').textContent = '잠시 후 다시 시도해 주세요.';
+  }
+}
+
 async function init() {
-  await Promise.all([loadData('musinsa'), loadData('29cm'), loadKinlockStats()]);
+  await Promise.all([loadData('musinsa'), loadData('29cm'), loadKinlockStats(), loadWeather(), loadFashionNews()]);
   renderCategoryBar();
   renderTrendCards();
   renderRanking();
