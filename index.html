@@ -1142,7 +1142,7 @@
         <span class="trend-icon new">N</span>
         신규 진입
       </div>
-      <span class="trend-card-sub">무신사 + 29CM 신규</span>
+      <span class="trend-card-sub">양 플랫폼 공통 신규 브랜드</span>
     </div>
     <div class="trend-card-body" id="trendNew"></div>
   </div>
@@ -1908,25 +1908,27 @@ function renderTrendCards() {
   const muAll = muData ? (muData.categories ? Object.values(muData.categories).flat() : muData.items || []) : [];
   const cmAll = cmData ? (cmData.categories ? Object.values(cmData.categories).flat() : cmData.items || []) : [];
 
-  const muNew = muAll.filter(i => i.change === 'NEW').slice(0, 3);
-  const cmNew = cmAll.filter(i => i.change === 'NEW').slice(0, 3);
+  const muNewBrands = new Set(muAll.filter(i => i.change === 'NEW').map(i => i.brand));
+  const cmNewBrands = new Set(cmAll.filter(i => i.change === 'NEW').map(i => i.brand));
+
+  // 무신사 + 29CM 양쪽 모두 신규 진입한 공통 브랜드의 상품만 표시
+  const commonBrands = new Set([...muNewBrands].filter(b => cmNewBrands.has(b)));
+
+  const muCommonNew = muAll.filter(i => i.change === 'NEW' && commonBrands.has(i.brand));
+  const cmCommonNew = cmAll.filter(i => i.change === 'NEW' && commonBrands.has(i.brand));
 
   let newHtml = '';
-  if (muNew.length) {
-    newHtml += `<div class="platform-divider">
-      <div class="platform-divider-dot" style="background:var(--musinsa);"></div>
-      <span class="platform-divider-label" style="color:var(--musinsa);">무신사</span>
-    </div>`;
-    newHtml += muNew.map(i => newEntryRow(i, 'musinsa')).join('');
+  if (muCommonNew.length || cmCommonNew.length) {
+    // 무신사 항목
+    muCommonNew.forEach(i => {
+      newHtml += newEntryRow(i, 'musinsa');
+    });
+    // 29CM 항목
+    cmCommonNew.forEach(i => {
+      newHtml += newEntryRow(i, '29cm');
+    });
   }
-  if (cmNew.length) {
-    newHtml += `<div class="platform-divider">
-      <div class="platform-divider-dot" style="background:var(--29cm);"></div>
-      <span class="platform-divider-label" style="color:var(--29cm);">29CM</span>
-    </div>`;
-    newHtml += cmNew.map(i => newEntryRow(i, '29cm')).join('');
-  }
-  document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">신규 진입 상품이 없습니다</div>';
+  document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">양 플랫폼 공통 신규 진입 브랜드가 없습니다</div>';
 
   // 3. 할인 특가 (TOP 10, 1~5 고정 노출 / 6~10 토글)
   const deals = items
