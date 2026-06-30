@@ -1355,7 +1355,7 @@
   <!-- 날씨 카드 -->
   <div class="contents-top-col" id="weatherCard">
     <div class="weather-header">
-      <span class="weather-location">📍 서울</span>
+      <span class="weather-location">서울</span>
       <span class="weather-date" id="weatherDate">-</span>
     </div>
     <div class="weather-body">
@@ -1382,16 +1382,16 @@
       </div>
     </div>
     <div class="weather-news" id="weatherNews">
-      <div class="weather-news-title">📅 이번 주 날씨 요약</div>
+      <div class="weather-news-title">이번 주 날씨 요약</div>
       <div class="weather-news-body" id="weatherNewsSummary">날씨 데이터 로딩 중...</div>
-      <div class="weather-news-title" style="margin-top:10px;">🛍 이번 주 판매 효과 예상 상품</div>
+      <div class="weather-news-title" style="margin-top:10px;">이번 주 판매 효과 예상 상품</div>
       <div id="weatherProductRec"></div>
     </div>
   </div>
   <!-- 패션 뉴스 카드 -->
   <div class="contents-top-col" id="fashionNewsCard">
     <div class="weather-header">
-      <span class="weather-location">🗞 패션 이슈</span>
+      <span class="weather-location">패션 이슈</span>
       <span class="weather-date" id="fashionNewsDate">-</span>
     </div>
     <div class="fashion-news-list" id="fashionNewsList">
@@ -1825,7 +1825,7 @@ async function loadWeather() {
     const recs = getWeeklyProductRecs(avgMax, avgMin, rainyDays, hotDays, coldDays);
     document.getElementById('weatherProductRec').innerHTML = recs.map(r => `
       <div class="weather-product-item">
-        <span class="weather-product-name">📦 ${r.name}</span>
+        <span class="weather-product-name">${r.name}</span>
         <span class="weather-product-reason">— ${r.reason}</span>
       </div>
     `).join('');
