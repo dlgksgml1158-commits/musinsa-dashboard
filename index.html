@@ -993,12 +993,10 @@
     .price-tooltip-row .val { font-weight: 600; }
 
     .price-chart-legend {
-      padding: 12px 28px;
-      border-top: 1px solid var(--border);
+      padding: 10px 28px 0;
       display: flex;
       align-items: center;
       gap: 20px;
-      background: #fafbfd;
       flex-wrap: wrap;
     }
     .legend-item {
@@ -1266,13 +1264,13 @@
       <span class="title" id="priceChartTitle">카테고리별 평균 가격대</span>
       <span class="sub" id="priceChartSub">랭킹 내 상품 기준</span>
     </div>
+    <div class="price-chart-legend" id="priceChartLegend"></div>
     <div class="price-chart-wrap">
       <div class="price-y-axis" id="priceYAxis"></div>
       <div class="price-chart-body" id="priceChartBody">
         <div class="price-no-data">데이터 로딩 중...</div>
       </div>
     </div>
-    <div class="price-chart-legend" id="priceChartLegend"></div>
   </div>
 </div>
 
