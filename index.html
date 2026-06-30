@@ -448,6 +448,13 @@
 
     /* ── SIDEBAR ── */
     .sidebar { display: flex; flex-direction: column; gap: 16px; padding-top: 27px; }
+    .stat-mini-sticky {
+      position: sticky;
+      top: 70px;
+      z-index: 50;
+      border-left: 3px solid #22c55e;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    }
 
     /* Stats grid */
     .stats-grid {
@@ -1253,8 +1260,8 @@
 
   <!-- RIGHT: 사이드바 -->
   <div class="sidebar">
-    <!-- 통계 카드 -->
-    <div class="stat-mini">
+    <!-- 커넥트킨록 노출 회차 고정 카드 -->
+    <div class="stat-mini stat-mini-sticky">
       <div class="stat-mini-top">
         <div class="stat-label" style="color:rgba(34,197,94,0.55);">커넥트킨록</div>
         <div class="stat-sub">노출 회차</div>
