@@ -11,6 +11,7 @@ GitHub Actions에서 1시간마다 자동 실행됩니다.
 """
 
 import json
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -784,11 +785,84 @@ def fetch_musinsa() -> dict:
 #  29CM API
 # ═══════════════════════════════════════════════════
 
+# 29CM는 무신사와 동일한 의류 카테고리 체계로 노출한다.
+# 29CM 베스트 API는 카테고리별 전용 코드가 불안정하므로, 넓은 베스트 풀을
+# 수집한 뒤 상품명 키워드로 무신사와 동일한 카테고리로 분류한다.
 CM29_CATEGORIES = [
-    {"code": "",        "label": "전체",      "largeCode": None},
-    {"code": "women",   "label": "여성의류",  "largeCode": "268100100"},
-    {"code": "men",     "label": "남성의류",  "largeCode": "272100100"},
+    {"code": "",       "label": "전체"},
+    {"code": "001001", "label": "반팔티"},
+    {"code": "001002", "label": "긴팔티"},
+    {"code": "001003", "label": "맨투맨/스웨트"},
+    {"code": "001004", "label": "후드티"},
+    {"code": "001005", "label": "셔츠/블라우스"},
+    {"code": "001006", "label": "니트/스웨터"},
+    {"code": "002",    "label": "아우터"},
+    {"code": "003001", "label": "데님 팬츠"},
+    {"code": "003002", "label": "슬랙스"},
+    {"code": "003003", "label": "트레이닝/조거"},
+    {"code": "003005", "label": "반바지"},
 ]
+
+# 넓은 풀 수집을 위한 29CM 대분류 코드(전체/여성의류/남성의류)
+CM29_POOL_LARGE_CODES = [None, "268100100", "272100100"]
+
+CM29_LABEL_BY_CODE = {c["code"]: c["label"] for c in CM29_CATEGORIES}
+
+
+def _classify_29cm_category(name: str) -> str:
+    """29CM 상품명을 무신사 카테고리 코드로 분류. 의류가 아니면 ''(미분류)."""
+    if not name:
+        return ""
+    n = name.lower()
+
+    def has(*kws):
+        return any(k in n for k in kws)
+
+    # 1) 후드 (집업 후드 포함)
+    if has("후드", "hood"):
+        return "001004"
+    # 2) 맨투맨 / 스웨트셔츠
+    if has("맨투맨", "mtm", "스웨트셔츠", "스웨트 셔츠", "sweatshirt", "크루넥 스웨트"):
+        return "001003"
+    # 3) 니트 / 스웨터 / 가디건
+    if has("니트", "knit", "스웨터", "sweater", "가디건", "cardigan", "풀오버", "pullover"):
+        return "001006"
+    # 4) 셔츠 / 블라우스 (티셔츠 제외)
+    if has("블라우스", "blouse") or ("셔츠" in name and "티셔츠" not in name) or "shirt" in n.replace("t-shirt", "").replace("tshirt", ""):
+        return "001005"
+    # 5) 반팔 티
+    if has("반팔", "반소매", "half sleeve", "short sleeve", "short-sleeve", "s/s", "1/2"):
+        return "001001"
+    # 6) 긴팔 티
+    if has("긴팔", "긴소매", "long sleeve", "long-sleeve", "l/s"):
+        return "001002"
+    # 7) 아우터 (자켓/코트/패딩 등) — 바지 분류보다 먼저 체크
+    if has("자켓", "재킷", "jacket", "점퍼", "점버", "jumper", "코트", "coat",
+           "패딩", "padding", "야상", "블루종", "blouson", "바람막이", "윈드브레이커",
+           "windbreaker", "후리스", "플리스", "fleece", "블레이저", "blazer",
+           "파카", "parka", "다운", "down", "베스트", "vest", "조끼", "집업", "zip-up", "zip up"):
+        return "002"
+    # 8) 슬랙스
+    if has("슬랙스", "slacks", "정장 바지", "정장바지"):
+        return "003002"
+    # 9) 트레이닝 / 조거
+    if has("조거", "jogger", "트레이닝", "training", "트랙 팬츠", "트랙팬츠",
+           "track pants", "스웨트팬츠", "스웨트 팬츠", "sweatpants"):
+        return "003003"
+    # 10) 반바지 / 쇼츠
+    if has("반바지", "숏팬츠", "숏 팬츠", "쇼츠", "쇼트", "shorts", "하프팬츠",
+           "하프 팬츠", "버뮤다", "bermuda"):
+        return "003005"
+    # 11) 데님 팬츠 (데님 아우터는 위에서 처리됨)
+    if has("데님", "denim", "청바지", "진 팬츠", "jean", "jeans"):
+        return "003001"
+    # 12) 일반 티셔츠/티 → 여름 기준 반팔티로 분류
+    if has("티셔츠", "t-shirt", "tshirt", "tee", "반팔티", "튜블러", "tubular"):
+        return "001001"
+    # 한글 단어가 '티'로 끝나는 경우(링거티/웨일티 등) → 티셔츠로 간주
+    if re.search(r"[가-힣]티(?:[\s_/()\[\]]|$)", name):
+        return "001001"
+    return ""
 
 
 def _fetch_29cm_recommend(large_code) -> list:
@@ -840,28 +914,50 @@ def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> di
 
 
 def fetch_29cm() -> dict:
-    print("▶ 29CM \ub7ad\ud0b9 \uc218\uc9d1 \uc2dc\uc791...")
+    print("▶ 29CM 랭킹 수집 시작...")
 
-    categories = {}
-    for cat in CM29_CATEGORIES:
-        code = cat["code"]
-        label = cat["label"]
-        large = cat["largeCode"]
+    # 1) 넓은 베스트 풀 수집 (전체 + 여성의류 + 남성의류)
+    seen = set()
+    pool = []  # 최초 등장 순서 = 베스트 우선순위
+    for large in CM29_POOL_LARGE_CODES:
         try:
             raw_items = _fetch_29cm_recommend(large)
-            result = [
-                _build_29cm_item(item, idx + 1, code, label)
-                for idx, item in enumerate(raw_items[:LIMIT])
-            ]
-            categories[code] = result
-            print(f"    ✓ [{label}] {len(result)}\uac1c")
         except Exception as e:
-            print(f"    [WARN] 29CM [{label}] \uc2e4\ud328: {e}")
-            categories[code] = []
+            print(f"    [WARN] 29CM 풀 수집 실패(large={large}): {e}")
+            raw_items = []
+        for item in raw_items:
+            no = str(item.get("itemNo", ""))
+            if no and no not in seen:
+                seen.add(no)
+                pool.append(item)
         time.sleep(0.4)
 
+    print(f"    · 베스트 풀 {len(pool)}개 수집")
+
+    # 2) 상품명 키워드로 무신사 동일 카테고리 분류
+    buckets = {c["code"]: [] for c in CM29_CATEGORIES if c["code"]}
+    clothing_ordered = []  # 전체(의류) 재구성용
+    for item in pool:
+        code = _classify_29cm_category(item.get("itemName", ""))
+        if not code:
+            continue  # 가방/신발/원피스 등 무신사 미대응 → 제외
+        b = buckets[code]
+        b.append(_build_29cm_item(item, len(b) + 1, code, CM29_LABEL_BY_CODE[code]))
+        clothing_ordered.append(item)
+
+    categories = {}
+    categories[""] = [
+        _build_29cm_item(item, idx + 1, "", "전체")
+        for idx, item in enumerate(clothing_ordered[:LIMIT])
+    ]
+    for code, items in buckets.items():
+        categories[code] = items[:LIMIT]
+
+    nonempty = sum(1 for v in categories.values() if v)
     total = sum(len(v) for v in categories.values())
-    print(f"  ✓ 29CM {total}\uac1c \uc218\uc9d1 \uc644\ub8cc ({len(categories)}\uac1c \uce74\ud14c\uace0\ub9ac)")
+    print(f"  ✓ 29CM {total}개 수집 완료 ({nonempty}/{len(categories)}개 카테고리)")
+    for c in CM29_CATEGORIES:
+        print(f"      [{c['label']}] {len(categories.get(c['code'], []))}개")
     return categories
 
 
