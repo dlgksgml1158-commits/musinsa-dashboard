@@ -1174,7 +1174,8 @@
 
       <!-- 1~10위 -->
       <div class="ranking-group" id="rankingGroup1">
-        <table>
+        <table style="table-layout:fixed;width:100%;">
+          <colgroup><col style="width:56px"><col><col style="width:64px"><col style="width:110px"><col style="width:72px"></colgroup>
           <thead>
             <tr>
               <th>순위</th>
@@ -1200,13 +1201,15 @@
       </button>
       <div class="accordion-body" id="rankingRest">
         <div class="ranking-group" id="rankingGroup2">
-          <table>
+          <table style="table-layout:fixed;width:100%;">
+            <colgroup><col style="width:56px"><col><col style="width:64px"><col style="width:110px"><col style="width:72px"></colgroup>
             <thead><tr><th>순위</th><th>상품</th><th class="change-col">변동</th><th class="price-col">가격</th><th class="discount-col">할인율</th></tr></thead>
             <tbody id="rankingTbody2"></tbody>
           </table>
         </div>
         <div class="ranking-group" id="rankingGroup3">
-          <table>
+          <table style="table-layout:fixed;width:100%;">
+            <colgroup><col style="width:56px"><col><col style="width:64px"><col style="width:110px"><col style="width:72px"></colgroup>
             <thead><tr><th>순위</th><th>상품</th><th class="change-col">변동</th><th class="price-col">가격</th><th class="discount-col">할인율</th></tr></thead>
             <tbody id="rankingTbody3"></tbody>
           </table>
@@ -1662,14 +1665,18 @@ function toggleRest() {
   const body = document.getElementById('rankingRest');
   const btn = document.getElementById('toggleBtnRest');
   const btnBottom = document.getElementById('toggleBtnRestBottom');
+  const card = document.getElementById('rankingCard');
   if (state.restOpen) {
     body.classList.add('open'); btn.classList.add('open');
     btn.style.display = 'none';
     if (btnBottom) btnBottom.style.display = '';
+    if (card) { card.style.height = 'auto'; card.style.overflow = 'visible'; }
   } else {
     body.classList.remove('open'); btn.classList.remove('open');
     btn.style.display = '';
     if (btnBottom) btnBottom.style.display = 'none';
+    if (card) { card.style.overflow = 'hidden'; }
+    syncRankingHeight();
   }
 }
 
