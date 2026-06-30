@@ -1568,10 +1568,10 @@
 const MUSINSA_CATS = [
   {code:'', label:'전체'},
   // 상의
-  {code:'001001', label:'반팔티'},
-  {code:'001002', label:'긴팔티'},
+  {code:'001001', label:'반소매 티셔츠'},
+  {code:'001002', label:'긴소매 티셔츠'},
   {code:'001003', label:'맨투맨/스웨트'},
-  {code:'001004', label:'후드티'},
+  {code:'001004', label:'후드 티셔츠'},
   {code:'001005', label:'셔츠/블라우스'},
   {code:'001006', label:'니트/스웨터'},
   // 아우터
@@ -2075,7 +2075,7 @@ function renderRanking() {
   const noDataBanner = document.getElementById('noDataBanner');
   if (items.length === 0 && state.category) {
     const d = state.data[state.platform];
-    items = (d?.categories?.[''] || d?.items || []).slice(0, 30);
+    items = filterByName((d?.categories?.[''] || d?.items || []).slice(0, 30));
     if (noDataBanner) noDataBanner.style.display = '';
   } else {
     if (noDataBanner) noDataBanner.style.display = 'none';
@@ -2464,15 +2464,18 @@ function padToSlots(html, count, total) {
 function renderTrendCards() {
   const rawItems = getFilteredItems();
   // 신발/가방 등 제외 카테고리 아이템 필터링
-  const items = filterByName(filterAllowedItems(rawItems));
+  let items = filterByName(filterAllowedItems(rawItems));
 
-  const noData = items.length === 0 && state.category;
+  // 카테고리 데이터 없으면 전체 데이터(신발 제외)로 폴백
+  if (items.length === 0 && state.category) {
+    const d = state.data[state.platform];
+    items = filterByName((d?.categories?.[''] || d?.items || []).slice(0, 30));
+  }
+
   const noDataMsg = '<div class="trend-empty">해당 카테고리 데이터 준비 중입니다</div>';
 
   // 1. 급상승 — 변동 데이터 있으면 우선 사용, 없으면 TOP 랭킹으로 대체
-  if (noData) {
-    document.getElementById('trendRise').innerHTML = noDataMsg;
-  } else {
+  {
     const rising = items
       .filter(i => typeof i.change === 'number' && i.change > 0)
       .sort((a, b) => b.change - a.change)
@@ -2547,9 +2550,7 @@ function renderTrendCards() {
     .slice(0, 10);
 
   if (!deals.length) {
-    document.getElementById('trendDeal').innerHTML = noData
-      ? noDataMsg
-      : '<div class="trend-empty">할인 상품이 없습니다</div>';
+    document.getElementById('trendDeal').innerHTML = '<div class="trend-empty">할인 상품이 없습니다</div>';
   } else {
     const top5 = deals.slice(0, 5);
     const rest5 = deals.slice(5);
