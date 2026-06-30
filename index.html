@@ -697,6 +697,25 @@
       font-size: 12px;
       color: var(--text2);
       line-height: 1.6;
+      margin-bottom: 2px;
+    }
+    .weather-product-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 11px;
+    }
+    .weather-product-item:last-child { border-bottom: none; }
+    .weather-product-name {
+      font-weight: 700;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    .weather-product-reason {
+      color: var(--text3);
+      line-height: 1.4;
     }
 
     /* ── FASHION NEWS ── */
@@ -1363,8 +1382,10 @@
       </div>
     </div>
     <div class="weather-news" id="weatherNews">
-      <div class="weather-news-title">🗞 오늘의 날씨 요약</div>
+      <div class="weather-news-title">📅 이번 주 날씨 요약</div>
       <div class="weather-news-body" id="weatherNewsSummary">날씨 데이터 로딩 중...</div>
+      <div class="weather-news-title" style="margin-top:10px;">🛍 이번 주 판매 효과 예상 상품</div>
+      <div id="weatherProductRec"></div>
     </div>
   </div>
   <!-- 패션 뉴스 카드 -->
@@ -1718,8 +1739,8 @@ async function loadFashionNews() {
     }
   } catch(e) { /* 샘플 사용 */ }
 
-  // 태그 우선순위 정렬: 트렌드 > 브랜드 > 신상 > 셀럽 > 세일
-  const TAG_ORDER = { trend: 0, brand: 1, new: 2, celeb: 3, sale: 4 };
+  // 태그 우선순위 정렬: 트렌드 > 신상 > 세일 > 브랜드 > 셀럽
+  const TAG_ORDER = { trend: 0, new: 1, sale: 2, brand: 3, celeb: 4 };
   news = [...news].sort((a, b) => (TAG_ORDER[a.tag] ?? 9) - (TAG_ORDER[b.tag] ?? 9));
 
   const tagClass = { celeb:'tag-celeb', brand:'tag-brand', trend:'tag-trend', sale:'tag-sale', new:'tag-new' };
@@ -1736,9 +1757,28 @@ async function loadFashionNews() {
   }).join('');
 }
 
+function getWeeklyProductRecs(avgMax, avgMin, rainyDays, hotDays, coldDays) {
+  const recs = [];
+  if (hotDays >= 3)
+    recs.push({ name: '반팔 티셔츠 / 린넨 셔츠', reason: `주중 ${hotDays}일 이상 25°C↑ — 가볍고 통기성 좋은 여름 상의 수요 급증 예상` });
+  if (rainyDays >= 2)
+    recs.push({ name: '방수 재킷 / 우비', reason: `이번 주 ${rainyDays}일 강수 예보 — 우천 대비 아우터 및 방수 아이템 판매 효과 기대` });
+  if (avgMax >= 28)
+    recs.push({ name: '반바지 / 숏 팬츠', reason: `평균 최고 ${avgMax}°C로 무더운 날씨 — 시원한 하의 카테고리 인기 상승 전망` });
+  if (avgMax >= 22 && avgMax < 28)
+    recs.push({ name: '와이드 팬츠 / 슬랙스', reason: `낮 기온 쾌적 — 격식 있으면서 편안한 하의 선호도 증가 예상` });
+  if (avgMin <= 15)
+    recs.push({ name: '가디건 / 얇은 아우터', reason: `일교차 큰 날씨 — 아침저녁 쌀쌀함 대비 레이어드 아이템 수요 발생` });
+  if (hotDays >= 4)
+    recs.push({ name: '선글라스 / 모자', reason: `맑고 더운 날 지속 — 자외선 차단 패션 잡화 판매 상승 기대` });
+  if (recs.length === 0)
+    recs.push({ name: '맨투맨 / 스웨트셔츠', reason: `평이한 날씨 — 무난하게 걸치기 좋은 기본 아이템 꾸준한 수요 예상` });
+  return recs;
+}
+
 async function loadWeather() {
   try {
-    const url = 'https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current=temperature_2m,weathercode,windspeed_10m,precipitation&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Asia%2FSeoul&forecast_days=1';
+    const url = 'https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current=temperature_2m,weathercode,windspeed_10m,precipitation&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Asia%2FSeoul&forecast_days=7';
     const res = await fetch(url);
     if (!res.ok) throw new Error('weather api error');
     const data = await res.json();
@@ -1748,15 +1788,26 @@ async function loadWeather() {
     const code = cur.weathercode;
     const temp = Math.round(cur.temperature_2m);
     const wind = Math.round(cur.windspeed_10m);
-    const rain = cur.precipitation ?? 0;
+    const rainSum = (daily.precipitation_sum[0] ?? 0).toFixed(1);
     const tMax = Math.round(daily.temperature_2m_max[0]);
     const tMin = Math.round(daily.temperature_2m_min[0]);
-    const rainSum = (daily.precipitation_sum[0] ?? 0).toFixed(1);
+
+    // 주간 통계
+    const weekMaxArr = daily.temperature_2m_max.map(v => Math.round(v));
+    const weekMinArr = daily.temperature_2m_min.map(v => Math.round(v));
+    const weekRainArr = daily.precipitation_sum.map(v => v ?? 0);
+    const weekCodes = daily.weathercode;
+    const avgMax = Math.round(weekMaxArr.reduce((a,b) => a+b,0) / weekMaxArr.length);
+    const avgMin = Math.round(weekMinArr.reduce((a,b) => a+b,0) / weekMinArr.length);
+    const rainyDays = weekRainArr.filter(r => r >= 1).length;
+    const hotDays = weekMaxArr.filter(t => t >= 25).length;
+    const coldDays = weekMinArr.filter(t => t <= 10).length;
 
     const now = new Date();
-    const dateStr = now.toLocaleDateString('ko-KR', { month: 'long', day: 'numeric', weekday: 'short' });
+    const endDate = new Date(now.getTime() + 6 * 86400000);
+    const dateStr = `${now.toLocaleDateString('ko-KR',{month:'long',day:'numeric'})} ~ ${endDate.toLocaleDateString('ko-KR',{month:'long',day:'numeric'})}`;
 
-    document.getElementById('weatherDate').textContent = dateStr;
+    document.getElementById('weatherDate').textContent = now.toLocaleDateString('ko-KR', { month:'long', day:'numeric', weekday:'short' });
     document.getElementById('weatherIcon').textContent = WMO_ICON[code] || '🌡';
     document.getElementById('weatherTemp').textContent = `${temp}°C`;
     document.getElementById('weatherDesc').textContent = WMO_CODE[code] || '-';
@@ -1764,7 +1815,21 @@ async function loadWeather() {
     document.getElementById('weatherMin').textContent = `${tMin}°C`;
     document.getElementById('weatherWind').textContent = `${wind}km/h`;
     document.getElementById('weatherRain').textContent = `${rainSum}mm`;
-    document.getElementById('weatherNewsSummary').textContent = getWeatherSummary(code, tMax, tMin, wind, rainSum);
+
+    // 주간 요약
+    const rainyDesc = rainyDays > 0 ? ` 비 오는 날 ${rainyDays}일 포함,` : '';
+    const summary = `${dateStr} 서울 주간 날씨: 평균 최고 ${avgMax}°C, 최저 ${avgMin}°C.${rainyDesc} ${hotDays >= 3 ? '무더운 날씨가 이어질 전망입니다.' : coldDays >= 3 ? '다소 쌀쌀한 날씨가 예상됩니다.' : '쾌적한 날씨가 지속될 예정입니다.'}`;
+    document.getElementById('weatherNewsSummary').textContent = summary;
+
+    // 상품 추천
+    const recs = getWeeklyProductRecs(avgMax, avgMin, rainyDays, hotDays, coldDays);
+    document.getElementById('weatherProductRec').innerHTML = recs.map(r => `
+      <div class="weather-product-item">
+        <span class="weather-product-name">📦 ${r.name}</span>
+        <span class="weather-product-reason">— ${r.reason}</span>
+      </div>
+    `).join('');
+
   } catch(e) {
     document.getElementById('weatherDesc').textContent = '날씨 데이터 불러오기 실패';
     document.getElementById('weatherNewsSummary').textContent = '잠시 후 다시 시도해 주세요.';
