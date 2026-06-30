@@ -659,6 +659,11 @@
     }
     .trend-product-row:last-of-type { border-bottom: none; }
     .trend-product-row:hover { background: #f8faff; }
+    .trend-product-row.kinlock-highlight { background: #fffbeb; border-left: 3px solid #f59e0b; padding-left: 9px; }
+    .trend-product-row.kinlock-highlight:hover { background: #fef3c7; }
+    .kinlock-badge { font-size: 10px; font-weight: 700; color: #d97706; background: #fef3c7; border: 1px solid #fcd34d; border-radius: 4px; padding: 1px 5px; margin-right: 6px; white-space: nowrap; flex-shrink: 0; }
+    .trend-placeholder { min-height: 52px; border-bottom: 1px solid var(--border); }
+    .trend-placeholder:last-of-type { border-bottom: none; }
     .trend-rank-badge {
       width: 26px; height: 26px;
       border-radius: 6px;
@@ -1861,8 +1866,10 @@ function newEntryRow(item, platform) {
   const url = getProductUrl(item);
   state.platform = savedPlatform;
   const reason = getNewReason(item, platform === 'musinsa' ? '무신사' : '29CM');
+  const isKinlock = item.brand === '커넥트킨록';
   return `
-    <a class="trend-product-row" href="${url}" target="_blank" rel="noopener noreferrer">
+    <a class="trend-product-row${isKinlock ? ' kinlock-highlight' : ''}" href="${url}" target="_blank" rel="noopener noreferrer">
+      ${isKinlock ? '<span class="kinlock-badge">★ 커넥트킨록</span>' : ''}
       <div class="trend-product-info">
         <div class="trend-product-name">${item.name}</div>
         <div class="trend-product-brand">${item.brand}</div>
@@ -1904,6 +1911,17 @@ function filterAllowedItems(items) {
   });
 }
 
+const TREND_SLOT_COUNT = 5;
+
+function emptySlotRow() {
+  return `<div class="trend-product-row trend-placeholder" style="pointer-events:none;">&nbsp;</div>`;
+}
+
+function padToSlots(html, count, total) {
+  const empty = total < count ? Array(count - total).fill(emptySlotRow()).join('') : '';
+  return html + empty;
+}
+
 function renderTrendCards() {
   const items = getFilteredItems();
 
@@ -1917,14 +1935,15 @@ function renderTrendCards() {
     const rising = items
       .filter(i => typeof i.change === 'number' && i.change > 0)
       .sort((a, b) => b.change - a.change)
-      .slice(0, 5);
+      .slice(0, TREND_SLOT_COUNT);
 
     const hasChangeData = rising.length > 0;
-    const riseItems = hasChangeData ? rising : items.slice(0, 5);
+    const riseItems = hasChangeData ? rising : items.slice(0, TREND_SLOT_COUNT);
 
     document.getElementById('trendRiseSub').textContent = hasChangeData ? '순위 상승폭 TOP 5' : '현재 인기 TOP 5';
+    const riseHtml = riseItems.map(i => risingRow(i, hasChangeData)).join('');
     document.getElementById('trendRise').innerHTML = riseItems.length
-      ? riseItems.map(i => risingRow(i, hasChangeData)).join('')
+      ? padToSlots(riseHtml, TREND_SLOT_COUNT, riseItems.length)
       : '<div class="trend-empty">상품 데이터가 없습니다</div>';
   }
 
@@ -1944,23 +1963,30 @@ function renderTrendCards() {
   const muNew = muAll.filter(i => i.change === 'NEW' && bothPlatformBrands.has(i.brand));
   const cmNew = cmAll.filter(i => i.change === 'NEW' && bothPlatformBrands.has(i.brand));
 
-  // 양 플랫폼 신규 진입 상품을 통합 → 브랜드별 베스트 순위 1개 → TOP 3
+  // 무신사 신규 진입 중 커넥트킨록 상품 체크 (플랫폼 무관하게 단독 체크)
+  const muAllNew = muAll.filter(i => i.change === 'NEW');
+  const kinlockMuNew = muAllNew.filter(i => i.brand === '커넥트킨록');
+
+  // 양 플랫폼 신규 진입 상품을 통합 → 브랜드별 베스트 순위 1개 → TOP 5
   const brandBestItem = {};
-  [...muNew, ...cmNew].forEach(i => {
+  [...muNew, ...cmNew, ...kinlockMuNew].forEach(i => {
     if (!brandBestItem[i.brand] || i.rank < brandBestItem[i.brand].rank) {
       brandBestItem[i.brand] = i;
     }
   });
-  const top3NewItems = Object.values(brandBestItem)
+  const top5NewItems = Object.values(brandBestItem)
     .sort((a, b) => a.rank - b.rank)
-    .slice(0, 3);
+    .slice(0, TREND_SLOT_COUNT);
 
   let newHtml = '';
-  top3NewItems.forEach(i => {
-    const platform = muNew.some(m => m.brand === i.brand && m.rank === i.rank) ? 'musinsa' : '29cm';
+  top5NewItems.forEach(i => {
+    const platform = muAll.some(m => m.brand === i.brand && m.rank === i.rank) ? 'musinsa' : '29cm';
     newHtml += newEntryRow(i, platform);
   });
-  document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">양 플랫폼 공통 신규 진입 브랜드가 없습니다</div>';
+  const newEl = document.getElementById('trendNew');
+  newEl.innerHTML = top5NewItems.length
+    ? padToSlots(newHtml, TREND_SLOT_COUNT, top5NewItems.length)
+    : '<div class="trend-empty">양 플랫폼 공통 신규 진입 브랜드가 없습니다</div>';
 
   // 3. 할인 특가 (TOP 10, 1~5 고정 노출 / 6~10 토글)
   // 선택된 카테고리가 있으면 해당 카테고리 아이템만 사용, 없으면 전체
