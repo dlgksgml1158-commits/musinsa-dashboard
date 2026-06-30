@@ -1943,35 +1943,22 @@ function renderTrendCards() {
   const muNew = muAll.filter(i => i.change === 'NEW' && bothPlatformBrands.has(i.brand));
   const cmNew = cmAll.filter(i => i.change === 'NEW' && bothPlatformBrands.has(i.brand));
 
-  // 브랜드별 베스트 순위 상품 1개씩 추출 후 순위 기준 TOP 3만 노출
+  // 양 플랫폼 신규 진입 상품을 통합 → 브랜드별 베스트 순위 1개 → TOP 3
   const brandBestItem = {};
   [...muNew, ...cmNew].forEach(i => {
     if (!brandBestItem[i.brand] || i.rank < brandBestItem[i.brand].rank) {
       brandBestItem[i.brand] = i;
     }
   });
-  const topNewItems = Object.values(brandBestItem)
+  const top3NewItems = Object.values(brandBestItem)
     .sort((a, b) => a.rank - b.rank)
     .slice(0, 3);
-  const topNewBrands = new Set(topNewItems.map(i => i.brand));
-
-  // 각 플랫폼에서 TOP 3 브랜드 상품만 추출 (브랜드당 1개)
-  const muCommonNew = [];
-  const cmCommonNew = [];
-  const muShown = new Set();
-  const cmShown = new Set();
-  muNew.filter(i => topNewBrands.has(i.brand)).sort((a, b) => a.rank - b.rank).forEach(i => {
-    if (!muShown.has(i.brand)) { muShown.add(i.brand); muCommonNew.push(i); }
-  });
-  cmNew.filter(i => topNewBrands.has(i.brand)).sort((a, b) => a.rank - b.rank).forEach(i => {
-    if (!cmShown.has(i.brand)) { cmShown.add(i.brand); cmCommonNew.push(i); }
-  });
 
   let newHtml = '';
-  if (muCommonNew.length || cmCommonNew.length) {
-    muCommonNew.forEach(i => { newHtml += newEntryRow(i, 'musinsa'); });
-    cmCommonNew.forEach(i => { newHtml += newEntryRow(i, '29cm'); });
-  }
+  top3NewItems.forEach(i => {
+    const platform = muNew.some(m => m.brand === i.brand && m.rank === i.rank) ? 'musinsa' : '29cm';
+    newHtml += newEntryRow(i, platform);
+  });
   document.getElementById('trendNew').innerHTML = newHtml || '<div class="trend-empty">양 플랫폼 공통 신규 진입 브랜드가 없습니다</div>';
 
   // 3. 할인 특가 (TOP 10, 1~5 고정 노출 / 6~10 토글)
