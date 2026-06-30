@@ -1136,7 +1136,7 @@
         <span class="trend-icon rise">▲</span>
         인기 급상승
       </div>
-      <span class="trend-card-sub" id="trendRiseSub">순위 상승폭 TOP 5</span>
+      <span class="trend-card-sub" id="trendRiseSub" style="font-size:9px;">TOP 5</span>
     </div>
     <div class="trend-card-body" id="trendRise"></div>
   </div>
@@ -1144,9 +1144,9 @@
     <div class="trend-card-header">
       <div class="trend-card-title">
         <span class="trend-icon new">N</span>
-        신규 진입
+        신규 진입 브랜드
       </div>
-      <span class="trend-card-sub">양 플랫폼 공통 신규 브랜드</span>
+      <span class="trend-card-sub" style="font-size:9px;">양 플랫폼 공통 신규 브랜드</span>
     </div>
     <div class="trend-card-body" id="trendNew"></div>
   </div>
@@ -1228,16 +1228,16 @@
     <!-- 통계 카드 -->
     <div class="stat-mini">
       <div class="stat-mini-top">
-        <div class="stat-label">신규 진입</div>
-        <div class="stat-sub">이번 회차 NEW</div>
+        <div class="stat-label" style="color:rgba(34,197,94,0.55);">커넥트킨록</div>
+        <div class="stat-sub">노출 회차</div>
       </div>
-      <div class="stat-value up" id="statNew" style="text-align:right;">-</div>
+      <div class="stat-value up" id="statNew" style="text-align:right;width:286px;height:20px;">-</div>
     </div>
 
     <!-- 브랜드 노출 현황 -->
     <div class="brand-card">
       <div class="brand-card-header">
-        <span>브랜드 노출 현황</span>
+        <span style="font-size:12px;">브랜드 노출 현황</span>
         <span class="brand-card-sub">TOP10 내</span>
       </div>
       <div id="brandList">
@@ -1248,8 +1248,8 @@
     <!-- 네이버 인기 검색어 -->
     <div class="brand-card">
       <div class="brand-card-header">
-        <span>네이버 인기 검색어</span>
-        <span class="brand-card-sub" id="naverSearchSub">패션 TOP 10</span>
+        <span style="font-size:12px;">네이버 인기 검색어</span>
+        <span class="brand-card-sub" id="naverSearchSub" style="font-size:9px;">패션 TOP 10</span>
       </div>
       <div id="naverSearchList"></div>
       <div id="naverSearchRest" style="display:none;"></div>
@@ -1263,11 +1263,11 @@
 
 <!-- PRICE CHART SECTION -->
 <div class="price-section">
-  <div class="price-section-title">카테고리별 가격 분석</div>
+  <div class="price-section-title" style="font-size:9px;">카테고리별 가격 분석</div>
   <div class="price-chart-card">
     <div class="price-chart-header">
-      <span class="title" id="priceChartTitle">카테고리별 평균 가격대</span>
-      <span class="sub" id="priceChartSub">랭킹 내 상품 기준</span>
+      <span class="title" id="priceChartTitle" style="font-size:12px;">카테고리별 평균 가격대</span>
+      <span class="sub" id="priceChartSub" style="font-size:9px;">무신사 기준</span>
     </div>
     <div class="price-chart-legend" id="priceChartLegend"></div>
     <div class="price-chart-wrap">
@@ -1394,7 +1394,9 @@ function syncRankingHeight() {
 
 async function loadData(platform) {
   try {
-    const res = await fetch(`data/${platform === 'musinsa' ? 'musinsa' : '29cm'}.json?t=${Date.now()}`);
+    const resId = platform === 'musinsa' ? 'musinsaData' : 'cmData';
+    const url = (window.__resources && window.__resources[resId]) || `data/${platform === 'musinsa' ? 'musinsa' : '29cm'}.json?t=${Date.now()}`;
+    const res = await fetch(url);
     if (!res.ok) throw new Error('No data');
     state.data[platform] = await res.json();
     if (platform === state.platform) showToast(`${platform === 'musinsa' ? '무신사' : '29CM'} 데이터 로드 완료 ✓`);
@@ -1940,7 +1942,7 @@ function renderTrendCards() {
     const hasChangeData = rising.length > 0;
     const riseItems = hasChangeData ? rising : items.slice(0, TREND_SLOT_COUNT);
 
-    document.getElementById('trendRiseSub').textContent = hasChangeData ? '순위 상승폭 TOP 5' : '현재 인기 TOP 5';
+    document.getElementById('trendRiseSub').textContent = hasChangeData ? 'TOP 5' : '현재 인기 TOP 5';
     const riseHtml = riseItems.map(i => risingRow(i, hasChangeData)).join('');
     document.getElementById('trendRise').innerHTML = riseItems.length
       ? padToSlots(riseHtml, TREND_SLOT_COUNT, riseItems.length)
@@ -2123,7 +2125,7 @@ function renderPriceChart() {
   const totalSamples = catStats.reduce((a, c) => a + c.count, 0);
   document.getElementById('priceChartTitle').textContent = '카테고리별 평균 가격대';
   document.getElementById('priceChartSub').textContent =
-    `${isMusinsa ? '무신사' : '29CM'} ${totalSamples}개 상품 기준`;
+    `${isMusinsa ? '무신사' : '29CM'} 기준`;
 
   // 브랜드 비교 데이터 (커넥트킨록)
   const BRAND_NAME = '커넥트킨록';
