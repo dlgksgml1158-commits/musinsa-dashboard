@@ -1471,16 +1471,12 @@ function getFilteredItems() {
   if (!d) return [];
   if (d.categories) {
     // 해당 카테고리 데이터가 있으면 사용
-    if (d.categories[state.category]) {
+    if (d.categories[state.category] !== undefined) {
       return d.categories[state.category].slice(0, 30);
     }
-    // 없으면 전체에서 category 필드로 필터링 시도
-    const allItems = d.categories[''] || [];
-    if (state.category) {
-      const filtered = allItems.filter(i => i.category === state.category);
-      if (filtered.length > 0) return filtered.slice(0, 30);
-    }
-    return allItems.slice(0, 30);
+    // 특정 카테고리 선택 시 데이터 없으면 빈 배열 (전체로 fallback 안 함)
+    if (state.category) return [];
+    return (d.categories[''] || []).slice(0, 30);
   }
   let items = d.items || [];
   if (state.category) items = items.filter(i => i.category === state.category);
@@ -1913,19 +1909,26 @@ function filterAllowedItems(items) {
 function renderTrendCards() {
   const items = getFilteredItems();
 
+  const noData = items.length === 0 && state.category;
+  const noDataMsg = '<div class="trend-empty">해당 카테고리 데이터 준비 중입니다</div>';
+
   // 1. 급상승 — 변동 데이터 있으면 우선 사용, 없으면 TOP 랭킹으로 대체
-  const rising = items
-    .filter(i => typeof i.change === 'number' && i.change > 0)
-    .sort((a, b) => b.change - a.change)
-    .slice(0, 5);
+  if (noData) {
+    document.getElementById('trendRise').innerHTML = noDataMsg;
+  } else {
+    const rising = items
+      .filter(i => typeof i.change === 'number' && i.change > 0)
+      .sort((a, b) => b.change - a.change)
+      .slice(0, 5);
 
-  const hasChangeData = rising.length > 0;
-  const riseItems = hasChangeData ? rising : items.slice(0, 5);
+    const hasChangeData = rising.length > 0;
+    const riseItems = hasChangeData ? rising : items.slice(0, 5);
 
-  document.getElementById('trendRiseSub').textContent = hasChangeData ? '순위 상승폭 TOP 5' : '현재 인기 TOP 5';
-  document.getElementById('trendRise').innerHTML = riseItems.length
-    ? riseItems.map(i => risingRow(i, hasChangeData)).join('')
-    : '<div class="trend-empty">상품 데이터가 없습니다</div>';
+    document.getElementById('trendRiseSub').textContent = hasChangeData ? '순위 상승폭 TOP 5' : '현재 인기 TOP 5';
+    document.getElementById('trendRise').innerHTML = riseItems.length
+      ? riseItems.map(i => risingRow(i, hasChangeData)).join('')
+      : '<div class="trend-empty">상품 데이터가 없습니다</div>';
+  }
 
   // 2. 신규 진입 — 무신사 + 29CM 모두
   const muData = state.data['musinsa'];
@@ -1976,7 +1979,9 @@ function renderTrendCards() {
     .slice(0, 10);
 
   if (!deals.length) {
-    document.getElementById('trendDeal').innerHTML = '<div class="trend-empty">할인 상품이 없습니다</div>';
+    document.getElementById('trendDeal').innerHTML = noData
+      ? noDataMsg
+      : '<div class="trend-empty">할인 상품이 없습니다</div>';
   } else {
     const top5 = deals.slice(0, 5);
     const rest5 = deals.slice(5);
