@@ -46,14 +46,6 @@ MUSINSA_CATEGORIES = [
     {"code": "003002", "label": "슬랙스"},
     {"code": "003003", "label": "트레이닝/조거"},
     {"code": "003005", "label": "반바지"},
-    # 기타
-    {"code": "004",    "label": "원피스/스커트"},
-    {"code": "005",    "label": "스포츠"},
-    {"code": "020",    "label": "신발"},
-    {"code": "022",    "label": "가방"},
-    {"code": "023",    "label": "시계/쥬얼리"},
-    {"code": "024",    "label": "패션잡화"},
-    {"code": "026",    "label": "화장품/향수"},
 ]
 
 
@@ -771,12 +763,6 @@ CM29_CATEGORIES = [
     {"code": "",        "label": "전체",      "largeCode": None},
     {"code": "women",   "label": "여성의류",  "largeCode": "268100100"},
     {"code": "men",     "label": "남성의류",  "largeCode": "272100100"},
-    {"code": "shoes",   "label": "신발",      "largeCode": "270100100"},
-    {"code": "bag",     "label": "가방",      "largeCode": "269100100"},
-    {"code": "acc",     "label": "액세서리",  "largeCode": "271100100"},
-    {"code": "jewelry", "label": "주얼리",    "largeCode": "305100100"},
-    {"code": "beauty",  "label": "뷰티",      "largeCode": "266100100"},
-    {"code": "life",    "label": "라이프",    "largeCode": "292100100"},
 ]
 
 
