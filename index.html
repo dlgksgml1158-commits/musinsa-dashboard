@@ -1325,6 +1325,7 @@ let state = {
   data: { musinsa: null, '29cm': null },
   filteredItems: [],
   restOpen: false,
+  kinlockStats: null,
 };
 
 /* ===========================
@@ -1367,7 +1368,7 @@ function generateSampleData(platform) {
    INIT
 =========================== */
 async function init() {
-  await Promise.all([loadData('musinsa'), loadData('29cm')]);
+  await Promise.all([loadData('musinsa'), loadData('29cm'), loadKinlockStats()]);
   renderCategoryBar();
   renderTrendCards();
   renderRanking();
@@ -1390,6 +1391,16 @@ function syncRankingHeight() {
     const h = sidebar.offsetHeight - 27;
     if (h > 0) card.style.height = h + 'px';
   });
+}
+
+async function loadKinlockStats() {
+  try {
+    const res = await fetch(`data/kinlock_stats.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error('No data');
+    state.kinlockStats = await res.json();
+  } catch {
+    state.kinlockStats = null;
+  }
 }
 
 async function loadData(platform) {
@@ -1705,7 +1716,8 @@ function renderSidebar() {
   const downItems = items.filter(i => typeof i.change === 'number' && i.change < 0).sort((a,b) => a.change - b.change);
 
   const _st = document.getElementById('statTotal'); if (_st) _st.textContent = items.length.toLocaleString();
-  document.getElementById('statNew').textContent = newItems.length;
+  const kinlockCount = state.kinlockStats?.exposureCount ?? '—';
+  document.getElementById('statNew').textContent = kinlockCount;
   const _su = document.getElementById('statTopUp'); if (_su) _su.textContent = upItems[0] ? `▲${upItems[0].change}` : '—';
   const _sub = document.getElementById('statTopUpBrand'); if (_sub) _sub.textContent = upItems[0]?.brand || '—';
   const _sd = document.getElementById('statTopDown'); if (_sd) _sd.textContent = downItems[0] ? `▼${Math.abs(downItems[0].change)}` : '—';
@@ -1779,7 +1791,7 @@ function startRefreshTimer() {
       diff = Math.floor((target - Date.now()) / 1000);
     } else if (now - lastReload > 10 * 60 * 1000) {
       lastReload = now;
-      await loadData(state.platform);
+      await Promise.all([loadData(state.platform), loadKinlockStats()]);
       renderRanking(); renderSidebar();
     }
   }, 1000);

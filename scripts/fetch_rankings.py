@@ -914,6 +914,48 @@ def save(platform: str, data: dict):
     print(f"  💾 저장: {path}")
 
 
+KINLOCK_BRAND = "커넥트킨록"
+KINLOCK_STATS_PATH = DATA_DIR / "kinlock_stats.json"
+
+
+def update_kinlock_exposure(musinsa_cats: dict):
+    """무신사 카테고리 TOP 50 안에 커넥트킨록 상품이 있으면 노출 회차 +1."""
+    # 전체('')는 서브카테고리 합산이므로 서브카테고리만 체크
+    appeared = any(
+        any(item.get("brand") == KINLOCK_BRAND for item in items)
+        for code, items in musinsa_cats.items()
+        if code != ""
+    )
+    # 서브카테고리 데이터가 없으면 전체로 폴백 체크
+    if not appeared:
+        appeared = any(
+            item.get("brand") == KINLOCK_BRAND
+            for item in musinsa_cats.get("", [])
+        )
+
+    stats = {"exposureCount": 0, "history": []}
+    if KINLOCK_STATS_PATH.exists():
+        try:
+            with open(KINLOCK_STATS_PATH, encoding="utf-8") as f:
+                stats = json.load(f)
+        except Exception:
+            pass
+
+    now_str = datetime.now(timezone.utc).isoformat()
+    if appeared:
+        stats["exposureCount"] = stats.get("exposureCount", 0) + 1
+        stats.setdefault("history", []).append(now_str)
+        print(f"  ⭐ 커넥트킨록 노출 감지 → 누적 {stats['exposureCount']}회차")
+    else:
+        print(f"  — 커넥트킨록 미노출 (누적 {stats.get('exposureCount', 0)}회차)")
+
+    stats["lastChecked"] = now_str
+    stats["lastAppeared"] = appeared
+    with open(KINLOCK_STATS_PATH, "w", encoding="utf-8") as f:
+        json.dump(stats, f, ensure_ascii=False, indent=2)
+    print(f"  💾 저장: {KINLOCK_STATS_PATH}")
+
+
 # ═══════════════════════════════════════════════════
 #  가격 통계 (카테고리별 평균/최저/최고가)
 # ═══════════════════════════════════════════════════
@@ -1164,6 +1206,7 @@ def main():
             "priceStats": price_stats,
             "brandPriceStats": brand_price_stats,
         })
+        update_kinlock_exposure(musinsa_cats)
     else:
         print("  [WARN] 무신사 데이터 없음 - 기존 파일 유지")
 
