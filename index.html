@@ -1911,8 +1911,17 @@ function renderTrendCards() {
   const muNewBrands = new Set(muAll.filter(i => i.change === 'NEW').map(i => i.brand));
   const cmNewBrands = new Set(cmAll.filter(i => i.change === 'NEW').map(i => i.brand));
 
-  // 무신사 + 29CM 양쪽 모두 신규 진입한 공통 브랜드 최대 3개만 표시
-  const commonBrands = [...muNewBrands].filter(b => cmNewBrands.has(b)).slice(0, 3);
+  // 무신사 + 29CM 양쪽 모두 신규 진입한 공통 브랜드 중 무신사 순위 상위 3개
+  const allCommonBrands = [...muNewBrands].filter(b => cmNewBrands.has(b));
+  const muNewItems = muAll.filter(i => i.change === 'NEW' && allCommonBrands.includes(i.brand));
+  // 브랜드별 무신사 최고 순위(rank 가장 낮은 값)로 정렬 후 상위 3개 브랜드 선택
+  const brandRankMap = {};
+  muNewItems.forEach(i => {
+    if (!brandRankMap[i.brand] || i.rank < brandRankMap[i.brand]) brandRankMap[i.brand] = i.rank;
+  });
+  const commonBrands = allCommonBrands
+    .sort((a, b) => (brandRankMap[a] || 999) - (brandRankMap[b] || 999))
+    .slice(0, 3);
 
   const muCommonNew = muAll.filter(i => i.change === 'NEW' && commonBrands.includes(i.brand));
   const cmCommonNew = cmAll.filter(i => i.change === 'NEW' && commonBrands.includes(i.brand));
