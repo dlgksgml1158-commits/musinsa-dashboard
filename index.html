@@ -296,6 +296,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
+      min-height: 500px;
     }
     #rankingGroup1 table {
       height: 100%;
@@ -305,7 +306,7 @@
       height: 100%;
     }
     #rankingGroup1 tbody tr {
-      height: calc(100% / 10);
+      height: 50px;
     }
 
     /* Rank number */
@@ -1196,6 +1197,11 @@
         </div>
       </div>
 
+      <!-- 카테고리 데이터 없을 때 안내 배너 -->
+      <div id="noDataBanner" style="display:none;padding:8px 22px;background:#fffbeb;border-bottom:1px solid #fcd34d;font-size:12px;color:#92400e;">
+        ⚠ 해당 카테고리 데이터 수집 중입니다. 전체 랭킹을 표시합니다.
+      </div>
+
       <!-- 1~10위 -->
       <div class="ranking-group" id="rankingGroup1">
         <table style="table-layout:fixed;width:100%;">
@@ -1583,11 +1589,21 @@ function renderGroup(tbodyId, items, startRank) {
 }
 
 function renderRanking() {
-  const items = getFilteredItems();
+  let items = getFilteredItems();
   state.filteredItems = items;
 
   const cats = state.platform === 'musinsa' ? MUSINSA_CATS : CM29_CATS;
   const catLabel = cats.find(c => c.code === state.category)?.label || '전체';
+
+  // 선택한 카테고리에 데이터가 없으면 전체 데이터로 폴백 + 안내 배너
+  const noDataBanner = document.getElementById('noDataBanner');
+  if (items.length === 0 && state.category) {
+    const d = state.data[state.platform];
+    items = (d?.categories?.[''] || d?.items || []).slice(0, 30);
+    if (noDataBanner) noDataBanner.style.display = '';
+  } else {
+    if (noDataBanner) noDataBanner.style.display = 'none';
+  }
 
   document.getElementById('categoryLabel').textContent = catLabel;
   const _tc = document.getElementById('totalCount'); if (_tc) _tc.textContent = `${items.length}개`;
