@@ -1771,52 +1771,129 @@ function getWeatherSummary(code, tempMax, tempMin, wind, rain) {
 // GitHub Actions로 수집한 패션 뉴스 JSON 로드
 // 없을 경우 큐레이션된 샘플 노출
 const FASHION_NEWS_SAMPLE = [
-  { tag: 'celeb', tagLabel: '셀럽', title: '뉴진스 하니, 버버리 2025 S/S 앰배서더 공식 선정', sub: '버버리 공식 SNS 발표', url: 'https://search.naver.com/search.naver?query=뉴진스+하니+버버리+앰배서더' },
-  { tag: 'celeb', tagLabel: '셀럽', title: '아이유, 구찌 가든 익스클루시브 컬렉션 착용 포착', sub: '서울 팝업 스토어 방문', url: 'https://search.naver.com/search.naver?query=아이유+구찌+패션' },
-  { tag: 'trend', tagLabel: '트렌드', title: '2025 여름 키워드: 린넨 셔츠 + 와이드 팬츠 조합 폭발적 인기', sub: '무신사 검색량 전주 대비 ▲47%', url: 'https://search.naver.com/search.naver?query=2025+여름+패션+트렌드+린넨' },
-  { tag: 'brand', tagLabel: '브랜드', title: '디스이즈네버댓 × 뉴발란스 콜라보 발매 예고', sub: '6/28 한정 발매 예정', url: 'https://search.naver.com/search.naver?query=디스이즈네버댓+뉴발란스+콜라보' },
-  { tag: 'new', tagLabel: '신상', title: '아더에러 2025 여름 드롭 2탄 공개 — 그래픽 반팔 주목', sub: '온라인 단독 선발매', url: 'https://search.naver.com/search.naver?query=아더에러+2025+여름+신상' },
-  { tag: 'sale', tagLabel: '세일', title: '무신사 여름 빅세일 시작 — 최대 60% 할인', sub: '6/27~7/7 한정', url: 'https://www.musinsa.com/event/2025-summer-sale' },
-  { tag: 'trend', tagLabel: '트렌드', title: '카고 팬츠 → 슬랙스 전환 트렌드, MZ세대 중심 확산', sub: '29CM 슬랙스 판매량 전월 대비 ▲32%', url: 'https://search.naver.com/search.naver?query=슬랙스+트렌드+2025' },
-  { tag: 'celeb', tagLabel: '셀럽', title: 'BTS 뷔, 셀린느 글로벌 앰배서더 3년 연속 재계약', sub: '파리 패션위크 초청 예정', url: 'https://search.naver.com/search.naver?query=BTS+뷔+셀린느+앰배서더' },
+  { tag: 'trend', tagLabel: '트렌드', title: '2026 서머 패션 트렌드 — 젤리 아이템·레몬코어 열풍', sub: '여성조선·코스모폴리탄', url: 'https://news.google.com/search?q=2026+서머+패션+트렌드&hl=ko&gl=KR' },
+  { tag: 'brand', tagLabel: '브랜드', title: '무신사, 하츠투하츠 협업 컬렉션 출시…성수 팝업 오픈', sub: '싱글리스트', url: 'https://news.google.com/search?q=무신사+하츠투하츠+컬렉션&hl=ko&gl=KR' },
+  { tag: 'trend', tagLabel: '트렌드', title: '올여름 가장 낭만적인 트렌드, 해적 스타일이 돌아왔다', sub: 'ELLE Korea', url: 'https://news.google.com/search?q=올여름+해적+패션+트렌드&hl=ko&gl=KR' },
+  { tag: 'new', tagLabel: '신상', title: '마스마룰즈, 모델 장윤주와 컬래버…무신사 단독 론칭', sub: '패션비즈', url: 'https://news.google.com/search?q=마스마룰즈+장윤주+무신사&hl=ko&gl=KR' },
+  { tag: 'sale', tagLabel: '세일', title: '마인드브릿지, 무신사 여름 블프 흥행 견인', sub: 'Fashion Insight', url: 'https://news.google.com/search?q=마인드브릿지+무신사+여름블프&hl=ko&gl=KR' },
+  { tag: 'brand', tagLabel: '브랜드', title: '무신사·AI글래스·뷰티까지… 협업 플랫폼으로 몸값 키운다', sub: '조선비즈', url: 'https://news.google.com/search?q=무신사+협업+플랫폼+AI&hl=ko&gl=KR' },
+  { tag: 'new', tagLabel: '신상', title: '"역대급 장마 온다"… 장마철 패션 아이템 전쟁 준비 시작', sub: 'meconomynews', url: 'https://news.google.com/search?q=장마철+패션+아이템+2026&hl=ko&gl=KR' },
+  { tag: 'trend', tagLabel: '트렌드', title: '29CM, 오픈 백 열풍에 거래액 3배 껑충', sub: '패션포스트', url: 'https://news.google.com/search?q=29CM+오픈백+거래액&hl=ko&gl=KR' },
 ];
 
 async function loadFashionNews() {
-  const dateEl = document.getElementById('fashionNewsDate');
   const listEl = document.getElementById('fashionNewsList');
+  const dateEl = document.getElementById('fashionNewsDate');
+  if (!listEl) return;
 
-  const now = new Date();
-  const today = now.toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
-  const yesterday = new Date(now - 86400000).toLocaleDateString('ko-KR', { month: 'long', day: 'numeric' });
-  if (dateEl) dateEl.textContent = `${yesterday} ~ ${today}`;
+  const today = new Date();
+  const mm = today.getMonth() + 1;
+  const dd = today.getDate();
+  const dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+  const dayName = dayNames[today.getDay()];
+  if (dateEl) dateEl.textContent = mm + '월 ' + dd + '일 (' + dayName + ')';
 
-  let news = FASHION_NEWS_SAMPLE;
+  const todayKey = today.toISOString().slice(0, 10);
+  const cacheKey = 'fashionNews_' + todayKey;
 
-  // data/fashion_news.json 있으면 우선 사용 (GitHub Actions 수집 데이터)
+  const tagClass = { trend: 'tag-trend', new: 'tag-new', sale: 'tag-sale', brand: 'tag-brand', celeb: 'tag-celeb' };
+
+  if (!document.getElementById('fashion-news-extra-style')) {
+    const s = document.createElement('style');
+    s.id = 'fashion-news-extra-style';
+    s.textContent = '.tag-new { background: #d1fae5; color: #065f46; }';
+    document.head.appendChild(s);
+  }
+
+  function renderNews(news) {
+    listEl.innerHTML = news.map(function(n) {
+      const href = n.url || '#';
+      let timeAgo = '';
+      if (n.pubDate) {
+        const diff = Date.now() - n.pubDate;
+        const hours = Math.floor(diff / 3600000);
+        const days = Math.floor(hours / 24);
+        if (days > 0) timeAgo = days + '일 전';
+        else if (hours > 0) timeAgo = hours + '시간 전';
+        else timeAgo = '방금';
+      }
+      const subText = timeAgo ? ((n.sub ? n.sub + ' · ' : '') + timeAgo) : (n.sub || '');
+      return '<a class="fashion-news-item" href="' + href + '" target="_blank" rel="noopener noreferrer">' +
+        '<span class="fashion-news-tag ' + (tagClass[n.tag] || 'tag-trend') + '">' + (n.tagLabel || n.tag) + '</span>' +
+        '<div class="fashion-news-content">' +
+        '<div class="fashion-news-title">' + n.title + '</div>' +
+        '<div class="fashion-news-sub">' + subText + '</div>' +
+        '</div></a>';
+    }).join('');
+  }
+
   try {
-    const res = await fetch(`data/fashion_news.json?t=${Date.now()}`);
-    if (res.ok) {
-      const data = await res.json();
-      if (Array.isArray(data) && data.length > 0) news = data;
-    }
-  } catch(e) { /* 샘플 사용 */ }
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) { renderNews(JSON.parse(cached)); return; }
+  } catch(e) {}
 
-  // 태그 우선순위 정렬: 트렌드 > 신상 > 세일 > 브랜드 > 셀럽
-  const TAG_ORDER = { trend: 0, new: 1, sale: 2, brand: 3, celeb: 4 };
-  news = [...news].sort((a, b) => (TAG_ORDER[a.tag] ?? 9) - (TAG_ORDER[b.tag] ?? 9));
+  listEl.innerHTML = '<div class="fashion-news-loading">최신 뉴스 불러오는 중...</div>';
 
-  const tagClass = { celeb:'tag-celeb', brand:'tag-brand', trend:'tag-trend', sale:'tag-sale', new:'tag-new' };
-  listEl.innerHTML = news.map(n => {
-    const href = n.url || `https://search.naver.com/search.naver?query=${encodeURIComponent(n.title)}`;
-    return `
-    <a class="fashion-news-item" href="${href}" target="_blank" rel="noopener noreferrer">
-      <span class="fashion-news-tag ${tagClass[n.tag] || 'tag-trend'}">${n.tagLabel || n.tag}</span>
-      <div class="fashion-news-content">
-        <div class="fashion-news-title">${n.title}</div>
-        <div class="fashion-news-sub">${n.sub || ''}</div>
-      </div>
-    </a>`;
-  }).join('');
+  const queryConfig = [
+    { q: '무신사 패션', tag: 'brand', tagLabel: '브랜드' },
+    { q: '29CM 패션', tag: 'brand', tagLabel: '브랜드' },
+    { q: '패션 신상', tag: 'new', tagLabel: '신상' },
+    { q: '패션 트렌드', tag: 'trend', tagLabel: '트렌드' },
+    { q: '스트릿 패션 트렌드', tag: 'trend', tagLabel: '트렌드' },
+  ];
+
+  function autoTag(title) {
+    const t = title.toLowerCase();
+    if (t.includes('셀럽') || t.includes('앰배서더') || t.includes('착용') || t.includes('스타')) return { tag: 'celeb', tagLabel: '셀럽' };
+    if (t.includes('세일') || t.includes('할인') || t.includes('블프')) return { tag: 'sale', tagLabel: '세일' };
+    if (t.includes('콜라보') || t.includes('협업') || t.includes('컬래버')) return { tag: 'brand', tagLabel: '브랜드' };
+    if (t.includes('신상') || t.includes('출시') || t.includes('론칭') || t.includes('발매')) return { tag: 'new', tagLabel: '신상' };
+    return null;
+  }
+
+  async function fetchRSS(q, tag, tagLabel) {
+    const rssUrl = 'https://news.google.com/rss/search?q=' + encodeURIComponent(q) + '&hl=ko&gl=KR&ceid=KR:ko';
+    const proxyUrl = 'https://corsproxy.io/?' + encodeURIComponent(rssUrl);
+    const res = await fetch(proxyUrl, { signal: AbortSignal.timeout(10000) });
+    const text = await res.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(text, 'text/xml');
+    return Array.from(doc.querySelectorAll('item')).slice(0, 3).map(function(item) {
+      const rawTitle = item.querySelector('title')?.textContent || '';
+      const parts = rawTitle.split(' - ');
+      const title = parts.length > 1 ? parts.slice(0, -1).join(' - ') : rawTitle;
+      const source = parts.length > 1 ? parts[parts.length - 1] : '';
+      const pubDate = new Date(item.querySelector('pubDate')?.textContent || '').getTime();
+      const link = item.querySelector('link')?.textContent || item.querySelector('guid')?.textContent || '';
+      return { tag, tagLabel, title, sub: source, url: link, pubDate };
+    });
+  }
+
+  try {
+    const results = await Promise.allSettled(queryConfig.map(function(c) { return fetchRSS(c.q, c.tag, c.tagLabel); }));
+    let allNews = [];
+    results.forEach(function(r) { if (r.status === 'fulfilled') allNews = allNews.concat(r.value); });
+    const seen = new Set();
+    allNews = allNews.filter(function(n) { if (seen.has(n.url)) return false; seen.add(n.url); return true; });
+    allNews = allNews.map(function(n) { const at = autoTag(n.title); return at ? Object.assign({}, n, at) : n; });
+    allNews.sort(function(a, b) { return b.pubDate - a.pubDate; });
+    const topNews = allNews.slice(0, 8);
+    if (topNews.length === 0) throw new Error('no news');
+    try {
+      localStorage.setItem(cacheKey, JSON.stringify(topNews));
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith('fashionNews_')) {
+          const diff = (new Date(todayKey) - new Date(k.replace('fashionNews_', ''))) / 86400000;
+          if (diff > 3) localStorage.removeItem(k);
+        }
+      }
+    } catch(e) {}
+    renderNews(topNews);
+  } catch(e) {
+    renderNews(FASHION_NEWS_SAMPLE);
+  }
+}
 }
 
 function getWeeklyProductRecs(avgMax, avgMin, rainyDays, hotDays, coldDays) {
