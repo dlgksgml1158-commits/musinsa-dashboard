@@ -2274,17 +2274,17 @@ async function loadNaverTrends() {
 
 function naverSearchRow(kw, idx) {
   const rank = idx + 1;
-  const rankClass = rank <= 3 ? 'rank-top' : '';
+  const rankClass = rank === 1 ? 'r1' : rank === 2 ? 'r2' : rank === 3 ? 'r3' : 'rn';
   const changeVal = kw.change;
-  let changeClass = '', changeStr = '—';
-  if (changeVal === 'NEW') { changeClass = 'change-new'; changeStr = 'NEW'; }
-  else if (typeof changeVal === 'number' && changeVal > 0) { changeClass = 'change-up'; changeStr = '▲' + changeVal; }
-  else if (typeof changeVal === 'number' && changeVal < 0) { changeClass = 'change-down'; changeStr = '▼' + Math.abs(changeVal); }
+  let changeClass = 'same', changeStr = '—';
+  if (changeVal === 'NEW') { changeClass = 'new'; changeStr = 'NEW'; }
+  else if (typeof changeVal === 'number' && changeVal > 0) { changeClass = 'up'; changeStr = '▲' + changeVal; }
+  else if (typeof changeVal === 'number' && changeVal < 0) { changeClass = 'down'; changeStr = '▼' + Math.abs(changeVal); }
   const searchUrl = `https://search.naver.com/search.naver?query=${encodeURIComponent(kw.keyword)}`;
-  return `<div class="naver-row">
+  return `<div class="naver-search-row">
     <span class="naver-rank ${rankClass}">${rank}</span>
-    <a class="naver-keyword" href="${searchUrl}" target="_blank" rel="noopener">${kw.keyword}</a>
-    <span class="naver-cat" style="background:${kw.catColor||'#ccc'}">${kw.cat}</span>
+    <a class="naver-keyword" href="${searchUrl}" target="_blank" rel="noopener" style="text-decoration:none;">${kw.keyword}</a>
+    <span class="naver-cat-tag" style="background:${kw.catColor||'#ccc'}">${kw.cat}</span>
     <span class="naver-change ${changeClass}">${changeStr}</span>
   </div>`;
 }
@@ -2312,13 +2312,15 @@ function renderNaverSearch() {
   }
 }
 
-function toggleNaverRest(btn) {
-  const card = btn.closest('.brand-card');
-  const rest = card ? card.querySelector('.naver-rest5') : null;
+function toggleNaverRest() {
+  const rest = document.getElementById('naverSearchRest');
+  const label = document.getElementById('naverToggleLabel');
+  const chevron = document.getElementById('naverToggleChevron');
   if (!rest) return;
   const isOpen = rest.style.display !== 'none';
   rest.style.display = isOpen ? 'none' : 'block';
-  btn.textContent = isOpen ? '더보기 ▾' : '접기 ▴';
+  if (label) label.textContent = isOpen ? '더보기' : '접기';
+  if (chevron) chevron.classList.toggle('open', !isOpen);
 }
 
 /* ===========================
