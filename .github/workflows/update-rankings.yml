@@ -1,8 +1,8 @@
-name: 랭킹 데이터 자동 업데이트
+name: 데이터 자동 업데이트
 
 on:
   schedule:
-    # 매일 오전 9시 (KST) = UTC 00:00 — 하루 1회 전체 갱신
+    # 매일 아침 9시 (KST) = UTC 00:00 — 하루 1회
     - cron: '0 0 * * *'
   workflow_dispatch:
 
@@ -12,13 +12,13 @@ permissions:
 jobs:
   update-rankings:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: 🔄 레포지토리 체크아웃
         uses: actions/checkout@v4
 
-      - name: 🐍 Python 3.11 세팅
+      - name: 🐍 Python 3.11 셋업
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -26,24 +26,29 @@ jobs:
       - name: 📦 의존성 설치
         run: pip install requests beautifulsoup4 lxml playwright
 
-      - name: 🌐 Playwright 브라우저 설치
+      - name: 🌐 플레이라이트 브라우저 설치
         run: playwright install --with-deps chromium
 
-      - name: 🕷 랭킹 데이터 수집
+      - name: 🕷 순위 데이터 수집
         run: python scripts/fetch_rankings.py
+        env:
+          PYTHONIOENCODING: utf-8
+
+      - name: 🔍 네이버 인기 검색어 수집
+        run: python scripts/fetch_naver_trends.py
         env:
           PYTHONIOENCODING: utf-8
 
       - name: 💾 변경사항 커밋 & 푸시
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "Rankings Bot"
-          git add data/musinsa.json data/29cm.json
+          git config --local user.name "랭킹 봇"
+          git add data/musinsa.json data/29cm.json data/naver_trends.json
           if git diff --staged --quiet; then
             echo "변경사항 없음 — 커밋 스킵"
           else
             TIMESTAMP=$(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST')
-            git commit -m "📊 랭킹 업데이트: $TIMESTAMP"
+            git commit -m "📊 랭킹 + 네이버 검색어 업데이트: $TIMESTAMP"
             git pull --rebase origin main
             git push
             echo "✅ 커밋 완료"
