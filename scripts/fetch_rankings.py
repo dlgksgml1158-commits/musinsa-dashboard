@@ -683,7 +683,81 @@ def _rebuild_all_from_subcats(categories: dict, limit: int):
 def fetch_musinsa() -> dict:
     print("▶ 무신사 랭킹 수집 시작...")
 
-    # ── 방법 1: 카테고리별 전용 API ──────────────────
+    # ── 방법 0: 대분류 API(sectionId=201) + 상품명 키워드로 세부분류 ──────
+    # client.musinsa.com sectionId=201 API는 3자리 대분류 코드(001/002/003)만
+    # 실제로 필터링되고, 6자리 세부코드(001001 등)는 무시되어 항상 동일한
+    # 결과를 반환한다(직접 curl로 검증 완료). api2/json/rank/goods(방법 1)는
+    # 더 이상 존재하지 않는 엔드포인트(404)라 항상 실패한다.
+    # 따라서 대분류(상의/바지) 풀을 넉넉히 받아온 뒤, 이미 29CM에서 쓰던
+    # 상품명 키워드 분류기(_classify_29cm_category)로 세부 서브카테고리를
+    # 재구성한다.
+    categories0: dict = {}
+
+    pool_all = _fetch_client_musinsa_by_category("")
+    if pool_all:
+        categories0[""] = _multicolumn_to_items(pool_all, "", "전체")
+        print(f"    ✓ 전체: {len(categories0[''])}개")
+    time.sleep(0.3)
+
+    pool_outer = _fetch_client_musinsa_by_category("002")
+    if pool_outer:
+        categories0["002"] = _multicolumn_to_items(pool_outer, "002", "아우터")
+        print(f"    ✓ 아우터: {len(categories0['002'])}개")
+    time.sleep(0.3)
+
+    pool_top = _fetch_client_musinsa_by_category("001")
+    print(f"    [풀] 상의 대분류: {len(pool_top)}개")
+    time.sleep(0.3)
+
+    pool_pants = _fetch_client_musinsa_by_category("003")
+    print(f"    [풀] 바지 대분류: {len(pool_pants)}개")
+    time.sleep(0.3)
+
+    def _bucket_by_keyword(pool_raw: list, sub_codes: list) -> dict:
+        buckets: dict = {c: [] for c in sub_codes}
+        if not pool_raw:
+            return buckets
+        items = _multicolumn_to_items(pool_raw, "", "")
+        for it in items:
+            code = _classify_29cm_category(it.get("name", ""))
+            if code in buckets:
+                buckets[code].append(it)
+        return buckets
+
+    top_sub_codes = ["001001", "001002", "001003", "001004", "001005", "001006"]
+    pants_sub_codes = ["003001", "003002", "003003", "003005"]
+    top_buckets = _bucket_by_keyword(pool_top, top_sub_codes)
+    pants_buckets = _bucket_by_keyword(pool_pants, pants_sub_codes)
+
+    for cat in MUSINSA_CATEGORIES:
+        cat_code = cat["code"]
+        cat_label = cat["label"]
+        if cat_code in ("", "002"):
+            continue  # 이미 위에서 처리됨
+        bucket = top_buckets.get(cat_code) or pants_buckets.get(cat_code) or []
+        if bucket:
+            bucket = bucket[:LIMIT]
+            for idx in range(len(bucket)):
+                item = dict(bucket[idx])
+                item["rank"] = idx + 1
+                item["category"] = cat_code
+                item["categoryLabel"] = cat_label
+                bucket[idx] = item
+            categories0[cat_code] = bucket
+            print(f"    ✓ [키워드분류] {cat_label}: {len(bucket)}개")
+        else:
+            categories0[cat_code] = []
+            print(f"    [WARN] {cat_label}: 분류된 상품 없음")
+
+    if categories0.get(""):
+        _rebuild_all_from_subcats(categories0, LIMIT)
+        total0 = sum(len(v) for v in categories0.values())
+        print(f"  ✓ 무신사 {total0}개 수집 완료 (대분류+키워드분류 방식, {len(categories0)}개 카테고리)")
+        return categories0
+
+    print("  [WARN] 대분류+키워드분류 방식 실패 → 기존 폴백 체인 시도")
+
+    # ── 방법 1: 카테고리별 전용 API (레거시, 보통 404로 실패함) ──────────
     api_works = _probe_musinsa_api()
     if api_works:
         categories = {}
