@@ -1980,7 +1980,7 @@ async function init() {
   renderTrendCards();
   renderRanking();
   renderSidebar();
-  renderNaverSearch();
+  loadNaverTrends();
   renderPriceChart();
   startRefreshTimer();
   syncRankingHeight();
@@ -2254,73 +2254,74 @@ function renderRanking() {
 }
 
 /* ===========================
-   NAVER SEARCH TRENDS
+   NAVER SEARCH TRENDS (동적)
 =========================== */
-const NAVER_FASHION_KEYWORDS = [
-  { keyword: '린넨 셔츠', cat: '상의', catColor: '#dbeafe', catText: '#1d4ed8', change: 'up', changeVal: '▲3' },
-  { keyword: '와이드 팬츠', cat: '바지', catColor: '#fef9c3', catText: '#854d0e', change: 'up', changeVal: '▲1' },
-  { keyword: '반팔 티셔츠', cat: '상의', catColor: '#dbeafe', catText: '#1d4ed8', change: 'same', changeVal: '—' },
-  { keyword: '크롭 자켓', cat: '아우터', catColor: '#f3e8ff', catText: '#7e22ce', change: 'new', changeVal: 'NEW' },
-  { keyword: '샌들', cat: '신발', catColor: '#dcfce7', catText: '#15803d', change: 'up', changeVal: '▲5' },
-  { keyword: '크로스백', cat: '가방', catColor: '#fff7ed', catText: '#c2410c', change: 'down', changeVal: '▼2' },
-  { keyword: '스트링 반바지', cat: '바지', catColor: '#fef9c3', catText: '#854d0e', change: 'up', changeVal: '▲2' },
-  { keyword: '니트 가디건', cat: '상의', catColor: '#dbeafe', catText: '#1d4ed8', change: 'same', changeVal: '—' },
-  { keyword: '선글라스', cat: '패션잡화', catColor: '#fce7f3', catText: '#9d174d', change: 'new', changeVal: 'NEW' },
-  { keyword: '오버핏 반팔', cat: '상의', catColor: '#dbeafe', catText: '#1d4ed8', change: 'down', changeVal: '▼1' },
-];
 
-const NAVER_29CM_KEYWORDS = [
-  { keyword: '여름 원피스', cat: '여성의류', catColor: '#fce7f3', catText: '#9d174d', change: 'up', changeVal: '▲4' },
-  { keyword: '린넨 블라우스', cat: '여성의류', catColor: '#fce7f3', catText: '#9d174d', change: 'up', changeVal: '▲2' },
-  { keyword: '스트랩 샌들', cat: '신발', catColor: '#dcfce7', catText: '#15803d', change: 'new', changeVal: 'NEW' },
-  { keyword: '미니 숄더백', cat: '가방', catColor: '#fff7ed', catText: '#c2410c', change: 'same', changeVal: '—' },
-  { keyword: '와이드 데님', cat: '여성의류', catColor: '#fce7f3', catText: '#9d174d', change: 'up', changeVal: '▲1' },
-  { keyword: '오픈토 뮬', cat: '신발', catColor: '#dcfce7', catText: '#15803d', change: 'down', changeVal: '▼1' },
-  { keyword: '크롭 니트', cat: '여성의류', catColor: '#fce7f3', catText: '#9d174d', change: 'new', changeVal: 'NEW' },
-  { keyword: '토트백', cat: '가방', catColor: '#fff7ed', catText: '#c2410c', change: 'same', changeVal: '—' },
-  { keyword: '비치웨어', cat: '여성의류', catColor: '#fce7f3', catText: '#9d174d', change: 'up', changeVal: '▲6' },
-  { keyword: '주얼리 세트', cat: '주얼리', catColor: '#fef9c3', catText: '#854d0e', change: 'down', changeVal: '▼2' },
-];
+async function loadNaverTrends() {
+  const t = Date.now();
+  try {
+    const res = await fetch(`data/naver_trends.json?t=${t}`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    window._naverTrends = data;
+  } catch (e) {
+    console.warn('[NaverTrends] 로드 실패:', e);
+    if (!window._naverTrends) window._naverTrends = { musinsa: [], cm29: [] };
+  }
+  renderNaverSearch();
+}
 
-function naverSearchRow(item, rank) {
-  const rankClass = rank === 1 ? 'r1' : rank === 2 ? 'r2' : rank === 3 ? 'r3' : 'rn';
-  const changeClass = item.change;
-  const searchUrl = `https://search.naver.com/search.naver?query=${encodeURIComponent(item.keyword)}`;
-  return `
-    <a class="naver-search-row" href="${searchUrl}" target="_blank" rel="noopener noreferrer" style="text-decoration:none;color:inherit;">
-      <div class="naver-rank ${rankClass}">${rank}</div>
-      <div class="naver-keyword">${item.keyword}</div>
-      <span class="naver-cat-tag" style="background:${item.catColor};color:${item.catText};">${item.cat}</span>
-      <div class="naver-change ${changeClass}">${item.changeVal}</div>
-    </a>`;
+function naverSearchRow(kw, idx) {
+  const rank = idx + 1;
+  const rankClass = rank <= 3 ? 'rank-top' : '';
+  const changeVal = kw.change;
+  let changeClass = '', changeStr = '—';
+  if (changeVal === 'NEW') { changeClass = 'change-new'; changeStr = 'NEW'; }
+  else if (typeof changeVal === 'number' && changeVal > 0) { changeClass = 'change-up'; changeStr = '▲' + changeVal; }
+  else if (typeof changeVal === 'number' && changeVal < 0) { changeClass = 'change-down'; changeStr = '▼' + Math.abs(changeVal); }
+  const searchUrl = `https://search.naver.com/search.naver?query=${encodeURIComponent(kw.keyword)}`;
+  return `<div class="naver-row">
+    <span class="naver-rank ${rankClass}">${rank}</span>
+    <a class="naver-keyword" href="${searchUrl}" target="_blank" rel="noopener">${kw.keyword}</a>
+    <span class="naver-cat" style="background:${kw.catColor||'#ccc'}">${kw.cat}</span>
+    <span class="naver-change ${changeClass}">${changeStr}</span>
+  </div>`;
 }
 
 function renderNaverSearch() {
-  const isMusinsa = state.platform === 'musinsa';
-  const keywords = isMusinsa ? NAVER_FASHION_KEYWORDS : NAVER_29CM_KEYWORDS;
-
-  document.getElementById('naverSearchSub').textContent = `${isMusinsa ? '무신사' : '29CM'} 패션 TOP 10`;
-
+  const platform = (window.state && window.state.platform) || 'musinsa';
+  const trendsData = window._naverTrends || { musinsa: [], cm29: [] };
+  const keywords = platform === '29cm' ? (trendsData.cm29 || []) : (trendsData.musinsa || []);
   const top5 = keywords.slice(0, 5);
-  const rest5 = keywords.slice(5);
+  const rest5 = keywords.slice(5, 10);
 
-  document.getElementById('naverSearchList').innerHTML = top5.map((k, i) => naverSearchRow(k, i + 1)).join('');
-  document.getElementById('naverSearchRest').innerHTML = rest5.map((k, i) => naverSearchRow(k, i + 6)).join('');
+  ['naver-search-musinsa', 'naver-search-29cm'].forEach(id => {
+    const container = document.getElementById(id);
+    if (!container) return;
+    const top5El = container.querySelector('.naver-top5');
+    const rest5El = container.querySelector('.naver-rest5');
+    if (top5El) top5El.innerHTML = top5.map((kw, i) => naverSearchRow(kw, i)).join('');
+    if (rest5El) rest5El.innerHTML = rest5.map((kw, i) => naverSearchRow(kw, i + 5)).join('');
+  });
 
-  // 토글 초기화
-  document.getElementById('naverSearchRest').style.display = 'none';
-  document.getElementById('naverToggleLabel').textContent = '더보기';
-  document.getElementById('naverToggleChevron').classList.remove('open');
+  if (trendsData.updatedAt) {
+    const updTime = new Date(trendsData.updatedAt).toLocaleString('ko-KR', {
+      timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric',
+      hour: '2-digit', minute: '2-digit'
+    });
+    document.querySelectorAll('.naver-updated-at').forEach(el => {
+      el.textContent = updTime + ' 기준';
+    });
+  }
 }
 
-function toggleNaverRest() {
-  const rest = document.getElementById('naverSearchRest');
-  const label = document.getElementById('naverToggleLabel');
-  const chevron = document.getElementById('naverToggleChevron');
+function toggleNaverRest(btn) {
+  const card = btn.closest('.brand-card');
+  const rest = card ? card.querySelector('.naver-rest5') : null;
+  if (!rest) return;
   const isOpen = rest.style.display !== 'none';
   rest.style.display = isOpen ? 'none' : 'block';
-  label.textContent = isOpen ? '더보기' : '접기';
-  chevron.classList.toggle('open', !isOpen);
+  btn.textContent = isOpen ? '더보기 ▾' : '접기 ▴';
 }
 
 /* ===========================
