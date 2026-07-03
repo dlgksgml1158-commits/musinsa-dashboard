@@ -49,6 +49,31 @@ MUSINSA_CATEGORIES = [
     {"code": "003005", "label": "반바지"},
 ]
 
+# 위 코드(내부 표시용, UI/가격통계 등 기존 코드와의 호환을 위해 유지)를
+# 무신사 실제 카테고리 코드(api2/dp/v2/plp/goods 에서 사용되는 진짜 코드)로
+# 매핑한다. 직접 웹사이트를 방문해 __NEXT_DATA__에서 확인한 실제 코드:
+#   상의(001) 하위: 001001 반소매 티셔츠, 001002 셔츠/블라우스, 001003 피케/카라 티셔츠,
+#                   001004 후드 티셔츠, 001005 맨투맨/스웨트, 001006 니트/스웨터,
+#                   001008 기타 상의, 001010 긴소매 티셔츠, 001011 민소매 티셔츠
+#   바지(003) 하위: 003002 데님 팬츠, 003004 트레이닝/조거 팬츠, 003005 레깅스,
+#                   003006 기타 하의, 003007 코튼 팬츠, 003008 슈트 팬츠/슬랙스,
+#                   003009 숏 팬츠, 003010 점프 슈트/오버올
+# 우리 내부 코드(001002=긴소매티셔츠 등)는 실제 코드와 이름이 어긋나 있었으므로
+# 아래 매핑으로 실제 코드에 연결한다.
+MUSINSA_REAL_CATEGORY_CODE = {
+    "001001": "001001",  # 반소매 티셔츠
+    "001002": "001010",  # 긴소매 티셔츠
+    "001003": "001005",  # 맨투맨/스웨트
+    "001004": "001004",  # 후드 티셔츠
+    "001005": "001002",  # 셔츠/블라우스
+    "001006": "001006",  # 니트/스웨터
+    "002":    "002",     # 아우터
+    "003001": "003002",  # 데님 팬츠
+    "003002": "003008",  # 슬랙스
+    "003003": "003004",  # 트레이닝/조거
+    "003005": "003009",  # 반바지
+}
+
 
 # ═══════════════════════════════════════════════════
 #  공통 유틸
@@ -79,6 +104,62 @@ def _build_item(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
         "categoryLabel": cat_label,
         "imgUrl": img,
         "productUrl": f"https://www.musinsa.com/products/{good_no}" if good_no else "",
+        "change": None,
+    }
+
+
+# ═══════════════════════════════════════════════════
+#  무신사 — 방법 0: 실제 카테고리 상품 목록(PLP) API
+# ═══════════════════════════════════════════════════
+# www.musinsa.com/category/<code>/goods?sortCode=POPULAR 페이지가 실제로
+# 호출하는 API. 진짜 인기순 정렬 + 페이지네이션을 지원하며, 세부 서브카테고리
+# 코드로도 정확히 필터링된다(직접 확인 완료). hmacId 파라미터가 응답에
+# 포함되지만 요청 시 없어도 정상 동작한다.
+def _fetch_musinsa_plp_goods(real_cat_code: str, size: int = 30) -> list:
+    url = "https://api.musinsa.com/api2/dp/v2/plp/goods"
+    params = {
+        "gf": "A",
+        "sortCode": "POPULAR",
+        "category": real_cat_code,
+        "size": size,
+        "caller": "CATEGORY",
+        "page": 1,
+    }
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Referer": f"https://www.musinsa.com/category/{real_cat_code}/goods?sortCode=POPULAR",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "ko-KR,ko;q=0.9",
+        "Origin": "https://www.musinsa.com",
+    }
+    try:
+        resp = requests.get(url, params=params, headers=headers, timeout=15)
+        if resp.status_code != 200:
+            return []
+        return resp.json().get("data", {}).get("list", []) or []
+    except Exception:
+        return []
+
+
+def _plp_item_to_standard(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
+    """api2/dp/v2/plp/goods 상품 dict → 표준 포맷 변환"""
+    good_no = str(raw.get("goodsNo") or "")
+    normal = int(raw.get("normalPrice") or raw.get("price") or 0)
+    final_price = int(raw.get("finalPrice") or raw.get("price") or normal)
+    disc = int(raw.get("finalDiscount") or raw.get("saleRate") or 0)
+    return {
+        "rank": rank,
+        "id": f"ms-{good_no}",
+        "brand": raw.get("brandName") or raw.get("brand") or "",
+        "name": raw.get("goodsName") or "",
+        "price": normal,
+        "originalPrice": normal,
+        "discountRate": disc,
+        "finalPrice": final_price,
+        "category": cat_code,
+        "categoryLabel": cat_label,
+        "imgUrl": raw.get("thumbnail") or "",
+        "productUrl": raw.get("goodsLinkUrl") or (f"https://www.musinsa.com/products/{good_no}" if good_no else ""),
         "change": None,
     }
 
@@ -683,14 +764,10 @@ def _rebuild_all_from_subcats(categories: dict, limit: int):
 def fetch_musinsa() -> dict:
     print("▶ 무신사 랭킹 수집 시작...")
 
-    # ── 방법 0: 대분류 API(sectionId=201) + 상품명 키워드로 세부분류 ──────
-    # client.musinsa.com sectionId=201 API는 3자리 대분류 코드(001/002/003)만
-    # 실제로 필터링되고, 6자리 세부코드(001001 등)는 무시되어 항상 동일한
-    # 결과를 반환한다(직접 curl로 검증 완료). api2/json/rank/goods(방법 1)는
-    # 더 이상 존재하지 않는 엔드포인트(404)라 항상 실패한다.
-    # 따라서 대분류(상의/바지) 풀을 넉넉히 받아온 뒤, 이미 29CM에서 쓰던
-    # 상품명 키워드 분류기(_classify_29cm_category)로 세부 서브카테고리를
-    # 재구성한다.
+    # ── 방법 0: 실제 카테고리 상품 목록(PLP) API ──────────────────────────
+    # www.musinsa.com/category/<code>/goods?sortCode=POPULAR 페이지가 쓰는
+    # 진짜 API. 세부 서브카테고리까지 정확히 필터링되고 30개 이상도 지원한다
+    # (직접 Playwright로 네트워크 요청을 확인해 검증 완료).
     categories0: dict = {}
 
     pool_all = _fetch_client_musinsa_by_category("")
@@ -699,63 +776,29 @@ def fetch_musinsa() -> dict:
         print(f"    ✓ 전체: {len(categories0[''])}개")
     time.sleep(0.3)
 
-    pool_outer = _fetch_client_musinsa_by_category("002")
-    if pool_outer:
-        categories0["002"] = _multicolumn_to_items(pool_outer, "002", "아우터")
-        print(f"    ✓ 아우터: {len(categories0['002'])}개")
-    time.sleep(0.3)
-
-    pool_top = _fetch_client_musinsa_by_category("001")
-    print(f"    [풀] 상의 대분류: {len(pool_top)}개")
-    time.sleep(0.3)
-
-    pool_pants = _fetch_client_musinsa_by_category("003")
-    print(f"    [풀] 바지 대분류: {len(pool_pants)}개")
-    time.sleep(0.3)
-
-    def _bucket_by_keyword(pool_raw: list, sub_codes: list) -> dict:
-        buckets: dict = {c: [] for c in sub_codes}
-        if not pool_raw:
-            return buckets
-        items = _multicolumn_to_items(pool_raw, "", "")
-        for it in items:
-            code = _classify_29cm_category(it.get("name", ""))
-            if code in buckets:
-                buckets[code].append(it)
-        return buckets
-
-    top_sub_codes = ["001001", "001002", "001003", "001004", "001005", "001006"]
-    pants_sub_codes = ["003001", "003002", "003003", "003005"]
-    top_buckets = _bucket_by_keyword(pool_top, top_sub_codes)
-    pants_buckets = _bucket_by_keyword(pool_pants, pants_sub_codes)
-
     for cat in MUSINSA_CATEGORIES:
         cat_code = cat["code"]
         cat_label = cat["label"]
-        if cat_code in ("", "002"):
-            continue  # 이미 위에서 처리됨
-        bucket = top_buckets.get(cat_code) or pants_buckets.get(cat_code) or []
-        if bucket:
-            bucket = bucket[:LIMIT]
-            for idx in range(len(bucket)):
-                item = dict(bucket[idx])
-                item["rank"] = idx + 1
-                item["category"] = cat_code
-                item["categoryLabel"] = cat_label
-                bucket[idx] = item
-            categories0[cat_code] = bucket
-            print(f"    ✓ [키워드분류] {cat_label}: {len(bucket)}개")
+        if not cat_code:
+            continue  # 전체는 위에서 이미 처리
+        real_code = MUSINSA_REAL_CATEGORY_CODE.get(cat_code, cat_code)
+        raw = _fetch_musinsa_plp_goods(real_code, size=LIMIT)
+        if raw:
+            items = [_plp_item_to_standard(r, idx + 1, cat_code, cat_label) for idx, r in enumerate(raw[:LIMIT])]
+            categories0[cat_code] = items
+            print(f"    ✓ [PLP] {cat_label}({real_code}): {len(items)}개")
         else:
             categories0[cat_code] = []
-            print(f"    [WARN] {cat_label}: 분류된 상품 없음")
+            print(f"    [WARN] {cat_label}({real_code}): 데이터 없음")
+        time.sleep(0.3)
 
     if categories0.get(""):
         _rebuild_all_from_subcats(categories0, LIMIT)
         total0 = sum(len(v) for v in categories0.values())
-        print(f"  ✓ 무신사 {total0}개 수집 완료 (대분류+키워드분류 방식, {len(categories0)}개 카테고리)")
+        print(f"  ✓ 무신사 {total0}개 수집 완료 (PLP 방식, {len(categories0)}개 카테고리)")
         return categories0
 
-    print("  [WARN] 대분류+키워드분류 방식 실패 → 기존 폴백 체인 시도")
+    print("  [WARN] PLP 방식 실패 → 기존 폴백 체인 시도")
 
     # ── 방법 1: 카테고리별 전용 API (레거시, 보통 404로 실패함) ──────────
     api_works = _probe_musinsa_api()
