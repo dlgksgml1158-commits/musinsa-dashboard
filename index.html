@@ -2295,23 +2295,19 @@ function renderNaverSearch() {
   const top5 = keywords.slice(0, 5);
   const rest5 = keywords.slice(5, 10);
 
-  ['naver-search-musinsa', 'naver-search-29cm'].forEach(id => {
-    const container = document.getElementById(id);
-    if (!container) return;
-    const top5El = container.querySelector('.naver-top5');
-    const rest5El = container.querySelector('.naver-rest5');
-    if (top5El) top5El.innerHTML = top5.map((kw, i) => naverSearchRow(kw, i)).join('');
-    if (rest5El) rest5El.innerHTML = rest5.map((kw, i) => naverSearchRow(kw, i + 5)).join('');
-  });
+  const listEl = document.getElementById('naverSearchList');
+  const restEl = document.getElementById('naverSearchRest');
+
+  if (listEl) listEl.innerHTML = top5.map((kw, i) => naverSearchRow(kw, i)).join('');
+  if (restEl) restEl.innerHTML = rest5.map((kw, i) => naverSearchRow(kw, i + 5)).join('');
 
   if (trendsData.updatedAt) {
     const updTime = new Date(trendsData.updatedAt).toLocaleString('ko-KR', {
       timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric',
       hour: '2-digit', minute: '2-digit'
     });
-    document.querySelectorAll('.naver-updated-at').forEach(el => {
-      el.textContent = updTime + ' 기준';
-    });
+    const subEl = document.getElementById('naverSearchSub');
+    if (subEl) subEl.textContent = updTime + ' 기준';
   }
 }
 
