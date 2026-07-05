@@ -212,7 +212,7 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 12px;
-      overflow: hidden;
+      overflow-y: auto;
       box-shadow: var(--card-shadow);
       height: 100%;
       box-sizing: border-box;
@@ -227,7 +227,7 @@
       flex-grow: 1;
     }
     #toggleBtnRest {
-      margin-top: auto;
+      margin-top: 0;
     }
     .ranking-card-header {
       padding: 16px 22px;
@@ -325,7 +325,7 @@
       color: var(--text);
       line-height: 1.35;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
