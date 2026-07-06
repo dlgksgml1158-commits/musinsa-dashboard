@@ -14,6 +14,7 @@ import json
 import re
 import time
 from datetime import datetime, timezone
+from itertools import zip_longest
 from pathlib import Path
 
 import requests
@@ -1098,10 +1099,40 @@ def _build_29cm_item(item: dict, rank: int, cat_code: str, cat_label: str) -> di
     }
 
 
+# 무신사 카테고리 코드 → 29CM 세부 카테고리 코드(여성/남성) 매핑.
+# recommend-api의 categoryList 파라미터가 세부 카테고리 코드를 지원하는 것을
+# 직접 조회로 확인함 — 전체 베스트 풀(250개)에서 추측 분류하던 예전 방식은
+# 풀에 해당 상품이 없으면(예: 여름철 맨투맨/후드) 0개가 되는 문제가 있었음.
+CM29_DIRECT_CATEGORY_CODES = {
+    "001001": ["268103101", "272103101"],  # 반팔티: 여/남 반소매 티셔츠
+    "001002": ["268103102", "272103102"],  # 긴팔티: 여/남 긴소매 티셔츠
+    "001003": ["268103104", "272103107"],  # 맨투맨/스웨트: 여/남 스웨트셔츠
+    "001004": ["268103105", "272103108"],  # 후드티: 여/남 후디
+    "001005": ["268103107", "268103106", "272103106", "272103105"],  # 셔츠/블라우스
+    "001006": ["268105100", "272110100"],  # 니트/스웨터: 여/남 니트웨어
+    "002":    ["268102100", "272102100"],  # 아우터: 여/남 아우터
+    "003001": ["268106101", "272104103"],  # 데님 팬츠
+    "003002": ["268106106", "272104106"],  # 슬랙스
+    "003003": ["268106107", "272104107"],  # 트레이닝/조거
+    "003005": ["268106108", "272104108"],  # 반바지
+}
+
+
+def _interleave(lists: list) -> list:
+    """여러 랭킹 목록을 라운드로빈으로 병합 (여1, 남1, 여2, 남2, ...)
+    — 성별 목록 간 공통 순위 지표가 없으므로 각자의 순위를 번갈아 반영."""
+    merged = []
+    for tier in zip_longest(*lists):
+        for item in tier:
+            if item is not None:
+                merged.append(item)
+    return merged
+
+
 def fetch_29cm() -> dict:
     print("▶ 29CM 랭킹 수집 시작...")
 
-    # 1) 넓은 베스트 풀 수집 (전체 + 여성의류 + 남성의류)
+    # 1) 넓은 베스트 풀 수집 (전체 + 여성의류 + 남성의류) → "전체" 랭킹용
     seen = set()
     pool = []  # 최초 등장 순서 = 베스트 우선순위
     for large in CM29_POOL_LARGE_CODES:
@@ -1119,33 +1150,53 @@ def fetch_29cm() -> dict:
 
     print(f"    · 베스트 풀 {len(pool)}개 수집")
 
-    # 2) 29CM 자체 카테고리 정보 우선 사용, 없을 때만 상품명 키워드로 분류.
+    # 2) "전체" 랭킹: 풀에서 의류만 걸러 베스트 순서 그대로 사용.
+    #    29CM 자체 카테고리 정보 우선, 없을 때만 상품명 키워드로 분류.
     #    (category info가 있는데 매칭이 안 되면 스커트/원피스 등 무신사 미대응 상품일
-    #     확률이 높으므로, 이 경우 키워드로 재추측하지 않고 그대로 제외한다.
-    #     예: "SLIT DENIM MAXI SKIRT"는 category3Name="데님"이라 바지로 오분류될 뻔했으나,
-    #     category2Name="스커트"라 제외되고, 여기서 키워드 폴백을 타면 상품명의 "denim"
-    #     때문에 다시 데님 팬츠로 잘못 분류되는 문제가 있었음.)
-    buckets = {c["code"]: [] for c in CM29_CATEGORIES if c["code"]}
-    clothing_ordered = []  # 전체(의류) 재구성용
+    #     확률이 높으므로, 이 경우 키워드로 재추측하지 않고 그대로 제외한다.)
+    clothing_ordered = []
     for item in pool:
-        has_category_info = bool(item.get("frontCategoryInfo"))
-        if has_category_info:
+        if item.get("frontCategoryInfo"):
             code = _classify_29cm_by_category_info(item)
         else:
             code = _classify_29cm_category(item.get("itemName", ""))
-        if not code:
-            continue  # 가방/신발/원피스 등 무신사 미대응 → 제외
-        b = buckets[code]
-        b.append(_build_29cm_item(item, len(b) + 1, code, CM29_LABEL_BY_CODE[code]))
-        clothing_ordered.append(item)
+        if code:
+            clothing_ordered.append(item)
 
     categories = {}
     categories[""] = [
         _build_29cm_item(item, idx + 1, "", "전체")
         for idx, item in enumerate(clothing_ordered[:LIMIT])
     ]
-    for code, items in buckets.items():
-        categories[code] = items[:LIMIT]
+
+    # 3) 서브카테고리: 전용 카테고리 코드로 직접 베스트 조회 (여성/남성 병합).
+    #    풀 기반 분류와 달리 베스트 풀에 안 잡히는 카테고리(여름철 맨투맨/후드 등)도
+    #    해당 카테고리 안에서의 실제 베스트 상품으로 채워진다.
+    for cat in CM29_CATEGORIES:
+        code = cat["code"]
+        if not code:
+            continue
+        per_gender_lists = []
+        for cm_code in CM29_DIRECT_CATEGORY_CODES.get(code, []):
+            try:
+                raw = _fetch_29cm_recommend(cm_code)
+            except Exception as e:
+                print(f"    [WARN] {cat['label']}({cm_code}) 수집 실패: {e}")
+                raw = []
+            if raw:
+                per_gender_lists.append(raw[:LIMIT])
+            time.sleep(0.4)
+
+        merged, seen_ids = [], set()
+        for item in _interleave(per_gender_lists):
+            no = str(item.get("itemNo", ""))
+            if not no or no in seen_ids:
+                continue
+            seen_ids.add(no)
+            merged.append(_build_29cm_item(item, len(merged) + 1, code, cat["label"]))
+            if len(merged) >= LIMIT:
+                break
+        categories[code] = merged
 
     nonempty = sum(1 for v in categories.values() if v)
     total = sum(len(v) for v in categories.values())
