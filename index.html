@@ -212,9 +212,8 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 12px;
-      overflow-y: auto;
       box-shadow: var(--card-shadow);
-      height: 100%;
+      height: auto;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -1985,7 +1984,6 @@ async function init() {
   loadNaverTrends();
   renderPriceChart();
   startRefreshTimer();
-  syncRankingHeight();
   syncContentsTopHeight();
 }
 
@@ -2005,25 +2003,6 @@ function syncContentsTopHeight() {
       fashion.style.height = newH + 'px';
     }
   }).observe(weather);
-}
-
-/* 랭킹 카드 높이를 사이드바(네이버 접힌 상태) 높이에 고정.
-   네이버 펼치기/접기는 이 높이에 영향을 주지 않음. */
-function syncRankingHeight() {
-  if (window.matchMedia('(max-width: 960px)').matches) return;
-  requestAnimationFrame(() => {
-    const sidebar = document.querySelector('.sidebar');
-    const card = document.getElementById('rankingCard');
-    if (!sidebar || !card) return;
-    // 사이드바 높이 - 섹션 타이틀 영역(약 27px) 보정
-    // height가 아닌 min-height로 맞춰서, 콘텐츠(더보기 버튼 포함)가 더 길면
-    // 카드가 늘어나도록 하고 스크롤바가 생기지 않게 함
-    const h = sidebar.offsetHeight - 27;
-    if (h > 0) {
-      card.style.height = 'auto';
-      card.style.minHeight = h + 'px';
-    }
-  });
 }
 
 async function loadKinlockStats() {
@@ -2067,7 +2046,6 @@ function switchPlatform(p) {
   renderSidebar();
   renderNaverSearch();
   renderPriceChart();
-  syncRankingHeight();
 }
 
 /* ===========================
@@ -2352,19 +2330,15 @@ function toggleRest() {
   const body = document.getElementById('rankingRest');
   const btn = document.getElementById('toggleBtnRest');
   const btnBottom = document.getElementById('toggleBtnRestBottom');
-  const card = document.getElementById('rankingCard');
   if (state.restOpen) {
     body.classList.add('open'); btn.classList.add('open');
     btn.style.display = 'none';
     if (btnBottom) btnBottom.style.display = '';
-    if (card) { card.style.height = 'auto'; card.style.overflow = 'visible'; }
   } else {
     body.classList.remove('open'); btn.classList.remove('open');
     if (btnBottom) btnBottom.style.display = 'none';
     setTimeout(() => {
       btn.style.display = '';
-      if (card) { card.style.overflow = 'hidden'; }
-      syncRankingHeight();
     }, 400);
   }
 }
@@ -2992,12 +2966,6 @@ function showToast(msg, dur = 2500) {
 }
 
 init();
-
-let _rsTimer;
-window.addEventListener('resize', () => {
-  clearTimeout(_rsTimer);
-  _rsTimer = setTimeout(syncRankingHeight, 150);
-});
 </script>
 </body>
 </html>
