@@ -287,7 +287,10 @@
       transition: background .12s;
     }
     tbody tr:hover { background: #f8faff; }
-    tbody tr:last-child { border-bottom: none; }
+    /* rankingTbody1(1~10위)/2(11~20위)/3(21~30위)가 별도 tbody라, 전역
+       :last-child로 지우면 10-11위/20-21위 사이 구분선까지 사라지므로
+       진짜 마지막 그룹에서만 지운다 */
+    #rankingTbody3 tr:last-child { border-bottom: none; }
     td {
       padding: 13px 16px;
       vertical-align: middle;
@@ -1299,7 +1302,10 @@
       border-bottom: 1px solid var(--border);
       transition: background .12s;
     }
-    .naver-search-row:last-child { border-bottom: none; }
+    /* 상위 5위(#naverSearchList)와 6~10위(#naverSearchRest)가 별도 컨테이너라
+       마지막 자식 기준으로 테두리를 지우면 5-6위 사이 구분선까지 사라지므로,
+       진짜 마지막 행(10위, 펼쳤을 때)에서만 지운다 */
+    #naverSearchRest .naver-search-row:last-child { border-bottom: none; }
     .naver-search-row:hover { background: #f8faff; }
     .naver-rank {
       font-size: 13px;
