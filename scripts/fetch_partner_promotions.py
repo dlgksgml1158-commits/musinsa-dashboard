@@ -5,6 +5,7 @@
 """
 import json
 import os
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -26,12 +27,19 @@ def fetch_promotions(cookie):
         url,
         headers={
             "Accept": "application/json",
-            "User-Agent": "Mozilla/5.0",
+            "Accept-Language": "ko-KR,ko;q=0.9",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+            "Origin": "https://partner.musinsa.com",
+            "Referer": "https://partner.musinsa.com/growth/promotion/partner/sale/promotion",
             "Cookie": cookie,
         },
     )
-    with urllib.request.urlopen(req, timeout=15) as resp:
-        return json.load(resp)
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return json.load(resp)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"HTTP {e.code}: {body[:500]}") from None
 
 
 def extract_items(payload):
