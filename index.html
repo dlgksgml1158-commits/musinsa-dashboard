@@ -455,10 +455,9 @@
     /* ── SIDEBAR ── */
     .sidebar { display: flex; flex-direction: column; gap: 16px; padding-top: 27px; }
     .stat-mini-sticky {
-      position: fixed;
-      right: max(12px, calc((100vw - 1380px) / 4 - 80px));
-      top: 178px;
-      z-index: 200;
+      position: sticky;
+      top: 16px;
+      z-index: 5;
       width: 160px;
       border-left: 3px solid #22c55e;
       box-shadow: 0 4px 20px rgba(0,0,0,0.13);
