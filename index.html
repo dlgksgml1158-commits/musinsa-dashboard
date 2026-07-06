@@ -2113,7 +2113,10 @@ function getFilteredItems() {
     if (state.category) {
       return (d.categories[state.category] || []).slice(0, 30);
     }
-    // 전체: 허용된 서브카테고리 데이터만 합쳐서 재구성 (신발/가방 원천 제거)
+    // 전체: 허용된 서브카테고리 데이터만 합쳐서 재구성 (신발/가방 원천 제거).
+    // 카테고리별 랭킹 소스와 "전체 인기" 원본 소스가 서로 달라 ID가 거의
+    // 겹치지 않으므로, 원본을 그대로 쓰면서 비의류만 걸러내는 건 불가능하다.
+    // 서브카테고리를 합치는 이 방식만이 "의류만" 보장할 수 있다.
     const subData = allowedCodes.flatMap(code => d.categories[code] || []);
     if (subData.length > 0) {
       // 중복 제거 후 rank 순 정렬
