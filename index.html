@@ -425,7 +425,6 @@
       overflow: hidden;
       transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1);
     }
-    .accordion-body.open { max-height: 2000px; }
     .ranking-group table thead { display: none; }
     #rankingGroup1 table thead { display: table-header-group; }
 
@@ -2331,12 +2330,19 @@ function toggleRest() {
   const btn = document.getElementById('toggleBtnRest');
   const btnBottom = document.getElementById('toggleBtnRestBottom');
   if (state.restOpen) {
-    body.classList.add('open'); btn.classList.add('open');
+    btn.classList.add('open');
     btn.style.display = 'none';
     if (btnBottom) btnBottom.style.display = '';
+    // 실제 콘텐츠 높이만큼만 트랜지션해서 애니메이션 시작 지연(버퍼링처럼 보이는 현상) 방지
+    body.style.maxHeight = body.scrollHeight + 'px';
+    setTimeout(() => { body.style.maxHeight = 'none'; }, 400);
   } else {
-    body.classList.remove('open'); btn.classList.remove('open');
+    btn.classList.remove('open');
     if (btnBottom) btnBottom.style.display = 'none';
+    body.style.maxHeight = body.scrollHeight + 'px';
+    // 강제 리플로우 후 0으로 낮춰야 트랜지션이 실제로 재생됨
+    body.offsetHeight;
+    requestAnimationFrame(() => { body.style.maxHeight = '0px'; });
     setTimeout(() => {
       btn.style.display = '';
     }, 400);
