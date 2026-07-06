@@ -982,6 +982,67 @@ def _classify_29cm_category(name: str) -> str:
     return ""
 
 
+# 29CM 자체 category3Name(세부) → 무신사 카테고리 코드. 상품명에 키워드가 없어도
+# 29CM이 이미 분류해둔 공식 카테고리라 상품명 키워드 분류보다 신뢰도가 높음.
+# 상의/아우터/니트류는 category2Name과 무관하게 category3Name만으로 특정 가능.
+CM29_TOP_CATEGORY3_MAP = {
+    "반소매 티셔츠": "001001",
+    "긴소매 티셔츠": "001002",
+    "반소매 셔츠": "001005",
+    "긴소매 셔츠": "001005",
+    "셔츠": "001005",
+    "블라우스": "001005",
+    "폴로셔츠": "001005",
+    "맨투맨": "001003",
+    "스웨트셔츠": "001003",
+    "후드": "001004",
+    "후드 집업": "001004",
+    "니트": "001006",
+    "기타 니트": "001006",
+    "카디건": "001006",
+    "스웨터": "001006",
+    "베스트": "002",
+    "블레이저": "002",
+    "블루종": "002",
+    "기타 아우터": "002",
+    "패딩": "002",
+    "코트": "002",
+    "자켓": "002",
+}
+
+# 바지류 category3Name("데님", "쇼트" 등)은 스커트/원피스에도 동일하게 쓰이므로
+# category2Name이 실제로 하의/바지 계열일 때만 적용 (예: "스커트"+"데님" = 데님 스커트, 바지 아님)
+CM29_BOTTOM_CATEGORY2_CONTEXT = {"하의", "바지"}
+CM29_BOTTOM_CATEGORY3_MAP = {
+    "슬랙스": "003002",
+    "정장 바지": "003002",
+    "데님 팬츠": "003001",
+    "데님": "003001",
+    "트레이닝": "003003",
+    "트레이닝 팬츠": "003003",
+    "조거 팬츠": "003003",
+    "쇼트": "003005",
+    "숏팬츠": "003005",
+}
+
+
+def _classify_29cm_by_category_info(item: dict) -> str:
+    """29CM이 자체 부여한 category2/3Name을 우선 사용, 매칭 안 되면 빈 문자열 반환
+    (호출부에서 상품명 키워드 분류로 폴백)."""
+    info = (item.get("frontCategoryInfo") or [{}])[0]
+    cat2 = (info.get("category2Name") or "").strip()
+    cat3 = (info.get("category3Name") or "").strip()
+    if cat3 in CM29_TOP_CATEGORY3_MAP:
+        return CM29_TOP_CATEGORY3_MAP[cat3]
+    if cat2 in CM29_BOTTOM_CATEGORY2_CONTEXT and cat3 in CM29_BOTTOM_CATEGORY3_MAP:
+        return CM29_BOTTOM_CATEGORY3_MAP[cat3]
+    if cat2 == "니트웨어":
+        return "001006"
+    if cat2 == "아우터":
+        return "002"
+    return ""
+
+
 def _fetch_29cm_recommend(large_code) -> list:
     """
     recommend-api.29cm.co.kr/api/v4/best/items 로 카테고리별 베스트 수집.
@@ -1051,11 +1112,20 @@ def fetch_29cm() -> dict:
 
     print(f"    · 베스트 풀 {len(pool)}개 수집")
 
-    # 2) 상품명 키워드로 무신사 동일 카테고리 분류
+    # 2) 29CM 자체 카테고리 정보 우선 사용, 없을 때만 상품명 키워드로 분류.
+    #    (category info가 있는데 매칭이 안 되면 스커트/원피스 등 무신사 미대응 상품일
+    #     확률이 높으므로, 이 경우 키워드로 재추측하지 않고 그대로 제외한다.
+    #     예: "SLIT DENIM MAXI SKIRT"는 category3Name="데님"이라 바지로 오분류될 뻔했으나,
+    #     category2Name="스커트"라 제외되고, 여기서 키워드 폴백을 타면 상품명의 "denim"
+    #     때문에 다시 데님 팬츠로 잘못 분류되는 문제가 있었음.)
     buckets = {c["code"]: [] for c in CM29_CATEGORIES if c["code"]}
     clothing_ordered = []  # 전체(의류) 재구성용
     for item in pool:
-        code = _classify_29cm_category(item.get("itemName", ""))
+        has_category_info = bool(item.get("frontCategoryInfo"))
+        if has_category_info:
+            code = _classify_29cm_by_category_info(item)
+        else:
+            code = _classify_29cm_category(item.get("itemName", ""))
         if not code:
             continue  # 가방/신발/원피스 등 무신사 미대응 → 제외
         b = buckets[code]
