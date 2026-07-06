@@ -2360,9 +2360,9 @@ function toggleRest() {
     if (card) { card.style.height = 'auto'; card.style.overflow = 'visible'; }
   } else {
     body.classList.remove('open'); btn.classList.remove('open');
-    btn.style.display = '';
     if (btnBottom) btnBottom.style.display = 'none';
     setTimeout(() => {
+      btn.style.display = '';
       if (card) { card.style.overflow = 'hidden'; }
       syncRankingHeight();
     }, 400);
