@@ -1901,6 +1901,50 @@ async function loadFashionNews() {
   }
 }
 
+const PROMOTION_STATUS_LABEL = {
+  READY: '모집중',
+  RUNNING: '진행중',
+  RECRUIT_END: '모집마감',
+};
+
+async function loadPromotions() {
+  const listEl = document.getElementById('promotionList');
+  const dateEl = document.getElementById('promotionDate');
+  if (!listEl) return;
+
+  const today = new Date();
+  const mm = today.getMonth() + 1;
+  const dd = today.getDate();
+  if (dateEl) dateEl.textContent = mm + '월 ' + dd + '일 기준';
+
+  try {
+    const res = await fetch(`data/musinsa_promotions.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error('No data');
+    const data = await res.json();
+    const items = (data.items || []).slice().sort((a, b) => new Date(a.from) - new Date(b.from));
+
+    if (!items.length) {
+      listEl.innerHTML = '<div class="promotion-loading">진행 예정인 프로모션이 없습니다</div>';
+      return;
+    }
+
+    listEl.innerHTML = items.map(function(it) {
+      const label = PROMOTION_STATUS_LABEL[it.status] || it.status;
+      const from = it.from ? new Date(it.from) : null;
+      const to = it.to ? new Date(it.to) : null;
+      const fmt = function(d) { return d ? (d.getMonth() + 1) + '/' + d.getDate() + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') : ''; };
+      const period = fmt(from) + ' ~ ' + fmt(to) + (it.minPercent ? ' · 최소할인율 ' + it.minPercent + '%' : '');
+      return '<div class="promotion-item">' +
+        '<span class="promotion-badge">' + label + '</span>' +
+        '<div class="promotion-title">' + it.name + '</div>' +
+        '<div class="promotion-period">' + period + '</div>' +
+        '</div>';
+    }).join('');
+  } catch (e) {
+    listEl.innerHTML = '<div class="promotion-loading">프로모션 정보를 불러올 수 없습니다</div>';
+  }
+}
+
 function getWeeklyProductRecs(avgMax, avgMin, rainyDays, hotDays, coldDays) {
   const recs = [];
   if (hotDays >= 3)
@@ -1981,7 +2025,7 @@ async function loadWeather() {
 }
 
 async function init() {
-  await Promise.all([loadData('musinsa'), loadData('29cm'), loadKinlockStats(), loadWeather(), loadFashionNews()]);
+  await Promise.all([loadData('musinsa'), loadData('29cm'), loadKinlockStats(), loadWeather(), loadFashionNews(), loadPromotions()]);
   renderCategoryBar();
   renderTrendCards();
   renderRanking();
