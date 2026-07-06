@@ -2019,8 +2019,13 @@ function syncRankingHeight() {
     const card = document.getElementById('rankingCard');
     if (!sidebar || !card) return;
     // 사이드바 높이 - 섹션 타이틀 영역(약 27px) 보정
+    // height가 아닌 min-height로 맞춰서, 콘텐츠(더보기 버튼 포함)가 더 길면
+    // 카드가 늘어나도록 하고 스크롤바가 생기지 않게 함
     const h = sidebar.offsetHeight - 27;
-    if (h > 0) card.style.height = h + 'px';
+    if (h > 0) {
+      card.style.height = 'auto';
+      card.style.minHeight = h + 'px';
+    }
   });
 }
 
