@@ -10,7 +10,7 @@ GitHub Actions에서 매일 자동 실행됩니다.
 
 import json
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import requests
@@ -25,12 +25,17 @@ BROWSER_UA = (
     "Chrome/124.0.0.0 Safari/537.36"
 )
 
+# 네이버 데이터랩 쇼핑인사이트 카테고리 ID. 예전엔 "상의"=50000167 등 단일 ID였으나
+# 네이버가 카테고리 체계를 여성의류/남성의류로 재편하면서 그 ID들이 완전히 다른
+# 카테고리(여성의류, 여성언더웨어/잠옷 등)로 바뀌어버림. 지금은 성별로 나뉘어 있어
+# 카테고리당 여성/남성 ID를 모두 조회해 합친다.
+# (getCategory.naver로 실제 트리를 조회해 확인한 현재 ID)
 CATEGORIES = [
-    {"cid": "50000167", "name": "상의",   "color": "#4ECDC4"},
-    {"cid": "50000168", "name": "바지",   "color": "#45B7D1"},
-    {"cid": "50000006", "name": "아우터", "color": "#96CEB4"},
-    {"cid": "50000190", "name": "신발",   "color": "#FFEAA7"},
-    {"cid": "50000086", "name": "가방",   "color": "#DDA0DD"},
+    {"cids": ["50000803", "50000830"], "name": "상의",   "color": "#4ECDC4"},   # 여성 티셔츠, 남성 티셔츠
+    {"cids": ["50000810", "50000836"], "name": "바지",   "color": "#45B7D1"},   # 여성 바지, 남성 바지
+    {"cids": ["50021359", "50021639"], "name": "아우터", "color": "#96CEB4"},   # 여성 아우터, 남성 아우터
+    {"cids": ["50000173", "50000174"], "name": "신발",   "color": "#FFEAA7"},   # 여성신발, 남성신발
+    {"cids": ["50000176", "50000177"], "name": "가방",   "color": "#DDA0DD"},   # 여성가방, 남성가방
 ]
 
 
@@ -54,43 +59,58 @@ def fetch_keywords():
         "Referer": "https://datalab.naver.com/shoppingInsight/sCategory.naver",
         "Origin": "https://datalab.naver.com",
         "Content-Type": "application/x-www-form-urlencoded",
+        "X-Requested-With": "XMLHttpRequest",
     }
 
-    url = "https://datalab.naver.com/shoppingInsight/getKeywordRank.naver"
-    today = datetime.now().strftime("%Y%m%d")
+    # 실제 sCategory.naver 페이지가 호출하는 엔드포인트/파라미터
+    # (getKeywordRank.naver + sex= + YYYYMMDD 단일 날짜는 더 이상 동작하지 않음 —
+    #  Playwright로 실제 페이지 요청을 캡처해 확인한 현재 스펙으로 교체)
+    url = "https://datalab.naver.com/shoppingInsight/getCategoryKeywordRank.naver"
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=30)
 
     musinsa_kws = []
     seen = set()
 
     for cat in CATEGORIES:
-        payload = (
-            f"cid={cat['cid']}&timeUnit=date"
-            f"&startDate={today}&endDate={today}"
-            "&age=&sex=&device="
-        )
-        try:
-            resp = requests.post(url, data=payload, headers=headers, timeout=15)
-            if resp.status_code == 200:
-                data = resp.json()
-                raw = data.get("result", [])[:5]
-                for item in raw:
-                    kw = item.get("keyword", "").strip()
-                    if not kw or kw in seen:
-                        continue
-                    seen.add(kw)
-                    musinsa_kws.append({
-                        "keyword": kw,
-                        "cat": cat["name"],
-                        "catColor": cat["color"],
-                        "rank": item.get("rank", 0),
-                        "change": None,
-                    })
-                print(f"    [{cat['name']}] {len(raw)}개 수집")
-            else:
-                print(f"    [{cat['name']}] HTTP {resp.status_code}")
-        except Exception as e:
-            print(f"    [{cat['name']}] 오류: {e}")
-        time.sleep(0.5)
+        # 카테고리당 여성/남성 ID를 모두 조회해 순위 기준으로 병합 (성별 구분 없는
+        # "상의"/"바지" 등 통합 인기 검색어를 얻기 위함)
+        cat_ranks = []
+        for cid in cat["cids"]:
+            payload = (
+                f"cid={cid}&timeUnit=date"
+                f"&startDate={start_date:%Y-%m-%d}&endDate={end_date:%Y-%m-%d}"
+                "&age=&gender=&device=&page=1&count=20"
+            )
+            try:
+                resp = requests.post(url, data=payload, headers=headers, timeout=15)
+                if resp.status_code == 200:
+                    data = resp.json() or {}
+                    cat_ranks.extend(data.get("ranks") or [])
+                else:
+                    print(f"    [{cat['name']}/{cid}] HTTP {resp.status_code}")
+            except Exception as e:
+                print(f"    [{cat['name']}/{cid}] 오류: {e}")
+            time.sleep(0.5)
+
+        cat_ranks.sort(key=lambda x: x.get("rank", 9999))
+        added = 0
+        for item in cat_ranks:
+            if added >= 5:
+                break
+            kw = item.get("keyword", "").strip()
+            if not kw or kw in seen:
+                continue
+            seen.add(kw)
+            added += 1
+            musinsa_kws.append({
+                "keyword": kw,
+                "cat": cat["name"],
+                "catColor": cat["color"],
+                "rank": item.get("rank", 0),
+                "change": None,
+            })
+        print(f"    [{cat['name']}] {added}개 수집")
 
     musinsa_kws = musinsa_kws[:10]
     cm29_kws = [dict(kw) for kw in musinsa_kws]
