@@ -3117,7 +3117,11 @@ function renderOrderStats() {
       <div class="price-tooltip-row"><span class="label">매출(순판매)</span><span class="val">${p.price.toLocaleString()}원</span></div>
     `;
     tooltip.classList.add('show');
-    tooltip.style.left = (e.clientX + 14) + 'px';
+    const tooltipWidth = tooltip.offsetWidth || 160;
+    const spaceRight = window.innerWidth - e.clientX;
+    tooltip.style.left = spaceRight < tooltipWidth + 30
+      ? (e.clientX - tooltipWidth - 14) + 'px'
+      : (e.clientX + 14) + 'px';
     tooltip.style.top = (e.clientY - 10) + 'px';
   });
 
