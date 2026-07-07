@@ -2,8 +2,15 @@ name: 데이터 자동 업데이트
 
 on:
   schedule:
-    # 매일 아침 9시 (KST) = UTC 00:00 — 하루 1회
-    - cron: '0 0 * * *'
+    # GitHub의 schedule 트리거는 부하 상황에 따라 몇 시간씩 지연될 수 있어서
+    # (실제로 하루 9~14시간씩 밀린 사례가 반복됨), 하루 한 번만 걸어두면
+    # 그 한 번이 밀렸을 때 하루 종일 데이터가 안 갱신되는 문제가 있었음.
+    # 하루 4번(9/13/18/22시 KST)으로 늘려 지연되더라도 그 안에 최소 한 번은
+    # 실제로 실행되도록 함.
+    - cron: '0 0 * * *'   # 09:00 KST
+    - cron: '0 4 * * *'   # 13:00 KST
+    - cron: '0 9 * * *'   # 18:00 KST
+    - cron: '0 13 * * *'  # 22:00 KST
   workflow_dispatch:
 
 permissions:
@@ -39,10 +46,8 @@ jobs:
         env:
           PYTHONIOENCODING: utf-8
 
-      - name: 🏷 무신사 프로모션 일정 수집
+      - name: 🏷 무신사 프로모션 일정 동기화
         run: python scripts/fetch_partner_promotions.py
-        env:
-          MUSINSA_PARTNER_COOKIE: ${{ secrets.MUSINSA_PARTNER_COOKIE }}
 
       - name: 💾 변경사항 커밋 & 푸시
         run: |
