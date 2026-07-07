@@ -1724,6 +1724,7 @@
 
 <div class="toast" id="toast"></div>
 <div class="price-tooltip" id="priceTooltip"></div>
+<div class="price-tooltip" id="orderStatsTooltip"></div>
 
 <script>
 /* ===========================
@@ -3080,10 +3081,51 @@ function renderOrderStats() {
       `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${(padL + chartW).toFixed(1)}" y2="${y.toFixed(1)}" stroke="#eef1f6" stroke-dasharray="3,3" />`;
   }).join('');
 
+  const hoverGuide = `<line id="orderStatsGuideLine" x1="0" y1="${padT}" x2="0" y2="${padT + chartH}" stroke="#cbd5e1" stroke-width="1" style="display:none;" />` +
+    `<circle id="orderStatsGuideDot" r="4" fill="#f97316" stroke="#fff" stroke-width="1.5" style="display:none;" />` +
+    `<rect id="orderStatsOverlay" x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="transparent" />`;
+
   svg.setAttribute('width', width);
   svg.setAttribute('height', height);
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
-  svg.innerHTML = priceTicks + polyline + xLabels;
+  svg.innerHTML = priceTicks + polyline + xLabels + hoverGuide;
+
+  const overlay = document.getElementById('orderStatsOverlay');
+  const guideLine = document.getElementById('orderStatsGuideLine');
+  const guideDot = document.getElementById('orderStatsGuideDot');
+  const tooltip = document.getElementById('orderStatsTooltip');
+
+  overlay.addEventListener('mousemove', (e) => {
+    const rect = svg.getBoundingClientRect();
+    const scaleX = width / rect.width;
+    const svgX = (e.clientX - rect.left) * scaleX;
+    let idx = Math.round((svgX - padL - step / 2) / step);
+    idx = Math.max(0, Math.min(points.length - 1, idx));
+    const p = points[idx];
+    const [px, py] = linePoints[idx];
+
+    guideLine.setAttribute('x1', px.toFixed(1));
+    guideLine.setAttribute('x2', px.toFixed(1));
+    guideLine.style.display = '';
+    guideDot.setAttribute('cx', px.toFixed(1));
+    guideDot.setAttribute('cy', py.toFixed(1));
+    guideDot.style.display = '';
+
+    tooltip.innerHTML = `
+      <div class="price-tooltip-cat">${p.label}</div>
+      <div class="price-tooltip-row"><span class="label">주문건수</span><span class="val">${p.qty.toLocaleString()}건</span></div>
+      <div class="price-tooltip-row"><span class="label">매출(순판매)</span><span class="val">${p.price.toLocaleString()}원</span></div>
+    `;
+    tooltip.classList.add('show');
+    tooltip.style.left = (e.clientX + 14) + 'px';
+    tooltip.style.top = (e.clientY - 10) + 'px';
+  });
+
+  overlay.addEventListener('mouseleave', () => {
+    guideLine.style.display = 'none';
+    guideDot.style.display = 'none';
+    tooltip.classList.remove('show');
+  });
 }
 
 function renderPriceChart() {
