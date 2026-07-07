@@ -3066,10 +3066,6 @@ function renderOrderStats() {
   });
 
   const polyline = `<path d="${smoothPath(linePoints)}" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" />`;
-  const dots = points.map((p, i) => {
-    const [x, y] = linePoints[i];
-    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="#f97316"><title>${p.label}: 매출 ${p.price.toLocaleString()}원</title></circle>`;
-  }).join('');
 
   const labelEvery = Math.max(1, Math.ceil(points.length / 16));
   const xLabels = points.map((p, i) => {
@@ -3087,7 +3083,7 @@ function renderOrderStats() {
   svg.setAttribute('width', width);
   svg.setAttribute('height', height);
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
-  svg.innerHTML = priceTicks + polyline + dots + xLabels;
+  svg.innerHTML = priceTicks + polyline + xLabels;
 }
 
 function renderPriceChart() {
