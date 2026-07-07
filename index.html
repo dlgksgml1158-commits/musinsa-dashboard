@@ -1317,6 +1317,29 @@
       color: var(--text3);
       font-size: 13px;
     }
+    .order-stats-toggle {
+      display: flex;
+      gap: 6px;
+    }
+    .order-stats-toggle button {
+      font-size: 11px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: #fff;
+      cursor: pointer;
+      color: var(--text3);
+    }
+    .order-stats-toggle button.active {
+      background: var(--musinsa);
+      color: #fff;
+      border-color: var(--musinsa);
+    }
+    .order-stats-svg-wrap {
+      width: 100%;
+      overflow-x: auto;
+      padding: 4px 12px 0;
+    }
 
     /* 네이버 검색어 */
     .naver-search-row {
@@ -1673,6 +1696,29 @@
       <div class="price-chart-body" id="priceChartBody">
         <div class="price-no-data">데이터 로딩 중...</div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER STATS SECTION -->
+<div class="price-section">
+  <div class="price-chart-card">
+    <div class="price-chart-header">
+      <div>
+        <span class="title" style="font-size:12px;">커넥트킨록 주문 현황</span>
+        <span class="sub" id="orderStatsSub" style="font-size:9px;margin-left:8px;">최근 90일</span>
+      </div>
+      <div class="order-stats-toggle" id="orderStatsToggle">
+        <button data-mode="daily" class="active" onclick="setOrderStatsMode('daily')">일별</button>
+        <button data-mode="monthly" onclick="setOrderStatsMode('monthly')">월별</button>
+      </div>
+    </div>
+    <div class="price-chart-legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#2563eb;"></span>주문건수</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#f97316;border-radius:50%;"></span>매출(순판매)</span>
+    </div>
+    <div class="order-stats-svg-wrap">
+      <svg id="orderStatsSvg" width="100%" height="260"></svg>
     </div>
   </div>
 </div>
@@ -2109,6 +2155,7 @@ async function init() {
   loadNaverTrends();
   loadMusinsaSearchTrends();
   renderPriceChart();
+  loadOrderStats();
   startRefreshTimer();
   syncContentsTopHeight();
 }
@@ -2915,6 +2962,121 @@ const tooltip = (() => {
   }
   return { show, showBrand, move, hide };
 })();
+
+let orderStatsData = null;
+let orderStatsMode = 'daily';
+
+async function loadOrderStats() {
+  try {
+    const res = await fetch(`data/musinsa_order_stats.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    orderStatsData = await res.json();
+  } catch (e) {
+    orderStatsData = { items: [] };
+  }
+  renderOrderStats();
+}
+
+function setOrderStatsMode(mode) {
+  orderStatsMode = mode;
+  const toggle = document.getElementById('orderStatsToggle');
+  if (toggle) {
+    toggle.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+  }
+  renderOrderStats();
+}
+
+function aggregateOrderStats(items, mode) {
+  if (mode === 'daily') {
+    return items.map(it => ({
+      label: it.date.slice(5).replace('-', '/'),
+      qty: it.qtyAll || 0,
+      price: it.priceSale || 0,
+    }));
+  }
+  const byMonth = {};
+  items.forEach(it => {
+    const month = it.date.slice(0, 7);
+    if (!byMonth[month]) byMonth[month] = { qty: 0, price: 0 };
+    byMonth[month].qty += it.qtyAll || 0;
+    byMonth[month].price += it.priceSale || 0;
+  });
+  return Object.keys(byMonth).sort().map(month => ({
+    label: month.slice(5) + '월',
+    qty: byMonth[month].qty,
+    price: byMonth[month].price,
+  }));
+}
+
+function renderOrderStats() {
+  const svg = document.getElementById('orderStatsSvg');
+  if (!svg || !orderStatsData) return;
+  const items = orderStatsData.items || [];
+
+  if (orderStatsData.updatedAt) {
+    const sub = document.getElementById('orderStatsSub');
+    if (sub) {
+      const from = items[0]?.date || '';
+      const to = items[items.length - 1]?.date || '';
+      sub.textContent = from && to ? `${from} ~ ${to}` : '최근 90일';
+    }
+  }
+
+  const points = aggregateOrderStats(items, orderStatsMode);
+  if (!points.length) {
+    svg.innerHTML = '<text x="20" y="30" font-size="12" fill="#94a3b8">데이터 없음</text>';
+    return;
+  }
+
+  const wrap = svg.parentElement;
+  const minStep = orderStatsMode === 'daily' ? 16 : 70;
+  const width = Math.max(wrap.clientWidth, points.length * minStep + 60);
+  const height = 260;
+  const padL = 50, padR = 20, padT = 20, padB = 30;
+  const chartW = width - padL - padR;
+  const chartH = height - padT - padB;
+
+  const maxQty = Math.max(...points.map(p => p.qty), 1);
+  const maxPrice = Math.max(...points.map(p => p.price), 1);
+  const step = chartW / points.length;
+  const barW = Math.min(step * 0.6, 28);
+
+  let bars = '';
+  const linePoints = [];
+  points.forEach((p, i) => {
+    const x = padL + step * i + (step - barW) / 2;
+    const barH = (p.qty / maxQty) * chartH;
+    const y = padT + chartH - barH;
+    bars += `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${barH.toFixed(1)}" fill="#2563eb" rx="2"><title>${p.label}: 주문 ${p.qty}건</title></rect>`;
+    const lx = padL + step * i + step / 2;
+    const ly = padT + chartH - (p.price / maxPrice) * chartH;
+    linePoints.push([lx, ly]);
+  });
+
+  const polyline = `<polyline points="${linePoints.map(pt => pt.map(v => v.toFixed(1)).join(',')).join(' ')}" fill="none" stroke="#f97316" stroke-width="2" />`;
+  const dots = points.map((p, i) => {
+    const [x, y] = linePoints[i];
+    return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" fill="#f97316"><title>${p.label}: 매출 ${p.price.toLocaleString()}원</title></circle>`;
+  }).join('');
+
+  const labelEvery = Math.max(1, Math.ceil(points.length / 16));
+  const xLabels = points.map((p, i) => {
+    if (i % labelEvery !== 0 && i !== points.length - 1) return '';
+    const x = padL + step * i + step / 2;
+    return `<text x="${x.toFixed(1)}" y="${height - 8}" font-size="9" fill="#94a3b8" text-anchor="middle">${p.label}</text>`;
+  }).join('');
+
+  const qtyTicks = [0.25, 0.5, 0.75, 1].map(r => {
+    const y = padT + chartH - r * chartH;
+    return `<text x="${(padL - 8).toFixed(1)}" y="${(y + 3).toFixed(1)}" font-size="9" fill="#94a3b8" text-anchor="end">${Math.round(maxQty * r)}</text>` +
+      `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${(padL + chartW).toFixed(1)}" y2="${y.toFixed(1)}" stroke="#eef1f6" stroke-dasharray="3,3" />`;
+  }).join('');
+
+  svg.setAttribute('width', width);
+  svg.setAttribute('height', height);
+  svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+  svg.innerHTML = qtyTicks + bars + polyline + dots + xLabels;
+}
 
 function renderPriceChart() {
   const isMusinsa = state.platform === 'musinsa';
