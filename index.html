@@ -1942,7 +1942,9 @@ async function loadPromotions() {
       const from = it.from ? new Date(it.from) : null;
       const to = it.to ? new Date(it.to) : null;
       const fmt = function(d) { return d ? (d.getMonth() + 1) + '/' + d.getDate() + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') : ''; };
-      const period = fmt(from) + ' ~ ' + fmt(to) + (it.minPercent ? ' · 최소할인율 ' + it.minPercent + '%' : '');
+      const period = fmt(from) + ' ~ ' + fmt(to) +
+        (it.minPercent ? ' · 최소할인율 ' + it.minPercent + '%' : '') +
+        (it.recruitDeadline ? ' · 신청마감 ' + it.recruitDeadline : '');
       return '<div class="promotion-item">' +
         '<span class="promotion-badge">' + label + '</span>' +
         '<div class="promotion-title">' + it.name + '</div>' +
