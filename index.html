@@ -1714,7 +1714,6 @@
       </div>
     </div>
     <div class="price-chart-legend">
-      <span class="legend-item"><span class="legend-dot" style="background:#2563eb;"></span>주문건수</span>
       <span class="legend-item"><span class="legend-dot" style="background:#f97316;border-radius:50%;"></span>매출(순판매)</span>
     </div>
     <div class="order-stats-svg-wrap">
@@ -3032,22 +3031,16 @@ function renderOrderStats() {
   const minStep = orderStatsMode === 'daily' ? 16 : 70;
   const width = Math.max(wrap.clientWidth, points.length * minStep + 60);
   const height = 260;
-  const padL = 50, padR = 20, padT = 20, padB = 30;
+  const padL = 60, padR = 20, padT = 20, padB = 30;
   const chartW = width - padL - padR;
   const chartH = height - padT - padB;
 
-  const maxQty = Math.max(...points.map(p => p.qty), 1);
   const maxPrice = Math.max(...points.map(p => p.price), 1);
   const step = chartW / points.length;
-  const barW = Math.min(step * 0.6, 28);
+  const fmtPrice = v => v >= 10000 ? (v / 10000).toFixed(1).replace(/\.0$/, '') + '만' : v.toLocaleString();
 
-  let bars = '';
   const linePoints = [];
   points.forEach((p, i) => {
-    const x = padL + step * i + (step - barW) / 2;
-    const barH = (p.qty / maxQty) * chartH;
-    const y = padT + chartH - barH;
-    bars += `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${barH.toFixed(1)}" fill="#2563eb" rx="2"><title>${p.label}: 주문 ${p.qty}건</title></rect>`;
     const lx = padL + step * i + step / 2;
     const ly = padT + chartH - (p.price / maxPrice) * chartH;
     linePoints.push([lx, ly]);
@@ -3066,16 +3059,16 @@ function renderOrderStats() {
     return `<text x="${x.toFixed(1)}" y="${height - 8}" font-size="9" fill="#94a3b8" text-anchor="middle">${p.label}</text>`;
   }).join('');
 
-  const qtyTicks = [0.25, 0.5, 0.75, 1].map(r => {
+  const priceTicks = [0.25, 0.5, 0.75, 1].map(r => {
     const y = padT + chartH - r * chartH;
-    return `<text x="${(padL - 8).toFixed(1)}" y="${(y + 3).toFixed(1)}" font-size="9" fill="#94a3b8" text-anchor="end">${Math.round(maxQty * r)}</text>` +
+    return `<text x="${(padL - 8).toFixed(1)}" y="${(y + 3).toFixed(1)}" font-size="9" fill="#94a3b8" text-anchor="end">${fmtPrice(Math.round(maxPrice * r))}</text>` +
       `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${(padL + chartW).toFixed(1)}" y2="${y.toFixed(1)}" stroke="#eef1f6" stroke-dasharray="3,3" />`;
   }).join('');
 
   svg.setAttribute('width', width);
   svg.setAttribute('height', height);
   svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
-  svg.innerHTML = qtyTicks + bars + polyline + dots + xLabels;
+  svg.innerHTML = priceTicks + polyline + dots + xLabels;
 }
 
 function renderPriceChart() {
