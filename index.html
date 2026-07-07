@@ -1714,7 +1714,7 @@
       </div>
     </div>
     <div class="price-chart-legend">
-      <span class="legend-item"><span class="legend-dot" style="background:#f97316;border-radius:50%;"></span>매출(순판매)</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#22c55e;border-radius:50%;"></span>매출(순판매)</span>
     </div>
     <div class="order-stats-svg-wrap">
       <svg id="orderStatsSvg" width="100%" height="260"></svg>
@@ -3066,7 +3066,7 @@ function renderOrderStats() {
     linePoints.push([lx, ly]);
   });
 
-  const polyline = `<path d="${smoothPath(linePoints)}" fill="none" stroke="#f97316" stroke-width="2" stroke-linecap="round" />`;
+  const polyline = `<path d="${smoothPath(linePoints)}" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" />`;
 
   const labelEvery = Math.max(1, Math.ceil(points.length / 16));
   const xLabels = points.map((p, i) => {
@@ -3082,7 +3082,7 @@ function renderOrderStats() {
   }).join('');
 
   const hoverGuide = `<line id="orderStatsGuideLine" x1="0" y1="${padT}" x2="0" y2="${padT + chartH}" stroke="#cbd5e1" stroke-width="1" style="display:none;" />` +
-    `<circle id="orderStatsGuideDot" r="4" fill="#f97316" stroke="#fff" stroke-width="1.5" style="display:none;" />` +
+    `<circle id="orderStatsGuideDot" r="4" fill="#22c55e" stroke="#fff" stroke-width="1.5" style="display:none;" />` +
     `<rect id="orderStatsOverlay" x="${padL}" y="${padT}" width="${chartW}" height="${chartH}" fill="transparent" />`;
 
   svg.setAttribute('width', width);
