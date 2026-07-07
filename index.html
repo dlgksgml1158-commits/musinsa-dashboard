@@ -130,6 +130,26 @@
       gap: 0;
       padding: 0 28px;
     }
+    .gender-toggle {
+      display: flex;
+      gap: 6px;
+      margin-left: auto;
+    }
+    .gender-btn {
+      font-size: 12px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: var(--bg);
+      color: var(--text2);
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .gender-btn.active {
+      background: var(--musinsa);
+      color: #fff;
+      border-color: var(--musinsa);
+    }
     .ptab {
       padding: 13px 24px;
       cursor: pointer;
@@ -1475,6 +1495,10 @@
     <div class="ptab" data-tab="29cm" onclick="switchPlatform('29cm')">
       <div class="ptab-dot"></div>29CM
     </div>
+    <div class="gender-toggle">
+      <button class="gender-btn active" data-gender="all" onclick="selectGender('all')">전체</button>
+      <button class="gender-btn" data-gender="male" onclick="selectGender('male')">남성</button>
+    </div>
   </div>
 </div>
 
@@ -1618,6 +1642,10 @@
         </div>
         <div class="ptab" data-tab="29cm" onclick="switchPlatform('29cm')">
           <div class="ptab-dot"></div>29CM
+        </div>
+        <div class="gender-toggle">
+          <button class="gender-btn active" data-gender="all" onclick="selectGender('all')">전체</button>
+          <button class="gender-btn" data-gender="male" onclick="selectGender('male')">남성</button>
         </div>
       </div>
     </div>
@@ -1801,6 +1829,7 @@ const EMOJI_BY_CAT = {
 let state = {
   platform: 'musinsa',
   category: '',
+  gender: 'all',
   data: { musinsa: null, '29cm': null },
   filteredItems: [],
   restOpen: false,
@@ -2249,6 +2278,16 @@ function switchPlatform(p) {
   renderSidebar();
   renderNaverSearch();
   renderPriceChart();
+}
+
+function selectGender(g) {
+  state.gender = g;
+  document.querySelectorAll('[data-gender]').forEach(el => {
+    el.classList.toggle('active', el.dataset.gender === g);
+  });
+  if (g === 'male') {
+    showToast('남성 전용 데이터는 준비 중이에요. 곧 연동될 예정입니다.', 2500);
+  }
 }
 
 /* ===========================
