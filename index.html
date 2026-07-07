@@ -890,6 +890,10 @@
     @media (max-width: 900px) {
       .trend-section { grid-template-columns: 1fr; padding: 16px 16px 0; }
     }
+    .trend-section-2col { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 900px) {
+      .trend-section-2col { grid-template-columns: 1fr; }
+    }
     .trend-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -1526,6 +1530,30 @@
   </div>
 </div>
 
+<!-- 무신사 실시간 검색어 -->
+<div class="trend-section trend-section-2col" id="musinsaSearchSection">
+  <div class="trend-card">
+    <div class="trend-card-header">
+      <div class="trend-card-title">
+        <span class="trend-icon deal">🔥</span>
+        무신사 인기 검색어
+      </div>
+      <span class="trend-card-sub" id="msSearchPopularSub" style="font-size:9px;">TOP 10</span>
+    </div>
+    <div class="trend-card-body" id="msSearchPopularList"></div>
+  </div>
+  <div class="trend-card">
+    <div class="trend-card-header">
+      <div class="trend-card-title">
+        <span class="trend-icon rise">⚡</span>
+        무신사 급상승 검색어
+      </div>
+      <span class="trend-card-sub" id="msSearchRisingSub" style="font-size:9px;">TOP 10</span>
+    </div>
+    <div class="trend-card-body" id="msSearchRisingList"></div>
+  </div>
+</div>
+
 <!-- MAIN -->
 <main>
   <!-- LEFT: 랭킹 테이블 -->
@@ -2069,6 +2097,7 @@ async function init() {
   renderRanking();
   renderSidebar();
   loadNaverTrends();
+  loadMusinsaSearchTrends();
   renderPriceChart();
   startRefreshTimer();
   syncContentsTopHeight();
@@ -2388,6 +2417,56 @@ function toggleNaverRest() {
   rest.style.display = isOpen ? 'none' : 'block';
   if (label) label.textContent = isOpen ? '더보기' : '접기';
   if (chevron) chevron.classList.toggle('open', !isOpen);
+}
+
+function musinsaSearchRow(item) {
+  const rank = item.rank;
+  const rankClass = rank === 1 ? 'r1' : rank === 2 ? 'r2' : rank === 3 ? 'r3' : 'rn';
+  const inc = item.rankIncrement || 0;
+  let changeClass = 'same', changeStr = '—';
+  if (inc > 0) { changeClass = 'up'; changeStr = '▲' + inc; }
+  else if (inc < 0) { changeClass = 'down'; changeStr = '▼' + Math.abs(inc); }
+  const searchUrl = `https://www.musinsa.com/search/goods?keyword=${encodeURIComponent(item.keyword)}`;
+  return `<div class="naver-search-row">
+    <span class="naver-rank ${rankClass}">${rank}</span>
+    <a class="naver-keyword" href="${searchUrl}" target="_blank" rel="noopener" style="text-decoration:none;">${item.keyword}</a>
+    <span class="naver-change ${changeClass}">${changeStr}</span>
+  </div>`;
+}
+
+async function loadMusinsaSearchTrends() {
+  const popularEl = document.getElementById('msSearchPopularList');
+  const risingEl = document.getElementById('msSearchRisingList');
+  if (!popularEl || !risingEl) return;
+
+  try {
+    const res = await fetch(`data/musinsa_search_trends.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data = await res.json();
+    const popular = data.popular || [];
+    const rising = data.rising || [];
+
+    popularEl.innerHTML = popular.length
+      ? popular.map(musinsaSearchRow).join('')
+      : '<div class="empty-state"><p>데이터 없음</p></div>';
+    risingEl.innerHTML = rising.length
+      ? rising.map(musinsaSearchRow).join('')
+      : '<div class="empty-state"><p>데이터 없음</p></div>';
+
+    if (data.updatedAt) {
+      const updTime = new Date(data.updatedAt).toLocaleString('ko-KR', {
+        timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric',
+        hour: '2-digit', minute: '2-digit'
+      });
+      const popularSub = document.getElementById('msSearchPopularSub');
+      const risingSub = document.getElementById('msSearchRisingSub');
+      if (popularSub) popularSub.textContent = updTime + ' 기준';
+      if (risingSub) risingSub.textContent = updTime + ' 기준';
+    }
+  } catch (e) {
+    popularEl.innerHTML = '<div class="empty-state"><p>불러오기 실패</p></div>';
+    risingEl.innerHTML = '<div class="empty-state"><p>불러오기 실패</p></div>';
+  }
 }
 
 /* ===========================

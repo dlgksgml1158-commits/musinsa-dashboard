@@ -49,11 +49,14 @@ jobs:
       - name: 🏷 무신사 프로모션 일정 동기화
         run: python scripts/fetch_partner_promotions.py
 
+      - name: 🔎 무신사 실시간 검색어 수집
+        run: python scripts/fetch_musinsa_search_trends.py
+
       - name: 💾 변경사항 커밋 & 푸시
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "랭킹 봇"
-          git add data/musinsa.json data/29cm.json data/naver_trends.json data/kinlock_stats.json data/musinsa_promotions.json
+          git add data/musinsa.json data/29cm.json data/naver_trends.json data/kinlock_stats.json data/musinsa_promotions.json data/musinsa_search_trends.json
           if git diff --staged --quiet; then
             echo "변경사항 없음 — 커밋 스킵"
           else
