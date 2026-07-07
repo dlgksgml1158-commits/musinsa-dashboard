@@ -186,6 +186,19 @@
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
+    .ranking-platform-tabs {
+      border: 1px solid var(--border);
+      border-bottom: none;
+      border-radius: 12px 12px 0 0;
+      background: var(--surface);
+    }
+    .ranking-platform-tabs .nav-inner {
+      padding: 0 12px;
+    }
+    .ranking-platform-tabs + .ranking-category-bar {
+      border-radius: 0;
+      margin-top: -1px;
+    }
     .cat-btn {
       background: var(--bg);
       border: 1.5px solid var(--border);
@@ -1456,10 +1469,10 @@
 <!-- PLATFORM TABS -->
 <div class="platform-tabs">
   <div class="nav-inner">
-    <div class="ptab active-musinsa" id="tab-musinsa" onclick="switchPlatform('musinsa')">
+    <div class="ptab active-musinsa" data-tab="musinsa" onclick="switchPlatform('musinsa')">
       <div class="ptab-dot"></div>무신사
     </div>
-    <div class="ptab" id="tab-29cm" onclick="switchPlatform('29cm')">
+    <div class="ptab" data-tab="29cm" onclick="switchPlatform('29cm')">
       <div class="ptab-dot"></div>29CM
     </div>
   </div>
@@ -1598,6 +1611,16 @@
   <!-- LEFT: 랭킹 테이블 -->
   <div id="rankingCol" style="display:flex;flex-direction:column;">
     <div class="section-title" id="rankingTitle" style="font-size: 10px">무신사 실시간 랭킹</div>
+    <div class="platform-tabs ranking-platform-tabs">
+      <div class="nav-inner">
+        <div class="ptab active-musinsa" data-tab="musinsa" onclick="switchPlatform('musinsa')">
+          <div class="ptab-dot"></div>무신사
+        </div>
+        <div class="ptab" data-tab="29cm" onclick="switchPlatform('29cm')">
+          <div class="ptab-dot"></div>29CM
+        </div>
+      </div>
+    </div>
     <div class="category-bar ranking-category-bar">
       <div class="nav-inner" id="categoryBar" style="display:flex;gap:8px;flex-wrap:nowrap;"></div>
     </div>
@@ -2212,8 +2235,12 @@ function switchPlatform(p) {
   state.platform = p;
   state.category = '';
   state.restOpen = false;
-  document.getElementById('tab-musinsa').className = 'ptab' + (p === 'musinsa' ? ' active-musinsa' : '');
-  document.getElementById('tab-29cm').className = 'ptab' + (p === '29cm' ? ' active-29cm' : '');
+  document.querySelectorAll('[data-tab="musinsa"]').forEach(el => {
+    el.className = 'ptab' + (p === 'musinsa' ? ' active-musinsa' : '');
+  });
+  document.querySelectorAll('[data-tab="29cm"]').forEach(el => {
+    el.className = 'ptab' + (p === '29cm' ? ' active-29cm' : '');
+  });
   const badge = document.getElementById('nowBadge');
   if (badge) badge.className = 'now-badge' + (p === '29cm' ? ' cm' : '');
   renderCategoryBar();
