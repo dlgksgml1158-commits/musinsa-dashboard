@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-07T06:53:17.098907+00:00",
+  "updatedAt": "2026-07-07T11:23:41.925084+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 5,
       "keyword": "모자",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "가방",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 7,
       "keyword": "쪼리",
       "rankIncrement": 3
     },
     {
-      "rank": 8,
+      "rank": 7,
       "keyword": "나시",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "가방",
+      "rankIncrement": -2
+    },
+    {
       "rank": 9,
-      "keyword": "진돌",
-      "rankIncrement": -4
+      "keyword": "바지",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": -1
+      "keyword": "샌들",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "마스마룰즈",
-      "rankIncrement": 142
+      "keyword": "파우치",
+      "rankIncrement": 110
     },
     {
       "rank": 2,
-      "keyword": "혼다",
-      "rankIncrement": 121
+      "keyword": "반팔 가디건",
+      "rankIncrement": 105
     },
     {
       "rank": 3,
-      "keyword": "플립플랍",
-      "rankIncrement": 119
+      "keyword": "토마스모어",
+      "rankIncrement": 123
     },
     {
       "rank": 4,
-      "keyword": "꼼파뇨",
-      "rankIncrement": 136
+      "keyword": "나혼자산다",
+      "rankIncrement": 399
     },
     {
       "rank": 5,
-      "keyword": "하이산",
-      "rankIncrement": 144
+      "keyword": "롬앤",
+      "rankIncrement": 308
     },
     {
       "rank": 6,
-      "keyword": "헤어밴드",
-      "rankIncrement": 180
+      "keyword": "이타백",
+      "rankIncrement": 110
     },
     {
       "rank": 7,
-      "keyword": "휠라",
-      "rankIncrement": 134
+      "keyword": "탑텐",
+      "rankIncrement": 158
     },
     {
       "rank": 8,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 174
+      "keyword": "노티카",
+      "rankIncrement": 104
     },
     {
       "rank": 9,
-      "keyword": "트레이닝 바지",
-      "rankIncrement": 100
+      "keyword": "하객룩",
+      "rankIncrement": 110
     },
     {
       "rank": 10,
-      "keyword": "시너진",
-      "rankIncrement": 139
+      "keyword": "무지 반팔티",
+      "rankIncrement": 106
     }
   ]
 }
