@@ -1936,16 +1936,30 @@ async function loadPromotions() {
     const res = await fetch(`data/musinsa_promotions.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('No data');
     const data = await res.json();
+    const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
     const items = (data.items || [])
       .filter(function(it) { return it.status !== 'RECRUIT_END'; })
-      .sort(function(a, b) { return new Date(a.from) - new Date(b.from); });
+      .map(function(it) {
+        let isUrgent = false;
+        if (it.recruitDeadline) {
+          const deadline = new Date(it.recruitDeadline);
+          if (!isNaN(deadline)) {
+            const daysLeft = (deadline - todayMidnight) / 86400000;
+            isUrgent = daysLeft >= 0 && daysLeft <= 3;
+          }
+        }
+        return Object.assign({}, it, { isUrgent: isUrgent });
+      })
+      .sort(function(a, b) {
+        if (a.isUrgent !== b.isUrgent) return a.isUrgent ? -1 : 1;
+        return new Date(a.from) - new Date(b.from);
+      });
 
     if (!items.length) {
       listEl.innerHTML = '<div class="promotion-loading">진행 예정인 프로모션이 없습니다</div>';
       return;
     }
-
-    const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
     listEl.innerHTML = items.map(function(it) {
       const label = PROMOTION_STATUS_LABEL[it.status] || it.status;
@@ -1956,15 +1970,7 @@ async function loadPromotions() {
         (it.minPercent ? ' · 최소할인율 ' + it.minPercent + '%' : '') +
         (it.recruitDeadline ? ' · 신청마감 ' + it.recruitDeadline : '');
 
-      let isUrgent = false;
-      if (it.recruitDeadline) {
-        const deadline = new Date(it.recruitDeadline);
-        if (!isNaN(deadline)) {
-          const daysLeft = (deadline - todayMidnight) / 86400000;
-          isUrgent = daysLeft >= 0 && daysLeft <= 3;
-        }
-      }
-      const badgeClass = isUrgent ? 'promotion-badge promotion-badge-urgent' : 'promotion-badge';
+      const badgeClass = it.isUrgent ? 'promotion-badge promotion-badge-urgent' : 'promotion-badge';
 
       return '<div class="promotion-item">' +
         '<span class="' + badgeClass + '">' + label + '</span>' +
