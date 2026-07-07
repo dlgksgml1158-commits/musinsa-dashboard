@@ -1497,7 +1497,7 @@
 </div>
 
 <!-- 무신사 실시간 검색어 -->
-<div class="trend-section trend-section-2col" id="musinsaSearchSection">
+<div class="trend-section" id="musinsaSearchSection">
   <div class="trend-card">
     <div class="trend-card-header">
       <div class="trend-card-title">
@@ -1517,6 +1517,16 @@
       <span class="trend-card-sub" id="msSearchRisingSub" style="font-size:9px;">TOP 10</span>
     </div>
     <div class="trend-card-body" id="msSearchRisingList"></div>
+  </div>
+  <div class="trend-card">
+    <div class="trend-card-header">
+      <div class="trend-card-title">
+        <span class="trend-icon new">N</span>
+        네이버 인기 검색어
+      </div>
+      <span class="trend-card-sub" id="msNaverSearchSub" style="font-size:9px;">TOP 10</span>
+    </div>
+    <div class="trend-card-body" id="msNaverSearchList"></div>
   </div>
 </div>
 
@@ -2394,9 +2404,11 @@ function renderNaverSearch() {
 
   const listEl = document.getElementById('naverSearchList');
   const restEl = document.getElementById('naverSearchRest');
+  const top10El = document.getElementById('msNaverSearchList');
 
   if (listEl) listEl.innerHTML = top5.map((kw, i) => naverSearchRow(kw, i)).join('');
   if (restEl) restEl.innerHTML = rest5.map((kw, i) => naverSearchRow(kw, i + 5)).join('');
+  if (top10El) top10El.innerHTML = keywords.slice(0, 10).map((kw, i) => naverSearchRow(kw, i)).join('');
 
   if (trendsData.updatedAt) {
     const updTime = new Date(trendsData.updatedAt).toLocaleString('ko-KR', {
@@ -2404,7 +2416,9 @@ function renderNaverSearch() {
       hour: '2-digit', minute: '2-digit'
     });
     const subEl = document.getElementById('naverSearchSub');
+    const msSubEl = document.getElementById('msNaverSearchSub');
     if (subEl) subEl.textContent = updTime + ' 기준';
+    if (msSubEl) msSubEl.textContent = updTime + ' 기준';
   }
 }
 
