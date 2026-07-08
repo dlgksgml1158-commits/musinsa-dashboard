@@ -250,7 +250,7 @@
     main {
       padding: 24px 28px;
       display: grid;
-      grid-template-columns: 1fr 320px;
+      grid-template-columns: 1fr;
       gap: 20px;
       max-width: 1380px;
       margin: 0 auto;
@@ -981,6 +981,8 @@
     .trend-icon.rise { background: #dcfce7; color: var(--up); }
     .trend-icon.new  { background: #dbeafe; color: var(--musinsa); }
     .trend-icon.deal { background: #fee2e2; color: var(--down); }
+    .trend-icon.brand { background: #ede9fe; color: #7c3aed; }
+    #musinsaSearchSection { grid-template-columns: repeat(4, 1fr); }
     .trend-card-sub {
       font-size: 11px;
       color: var(--text3);
@@ -1594,6 +1596,16 @@
     </div>
     <div class="trend-card-body" id="msNaverSearchList"></div>
   </div>
+  <div class="trend-card">
+    <div class="trend-card-header">
+      <div class="trend-card-title">
+        <span class="trend-icon brand">🏬</span>
+        브랜드 노출 현황
+      </div>
+      <span class="trend-card-sub" style="font-size:9px;">TOP10 내</span>
+    </div>
+    <div class="trend-card-body" id="brandList"></div>
+  </div>
 </div>
 
 <!-- TREND CARDS -->
@@ -1704,35 +1716,6 @@
           <span style="font-size:12px;">접기</span>
         </button>
       </div>
-    </div>
-  </div>
-
-  <!-- RIGHT: 사이드바 -->
-  <div class="sidebar">
-
-    <!-- 브랜드 노출 현황 -->
-    <div class="brand-card">
-      <div class="brand-card-header">
-        <span style="font-size:12px;">브랜드 노출 현황</span>
-        <span class="brand-card-sub" style="font-size: 9px">TOP10 내</span>
-      </div>
-      <div id="brandList">
-        <div class="empty-state"><p>데이터 로딩 중...</p></div>
-      </div>
-    </div>
-
-    <!-- 네이버 인기 검색어 -->
-    <div class="brand-card">
-      <div class="brand-card-header">
-        <span style="font-size:12px;">네이버 인기 검색어</span>
-        <span class="brand-card-sub" id="naverSearchSub" style="font-size:9px;">패션 TOP 10</span>
-      </div>
-      <div id="naverSearchList"></div>
-      <div id="naverSearchRest" style="display:none;"></div>
-      <button class="deal-toggle-btn" id="naverToggleBtn" onclick="toggleNaverRest()">
-        <span id="naverToggleLabel">더보기</span>
-        <span class="deal-toggle-chevron" id="naverToggleChevron">▾</span>
-      </button>
     </div>
   </div>
 </main>
