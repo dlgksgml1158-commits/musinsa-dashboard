@@ -153,6 +153,11 @@
     .dropdown-select-trigger:hover {
       background: var(--bg);
     }
+    .dropdown-select-trigger.disabled {
+      color: var(--text3);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
     .dropdown-select-arrow {
       font-size: 9px;
       transition: transform .15s;
@@ -2371,6 +2376,9 @@ function switchPlatform(p) {
   document.querySelectorAll('[data-tab="29cm"]').forEach(el => {
     el.className = 'ptab' + (p === '29cm' ? ' active-29cm' : '');
   });
+  const genderDropdown = document.getElementById('genderDropdown');
+  genderDropdown?.classList.remove('open');
+  genderDropdown?.querySelector('.dropdown-select-trigger')?.classList.toggle('disabled', p !== 'musinsa');
   syncGenderButtons();
   const badge = document.getElementById('nowBadge');
   if (badge) badge.className = 'now-badge' + (p === '29cm' ? ' cm' : '');
