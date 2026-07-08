@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T09:17:53.658811+00:00",
+  "updatedAt": "2026-07-08T11:22:51.949579+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "나루토",
-      "rankIncrement": 0
+      "keyword": "레인부츠",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "레인부츠",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "버뮤다팬츠",
+      "keyword": "모자",
       "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "가방",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "모자",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "스파오",
-      "rankIncrement": 1
+      "keyword": "쪼리",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
       "keyword": "나시",
-      "rankIncrement": -1
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "언더아머",
-      "rankIncrement": 101
+      "keyword": "브라운브레스",
+      "rankIncrement": 100
     },
     {
       "rank": 2,
-      "keyword": "남자 나시",
-      "rankIncrement": 124
+      "keyword": "I feel lucky",
+      "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "스탠리",
-      "rankIncrement": 176
+      "keyword": "아디다스 IZ4801",
+      "rankIncrement": 122
     },
     {
       "rank": 4,
-      "keyword": "스트라이프 반팔",
-      "rankIncrement": 108
+      "keyword": "텀블러",
+      "rankIncrement": 137
     },
     {
       "rank": 5,
-      "keyword": "지오다노",
-      "rankIncrement": 308
+      "keyword": "디스커버리 익스페디션",
+      "rankIncrement": 115
     },
     {
       "rank": 6,
-      "keyword": "셋업",
-      "rankIncrement": 168
+      "keyword": "로맨틱무브",
+      "rankIncrement": 120
     },
     {
       "rank": 7,
-      "keyword": "후브스",
-      "rankIncrement": 105
+      "keyword": "트래블",
+      "rankIncrement": 161
     },
     {
       "rank": 8,
-      "keyword": "청반바지",
-      "rankIncrement": 126
+      "keyword": "헤라",
+      "rankIncrement": 142
     },
     {
       "rank": 9,
-      "keyword": "그라미치",
-      "rankIncrement": 123
+      "keyword": "유니폼",
+      "rankIncrement": 105
     },
     {
       "rank": 10,
-      "keyword": "노이어",
-      "rankIncrement": 204
+      "keyword": "그라미치",
+      "rankIncrement": 132
     }
   ]
 }
