@@ -1830,7 +1830,7 @@ let state = {
   platform: 'musinsa',
   category: '',
   gender: 'all',
-  data: { musinsa: null, '29cm': null },
+  data: { musinsa: null, '29cm': null, musinsa_male: null },
   filteredItems: [],
   restOpen: false,
   kinlockStats: null,
@@ -2245,24 +2245,42 @@ async function loadKinlockStats() {
 
 async function loadData(platform) {
   try {
-    const resId = platform === 'musinsa' ? 'musinsaData' : 'cmData';
-    const url = (window.__resources && window.__resources[resId]) || `data/${platform === 'musinsa' ? 'musinsa' : '29cm'}.json?t=${Date.now()}`;
+    const resId = platform === 'musinsa' ? 'musinsaData' : (platform === '29cm' ? 'cmData' : null);
+    const url = (resId && window.__resources && window.__resources[resId]) || `data/${platform}.json?t=${Date.now()}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error('No data');
     state.data[platform] = await res.json();
     if (platform === state.platform) showToast(`${platform === 'musinsa' ? '무신사' : '29CM'} 데이터 로드 완료 ✓`);
   } catch {
-    state.data[platform] = generateSampleData(platform);
-    if (platform === state.platform) showToast('⚠ 샘플 데이터 표시 중 (GitHub Actions 미실행)', 4000);
+    if (platform === 'musinsa_male') {
+      state.data[platform] = { items: [], categories: {} };
+    } else {
+      state.data[platform] = generateSampleData(platform);
+      if (platform === state.platform) showToast('⚠ 샘플 데이터 표시 중 (GitHub Actions 미실행)', 4000);
+    }
   }
 }
 
 /* ===========================
    PLATFORM SWITCH
 =========================== */
+function getActiveData() {
+  if (state.platform === 'musinsa' && state.gender === 'male') {
+    return state.data.musinsa_male;
+  }
+  return state.data[state.platform];
+}
+
+function syncGenderButtons() {
+  document.querySelectorAll('[data-gender]').forEach(el => {
+    el.classList.toggle('active', el.dataset.gender === state.gender);
+  });
+}
+
 function switchPlatform(p) {
   state.platform = p;
   state.category = '';
+  state.gender = 'all';
   state.restOpen = false;
   document.querySelectorAll('[data-tab="musinsa"]').forEach(el => {
     el.className = 'ptab' + (p === 'musinsa' ? ' active-musinsa' : '');
@@ -2270,6 +2288,7 @@ function switchPlatform(p) {
   document.querySelectorAll('[data-tab="29cm"]').forEach(el => {
     el.className = 'ptab' + (p === '29cm' ? ' active-29cm' : '');
   });
+  syncGenderButtons();
   const badge = document.getElementById('nowBadge');
   if (badge) badge.className = 'now-badge' + (p === '29cm' ? ' cm' : '');
   renderCategoryBar();
@@ -2280,14 +2299,25 @@ function switchPlatform(p) {
   renderPriceChart();
 }
 
-function selectGender(g) {
-  state.gender = g;
-  document.querySelectorAll('[data-gender]').forEach(el => {
-    el.classList.toggle('active', el.dataset.gender === g);
-  });
-  if (g === 'male') {
-    showToast('남성 전용 데이터는 준비 중이에요. 곧 연동될 예정입니다.', 2500);
+async function selectGender(g) {
+  if (state.platform !== 'musinsa') {
+    showToast('29CM 성별 필터는 아직 준비 중이에요.', 2500);
+    return;
   }
+  state.gender = g;
+  syncGenderButtons();
+
+  if (g === 'male' && !state.data.musinsa_male) {
+    showToast('남성 랭킹 불러오는 중...', 1500);
+    await loadData('musinsa_male');
+  }
+
+  state.category = '';
+  renderCategoryBar();
+  renderTrendCards();
+  renderRanking();
+  renderSidebar();
+  renderPriceChart();
 }
 
 /* ===========================
@@ -2344,7 +2374,7 @@ function filterByName(items) {
 }
 
 function getFilteredItems() {
-  const d = state.data[state.platform];
+  const d = getActiveData();
   if (!d) return [];
 
   const allowedCodes = state.platform === 'musinsa'
@@ -2437,7 +2467,7 @@ function renderRanking() {
   // 선택한 카테고리에 데이터가 없으면 전체 데이터로 폴백 + 안내 배너
   const noDataBanner = document.getElementById('noDataBanner');
   if (items.length === 0 && state.category) {
-    const d = state.data[state.platform];
+    const d = getActiveData();
     items = filterByName((d?.categories?.[''] || d?.items || []).slice(0, 30));
     if (noDataBanner) noDataBanner.style.display = '';
   } else {
@@ -2879,7 +2909,7 @@ function renderTrendCards() {
 
   // 카테고리 데이터 없으면 전체 데이터(신발 제외)로 폴백
   if (items.length === 0 && state.category) {
-    const d = state.data[state.platform];
+    const d = getActiveData();
     items = filterByName((d?.categories?.[''] || d?.items || []).slice(0, 30));
   }
 
@@ -3201,7 +3231,7 @@ function renderPriceChart() {
   const isMusinsa = state.platform === 'musinsa';
   const cats = (isMusinsa ? MUSINSA_CATS : CM29_CATS).slice(1);
   const colors = isMusinsa ? PRICE_COLORS_MUSINSA : PRICE_COLORS_29CM;
-  const d = state.data[state.platform];
+  const d = getActiveData();
   if (!d) return;
 
   let catStats;

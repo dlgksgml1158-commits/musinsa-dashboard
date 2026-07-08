@@ -116,10 +116,10 @@ def _build_item(raw: dict, rank: int, cat_code: str, cat_label: str) -> dict:
 # 호출하는 API. 진짜 인기순 정렬 + 페이지네이션을 지원하며, 세부 서브카테고리
 # 코드로도 정확히 필터링된다(직접 확인 완료). hmacId 파라미터가 응답에
 # 포함되지만 요청 시 없어도 정상 동작한다.
-def _fetch_musinsa_plp_goods(real_cat_code: str, size: int = 30) -> list:
+def _fetch_musinsa_plp_goods(real_cat_code: str, size: int = 30, gf: str = "A") -> list:
     url = "https://api.musinsa.com/api2/dp/v2/plp/goods"
     params = {
-        "gf": "A",
+        "gf": gf,
         "sortCode": "POPULAR",
         "category": real_cat_code,
         "size": size,
@@ -906,6 +906,36 @@ def fetch_musinsa() -> dict:
     return categories
 
 
+def fetch_musinsa_male() -> dict:
+    """무신사 남성(gf=M) 전용 랭킹 수집.
+
+    PLP API(방법 0)만 사용하고 나머지 폴백 체인은 생략한다 — 성별 필터는
+    부가 기능이라 실패 시 빈 카테고리로 남겨 프론트에서 '준비 중'으로
+    표시하는 편이 전체 수집 시간을 늘리는 것보다 낫다."""
+    print("▶ 무신사 남성 랭킹 수집 시작...")
+    categories: dict = {}
+    for cat in MUSINSA_CATEGORIES:
+        cat_code = cat["code"]
+        cat_label = cat["label"]
+        if not cat_code:
+            continue  # 전체는 아래에서 서브카테고리 병합으로 재구성
+        real_code = MUSINSA_REAL_CATEGORY_CODE.get(cat_code, cat_code)
+        raw = _fetch_musinsa_plp_goods(real_code, size=LIMIT, gf="M")
+        if raw:
+            items = [_plp_item_to_standard(r, idx + 1, cat_code, cat_label) for idx, r in enumerate(raw[:LIMIT])]
+            categories[cat_code] = items
+            print(f"    ✓ [PLP-M] {cat_label}({real_code}): {len(items)}개")
+        else:
+            categories[cat_code] = []
+            print(f"    [WARN] {cat_label}({real_code}): 남성 데이터 없음")
+        time.sleep(0.3)
+
+    _rebuild_all_from_subcats(categories, LIMIT)
+    total = sum(len(v) for v in categories.values())
+    print(f"  ✓ 무신사 남성 {total}개 수집 완료 ({len(categories)}개 카테고리)")
+    return categories
+
+
 # ═══════════════════════════════════════════════════
 #  29CM API
 # ═══════════════════════════════════════════════════
@@ -1550,6 +1580,21 @@ def main():
         update_kinlock_exposure(musinsa_cats)
     else:
         print("  [WARN] 무신사 데이터 없음 - 기존 파일 유지")
+
+    time.sleep(2)
+
+    old_musinsa_male = load_existing_categories("musinsa_male")
+    musinsa_male_cats = fetch_musinsa_male()
+    if musinsa_male_cats and any(musinsa_male_cats.values()):
+        musinsa_male_cats = compute_rank_changes_categories(musinsa_male_cats, old_musinsa_male)
+        save("musinsa_male", {
+            "platform": "musinsa_male",
+            "updatedAt": datetime.now(timezone.utc).isoformat(),
+            "items": musinsa_male_cats.get("", []),
+            "categories": musinsa_male_cats,
+        })
+    else:
+        print("  [WARN] 무신사 남성 데이터 없음 - 기존 파일 유지")
 
     time.sleep(2)
 
