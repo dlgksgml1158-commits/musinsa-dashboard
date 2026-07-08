@@ -12,6 +12,7 @@ OUT_PATH = "data/musinsa_bestsellers.json"
 
 def main():
     items = []
+    by_date = {}
     start_date = ""
     end_date = ""
     try:
@@ -19,6 +20,7 @@ def main():
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.load(resp)
         items = data.get("items", [])
+        by_date = data.get("byDate", {})
         start_date = data.get("startDate", "")
         end_date = data.get("endDate", "")
     except Exception as e:
@@ -28,10 +30,11 @@ def main():
         "startDate": start_date,
         "endDate": end_date,
         "items": items,
+        "byDate": by_date,
     }
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"Saved {len(items)} bestseller items to {OUT_PATH}")
+    print(f"Saved {len(items)} bestseller items + {len(by_date)} days to {OUT_PATH}")
 
 
 if __name__ == "__main__":

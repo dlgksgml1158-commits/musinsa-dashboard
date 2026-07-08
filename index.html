@@ -1835,6 +1835,7 @@
           <span class="title" style="font-size:12px;">주문 리스트</span>
           <span class="sub" id="bestsellerSub" style="font-size:9px;margin-left:8px;">구매확정 기준</span>
         </div>
+        <button id="bestsellerReset" class="dropdown-select-trigger" style="display:none;" onclick="showBestsellersForDate(null)">전체보기</button>
       </div>
       <div class="bestseller-list-wrap" id="bestsellerList">
         <div class="empty-state"><p>데이터 로딩 중...</p></div>
@@ -3174,23 +3175,45 @@ async function loadOrderStats() {
   renderOrderStats();
 }
 
+let bestsellersData = null;
+let selectedBestsellerDate = null;
+
 async function loadBestsellers() {
-  const listEl = document.getElementById('bestsellerList');
-  if (!listEl) return;
-  let items = [];
-  let startDate = '', endDate = '';
   try {
     const res = await fetch(`data/musinsa_bestsellers.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data = await res.json();
-    items = data.items || [];
-    startDate = data.startDate || '';
-    endDate = data.endDate || '';
+    bestsellersData = await res.json();
   } catch (e) {
-    items = [];
+    bestsellersData = { items: [], byDate: {} };
   }
+  renderBestsellerList();
+}
+
+function showBestsellersForDate(date) {
+  selectedBestsellerDate = date;
+  renderBestsellerList();
+}
+
+function renderBestsellerList() {
+  const listEl = document.getElementById('bestsellerList');
   const sub = document.getElementById('bestsellerSub');
-  if (sub) sub.textContent = startDate && endDate ? `${startDate} ~ ${endDate} · 구매확정 기준` : '구매확정 기준';
+  const resetBtn = document.getElementById('bestsellerReset');
+  if (!listEl || !bestsellersData) return;
+
+  const byDate = bestsellersData.byDate || {};
+  const isDateMode = selectedBestsellerDate && byDate[selectedBestsellerDate];
+  const items = isDateMode ? byDate[selectedBestsellerDate] : (bestsellersData.items || []);
+
+  if (sub) {
+    if (isDateMode) {
+      sub.textContent = `${selectedBestsellerDate} · 구매확정 기준`;
+    } else {
+      const { startDate, endDate } = bestsellersData;
+      sub.textContent = startDate && endDate ? `${startDate} ~ ${endDate} · 구매확정 기준` : '구매확정 기준';
+    }
+  }
+  if (resetBtn) resetBtn.style.display = isDateMode ? '' : 'none';
+
   listEl.innerHTML = items.length
     ? items.map(item => `
       <div class="bestseller-item">
@@ -3202,7 +3225,7 @@ async function loadBestsellers() {
         <div class="bestseller-qty">${item.qty}개</div>
       </div>
     `).join('')
-    : '<div class="empty-state"><p>데이터 없음</p></div>';
+    : `<div class="empty-state"><p>${isDateMode ? '이 날짜에는 판매 데이터가 없어요' : '데이터 없음'}</p></div>`;
 }
 
 const ORDER_STATS_MODE_LABELS = { daily: '일별', monthly: '월별' };
@@ -3222,6 +3245,7 @@ function aggregateOrderStats(items, mode) {
   if (mode === 'daily') {
     return items.map(it => ({
       label: it.date.slice(5).replace('-', '/'),
+      date: it.date,
       qty: it.qtyAll || 0,
       price: it.priceSale || 0,
     }));
@@ -3328,6 +3352,7 @@ function renderOrderStats() {
       <div class="price-tooltip-cat">${p.label}</div>
       <div class="price-tooltip-row"><span class="label">주문건수</span><span class="val">${p.qty.toLocaleString()}건</span></div>
       <div class="price-tooltip-row"><span class="label">매출(순판매)</span><span class="val">${p.price.toLocaleString()}원</span></div>
+      ${p.date ? '<div class="price-tooltip-row" style="color:#22c55e;">클릭하면 이 날짜 주문 리스트 보기</div>' : ''}
     `;
     tooltip.classList.add('show');
     const tooltipWidth = tooltip.offsetWidth || 160;
@@ -3342,6 +3367,18 @@ function renderOrderStats() {
     guideLine.style.display = 'none';
     guideDot.style.display = 'none';
     tooltip.classList.remove('show');
+  });
+
+  overlay.style.cursor = orderStatsMode === 'daily' ? 'pointer' : 'default';
+  overlay.addEventListener('click', (e) => {
+    if (orderStatsMode !== 'daily') return;
+    const rect = svg.getBoundingClientRect();
+    const scaleX = width / rect.width;
+    const svgX = (e.clientX - rect.left) * scaleX;
+    let idx = Math.round((svgX - padL - step / 2) / step);
+    idx = Math.max(0, Math.min(points.length - 1, idx));
+    const p = points[idx];
+    if (p.date) showBestsellersForDate(p.date);
   });
 }
 
