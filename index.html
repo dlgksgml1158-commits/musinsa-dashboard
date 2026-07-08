@@ -130,11 +130,13 @@
       gap: 0;
       padding: 0 28px;
     }
-    .gender-dropdown {
+    .dropdown-select {
       position: relative;
+    }
+    #genderDropdown {
       margin-left: auto;
     }
-    .gender-dropdown-trigger {
+    .dropdown-select-trigger {
       display: flex;
       align-items: center;
       gap: 4px;
@@ -148,21 +150,21 @@
       font-weight: 600;
       transition: background .12s, color .12s;
     }
-    .gender-dropdown-trigger:hover {
+    .dropdown-select-trigger:hover {
       background: var(--bg);
     }
-    .gender-dropdown-arrow {
+    .dropdown-select-arrow {
       font-size: 9px;
       transition: transform .15s;
     }
-    .gender-dropdown.open .gender-dropdown-trigger {
+    .dropdown-select.open .dropdown-select-trigger {
       background: var(--bg);
       color: var(--musinsa);
     }
-    .gender-dropdown.open .gender-dropdown-arrow {
+    .dropdown-select.open .dropdown-select-arrow {
       transform: rotate(180deg);
     }
-    .gender-dropdown-menu {
+    .dropdown-select-menu {
       display: none;
       position: absolute;
       top: calc(100% + 6px);
@@ -175,10 +177,10 @@
       overflow: hidden;
       z-index: 20;
     }
-    .gender-dropdown.open .gender-dropdown-menu {
+    .dropdown-select.open .dropdown-select-menu {
       display: block;
     }
-    .gender-dropdown-item {
+    .dropdown-select-item {
       display: block;
       width: 100%;
       text-align: left;
@@ -190,10 +192,10 @@
       color: var(--text2);
       cursor: pointer;
     }
-    .gender-dropdown-item:hover {
+    .dropdown-select-item:hover {
       background: var(--bg);
     }
-    .gender-dropdown-item.active {
+    .dropdown-select-item.active {
       color: var(--musinsa);
       font-weight: 700;
       background: #eff6ff;
@@ -1397,24 +1399,6 @@
       color: var(--text3);
       font-size: 13px;
     }
-    .order-stats-toggle {
-      display: flex;
-      gap: 6px;
-    }
-    .order-stats-toggle button {
-      font-size: 11px;
-      padding: 4px 12px;
-      border-radius: 20px;
-      border: 1px solid var(--border);
-      background: #fff;
-      cursor: pointer;
-      color: var(--text3);
-    }
-    .order-stats-toggle button.active {
-      background: var(--musinsa);
-      color: #fff;
-      border-color: var(--musinsa);
-    }
     .order-stats-svg-wrap {
       width: 100%;
       overflow-x: auto;
@@ -1666,14 +1650,14 @@
         <div class="ptab" data-tab="29cm" onclick="switchPlatform('29cm')">
           <div class="ptab-dot"></div>29CM
         </div>
-        <div class="gender-dropdown" id="genderDropdown">
-          <button class="gender-dropdown-trigger" onclick="toggleGenderDropdown()">
+        <div class="dropdown-select" id="genderDropdown">
+          <button class="dropdown-select-trigger" onclick="toggleDropdown('genderDropdown')">
             <span id="genderDropdownLabel">전체</span>
-            <span class="gender-dropdown-arrow">▾</span>
+            <span class="dropdown-select-arrow">▾</span>
           </button>
-          <div class="gender-dropdown-menu">
-            <button class="gender-dropdown-item active" data-gender="all" onclick="selectGender('all')">전체</button>
-            <button class="gender-dropdown-item" data-gender="male" onclick="selectGender('male')">남성</button>
+          <div class="dropdown-select-menu">
+            <button class="dropdown-select-item active" data-gender="all" onclick="selectGender('all')">전체</button>
+            <button class="dropdown-select-item" data-gender="male" onclick="selectGender('male')">남성</button>
           </div>
         </div>
       </div>
@@ -1762,9 +1746,15 @@
         <span class="title" style="font-size:12px;">커넥트킨록 주문 현황</span>
         <span class="sub" id="orderStatsSub" style="font-size:9px;margin-left:8px;">최근 90일</span>
       </div>
-      <div class="order-stats-toggle" id="orderStatsToggle">
-        <button data-mode="daily" class="active" onclick="setOrderStatsMode('daily')">일별</button>
-        <button data-mode="monthly" onclick="setOrderStatsMode('monthly')">월별</button>
+      <div class="dropdown-select" id="orderStatsDropdown">
+        <button class="dropdown-select-trigger" onclick="toggleDropdown('orderStatsDropdown')">
+          <span id="orderStatsDropdownLabel">일별</span>
+          <span class="dropdown-select-arrow">▾</span>
+        </button>
+        <div class="dropdown-select-menu">
+          <button class="dropdown-select-item active" data-mode="daily" onclick="setOrderStatsMode('daily')">일별</button>
+          <button class="dropdown-select-item" data-mode="monthly" onclick="setOrderStatsMode('monthly')">월별</button>
+        </div>
       </div>
     </div>
     <div class="price-chart-legend">
@@ -2281,13 +2271,14 @@ function syncGenderButtons() {
   if (label) label.textContent = GENDER_LABELS[state.gender] || '전체';
 }
 
-function toggleGenderDropdown() {
-  document.getElementById('genderDropdown')?.classList.toggle('open');
+function toggleDropdown(id) {
+  document.getElementById(id)?.classList.toggle('open');
 }
 
 document.addEventListener('click', (e) => {
-  const dd = document.getElementById('genderDropdown');
-  if (dd && !dd.contains(e.target)) dd.classList.remove('open');
+  document.querySelectorAll('.dropdown-select.open').forEach(dd => {
+    if (!dd.contains(e.target)) dd.classList.remove('open');
+  });
 });
 
 function switchPlatform(p) {
@@ -3105,12 +3096,16 @@ async function loadOrderStats() {
   renderOrderStats();
 }
 
+const ORDER_STATS_MODE_LABELS = { daily: '일별', monthly: '월별' };
+
 function setOrderStatsMode(mode) {
   orderStatsMode = mode;
-  const toggle = document.getElementById('orderStatsToggle');
-  if (toggle) {
-    toggle.querySelectorAll('button').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
-  }
+  document.getElementById('orderStatsDropdown')?.classList.remove('open');
+  document.querySelectorAll('#orderStatsDropdown [data-mode]').forEach(b => {
+    b.classList.toggle('active', b.dataset.mode === mode);
+  });
+  const label = document.getElementById('orderStatsDropdownLabel');
+  if (label) label.textContent = ORDER_STATS_MODE_LABELS[mode] || '일별';
   renderOrderStats();
 }
 
