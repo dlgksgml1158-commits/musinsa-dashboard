@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-08T11:22:51.949579+00:00",
+  "updatedAt": "2026-07-08T16:14:18.994643+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "반바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "레인부츠",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 1
     },
     {
+      "rank": 3,
+      "keyword": "반바지",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 4,
+      "keyword": "아디다스",
+      "rankIncrement": -2
+    },
+    {
       "rank": 5,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": -1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "모자",
+      "keyword": "나시",
       "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "가방",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 9,
-      "keyword": "쪼리",
       "rankIncrement": -1
     },
     {
+      "rank": 9,
+      "keyword": "셔츠",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "나시",
-      "rankIncrement": 1
+      "keyword": "쪼리",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "브라운브레스",
-      "rankIncrement": 100
+      "keyword": "썬러브",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "I feel lucky",
-      "rankIncrement": 101
+      "keyword": "맨투맨",
+      "rankIncrement": 121
     },
     {
       "rank": 3,
-      "keyword": "아디다스 IZ4801",
-      "rankIncrement": 122
+      "keyword": "무지티",
+      "rankIncrement": 102
     },
     {
       "rank": 4,
-      "keyword": "텀블러",
-      "rankIncrement": 137
+      "keyword": "상의",
+      "rankIncrement": 133
     },
     {
       "rank": 5,
-      "keyword": "디스커버리 익스페디션",
-      "rankIncrement": 115
-    },
-    {
-      "rank": 6,
-      "keyword": "로맨틱무브",
+      "keyword": "집업",
       "rankIncrement": 120
     },
     {
+      "rank": 6,
+      "keyword": "버건디",
+      "rankIncrement": 143
+    },
+    {
       "rank": 7,
-      "keyword": "트래블",
-      "rankIncrement": 161
+      "keyword": "오렌지",
+      "rankIncrement": 101
     },
     {
       "rank": 8,
-      "keyword": "헤라",
-      "rankIncrement": 142
+      "keyword": "토마스모어",
+      "rankIncrement": 128
     },
     {
       "rank": 9,
-      "keyword": "유니폼",
-      "rankIncrement": 105
+      "keyword": "여자 수영복",
+      "rankIncrement": 259
     },
     {
       "rank": 10,
-      "keyword": "그라미치",
-      "rankIncrement": 132
+      "keyword": "로라로라",
+      "rankIncrement": 173
     }
   ]
 }
