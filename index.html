@@ -661,13 +661,19 @@
       display: grid;
       grid-template-columns: 1fr 380px;
       gap: 20px;
-      align-items: start;
+      align-items: stretch;
     }
     @media (max-width: 960px) {
       .order-stats-row { grid-template-columns: 1fr; }
+      .order-stats-row > .price-chart-card { height: auto !important; }
+    }
+    .order-stats-row > .price-chart-card {
+      display: flex;
+      flex-direction: column;
+      height: 420px;
     }
     .bestseller-list-wrap {
-      max-height: 380px;
+      flex: 1;
       overflow-y: auto;
     }
     .bestseller-item {
@@ -3172,14 +3178,19 @@ async function loadBestsellers() {
   const listEl = document.getElementById('bestsellerList');
   if (!listEl) return;
   let items = [];
+  let startDate = '', endDate = '';
   try {
     const res = await fetch(`data/musinsa_bestsellers.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
     items = data.items || [];
+    startDate = data.startDate || '';
+    endDate = data.endDate || '';
   } catch (e) {
     items = [];
   }
+  const sub = document.getElementById('bestsellerSub');
+  if (sub) sub.textContent = startDate && endDate ? `${startDate} ~ ${endDate} · 구매확정 기준` : '구매확정 기준';
   listEl.innerHTML = items.length
     ? items.map(item => `
       <div class="bestseller-item">

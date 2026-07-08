@@ -12,14 +12,23 @@ OUT_PATH = "data/musinsa_bestsellers.json"
 
 def main():
     items = []
+    start_date = ""
+    end_date = ""
     try:
         req = urllib.request.Request(SOURCE_URL, headers={"Accept": "application/json"})
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.load(resp)
         items = data.get("items", [])
+        start_date = data.get("startDate", "")
+        end_date = data.get("endDate", "")
     except Exception as e:
         print(f"Failed to fetch bestsellers: {e}")
-    output = {"updatedAt": datetime.now(timezone.utc).isoformat(), "items": items}
+    output = {
+        "updatedAt": datetime.now(timezone.utc).isoformat(),
+        "startDate": start_date,
+        "endDate": end_date,
+        "items": items,
+    }
     with open(OUT_PATH, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(items)} bestseller items to {OUT_PATH}")
