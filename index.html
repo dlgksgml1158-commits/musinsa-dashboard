@@ -985,6 +985,7 @@
     .coupon-badge.recruit  { background: #dbeafe; color: var(--musinsa); }
     .coupon-badge.applying { background: #dcfce7; color: var(--up); }
     .coupon-badge.done     { background: #ede9fe; color: #7c3aed; }
+    .coupon-badge.urgent   { background: #fee2e2; color: #dc2626; }
 
     /* ── FASHION NEWS ── */
     #fashionNewsCard {
@@ -2233,7 +2234,7 @@ function renderCouponPromoList(listEl, items) {
     return;
   }
   listEl.innerHTML = items.map(function(it) {
-    const badgeClass = COUPON_STATUS_CLASS[it.status] || 'recruit';
+    const badgeClass = it.isUrgent ? 'urgent' : (COUPON_STATUS_CLASS[it.status] || 'recruit');
     const discount = it.couponData ||
       (it.couponDcPercent ? it.couponDcPercent + '%' : (it.couponDcPrice ? it.couponDcPrice + '원' : '-'));
     const period = discount + ' · 모집 ' + (it.rangeDate || '-') + ' · 발행 ' + (it.publishDate || '-');
@@ -2271,7 +2272,7 @@ async function loadPromotions() {
           const deadline = new Date(it.recruitDeadline);
           if (!isNaN(deadline)) {
             const daysLeft = (deadline - todayMidnight) / 86400000;
-            isUrgent = daysLeft >= 0 && daysLeft <= 3;
+            isUrgent = daysLeft >= 0 && daysLeft <= 5;
           }
         }
         return Object.assign({}, it, { isUrgent: isUrgent });
@@ -2295,10 +2296,27 @@ async function loadCouponPromotions() {
     const res = await fetch(`data/musinsa_coupon_promotions.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('No data');
     const data = await res.json();
+    const today = new Date();
+    const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+
     // 모집이 이미 종료된 프로모션은 목록에서 제외한다.
     const items = (data.items || [])
       .filter(function(it) { return it.status !== '모집 종료'; })
-      .sort(function(a, b) { return new Date(a.rangeFrom || 0) - new Date(b.rangeFrom || 0); });
+      .map(function(it) {
+        let isUrgent = false;
+        if (it.rangeTo) {
+          const deadline = new Date(it.rangeTo);
+          if (!isNaN(deadline)) {
+            const daysLeft = (deadline - todayMidnight) / 86400000;
+            isUrgent = daysLeft >= 0 && daysLeft <= 5;
+          }
+        }
+        return Object.assign({}, it, { isUrgent: isUrgent });
+      })
+      .sort(function(a, b) {
+        if (a.isUrgent !== b.isUrgent) return a.isUrgent ? -1 : 1;
+        return new Date(a.rangeFrom || 0) - new Date(b.rangeFrom || 0);
+      });
 
     promoTabCache.coupon = items;
   } catch (e) {
