@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-09T17:27:48.841268+00:00",
+  "updatedAt": "2026-07-09T19:10:23.768132+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,94 +14,94 @@
     {
       "rank": 3,
       "keyword": "반바지",
-      "rankIncrement": 0
+      "rankIncrement": 2
     },
     {
       "rank": 4,
-      "keyword": "모자",
+      "keyword": "가방",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": -2
     },
     {
       "rank": 6,
       "keyword": "나시",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 7,
+      "keyword": "아디다스",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 8,
+      "keyword": "셔츠",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 9,
       "keyword": "바지",
       "rankIncrement": -1
     },
     {
-      "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 9,
-      "keyword": "레인부츠",
-      "rankIncrement": 0
-    },
-    {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": -3
+      "keyword": "쪼리",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아디다스 반바지",
-      "rankIncrement": 162
+      "keyword": "썬번 프로젝트",
+      "rankIncrement": 104
     },
     {
       "rank": 2,
-      "keyword": "트레이닝 반바지",
-      "rankIncrement": 118
+      "keyword": "프리덤",
+      "rankIncrement": 149
     },
     {
       "rank": 3,
-      "keyword": "우산",
-      "rankIncrement": 125
+      "keyword": "긴팔",
+      "rankIncrement": 269
     },
     {
       "rank": 4,
-      "keyword": "린넨셔츠",
-      "rankIncrement": 141
+      "keyword": "버켄스탁",
+      "rankIncrement": 143
     },
     {
       "rank": 5,
-      "keyword": "크롭 셔츠",
-      "rankIncrement": 125
+      "keyword": "오와이",
+      "rankIncrement": 173
     },
     {
       "rank": 6,
-      "keyword": "스파오 나루토",
-      "rankIncrement": 136
+      "keyword": "슬림핏 반팔",
+      "rankIncrement": 250
     },
     {
       "rank": 7,
-      "keyword": "넥타이",
-      "rankIncrement": 115
+      "keyword": "하이산",
+      "rankIncrement": 108
     },
     {
       "rank": 8,
-      "keyword": "파자마",
-      "rankIncrement": 127
+      "keyword": "매쉬",
+      "rankIncrement": 117
     },
     {
       "rank": 9,
-      "keyword": "아디다스 슬리퍼",
-      "rankIncrement": 205
+      "keyword": "맨투맨",
+      "rankIncrement": 114
     },
     {
       "rank": 10,
-      "keyword": "경량패딩",
-      "rankIncrement": 108
+      "keyword": "어나더 오피스",
+      "rankIncrement": 129
     }
   ]
 }
