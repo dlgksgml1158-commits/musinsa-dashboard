@@ -2311,9 +2311,11 @@ async function loadCouponPromotions() {
             isUrgent = daysLeft >= 0 && daysLeft <= 5;
           }
         }
-        return Object.assign({}, it, { isUrgent: isUrgent });
+        const isApplied = it.status === '신청 중' || it.status === '신청 완료';
+        return Object.assign({}, it, { isUrgent: isUrgent, isApplied: isApplied });
       })
       .sort(function(a, b) {
+        if (a.isApplied !== b.isApplied) return a.isApplied ? 1 : -1;
         if (a.isUrgent !== b.isUrgent) return a.isUrgent ? -1 : 1;
         return new Date(a.rangeFrom || 0) - new Date(b.rangeFrom || 0);
       });
