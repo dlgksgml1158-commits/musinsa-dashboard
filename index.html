@@ -2278,6 +2278,11 @@ async function loadPromotions() {
         return Object.assign({}, it, { isUrgent: isUrgent });
       })
       .sort(function(a, b) {
+        // 모집중(READY)이 진행중(RUNNING)보다 항상 위에 오도록 먼저 그룹핑한다.
+        const statusOrder = { READY: 0, RUNNING: 1 };
+        const pa = statusOrder[a.status] ?? 2;
+        const pb = statusOrder[b.status] ?? 2;
+        if (pa !== pb) return pa - pb;
         if (a.isUrgent !== b.isUrgent) return a.isUrgent ? -1 : 1;
         return new Date(a.from) - new Date(b.from);
       });
