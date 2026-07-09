@@ -2257,7 +2257,14 @@ async function loadPromotions() {
     const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
     const items = (data.items || [])
-      .filter(function(it) { return it.status !== 'RECRUIT_END'; })
+      .filter(function(it) {
+        if (it.status === 'RECRUIT_END' || it.status === 'END') return false;
+        if (it.to) {
+          const to = new Date(it.to);
+          if (!isNaN(to) && to < today) return false;
+        }
+        return true;
+      })
       .map(function(it) {
         let isUrgent = false;
         if (it.recruitDeadline) {
