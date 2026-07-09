@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-07-08T18:09:01.700024+00:00",
+  "updatedAt": "2026-07-09T03:01:18.874148+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "반팔",
-      "rankIncrement": 0
+      "keyword": "레인부츠",
+      "rankIncrement": 1
     },
     {
       "rank": 2,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
+      "keyword": "반팔",
+      "rankIncrement": -1
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
+      "keyword": "노바블라스트",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "반바지",
-      "rankIncrement": 0
+      "keyword": "장화",
+      "rankIncrement": 2
     },
     {
       "rank": 5,
-      "keyword": "나시",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
+      "keyword": "반바지",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 7,
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "아식스",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
       "keyword": "모자",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "셔츠",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
       "rank": 10,
-      "keyword": "레인부츠",
-      "rankIncrement": 1
+      "keyword": "샌들",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "hdex",
-      "rankIncrement": 143
+      "keyword": "카프리팬츠",
+      "rankIncrement": 110
     },
     {
       "rank": 2,
-      "keyword": "킨치",
-      "rankIncrement": 100
+      "keyword": "락피쉬 레인부츠",
+      "rankIncrement": 117
     },
     {
       "rank": 3,
-      "keyword": "아쿠아슈즈",
-      "rankIncrement": 107
+      "keyword": "헤라",
+      "rankIncrement": 138
     },
     {
       "rank": 4,
-      "keyword": "양산",
-      "rankIncrement": 115
-    },
-    {
-      "rank": 5,
-      "keyword": "치마",
-      "rankIncrement": 148
-    },
-    {
-      "rank": 6,
-      "keyword": "디아도라",
+      "keyword": "버킷햇",
       "rankIncrement": 102
     },
     {
+      "rank": 5,
+      "keyword": "배드블러드",
+      "rankIncrement": 158
+    },
+    {
+      "rank": 6,
+      "keyword": "양산",
+      "rankIncrement": 179
+    },
+    {
       "rank": 7,
-      "keyword": "헤라",
-      "rankIncrement": 181
+      "keyword": "휴먼메이드",
+      "rankIncrement": 129
     },
     {
       "rank": 8,
-      "keyword": "남자 반바지",
-      "rankIncrement": 331
+      "keyword": "로우클래식",
+      "rankIncrement": 139
     },
     {
       "rank": 9,
-      "keyword": "썬러브",
-      "rankIncrement": 142
+      "keyword": "플리즈노팔로우",
+      "rankIncrement": 227
     },
     {
       "rank": 10,
-      "keyword": "와일드플라워",
-      "rankIncrement": 171
+      "keyword": "시눈",
+      "rankIncrement": 139
     }
   ]
 }

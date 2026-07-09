@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-08T18:08:03.392326+00:00",
+  "updatedAt": "2026-07-09T03:00:15.766153+00:00",
   "items": [
     {
       "rank": 1,
@@ -1254,6 +1254,21 @@
       },
       {
         "rank": 24,
+        "id": "ms-6699601",
+        "brand": "런던다다",
+        "name": "Twist Neck Slim T-Shirt, 3colors",
+        "price": 59000,
+        "originalPrice": 59000,
+        "discountRate": 30,
+        "finalPrice": 41300,
+        "category": "001001",
+        "categoryLabel": "반소매 티셔츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260619/6699601/6699601_17818327785226_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6699601",
+        "change": "NEW"
+      },
+      {
+        "rank": 25,
         "id": "ms-6684643",
         "brand": "오와이",
         "name": "BOLD LETTERS TEE - YELLOW",
@@ -1265,10 +1280,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6684643/6684643_17821041342706_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6684643",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 25,
+        "rank": 26,
         "id": "ms-6704378",
         "brand": "길단",
         "name": "Gildan X 디자인컬렉션 세미 크롭티셔츠 모음전",
@@ -1280,10 +1295,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260619/6704378/6704378_17821230955788_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6704378",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 26,
+        "rank": 27,
         "id": "ms-6615533",
         "brand": "예스아이씨",
         "name": "The Kidding Heads Frame Tee Red",
@@ -1295,10 +1310,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260605/6615533/6615533_17806339993716_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6615533",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 27,
+        "rank": 28,
         "id": "ms-6593664",
         "brand": "썸웨어버터",
         "name": "Stitch Square Logo Top - Ivory",
@@ -1310,10 +1325,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260602/6593664/6593664_17809018547984_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6593664",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 28,
+        "rank": 29,
         "id": "ms-6561365",
         "brand": "언타이틀 서울",
         "name": "언타이틀 레이어드 크롭 반팔 브라운",
@@ -1325,10 +1340,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260528/6561365/6561365_17812405257390_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6561365",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 29,
+        "rank": 30,
         "id": "ms-6626012",
         "brand": "챔피온",
         "name": "조그택 반팔 티셔츠 Navy",
@@ -1340,22 +1355,7 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260608/6626012/6626012_17830453680540_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6626012",
-        "change": 0
-      },
-      {
-        "rank": 30,
-        "id": "ms-6668083",
-        "brand": "꼼파뇨",
-        "name": "1896 스타 피그먼트 반팔티 고스트그레이",
-        "price": 52000,
-        "originalPrice": 52000,
-        "discountRate": 43,
-        "finalPrice": 29750,
-        "category": "001001",
-        "categoryLabel": "반소매 티셔츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260615/6668083/6668083_17816029089664_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6668083",
-        "change": 0
+        "change": -1
       }
     ],
     "001002": [
@@ -1953,8 +1953,8 @@
         "name": "happy day 피그먼트 스웨트셔츠 스모크블랙",
         "price": 72000,
         "originalPrice": 72000,
-        "discountRate": 59,
-        "finalPrice": 29690,
+        "discountRate": 51,
+        "finalPrice": 35100,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240827/4375639/4375639_17727551128659_500.jpg",
@@ -2345,8 +2345,8 @@
         "name": "[다나옷PICK] [10COLORS] 퍼니 풀오버 후디",
         "price": 89900,
         "originalPrice": 89900,
-        "discountRate": 33,
-        "finalPrice": 59900,
+        "discountRate": 17,
+        "finalPrice": 74870,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250812/5315438/5315438_17679363095804_500.jpg",
@@ -2360,8 +2360,8 @@
         "name": "[3COLORS] 에어쿨링 풀오버 후디",
         "price": 79900,
         "originalPrice": 79900,
-        "discountRate": 20,
-        "finalPrice": 63900,
+        "discountRate": 0,
+        "finalPrice": 79900,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260106/5871614/5871614_17702718576825_500.jpg",
@@ -2947,8 +2947,8 @@
         "name": "[ON]스티치 데님 오버핏 데일리 반팔 셔츠 - 2color",
         "price": 79900,
         "originalPrice": 79900,
-        "discountRate": 40,
-        "finalPrice": 47700,
+        "discountRate": 44,
+        "finalPrice": 45070,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260309/6103362/6103362_17830418495308_500.jpg",
@@ -3037,8 +3037,8 @@
         "name": "벨르 레이스 러플 블라우스 ( 크림 )",
         "price": 96000,
         "originalPrice": 96000,
-        "discountRate": 5,
-        "finalPrice": 91200,
+        "discountRate": 24,
+        "finalPrice": 72960,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260421/6345525/6345525_17784605476789_500.jpg",
@@ -3157,8 +3157,8 @@
         "name": "Round Collar Short Sleeve Blouse [Navy]",
         "price": 106000,
         "originalPrice": 106000,
-        "discountRate": 30,
-        "finalPrice": 74200,
+        "discountRate": 41,
+        "finalPrice": 63070,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260204/5977777/5977777_17743135974320_500.jpg",
@@ -3549,8 +3549,8 @@
         "name": "[지안씨 착용] 스트라이프 카라 하프 니트 [NAVY] / GF2LKP525",
         "price": 59000,
         "originalPrice": 59000,
-        "discountRate": 36,
-        "finalPrice": 37600,
+        "discountRate": 37,
+        "finalPrice": 37130,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260309/6098013/6098013_17812310660101_500.png",
@@ -3671,8 +3671,8 @@
         "name": "[시티 레저] 에어웨이트 시어 윈드브레이커 재킷 [클라우디 블루]",
         "price": 69900,
         "originalPrice": 69900,
-        "discountRate": 30,
-        "finalPrice": 48890,
+        "discountRate": 61,
+        "finalPrice": 27510,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241206/4652853/4652853_17417620633186_500.jpg",
@@ -3731,8 +3731,8 @@
         "name": "V넥 변형 자켓_MIWJKG311C MIWJKG51QC",
         "price": 99900,
         "originalPrice": 99900,
-        "discountRate": 37,
-        "finalPrice": 62930,
+        "discountRate": 30,
+        "finalPrice": 69930,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260213/6026203/6026203_17780494711166_500.jpg",
@@ -3941,8 +3941,8 @@
         "name": "썸머 시스루 니트 가디건_6COLOR(WC25-KN29)",
         "price": 59000,
         "originalPrice": 59000,
-        "discountRate": 10,
-        "finalPrice": 53100,
+        "discountRate": 19,
+        "finalPrice": 47790,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250512/5104486/5104486_17820874408650_500.jpg",
@@ -5012,8 +5012,8 @@
         "name": "아디브레이크 팬츠 - 블랙 / IU2519",
         "price": 99000,
         "originalPrice": 99000,
-        "discountRate": 51,
-        "finalPrice": 48990,
+        "discountRate": 62,
+        "finalPrice": 37150,
         "category": "003003",
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240201/3837942/3837942_17067667976462_500.jpg",
@@ -5177,8 +5177,8 @@
         "name": "폴드 웨이스트 스웻팬츠 버건디",
         "price": 95000,
         "originalPrice": 95000,
-        "discountRate": 10,
-        "finalPrice": 85500,
+        "discountRate": 19,
+        "finalPrice": 76950,
         "category": "003003",
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260205/5984255/5984255_17714880912685_500.jpg",
@@ -5889,7 +5889,7 @@
     },
     "001001": {
       "label": "반소매 티셔츠",
-      "avg": 38939,
+      "avg": 39324,
       "min": 17900,
       "max": 74990,
       "count": 30
@@ -5903,35 +5903,35 @@
     },
     "001003": {
       "label": "맨투맨/스웨트",
-      "avg": 75978,
+      "avg": 76158,
       "min": 21900,
       "max": 307990,
       "count": 30
     },
     "001004": {
       "label": "후드 티셔츠",
-      "avg": 115743,
+      "avg": 116775,
       "min": 27600,
       "max": 652990,
       "count": 30
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 46369,
+      "avg": 45302,
       "min": 27700,
-      "max": 91200,
+      "max": 88200,
       "count": 30
     },
     "001006": {
       "label": "니트/스웨터",
-      "avg": 42757,
+      "avg": 42741,
       "min": 17930,
       "max": 89900,
       "count": 30
     },
     "002": {
       "label": "아우터",
-      "avg": 77336,
+      "avg": 76680,
       "min": 23250,
       "max": 178000,
       "count": 30
@@ -5952,9 +5952,9 @@
     },
     "003003": {
       "label": "트레이닝/조거",
-      "avg": 51279,
+      "avg": 50599,
       "min": 28900,
-      "max": 85500,
+      "max": 76950,
       "count": 30
     },
     "003005": {
