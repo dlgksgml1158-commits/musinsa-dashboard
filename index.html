@@ -814,6 +814,22 @@
       font-size: 11px;
       color: var(--text3);
     }
+    .promo-tab-group {
+      display: flex;
+      gap: 12px;
+    }
+    .promo-tab-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text3);
+    }
+    .promo-tab-btn.active {
+      color: var(--text);
+    }
     .weather-body {
       display: flex;
       align-items: center;
@@ -969,7 +985,6 @@
     .coupon-badge.recruit  { background: #dbeafe; color: var(--musinsa); }
     .coupon-badge.applying { background: #dcfce7; color: var(--up); }
     .coupon-badge.done     { background: #ede9fe; color: #7c3aed; }
-    .coupon-badge.closed   { background: #f1f5f9; color: var(--text3); }
 
     /* ── FASHION NEWS ── */
     #fashionNewsCard {
@@ -1638,7 +1653,10 @@
   <!-- 프로모션 카드 -->
   <div class="contents-top-col" id="promotionCard">
     <div class="weather-header">
-      <span class="weather-location">무신사 프로모션</span>
+      <span class="promo-tab-group">
+        <button class="promo-tab-btn active" id="promoTabMusinsa" onclick="switchPromoTab('musinsa')">무신사 프로모션</button>
+        <button class="promo-tab-btn" id="promoTabCoupon" onclick="switchPromoTab('coupon')">쿠폰 프로모션</button>
+      </span>
       <span class="weather-date" id="promotionDate">-</span>
     </div>
     <div class="promotion-list" id="promotionList">
@@ -1715,33 +1733,6 @@
       <span class="trend-card-sub" id="trendDealSub" style="font-size: 9px">할인율 TOP 10</span>
     </div>
     <div class="trend-card-body" id="trendDeal"></div>
-  </div>
-</div>
-
-<!-- 쿠폰 프로모션 현황 -->
-<div class="trend-section" style="grid-template-columns: 1fr;">
-  <div class="trend-card">
-    <div class="trend-card-header">
-      <div class="trend-card-title">쿠폰 프로모션 현황</div>
-      <span class="trend-card-sub" id="couponPromoSub">-</span>
-    </div>
-    <div style="overflow-x:auto;">
-      <table style="min-width:760px;">
-        <thead>
-          <tr>
-            <th>상태</th>
-            <th>프로모션명</th>
-            <th>유형</th>
-            <th>할인</th>
-            <th>모집기간</th>
-            <th>발행기간</th>
-          </tr>
-        </thead>
-        <tbody id="couponPromoTbody">
-          <tr><td colspan="6"><div class="promotion-loading">쿠폰 프로모션 정보 준비 중...</div></td></tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </div>
 
@@ -2173,20 +2164,96 @@ const PROMOTION_STATUS_LABEL = {
   RECRUIT_END: '모집마감',
 };
 
-async function loadPromotions() {
+const COUPON_STATUS_CLASS = {
+  '모집 중': 'recruit',
+  '신청 중': 'applying',
+  '신청 완료': 'done',
+};
+
+let activePromoTab = 'musinsa';
+const promoTabCache = { musinsa: null, coupon: null };
+
+function switchPromoTab(tab) {
+  activePromoTab = tab;
+  const musinsaBtn = document.getElementById('promoTabMusinsa');
+  const couponBtn = document.getElementById('promoTabCoupon');
+  if (musinsaBtn) musinsaBtn.classList.toggle('active', tab === 'musinsa');
+  if (couponBtn) couponBtn.classList.toggle('active', tab === 'coupon');
+  renderPromoTab();
+}
+
+function renderPromoTab() {
   const listEl = document.getElementById('promotionList');
   const dateEl = document.getElementById('promotionDate');
   if (!listEl) return;
 
-  const today = new Date();
-  const mm = today.getMonth() + 1;
-  const dd = today.getDate();
-  if (dateEl) dateEl.textContent = mm + '월 ' + dd + '일 기준';
+  const cached = promoTabCache[activePromoTab];
+  if (cached === null) {
+    listEl.innerHTML = '<div class="promotion-loading">프로모션 정보 준비 중...</div>';
+    return;
+  }
+
+  if (activePromoTab === 'musinsa') {
+    const today = new Date();
+    if (dateEl) dateEl.textContent = (today.getMonth() + 1) + '월 ' + today.getDate() + '일 기준';
+    renderMusinsaPromoList(listEl, cached);
+  } else {
+    if (dateEl) dateEl.textContent = cached.length ? cached.length + '건' : '-';
+    renderCouponPromoList(listEl, cached);
+  }
+}
+
+function renderMusinsaPromoList(listEl, items) {
+  if (!items.length) {
+    listEl.innerHTML = '<div class="promotion-loading">진행 예정인 프로모션이 없습니다</div>';
+    return;
+  }
+  listEl.innerHTML = items.map(function(it) {
+    const label = PROMOTION_STATUS_LABEL[it.status] || it.status;
+    const from = it.from ? new Date(it.from) : null;
+    const to = it.to ? new Date(it.to) : null;
+    const fmt = function(d) { return d ? (d.getMonth() + 1) + '/' + d.getDate() + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') : ''; };
+    const period = fmt(from) + ' ~ ' + fmt(to) +
+      (it.minPercent ? ' · 최소할인율 ' + it.minPercent + '%' : '') +
+      (it.recruitDeadline ? ' · 신청마감 ' + it.recruitDeadline : '');
+
+    const badgeClass = it.isUrgent ? 'promotion-badge promotion-badge-urgent' : 'promotion-badge';
+
+    return '<div class="promotion-item">' +
+      '<span class="' + badgeClass + '">' + label + '</span>' +
+      '<div class="promotion-title">' + it.name + '</div>' +
+      '<div class="promotion-period">' + period + '</div>' +
+      '</div>';
+  }).join('');
+}
+
+function renderCouponPromoList(listEl, items) {
+  if (!items.length) {
+    listEl.innerHTML = '<div class="promotion-loading">진행 예정인 쿠폰 프로모션이 없습니다</div>';
+    return;
+  }
+  listEl.innerHTML = items.map(function(it) {
+    const badgeClass = COUPON_STATUS_CLASS[it.status] || 'recruit';
+    const discount = it.couponData ||
+      (it.couponDcPercent ? it.couponDcPercent + '%' : (it.couponDcPrice ? it.couponDcPrice + '원' : '-'));
+    const period = discount + ' · 모집 ' + (it.rangeDate || '-') + ' · 발행 ' + (it.publishDate || '-');
+
+    return '<div class="promotion-item">' +
+      '<span class="coupon-badge ' + badgeClass + '">' + (it.status || '-') + '</span>' +
+      '<div class="promotion-title">' + (it.title || '') + '</div>' +
+      '<div class="promotion-period">' + period + '</div>' +
+      '</div>';
+  }).join('');
+}
+
+async function loadPromotions() {
+  if (!document.getElementById('promotionList')) return;
 
   try {
     const res = await fetch(`data/musinsa_promotions.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('No data');
     const data = await res.json();
+    const today = new Date();
     const todayMidnight = new Date(today.getFullYear(), today.getMonth(), today.getDate());
 
     const items = (data.items || [])
@@ -2207,76 +2274,30 @@ async function loadPromotions() {
         return new Date(a.from) - new Date(b.from);
       });
 
-    if (!items.length) {
-      listEl.innerHTML = '<div class="promotion-loading">진행 예정인 프로모션이 없습니다</div>';
-      return;
-    }
-
-    listEl.innerHTML = items.map(function(it) {
-      const label = PROMOTION_STATUS_LABEL[it.status] || it.status;
-      const from = it.from ? new Date(it.from) : null;
-      const to = it.to ? new Date(it.to) : null;
-      const fmt = function(d) { return d ? (d.getMonth() + 1) + '/' + d.getDate() + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0') : ''; };
-      const period = fmt(from) + ' ~ ' + fmt(to) +
-        (it.minPercent ? ' · 최소할인율 ' + it.minPercent + '%' : '') +
-        (it.recruitDeadline ? ' · 신청마감 ' + it.recruitDeadline : '');
-
-      const badgeClass = it.isUrgent ? 'promotion-badge promotion-badge-urgent' : 'promotion-badge';
-
-      return '<div class="promotion-item">' +
-        '<span class="' + badgeClass + '">' + label + '</span>' +
-        '<div class="promotion-title">' + it.name + '</div>' +
-        '<div class="promotion-period">' + period + '</div>' +
-        '</div>';
-    }).join('');
+    promoTabCache.musinsa = items;
   } catch (e) {
-    listEl.innerHTML = '<div class="promotion-loading">프로모션 정보를 불러올 수 없습니다</div>';
+    promoTabCache.musinsa = [];
   }
+  renderPromoTab();
 }
 
-const COUPON_STATUS_CLASS = {
-  '모집 중': 'recruit',
-  '모집 종료': 'closed',
-  '신청 중': 'applying',
-  '신청 완료': 'done',
-};
-
 async function loadCouponPromotions() {
-  const tbody = document.getElementById('couponPromoTbody');
-  const subEl = document.getElementById('couponPromoSub');
-  if (!tbody) return;
+  if (!document.getElementById('promotionList')) return;
 
   try {
     const res = await fetch(`data/musinsa_coupon_promotions.json?t=${Date.now()}`);
     if (!res.ok) throw new Error('No data');
     const data = await res.json();
-    const items = (data.items || []).slice().sort(function(a, b) {
-      return new Date(a.rangeFrom || 0) - new Date(b.rangeFrom || 0);
-    });
+    // 모집이 이미 종료된 프로모션은 목록에서 제외한다.
+    const items = (data.items || [])
+      .filter(function(it) { return it.status !== '모집 종료'; })
+      .sort(function(a, b) { return new Date(a.rangeFrom || 0) - new Date(b.rangeFrom || 0); });
 
-    if (subEl) subEl.textContent = items.length ? items.length + '건' : '-';
-
-    if (!items.length) {
-      tbody.innerHTML = '<tr><td colspan="6"><div class="promotion-loading">진행 예정인 쿠폰 프로모션이 없습니다</div></td></tr>';
-      return;
-    }
-
-    tbody.innerHTML = items.map(function(it) {
-      const badgeClass = COUPON_STATUS_CLASS[it.status] || 'closed';
-      const discount = it.couponData ||
-        (it.couponDcPercent ? it.couponDcPercent + '%' : (it.couponDcPrice ? it.couponDcPrice + '원' : '-'));
-      return '<tr>' +
-        '<td><span class="coupon-badge ' + badgeClass + '">' + (it.status || '-') + '</span></td>' +
-        '<td>' + (it.title || '') + '</td>' +
-        '<td>' + (it.typeName || it.type || '') + '</td>' +
-        '<td>' + discount + '</td>' +
-        '<td>' + (it.rangeDate || '') + '</td>' +
-        '<td>' + (it.publishDate || '') + '</td>' +
-        '</tr>';
-    }).join('');
+    promoTabCache.coupon = items;
   } catch (e) {
-    tbody.innerHTML = '<tr><td colspan="6"><div class="promotion-loading">쿠폰 프로모션 정보를 불러올 수 없습니다</div></td></tr>';
+    promoTabCache.coupon = [];
   }
+  renderPromoTab();
 }
 
 function getWeeklyProductRecs(avgMax, avgMin, rainyDays, hotDays, coldDays) {
