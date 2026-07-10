@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-10T12:40:33.390143+00:00",
+  "updatedAt": "2026-07-10T16:39:44.445618+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,17 +8,17 @@
     },
     {
       "rank": 2,
-      "keyword": "반바지",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
+      "keyword": "반바지",
       "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": -1
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "가방",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "쪼리",
+      "keyword": "가방",
       "rankIncrement": 0
     },
     {
       "rank": 8,
       "keyword": "나시",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "백팩",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "반팔티",
+      "keyword": "셔츠",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "케이스",
-      "rankIncrement": 101
+      "keyword": "시어서커",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "치마",
-      "rankIncrement": 112
+      "keyword": "남자 가방",
+      "rankIncrement": 198
     },
     {
       "rank": 3,
-      "keyword": "수아레",
-      "rankIncrement": 142
+      "keyword": "르아르",
+      "rankIncrement": 105
     },
     {
       "rank": 4,
-      "keyword": "아쿠아슈즈",
-      "rankIncrement": 152
+      "keyword": "그라미치",
+      "rankIncrement": 140
     },
     {
       "rank": 5,
-      "keyword": "하이산",
-      "rankIncrement": 188
+      "keyword": "남자 반바지",
+      "rankIncrement": 131
     },
     {
       "rank": 6,
-      "keyword": "플랫슈즈",
-      "rankIncrement": 134
+      "keyword": "롱스커트",
+      "rankIncrement": 157
     },
     {
       "rank": 7,
-      "keyword": "브랜디드",
-      "rankIncrement": 104
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 155
     },
     {
       "rank": 8,
-      "keyword": "토앤토",
-      "rankIncrement": 104
+      "keyword": "브라",
+      "rankIncrement": 116
     },
     {
       "rank": 9,
-      "keyword": "다이닛",
-      "rankIncrement": 215
+      "keyword": "아디다스 슬리퍼",
+      "rankIncrement": 126
     },
     {
       "rank": 10,
-      "keyword": "정장",
-      "rankIncrement": 199
+      "keyword": "버건디 반팔",
+      "rankIncrement": 219
     }
   ]
 }

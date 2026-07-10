@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-10T12:39:38.183188+00:00",
+  "updatedAt": "2026-07-10T16:38:54.148718+00:00",
   "items": [
     {
       "rank": 1,
@@ -2330,8 +2330,8 @@
         "name": "닉켈 26 동키 포켓 후드티",
         "price": 159000,
         "originalPrice": 159000,
-        "discountRate": 41,
-        "finalPrice": 93500,
+        "discountRate": 53,
+        "finalPrice": 75300,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260407/6265163/6265163_17755031973840_500.jpg",
@@ -3609,8 +3609,8 @@
         "name": "린넨 스카시 카라 반팔 니트 OLIVE",
         "price": 82000,
         "originalPrice": 82000,
-        "discountRate": 41,
-        "finalPrice": 48210,
+        "discountRate": 44,
+        "finalPrice": 45710,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260401/6237058/6237058_17799503266910_500.jpg",
@@ -5910,7 +5910,7 @@
     },
     "001004": {
       "label": "후드 티셔츠",
-      "avg": 71487,
+      "avg": 70880,
       "min": 9900,
       "max": 171990,
       "count": 30
@@ -5924,7 +5924,7 @@
     },
     "001006": {
       "label": "니트/스웨터",
-      "avg": 41750,
+      "avg": 41666,
       "min": 9000,
       "max": 89900,
       "count": 30

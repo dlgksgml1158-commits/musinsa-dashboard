@@ -1,6 +1,6 @@
 {
   "platform": "29cm",
-  "updatedAt": "2026-07-10T12:40:17.284786+00:00",
+  "updatedAt": "2026-07-10T16:39:29.991137+00:00",
   "items": [
     {
       "rank": 1,
@@ -294,8 +294,8 @@
       "name": "SWEET RABBIT TEE PINK",
       "price": 39000,
       "originalPrice": 39000,
-      "discountRate": 44,
-      "finalPrice": 21840,
+      "discountRate": 30,
+      "finalPrice": 27300,
       "category": "",
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202606/11f1713098b31cabb3572166a9276b58.jpg",
@@ -349,6 +349,21 @@
     },
     {
       "rank": 24,
+      "id": "cm-4040836",
+      "brand": "사파리스팟",
+      "name": "[Safarispot X 1011Gallery] Signature Logo T-Shirt (8Colors)",
+      "price": 55000,
+      "originalPrice": 55000,
+      "discountRate": 15,
+      "finalPrice": 46750,
+      "category": "",
+      "categoryLabel": "전체",
+      "imgUrl": "https://img.29cm.co.kr/item/202606/11f165877cecf3edb357db246bf89485.jpg",
+      "productUrl": "https://product.29cm.co.kr/catalog/4040836",
+      "change": "NEW"
+    },
+    {
+      "rank": 25,
       "id": "cm-3904880",
       "brand": "아틀리에 나인",
       "name": "[5차] [제제로 PICK] POINTEL SLIMFIT ROUND NECK TEE (T-7220)",
@@ -360,10 +375,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f14ce13474ac0883a47f9b840abd66.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3904880",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 25,
+      "rank": 26,
       "id": "cm-3765367",
       "brand": "플리즈프로젝트",
       "name": "[9차] HORSE T-SHIRT, HEATHER GRAY",
@@ -375,10 +390,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202604/11f142b582aaeee5bc9285fa19c2f4c1.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3765367",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 26,
+      "rank": 27,
       "id": "cm-3163859",
       "brand": "트위",
       "name": "[40th/은채,보미 PICK] 포에지 빅 레터링 자수 티셔츠",
@@ -390,10 +405,10 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202604/11f12d8f88f7a4bb945465bfbf40a794.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3163859",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 27,
+      "rank": 28,
       "id": "cm-3259431",
       "brand": "몽돌",
       "name": "[2PACK] 에센셜 라운드넥 반팔 티셔츠",
@@ -405,25 +420,25 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202603/11f1268e5352c27794549b83a369c5fb.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3259431",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 28,
+      "rank": 29,
       "id": "cm-3964108",
       "brand": "아메스 월드와이드",
       "name": "SWEET RABBIT TEE WHITE",
       "price": 39000,
       "originalPrice": 39000,
-      "discountRate": 44,
-      "finalPrice": 21840,
+      "discountRate": 30,
+      "finalPrice": 27300,
       "category": "",
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f1535b5ab6453e83a4eb9541597277.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3964108",
-      "change": 0
+      "change": -1
     },
     {
-      "rank": 29,
+      "rank": 30,
       "id": "cm-3963431",
       "brand": "커스텀어클락",
       "name": "린넨 시스루 골지 라운드 가디건 5 COLOR COWCD008",
@@ -435,22 +450,7 @@
       "categoryLabel": "전체",
       "imgUrl": "https://img.29cm.co.kr/item/202605/11f15a66fa865ee59090edc8e8301f38.jpg",
       "productUrl": "https://product.29cm.co.kr/catalog/3963431",
-      "change": 0
-    },
-    {
-      "rank": 30,
-      "id": "cm-3314525",
-      "brand": "핀카",
-      "name": "[신규 컬러 출시]시티워커 바인딩 쇼츠 8COLORS",
-      "price": 48000,
-      "originalPrice": 48000,
-      "discountRate": 33,
-      "finalPrice": 32400,
-      "category": "",
-      "categoryLabel": "전체",
-      "imgUrl": "https://img.29cm.co.kr/item/202606/11f17488fd8daa9c81a73960334b5769.jpg",
-      "productUrl": "https://product.29cm.co.kr/catalog/3314525",
-      "change": 0
+      "change": -1
     }
   ],
   "categories": {
@@ -747,8 +747,8 @@
         "name": "SWEET RABBIT TEE PINK",
         "price": 39000,
         "originalPrice": 39000,
-        "discountRate": 44,
-        "finalPrice": 21840,
+        "discountRate": 30,
+        "finalPrice": 27300,
         "category": "",
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202606/11f1713098b31cabb3572166a9276b58.jpg",
@@ -802,6 +802,21 @@
       },
       {
         "rank": 24,
+        "id": "cm-4040836",
+        "brand": "사파리스팟",
+        "name": "[Safarispot X 1011Gallery] Signature Logo T-Shirt (8Colors)",
+        "price": 55000,
+        "originalPrice": 55000,
+        "discountRate": 15,
+        "finalPrice": 46750,
+        "category": "",
+        "categoryLabel": "전체",
+        "imgUrl": "https://img.29cm.co.kr/item/202606/11f165877cecf3edb357db246bf89485.jpg",
+        "productUrl": "https://product.29cm.co.kr/catalog/4040836",
+        "change": "NEW"
+      },
+      {
+        "rank": 25,
         "id": "cm-3904880",
         "brand": "아틀리에 나인",
         "name": "[5차] [제제로 PICK] POINTEL SLIMFIT ROUND NECK TEE (T-7220)",
@@ -813,10 +828,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f14ce13474ac0883a47f9b840abd66.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3904880",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 25,
+        "rank": 26,
         "id": "cm-3765367",
         "brand": "플리즈프로젝트",
         "name": "[9차] HORSE T-SHIRT, HEATHER GRAY",
@@ -828,10 +843,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202604/11f142b582aaeee5bc9285fa19c2f4c1.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3765367",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 26,
+        "rank": 27,
         "id": "cm-3163859",
         "brand": "트위",
         "name": "[40th/은채,보미 PICK] 포에지 빅 레터링 자수 티셔츠",
@@ -843,10 +858,10 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202604/11f12d8f88f7a4bb945465bfbf40a794.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3163859",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 27,
+        "rank": 28,
         "id": "cm-3259431",
         "brand": "몽돌",
         "name": "[2PACK] 에센셜 라운드넥 반팔 티셔츠",
@@ -858,25 +873,25 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202603/11f1268e5352c27794549b83a369c5fb.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3259431",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 28,
+        "rank": 29,
         "id": "cm-3964108",
         "brand": "아메스 월드와이드",
         "name": "SWEET RABBIT TEE WHITE",
         "price": 39000,
         "originalPrice": 39000,
-        "discountRate": 44,
-        "finalPrice": 21840,
+        "discountRate": 30,
+        "finalPrice": 27300,
         "category": "",
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f1535b5ab6453e83a4eb9541597277.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3964108",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 29,
+        "rank": 30,
         "id": "cm-3963431",
         "brand": "커스텀어클락",
         "name": "린넨 시스루 골지 라운드 가디건 5 COLOR COWCD008",
@@ -888,22 +903,7 @@
         "categoryLabel": "전체",
         "imgUrl": "https://img.29cm.co.kr/item/202605/11f15a66fa865ee59090edc8e8301f38.jpg",
         "productUrl": "https://product.29cm.co.kr/catalog/3963431",
-        "change": 0
-      },
-      {
-        "rank": 30,
-        "id": "cm-3314525",
-        "brand": "핀카",
-        "name": "[신규 컬러 출시]시티워커 바인딩 쇼츠 8COLORS",
-        "price": 48000,
-        "originalPrice": 48000,
-        "discountRate": 33,
-        "finalPrice": 32400,
-        "category": "",
-        "categoryLabel": "전체",
-        "imgUrl": "https://img.29cm.co.kr/item/202606/11f17488fd8daa9c81a73960334b5769.jpg",
-        "productUrl": "https://product.29cm.co.kr/catalog/3314525",
-        "change": 0
+        "change": -1
       }
     ],
     "001001": [
@@ -1094,8 +1094,8 @@
         "name": "SWEET RABBIT TEE PINK",
         "price": 39000,
         "originalPrice": 39000,
-        "discountRate": 44,
-        "finalPrice": 21840,
+        "discountRate": 30,
+        "finalPrice": 27300,
         "category": "001001",
         "categoryLabel": "반팔티",
         "imgUrl": "https://img.29cm.co.kr/item/202606/11f1713098b31cabb3572166a9276b58.jpg",
@@ -5882,14 +5882,14 @@
   "priceStats": {
     "": {
       "label": "전체",
-      "avg": 41313,
+      "avg": 42155,
       "min": 10000,
       "max": 129000,
       "count": 30
     },
     "001001": {
       "label": "반팔티",
-      "avg": 32270,
+      "avg": 32452,
       "min": 10000,
       "max": 57600,
       "count": 30
