@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-11T09:11:40.109531+00:00",
+  "updatedAt": "2026-07-11T11:40:16.924675+00:00",
   "items": [
     {
       "rank": 1,
@@ -1295,7 +1295,7 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260605/6615536/6615536_17806340197657_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6615536",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -1310,7 +1310,7 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260612/6658522/6658522_17815716349204_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6658522",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -1325,7 +1325,7 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260609/6635091/6635091_17828858741926_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6635091",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -1340,7 +1340,7 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260504/6418260/6418260_17778789408586_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6418260",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -1355,7 +1355,7 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260611/6654214/6654214_17811627168940_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6654214",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "001002": [
@@ -3022,8 +3022,8 @@
         "name": "단작 변형 블라우스_MIWBWG726G",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 7,
-        "finalPrice": 46260,
+        "discountRate": 34,
+        "finalPrice": 33180,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260611/6652176/6652176_17811517436503_500.jpg",
@@ -5917,7 +5917,7 @@
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 38398,
+      "avg": 37962,
       "min": 17450,
       "max": 87000,
       "count": 30
