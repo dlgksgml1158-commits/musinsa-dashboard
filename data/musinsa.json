@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-11T11:40:16.924675+00:00",
+  "updatedAt": "2026-07-11T16:13:28.797375+00:00",
   "items": [
     {
       "rank": 1,
@@ -2330,8 +2330,8 @@
         "name": "닉켈 26 동키 포켓 후드티",
         "price": 159000,
         "originalPrice": 159000,
-        "discountRate": 41,
-        "finalPrice": 93500,
+        "discountRate": 53,
+        "finalPrice": 75300,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260407/6265163/6265163_17755031973840_500.jpg",
@@ -3037,8 +3037,8 @@
         "name": "오간자 레이어드 블라우스_MIWBWG511G",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 34,
-        "finalPrice": 33180,
+        "discountRate": 19,
+        "finalPrice": 40290,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260401/6237554/6237554_17787406683233_500.jpg",
@@ -3411,7 +3411,7 @@
         "rank": 17,
         "id": "ms-5114507",
         "brand": "워크온바디오프",
-        "name": "[해피가이정호 PICK] 이지온 세미 오버핏 스트라이프 / 솔리드 카라 반팔 니트 (5color)",
+        "name": "이지온 세미 오버핏 스트라이프 / 솔리드 카라 반팔 니트 (5color)",
         "price": 43000,
         "originalPrice": 43000,
         "discountRate": 40,
@@ -3609,8 +3609,8 @@
         "name": "린넨 스카시 카라 반팔 니트 OLIVE",
         "price": 82000,
         "originalPrice": 82000,
-        "discountRate": 44,
-        "finalPrice": 45710,
+        "discountRate": 41,
+        "finalPrice": 48300,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260401/6237058/6237058_17799503266910_500.jpg",
@@ -4011,21 +4011,6 @@
       },
       {
         "rank": 27,
-        "id": "ms-5973119",
-        "brand": "필루미네이트",
-        "name": "(W) 워터컬러 시어 윈드브레이커-스카이블루",
-        "price": 79000,
-        "originalPrice": 79000,
-        "discountRate": 37,
-        "finalPrice": 49900,
-        "category": "002",
-        "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260203/5973119/5973119_17714788352977_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/5973119",
-        "change": 0
-      },
-      {
-        "rank": 28,
         "id": "ms-5345115",
         "brand": "랜덤오프",
         "name": "R:SIGNET OVER FIT 2-WAY ZIP-UP (4color)",
@@ -4037,10 +4022,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250820/5345115/5345115_17707969780529_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5345115",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-3776694",
         "brand": "어반디타입",
         "name": "[한삐우 PICK] 에어라이트 래글런 윈드브레이커_블루",
@@ -4052,10 +4037,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240104/3776694/3776694_17828036300039_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3776694",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-5015326",
         "brand": "와르",
         "name": "WK-15 데일리 린넨 가디건 (4COLORS)",
@@ -4067,7 +4052,22 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250411/5015326/5015326_17449405339324_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5015326",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-4795032",
+        "brand": "후아유",
+        "name": "Steve Packable Windbreaker / WHJJG2411U",
+        "price": 59900,
+        "originalPrice": 59900,
+        "discountRate": 35,
+        "finalPrice": 38810,
+        "category": "002",
+        "categoryLabel": "아우터",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20250217/4795032/4795032_17799473381540_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/4795032",
+        "change": "NEW"
       }
     ],
     "003001": [
@@ -4420,7 +4420,7 @@
         "rank": 24,
         "id": "ms-5717317",
         "brand": "워크온바디오프",
-        "name": "[해피가이정호 PICK] (여름추가) 에즈 릴렉스 세미 와이드 데님 팬츠 (7color)",
+        "name": "(여름추가) 에즈 릴렉스 세미 와이드 데님 팬츠 (7color)",
         "price": 57000,
         "originalPrice": 57000,
         "discountRate": 40,
@@ -4707,7 +4707,7 @@
         "rank": 13,
         "id": "ms-4750069",
         "brand": "워크온바디오프",
-        "name": "[해피가이정호 PICK] (여름추가) 레베 세미 와이드 원턱 슬랙스 (2color)",
+        "name": "(여름추가) 레베 세미 와이드 원턱 슬랙스 (2color)",
         "price": 67000,
         "originalPrice": 67000,
         "discountRate": 30,
@@ -5910,28 +5910,28 @@
     },
     "001004": {
       "label": "후드 티셔츠",
-      "avg": 71538,
+      "avg": 70931,
       "min": 9900,
       "max": 171990,
       "count": 30
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 37962,
+      "avg": 38199,
       "min": 17450,
       "max": 87000,
       "count": 30
     },
     "001006": {
       "label": "니트/스웨터",
-      "avg": 41666,
+      "avg": 41753,
       "min": 9000,
       "max": 89900,
       "count": 30
     },
     "002": {
       "label": "아우터",
-      "avg": 58679,
+      "avg": 58309,
       "min": 15920,
       "max": 171990,
       "count": 30
