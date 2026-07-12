@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T12:10:07.976343+00:00",
+  "updatedAt": "2026-07-12T16:18:01.221352+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "모자",
+      "keyword": "나시",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
+      "keyword": "모자",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "나시",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "가방",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "샌들",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 9,
       "keyword": "셔츠",
       "rankIncrement": 1
     },
     {
+      "rank": 9,
+      "keyword": "바지",
+      "rankIncrement": -1
+    },
+    {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "keyword": "쪼리",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파우치",
-      "rankIncrement": 112
+      "keyword": "부츠",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "자라",
-      "rankIncrement": 100
+      "keyword": "생지데님",
+      "rankIncrement": 182
     },
     {
       "rank": 3,
-      "keyword": "피그먼트",
-      "rankIncrement": 110
+      "keyword": "와일드플라워",
+      "rankIncrement": 123
     },
     {
       "rank": 4,
-      "keyword": "벌룬팬츠",
-      "rankIncrement": 106
+      "keyword": "버건디",
+      "rankIncrement": 149
     },
     {
       "rank": 5,
-      "keyword": "뉴발란스 530",
-      "rankIncrement": 111
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 108
     },
     {
       "rank": 6,
-      "keyword": "우포스 쪼리",
-      "rankIncrement": 101
-    },
-    {
-      "rank": 7,
-      "keyword": "락피쉬웨더웨어",
+      "keyword": "나이키 슬리퍼",
       "rankIncrement": 106
     },
     {
+      "rank": 7,
+      "keyword": "게스",
+      "rankIncrement": 117
+    },
+    {
       "rank": 8,
-      "keyword": "나이키 모자",
-      "rankIncrement": 192
+      "keyword": "aeae",
+      "rankIncrement": 166
     },
     {
       "rank": 9,
-      "keyword": "해칭룸",
-      "rankIncrement": 183
+      "keyword": "에어리즘",
+      "rankIncrement": 101
     },
     {
       "rank": 10,
-      "keyword": "수건",
-      "rankIncrement": 131
+      "keyword": "로라로라",
+      "rankIncrement": 161
     }
   ]
 }
