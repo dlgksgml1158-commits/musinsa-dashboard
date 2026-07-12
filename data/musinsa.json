@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-11T16:13:28.797375+00:00",
+  "updatedAt": "2026-07-12T07:51:28.637352+00:00",
   "items": [
     {
       "rank": 1,
@@ -1411,8 +1411,8 @@
         "name": "레이스 레이어드 긴팔 티셔츠 RE LWG42SS_MIWLWG71QA",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 34,
-        "finalPrice": 26530,
+        "discountRate": 19,
+        "finalPrice": 32210,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260612/6662339/6662339_17833809675541_500.jpg",
@@ -2088,8 +2088,8 @@
         "name": "happy day 피그먼트 스웨트셔츠 스모크블랙",
         "price": 72000,
         "originalPrice": 72000,
-        "discountRate": 58,
-        "finalPrice": 29950,
+        "discountRate": 56,
+        "finalPrice": 31590,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240827/4375639/4375639_17727551128659_500.jpg",
@@ -2797,8 +2797,8 @@
         "name": "언발란스 스트라이프 셔츠_MIWYAG727G",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 34,
-        "finalPrice": 33180,
+        "discountRate": 19,
+        "finalPrice": 40290,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260611/6652172/6652172_17822757933935_500.jpg",
@@ -3022,8 +3022,8 @@
         "name": "단작 변형 블라우스_MIWBWG726G",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 34,
-        "finalPrice": 33180,
+        "discountRate": 5,
+        "finalPrice": 47410,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260611/6652176/6652176_17811517436503_500.jpg",
@@ -3911,8 +3911,8 @@
         "name": "V넥 변형 자켓_MIWJKG311C MIWJKG51QC",
         "price": 99900,
         "originalPrice": 99900,
-        "discountRate": 37,
-        "finalPrice": 62930,
+        "discountRate": 34,
+        "finalPrice": 66430,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260213/6026203/6026203_17780494711166_500.jpg",
@@ -4022,7 +4022,7 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250820/5345115/5345115_17707969780529_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5345115",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -4037,7 +4037,7 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240104/3776694/3776694_17828036300039_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3776694",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -4052,7 +4052,7 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250411/5015326/5015326_17449405339324_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5015326",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -4067,7 +4067,7 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250217/4795032/4795032_17799473381540_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4795032",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "003001": [
@@ -5896,14 +5896,14 @@
     },
     "001002": {
       "label": "긴소매 티셔츠",
-      "avg": 39943,
+      "avg": 40132,
       "min": 17790,
       "max": 70200,
       "count": 30
     },
     "001003": {
       "label": "맨투맨/스웨트",
-      "avg": 82913,
+      "avg": 82968,
       "min": 9900,
       "max": 334990,
       "count": 30
@@ -5917,7 +5917,7 @@
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 38199,
+      "avg": 38910,
       "min": 17450,
       "max": 87000,
       "count": 30
@@ -5931,7 +5931,7 @@
     },
     "002": {
       "label": "아우터",
-      "avg": 58309,
+      "avg": 58426,
       "min": 15920,
       "max": 171990,
       "count": 30
