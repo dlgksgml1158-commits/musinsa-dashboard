@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-12T10:14:10.320753+00:00",
+  "updatedAt": "2026-07-12T12:09:23.409414+00:00",
   "items": [
     {
       "rank": 1,
@@ -5318,7 +5318,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250903/5395433/5395433_17568675198407_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5395433",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -5333,7 +5333,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251117/5743668/5743668_17659509293966_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5743668",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -5348,7 +5348,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260410/6292196/6292196_17827157707706_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6292196",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -5363,7 +5363,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240718/4258827/4258827_17246350760928_500.png",
         "productUrl": "https://www.musinsa.com/products/4258827",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -5378,7 +5378,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260205/5984255/5984255_17714880912685_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5984255",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -5393,7 +5393,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250326/4949316/4949316_17434884662421_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4949316",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -5408,7 +5408,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230801/3437897/3437897_16915684644046_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3437897",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -5423,7 +5423,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241002/4481761/4481761_17278504390844_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4481761",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "003005": [
@@ -5579,21 +5579,6 @@
       },
       {
         "rank": 11,
-        "id": "ms-6653178",
-        "brand": "오리지널데이",
-        "name": "버뮤다 쭈리 밴딩 트레이닝 쇼츠 팬츠 Charcoal",
-        "price": 53000,
-        "originalPrice": 53000,
-        "discountRate": 38,
-        "finalPrice": 32900,
-        "category": "003005",
-        "categoryLabel": "반바지",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260611/6653178/6653178_17811567763491_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6653178",
-        "change": 0
-      },
-      {
-        "rank": 12,
         "id": "ms-4125200",
         "brand": "제로",
         "name": "Washed Denim Two Tuck Shorts [4 Colors]",
@@ -5605,10 +5590,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240513/4125200/4125200_17393436031728_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4125200",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "ms-1884480",
         "brand": "제멋",
         "name": "[2PACK] 코스모 밴딩 숏팬츠 2PACK JMSP2332",
@@ -5620,10 +5605,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210407/1884480/1884480_16735745148445_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1884480",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-6146614",
         "brand": "토피",
         "name": "백포켓 카고 버뮤다 팬츠 (BLACK)",
@@ -5635,10 +5620,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260317/6146614/6146614_17794324561146_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6146614",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-4190655",
         "brand": "제로",
         "name": "Deep One Tuck Sweat Shorts [Light Grey]",
@@ -5650,10 +5635,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240612/4190655/4190655_17182420598159_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4190655",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-6553808",
         "brand": "아캄",
         "name": "Patch Cargo Bermuda Pants (Black)",
@@ -5665,10 +5650,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260527/6553808/6553808_17836512842002_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6553808",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-6227836",
         "brand": "팬시클럽",
         "name": "페가수스 버뮤다 팬츠 (BLACK) F26QD144",
@@ -5680,10 +5665,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260331/6227836/6227836_17805492540698_500.png",
         "productUrl": "https://www.musinsa.com/products/6227836",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-6608876",
         "brand": "시그니처",
         "name": "썸머 린넨 라이크 D링 버뮤다 팬츠[2COLORS]",
@@ -5695,10 +5680,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260604/6608876/6608876_17830631169419_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6608876",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-4989763",
         "brand": "르아르",
         "name": "에브리데이 버뮤다 데님 쇼츠 [블랙]",
@@ -5710,10 +5695,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250404/4989763/4989763_17496921703038_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4989763",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-5007931",
         "brand": "오더아카이브",
         "name": "다트 버뮤다 데님 하프팬츠 로우블랙",
@@ -5725,10 +5710,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250409/5007931/5007931_17514318804606_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5007931",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-6532781",
         "brand": "후러브스아트",
         "name": "[후러브스아트 x 성진] 코튼 데님 절개 버뮤다 팬츠 3color",
@@ -5740,10 +5725,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260522/6532781/6532781_17802901228438_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6532781",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-6669454",
         "brand": "무센트",
         "name": "티보 폴리 스트링 숏 반바지 (2컬러)",
@@ -5755,10 +5740,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260615/6669454/6669454_17815031129822_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6669454",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-5127704",
         "brand": "가까이 유니언즈",
         "name": "원턱 8부 썬스턴 버뮤다 카고팬츠 브라운",
@@ -5770,10 +5755,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250519/5127704/5127704_17478119092492_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5127704",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-5167869",
         "brand": "아디다스",
         "name": "와플 숏 팬츠 - 네이비 / KB5463",
@@ -5785,10 +5770,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250605/5167869/5167869_17495318179433_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5167869",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-6656657",
         "brand": "밀로 아카이브",
         "name": "[Pokémon] 그루핑 스웻 팬츠 [블랙]",
@@ -5800,10 +5785,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260611/6656657/6656657_17823969469461_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6656657",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-6642913",
         "brand": "노스페이스",
         "name": "NS6PS01A 남성 레디-트레인 쇼츠 BLACK",
@@ -5815,10 +5800,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260610/6642913/6642913_17827864881494_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6642913",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-3970381",
         "brand": "아디다스",
         "name": "파이어버드 숏 팬츠 - 블랙:화이트 / IU2368",
@@ -5830,10 +5815,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240320/3970381/3970381_17110023776300_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3970381",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-6701826",
         "brand": "뉴발란스",
         "name": "NBNVG3W112 / WOMEN 새깅 다잉 니트 버뮤다 (D/GRAY)",
@@ -5845,10 +5830,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260619/6701826/6701826_17818462295610_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6701826",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-6491179",
         "brand": "1993스튜디오",
         "name": "W 나일론 트랙 숏팬츠_라이트블루",
@@ -5860,10 +5845,10 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260515/6491179/6491179_17791694020246_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6491179",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-6145331",
         "brand": "토피",
         "name": "백포켓 카고 버뮤다 팬츠 (KHAKI BROWN)",
@@ -5875,7 +5860,22 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260317/6145331/6145331_17794119971706_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6145331",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-6592232",
+        "brand": "론론",
+        "name": "LACE TRIM NYLON BERMUDA PANTS PURPLE",
+        "price": 110000,
+        "originalPrice": 110000,
+        "discountRate": 36,
+        "finalPrice": 70400,
+        "category": "003005",
+        "categoryLabel": "반바지",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260602/6592232/6592232_17812322128185_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6592232",
+        "change": "NEW"
       }
     ]
   },
@@ -5959,7 +5959,7 @@
     },
     "003005": {
       "label": "반바지",
-      "avg": 43599,
+      "avg": 44849,
       "min": 9900,
       "max": 103200,
       "count": 30
