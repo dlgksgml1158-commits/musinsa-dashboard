@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-12T07:51:28.637352+00:00",
+  "updatedAt": "2026-07-12T10:14:10.320753+00:00",
   "items": [
     {
       "rank": 1,
@@ -2330,8 +2330,8 @@
         "name": "닉켈 26 동키 포켓 후드티",
         "price": 159000,
         "originalPrice": 159000,
-        "discountRate": 53,
-        "finalPrice": 75300,
+        "discountRate": 41,
+        "finalPrice": 93500,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260407/6265163/6265163_17755031973840_500.jpg",
@@ -4061,8 +4061,8 @@
         "name": "Steve Packable Windbreaker / WHJJG2411U",
         "price": 59900,
         "originalPrice": 59900,
-        "discountRate": 35,
-        "finalPrice": 38810,
+        "discountRate": 46,
+        "finalPrice": 32620,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250217/4795032/4795032_17799473381540_500.jpg",
@@ -5307,21 +5307,6 @@
       },
       {
         "rank": 23,
-        "id": "ms-5354253",
-        "brand": "후러브스아트",
-        "name": "데일리 카고 밴딩 스트링 팬츠 블랙",
-        "price": 49000,
-        "originalPrice": 49000,
-        "discountRate": 80,
-        "finalPrice": 9900,
-        "category": "003003",
-        "categoryLabel": "트레이닝/조거",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20250822/5354253/5354253_17580026021664_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/5354253",
-        "change": 0
-      },
-      {
-        "rank": 24,
         "id": "ms-5395433",
         "brand": "랜덤오프",
         "name": "LEOPARD STAR ONE TUCK WIDE SWEAT PANTS (2color)",
@@ -5333,10 +5318,10 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250903/5395433/5395433_17568675198407_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5395433",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-5743668",
         "brand": "락케이크",
         "name": "Boxer Layered Curved 2way Jogger - Black",
@@ -5348,10 +5333,10 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251117/5743668/5743668_17659509293966_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5743668",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-6292196",
         "brand": "슬릭글로우",
         "name": "스트라이프 레터링 스웨트 팬츠[그레이]",
@@ -5363,10 +5348,10 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260410/6292196/6292196_17827157707706_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6292196",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-4258827",
         "brand": "버튼서울",
         "name": "[노미스 PICK] [여름용] 베이직 라인 나일론 스트링 팬츠 (그레이)",
@@ -5378,10 +5363,10 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240718/4258827/4258827_17246350760928_500.png",
         "productUrl": "https://www.musinsa.com/products/4258827",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-5984255",
         "brand": "미치코런던 코시노",
         "name": "폴드 웨이스트 스웻팬츠 버건디",
@@ -5393,10 +5378,10 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260205/5984255/5984255_17714880912685_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5984255",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-4949316",
         "brand": "어반드레스",
         "name": "Race Line Pants - 4COL",
@@ -5408,10 +5393,10 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250326/4949316/4949316_17434884662421_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4949316",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-3437897",
         "brand": "트래블",
         "name": "라인 테이프 다트 팬츠 블랙",
@@ -5423,7 +5408,22 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230801/3437897/3437897_16915684644046_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3437897",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-4481761",
+        "brand": "론론",
+        "name": "BACK HEART STITCH POCKET SWEAT JOGGER PANTS CREAM YELLOW",
+        "price": 99000,
+        "originalPrice": 99000,
+        "discountRate": 56,
+        "finalPrice": 43560,
+        "category": "003003",
+        "categoryLabel": "트레이닝/조거",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20241002/4481761/4481761_17278504390844_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/4481761",
+        "change": "NEW"
       }
     ],
     "003005": [
@@ -5910,7 +5910,7 @@
     },
     "001004": {
       "label": "후드 티셔츠",
-      "avg": 70931,
+      "avg": 71538,
       "min": 9900,
       "max": 171990,
       "count": 30
@@ -5931,7 +5931,7 @@
     },
     "002": {
       "label": "아우터",
-      "avg": 58426,
+      "avg": 58219,
       "min": 15920,
       "max": 171990,
       "count": 30
@@ -5952,8 +5952,8 @@
     },
     "003003": {
       "label": "트레이닝/조거",
-      "avg": 50501,
-      "min": 9900,
+      "avg": 51623,
+      "min": 19070,
       "max": 135150,
       "count": 30
     },

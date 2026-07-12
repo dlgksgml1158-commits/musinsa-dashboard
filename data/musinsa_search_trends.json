@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-12T07:52:26.124972+00:00",
+  "updatedAt": "2026-07-12T10:15:07.711129+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "모자",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "쪼리",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "가방",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 9,
-      "keyword": "샌들",
       "rankIncrement": -1
     },
     {
+      "rank": 9,
+      "keyword": "쪼리",
+      "rankIncrement": 1
+    },
+    {
       "rank": 10,
-      "keyword": "크록스",
+      "keyword": "샌들",
       "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "꼼데가르송 반팔",
-      "rankIncrement": 108
+      "keyword": "나이키 바람막이",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "홀터넥",
-      "rankIncrement": 100
+      "keyword": "미니백",
+      "rankIncrement": 103
     },
     {
       "rank": 3,
-      "keyword": "무지티",
-      "rankIncrement": 104
+      "keyword": "코이세이오",
+      "rankIncrement": 129
     },
     {
       "rank": 4,
-      "keyword": "쿠어",
-      "rankIncrement": 110
+      "keyword": "치마바지",
+      "rankIncrement": 102
     },
     {
       "rank": 5,
-      "keyword": "큐어",
-      "rankIncrement": 101
+      "keyword": "민트",
+      "rankIncrement": 141
     },
     {
       "rank": 6,
-      "keyword": "하이산",
-      "rankIncrement": 106
+      "keyword": "일리고",
+      "rankIncrement": 102
     },
     {
       "rank": 7,
-      "keyword": "우포스 쪼리",
-      "rankIncrement": 113
+      "keyword": "타밈",
+      "rankIncrement": 254
     },
     {
       "rank": 8,
-      "keyword": "상의",
-      "rankIncrement": 157
+      "keyword": "하이산",
+      "rankIncrement": 348
     },
     {
       "rank": 9,
-      "keyword": "치마바지",
-      "rankIncrement": 128
+      "keyword": "다이브인",
+      "rankIncrement": 206
     },
     {
       "rank": 10,
-      "keyword": "파르티멘토 우먼",
-      "rankIncrement": 162
+      "keyword": "론론",
+      "rankIncrement": 160
     }
   ]
 }
