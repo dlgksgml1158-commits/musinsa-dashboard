@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T17:23:13.308402+00:00",
+  "updatedAt": "2026-07-13T18:52:49.690965+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,18 +8,18 @@
     },
     {
       "rank": 2,
-      "keyword": "반바지",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 2
     },
     {
       "rank": 3,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
+      "keyword": "반바지",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
       "keyword": "나시",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
@@ -28,22 +28,22 @@
     },
     {
       "rank": 6,
-      "keyword": "가방",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "셔츠",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
+      "keyword": "셔츠",
       "rankIncrement": 0
     },
     {
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "부츠컷",
-      "rankIncrement": 266
+      "keyword": "운동복",
+      "rankIncrement": 131
     },
     {
       "rank": 2,
-      "keyword": "청반바지",
-      "rankIncrement": 127
+      "keyword": "아디다스 반바지",
+      "rankIncrement": 116
     },
     {
       "rank": 3,
-      "keyword": "스탠드오일",
-      "rankIncrement": 107
+      "keyword": "아모우",
+      "rankIncrement": 125
     },
     {
       "rank": 4,
-      "keyword": "나이키 슬리퍼",
-      "rankIncrement": 158
+      "keyword": "회색 반팔",
+      "rankIncrement": 350
     },
     {
       "rank": 5,
-      "keyword": "디미트리블랙",
-      "rankIncrement": 114
+      "keyword": "보스턴백",
+      "rankIncrement": 124
     },
     {
       "rank": 6,
-      "keyword": "스웨이드",
-      "rankIncrement": 144
+      "keyword": "크롭",
+      "rankIncrement": 130
     },
     {
       "rank": 7,
-      "keyword": "플레어업",
-      "rankIncrement": 105
+      "keyword": "케이스",
+      "rankIncrement": 231
     },
     {
       "rank": 8,
-      "keyword": "치노팬츠",
-      "rankIncrement": 110
+      "keyword": "에잇세컨즈",
+      "rankIncrement": 115
     },
     {
       "rank": 9,
-      "keyword": "레몬",
-      "rankIncrement": 152
+      "keyword": "어바웃톤",
+      "rankIncrement": 224
     },
     {
       "rank": 10,
-      "keyword": "반팔 가디건",
-      "rankIncrement": 197
+      "keyword": "파브레가",
+      "rankIncrement": 326
     }
   ]
 }
