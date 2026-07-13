@@ -1,6 +1,6 @@
 {
   "platform": "musinsa_male",
-  "updatedAt": "2026-07-13T13:03:35.150859+00:00",
+  "updatedAt": "2026-07-13T17:22:34.274680+00:00",
   "items": [
     {
       "rank": 1,
@@ -354,8 +354,8 @@
       "name": "와플 크롭 헨리넥 티셔츠 아이보리",
       "price": 40900,
       "originalPrice": 40900,
-      "discountRate": 45,
-      "finalPrice": 22340,
+      "discountRate": 36,
+      "finalPrice": 26320,
       "category": "001002",
       "categoryLabel": "긴소매 티셔츠",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20260209/5996770/5996770_17718905087002_500.jpg",
@@ -944,8 +944,8 @@
         "name": "와플 크롭 헨리넥 티셔츠 아이보리",
         "price": 40900,
         "originalPrice": 40900,
-        "discountRate": 45,
-        "finalPrice": 22340,
+        "discountRate": 36,
+        "finalPrice": 26320,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260209/5996770/5996770_17718905087002_500.jpg",
@@ -1863,8 +1863,8 @@
         "name": "닉켈 26 동키 포켓 후드티",
         "price": 159000,
         "originalPrice": 159000,
-        "discountRate": 41,
-        "finalPrice": 93500,
+        "discountRate": 40,
+        "finalPrice": 95000,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260407/6265163/6265163_17755031973840_500.jpg",
@@ -3157,8 +3157,8 @@
         "name": "[코튼100] 헨리넥 반팔니트_SPKWG25M02",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 23,
-        "finalPrice": 30530,
+        "discountRate": 10,
+        "finalPrice": 35910,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260305/6084842/6084842_17836462951913_500.png",
@@ -3983,7 +3983,7 @@
         "rank": 25,
         "id": "ms-5354468",
         "brand": "후러브스아트",
-        "name": "[밈서 PICK] 커브드 와이드 코튼 데님 팬츠 베이지",
+        "name": "커브드 와이드 코튼 데님 팬츠 베이지",
         "price": 66000,
         "originalPrice": 66000,
         "discountRate": 40,
@@ -4105,7 +4105,7 @@
         "rank": 3,
         "id": "ms-750908",
         "brand": "후러브스아트",
-        "name": "[성진 PICK] [여름원단추가] 유니섹스 세미 와이드 밴딩 슬랙스 블랙",
+        "name": "[여름원단추가] 유니섹스 세미 와이드 밴딩 슬랙스 블랙",
         "price": 54000,
         "originalPrice": 54000,
         "discountRate": 50,
@@ -4324,7 +4324,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251118/5746364/5746364_17701045604308_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5746364",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 18,
@@ -4339,7 +4339,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250817/5328102/5328102_17791476234345_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5328102",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 19,
@@ -4354,7 +4354,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250519/5125572/5125572_17476323101261_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5125572",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 20,
@@ -4369,7 +4369,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250826/5361996/5361996_17561709657699_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5361996",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 21,
@@ -4384,7 +4384,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260522/6532780/6532780_17802898727216_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6532780",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 22,
@@ -4399,7 +4399,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250224/4826028/4826028_17412537562060_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4826028",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 23,
@@ -4414,7 +4414,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20200219/1311988/1311988_4_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1311988",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -4429,7 +4429,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230201/3054149/3054149_17549805265741_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3054149",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -4444,7 +4444,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251223/5849544/5849544_17803617634383_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5849544",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -4459,7 +4459,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240507/4108580/4108580_17151338624618_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4108580",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -4474,7 +4474,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240808/4308000/4308000_17261235549408_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4308000",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -4489,7 +4489,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260119/5911292/5911292_17772533869758_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5911292",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -4504,7 +4504,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230202/3054924/3054924_17222284400021_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3054924",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -4519,7 +4519,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210910/2124440/2124440_17761500121369_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2124440",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "003003": [
@@ -5369,7 +5369,7 @@
         "rank": 27,
         "id": "ms-5135406",
         "brand": "후러브스아트",
-        "name": "[써기 PICK] 카펜터 버뮤다 밴딩 팬츠 브라운",
+        "name": "카펜터 버뮤다 밴딩 팬츠 브라운",
         "price": 58000,
         "originalPrice": 58000,
         "discountRate": 50,
@@ -5779,8 +5779,8 @@
         "name": "와플 크롭 헨리넥 티셔츠 아이보리",
         "price": 40900,
         "originalPrice": 40900,
-        "discountRate": 45,
-        "finalPrice": 22340,
+        "discountRate": 36,
+        "finalPrice": 26320,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260209/5996770/5996770_17718905087002_500.jpg",
