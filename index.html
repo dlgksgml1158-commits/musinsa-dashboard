@@ -3333,18 +3333,18 @@ function renderBestsellerList() {
   if (!listEl || !bestsellersData) return;
 
   const byDate = bestsellersData.byDate || {};
-  const isDateMode = selectedBestsellerDate && byDate[selectedBestsellerDate];
-  const items = isDateMode ? byDate[selectedBestsellerDate] : (bestsellersData.items || []);
+  const hasSelectedDate = !!selectedBestsellerDate;
+  const items = hasSelectedDate ? (byDate[selectedBestsellerDate] || []) : (bestsellersData.items || []);
 
   if (sub) {
-    if (isDateMode) {
+    if (hasSelectedDate) {
       sub.textContent = `${selectedBestsellerDate} · 구매확정 기준`;
     } else {
       const { startDate, endDate } = bestsellersData;
       sub.textContent = startDate && endDate ? `${startDate} ~ ${endDate} · 구매확정 기준` : '구매확정 기준';
     }
   }
-  if (resetBtn) resetBtn.style.display = isDateMode ? '' : 'none';
+  if (resetBtn) resetBtn.style.display = hasSelectedDate ? '' : 'none';
 
   listEl.innerHTML = items.length
     ? items.map(item => `
@@ -3357,7 +3357,7 @@ function renderBestsellerList() {
         <div class="bestseller-qty">${item.qty}개</div>
       </div>
     `).join('')
-    : `<div class="empty-state"><p>${isDateMode ? '이 날짜에는 판매 데이터가 없어요' : '데이터 없음'}</p></div>`;
+    : `<div class="empty-state"><p>${hasSelectedDate ? '이 날짜는 구매확정 처리가 아직 반영되지 않았어요' : '데이터 없음'}</p></div>`;
 }
 
 const ORDER_STATS_MODE_LABELS = { daily: '일별', monthly: '월별' };
