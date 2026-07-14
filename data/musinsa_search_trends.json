@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-13T18:52:49.690965+00:00",
+  "updatedAt": "2026-07-14T07:26:07.105418+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 3,
       "keyword": "반바지",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 4,
-      "keyword": "나시",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 5,
-      "keyword": "모자",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 4,
+      "keyword": "모자",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 5,
+      "keyword": "아디다스",
+      "rankIncrement": -1
+    },
+    {
       "rank": 6,
-      "keyword": "바지",
+      "keyword": "나시",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "쪼리",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "가방",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "셔츠",
-      "rankIncrement": 0
+      "keyword": "샌들",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "운동복",
-      "rankIncrement": 131
+      "keyword": "인에이",
+      "rankIncrement": 482
     },
     {
       "rank": 2,
-      "keyword": "아디다스 반바지",
-      "rankIncrement": 116
+      "keyword": "셋업",
+      "rankIncrement": 122
     },
     {
       "rank": 3,
       "keyword": "아모우",
-      "rankIncrement": 125
+      "rankIncrement": 166
     },
     {
       "rank": 4,
-      "keyword": "회색 반팔",
-      "rankIncrement": 350
+      "keyword": "어바웃톤",
+      "rankIncrement": 107
     },
     {
       "rank": 5,
-      "keyword": "보스턴백",
-      "rankIncrement": 124
+      "keyword": "남자 반팔티",
+      "rankIncrement": 154
     },
     {
       "rank": 6,
-      "keyword": "크롭",
-      "rankIncrement": 130
+      "keyword": "엘무드",
+      "rankIncrement": 179
     },
     {
       "rank": 7,
-      "keyword": "케이스",
-      "rankIncrement": 231
+      "keyword": "드로우핏",
+      "rankIncrement": 106
     },
     {
       "rank": 8,
-      "keyword": "에잇세컨즈",
-      "rankIncrement": 115
+      "keyword": "메신저백",
+      "rankIncrement": 145
     },
     {
       "rank": 9,
-      "keyword": "어바웃톤",
-      "rankIncrement": 224
+      "keyword": "무센트",
+      "rankIncrement": 143
     },
     {
       "rank": 10,
-      "keyword": "파브레가",
-      "rankIncrement": 326
+      "keyword": "져지",
+      "rankIncrement": 214
     }
   ]
 }
