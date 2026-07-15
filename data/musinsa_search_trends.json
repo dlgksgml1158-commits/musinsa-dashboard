@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-14T16:58:52.068110+00:00",
+  "updatedAt": "2026-07-15T07:31:35.569255+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "나시",
-      "rankIncrement": 1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "모자",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
+      "keyword": "나시",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
       "keyword": "가방",
       "rankIncrement": 1
     },
     {
-      "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": -1
-    },
-    {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "쪼리",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "쪼리",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "레인부츠",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "디젤",
-      "rankIncrement": 137
+      "keyword": "필프",
+      "rankIncrement": 322
     },
     {
       "rank": 2,
-      "keyword": "카프리팬츠",
-      "rankIncrement": 106
+      "keyword": "더플백",
+      "rankIncrement": 116
     },
     {
       "rank": 3,
-      "keyword": "몽벨",
-      "rankIncrement": 204
+      "keyword": "아메스 월드와이드",
+      "rankIncrement": 142
     },
     {
       "rank": 4,
-      "keyword": "상의",
-      "rankIncrement": 117
+      "keyword": "나이키 양말",
+      "rankIncrement": 170
     },
     {
       "rank": 5,
-      "keyword": "반팔 블라우스",
-      "rankIncrement": 206
+      "keyword": "셋업",
+      "rankIncrement": 101
     },
     {
       "rank": 6,
-      "keyword": "블러셔",
-      "rankIncrement": 125
+      "keyword": "남자 벨트",
+      "rankIncrement": 177
     },
     {
       "rank": 7,
-      "keyword": "생지데님",
-      "rankIncrement": 176
+      "keyword": "나일론팬츠",
+      "rankIncrement": 160
     },
     {
       "rank": 8,
-      "keyword": "와이드 슬랙스",
-      "rankIncrement": 192
+      "keyword": "론론",
+      "rankIncrement": 146
     },
     {
       "rank": 9,
-      "keyword": "슬림핏 반팔",
-      "rankIncrement": 183
+      "keyword": "mlb",
+      "rankIncrement": 349
     },
     {
       "rank": 10,
-      "keyword": "카시오 시계",
-      "rankIncrement": 293
+      "keyword": "폴로 반팔",
+      "rankIncrement": 256
     }
   ]
 }
