@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-16T11:15:15.615216+00:00",
+  "updatedAt": "2026-07-16T15:20:36.368047+00:00",
   "items": [
     {
       "rank": 1,
@@ -234,8 +234,8 @@
       "name": "캉캉이 라운드넥 반소매 블라우스  네이비",
       "price": 39900,
       "originalPrice": 39900,
-      "discountRate": 0,
-      "finalPrice": 39900,
+      "discountRate": 25,
+      "finalPrice": 29930,
       "category": "001005",
       "categoryLabel": "셔츠/블라우스",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20260630/6755330/6755330_17828072047318_500.jpg",
@@ -687,8 +687,8 @@
         "name": "캉캉이 라운드넥 반소매 블라우스  네이비",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 0,
-        "finalPrice": 39900,
+        "discountRate": 25,
+        "finalPrice": 29930,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260630/6755330/6755330_17828072047318_500.jpg",
@@ -1184,8 +1184,8 @@
         "name": "[JURASSIC] 쥬라기파크 그래픽 슬럽 티셔츠  애쉬",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 0,
-        "finalPrice": 39900,
+        "discountRate": 25,
+        "finalPrice": 29930,
         "category": "001001",
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6689710/6689710_17816899048547_500.jpg",
@@ -2426,7 +2426,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250812/5315438/5315438_17679363095804_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5315438",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 12,
@@ -2441,7 +2441,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260126/5937520/5937520_17719132760157_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5937520",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 13,
@@ -2456,7 +2456,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260106/5871614/5871614_17702718576825_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5871614",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 14,
@@ -2471,7 +2471,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240807/4302685/4302685_17229675684379_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4302685",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 15,
@@ -2486,7 +2486,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251218/5839958/5839958_17663732378804_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5839958",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 16,
@@ -2501,7 +2501,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260626/6738350/6738350_17824582243090_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6738350",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 17,
@@ -2516,7 +2516,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6687193/6687193_17817614987651_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6687193",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 18,
@@ -2531,7 +2531,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6687161/6687161_17817615649963_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6687161",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 19,
@@ -2546,7 +2546,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260209/5997551/5997551_17744018636501_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5997551",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 20,
@@ -2561,7 +2561,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240821/4354691/4354691_17254365225481_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4354691",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 21,
@@ -2576,7 +2576,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260317/6147429/6147429_17737326250688_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6147429",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 22,
@@ -2591,7 +2591,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230710/3401105/3401105_17470973512866_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3401105",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 23,
@@ -2606,7 +2606,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240719/4260121/4260121_17230150292767_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4260121",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 24,
@@ -2621,7 +2621,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240913/4440027/4440027_17720840189300_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4440027",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 25,
@@ -2636,7 +2636,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260616/6679424/6679424_17818418684994_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6679424",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 26,
@@ -2651,7 +2651,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240223/3893377/3893377_17086471833558_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3893377",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 27,
@@ -2666,7 +2666,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260130/5964389/5964389_17697611910912_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5964389",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 28,
@@ -2681,7 +2681,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250224/4821246/4821246_17415737328936_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4821246",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 29,
@@ -2696,7 +2696,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250103/4698056/4698056_17663827453347_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4698056",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 30,
@@ -2711,7 +2711,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251113/5727335/5727335_17633426624649_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5727335",
-        "change": -1
+        "change": 0
       }
     ],
     "001005": [
@@ -2737,8 +2737,8 @@
         "name": "캉캉이 라운드넥 반소매 블라우스  네이비",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 0,
-        "finalPrice": 39900,
+        "discountRate": 25,
+        "finalPrice": 29930,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260630/6755330/6755330_17828072047318_500.jpg",
@@ -2788,7 +2788,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260427/6385445/6385445_17772803743785_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6385445",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 6,
@@ -2803,7 +2803,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240429/4093932/4093932_17159262062293_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4093932",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 7,
@@ -2818,7 +2818,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260115/5897661/5897661_17809683111715_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5897661",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 8,
@@ -2833,7 +2833,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250811/5310167/5310167_17568805054709_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5310167",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 9,
@@ -2848,7 +2848,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260414/6305662/6305662_17769284255337_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6305662",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 10,
@@ -2863,7 +2863,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260619/6699536/6699536_17818275127445_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6699536",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 11,
@@ -2878,7 +2878,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260331/6230378/6230378_17764851267797_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6230378",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 12,
@@ -2893,7 +2893,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260512/6463410/6463410_17806282381816_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6463410",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 13,
@@ -2908,7 +2908,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250204/4756325/4756325_17708710661023_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4756325",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 14,
@@ -2923,7 +2923,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260401/6237554/6237554_17787406683233_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6237554",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 15,
@@ -2938,7 +2938,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260415/6317272/6317272_17762430862140_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6317272",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 16,
@@ -2953,7 +2953,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260601/6586166/6586166_17803881803395_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6586166",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 17,
@@ -2968,25 +2968,10 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250909/5429767/5429767_17799477425045_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5429767",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 18,
-        "id": "ms-6481761",
-        "brand": "라우디",
-        "name": "파우더 멀티 스트라이프 셔츠_베이비블루",
-        "price": 72000,
-        "originalPrice": 72000,
-        "discountRate": 10,
-        "finalPrice": 64800,
-        "category": "001005",
-        "categoryLabel": "셔츠/블라우스",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260514/6481761/6481761_17815850456019_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6481761",
-        "change": 1
-      },
-      {
-        "rank": 19,
         "id": "ms-5129508",
         "brand": "티뷰",
         "name": "백리본크로스블라우스_V5B-VBL055",
@@ -3001,7 +2986,7 @@
         "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-4129489",
         "brand": "시티팝즈",
         "name": "[CP] 시에라 스트라이프 클래식 베이직 반팔 셔츠 [PINK] 여름 ver.",
@@ -3016,7 +3001,7 @@
         "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-6591029",
         "brand": "마인드브릿지 우먼",
         "name": "[W]핀턱 타이 화이트 반팔 블라우스",
@@ -3031,7 +3016,7 @@
         "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-4898914",
         "brand": "마인드브릿지",
         "name": "[ON]스트라이프 오버핏 크림 반팔 셔츠",
@@ -3046,7 +3031,7 @@
         "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-6458180",
         "brand": "제너럴아이디어",
         "name": "시어서커  라운드 카라 블라우스 [BLACK] / GF2LBL528",
@@ -3061,7 +3046,7 @@
         "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-6138785",
         "brand": "숲",
         "name": "페플럼 퍼프 슬리브 블라우스(SC4SSF2)",
@@ -3076,7 +3061,7 @@
         "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-5065578",
         "brand": "데꼬로소",
         "name": "브리즈 시어서커 반팔 셔츠 [블랙]",
@@ -3091,7 +3076,7 @@
         "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-5186596",
         "brand": "앤드어게인",
         "name": "썸머 빈티지 카이 셔츠",
@@ -3106,7 +3091,7 @@
         "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-6441266",
         "brand": "비바셔스",
         "name": "수아 시스루 플레어 블라우스_3Colors",
@@ -3121,7 +3106,7 @@
         "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-6471338",
         "brand": "유젠",
         "name": "틸티드 원 포켓 스트라이프 하프 셔츠_블랙",
@@ -3136,7 +3121,7 @@
         "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-6053855",
         "brand": "미쏘",
         "name": "Bow Detail Blouse",
@@ -3151,7 +3136,7 @@
         "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-6345447",
         "brand": "레터프롬문",
         "name": "누아 셔링 플레어 블라우스 ( 네이비 )",
@@ -3163,6 +3148,21 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260421/6345447/6345447_17812218912993_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6345447",
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-6558705",
+        "brand": "효지",
+        "name": "[해피가이정호 PICK] 26 SS 세미 크롭 라이트웨이트 스트라이프 [반팔] 셔츠 (3컬러)",
+        "price": 69000,
+        "originalPrice": 69000,
+        "discountRate": 28,
+        "finalPrice": 49900,
+        "category": "001005",
+        "categoryLabel": "셔츠/블라우스",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260527/6558705/6558705_17821067310601_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6558705",
         "change": "NEW"
       }
     ],
@@ -5222,8 +5222,8 @@
         "name": "맞춤 2기장 2WAY 사이드핀턱  밑단스냅버튼 밴딩 스트링 와이드 트레이닝 스웻 팬츠 4COLOR (숏/ 롱 2TYPE 길이)",
         "price": 59900,
         "originalPrice": 59900,
-        "discountRate": 47,
-        "finalPrice": 31950,
+        "discountRate": 38,
+        "finalPrice": 36900,
         "category": "003003",
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250819/5337147/5337147_17555823136124_500.jpg",
@@ -5882,14 +5882,14 @@
   "priceStats": {
     "": {
       "label": "전체",
-      "avg": 51831,
+      "avg": 51498,
       "min": 15900,
       "max": 171990,
       "count": 30
     },
     "001001": {
       "label": "반소매 티셔츠",
-      "avg": 36941,
+      "avg": 36609,
       "min": 9900,
       "max": 67500,
       "count": 30
@@ -5917,7 +5917,7 @@
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 39829,
+      "avg": 39000,
       "min": 12900,
       "max": 78300,
       "count": 30
@@ -5952,7 +5952,7 @@
     },
     "003003": {
       "label": "트레이닝/조거",
-      "avg": 50389,
+      "avg": 50554,
       "min": 9900,
       "max": 110520,
       "count": 30
