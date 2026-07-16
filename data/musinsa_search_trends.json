@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-16T15:21:20.577129+00:00",
+  "updatedAt": "2026-07-16T16:59:20.534982+00:00",
   "popular": [
     {
       "rank": 1,
@@ -24,84 +24,84 @@
     {
       "rank": 5,
       "keyword": "모자",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "가방",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 7,
-      "keyword": "셔츠",
-      "rankIncrement": 5
-    },
-    {
-      "rank": 8,
       "keyword": "나시",
       "rankIncrement": 1
     },
     {
-      "rank": 9,
+      "rank": 7,
+      "keyword": "가방",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
       "keyword": "바지",
-      "rankIncrement": -2
+      "rankIncrement": 0
+    },
+    {
+      "rank": 9,
+      "keyword": "셔츠",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": 0
+      "keyword": "백팩",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "플라스틱프로덕트",
-      "rankIncrement": 100
+      "keyword": "포터리",
+      "rankIncrement": 156
     },
     {
       "rank": 2,
-      "keyword": "자바나스",
-      "rankIncrement": 106
+      "keyword": "몽벨",
+      "rankIncrement": 124
     },
     {
       "rank": 3,
-      "keyword": "아쿠아슈즈",
-      "rankIncrement": 154
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 131
     },
     {
       "rank": 4,
-      "keyword": "크롭티",
-      "rankIncrement": 115
+      "keyword": "트랙탑",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "파르티멘토",
-      "rankIncrement": 167
+      "keyword": "시즈",
+      "rankIncrement": 296
     },
     {
       "rank": 6,
-      "keyword": "토마스모어",
-      "rankIncrement": 140
+      "keyword": "팀버랜드",
+      "rankIncrement": 111
     },
     {
       "rank": 7,
-      "keyword": "텀블러",
-      "rankIncrement": 292
+      "keyword": "브라",
+      "rankIncrement": 109
     },
     {
       "rank": 8,
-      "keyword": "스트라이프 팬츠",
-      "rankIncrement": 120
+      "keyword": "카시오 시계",
+      "rankIncrement": 106
     },
     {
       "rank": 9,
-      "keyword": "치노팬츠",
-      "rankIncrement": 102
+      "keyword": "버킷햇",
+      "rankIncrement": 305
     },
     {
       "rank": 10,
-      "keyword": "애플워치 스트랩",
-      "rankIncrement": 120
+      "keyword": "여밈",
+      "rankIncrement": 127
     }
   ]
 }
