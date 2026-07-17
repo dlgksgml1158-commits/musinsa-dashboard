@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-17T12:50:29.644255+00:00",
+  "updatedAt": "2026-07-17T16:51:18.185402+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,17 +8,17 @@
     },
     {
       "rank": 2,
-      "keyword": "반바지",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 1
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "반바지",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "rank": 6,
-      "keyword": "나시",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
+      "keyword": "나시",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "셔츠",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
-      "rankIncrement": -1
+      "keyword": "버뮤다",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "우산",
-      "rankIncrement": 122
+      "keyword": "빈티지",
+      "rankIncrement": 112
     },
     {
       "rank": 2,
-      "keyword": "론론",
-      "rankIncrement": 115
+      "keyword": "아디다스 오즈가이아",
+      "rankIncrement": 140
     },
     {
       "rank": 3,
-      "keyword": "벨리에",
-      "rankIncrement": 139
+      "keyword": "스탠드오일",
+      "rankIncrement": 108
     },
     {
       "rank": 4,
-      "keyword": "슬링백",
-      "rankIncrement": 155
+      "keyword": "보스턴백",
+      "rankIncrement": 116
     },
     {
       "rank": 5,
-      "keyword": "스카프",
-      "rankIncrement": 157
+      "keyword": "파우치",
+      "rankIncrement": 125
     },
     {
       "rank": 6,
-      "keyword": "레쉬가드",
+      "keyword": "캘빈클라인 언더웨어",
       "rankIncrement": 126
     },
     {
       "rank": 7,
-      "keyword": "테켓",
-      "rankIncrement": 141
+      "keyword": "슬링백",
+      "rankIncrement": 100
     },
     {
       "rank": 8,
-      "keyword": "크롭 셔츠",
-      "rankIncrement": 150
+      "keyword": "코트",
+      "rankIncrement": 200
     },
     {
       "rank": 9,
-      "keyword": "쿠어 체인스티치",
-      "rankIncrement": 157
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 341
     },
     {
       "rank": 10,
-      "keyword": "여름 긴팔",
-      "rankIncrement": 132
+      "keyword": "후리스",
+      "rankIncrement": 207
     }
   ]
 }
