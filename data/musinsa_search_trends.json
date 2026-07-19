@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T12:08:01.320253+00:00",
+  "updatedAt": "2026-07-19T16:16:20.196613+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,12 +13,12 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "가방",
-      "rankIncrement": 1
+      "keyword": "나시",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "나시",
-      "rankIncrement": -1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 9,
       "keyword": "쪼리",
       "rankIncrement": 1
     },
     {
-      "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": -1
-    },
-    {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "휠라",
-      "rankIncrement": 103
+      "keyword": "하이산",
+      "rankIncrement": 116
     },
     {
       "rank": 2,
-      "keyword": "로라로라",
-      "rankIncrement": 114
+      "keyword": "미닛뮤트",
+      "rankIncrement": 122
     },
     {
       "rank": 3,
-      "keyword": "부츠",
-      "rankIncrement": 118
+      "keyword": "오니츠카타이거",
+      "rankIncrement": 101
     },
     {
       "rank": 4,
-      "keyword": "에스피오나지",
-      "rankIncrement": 103
+      "keyword": "7부 버뮤다팬츠",
+      "rankIncrement": 105
     },
     {
       "rank": 5,
-      "keyword": "코이리스",
-      "rankIncrement": 210
+      "keyword": "넘버링",
+      "rankIncrement": 113
     },
     {
       "rank": 6,
-      "keyword": "레알마드리드",
-      "rankIncrement": 162
+      "keyword": "스트라이프",
+      "rankIncrement": 146
     },
     {
       "rank": 7,
-      "keyword": "알로",
-      "rankIncrement": 124
+      "keyword": "헤어밴드",
+      "rankIncrement": 121
     },
     {
       "rank": 8,
-      "keyword": "헌터 레인부츠",
-      "rankIncrement": 136
+      "keyword": "카모",
+      "rankIncrement": 145
     },
     {
       "rank": 9,
-      "keyword": "케이스티파이",
-      "rankIncrement": 155
+      "keyword": "테켓",
+      "rankIncrement": 151
     },
     {
       "rank": 10,
-      "keyword": "속옷",
-      "rankIncrement": 120
+      "keyword": "몽돌",
+      "rankIncrement": 186
     }
   ]
 }
