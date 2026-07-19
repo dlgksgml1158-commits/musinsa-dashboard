@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-18T16:14:41.325801+00:00",
+  "updatedAt": "2026-07-19T07:52:20.198146+00:00",
   "items": [
     {
       "rank": 1,
@@ -2902,8 +2902,8 @@
         "name": "오간자 레이어드 블라우스_MIWBWG511G",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 19,
-        "finalPrice": 40410,
+        "discountRate": 28,
+        "finalPrice": 35920,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260401/6237554/6237554_17787406683233_500.jpg",
@@ -3127,8 +3127,8 @@
         "name": "Bow Detail Blouse",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 19,
-        "finalPrice": 40290,
+        "discountRate": 25,
+        "finalPrice": 37200,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260225/6053855/6053855_17830426147312_500.jpg",
@@ -3851,8 +3851,8 @@
         "name": "V넥 변형 자켓_MIWJKG311C MIWJKG51QC",
         "price": 99900,
         "originalPrice": 99900,
-        "discountRate": 29,
-        "finalPrice": 70990,
+        "discountRate": 19,
+        "finalPrice": 80670,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260213/6026203/6026203_17780494711166_500.jpg",
@@ -5917,7 +5917,7 @@
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 39585,
+      "avg": 39332,
       "min": 12900,
       "max": 78300,
       "count": 30
@@ -5931,7 +5931,7 @@
     },
     "002": {
       "label": "아우터",
-      "avg": 59859,
+      "avg": 60182,
       "min": 15920,
       "max": 217990,
       "count": 30
