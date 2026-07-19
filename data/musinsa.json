@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-19T07:52:20.198146+00:00",
+  "updatedAt": "2026-07-19T10:08:47.102170+00:00",
   "items": [
     {
       "rank": 1,
@@ -3127,8 +3127,8 @@
         "name": "Bow Detail Blouse",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 25,
-        "finalPrice": 37200,
+        "discountRate": 19,
+        "finalPrice": 40290,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260225/6053855/6053855_17830426147312_500.jpg",
@@ -5252,8 +5252,8 @@
         "name": "파라슈트 팬츠 - 올리브스트라타 / KR4586",
         "price": 129000,
         "originalPrice": 129000,
-        "discountRate": 5,
-        "finalPrice": 121990,
+        "discountRate": 18,
+        "finalPrice": 106080,
         "category": "003003",
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260424/6371100/6371100_17772640594201_500.jpg",
@@ -5917,7 +5917,7 @@
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 39332,
+      "avg": 39435,
       "min": 12900,
       "max": 78300,
       "count": 30
@@ -5952,9 +5952,9 @@
     },
     "003003": {
       "label": "트레이닝/조거",
-      "avg": 51809,
+      "avg": 51279,
       "min": 23280,
-      "max": 121990,
+      "max": 110520,
       "count": 30
     },
     "003005": {
