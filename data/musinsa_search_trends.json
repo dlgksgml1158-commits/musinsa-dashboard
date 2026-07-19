@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T10:09:30.954230+00:00",
+  "updatedAt": "2026-07-19T12:08:01.320253+00:00",
   "popular": [
     {
       "rank": 1,
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "나시",
-      "rankIncrement": 0
+      "keyword": "가방",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 3
+      "keyword": "나시",
+      "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "바지",
+      "keyword": "쪼리",
       "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "무신사 스탠다드",
+      "keyword": "바지",
       "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "샌들",
-      "rankIncrement": -3
+      "keyword": "나이키",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파이어버드",
-      "rankIncrement": 104
+      "keyword": "휠라",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "테켓",
-      "rankIncrement": 249
+      "keyword": "로라로라",
+      "rankIncrement": 114
     },
     {
       "rank": 3,
-      "keyword": "나일론팬츠",
-      "rankIncrement": 147
+      "keyword": "부츠",
+      "rankIncrement": 118
     },
     {
       "rank": 4,
-      "keyword": "아레나",
-      "rankIncrement": 184
+      "keyword": "에스피오나지",
+      "rankIncrement": 103
     },
     {
       "rank": 5,
-      "keyword": "리복",
-      "rankIncrement": 173
+      "keyword": "코이리스",
+      "rankIncrement": 210
     },
     {
       "rank": 6,
-      "keyword": "디젤",
-      "rankIncrement": 137
+      "keyword": "레알마드리드",
+      "rankIncrement": 162
     },
     {
       "rank": 7,
-      "keyword": "슬리브",
-      "rankIncrement": 169
+      "keyword": "알로",
+      "rankIncrement": 124
     },
     {
       "rank": 8,
-      "keyword": "반팔 가디건",
-      "rankIncrement": 143
+      "keyword": "헌터 레인부츠",
+      "rankIncrement": 136
     },
     {
       "rank": 9,
-      "keyword": "다이브인",
-      "rankIncrement": 105
+      "keyword": "케이스티파이",
+      "rankIncrement": 155
     },
     {
       "rank": 10,
-      "keyword": "비즈목걸이",
-      "rankIncrement": 197
+      "keyword": "속옷",
+      "rankIncrement": 120
     }
   ]
 }

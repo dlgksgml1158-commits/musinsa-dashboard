@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-19T10:08:47.102170+00:00",
+  "updatedAt": "2026-07-19T12:07:14.328471+00:00",
   "items": [
     {
       "rank": 1,
@@ -1254,21 +1254,6 @@
       },
       {
         "rank": 24,
-        "id": "ms-6699601",
-        "brand": "런던다다",
-        "name": "Twist Neck Slim T-Shirt, 3colors",
-        "price": 59000,
-        "originalPrice": 59000,
-        "discountRate": 36,
-        "finalPrice": 37910,
-        "category": "001001",
-        "categoryLabel": "반소매 티셔츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260619/6699601/6699601_17818327785226_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6699601",
-        "change": 0
-      },
-      {
-        "rank": 25,
         "id": "ms-4059353",
         "brand": "데밀",
         "name": "LOT.052 프리덤 티셔츠 티크 브라운",
@@ -1280,10 +1265,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240416/4059353/4059353_17139187784918_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4059353",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-6693866",
         "brand": "데이",
         "name": "피그먼트 세미 크롭 라운드 반팔 티셔츠_CHARCOAL",
@@ -1295,10 +1280,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260618/6693866/6693866_17833279465614_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6693866",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-6656624",
         "brand": "밀로 아카이브",
         "name": "[Pokémon] 블랭크 티셔츠 [딥 차콜]",
@@ -1310,10 +1295,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260611/6656624/6656624_17823968614284_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6656624",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-6684643",
         "brand": "오와이",
         "name": "BOLD LETTERS TEE - YELLOW",
@@ -1325,10 +1310,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6684643/6684643_17821041342706_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6684643",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-6745094",
         "brand": "뉴발란스",
         "name": "NBNEG35613 / UNI FROZEN 픽토그램 반팔티 (NAVY)",
@@ -1340,10 +1325,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260629/6745094/6745094_17827085150346_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6745094",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-6760735",
         "brand": "요세미티",
         "name": "배색 롤업 레이어드 반팔티 YT-3Y31",
@@ -1355,7 +1340,22 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260701/6760735/6760735_17828729321777_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6760735",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-6408788",
+        "brand": "제너럴아이디어",
+        "name": "스냅 헨리넥 티셔츠 [KHAKI] / GF2LTS528",
+        "price": 39000,
+        "originalPrice": 39000,
+        "discountRate": 32,
+        "finalPrice": 26400,
+        "category": "001001",
+        "categoryLabel": "반소매 티셔츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260430/6408788/6408788_17799433752017_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6408788",
+        "change": "NEW"
       }
     ],
     "001002": [
@@ -3249,8 +3249,8 @@
         "name": "Henley Neck Deep V Short Sleeve Knit",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 54,
-        "finalPrice": 18300,
+        "discountRate": 37,
+        "finalPrice": 25130,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260507/6430803/6430803_17830604156020_500.jpg",
@@ -5889,7 +5889,7 @@
     },
     "001001": {
       "label": "반소매 티셔츠",
-      "avg": 33695,
+      "avg": 33311,
       "min": 9900,
       "max": 67500,
       "count": 30
@@ -5924,7 +5924,7 @@
     },
     "001006": {
       "label": "니트/스웨터",
-      "avg": 39841,
+      "avg": 40069,
       "min": 11000,
       "max": 79000,
       "count": 30
