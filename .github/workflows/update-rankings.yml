@@ -52,6 +52,9 @@ jobs:
       - name: 🎟 무신사 쿠폰 프로모션 현황 동기화
         run: python scripts/fetch_coupon_promotions.py
 
+      - name: 📧 메일 프로모션 취합 동기화
+        run: python scripts/fetch_mail_promotions.py
+
       - name: 🔎 무신사 실시간 검색어 수집
         run: python scripts/fetch_musinsa_search_trends.py
 
@@ -65,7 +68,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "랭킹 봇"
-          git add data/musinsa.json data/musinsa_male.json data/29cm.json data/naver_trends.json data/kinlock_stats.json data/musinsa_promotions.json data/musinsa_coupon_promotions.json data/musinsa_search_trends.json data/musinsa_order_stats.json data/musinsa_bestsellers.json
+          git add data/musinsa.json data/musinsa_male.json data/29cm.json data/naver_trends.json data/kinlock_stats.json data/musinsa_promotions.json data/musinsa_coupon_promotions.json data/mail_promotions.json data/musinsa_search_trends.json data/musinsa_order_stats.json data/musinsa_bestsellers.json
           if git diff --staged --quiet; then
             echo "변경사항 없음 — 커밋 스킵"
           else

@@ -1644,6 +1644,7 @@
       <span class="promo-tab-group">
         <button class="promo-tab-btn active" id="promoTabMusinsa" onclick="switchPromoTab('musinsa')">무신사 프로모션</button>
         <button class="promo-tab-btn" id="promoTabCoupon" onclick="switchPromoTab('coupon')">쿠폰 프로모션</button>
+        <button class="promo-tab-btn" id="promoTabMail" onclick="switchPromoTab('mail')">메일 프로모션 취합</button>
       </span>
       <span class="weather-date" id="promotionDate">-</span>
     </div>
@@ -2158,15 +2159,24 @@ const COUPON_STATUS_CLASS = {
   '신청 완료': 'done',
 };
 
+const MAIL_STATUS_CLASS = {
+  '진행중': 'applying',
+  '예정': 'recruit',
+  '확인필요': 'done',
+};
+const MAIL_URGENT_DAYS = 3;
+
 let activePromoTab = 'musinsa';
-const promoTabCache = { musinsa: null, coupon: null };
+const promoTabCache = { musinsa: null, coupon: null, mail: null };
 
 function switchPromoTab(tab) {
   activePromoTab = tab;
   const musinsaBtn = document.getElementById('promoTabMusinsa');
   const couponBtn = document.getElementById('promoTabCoupon');
+  const mailBtn = document.getElementById('promoTabMail');
   if (musinsaBtn) musinsaBtn.classList.toggle('active', tab === 'musinsa');
   if (couponBtn) couponBtn.classList.toggle('active', tab === 'coupon');
+  if (mailBtn) mailBtn.classList.toggle('active', tab === 'mail');
   renderPromoTab();
 }
 
@@ -2185,9 +2195,12 @@ function renderPromoTab() {
     const today = new Date();
     if (dateEl) dateEl.textContent = (today.getMonth() + 1) + '월 ' + today.getDate() + '일 기준';
     renderMusinsaPromoList(listEl, cached);
-  } else {
+  } else if (activePromoTab === 'coupon') {
     if (dateEl) dateEl.textContent = cached.length ? cached.length + '건' : '-';
     renderCouponPromoList(listEl, cached);
+  } else {
+    if (dateEl) dateEl.textContent = cached.length ? cached.length + '건' : '-';
+    renderMailPromoList(listEl, cached);
   }
 }
 
@@ -2319,6 +2332,72 @@ async function loadCouponPromotions() {
   renderPromoTab();
 }
 
+function renderMailPromoList(listEl, items) {
+  if (!items.length) {
+    listEl.innerHTML = '<div class="promotion-loading">취합된 메일 프로모션이 없습니다</div>';
+    return;
+  }
+  listEl.innerHTML = items.map(function(it) {
+    const badgeClass = it.isUrgent ? 'urgent' : (MAIL_STATUS_CLASS[it.status] || 'recruit');
+    const fmt = function(iso) {
+      if (!iso) return '';
+      const d = new Date(iso);
+      if (isNaN(d)) return '';
+      return (d.getMonth() + 1) + '/' + d.getDate() + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+    };
+    const periodText = (it.from || it.to) ? (fmt(it.from) + ' ~ ' + fmt(it.to)) : '기간 확인필요';
+    const period = periodText +
+      (it.discountText ? ' · ' + it.discountText : '') +
+      (it.brand ? ' · ' + it.brand : '');
+
+    return '<div class="promotion-item">' +
+      '<span class="coupon-badge ' + badgeClass + '">' + (it.status || '-') + '</span>' +
+      '<div class="promotion-title">' + (it.title || '') + '</div>' +
+      '<div class="promotion-period">' + period + '</div>' +
+      '</div>';
+  }).join('');
+}
+
+async function loadMailPromotions() {
+  if (!document.getElementById('promotionList')) return;
+
+  try {
+    const res = await fetch(`data/mail_promotions.json?t=${Date.now()}`);
+    if (!res.ok) throw new Error('No data');
+    const data = await res.json();
+    const today = new Date();
+
+    // 마감(기간 종료)이 지난 메일 프로모션은 화면에서 제외한다.
+    const items = (data.items || [])
+      .filter(function(it) {
+        if (!it.to) return true; // 기간을 못찾은 메일(확인필요)은 유지
+        const to = new Date(it.to);
+        if (isNaN(to)) return true;
+        return to >= today;
+      })
+      .map(function(it) {
+        let isUrgent = false;
+        if (it.to) {
+          const deadline = new Date(it.to);
+          if (!isNaN(deadline)) {
+            const daysLeft = (deadline - today) / 86400000;
+            isUrgent = daysLeft >= 0 && daysLeft <= MAIL_URGENT_DAYS;
+          }
+        }
+        return Object.assign({}, it, { isUrgent: isUrgent });
+      })
+      .sort(function(a, b) {
+        if (a.isUrgent !== b.isUrgent) return a.isUrgent ? -1 : 1;
+        return new Date(a.from || 0) - new Date(b.from || 0);
+      });
+
+    promoTabCache.mail = items;
+  } catch (e) {
+    promoTabCache.mail = [];
+  }
+  renderPromoTab();
+}
+
 function getWeeklyProductRecs(avgMax, avgMin, rainyDays, hotDays, coldDays) {
   const recs = [];
   if (hotDays >= 3)
@@ -2399,7 +2478,7 @@ async function loadWeather() {
 }
 
 async function init() {
-  await Promise.all([loadData('musinsa'), loadData('29cm'), loadKinlockStats(), loadWeather(), loadFashionNews(), loadPromotions(), loadCouponPromotions()]);
+  await Promise.all([loadData('musinsa'), loadData('29cm'), loadKinlockStats(), loadWeather(), loadFashionNews(), loadPromotions(), loadCouponPromotions(), loadMailPromotions()]);
   renderCategoryBar();
   renderTrendCards();
   renderRanking();
