@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-19T16:16:20.196613+00:00",
+  "updatedAt": "2026-07-20T10:34:44.024285+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,16 +9,16 @@
     {
       "rank": 2,
       "keyword": "반바지",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 3,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "가방",
+      "keyword": "쪼리",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
+      "keyword": "가방",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "쪼리",
+      "keyword": "바지",
       "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
+      "keyword": "크록스",
       "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "하이산",
-      "rankIncrement": 116
+      "keyword": "노이어",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "미닛뮤트",
-      "rankIncrement": 122
+      "keyword": "드로우핏",
+      "rankIncrement": 100
     },
     {
       "rank": 3,
-      "keyword": "오니츠카타이거",
-      "rankIncrement": 101
+      "keyword": "풋살화",
+      "rankIncrement": 124
     },
     {
       "rank": 4,
-      "keyword": "7부 버뮤다팬츠",
-      "rankIncrement": 105
+      "keyword": "크롭 셔츠",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "넘버링",
-      "rankIncrement": 113
+      "keyword": "비터셀즈",
+      "rankIncrement": 111
     },
     {
       "rank": 6,
-      "keyword": "스트라이프",
-      "rankIncrement": 146
+      "keyword": "Acg",
+      "rankIncrement": 100
     },
     {
       "rank": 7,
-      "keyword": "헤어밴드",
-      "rankIncrement": 121
+      "keyword": "아르헨티나",
+      "rankIncrement": 123
     },
     {
       "rank": 8,
-      "keyword": "카모",
-      "rankIncrement": 145
+      "keyword": "키뮤어",
+      "rankIncrement": 138
     },
     {
       "rank": 9,
-      "keyword": "테켓",
-      "rankIncrement": 151
+      "keyword": "드릭스",
+      "rankIncrement": 138
     },
     {
       "rank": 10,
-      "keyword": "몽돌",
-      "rankIncrement": 186
+      "keyword": "아미",
+      "rankIncrement": 126
     }
   ]
 }
