@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T11:23:25.475815+00:00",
+  "updatedAt": "2026-07-21T15:06:37.818393+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,12 +13,12 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -39,69 +39,69 @@
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "크록스",
-      "rankIncrement": -1
+      "keyword": "쪼리",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
+      "keyword": "셔츠",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "더플백",
-      "rankIncrement": 165
+      "keyword": "제너럴아이디어",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "런닝화",
-      "rankIncrement": 132
+      "keyword": "제너럴 아이디어",
+      "rankIncrement": 116
     },
     {
       "rank": 3,
-      "keyword": "나이키 슬리퍼",
-      "rankIncrement": 240
+      "keyword": "디지몬",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "아메스 월드와이드",
-      "rankIncrement": 110
+      "keyword": "여름 긴팔",
+      "rankIncrement": 150
     },
     {
       "rank": 5,
-      "keyword": "여름 원피스",
-      "rankIncrement": 111
+      "keyword": "어반드레스",
+      "rankIncrement": 232
     },
     {
       "rank": 6,
-      "keyword": "파르티멘토",
-      "rankIncrement": 156
+      "keyword": "마스마룰즈",
+      "rankIncrement": 124
     },
     {
       "rank": 7,
-      "keyword": "여름 긴바지",
-      "rankIncrement": 143
+      "keyword": "7부 티셔츠",
+      "rankIncrement": 125
     },
     {
       "rank": 8,
-      "keyword": "애즈온",
-      "rankIncrement": 159
+      "keyword": "남자 샌들",
+      "rankIncrement": 150
     },
     {
       "rank": 9,
-      "keyword": "나일론팬츠",
-      "rankIncrement": 131
+      "keyword": "양산",
+      "rankIncrement": 139
     },
     {
       "rank": 10,
-      "keyword": "남자 반팔티",
-      "rankIncrement": 111
+      "keyword": "비긴202",
+      "rankIncrement": 115
     }
   ]
 }

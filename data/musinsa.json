@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-21T11:22:27.830152+00:00",
+  "updatedAt": "2026-07-21T15:05:46.597694+00:00",
   "items": [
     {
       "rank": 1,
@@ -3555,7 +3555,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260408/6278963/6278963_17790888373584_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6278963",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -3570,7 +3570,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220718/2668722/2668722_16811187347588_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2668722",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -3585,7 +3585,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260523/6541549/6541549_17806115197200_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6541549",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -3600,7 +3600,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260310/6109259/6109259_17794258577663_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6109259",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -3615,7 +3615,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250916/5466467/5466467_17683783236962_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5466467",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "002": [
@@ -3797,7 +3797,7 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260429/6401861/6401861_17828682812404_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6401861",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 13,
@@ -3812,25 +3812,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260514/6480709/6480709_17799295553550_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6480709",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 14,
-        "id": "ms-6685597",
-        "brand": "오운서",
-        "name": "OSP 소프트 터치 후드집업 (3 Colors)",
-        "price": 98000,
-        "originalPrice": 98000,
-        "discountRate": 0,
-        "finalPrice": 98000,
-        "category": "002",
-        "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6685597/6685597_17816671187988_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6685597",
-        "change": 1
-      },
-      {
-        "rank": 15,
         "id": "ms-6026203",
         "brand": "미쏘",
         "name": "V넥 변형 자켓_MIWJKG311C MIWJKG51QC",
@@ -3845,7 +3830,7 @@
         "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-4821229",
         "brand": "씨피 컴퍼니",
         "name": "메트로폴리스 퍼텍스 오버셔츠 재킷 - 블랙 / 18CLOS020A110033A999",
@@ -3860,7 +3845,7 @@
         "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-6041618",
         "brand": "마인드브릿지",
         "name": "후드 경량  세미 오버핏 바람막이 - 3color",
@@ -3875,7 +3860,7 @@
         "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-6284785",
         "brand": "스파오",
         "name": "시어서커 체크 윈드브레이커_SPJJG37C03",
@@ -3890,7 +3875,7 @@
         "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-2444810",
         "brand": "무신사 스탠다드",
         "name": "[기안84 PICK] [쿨탠다드] 릴렉스드 베이식 블레이저 [그레이]",
@@ -3905,7 +3890,7 @@
         "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-5992470",
         "brand": "디스이즈네버댓",
         "name": "T-Light Jacket Grey",
@@ -3920,7 +3905,7 @@
         "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-5990761",
         "brand": "무신사 스탠다드",
         "name": "[시티 레저] 시어 윈드브레이커 재킷 [오렌지]",
@@ -3935,7 +3920,7 @@
         "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-6227070",
         "brand": "커스텀어클락 우먼",
         "name": "[보라끌레르 PICK] [ITALY] 펀칭 브이넥 하프 가디건 10 COLOR COWCD005",
@@ -3950,7 +3935,7 @@
         "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-4651436",
         "brand": "무신사 스탠다드 우먼",
         "name": "우먼즈 리브드 슬림 스쿱 넥 저지 가디건 [멜란지 그레이]",
@@ -3965,7 +3950,7 @@
         "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-5973119",
         "brand": "필루미네이트",
         "name": "(W) 워터컬러 시어 윈드브레이커-스카이블루",
@@ -3980,7 +3965,7 @@
         "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-5345115",
         "brand": "랜덤오프",
         "name": "R:SIGNET OVER FIT 2-WAY ZIP-UP (4color)",
@@ -3995,7 +3980,7 @@
         "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-3776694",
         "brand": "어반디타입",
         "name": "[한삐우 PICK] 에어라이트 래글런 윈드브레이커_블루",
@@ -4010,7 +3995,7 @@
         "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-4795032",
         "brand": "후아유",
         "name": "Steve Packable Windbreaker / WHJJG3711U",
@@ -4025,7 +4010,7 @@
         "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-6458651",
         "brand": "제너럴아이디어",
         "name": "온도컷 쿨 에센셜 하프 가디건 [SAGE MINT] / GF2LKC541",
@@ -4040,7 +4025,7 @@
         "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-6402661",
         "brand": "비바셔스",
         "name": "링클 브이넥 크롭 가디건_2Colors",
@@ -4055,7 +4040,7 @@
         "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-4619961",
         "brand": "무신사 스탠다드 우먼",
         "name": "우먼즈 라운드 넥 트위드 크롭 반소매 재킷 [블랙]",
@@ -4067,6 +4052,21 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241118/4619961/4619961_17423597890104_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4619961",
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-6291325",
+        "brand": "트위",
+        "name": "키린드 썸머 긴팔 가디건",
+        "price": 39900,
+        "originalPrice": 39900,
+        "discountRate": 43,
+        "finalPrice": 22830,
+        "category": "002",
+        "categoryLabel": "아우터",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260410/6291325/6291325_17793234882151_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6291325",
         "change": "NEW"
       }
     ],
@@ -5931,7 +5931,7 @@
     },
     "002": {
       "label": "아우터",
-      "avg": 60815,
+      "avg": 58309,
       "min": 15920,
       "max": 217990,
       "count": 30
