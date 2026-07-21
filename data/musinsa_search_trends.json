@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T19:17:22.640264+00:00",
+  "updatedAt": "2026-07-21T00:29:32.047770+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,17 +8,17 @@
     },
     {
       "rank": 2,
-      "keyword": "아디다스",
+      "keyword": "반바지",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "반바지",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": -1
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "가방",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
       "keyword": "바지",
       "rankIncrement": 1
     },
     {
+      "rank": 7,
+      "keyword": "백팩",
+      "rankIncrement": 1
+    },
+    {
       "rank": 8,
-      "keyword": "나시",
-      "rankIncrement": -1
+      "keyword": "가방",
+      "rankIncrement": -2
     },
     {
       "rank": 9,
-      "keyword": "셔츠",
-      "rankIncrement": 1
+      "keyword": "나시",
+      "rankIncrement": 3
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
-      "rankIncrement": 1
+      "keyword": "셔츠",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "롱스커트",
-      "rankIncrement": 116
+      "keyword": "비키니",
+      "rankIncrement": 133
     },
     {
       "rank": 2,
-      "keyword": "hdex",
-      "rankIncrement": 111
+      "keyword": "린넨 셔츠",
+      "rankIncrement": 112
     },
     {
       "rank": 3,
-      "keyword": "쓰리타임즈",
-      "rankIncrement": 152
+      "keyword": "보일테일 지갑",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "러닝",
-      "rankIncrement": 141
+      "keyword": "몽벨",
+      "rankIncrement": 148
     },
     {
       "rank": 5,
-      "keyword": "아디다스 팬츠",
-      "rankIncrement": 111
+      "keyword": "미세키서울",
+      "rankIncrement": 166
     },
     {
       "rank": 6,
-      "keyword": "오클리",
-      "rankIncrement": 209
+      "keyword": "스커트",
+      "rankIncrement": 119
     },
     {
       "rank": 7,
-      "keyword": "럭비티",
-      "rankIncrement": 170
+      "keyword": "론론",
+      "rankIncrement": 100
     },
     {
       "rank": 8,
-      "keyword": "젤리슈즈",
-      "rankIncrement": 164
+      "keyword": "브라탑",
+      "rankIncrement": 101
     },
     {
       "rank": 9,
-      "keyword": "브랜디드",
-      "rankIncrement": 144
+      "keyword": "여성 래쉬가드",
+      "rankIncrement": 234
     },
     {
       "rank": 10,
-      "keyword": "린넨 바지",
-      "rankIncrement": 265
+      "keyword": "여름 슬랙스",
+      "rankIncrement": 187
     }
   ]
 }
