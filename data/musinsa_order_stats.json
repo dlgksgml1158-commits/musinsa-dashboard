@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-07-21T00:29:32.218595+00:00",
+  "updatedAt": "2026-07-21T09:34:59.234622+00:00",
   "items": [
-    {
-      "date": "2026-04-21",
-      "qtyAll": 109,
-      "priceAll": 6443060,
-      "qtySale": 85,
-      "priceSale": 5281320
-    },
     {
       "date": "2026-04-22",
       "qtyAll": 57,
@@ -637,6 +630,13 @@
       "priceAll": 895720,
       "qtySale": 19,
       "priceSale": 835000
+    },
+    {
+      "date": "2026-07-21",
+      "qtyAll": 10,
+      "priceAll": 494400,
+      "qtySale": 9,
+      "priceSale": 433680
     }
   ]
 }
