@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-07-22T02:31:30.780287+00:00",
+  "updatedAt": "2026-07-22T03:52:04.680614+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "반팔",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 2,
       "keyword": "로스트아크",
-      "rankIncrement": 1
+      "rankIncrement": -1
     },
     {
       "rank": 3,
       "keyword": "반바지",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "모코코",
-      "rankIncrement": 8
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 2
     },
     {
       "rank": 5,
-      "keyword": "크록스",
+      "keyword": "모자",
       "rankIncrement": 2
     },
     {
       "rank": 6,
-      "keyword": "버뮤다팬츠",
+      "keyword": "크록스",
       "rankIncrement": -2
     },
     {
       "rank": 7,
-      "keyword": "모자",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
-      "rankIncrement": -3
+      "keyword": "쪼리",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "나시",
-      "rankIncrement": 0
+      "keyword": "가방",
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
-      "rankIncrement": -2
+      "keyword": "나시",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스탠드오일",
-      "rankIncrement": 101
+      "keyword": "버뮤다 팬츠",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "유니폼",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 3,
-      "keyword": "플라스틱프로덕트",
-      "rankIncrement": 108
-    },
-    {
-      "rank": 4,
-      "keyword": "여름 바지",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 5,
-      "keyword": "Acg",
-      "rankIncrement": 106
-    },
-    {
-      "rank": 6,
-      "keyword": "크록스발레",
-      "rankIncrement": 121
-    },
-    {
-      "rank": 7,
-      "keyword": "드로우핏",
-      "rankIncrement": 159
-    },
-    {
-      "rank": 8,
-      "keyword": "노운",
-      "rankIncrement": 121
-    },
-    {
-      "rank": 9,
-      "keyword": "남자 래쉬가드",
+      "keyword": "숏팬츠",
       "rankIncrement": 126
     },
     {
+      "rank": 3,
+      "keyword": "더바넷",
+      "rankIncrement": 141
+    },
+    {
+      "rank": 4,
+      "keyword": "스트라이프 반팔",
+      "rankIncrement": 110
+    },
+    {
+      "rank": 5,
+      "keyword": "크롭티",
+      "rankIncrement": 162
+    },
+    {
+      "rank": 6,
+      "keyword": "나이키 신발",
+      "rankIncrement": 129
+    },
+    {
+      "rank": 7,
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 207
+    },
+    {
+      "rank": 8,
+      "keyword": "남자 셔츠",
+      "rankIncrement": 180
+    },
+    {
+      "rank": 9,
+      "keyword": "비니",
+      "rankIncrement": 249
+    },
+    {
       "rank": 10,
-      "keyword": "치마",
-      "rankIncrement": 138
+      "keyword": "남자 나시",
+      "rankIncrement": 106
     }
   ]
 }
