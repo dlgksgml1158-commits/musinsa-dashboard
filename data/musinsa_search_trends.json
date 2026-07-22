@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-21T15:26:26.072760+00:00",
+  "updatedAt": "2026-07-22T02:31:30.780287+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "반바지",
-      "rankIncrement": 0
+      "keyword": "로스트아크",
+      "rankIncrement": 1
     },
     {
       "rank": 3,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
+      "keyword": "반바지",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "모코코",
+      "rankIncrement": 8
     },
     {
       "rank": 5,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "크록스",
+      "rankIncrement": 2
     },
     {
       "rank": 6,
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": -2
+    },
+    {
+      "rank": 7,
+      "keyword": "모자",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
+      "keyword": "아디다스",
+      "rankIncrement": -3
+    },
+    {
+      "rank": 9,
       "keyword": "나시",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
-      "keyword": "셔츠",
-      "rankIncrement": 1
-    },
-    {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "쪼리",
+      "rankIncrement": -2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "제너럴아이디어",
-      "rankIncrement": 103
+      "keyword": "스탠드오일",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "제너럴 아이디어",
-      "rankIncrement": 116
+      "keyword": "유니폼",
+      "rankIncrement": 109
     },
     {
       "rank": 3,
-      "keyword": "디지몬",
-      "rankIncrement": 100
+      "keyword": "플라스틱프로덕트",
+      "rankIncrement": 108
     },
     {
       "rank": 4,
-      "keyword": "여름 긴팔",
-      "rankIncrement": 150
+      "keyword": "여름 바지",
+      "rankIncrement": 100
     },
     {
       "rank": 5,
-      "keyword": "어반드레스",
-      "rankIncrement": 232
+      "keyword": "Acg",
+      "rankIncrement": 106
     },
     {
       "rank": 6,
-      "keyword": "마스마룰즈",
-      "rankIncrement": 124
+      "keyword": "크록스발레",
+      "rankIncrement": 121
     },
     {
       "rank": 7,
-      "keyword": "7부 티셔츠",
-      "rankIncrement": 125
+      "keyword": "드로우핏",
+      "rankIncrement": 159
     },
     {
       "rank": 8,
-      "keyword": "남자 샌들",
-      "rankIncrement": 150
+      "keyword": "노운",
+      "rankIncrement": 121
     },
     {
       "rank": 9,
-      "keyword": "양산",
-      "rankIncrement": 139
+      "keyword": "남자 래쉬가드",
+      "rankIncrement": 126
     },
     {
       "rank": 10,
-      "keyword": "비긴202",
-      "rankIncrement": 115
+      "keyword": "치마",
+      "rankIncrement": 138
     }
   ]
 }
