@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-22T10:59:31.155711+00:00",
+  "updatedAt": "2026-07-22T15:07:05.276771+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,12 +13,12 @@
     },
     {
       "rank": 3,
-      "keyword": "크록스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 2
+      "keyword": "크록스",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
+      "keyword": "나시",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
       "keyword": "가방",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
-      "keyword": "나시",
-      "rankIncrement": -2
-    },
-    {
       "rank": 10,
       "keyword": "쪼리",
-      "rankIncrement": 0
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "독일군",
-      "rankIncrement": 240
+      "keyword": "무지티",
+      "rankIncrement": 140
     },
     {
       "rank": 2,
-      "keyword": "밀로 아카이브",
-      "rankIncrement": 168
+      "keyword": "맨시티",
+      "rankIncrement": 166
     },
     {
       "rank": 3,
-      "keyword": "프리덤",
-      "rankIncrement": 101
+      "keyword": "크롭 셔츠",
+      "rankIncrement": 122
     },
     {
       "rank": 4,
-      "keyword": "엔프프",
-      "rankIncrement": 127
+      "keyword": "텀블러",
+      "rankIncrement": 108
     },
     {
       "rank": 5,
-      "keyword": "펜타포트 2026",
-      "rankIncrement": 125
+      "keyword": "미니 크로스백",
+      "rankIncrement": 155
     },
     {
       "rank": 6,
-      "keyword": "남자 셔츠",
-      "rankIncrement": 255
+      "keyword": "데님셔츠",
+      "rankIncrement": 192
     },
     {
       "rank": 7,
-      "keyword": "시어서커",
-      "rankIncrement": 255
+      "keyword": "나일론팬츠",
+      "rankIncrement": 401
     },
     {
       "rank": 8,
-      "keyword": "남자 수영복",
-      "rankIncrement": 119
+      "keyword": "하이산",
+      "rankIncrement": 105
     },
     {
       "rank": 9,
-      "keyword": "남자 쪼리",
-      "rankIncrement": 129
+      "keyword": "파라슈트 팬츠",
+      "rankIncrement": 130
     },
     {
       "rank": 10,
-      "keyword": "여름 청바지",
-      "rankIncrement": 122
+      "keyword": "코이세이오",
+      "rankIncrement": 172
     }
   ]
 }
