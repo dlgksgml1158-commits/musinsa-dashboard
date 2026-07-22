@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-07-22T03:52:04.680614+00:00",
+  "updatedAt": "2026-07-22T06:28:17.127783+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "반팔",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "로스트아크",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 3,
       "keyword": "반바지",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
+      "rank": 3,
       "keyword": "버뮤다팬츠",
-      "rankIncrement": 2
+      "rankIncrement": 0
+    },
+    {
+      "rank": 4,
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
       "keyword": "모자",
-      "rankIncrement": 2
+      "rankIncrement": 1
     },
     {
       "rank": 6,
       "keyword": "크록스",
-      "rankIncrement": -2
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 8,
       "keyword": "쪼리",
       "rankIncrement": 2
     },
     {
+      "rank": 8,
+      "keyword": "나시",
+      "rankIncrement": -1
+    },
+    {
       "rank": 9,
       "keyword": "가방",
-      "rankIncrement": 2
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "나시",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "버뮤다 팬츠",
-      "rankIncrement": 118
+      "keyword": "와이메아",
+      "rankIncrement": 105
     },
     {
       "rank": 2,
-      "keyword": "숏팬츠",
-      "rankIncrement": 126
+      "keyword": "린넨셔츠",
+      "rankIncrement": 135
     },
     {
       "rank": 3,
       "keyword": "더바넷",
-      "rankIncrement": 141
+      "rankIncrement": 389
     },
     {
       "rank": 4,
-      "keyword": "스트라이프 반팔",
-      "rankIncrement": 110
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 157
     },
     {
       "rank": 5,
-      "keyword": "크롭티",
-      "rankIncrement": 162
+      "keyword": "아디다스 삼바",
+      "rankIncrement": 117
     },
     {
       "rank": 6,
-      "keyword": "나이키 신발",
-      "rankIncrement": 129
+      "keyword": "레깅스",
+      "rankIncrement": 211
     },
     {
       "rank": 7,
-      "keyword": "밀로 아카이브",
-      "rankIncrement": 207
+      "keyword": "남자 반바지",
+      "rankIncrement": 103
     },
     {
       "rank": 8,
-      "keyword": "남자 셔츠",
-      "rankIncrement": 180
+      "keyword": "마스마룰즈",
+      "rankIncrement": 123
     },
     {
       "rank": 9,
-      "keyword": "비니",
-      "rankIncrement": 249
+      "keyword": "리버풀",
+      "rankIncrement": 137
     },
     {
       "rank": 10,
-      "keyword": "남자 나시",
-      "rankIncrement": 106
+      "keyword": "야세",
+      "rankIncrement": 122
     }
   ]
 }
