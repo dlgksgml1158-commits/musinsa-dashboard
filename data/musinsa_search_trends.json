@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T11:01:45.345764+00:00",
+  "updatedAt": "2026-07-23T15:12:01.743339+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "모자",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": -1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "나시",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "쪼리",
+      "keyword": "나이키",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "크록스",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "헤어밴드",
-      "rankIncrement": 164
+      "keyword": "치노팬츠",
+      "rankIncrement": 106
     },
     {
       "rank": 2,
-      "keyword": "스니커즈",
-      "rankIncrement": 103
+      "keyword": "다이브인",
+      "rankIncrement": 277
     },
     {
       "rank": 3,
-      "keyword": "슬링백",
-      "rankIncrement": 233
-    },
-    {
-      "rank": 4,
-      "keyword": "토앤토",
-      "rankIncrement": 183
-    },
-    {
-      "rank": 5,
-      "keyword": "디스커버리 익스페디션",
+      "keyword": "토피",
       "rankIncrement": 145
     },
     {
+      "rank": 4,
+      "keyword": "조셉트",
+      "rankIncrement": 149
+    },
+    {
+      "rank": 5,
+      "keyword": "남자 크로스백",
+      "rankIncrement": 192
+    },
+    {
       "rank": 6,
-      "keyword": "트래블",
-      "rankIncrement": 144
+      "keyword": "파브레가",
+      "rankIncrement": 105
     },
     {
       "rank": 7,
-      "keyword": "7부 버뮤다팬츠",
-      "rankIncrement": 123
+      "keyword": "크롭",
+      "rankIncrement": 205
     },
     {
       "rank": 8,
-      "keyword": "마스마룰즈",
-      "rankIncrement": 187
+      "keyword": "노스페이스 백팩",
+      "rankIncrement": 220
     },
     {
       "rank": 9,
-      "keyword": "로잔나",
-      "rankIncrement": 453
+      "keyword": "텀블러",
+      "rankIncrement": 153
     },
     {
       "rank": 10,
-      "keyword": "브라운야드",
-      "rankIncrement": 170
+      "keyword": "오헤시오",
+      "rankIncrement": 424
     }
   ]
 }
