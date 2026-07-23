@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T06:30:42.999432+00:00",
+  "updatedAt": "2026-07-23T11:01:45.345764+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "가방",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "나시",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 9,
-      "keyword": "크록스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": -1
     },
     {
+      "rank": 6,
+      "keyword": "나시",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 7,
+      "keyword": "바지",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
+      "keyword": "가방",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "쪼리",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "크록스",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "트레이닝 바지",
-      "rankIncrement": 101
+      "keyword": "헤어밴드",
+      "rankIncrement": 164
     },
     {
       "rank": 2,
-      "keyword": "모코코",
-      "rankIncrement": 112
+      "keyword": "스니커즈",
+      "rankIncrement": 103
     },
     {
       "rank": 3,
-      "keyword": "크롭",
-      "rankIncrement": 130
+      "keyword": "슬링백",
+      "rankIncrement": 233
     },
     {
       "rank": 4,
-      "keyword": "아더에러",
-      "rankIncrement": 114
+      "keyword": "토앤토",
+      "rankIncrement": 183
     },
     {
       "rank": 5,
-      "keyword": "스포츠브라",
-      "rankIncrement": 165
+      "keyword": "디스커버리 익스페디션",
+      "rankIncrement": 145
     },
     {
       "rank": 6,
-      "keyword": "분크",
-      "rankIncrement": 151
+      "keyword": "트래블",
+      "rankIncrement": 144
     },
     {
       "rank": 7,
-      "keyword": "매쉬",
-      "rankIncrement": 129
+      "keyword": "7부 버뮤다팬츠",
+      "rankIncrement": 123
     },
     {
       "rank": 8,
-      "keyword": "뉴발란스 530",
-      "rankIncrement": 136
+      "keyword": "마스마룰즈",
+      "rankIncrement": 187
     },
     {
       "rank": 9,
-      "keyword": "스니커즈",
-      "rankIncrement": 101
+      "keyword": "로잔나",
+      "rankIncrement": 453
     },
     {
       "rank": 10,
-      "keyword": "파르티멘토 우먼",
-      "rankIncrement": 176
+      "keyword": "브라운야드",
+      "rankIncrement": 170
     }
   ]
 }
