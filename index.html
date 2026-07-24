@@ -652,6 +652,59 @@
     }
     .brand-medal { font-size: 14px; flex-shrink: 0; }
 
+    /* Brand exposure donut chart */
+    .brand-donut-body {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px 16px;
+    }
+    .brand-donut-svg { flex-shrink: 0; }
+    .brand-donut-center-count {
+      font-size: 15px;
+      font-weight: 800;
+      fill: var(--text);
+    }
+    .brand-donut-center-label {
+      font-size: 6.5px;
+      font-weight: 600;
+      fill: var(--text3);
+    }
+    .brand-donut-legend {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .brand-donut-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+    }
+    .brand-donut-swatch {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .brand-donut-legend-name {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--text);
+      font-weight: 600;
+    }
+    .brand-donut-legend-pct {
+      color: var(--text3);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      flex-shrink: 0;
+    }
+
     /* Bestseller list */
     .order-stats-row {
       display: grid;
@@ -1690,7 +1743,7 @@
       </div>
       <span class="trend-card-sub" style="font-size:9px;">TOP10 내</span>
     </div>
-    <div class="trend-card-body" id="brandList"></div>
+    <div class="brand-donut-body" id="brandList"></div>
   </div>
 </div>
 
@@ -2963,6 +3016,51 @@ function toggleRest() {
   }
 }
 
+const BRAND_DONUT_COLORS = ['#2563eb', '#7c3aed', '#0891b2', '#db2777', '#ea580c', '#eab308'];
+const BRAND_DONUT_OTHER_COLOR = '#94a3b8';
+
+function renderBrandDonut(brandsSorted, total) {
+  if (!brandsSorted.length || !total) {
+    return '<div class="empty-state"><p>데이터 없음</p></div>';
+  }
+
+  const MAX_SLICES = 6;
+  const top = brandsSorted.slice(0, MAX_SLICES);
+  const restCount = brandsSorted.slice(MAX_SLICES).reduce((sum, [, c]) => sum + c, 0);
+  const slices = top.map(([brand, count], i) => ({ brand, count, color: BRAND_DONUT_COLORS[i] }));
+  if (restCount > 0) {
+    slices.push({ brand: '기타', count: restCount, color: BRAND_DONUT_OTHER_COLOR });
+  }
+
+  const R = 40, CX = 50, CY = 50, STROKE = 16;
+  const CIRC = 2 * Math.PI * R;
+  let offset = 0;
+  const arcs = slices.map(s => {
+    const len = (s.count / total) * CIRC;
+    const dasharray = `${len.toFixed(2)} ${(CIRC - len).toFixed(2)}`;
+    const dashoffset = (-offset).toFixed(2);
+    offset += len;
+    return `<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${s.color}" stroke-width="${STROKE}" stroke-dasharray="${dasharray}" stroke-dashoffset="${dashoffset}" transform="rotate(-90 ${CX} ${CY})"><title>${s.brand} ${s.count}개</title></circle>`;
+  }).join('');
+
+  const svg = `<svg class="brand-donut-svg" width="92" height="92" viewBox="0 0 100 100">
+      ${arcs}
+      <text x="50" y="47" text-anchor="middle" class="brand-donut-center-count">${total}</text>
+      <text x="50" y="58" text-anchor="middle" class="brand-donut-center-label">TOP ${total}</text>
+    </svg>`;
+
+  const legend = slices.map(s => {
+    const pct = Math.round((s.count / total) * 100);
+    return `<div class="brand-donut-legend-item">
+        <span class="brand-donut-swatch" style="background:${s.color}"></span>
+        <span class="brand-donut-legend-name">${s.brand}</span>
+        <span class="brand-donut-legend-pct">${s.count}개 · ${pct}%</span>
+      </div>`;
+  }).join('');
+
+  return svg + `<div class="brand-donut-legend">${legend}</div>`;
+}
+
 /* ===========================
    SIDEBAR
 =========================== */
@@ -2982,22 +3080,13 @@ function renderSidebar() {
   const _sd = document.getElementById('statTopDown'); if (_sd) _sd.textContent = downItems[0] ? `▼${Math.abs(downItems[0].change)}` : '—';
   const _sdb = document.getElementById('statTopDownBrand'); if (_sdb) _sdb.textContent = downItems[0]?.brand || '—';
 
-  // Brand exposure (top 30)
+  // Brand exposure (top 30) — donut chart of each brand's share within TOP 30
   const top30 = items.slice(0, 30);
   const brandCounts = {};
   top30.forEach(i => { brandCounts[i.brand] = (brandCounts[i.brand] || 0) + 1; });
-  const brandsSorted = Object.entries(brandCounts).sort((a,b) => b[1]-a[1]).slice(0, 10);
-  const countClass = isMusinsa ? 'brand-count' : 'brand-count cm-count';
+  const brandsSorted = Object.entries(brandCounts).sort((a,b) => b[1]-a[1]);
 
-  document.getElementById('brandList').innerHTML = brandsSorted.length === 0
-    ? '<div class="empty-state"><p>데이터 없음</p></div>'
-    : brandsSorted.map(([brand, count], i) => `
-      <div class="brand-item">
-        <div class="brand-rank-num">${i + 1}</div>
-        <div class="brand-name">${brand}</div>
-        <div class="${countClass}">${count}개</div>
-      </div>
-    `).join('');
+  document.getElementById('brandList').innerHTML = renderBrandDonut(brandsSorted, top30.length);
 
   // Category chart
   const cats = (isMusinsa ? MUSINSA_CATS : CM29_CATS).slice(1);
