@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T05:41:11.956423+00:00",
+  "updatedAt": "2026-07-24T06:25:58.899218+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "크록스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "모자",
       "rankIncrement": 0
     },
     {
+      "rank": 6,
+      "keyword": "크록스",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 2
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "나시",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 9,
       "keyword": "나이키",
-      "rankIncrement": 4
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": -3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아크테릭스",
-      "rankIncrement": 198
+      "keyword": "부츠컷",
+      "rankIncrement": 177
     },
     {
       "rank": 2,
-      "keyword": "오클리",
-      "rankIncrement": 105
+      "keyword": "호카",
+      "rankIncrement": 156
     },
     {
       "rank": 3,
-      "keyword": "숏팬츠",
-      "rankIncrement": 113
+      "keyword": "썬러브",
+      "rankIncrement": 136
     },
     {
       "rank": 4,
-      "keyword": "슬링백",
-      "rankIncrement": 178
+      "keyword": "젝시믹스",
+      "rankIncrement": 114
     },
     {
       "rank": 5,
-      "keyword": "나이키 acg",
-      "rankIncrement": 100
+      "keyword": "토앤토",
+      "rankIncrement": 117
     },
     {
       "rank": 6,
-      "keyword": "헬리녹스",
-      "rankIncrement": 127
+      "keyword": "살로몬 백팩",
+      "rankIncrement": 302
     },
     {
       "rank": 7,
-      "keyword": "휠라",
-      "rankIncrement": 146
+      "keyword": "여자 수영복",
+      "rankIncrement": 201
     },
     {
       "rank": 8,
-      "keyword": "아디다스 삼바",
-      "rankIncrement": 116
+      "keyword": "디지몬",
+      "rankIncrement": 132
     },
     {
       "rank": 9,
-      "keyword": "엘무드",
-      "rankIncrement": 120
+      "keyword": "민트",
+      "rankIncrement": 157
     },
     {
       "rank": 10,
-      "keyword": "플립플랍",
-      "rankIncrement": 103
+      "keyword": "유니온블루",
+      "rankIncrement": 167
     }
   ]
 }
