@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T15:12:01.743339+00:00",
+  "updatedAt": "2026-07-24T02:33:09.677432+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,12 +13,12 @@
     },
     {
       "rank": 3,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "나시",
+      "keyword": "크록스",
       "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "가방",
-      "rankIncrement": 0
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "바지",
+      "keyword": "나시",
       "rankIncrement": 0
     },
     {
       "rank": 9,
       "keyword": "나이키",
-      "rankIncrement": 0
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": 1
+      "keyword": "백팩",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "치노팬츠",
-      "rankIncrement": 106
+      "keyword": "오니츠카타이거",
+      "rankIncrement": 160
     },
     {
       "rank": 2,
-      "keyword": "다이브인",
-      "rankIncrement": 277
+      "keyword": "크록스 발레",
+      "rankIncrement": 119
     },
     {
       "rank": 3,
-      "keyword": "토피",
-      "rankIncrement": 145
+      "keyword": "아이폰 케이스",
+      "rankIncrement": 122
     },
     {
       "rank": 4,
-      "keyword": "조셉트",
-      "rankIncrement": 149
+      "keyword": "도프제이슨",
+      "rankIncrement": 209
     },
     {
       "rank": 5,
-      "keyword": "남자 크로스백",
-      "rankIncrement": 192
+      "keyword": "남자 나시",
+      "rankIncrement": 124
     },
     {
       "rank": 6,
-      "keyword": "파브레가",
-      "rankIncrement": 105
+      "keyword": "비터셀즈",
+      "rankIncrement": 184
     },
     {
       "rank": 7,
-      "keyword": "크롭",
-      "rankIncrement": 205
+      "keyword": "오찌",
+      "rankIncrement": 458
     },
     {
       "rank": 8,
-      "keyword": "노스페이스 백팩",
-      "rankIncrement": 220
+      "keyword": "어반드레스",
+      "rankIncrement": 113
     },
     {
       "rank": 9,
-      "keyword": "텀블러",
-      "rankIncrement": 153
+      "keyword": "남자 목걸이",
+      "rankIncrement": 134
     },
     {
       "rank": 10,
-      "keyword": "오헤시오",
-      "rankIncrement": 424
+      "keyword": "코트",
+      "rankIncrement": 126
     }
   ]
 }
