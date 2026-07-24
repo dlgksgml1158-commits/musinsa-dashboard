@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T06:25:58.899218+00:00",
+  "updatedAt": "2026-07-24T10:55:25.073493+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,16 +14,16 @@
     {
       "rank": 3,
       "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "모자",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -33,8 +33,8 @@
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "나이키",
-      "rankIncrement": 1
+      "keyword": "바지",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "가방",
-      "rankIncrement": -3
+      "keyword": "쪼리",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "부츠컷",
-      "rankIncrement": 177
+      "keyword": "쿠어",
+      "rankIncrement": 105
     },
     {
       "rank": 2,
-      "keyword": "호카",
-      "rankIncrement": 156
+      "keyword": "큐어",
+      "rankIncrement": 105
     },
     {
       "rank": 3,
-      "keyword": "썬러브",
-      "rankIncrement": 136
+      "keyword": "비니",
+      "rankIncrement": 103
     },
     {
       "rank": 4,
-      "keyword": "젝시믹스",
-      "rankIncrement": 114
+      "keyword": "남자 반바지",
+      "rankIncrement": 100
     },
     {
       "rank": 5,
-      "keyword": "토앤토",
-      "rankIncrement": 117
+      "keyword": "마리떼",
+      "rankIncrement": 120
     },
     {
       "rank": 6,
-      "keyword": "살로몬 백팩",
-      "rankIncrement": 302
+      "keyword": "르아브",
+      "rankIncrement": 709
     },
     {
       "rank": 7,
-      "keyword": "여자 수영복",
-      "rankIncrement": 201
+      "keyword": "귀걸이",
+      "rankIncrement": 108
     },
     {
       "rank": 8,
-      "keyword": "디지몬",
-      "rankIncrement": 132
+      "keyword": "슬림핏 반팔",
+      "rankIncrement": 106
     },
     {
       "rank": 9,
-      "keyword": "민트",
-      "rankIncrement": 157
+      "keyword": "치노팬츠",
+      "rankIncrement": 134
     },
     {
       "rank": 10,
-      "keyword": "유니온블루",
-      "rankIncrement": 167
+      "keyword": "스켈리웩",
+      "rankIncrement": 105
     }
   ]
 }
