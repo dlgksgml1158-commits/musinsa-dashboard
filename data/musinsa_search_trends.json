@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T02:33:09.677432+00:00",
+  "updatedAt": "2026-07-24T05:41:11.956423+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,22 +13,22 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "크록스",
+      "rankIncrement": 0
+    },
+    {
       "rank": 5,
-      "keyword": "모자",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "크록스",
+      "keyword": "모자",
       "rankIncrement": 0
     },
     {
@@ -44,64 +44,64 @@
     {
       "rank": 9,
       "keyword": "나이키",
-      "rankIncrement": -2
+      "rankIncrement": 4
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "오니츠카타이거",
-      "rankIncrement": 160
+      "keyword": "아크테릭스",
+      "rankIncrement": 198
     },
     {
       "rank": 2,
-      "keyword": "크록스 발레",
-      "rankIncrement": 119
+      "keyword": "오클리",
+      "rankIncrement": 105
     },
     {
       "rank": 3,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 122
-    },
-    {
-      "rank": 4,
-      "keyword": "도프제이슨",
-      "rankIncrement": 209
-    },
-    {
-      "rank": 5,
-      "keyword": "남자 나시",
-      "rankIncrement": 124
-    },
-    {
-      "rank": 6,
-      "keyword": "비터셀즈",
-      "rankIncrement": 184
-    },
-    {
-      "rank": 7,
-      "keyword": "오찌",
-      "rankIncrement": 458
-    },
-    {
-      "rank": 8,
-      "keyword": "어반드레스",
+      "keyword": "숏팬츠",
       "rankIncrement": 113
     },
     {
+      "rank": 4,
+      "keyword": "슬링백",
+      "rankIncrement": 178
+    },
+    {
+      "rank": 5,
+      "keyword": "나이키 acg",
+      "rankIncrement": 100
+    },
+    {
+      "rank": 6,
+      "keyword": "헬리녹스",
+      "rankIncrement": 127
+    },
+    {
+      "rank": 7,
+      "keyword": "휠라",
+      "rankIncrement": 146
+    },
+    {
+      "rank": 8,
+      "keyword": "아디다스 삼바",
+      "rankIncrement": 116
+    },
+    {
       "rank": 9,
-      "keyword": "남자 목걸이",
-      "rankIncrement": 134
+      "keyword": "엘무드",
+      "rankIncrement": 120
     },
     {
       "rank": 10,
-      "keyword": "코트",
-      "rankIncrement": 126
+      "keyword": "플립플랍",
+      "rankIncrement": 103
     }
   ]
 }
