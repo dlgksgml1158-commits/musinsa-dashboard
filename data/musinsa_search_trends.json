@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24T10:55:25.073493+00:00",
+  "updatedAt": "2026-07-24T14:58:36.427264+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 4,
-      "keyword": "모자",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 5,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "모자",
+      "rankIncrement": 0
+    },
+    {
       "rank": 6,
-      "keyword": "크록스",
+      "keyword": "나시",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "가방",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "나시",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "나이키",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
-      "rankIncrement": 1
+      "keyword": "백팩",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "쿠어",
-      "rankIncrement": 105
+      "keyword": "프리덤",
+      "rankIncrement": 107
     },
     {
       "rank": 2,
-      "keyword": "큐어",
-      "rankIncrement": 105
+      "keyword": "키뮤어",
+      "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "비니",
-      "rankIncrement": 103
+      "keyword": "기능성 반팔",
+      "rankIncrement": 143
     },
     {
       "rank": 4,
-      "keyword": "남자 반바지",
-      "rankIncrement": 100
+      "keyword": "치마바지",
+      "rankIncrement": 138
     },
     {
       "rank": 5,
-      "keyword": "마리떼",
+      "keyword": "미세키서울",
       "rankIncrement": 120
     },
     {
       "rank": 6,
-      "keyword": "르아브",
-      "rankIncrement": 709
+      "keyword": "코이리스",
+      "rankIncrement": 102
     },
     {
       "rank": 7,
-      "keyword": "귀걸이",
-      "rankIncrement": 108
+      "keyword": "도씨",
+      "rankIncrement": 119
     },
     {
       "rank": 8,
-      "keyword": "슬림핏 반팔",
-      "rankIncrement": 106
+      "keyword": "버건디 반팔",
+      "rankIncrement": 153
     },
     {
       "rank": 9,
-      "keyword": "치노팬츠",
-      "rankIncrement": 134
+      "keyword": "데님셔츠",
+      "rankIncrement": 197
     },
     {
       "rank": 10,
-      "keyword": "스켈리웩",
-      "rankIncrement": 105
+      "keyword": "캘빈클라인 언더웨어",
+      "rankIncrement": 141
     }
   ]
 }
