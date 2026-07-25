@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-25T02:30:24.622463+00:00",
+  "updatedAt": "2026-07-25T06:17:14.456797+00:00",
   "items": [
     {
       "rank": 1,
@@ -75,7 +75,7 @@
       "categoryLabel": "셔츠/블라우스",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20250404/4989733/4989733_17477885499560_500.jpg",
       "productUrl": "https://www.musinsa.com/products/4989733",
-      "change": 11
+      "change": 0
     },
     {
       "rank": 6,
@@ -240,7 +240,7 @@
       "categoryLabel": "셔츠/블라우스",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20260427/6385445/6385445_17772803743785_500.jpg",
       "productUrl": "https://www.musinsa.com/products/6385445",
-      "change": 11
+      "change": 0
     },
     {
       "rank": 17,
@@ -405,7 +405,7 @@
       "categoryLabel": "셔츠/블라우스",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6841693/6841693_17840179508653_500.jpg",
       "productUrl": "https://www.musinsa.com/products/6841693",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 28,
@@ -528,7 +528,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250404/4989733/4989733_17477885499560_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4989733",
-        "change": 11
+        "change": 0
       },
       {
         "rank": 6,
@@ -693,7 +693,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260427/6385445/6385445_17772803743785_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6385445",
-        "change": 11
+        "change": 0
       },
       {
         "rank": 17,
@@ -858,7 +858,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6841693/6841693_17840179508653_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6841693",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 28,
@@ -1993,21 +1993,6 @@
       },
       {
         "rank": 13,
-        "id": "ms-2162250",
-        "brand": "크리틱",
-        "name": "SPACE WARS 스웨트셔츠 Black",
-        "price": 59000,
-        "originalPrice": 59000,
-        "discountRate": 83,
-        "finalPrice": 9990,
-        "category": "001003",
-        "categoryLabel": "맨투맨/스웨트",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20211005/2162250/2162250_5_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/2162250",
-        "change": 0
-      },
-      {
-        "rank": 14,
         "id": "ms-5298610",
         "brand": "로제프란츠",
         "name": "Eyelet Strap Open Sweatshirt [Black]",
@@ -2019,10 +2004,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250807/5298610/5298610_17545290334617_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5298610",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-5424480",
         "brand": "페이크캠퍼",
         "name": "[2PACK] 450g 헤비 피그먼트 가이루빠 디테일 맨투맨 [8COLOR]",
@@ -2034,10 +2019,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250909/5424480/5424480_17591312015656_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5424480",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-5234485",
         "brand": "지프",
         "name": "[기모] EXPLORE 어센틱 맨투맨 (JP6TSU834BK)",
@@ -2049,10 +2034,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250709/5234485/5234485_17527339336420_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5234485",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-6813633",
         "brand": "룰루레몬",
         "name": "원더 트레인 풀집 재킷  ASHR",
@@ -2064,10 +2049,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260709/6813633/6813633_17845285938167_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6813633",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-2359612",
         "brand": "무신사 스탠다드",
         "name": "오버사이즈 칼라드 스웨트셔츠 [미디엄 그레이]",
@@ -2079,10 +2064,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220215/2359612/2359612_17024445597207_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2359612",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-4444644",
         "brand": "알렉산더 맥퀸",
         "name": "스컬 프린트 맨투맨 - 블랙 / 807302Q1BBY1000",
@@ -2094,10 +2079,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240919/4444644/4444644_17278404098076_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4444644",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-1755605",
         "brand": "지프",
         "name": "[360g] M-Logo 반집업 맨투맨 (JR5TSU838BK)",
@@ -2109,10 +2094,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210120/1755605/1755605_17551317401993_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1755605",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-3536439",
         "brand": "폴로 랄프 로렌 골프",
         "name": "[적립금 10%] 클래식핏 퍼포먼스 스웨트셔츠 - 네이비",
@@ -2124,10 +2109,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230906/3536439/3536439_16950121020161_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3536439",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-4347448",
         "brand": "라이크더모스트",
         "name": "캐리티켓 오버핏 스웨트 셔츠_3colors",
@@ -2139,10 +2124,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240820/4347448/4347448_17241339352767_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4347448",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-5320372",
         "brand": "버던트",
         "name": "가먼트다잉 절개 라인 스웨트 셔츠 [그레이]",
@@ -2154,10 +2139,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250813/5320372/5320372_17687908356382_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5320372",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-4488739",
         "brand": "유니폼브릿지",
         "name": "flying tigers sweatshirt(napping) charcoal",
@@ -2169,10 +2154,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241005/4488739/4488739_17290947669861_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4488739",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-5968618",
         "brand": "칙스",
         "name": "와플 헨리넥 맨투맨 오트밀",
@@ -2184,10 +2169,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260202/5968618/5968618_17700140665038_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5968618",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-5874448",
         "brand": "아디다스",
         "name": "3-스트라이프 오버사이즈 크루넥 - 그레이 / KE2919",
@@ -2199,10 +2184,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260107/5874448/5874448_17678494173152_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5874448",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-6709284",
         "brand": "아디다스",
         "name": "메르세데스 - AMG F1 팀 엔지니어 쿼터 집 스웨트셔츠 - 블랙 / KT3872",
@@ -2214,10 +2199,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260622/6709284/6709284_17821777938422_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6709284",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-3864742",
         "brand": "유희",
         "name": "OFF SHOULDER SWEATSHIRTS MELANGE GREY",
@@ -2229,10 +2214,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240213/3864742/3864742_17322580029156_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3864742",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-1546554",
         "brand": "아조바이아조",
         "name": "Oversized CN Logo Sweatshirt [Sky Blue]",
@@ -2244,10 +2229,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20200812/1546554/1546554_1_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1546554",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-5570602",
         "brand": "베스티리아",
         "name": "Always Logo Sweatshirts Light Gray",
@@ -2259,7 +2244,22 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/prd_img/20251003/5570602/detail_5570602_17594698531261_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5570602",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-5477448",
+        "brand": "퍼스텝",
+        "name": "브릿지스택 피그먼트 맨투맨 모스그린 JIMT4720",
+        "price": 54000,
+        "originalPrice": 54000,
+        "discountRate": 32,
+        "finalPrice": 36900,
+        "category": "001003",
+        "categoryLabel": "맨투맨/스웨트",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20250917/5477448/5477448_17580803883485_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/5477448",
+        "change": "NEW"
       }
     ],
     "001004": [
@@ -2728,7 +2728,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250404/4989733/4989733_17477885499560_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4989733",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 2,
@@ -2743,7 +2743,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260427/6385445/6385445_17772803743785_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6385445",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 3,
@@ -2758,7 +2758,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6841693/6841693_17840179508653_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6841693",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 4,
@@ -2773,7 +2773,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260115/5897661/5897661_17809683111715_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5897661",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 5,
@@ -2788,7 +2788,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250811/5310167/5310167_17568805054709_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5310167",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 6,
@@ -2803,7 +2803,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260414/6305662/6305662_17769284255337_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6305662",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 7,
@@ -2818,7 +2818,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240429/4093932/4093932_17159262062293_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4093932",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 8,
@@ -2833,7 +2833,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260331/6230378/6230378_17764851267797_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6230378",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 9,
@@ -2848,7 +2848,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260512/6463410/6463410_17806282381816_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6463410",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 10,
@@ -2863,7 +2863,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250204/4756325/4756325_17708710661023_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4756325",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 11,
@@ -2878,7 +2878,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260401/6237554/6237554_17787406683233_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6237554",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 12,
@@ -2893,7 +2893,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6841696/6841696_17840179879335_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6841696",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 13,
@@ -2908,7 +2908,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260619/6699536/6699536_17818275127445_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6699536",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 14,
@@ -2923,7 +2923,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260520/6518898/6518898_17806362987972_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6518898",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 15,
@@ -2938,7 +2938,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250909/5429767/5429767_17799477425045_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5429767",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 16,
@@ -2953,7 +2953,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250520/5129508/5129508_17788122493336_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5129508",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 17,
@@ -2968,7 +2968,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240514/4129489/4129489_17162577981553_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4129489",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 18,
@@ -2983,7 +2983,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250331/4969899/4969899_17800407991122_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4969899",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 19,
@@ -2998,7 +2998,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260415/6317272/6317272_17762430862140_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6317272",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 20,
@@ -3013,7 +3013,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260602/6591029/6591029_17809790355168_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6591029",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 21,
@@ -3028,7 +3028,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250314/4898914/4898914_17750367804631_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4898914",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 22,
@@ -3043,7 +3043,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260522/6535953/6535953_17848522384536_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6535953",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 23,
@@ -3058,7 +3058,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260512/6458180/6458180_17840913923096_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6458180",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -3073,7 +3073,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260316/6138785/6138785_17834064378087_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6138785",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -3088,7 +3088,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250425/5065578/5065578_17482415121105_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5065578",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -3103,7 +3103,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260630/6755320/6755320_17845984831585_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6755320",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -3118,7 +3118,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250616/5186596/5186596_17500515134214_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5186596",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -3133,7 +3133,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260508/6441266/6441266_17782184963193_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6441266",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -3148,7 +3148,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260707/6797751/6797751_17834016315498_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6797751",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -3163,7 +3163,7 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260513/6471338/6471338_17788274520129_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6471338",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "001006": [
@@ -5903,7 +5903,7 @@
     },
     "001003": {
       "label": "맨투맨/스웨트",
-      "avg": 62275,
+      "avg": 63172,
       "min": 7500,
       "max": 307990,
       "count": 30

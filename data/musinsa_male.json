@@ -1,6 +1,6 @@
 {
   "platform": "musinsa_male",
-  "updatedAt": "2026-07-25T02:30:33.518079+00:00",
+  "updatedAt": "2026-07-25T06:17:22.135134+00:00",
   "items": [
     {
       "rank": 1,
@@ -1496,21 +1496,6 @@
       },
       {
         "rank": 10,
-        "id": "ms-2162250",
-        "brand": "크리틱",
-        "name": "SPACE WARS 스웨트셔츠 Black",
-        "price": 59000,
-        "originalPrice": 59000,
-        "discountRate": 83,
-        "finalPrice": 9990,
-        "category": "001003",
-        "categoryLabel": "맨투맨/스웨트",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20211005/2162250/2162250_5_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/2162250",
-        "change": 0
-      },
-      {
-        "rank": 11,
         "id": "ms-5424480",
         "brand": "페이크캠퍼",
         "name": "[2PACK] 450g 헤비 피그먼트 가이루빠 디테일 맨투맨 [8COLOR]",
@@ -1522,10 +1507,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250909/5424480/5424480_17591312015656_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5424480",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "ms-5234485",
         "brand": "지프",
         "name": "[기모] EXPLORE 어센틱 맨투맨 (JP6TSU834BK)",
@@ -1537,10 +1522,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250709/5234485/5234485_17527339336420_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5234485",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "ms-2359612",
         "brand": "무신사 스탠다드",
         "name": "오버사이즈 칼라드 스웨트셔츠 [미디엄 그레이]",
@@ -1552,10 +1537,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220215/2359612/2359612_17024445597207_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2359612",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-4444644",
         "brand": "알렉산더 맥퀸",
         "name": "스컬 프린트 맨투맨 - 블랙 / 807302Q1BBY1000",
@@ -1567,10 +1552,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240919/4444644/4444644_17278404098076_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4444644",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-1755605",
         "brand": "지프",
         "name": "[360g] M-Logo 반집업 맨투맨 (JR5TSU838BK)",
@@ -1582,10 +1567,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210120/1755605/1755605_17551317401993_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1755605",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-3536439",
         "brand": "폴로 랄프 로렌 골프",
         "name": "[적립금 10%] 클래식핏 퍼포먼스 스웨트셔츠 - 네이비",
@@ -1597,10 +1582,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230906/3536439/3536439_16950121020161_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3536439",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-4347448",
         "brand": "라이크더모스트",
         "name": "캐리티켓 오버핏 스웨트 셔츠_3colors",
@@ -1612,10 +1597,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240820/4347448/4347448_17241339352767_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4347448",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-5320372",
         "brand": "버던트",
         "name": "가먼트다잉 절개 라인 스웨트 셔츠 [그레이]",
@@ -1627,10 +1612,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250813/5320372/5320372_17687908356382_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5320372",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-4488739",
         "brand": "유니폼브릿지",
         "name": "flying tigers sweatshirt(napping) charcoal",
@@ -1642,10 +1627,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241005/4488739/4488739_17290947669861_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4488739",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-5874448",
         "brand": "아디다스",
         "name": "3-스트라이프 오버사이즈 크루넥 - 그레이 / KE2919",
@@ -1657,10 +1642,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260107/5874448/5874448_17678494173152_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5874448",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-6709284",
         "brand": "아디다스",
         "name": "메르세데스 - AMG F1 팀 엔지니어 쿼터 집 스웨트셔츠 - 블랙 / KT3872",
@@ -1672,10 +1657,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260622/6709284/6709284_17821777938422_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6709284",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-1546554",
         "brand": "아조바이아조",
         "name": "Oversized CN Logo Sweatshirt [Sky Blue]",
@@ -1687,10 +1672,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20200812/1546554/1546554_1_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1546554",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-5477448",
         "brand": "퍼스텝",
         "name": "브릿지스택 피그먼트 맨투맨 모스그린 JIMT4720",
@@ -1702,10 +1687,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250917/5477448/5477448_17580803883485_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5477448",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-6079944",
         "brand": "펀치드렁크파티즈",
         "name": "SWEET HURT Sweatshirt (NAVY)",
@@ -1717,10 +1702,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260304/6079944/6079944_17738015481550_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6079944",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-6786647",
         "brand": "복스로",
         "name": "스파링 클럽 롱슬리브 티셔츠 - 남성 M BXRW-SPCLLST [워시드 토푸]",
@@ -1732,10 +1717,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260705/6786647/6786647_17832444517834_500.png",
         "productUrl": "https://www.musinsa.com/products/6786647",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-4519243",
         "brand": "피도디도",
         "name": "Boucle Logo Half Zip Sweatshirt Navy",
@@ -1747,10 +1732,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241015/4519243/4519243_17339816313233_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4519243",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-3452816",
         "brand": "아조바이아조",
         "name": "[PBA] Five AJO Logos Washed Sweatshirt [CHARCOAL]",
@@ -1762,10 +1747,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230808/3452816/3452816_16923454539128_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3452816",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-4249836",
         "brand": "나이키",
         "name": "클럽 플리스 오버사이즈 프렌치 테리 크루 M - 다크 그레이 헤더:라이트 스모크 그레이:화이트 / HJ1820-063",
@@ -1777,10 +1762,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240715/4249836/4249836_17223984314624_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4249836",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-4375639",
         "brand": "꼼파뇨",
         "name": "happy day 피그먼트 스웨트셔츠 스모크블랙",
@@ -1792,10 +1777,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240827/4375639/4375639_17727551128659_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4375639",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-3792776",
         "brand": "지프",
         "name": "[430g] 고중량 트랙 반집업 맨투맨 (JQ5TSU832MG)",
@@ -1807,7 +1792,22 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240112/3792776/3792776_17568605480569_500.png",
         "productUrl": "https://www.musinsa.com/products/3792776",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-3653520",
+        "brand": "플랙",
+        "name": "플랙 로고 그래픽 맨투맨 블랙",
+        "price": 69000,
+        "originalPrice": 69000,
+        "discountRate": 50,
+        "finalPrice": 34500,
+        "category": "001003",
+        "categoryLabel": "맨투맨/스웨트",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20231024/3653520/3653520_17001203437391_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/3653520",
+        "change": "NEW"
       }
     ],
     "001004": [
