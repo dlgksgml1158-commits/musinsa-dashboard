@@ -305,7 +305,7 @@
     main {
       padding: 24px 28px;
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 2fr 1fr;
       gap: 20px;
       max-width: 1380px;
       margin: 0 auto;
@@ -655,8 +655,9 @@
     /* Brand exposure donut chart */
     .brand-donut-body {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       padding: 14px 18px 16px;
     }
     .brand-donut-svg { flex-shrink: 0; }
@@ -671,17 +672,25 @@
       fill: var(--text3);
     }
     .brand-donut-legend {
-      flex: 1;
-      min-width: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px 8px;
     }
     .brand-donut-legend-item {
       display: flex;
-      align-items: center;
-      gap: 6px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+      min-width: 0;
       font-size: 11px;
+    }
+    .brand-donut-legend-item-top {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      min-width: 0;
+      width: 100%;
     }
     .brand-donut-swatch {
       width: 8px;
@@ -702,7 +711,8 @@
       color: var(--text3);
       font-weight: 700;
       font-variant-numeric: tabular-nums;
-      flex-shrink: 0;
+      font-size: 10px;
+      padding-left: 13px;
     }
 
     /* Bestseller list */
@@ -1155,7 +1165,7 @@
       font-size: 14px;
       color: var(--text);
     }
-    #musinsaSearchSection { grid-template-columns: repeat(4, 1fr); }
+    #musinsaSearchSection { grid-template-columns: repeat(3, 1fr); }
     .trend-card-sub {
       font-size: 11px;
       color: var(--text3);
@@ -1736,15 +1746,6 @@
     </div>
     <div class="trend-card-body" id="msNaverSearchList"></div>
   </div>
-  <div class="trend-card">
-    <div class="trend-card-header">
-      <div class="trend-card-title">
-        브랜드 노출 현황
-      </div>
-      <span class="trend-card-sub" style="font-size:9px;">TOP10 내</span>
-    </div>
-    <div class="brand-donut-body" id="brandList"></div>
-  </div>
 </div>
 
 <!-- TREND CARDS -->
@@ -1781,7 +1782,7 @@
 <!-- MAIN -->
 <main>
   <!-- LEFT: 랭킹 테이블 -->
-  <div id="rankingCol" style="display:flex;flex-direction:column;">
+  <div id="rankingCol" style="display:flex;flex-direction:column;min-width:0;">
     <div class="section-title" id="rankingTitle" style="font-size: 10px">무신사 실시간 랭킹</div>
     <div class="platform-tabs ranking-platform-tabs">
       <div class="nav-inner">
@@ -1858,6 +1859,19 @@
           <span style="font-size:12px;">접기</span>
         </button>
       </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: 브랜드 노출 현황 -->
+  <div id="brandCol" style="display:flex;flex-direction:column;">
+    <div class="trend-card">
+      <div class="trend-card-header">
+        <div class="trend-card-title">
+          브랜드 노출 현황
+        </div>
+        <span class="trend-card-sub" style="font-size:9px;">TOP10 내</span>
+      </div>
+      <div class="brand-donut-body" id="brandList"></div>
     </div>
   </div>
 </main>
@@ -3052,8 +3066,10 @@ function renderBrandDonut(brandsSorted, total) {
   const legend = slices.map(s => {
     const pct = Math.round((s.count / total) * 100);
     return `<div class="brand-donut-legend-item">
-        <span class="brand-donut-swatch" style="background:${s.color}"></span>
-        <span class="brand-donut-legend-name">${s.brand}</span>
+        <span class="brand-donut-legend-item-top">
+          <span class="brand-donut-swatch" style="background:${s.color}"></span>
+          <span class="brand-donut-legend-name">${s.brand}</span>
+        </span>
         <span class="brand-donut-legend-pct">${s.count}개 · ${pct}%</span>
       </div>`;
   }).join('');
