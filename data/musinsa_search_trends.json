@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T12:12:45.940590+00:00",
+  "updatedAt": "2026-07-27T15:44:48.079301+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "버뮤다팬츠",
+      "keyword": "모자",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "나이키",
-      "rankIncrement": 2
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
       "keyword": "가방",
-      "rankIncrement": -1
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "크록스",
+      "keyword": "셔츠",
       "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
+      "keyword": "나이키",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "버킷햇",
-      "rankIncrement": 109
+      "keyword": "슬리브",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "카프리팬츠",
-      "rankIncrement": 132
+      "keyword": "스트라이프",
+      "rankIncrement": 129
     },
     {
       "rank": 3,
-      "keyword": "나이키 슬리퍼",
-      "rankIncrement": 126
-    },
-    {
-      "rank": 4,
-      "keyword": "남자 바지",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 5,
-      "keyword": "슬리브",
-      "rankIncrement": 120
-    },
-    {
-      "rank": 6,
-      "keyword": "여름 슬랙스",
-      "rankIncrement": 128
-    },
-    {
-      "rank": 7,
-      "keyword": "보스턴백",
-      "rankIncrement": 114
-    },
-    {
-      "rank": 8,
-      "keyword": "남자 반팔티",
+      "keyword": "짐색",
       "rankIncrement": 145
     },
     {
+      "rank": 4,
+      "keyword": "스파오 잠옷",
+      "rankIncrement": 108
+    },
+    {
+      "rank": 5,
+      "keyword": "산산기어",
+      "rankIncrement": 144
+    },
+    {
+      "rank": 6,
+      "keyword": "호보백",
+      "rankIncrement": 113
+    },
+    {
+      "rank": 7,
+      "keyword": "휠라",
+      "rankIncrement": 119
+    },
+    {
+      "rank": 8,
+      "keyword": "컴프레션",
+      "rankIncrement": 177
+    },
+    {
       "rank": 9,
-      "keyword": "남자 팔찌",
-      "rankIncrement": 146
+      "keyword": "보부상가방",
+      "rankIncrement": 109
     },
     {
       "rank": 10,
-      "keyword": "지프",
-      "rankIncrement": 262
+      "keyword": "러닝모자",
+      "rankIncrement": 110
     }
   ]
 }
