@@ -314,7 +314,6 @@
     @media (max-width: 960px) {
       main { grid-template-columns: 1fr; padding: 16px; }
       .ranking-card { height: auto !important; }
-      .brand-col-spacer { display: none; }
     }
 
     /* ── SECTION TITLE ── */
@@ -654,10 +653,6 @@
     .brand-medal { font-size: 14px; flex-shrink: 0; }
 
     /* Brand exposure donut chart */
-    .brand-col-spacer {
-      height: 96px;
-      flex-shrink: 0;
-    }
     .brand-donut-body {
       display: flex;
       flex-direction: column;
@@ -1869,12 +1864,13 @@
 
   <!-- RIGHT: 브랜드 노출 현황 -->
   <div id="brandCol" style="display:flex;flex-direction:column;">
-    <div class="section-title" style="font-size: 10px; display:flex; align-items:center; justify-content:space-between;">
-      브랜드 노출 현황
-      <span class="trend-card-sub" style="font-size:9px;">TOP10 내</span>
-    </div>
-    <div class="brand-col-spacer" aria-hidden="true"></div>
     <div class="trend-card">
+      <div class="trend-card-header">
+        <div class="trend-card-title">
+          브랜드 노출 현황
+        </div>
+        <span class="trend-card-sub" style="font-size:9px;">TOP10 내</span>
+      </div>
       <div class="brand-donut-body" id="brandList"></div>
     </div>
   </div>
