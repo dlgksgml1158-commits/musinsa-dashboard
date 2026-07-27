@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T02:46:37.456815+00:00",
+  "updatedAt": "2026-07-27T07:30:55.461002+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "반바지",
-      "rankIncrement": 0
+      "keyword": "펜타포트",
+      "rankIncrement": 13
     },
     {
       "rank": 3,
-      "keyword": "크록스",
-      "rankIncrement": 0
+      "keyword": "반바지",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "헬리녹스 크록스",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
       "keyword": "모자",
-      "rankIncrement": 2
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "나시",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 8,
-      "keyword": "헬리녹스",
-      "rankIncrement": -3
-    },
-    {
-      "rank": 9,
       "keyword": "버뮤다팬츠",
       "rankIncrement": -1
     },
     {
+      "rank": 7,
+      "keyword": "쪼리",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
+      "keyword": "크록스",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "나시",
+      "rankIncrement": -1
+    },
+    {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "포트레",
-      "rankIncrement": 501
+      "keyword": "반팔 니트",
+      "rankIncrement": 134
     },
     {
       "rank": 2,
-      "keyword": "코카-콜라",
+      "keyword": "포켓몬스터",
       "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "키뮤어",
-      "rankIncrement": 159
+      "keyword": "베리시",
+      "rankIncrement": 133
     },
     {
       "rank": 4,
-      "keyword": "큐어",
-      "rankIncrement": 152
+      "keyword": "레깅스",
+      "rankIncrement": 143
     },
     {
       "rank": 5,
-      "keyword": "캘빈클라인 언더웨어",
-      "rankIncrement": 153
+      "keyword": "여름 청바지",
+      "rankIncrement": 103
     },
     {
       "rank": 6,
-      "keyword": "폴로 반팔",
-      "rankIncrement": 202
+      "keyword": "아디다스 슬리퍼",
+      "rankIncrement": 114
     },
     {
       "rank": 7,
-      "keyword": "부츠",
-      "rankIncrement": 101
+      "keyword": "치마",
+      "rankIncrement": 180
     },
     {
       "rank": 8,
-      "keyword": "쿠어",
-      "rankIncrement": 189
+      "keyword": "온러닝",
+      "rankIncrement": 197
     },
     {
       "rank": 9,
-      "keyword": "위켄더스",
-      "rankIncrement": 149
+      "keyword": "반팔 블라우스",
+      "rankIncrement": 231
     },
     {
       "rank": 10,
-      "keyword": "위캔더스",
-      "rankIncrement": 154
+      "keyword": "팔토시",
+      "rankIncrement": 167
     }
   ]
 }
