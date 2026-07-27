@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-26T14:39:57.050379+00:00",
+  "updatedAt": "2026-07-27T02:46:37.456815+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "모자",
-      "rankIncrement": 1
+      "keyword": "크록스",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": -1
+      "keyword": "헬리녹스 크록스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
+      "keyword": "모자",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 6,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "나시",
-      "rankIncrement": 0
-    },
-    {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 1
+      "keyword": "나시",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": -1
+      "keyword": "헬리녹스",
+      "rankIncrement": -3
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
-      "rankIncrement": 0
+      "keyword": "나이키",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "보부상가방",
-      "rankIncrement": 129
+      "keyword": "포트레",
+      "rankIncrement": 501
     },
     {
       "rank": 2,
-      "keyword": "아미",
-      "rankIncrement": 125
+      "keyword": "코카-콜라",
+      "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "스탠리",
-      "rankIncrement": 137
-    },
-    {
-      "rank": 4,
-      "keyword": "마뗑킴 가방",
-      "rankIncrement": 142
-    },
-    {
-      "rank": 5,
-      "keyword": "오드타입",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 6,
-      "keyword": "플레어진",
+      "keyword": "키뮤어",
       "rankIncrement": 159
     },
     {
+      "rank": 4,
+      "keyword": "큐어",
+      "rankIncrement": 152
+    },
+    {
+      "rank": 5,
+      "keyword": "캘빈클라인 언더웨어",
+      "rankIncrement": 153
+    },
+    {
+      "rank": 6,
+      "keyword": "폴로 반팔",
+      "rankIncrement": 202
+    },
+    {
       "rank": 7,
-      "keyword": "버건디 반팔",
-      "rankIncrement": 122
+      "keyword": "부츠",
+      "rankIncrement": 101
     },
     {
       "rank": 8,
-      "keyword": "클리오",
-      "rankIncrement": 127
+      "keyword": "쿠어",
+      "rankIncrement": 189
     },
     {
       "rank": 9,
-      "keyword": "무신사 스탠다드 스포츠",
-      "rankIncrement": 157
+      "keyword": "위켄더스",
+      "rankIncrement": 149
     },
     {
       "rank": 10,
-      "keyword": "넥타이",
-      "rankIncrement": 148
+      "keyword": "위캔더스",
+      "rankIncrement": 154
     }
   ]
 }
