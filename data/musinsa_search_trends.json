@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T06:27:15.928831+00:00",
+  "updatedAt": "2026-07-28T11:10:27.629836+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,13 +18,13 @@
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "쪼리",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "크록스",
+      "keyword": "쪼리",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": 3
+      "keyword": "셔츠",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스웻팬츠",
-      "rankIncrement": 111
+      "keyword": "마스마룰즈",
+      "rankIncrement": 154
     },
     {
       "rank": 2,
-      "keyword": "부츠",
-      "rankIncrement": 159
+      "keyword": "크롭",
+      "rankIncrement": 166
     },
     {
       "rank": 3,
-      "keyword": "키움히어로즈",
-      "rankIncrement": 164
+      "keyword": "파우치",
+      "rankIncrement": 186
     },
     {
       "rank": 4,
-      "keyword": "크롭 셔츠",
-      "rankIncrement": 103
+      "keyword": "7부 버뮤다팬츠",
+      "rankIncrement": 139
     },
     {
       "rank": 5,
-      "keyword": "키티",
-      "rankIncrement": 132
+      "keyword": "펜필드",
+      "rankIncrement": 318
     },
     {
       "rank": 6,
-      "keyword": "탱크탑",
-      "rankIncrement": 290
+      "keyword": "매쉬",
+      "rankIncrement": 106
     },
     {
       "rank": 7,
-      "keyword": "클로그",
-      "rankIncrement": 112
+      "keyword": "아디다스 도쿄",
+      "rankIncrement": 212
     },
     {
       "rank": 8,
-      "keyword": "케이스",
-      "rankIncrement": 104
+      "keyword": "베이지 팬츠",
+      "rankIncrement": 178
     },
     {
       "rank": 9,
-      "keyword": "뉴발란스 530",
-      "rankIncrement": 144
+      "keyword": "시어서커",
+      "rankIncrement": 462
     },
     {
       "rank": 10,
-      "keyword": "후브스",
-      "rankIncrement": 132
+      "keyword": "소버먼트",
+      "rankIncrement": 145
     }
   ]
 }
