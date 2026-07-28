@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T02:26:02.340569+00:00",
+  "updatedAt": "2026-07-28T06:27:15.928831+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "모자",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "아디다스",
+      "rankIncrement": 1
+    },
+    {
       "rank": 5,
       "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "잔스포츠",
-      "rankIncrement": 12
-    },
-    {
-      "rank": 7,
-      "keyword": "크록스",
       "rankIncrement": -1
     },
     {
-      "rank": 8,
+      "rank": 6,
       "keyword": "나시",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
+      "rank": 7,
+      "keyword": "쪼리",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
       "keyword": "가방",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "크록스",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "쪼리",
-      "rankIncrement": -3
+      "keyword": "나이키",
+      "rankIncrement": 3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "엘지트윈스",
-      "rankIncrement": 118
+      "keyword": "스웻팬츠",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "LG트윈스",
-      "rankIncrement": 102
+      "keyword": "부츠",
+      "rankIncrement": 159
     },
     {
       "rank": 3,
-      "keyword": "스탠드오일",
-      "rankIncrement": 132
+      "keyword": "키움히어로즈",
+      "rankIncrement": 164
     },
     {
       "rank": 4,
-      "keyword": "보스턴백",
-      "rankIncrement": 121
+      "keyword": "크롭 셔츠",
+      "rankIncrement": 103
     },
     {
       "rank": 5,
-      "keyword": "스커트",
-      "rankIncrement": 151
+      "keyword": "키티",
+      "rankIncrement": 132
     },
     {
       "rank": 6,
-      "keyword": "베리시",
-      "rankIncrement": 115
+      "keyword": "탱크탑",
+      "rankIncrement": 290
     },
     {
       "rank": 7,
-      "keyword": "니트",
-      "rankIncrement": 135
+      "keyword": "클로그",
+      "rankIncrement": 112
     },
     {
       "rank": 8,
-      "keyword": "슬링백",
-      "rankIncrement": 124
+      "keyword": "케이스",
+      "rankIncrement": 104
     },
     {
       "rank": 9,
-      "keyword": "브라운브레스",
-      "rankIncrement": 249
+      "keyword": "뉴발란스 530",
+      "rankIncrement": 144
     },
     {
       "rank": 10,
-      "keyword": "탱크탑",
-      "rankIncrement": 233
+      "keyword": "후브스",
+      "rankIncrement": 132
     }
   ]
 }
