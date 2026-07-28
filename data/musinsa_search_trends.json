@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T11:10:27.629836+00:00",
+  "updatedAt": "2026-07-28T15:24:59.246067+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,23 +13,23 @@
     },
     {
       "rank": 3,
-      "keyword": "모자",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "아디다스",
+      "rank": 4,
+      "keyword": "모자",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "나시",
-      "rankIncrement": 0
+      "rankIncrement": 1
+    },
+    {
+      "rank": 6,
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
@@ -44,64 +44,64 @@
     {
       "rank": 9,
       "keyword": "쪼리",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 10,
       "keyword": "셔츠",
-      "rankIncrement": 1
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "마스마룰즈",
-      "rankIncrement": 154
+      "keyword": "오니츠카타이거",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "크롭",
-      "rankIncrement": 166
+      "keyword": "나일론팬츠",
+      "rankIncrement": 120
     },
     {
       "rank": 3,
-      "keyword": "파우치",
-      "rankIncrement": 186
+      "keyword": "호보백",
+      "rankIncrement": 126
     },
     {
       "rank": 4,
-      "keyword": "7부 버뮤다팬츠",
-      "rankIncrement": 139
+      "keyword": "코이세이오",
+      "rankIncrement": 124
     },
     {
       "rank": 5,
-      "keyword": "펜필드",
-      "rankIncrement": 318
+      "keyword": "여자 수영복",
+      "rankIncrement": 168
     },
     {
       "rank": 6,
-      "keyword": "매쉬",
-      "rankIncrement": 106
+      "keyword": "안다르",
+      "rankIncrement": 112
     },
     {
       "rank": 7,
-      "keyword": "아디다스 도쿄",
-      "rankIncrement": 212
+      "keyword": "슬리브",
+      "rankIncrement": 119
     },
     {
       "rank": 8,
-      "keyword": "베이지 팬츠",
-      "rankIncrement": 178
+      "keyword": "여름셔츠",
+      "rankIncrement": 128
     },
     {
       "rank": 9,
-      "keyword": "시어서커",
-      "rankIncrement": 462
+      "keyword": "빈티지",
+      "rankIncrement": 167
     },
     {
       "rank": 10,
-      "keyword": "소버먼트",
-      "rankIncrement": 145
+      "keyword": "스트라이프 팬츠",
+      "rankIncrement": 100
     }
   ]
 }

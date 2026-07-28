@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-07-28T11:09:38.072799+00:00",
+  "updatedAt": "2026-07-28T15:24:00.607980+00:00",
   "items": [
     {
       "rank": 1,
@@ -399,8 +399,8 @@
       "name": "Huge Garment Gingham Check Shirt (Porcelain White)",
       "price": 128000,
       "originalPrice": 128000,
-      "discountRate": 7,
-      "finalPrice": 119040,
+      "discountRate": 0,
+      "finalPrice": 128000,
       "category": "001005",
       "categoryLabel": "셔츠/블라우스",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6841693/6841693_17840179508653_500.jpg",
@@ -852,8 +852,8 @@
         "name": "Huge Garment Gingham Check Shirt (Porcelain White)",
         "price": 128000,
         "originalPrice": 128000,
-        "discountRate": 7,
-        "finalPrice": 119040,
+        "discountRate": 0,
+        "finalPrice": 128000,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6841693/6841693_17840179508653_500.jpg",
@@ -1349,8 +1349,8 @@
         "name": "PPG HEART CHERRY TEE CHARCOAL",
         "price": 45000,
         "originalPrice": 45000,
-        "discountRate": 10,
-        "finalPrice": 40500,
+        "discountRate": 0,
+        "finalPrice": 45000,
         "category": "001001",
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260703/6778749/6778749_17839298601016_500.jpg",
@@ -2043,8 +2043,8 @@
         "name": "오버사이즈 칼라드 스웨트셔츠 [미디엄 그레이]",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 35,
-        "finalPrice": 32390,
+        "discountRate": 30,
+        "finalPrice": 34890,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220215/2359612/2359612_17024445597207_500.jpg",
@@ -2752,8 +2752,8 @@
         "name": "Huge Garment Gingham Check Shirt (Porcelain White)",
         "price": 128000,
         "originalPrice": 128000,
-        "discountRate": 7,
-        "finalPrice": 119040,
+        "discountRate": 0,
+        "finalPrice": 128000,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6841693/6841693_17840179508653_500.jpg",
@@ -3701,8 +3701,8 @@
         "name": "[시티 레저] 에어웨이트 시어 윈드브레이커 재킷 [클라우디 블루]",
         "price": 69900,
         "originalPrice": 69900,
-        "discountRate": 35,
-        "finalPrice": 45390,
+        "discountRate": 30,
+        "finalPrice": 48890,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241206/4652853/4652853_17417620633186_500.jpg",
@@ -4870,6 +4870,21 @@
       },
       {
         "rank": 24,
+        "id": "ms-6401752",
+        "brand": "워크온바디오프",
+        "name": "[여름] 어반 세미 와이드 쓰리턱 슬랙스 [모카]",
+        "price": 71000,
+        "originalPrice": 71000,
+        "discountRate": 37,
+        "finalPrice": 44910,
+        "category": "003002",
+        "categoryLabel": "슬랙스",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260429/6401752/6401752_17806279447000_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6401752",
+        "change": "NEW"
+      },
+      {
+        "rank": 25,
         "id": "ms-2477832",
         "brand": "무신사 스탠다드 우먼",
         "name": "[쿨탠다드] 우먼즈 스트레이트 히든 밴딩 슬랙스 [블랙]",
@@ -4881,10 +4896,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220408/2477832/2477832_17134045006700_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2477832",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 25,
+        "rank": 26,
         "id": "ms-5746364",
         "brand": "무신사 스탠다드",
         "name": "엑스트라 와이드 투 턱 히든 밴딩 슬랙스 [미디엄 그레이]",
@@ -4896,10 +4911,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251118/5746364/5746364_17701045604308_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5746364",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 26,
+        "rank": 27,
         "id": "ms-5416068",
         "brand": "르아르",
         "name": "스트라이프 커브드 핀턱 슬랙스 [차콜]",
@@ -4911,10 +4926,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250908/5416068/5416068_17586080106438_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5416068",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 27,
+        "rank": 28,
         "id": "ms-4467789",
         "brand": "언탭트 스튜디오",
         "name": "원턱 와이드 밴딩 슬랙스 3Color",
@@ -4926,10 +4941,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240926/4467789/4467789_17314754429611_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4467789",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 28,
+        "rank": 29,
         "id": "ms-5125572",
         "brand": "오우사",
         "name": "절개 다트 슬랙스팬츠 - 블랙",
@@ -4941,10 +4956,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250519/5125572/5125572_17476323101261_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5125572",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 29,
+        "rank": 30,
         "id": "ms-2518489",
         "brand": "무신사 스탠다드",
         "name": "[쿨탠다드] 리얼 와이드 히든 밴딩 슬랙스 [더스티 베이지]",
@@ -4956,22 +4971,7 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220427/2518489/2518489_17134177950812_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2518489",
-        "change": 0
-      },
-      {
-        "rank": 30,
-        "id": "ms-5361996",
-        "brand": "워크온바디오프",
-        "name": "[여름/사계절] 시비코 세미 와이드 원턱 릴렉스드 슬랙스 [블랙]",
-        "price": 85000,
-        "originalPrice": 85000,
-        "discountRate": 37,
-        "finalPrice": 53910,
-        "category": "003002",
-        "categoryLabel": "슬랙스",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20250826/5361996/5361996_17561709657699_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/5361996",
-        "change": 0
+        "change": -1
       }
     ],
     "003003": [
@@ -5882,14 +5882,14 @@
   "priceStats": {
     "": {
       "label": "전체",
-      "avg": 53257,
+      "avg": 53556,
       "min": 19800,
       "max": 167540,
       "count": 30
     },
     "001001": {
       "label": "반소매 티셔츠",
-      "avg": 46217,
+      "avg": 46367,
       "min": 9900,
       "max": 160200,
       "count": 30
@@ -5903,7 +5903,7 @@
     },
     "001003": {
       "label": "맨투맨/스웨트",
-      "avg": 63218,
+      "avg": 63301,
       "min": 7500,
       "max": 307990,
       "count": 30
@@ -5917,9 +5917,9 @@
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 43731,
+      "avg": 44030,
       "min": 19900,
-      "max": 119040,
+      "max": 128000,
       "count": 30
     },
     "001006": {
@@ -5931,7 +5931,7 @@
     },
     "002": {
       "label": "아우터",
-      "avg": 58988,
+      "avg": 59104,
       "min": 11930,
       "max": 167540,
       "count": 30
@@ -5945,7 +5945,7 @@
     },
     "003002": {
       "label": "슬랙스",
-      "avg": 37443,
+      "avg": 37143,
       "min": 13990,
       "max": 64130,
       "count": 30
