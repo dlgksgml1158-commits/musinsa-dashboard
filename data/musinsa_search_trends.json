@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T15:44:48.079301+00:00",
+  "updatedAt": "2026-07-28T02:26:02.340569+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 5,
       "keyword": "모자",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 0
+    },
+    {
       "rank": 6,
+      "keyword": "잔스포츠",
+      "rankIncrement": 12
+    },
+    {
+      "rank": 7,
+      "keyword": "크록스",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
       "keyword": "나시",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "바지",
+      "rank": 9,
+      "keyword": "가방",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 9,
-      "keyword": "셔츠",
-      "rankIncrement": -1
-    },
-    {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": 1
+      "keyword": "쪼리",
+      "rankIncrement": -3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "슬리브",
-      "rankIncrement": 101
+      "keyword": "엘지트윈스",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "스트라이프",
-      "rankIncrement": 129
+      "keyword": "LG트윈스",
+      "rankIncrement": 102
     },
     {
       "rank": 3,
-      "keyword": "짐색",
-      "rankIncrement": 145
+      "keyword": "스탠드오일",
+      "rankIncrement": 132
     },
     {
       "rank": 4,
-      "keyword": "스파오 잠옷",
-      "rankIncrement": 108
+      "keyword": "보스턴백",
+      "rankIncrement": 121
     },
     {
       "rank": 5,
-      "keyword": "산산기어",
-      "rankIncrement": 144
+      "keyword": "스커트",
+      "rankIncrement": 151
     },
     {
       "rank": 6,
-      "keyword": "호보백",
-      "rankIncrement": 113
+      "keyword": "베리시",
+      "rankIncrement": 115
     },
     {
       "rank": 7,
-      "keyword": "휠라",
-      "rankIncrement": 119
+      "keyword": "니트",
+      "rankIncrement": 135
     },
     {
       "rank": 8,
-      "keyword": "컴프레션",
-      "rankIncrement": 177
+      "keyword": "슬링백",
+      "rankIncrement": 124
     },
     {
       "rank": 9,
-      "keyword": "보부상가방",
-      "rankIncrement": 109
+      "keyword": "브라운브레스",
+      "rankIncrement": 249
     },
     {
       "rank": 10,
-      "keyword": "러닝모자",
-      "rankIncrement": 110
+      "keyword": "탱크탑",
+      "rankIncrement": 233
     }
   ]
 }
