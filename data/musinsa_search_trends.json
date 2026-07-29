@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-29T02:30:09.425081+00:00",
+  "updatedAt": "2026-07-29T06:31:16.926717+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,13 +18,13 @@
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 2
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": -2
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "가방",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "쪼리",
-      "rankIncrement": 2
+      "keyword": "가방",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": -2
+      "keyword": "크록스",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "세터",
-      "rankIncrement": 121
-    },
-    {
-      "rank": 2,
-      "keyword": "트레이닝 팬츠",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 3,
-      "keyword": "더비슈즈",
-      "rankIncrement": 119
-    },
-    {
-      "rank": 4,
-      "keyword": "트레이닝 반바지",
-      "rankIncrement": 149
-    },
-    {
-      "rank": 5,
-      "keyword": "hdex",
-      "rankIncrement": 128
-    },
-    {
-      "rank": 6,
-      "keyword": "그라미치",
-      "rankIncrement": 108
-    },
-    {
-      "rank": 7,
-      "keyword": "남자 가방",
-      "rankIncrement": 127
-    },
-    {
-      "rank": 8,
-      "keyword": "여름 청바지",
+      "keyword": "맨투맨",
       "rankIncrement": 114
     },
     {
+      "rank": 2,
+      "keyword": "무센트",
+      "rankIncrement": 140
+    },
+    {
+      "rank": 3,
+      "keyword": "롱스커트",
+      "rankIncrement": 112
+    },
+    {
+      "rank": 4,
+      "keyword": "져지",
+      "rankIncrement": 141
+    },
+    {
+      "rank": 5,
+      "keyword": "블러셔",
+      "rankIncrement": 178
+    },
+    {
+      "rank": 6,
+      "keyword": "플라스틱프로덕트",
+      "rankIncrement": 121
+    },
+    {
+      "rank": 7,
+      "keyword": "여름 청바지",
+      "rankIncrement": 143
+    },
+    {
+      "rank": 8,
+      "keyword": "자라",
+      "rankIncrement": 252
+    },
+    {
       "rank": 9,
-      "keyword": "남자 나시",
-      "rankIncrement": 242
+      "keyword": "버건디",
+      "rankIncrement": 111
     },
     {
       "rank": 10,
-      "keyword": "남자 수영복",
-      "rankIncrement": 300
+      "keyword": "무지티",
+      "rankIncrement": 241
     }
   ]
 }
