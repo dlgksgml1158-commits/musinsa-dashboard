@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-30T11:00:29.852210+00:00",
+  "updatedAt": "2026-07-30T15:13:14.841184+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,12 +14,12 @@
     {
       "rank": 3,
       "keyword": "아디다스",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "모자",
-      "rankIncrement": -1
+      "rankIncrement": 1
     },
     {
       "rank": 5,
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "쪼리",
-      "rankIncrement": 2
+      "keyword": "후드집업",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
       "keyword": "무신사 스탠다드",
-      "rankIncrement": -1
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "혼다",
-      "rankIncrement": 102
+      "keyword": "호보백",
+      "rankIncrement": 115
     },
     {
       "rank": 2,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 109
+      "keyword": "여름 청바지",
+      "rankIncrement": 131
     },
     {
       "rank": 3,
-      "keyword": "청반바지",
-      "rankIncrement": 142
+      "keyword": "모드나인",
+      "rankIncrement": 157
     },
     {
       "rank": 4,
-      "keyword": "뉴에라 모자",
-      "rankIncrement": 119
+      "keyword": "드로우핏",
+      "rankIncrement": 139
     },
     {
       "rank": 5,
-      "keyword": "발가락양말",
-      "rankIncrement": 185
+      "keyword": "어센틱 치노",
+      "rankIncrement": 258
     },
     {
       "rank": 6,
-      "keyword": "폴로 반팔",
-      "rankIncrement": 187
+      "keyword": "지오다노",
+      "rankIncrement": 113
     },
     {
       "rank": 7,
-      "keyword": "휴먼메이드",
-      "rankIncrement": 178
+      "keyword": "나일론팬츠",
+      "rankIncrement": 120
     },
     {
       "rank": 8,
-      "keyword": "상의",
-      "rankIncrement": 122
+      "keyword": "stussy",
+      "rankIncrement": 144
     },
     {
       "rank": 9,
-      "keyword": "가죽자켓",
-      "rankIncrement": 331
+      "keyword": "게스",
+      "rankIncrement": 186
     },
     {
       "rank": 10,
-      "keyword": "코치",
-      "rankIncrement": 132
+      "keyword": "젠틀몬스터",
+      "rankIncrement": 223
     }
   ]
 }
