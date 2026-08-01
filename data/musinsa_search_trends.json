@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-01T06:29:45.882356+00:00",
+  "updatedAt": "2026-08-01T10:27:55.560571+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "반바지",
-      "rankIncrement": 0
+      "keyword": "무배당발",
+      "rankIncrement": 146
     },
     {
       "rank": 3,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "반바지",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "나시",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "버뮤다팬츠",
+      "keyword": "나이키",
       "rankIncrement": 2
     },
     {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": -2
-    },
-    {
-      "rank": 8,
-      "keyword": "크록스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": -1
     },
     {
+      "rank": 8,
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 2
+    },
+    {
       "rank": 9,
-      "keyword": "쪼리",
-      "rankIncrement": 3
+      "keyword": "크록스",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": 1
+      "keyword": "도씨",
+      "rankIncrement": -5
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "오클리",
-      "rankIncrement": 127
+      "keyword": "7부 티셔츠",
+      "rankIncrement": 202
     },
     {
       "rank": 2,
-      "keyword": "노티카",
-      "rankIncrement": 116
+      "keyword": "코이세이오",
+      "rankIncrement": 108
     },
     {
       "rank": 3,
-      "keyword": "시어서커 셔츠",
-      "rankIncrement": 155
+      "keyword": "Hdex",
+      "rankIncrement": 103
     },
     {
       "rank": 4,
-      "keyword": "먼작귀",
-      "rankIncrement": 207
+      "keyword": "카프리팬츠",
+      "rankIncrement": 145
     },
     {
       "rank": 5,
-      "keyword": "문슈",
-      "rankIncrement": 135
+      "keyword": "라코스테",
+      "rankIncrement": 109
     },
     {
       "rank": 6,
-      "keyword": "파우치",
-      "rankIncrement": 142
+      "keyword": "스파오 잠옷",
+      "rankIncrement": 147
     },
     {
       "rank": 7,
-      "keyword": "루에브르",
-      "rankIncrement": 180
+      "keyword": "아디다스 슈퍼스타",
+      "rankIncrement": 281
     },
     {
       "rank": 8,
-      "keyword": "리",
-      "rankIncrement": 263
+      "keyword": "포켓몬스터",
+      "rankIncrement": 193
     },
     {
       "rank": 9,
-      "keyword": "플라스틱프로덕트",
-      "rankIncrement": 231
+      "keyword": "더바넷",
+      "rankIncrement": 117
     },
     {
       "rank": 10,
-      "keyword": "발가락양말",
-      "rankIncrement": 124
+      "keyword": "루에브르",
+      "rankIncrement": 138
     }
   ]
 }
