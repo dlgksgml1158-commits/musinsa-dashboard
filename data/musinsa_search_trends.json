@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-07-31T15:22:06.966026+00:00",
+  "updatedAt": "2026-08-01T02:38:56.945372+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "반팔",
-      "rankIncrement": 0
+      "keyword": "무뷰페",
+      "rankIncrement": 1
     },
     {
       "rank": 2,
+      "keyword": "반팔",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 3,
+      "keyword": "도씨",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 4,
       "keyword": "반바지",
       "rankIncrement": 0
     },
     {
-      "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "rank": 5,
+      "keyword": "펜타포트",
+      "rankIncrement": 5
     },
     {
-      "rank": 4,
+      "rank": 6,
       "keyword": "모자",
       "rankIncrement": -1
     },
     {
-      "rank": 5,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
-    },
-    {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "나시",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드 뷰티",
+      "rankIncrement": 8
     },
     {
       "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "나이키",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "후드집업",
-      "rankIncrement": 2
+      "keyword": "무신사뷰티페스타",
+      "rankIncrement": 7
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파자마",
-      "rankIncrement": 137
+      "keyword": "치이카와",
+      "rankIncrement": 119
     },
     {
       "rank": 2,
-      "keyword": "펜타포트",
-      "rankIncrement": 225
+      "keyword": "트레이닝 팬츠",
+      "rankIncrement": 142
     },
     {
       "rank": 3,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 173
+      "keyword": "산산기어",
+      "rankIncrement": 130
     },
     {
       "rank": 4,
-      "keyword": "져지",
-      "rankIncrement": 161
+      "keyword": "플라스틱프로덕트",
+      "rankIncrement": 144
     },
     {
       "rank": 5,
-      "keyword": "스트라이프 반팔",
-      "rankIncrement": 234
+      "keyword": "더콜디스트모먼트",
+      "rankIncrement": 130
     },
     {
       "rank": 6,
-      "keyword": "마하그리드",
-      "rankIncrement": 183
+      "keyword": "디마프",
+      "rankIncrement": 152
     },
     {
       "rank": 7,
-      "keyword": "캡나시",
-      "rankIncrement": 128
+      "keyword": "남자 반팔티",
+      "rankIncrement": 146
     },
     {
       "rank": 8,
-      "keyword": "귀걸이",
-      "rankIncrement": 155
+      "keyword": "아식스 젤카야노 14",
+      "rankIncrement": 212
     },
     {
       "rank": 9,
-      "keyword": "캘빈클라인 언더웨어",
-      "rankIncrement": 189
+      "keyword": "셋업",
+      "rankIncrement": 239
     },
     {
       "rank": 10,
-      "keyword": "커브드팬츠",
-      "rankIncrement": 244
+      "keyword": "보부상가방",
+      "rankIncrement": 573
     }
   ]
 }
