@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T12:13:48.354477+00:00",
+  "updatedAt": "2026-08-03T15:46:36.453977+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "바지",
-      "rankIncrement": 4
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "모자",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 5,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "나시",
+      "rankIncrement": 0
+    },
+    {
       "rank": 6,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": -2
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "나시",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "티셔츠",
-      "rankIncrement": 47
-    },
-    {
-      "rank": 9,
       "keyword": "가방",
       "rankIncrement": 0
     },
     {
+      "rank": 9,
+      "keyword": "백팩",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "네이밍",
-      "rankIncrement": -2
+      "keyword": "셔츠",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스니커즈",
-      "rankIncrement": 251
+      "keyword": "최저가 도전",
+      "rankIncrement": 169
     },
     {
       "rank": 2,
-      "keyword": "스커트",
-      "rankIncrement": 123
+      "keyword": "디젤",
+      "rankIncrement": 224
     },
     {
       "rank": 3,
-      "keyword": "상의",
-      "rankIncrement": 180
+      "keyword": "치이카와",
+      "rankIncrement": 106
     },
     {
       "rank": 4,
-      "keyword": "스웻팬츠",
-      "rankIncrement": 375
+      "keyword": "짐색",
+      "rankIncrement": 105
     },
     {
       "rank": 5,
-      "keyword": "블러셔",
-      "rankIncrement": 138
+      "keyword": "치마바지",
+      "rankIncrement": 127
     },
     {
       "rank": 6,
-      "keyword": "아디다스 트랙팬츠",
-      "rankIncrement": 260
+      "keyword": "반팔 가디건",
+      "rankIncrement": 146
     },
     {
       "rank": 7,
-      "keyword": "hdex",
-      "rankIncrement": 204
+      "keyword": "플랫슈즈",
+      "rankIncrement": 103
     },
     {
       "rank": 8,
-      "keyword": "래시가드",
-      "rankIncrement": 138
+      "keyword": "베이지 팬츠",
+      "rankIncrement": 132
     },
     {
       "rank": 9,
-      "keyword": "남자 민소매",
-      "rankIncrement": 161
+      "keyword": "코튼 팬츠",
+      "rankIncrement": 125
     },
     {
       "rank": 10,
-      "keyword": "린넨팬츠",
-      "rankIncrement": 134
+      "keyword": "슈프림",
+      "rankIncrement": 209
     }
   ]
 }
