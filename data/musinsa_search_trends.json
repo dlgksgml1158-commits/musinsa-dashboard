@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T06:59:55.406459+00:00",
+  "updatedAt": "2026-08-03T12:13:48.354477+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "네이밍",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "반바지",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "바지",
+      "rankIncrement": 4
+    },
+    {
       "rank": 4,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": -1
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": -2
     },
     {
       "rank": 7,
       "keyword": "나시",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 9,
-      "keyword": "쪼리",
       "rankIncrement": -1
     },
     {
-      "rank": 10,
-      "keyword": "바지",
+      "rank": 8,
+      "keyword": "티셔츠",
+      "rankIncrement": 47
+    },
+    {
+      "rank": 9,
+      "keyword": "가방",
       "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "네이밍",
+      "rankIncrement": -2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "최저가 도전",
-      "rankIncrement": 154
+      "keyword": "스니커즈",
+      "rankIncrement": 251
     },
     {
       "rank": 2,
-      "keyword": "카미드",
-      "rankIncrement": 324
+      "keyword": "스커트",
+      "rankIncrement": 123
     },
     {
       "rank": 3,
-      "keyword": "레이어드",
-      "rankIncrement": 265
+      "keyword": "상의",
+      "rankIncrement": 180
     },
     {
       "rank": 4,
-      "keyword": "제너럴 아이디어",
-      "rankIncrement": 129
+      "keyword": "스웻팬츠",
+      "rankIncrement": 375
     },
     {
       "rank": 5,
-      "keyword": "폴로 반팔",
-      "rankIncrement": 130
+      "keyword": "블러셔",
+      "rankIncrement": 138
     },
     {
       "rank": 6,
-      "keyword": "져지",
-      "rankIncrement": 113
+      "keyword": "아디다스 트랙팬츠",
+      "rankIncrement": 260
     },
     {
       "rank": 7,
-      "keyword": "더비슈즈",
-      "rankIncrement": 117
+      "keyword": "hdex",
+      "rankIncrement": 204
     },
     {
       "rank": 8,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 208
+      "keyword": "래시가드",
+      "rankIncrement": 138
     },
     {
       "rank": 9,
-      "keyword": "롱스커트",
-      "rankIncrement": 162
+      "keyword": "남자 민소매",
+      "rankIncrement": 161
     },
     {
       "rank": 10,
-      "keyword": "젤리슈즈",
-      "rankIncrement": 247
+      "keyword": "린넨팬츠",
+      "rankIncrement": 134
     }
   ]
 }
