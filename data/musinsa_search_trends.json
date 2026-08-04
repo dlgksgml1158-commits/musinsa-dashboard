@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T15:46:36.453977+00:00",
+  "updatedAt": "2026-08-04T02:24:06.693857+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "나시",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "바지",
+      "keyword": "나시",
       "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": -1
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
+      "keyword": "쪼리",
+      "rankIncrement": -2
+    },
+    {
+      "rank": 9,
       "keyword": "가방",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 0
-    },
-    {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": 1
+      "keyword": "무뷰페",
+      "rankIncrement": 31
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "최저가 도전",
-      "rankIncrement": 169
+      "keyword": "무신사뷰티페스타",
+      "rankIncrement": 137
     },
     {
       "rank": 2,
-      "keyword": "디젤",
-      "rankIncrement": 224
+      "keyword": "무신사 스탠다드 뷰티",
+      "rankIncrement": 347
     },
     {
       "rank": 3,
-      "keyword": "치이카와",
-      "rankIncrement": 106
+      "keyword": "스파오 다마고치",
+      "rankIncrement": 218
     },
     {
       "rank": 4,
-      "keyword": "짐색",
-      "rankIncrement": 105
+      "keyword": "배드블러드",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "치마바지",
-      "rankIncrement": 127
-    },
-    {
-      "rank": 6,
-      "keyword": "반팔 가디건",
+      "keyword": "무신사",
       "rankIncrement": 146
     },
     {
+      "rank": 6,
+      "keyword": "나이키 반바지",
+      "rankIncrement": 207
+    },
+    {
       "rank": 7,
-      "keyword": "플랫슈즈",
-      "rankIncrement": 103
+      "keyword": "토마스모어",
+      "rankIncrement": 111
     },
     {
       "rank": 8,
-      "keyword": "베이지 팬츠",
-      "rankIncrement": 132
+      "keyword": "스탠드오일",
+      "rankIncrement": 329
     },
     {
       "rank": 9,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 125
+      "keyword": "에어팟",
+      "rankIncrement": 217
     },
     {
       "rank": 10,
-      "keyword": "슈프림",
-      "rankIncrement": 209
+      "keyword": "치이카와",
+      "rankIncrement": 118
     }
   ]
 }
