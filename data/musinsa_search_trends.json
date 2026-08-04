@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T11:17:05.583245+00:00",
+  "updatedAt": "2026-08-04T15:27:01.384007+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,12 +9,12 @@
     {
       "rank": 2,
       "keyword": "반바지",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "쿨아이템",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
@@ -23,12 +23,12 @@
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "버뮤다팬츠",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
@@ -39,69 +39,69 @@
     {
       "rank": 8,
       "keyword": "가방",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "백팩",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파르티멘토",
-      "rankIncrement": 105
+      "keyword": "알로",
+      "rankIncrement": 122
     },
     {
       "rank": 2,
-      "keyword": "나이키 신발",
-      "rankIncrement": 112
+      "keyword": "에잇세컨즈",
+      "rankIncrement": 104
     },
     {
       "rank": 3,
-      "keyword": "부츠컷",
-      "rankIncrement": 150
+      "keyword": "무지 반팔티",
+      "rankIncrement": 105
     },
     {
       "rank": 4,
-      "keyword": "긴팔",
-      "rankIncrement": 118
+      "keyword": "린넨",
+      "rankIncrement": 106
     },
     {
       "rank": 5,
-      "keyword": "아스날",
+      "keyword": "귀걸이",
       "rankIncrement": 198
     },
     {
       "rank": 6,
-      "keyword": "aeae",
-      "rankIncrement": 135
+      "keyword": "치이카와",
+      "rankIncrement": 159
     },
     {
       "rank": 7,
-      "keyword": "마스마룰즈",
-      "rankIncrement": 151
+      "keyword": "지오다노",
+      "rankIncrement": 135
     },
     {
       "rank": 8,
-      "keyword": "블랙야크 스톤마스터",
-      "rankIncrement": 172
+      "keyword": "워크팬츠",
+      "rankIncrement": 153
     },
     {
       "rank": 9,
-      "keyword": "러닝모자",
-      "rankIncrement": 175
+      "keyword": "바르셀로나",
+      "rankIncrement": 172
     },
     {
       "rank": 10,
-      "keyword": "탑텐",
-      "rankIncrement": 249
+      "keyword": "다이닛",
+      "rankIncrement": 125
     }
   ]
 }
