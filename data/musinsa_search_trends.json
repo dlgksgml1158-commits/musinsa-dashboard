@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T02:24:06.693857+00:00",
+  "updatedAt": "2026-08-04T06:27:49.014599+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,12 +18,12 @@
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
+      "keyword": "아디다스",
       "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": -1
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "rank": 7,
-      "keyword": "무신사 스탠다드",
+      "keyword": "가방",
       "rankIncrement": 1
     },
     {
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "가방",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "무뷰페",
-      "rankIncrement": 31
+      "keyword": "크록스",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "무신사뷰티페스타",
-      "rankIncrement": 137
+      "keyword": "로라로라",
+      "rankIncrement": 159
     },
     {
       "rank": 2,
-      "keyword": "무신사 스탠다드 뷰티",
-      "rankIncrement": 347
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 280
     },
     {
       "rank": 3,
-      "keyword": "스파오 다마고치",
-      "rankIncrement": 218
-    },
-    {
-      "rank": 4,
-      "keyword": "배드블러드",
-      "rankIncrement": 104
-    },
-    {
-      "rank": 5,
-      "keyword": "무신사",
-      "rankIncrement": 146
-    },
-    {
-      "rank": 6,
-      "keyword": "나이키 반바지",
-      "rankIncrement": 207
-    },
-    {
-      "rank": 7,
-      "keyword": "토마스모어",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 8,
-      "keyword": "스탠드오일",
-      "rankIncrement": 329
-    },
-    {
-      "rank": 9,
-      "keyword": "에어팟",
+      "keyword": "남자 민소매",
       "rankIncrement": 217
     },
     {
+      "rank": 4,
+      "keyword": "아이폰 케이스",
+      "rankIncrement": 114
+    },
+    {
+      "rank": 5,
+      "keyword": "남자 수영복 바지",
+      "rankIncrement": 101
+    },
+    {
+      "rank": 6,
+      "keyword": "미디스커트",
+      "rankIncrement": 161
+    },
+    {
+      "rank": 7,
+      "keyword": "나일론팬츠",
+      "rankIncrement": 189
+    },
+    {
+      "rank": 8,
+      "keyword": "호보백",
+      "rankIncrement": 109
+    },
+    {
+      "rank": 9,
+      "keyword": "트랙팬츠",
+      "rankIncrement": 112
+    },
+    {
       "rank": 10,
-      "keyword": "치이카와",
-      "rankIncrement": 118
+      "keyword": "레이어드",
+      "rankIncrement": 117
     }
   ]
 }
