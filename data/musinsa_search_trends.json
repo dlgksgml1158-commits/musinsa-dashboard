@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T11:13:10.711367+00:00",
+  "updatedAt": "2026-08-05T15:16:28.877670+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "나시",
-      "rankIncrement": 1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "모자",
-      "rankIncrement": -3
+      "keyword": "나시",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "가방",
+      "keyword": "바지",
       "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "쪼리",
+      "keyword": "가방",
       "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "나이키",
-      "rankIncrement": 2
+      "keyword": "백팩",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "크록스",
-      "rankIncrement": 2
+      "keyword": "후드집업",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "토트백",
-      "rankIncrement": 120
-    },
-    {
-      "rank": 2,
-      "keyword": "안다르",
+      "keyword": "부츠컷",
       "rankIncrement": 105
     },
     {
+      "rank": 2,
+      "keyword": "카시오 시계",
+      "rankIncrement": 117
+    },
+    {
       "rank": 3,
-      "keyword": "액트플러스",
-      "rankIncrement": 108
+      "keyword": "키츠네",
+      "rankIncrement": 161
     },
     {
       "rank": 4,
-      "keyword": "칼하트 반팔",
-      "rankIncrement": 133
-    },
-    {
-      "rank": 5,
-      "keyword": "맨시티",
-      "rankIncrement": 126
-    },
-    {
-      "rank": 6,
-      "keyword": "탑텐",
-      "rankIncrement": 200
-    },
-    {
-      "rank": 7,
-      "keyword": "아디다스 팬츠",
-      "rankIncrement": 136
-    },
-    {
-      "rank": 8,
-      "keyword": "러닝조끼",
+      "keyword": "유니클로 반팔",
       "rankIncrement": 113
     },
     {
+      "rank": 5,
+      "keyword": "메종 키츠네",
+      "rankIncrement": 167
+    },
+    {
+      "rank": 6,
+      "keyword": "보부상가방",
+      "rankIncrement": 101
+    },
+    {
+      "rank": 7,
+      "keyword": "여성 래쉬가드",
+      "rankIncrement": 108
+    },
+    {
+      "rank": 8,
+      "keyword": "코튼 팬츠",
+      "rankIncrement": 189
+    },
+    {
       "rank": 9,
-      "keyword": "단백질쉐이크",
-      "rankIncrement": 265
+      "keyword": "오프숄더 반팔",
+      "rankIncrement": 198
     },
     {
       "rank": 10,
-      "keyword": "히어리",
-      "rankIncrement": 169
+      "keyword": "머렐",
+      "rankIncrement": 203
     }
   ]
 }
