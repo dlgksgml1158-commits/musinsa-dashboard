@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-05T15:16:28.877670+00:00",
+  "updatedAt": "2026-08-06T02:26:19.457475+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "모자",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
+      "rank": 4,
+      "keyword": "모자",
+      "rankIncrement": 3
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "나시",
       "rankIncrement": 0
     },
     {
+      "rank": 6,
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": -2
+    },
+    {
       "rank": 7,
-      "keyword": "바지",
+      "keyword": "백팩",
       "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "가방",
-      "rankIncrement": -1
+      "rankIncrement": -2
     },
     {
       "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "쪼리",
+      "rankIncrement": 5
     },
     {
       "rank": 10,
-      "keyword": "후드집업",
+      "keyword": "나이키",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "부츠컷",
-      "rankIncrement": 105
+      "keyword": "미니스웨어",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "카시오 시계",
-      "rankIncrement": 117
+      "keyword": "온러닝",
+      "rankIncrement": 112
     },
     {
       "rank": 3,
-      "keyword": "키츠네",
-      "rankIncrement": 161
+      "keyword": "트랙팬츠",
+      "rankIncrement": 346
     },
     {
       "rank": 4,
-      "keyword": "유니클로 반팔",
-      "rankIncrement": 113
+      "keyword": "탑텐",
+      "rankIncrement": 117
     },
     {
       "rank": 5,
-      "keyword": "메종 키츠네",
-      "rankIncrement": 167
+      "keyword": "플랫슈즈",
+      "rankIncrement": 183
     },
     {
       "rank": 6,
-      "keyword": "보부상가방",
-      "rankIncrement": 101
+      "keyword": "메신저백",
+      "rankIncrement": 118
     },
     {
       "rank": 7,
-      "keyword": "여성 래쉬가드",
-      "rankIncrement": 108
+      "keyword": "바이젝",
+      "rankIncrement": 147
     },
     {
       "rank": 8,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 189
+      "keyword": "크롭",
+      "rankIncrement": 124
     },
     {
       "rank": 9,
-      "keyword": "오프숄더 반팔",
-      "rankIncrement": 198
+      "keyword": "테켓",
+      "rankIncrement": 151
     },
     {
       "rank": 10,
-      "keyword": "머렐",
-      "rankIncrement": 203
+      "keyword": "산산기어",
+      "rankIncrement": 191
     }
   ]
 }
