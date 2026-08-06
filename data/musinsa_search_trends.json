@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T02:26:19.457475+00:00",
+  "updatedAt": "2026-08-06T06:30:40.547666+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
+      "keyword": "모자",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "모자",
-      "rankIncrement": 3
-    },
-    {
-      "rank": 5,
-      "keyword": "나시",
+      "keyword": "버뮤다팬츠",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "아디다스",
+      "rankIncrement": 1
+    },
+    {
       "rank": 6,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": -2
+      "keyword": "나시",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "백팩",
+      "keyword": "가방",
       "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": -2
+      "keyword": "백팩",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
       "keyword": "쪼리",
-      "rankIncrement": 5
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": 1
+      "keyword": "크록스",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "미니스웨어",
-      "rankIncrement": 103
+      "keyword": "나이키 슬리퍼",
+      "rankIncrement": 105
     },
     {
       "rank": 2,
-      "keyword": "온러닝",
-      "rankIncrement": 112
+      "keyword": "트레이닝 반바지",
+      "rankIncrement": 129
     },
     {
       "rank": 3,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 346
+      "keyword": "여자 수영복",
+      "rankIncrement": 133
     },
     {
       "rank": 4,
-      "keyword": "탑텐",
-      "rankIncrement": 117
+      "keyword": "하객룩",
+      "rankIncrement": 160
     },
     {
       "rank": 5,
-      "keyword": "플랫슈즈",
-      "rankIncrement": 183
+      "keyword": "롱스커트",
+      "rankIncrement": 130
     },
     {
       "rank": 6,
-      "keyword": "메신저백",
-      "rankIncrement": 118
+      "keyword": "나이키 신발",
+      "rankIncrement": 133
     },
     {
       "rank": 7,
-      "keyword": "바이젝",
-      "rankIncrement": 147
+      "keyword": "나이키 모자",
+      "rankIncrement": 112
     },
     {
       "rank": 8,
-      "keyword": "크롭",
-      "rankIncrement": 124
+      "keyword": "커브드팬츠",
+      "rankIncrement": 153
     },
     {
       "rank": 9,
-      "keyword": "테켓",
-      "rankIncrement": 151
+      "keyword": "리락쿠마",
+      "rankIncrement": 111
     },
     {
       "rank": 10,
-      "keyword": "산산기어",
-      "rankIncrement": 191
+      "keyword": "양우산",
+      "rankIncrement": 223
     }
   ]
 }
