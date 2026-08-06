@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T06:30:40.547666+00:00",
+  "updatedAt": "2026-08-06T11:13:36.510814+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
+      "keyword": "아디다스",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 4,
       "keyword": "모자",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
-    },
-    {
       "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 3
     },
     {
       "rank": 6,
-      "keyword": "나시",
-      "rankIncrement": -1
+      "keyword": "쿨아이템",
+      "rankIncrement": -3
     },
     {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 1
+      "keyword": "나시",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "백팩",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 9,
-      "keyword": "쪼리",
+      "keyword": "가방",
       "rankIncrement": -2
     },
     {
+      "rank": 9,
+      "keyword": "스파오",
+      "rankIncrement": 2
+    },
+    {
       "rank": 10,
-      "keyword": "크록스",
+      "keyword": "후드집업",
       "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "나이키 슬리퍼",
-      "rankIncrement": 105
+      "keyword": "스파오 리락쿠마",
+      "rankIncrement": 134
     },
     {
       "rank": 2,
-      "keyword": "트레이닝 반바지",
-      "rankIncrement": 129
+      "keyword": "남자 수영복",
+      "rankIncrement": 113
     },
     {
       "rank": 3,
-      "keyword": "여자 수영복",
-      "rankIncrement": 133
+      "keyword": "브론슨",
+      "rankIncrement": 132
     },
     {
       "rank": 4,
-      "keyword": "하객룩",
-      "rankIncrement": 160
+      "keyword": "귀걸이",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "롱스커트",
-      "rankIncrement": 130
+      "keyword": "프로젝트웨이브",
+      "rankIncrement": 134
     },
     {
       "rank": 6,
-      "keyword": "나이키 신발",
-      "rankIncrement": 133
+      "keyword": "칼하트 반팔",
+      "rankIncrement": 203
     },
     {
       "rank": 7,
-      "keyword": "나이키 모자",
-      "rankIncrement": 112
+      "keyword": "보스턴백",
+      "rankIncrement": 134
     },
     {
       "rank": 8,
-      "keyword": "커브드팬츠",
-      "rankIncrement": 153
+      "keyword": "테이크핏",
+      "rankIncrement": 240
     },
     {
       "rank": 9,
-      "keyword": "리락쿠마",
-      "rankIncrement": 111
+      "keyword": "브라탑",
+      "rankIncrement": 141
     },
     {
       "rank": 10,
-      "keyword": "양우산",
-      "rankIncrement": 223
+      "keyword": "더콜디스트모먼트",
+      "rankIncrement": 107
     }
   ]
 }
