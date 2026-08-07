@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T09:52:23.593594+00:00",
+  "updatedAt": "2026-08-07T14:15:18.490403+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "펜타포트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "디키즈",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "반바지",
+      "rankIncrement": 1
+    },
+    {
       "rank": 4,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "빅뱅",
-      "rankIncrement": 11
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "아디다스",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "반바지",
-      "rankIncrement": -1
+      "keyword": "백팩",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "버뮤다팬츠",
+      "keyword": "나시",
       "rankIncrement": 0
     },
     {
       "rank": 9,
       "keyword": "가방",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "나시",
-      "rankIncrement": -3
+      "keyword": "후드집업",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "브라운브레스",
-      "rankIncrement": 141
+      "keyword": "스파오 잠옷",
+      "rankIncrement": 102
     },
     {
       "rank": 2,
-      "keyword": "체험단",
-      "rankIncrement": 104
+      "keyword": "폴로 반팔",
+      "rankIncrement": 154
     },
     {
       "rank": 3,
-      "keyword": "미디스커트",
-      "rankIncrement": 139
+      "keyword": "잔스포츠 백팩",
+      "rankIncrement": 193
     },
     {
       "rank": 4,
-      "keyword": "치노팬츠",
-      "rankIncrement": 115
+      "keyword": "코드그라피",
+      "rankIncrement": 162
     },
     {
       "rank": 5,
-      "keyword": "아더에러",
-      "rankIncrement": 145
+      "keyword": "Lmc",
+      "rankIncrement": 109
     },
     {
       "rank": 6,
-      "keyword": "미니 크로스백",
-      "rankIncrement": 135
+      "keyword": "휠라",
+      "rankIncrement": 116
     },
     {
       "rank": 7,
-      "keyword": "mlb 모자",
-      "rankIncrement": 159
+      "keyword": "캡나시",
+      "rankIncrement": 179
     },
     {
       "rank": 8,
-      "keyword": "남자 수영복",
-      "rankIncrement": 122
+      "keyword": "미니백팩",
+      "rankIncrement": 263
     },
     {
       "rank": 9,
-      "keyword": "트릴리온",
-      "rankIncrement": 161
+      "keyword": "노스페이스 백팩",
+      "rankIncrement": 106
     },
     {
       "rank": 10,
-      "keyword": "파르티멘토 우먼",
-      "rankIncrement": 171
+      "keyword": "카시오 시계",
+      "rankIncrement": 148
     }
   ]
 }
