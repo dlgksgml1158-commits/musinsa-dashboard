@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-07T14:15:18.490403+00:00",
+  "updatedAt": "2026-08-08T01:25:34.465309+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "디키즈",
+      "keyword": "반바지",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "반바지",
-      "rankIncrement": 1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "모자",
-      "rankIncrement": -1
+      "keyword": "디키즈",
+      "rankIncrement": 2
     },
     {
       "rank": 5,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "가방",
+      "rankIncrement": 2
     },
     {
       "rank": 6,
       "keyword": "아디다스",
-      "rankIncrement": 0
+      "rankIncrement": -2
     },
     {
       "rank": 7,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": -2
     },
     {
       "rank": 8,
-      "keyword": "나시",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
-      "keyword": "가방",
+      "keyword": "백팩",
       "rankIncrement": 1
     },
     {
+      "rank": 9,
+      "keyword": "나시",
+      "rankIncrement": -1
+    },
+    {
       "rank": 10,
-      "keyword": "후드집업",
+      "keyword": "셔츠",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스파오 잠옷",
-      "rankIncrement": 102
+      "keyword": "잠옷",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "폴로 반팔",
-      "rankIncrement": 154
+      "keyword": "원숄더",
+      "rankIncrement": 134
     },
     {
       "rank": 3,
-      "keyword": "잔스포츠 백팩",
-      "rankIncrement": 193
+      "keyword": "키츠네",
+      "rankIncrement": 105
     },
     {
       "rank": 4,
-      "keyword": "코드그라피",
-      "rankIncrement": 162
+      "keyword": "여름 셔츠",
+      "rankIncrement": 126
     },
     {
       "rank": 5,
-      "keyword": "Lmc",
-      "rankIncrement": 109
+      "keyword": "스투시 반팔",
+      "rankIncrement": 113
     },
     {
       "rank": 6,
-      "keyword": "휠라",
-      "rankIncrement": 116
+      "keyword": "랜더스",
+      "rankIncrement": 165
     },
     {
       "rank": 7,
-      "keyword": "캡나시",
-      "rankIncrement": 179
+      "keyword": "미니백팩",
+      "rankIncrement": 167
     },
     {
       "rank": 8,
-      "keyword": "미니백팩",
-      "rankIncrement": 263
+      "keyword": "스탠리",
+      "rankIncrement": 131
     },
     {
       "rank": 9,
-      "keyword": "노스페이스 백팩",
-      "rankIncrement": 106
+      "keyword": "우포스 쪼리",
+      "rankIncrement": 155
     },
     {
       "rank": 10,
-      "keyword": "카시오 시계",
-      "rankIncrement": 148
+      "keyword": "더콜디스트모먼트",
+      "rankIncrement": 326
     }
   ]
 }
