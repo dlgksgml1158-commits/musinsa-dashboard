@@ -1,6 +1,6 @@
 {
   "platform": "musinsa_male",
-  "updatedAt": "2026-08-09T09:29:59.500961+00:00",
+  "updatedAt": "2026-08-09T13:51:50.049208+00:00",
   "items": [
     {
       "rank": 1,
@@ -2088,8 +2088,8 @@
         "name": "퀵 드라이 액티브 러너스 후디 (Sky Blue)",
         "price": 76000,
         "originalPrice": 76000,
-        "discountRate": 22,
-        "finalPrice": 59510,
+        "discountRate": 20,
+        "finalPrice": 60800,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260309/6101722/6101722_17738051930147_500.jpg",
@@ -3289,21 +3289,6 @@
       },
       {
         "rank": 9,
-        "id": "ms-3116821",
-        "brand": "챔피온",
-        "name": "베이직 C로고 후드 집업 Cream",
-        "price": 109000,
-        "originalPrice": 109000,
-        "discountRate": 82,
-        "finalPrice": 20000,
-        "category": "002",
-        "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20230302/3116821/3116821_17470128838079_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/3116821",
-        "change": 0
-      },
-      {
-        "rank": 10,
         "id": "ms-6929984",
         "brand": "블랙야크",
         "name": "공용 클라이밍 스톤마스터 다운자켓#3 (5color)",
@@ -3315,10 +3300,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260727/6929984/6929984_17854600289540_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6929984",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 11,
+        "rank": 10,
         "id": "ms-6686197",
         "brand": "나이키",
         "name": "스포츠웨어 오버사이즈 트랙 재킷 W - 블랙:화이트 / IQ3165-010",
@@ -3330,10 +3315,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6686197/6686197_17847960785031_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6686197",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "ms-2087860",
         "brand": "도프제이슨",
         "name": "오버핏 램스킨 보머 자켓",
@@ -3345,10 +3330,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210825/2087860/2087860_3_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2087860",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "ms-2685207",
         "brand": "올세인츠",
         "name": "타이슨 바이커 - 블랙",
@@ -3360,10 +3345,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220727/2685207/2685207_3_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2685207",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-5503180",
         "brand": "아디다스",
         "name": "ADILENIUM 3 오버사이즈 트랙탑 - 다크그레이 / KD4187",
@@ -3375,10 +3360,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250922/5503180/5503180_17593624114740_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5503180",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-3096448",
         "brand": "프리즘웍스",
         "name": "BUDDY HARRINGTON JACKET _ NAVY",
@@ -3390,10 +3375,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230221/3096448/3096448_17562763381199_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3096448",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-6364512",
         "brand": "무신사 스탠다드",
         "name": "[시티 레저] 그리드 폴라 플리스 바라클라바 후디드 집업 [스톤 화이트]",
@@ -3405,10 +3390,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260423/6364512/6364512_17860032863069_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6364512",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-6769566",
         "brand": "스파오",
         "name": "[UV차단] 파이핑 절개 윈드브레이커_SPJJG49C31",
@@ -3420,10 +3405,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260702/6769566/6769566_17853929562586_500.png",
         "productUrl": "https://www.musinsa.com/products/6769566",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-6853554",
         "brand": "무신사 스탠다드",
         "name": "[시티 레저] 시어 후디드 라이트 다운 재킷 [그레이]",
@@ -3435,10 +3420,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260715/6853554/6853554_17860032366782_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6853554",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-5392259",
         "brand": "아웃스탠딩",
         "name": "[아키즈 PICK] TEA-CORE COWHIDE W.W. II 1ST JACKET_VINTAGE BLACK",
@@ -3450,10 +3435,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250902/5392259/5392259_17703574389431_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5392259",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-4668058",
         "brand": "아페쎄",
         "name": "제이미 가디건 - 다크 네이비 / COEZJH22315IAK",
@@ -3465,10 +3450,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241216/4668058/4668058_17364742281684_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4668058",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-6675218",
         "brand": "베이프",
         "name": "핸드 드로우 풋볼 샤크 릴렉스드 핏 풀 집 후드(M) BLACK",
@@ -3480,10 +3465,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260616/6675218/6675218_17840161574002_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6675218",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-6061844",
         "brand": "도프제이슨",
         "name": "엣지드 크롭 레더 자켓 BLACK",
@@ -3495,10 +3480,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260226/6061844/6061844_17733680899323_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6061844",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-5498292",
         "brand": "레더리",
         "name": "M-65 피쉬테일 오버핏 롱파카 [2COLOR]",
@@ -3510,10 +3495,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250919/5498292/5498292_17628429956754_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5498292",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-6908905",
         "brand": "블랙야크",
         "name": "공용 클라이밍 스톤마스터 라이트 패딩자켓#3_(4color)",
@@ -3525,10 +3510,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260723/6908905/6908905_17853876394660_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6908905",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-6021332",
         "brand": "아날로그무드",
         "name": "홈 크롭 집업 자켓 (네이비)",
@@ -3540,10 +3525,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260212/6021332/6021332_17708944344752_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6021332",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-6000424",
         "brand": "데꼬로소",
         "name": "패널 립 라운드 가디건 [화이트]",
@@ -3555,10 +3540,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260209/6000424/6000424_17709625937388_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6000424",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-5755269",
         "brand": "무신사 스탠다드",
         "name": "US ARMY 탱커 재킷 [블랙]",
@@ -3570,10 +3555,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251120/5755269/5755269_17737016012155_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5755269",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-6929142",
         "brand": "블랙야크",
         "name": "공용 클라이밍 스톤마스터 다운자켓 G2#3 (2color)",
@@ -3585,10 +3570,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260727/6929142/6929142_17854603765428_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6929142",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-5892146",
         "brand": "아웃스탠딩",
         "name": "[LOONEY TUNES] L-2B JACKET_OLIVE GREEN",
@@ -3600,10 +3585,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260114/5892146/5892146_17697406568953_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5892146",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-6214061",
         "brand": "언탭트 스튜디오",
         "name": "[SET UP]라이크 린넨 오버핏 블레이져 자켓+투턱 와이드 슬랙스 2COLOR",
@@ -3615,7 +3600,22 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260327/6214061/6214061_17751815443174_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6214061",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-6101998",
+        "brand": "수아레",
+        "name": "린넨 싱글 블레이저 셋업 네이비",
+        "price": 189000,
+        "originalPrice": 189000,
+        "discountRate": 58,
+        "finalPrice": 79900,
+        "category": "002",
+        "categoryLabel": "아우터",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260309/6101998/6101998_17739852939208_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6101998",
+        "change": "NEW"
       }
     ],
     "003001": [
