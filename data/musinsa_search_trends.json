@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-10T01:40:46.466851+00:00",
+  "updatedAt": "2026-08-10T05:26:30.086265+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,12 +8,12 @@
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "롱슬리브",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "가방",
-      "rankIncrement": 3
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": -1
+      "keyword": "클리어런스",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 8,
+      "keyword": "가방",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 9,
       "keyword": "반바지",
       "rankIncrement": -2
     },
     {
-      "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 0
-    },
-    {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": 3
+      "keyword": "나시",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "에이치덱스",
-      "rankIncrement": 105
-    },
-    {
-      "rank": 2,
-      "keyword": "캘빈클라인",
+      "keyword": "체험단",
       "rankIncrement": 101
     },
     {
+      "rank": 2,
+      "keyword": "여름 가디건",
+      "rankIncrement": 174
+    },
+    {
       "rank": 3,
-      "keyword": "커버낫",
-      "rankIncrement": 118
+      "keyword": "클로그",
+      "rankIncrement": 164
     },
     {
       "rank": 4,
-      "keyword": "트릴리온",
-      "rankIncrement": 125
+      "keyword": "바닐라코",
+      "rankIncrement": 206
     },
     {
       "rank": 5,
-      "keyword": "블레이저",
-      "rankIncrement": 112
+      "keyword": "나이키 에어포스",
+      "rankIncrement": 241
     },
     {
       "rank": 6,
-      "keyword": "엘무드",
-      "rankIncrement": 125
+      "keyword": "컨버스",
+      "rankIncrement": 105
     },
     {
       "rank": 7,
-      "keyword": "린넨 셔츠",
-      "rankIncrement": 125
+      "keyword": "아디다스 트랙팬츠",
+      "rankIncrement": 123
     },
     {
       "rank": 8,
-      "keyword": "보스턴백",
-      "rankIncrement": 107
+      "keyword": "테켓",
+      "rankIncrement": 102
     },
     {
       "rank": 9,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 135
+      "keyword": "노스페이스 백팩",
+      "rankIncrement": 262
     },
     {
       "rank": 10,
-      "keyword": "유니폼",
-      "rankIncrement": 195
+      "keyword": "크롭 셔츠",
+      "rankIncrement": 115
     }
   ]
 }
