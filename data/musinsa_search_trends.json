@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-09T13:52:32.982070+00:00",
+  "updatedAt": "2026-08-10T01:40:46.466851+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,38 +8,38 @@
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 3,
+      "keyword": "롱슬리브",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 4,
       "keyword": "모자",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "가방",
+      "rankIncrement": 3
+    },
+    {
       "rank": 6,
-      "keyword": "반바지",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
       "keyword": "바지",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "반바지",
+      "rankIncrement": -2
     },
     {
       "rank": 9,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": 3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "남자 나시",
-      "rankIncrement": 100
+      "keyword": "에이치덱스",
+      "rankIncrement": 105
     },
     {
       "rank": 2,
-      "keyword": "아디다스 삼바",
-      "rankIncrement": 126
+      "keyword": "캘빈클라인",
+      "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "mlb 모자",
-      "rankIncrement": 137
+      "keyword": "커버낫",
+      "rankIncrement": 118
     },
     {
       "rank": 4,
-      "keyword": "노스페이스 백팩",
-      "rankIncrement": 202
+      "keyword": "트릴리온",
+      "rankIncrement": 125
     },
     {
       "rank": 5,
-      "keyword": "포터리",
-      "rankIncrement": 115
+      "keyword": "블레이저",
+      "rankIncrement": 112
     },
     {
       "rank": 6,
-      "keyword": "오프숄더 반팔",
-      "rankIncrement": 132
+      "keyword": "엘무드",
+      "rankIncrement": 125
     },
     {
       "rank": 7,
-      "keyword": "디미트리블랙",
-      "rankIncrement": 119
+      "keyword": "린넨 셔츠",
+      "rankIncrement": 125
     },
     {
       "rank": 8,
-      "keyword": "나이키 신발",
-      "rankIncrement": 157
+      "keyword": "보스턴백",
+      "rankIncrement": 107
     },
     {
       "rank": 9,
-      "keyword": "브라운야드",
-      "rankIncrement": 113
+      "keyword": "트랙팬츠",
+      "rankIncrement": 135
     },
     {
       "rank": 10,
-      "keyword": "와이드 슬랙스",
-      "rankIncrement": 241
+      "keyword": "유니폼",
+      "rankIncrement": 195
     }
   ]
 }
