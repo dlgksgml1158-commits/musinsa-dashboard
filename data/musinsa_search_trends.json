@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-11T09:52:35.630602+00:00",
+  "updatedAt": "2026-08-11T14:22:22.638034+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "모자",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "아디다스",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "가방",
+      "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "반바지",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "바람막이",
-      "rankIncrement": -2
+      "keyword": "반바지",
+      "rankIncrement": 3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "러브이즈트루",
-      "rankIncrement": 112
+      "keyword": "온러닝",
+      "rankIncrement": 108
     },
     {
       "rank": 2,
-      "keyword": "액트플러스",
-      "rankIncrement": 133
+      "keyword": "호보백",
+      "rankIncrement": 116
     },
     {
       "rank": 3,
-      "keyword": "브라운브레스",
-      "rankIncrement": 140
+      "keyword": "체험단",
+      "rankIncrement": 128
     },
     {
       "rank": 4,
-      "keyword": "피그먼트 반팔",
-      "rankIncrement": 121
+      "keyword": "치노팬츠",
+      "rankIncrement": 117
     },
     {
       "rank": 5,
-      "keyword": "스트라이프 반팔",
-      "rankIncrement": 114
+      "keyword": "몽돌",
+      "rankIncrement": 142
     },
     {
       "rank": 6,
-      "keyword": "레이어드 반팔",
-      "rankIncrement": 152
+      "keyword": "Hdex",
+      "rankIncrement": 127
     },
     {
       "rank": 7,
-      "keyword": "파르티멘토",
-      "rankIncrement": 102
+      "keyword": "홀리카홀리카",
+      "rankIncrement": 107
     },
     {
       "rank": 8,
-      "keyword": "아식스 젤카야노 14",
-      "rankIncrement": 109
+      "keyword": "긴바지",
+      "rankIncrement": 144
     },
     {
       "rank": 9,
-      "keyword": "스파오 잠옷",
-      "rankIncrement": 141
+      "keyword": "메디힐",
+      "rankIncrement": 139
     },
     {
       "rank": 10,
-      "keyword": "보부상가방",
-      "rankIncrement": 124
+      "keyword": "하이산",
+      "rankIncrement": 119
     }
   ]
 }
