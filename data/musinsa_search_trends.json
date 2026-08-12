@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-11T14:22:22.638034+00:00",
+  "updatedAt": "2026-08-12T01:48:33.086755+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "반팔",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
+      "keyword": "반팔",
       "rankIncrement": 0
     },
     {
@@ -18,27 +18,27 @@
     },
     {
       "rank": 4,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "로스트아크",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
+      "rank": 7,
+      "keyword": "아디다스",
+      "rankIncrement": 0
+    },
+    {
       "rank": 8,
-      "keyword": "가방",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "반바지",
-      "rankIncrement": 3
+      "keyword": "가방",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "온러닝",
-      "rankIncrement": 108
+      "keyword": "에잇세컨즈",
+      "rankIncrement": 124
     },
     {
       "rank": 2,
-      "keyword": "호보백",
-      "rankIncrement": 116
+      "keyword": "스파오 바람막이",
+      "rankIncrement": 221
     },
     {
       "rank": 3,
-      "keyword": "체험단",
-      "rankIncrement": 128
+      "keyword": "메디힐",
+      "rankIncrement": 151
     },
     {
       "rank": 4,
-      "keyword": "치노팬츠",
-      "rankIncrement": 117
+      "keyword": "무스탕",
+      "rankIncrement": 273
     },
     {
       "rank": 5,
-      "keyword": "몽돌",
-      "rankIncrement": 142
+      "keyword": "유니온블루",
+      "rankIncrement": 155
     },
     {
       "rank": 6,
-      "keyword": "Hdex",
-      "rankIncrement": 127
+      "keyword": "여름바지",
+      "rankIncrement": 109
     },
     {
       "rank": 7,
-      "keyword": "홀리카홀리카",
-      "rankIncrement": 107
+      "keyword": "체험단",
+      "rankIncrement": 152
     },
     {
       "rank": 8,
-      "keyword": "긴바지",
-      "rankIncrement": 144
+      "keyword": "베럴",
+      "rankIncrement": 131
     },
     {
       "rank": 9,
-      "keyword": "메디힐",
-      "rankIncrement": 139
+      "keyword": "오클리",
+      "rankIncrement": 168
     },
     {
       "rank": 10,
-      "keyword": "하이산",
-      "rankIncrement": 119
+      "keyword": "배럴",
+      "rankIncrement": 127
     }
   ]
 }
