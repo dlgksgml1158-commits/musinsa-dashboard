@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-12T01:48:33.086755+00:00",
+  "updatedAt": "2026-08-12T05:38:14.754115+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 2,
       "keyword": "반팔",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 3,
@@ -18,7 +18,7 @@
     },
     {
       "rank": 4,
-      "keyword": "로스트아크",
+      "keyword": "아디다스",
       "rankIncrement": 1
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "바람막이",
+      "keyword": "로스트아크",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
-      "keyword": "후드티",
+      "rank": 8,
+      "keyword": "가방",
       "rankIncrement": 2
     },
     {
-      "rank": 10,
-      "keyword": "가방",
+      "rank": 9,
+      "keyword": "후드티",
       "rankIncrement": -1
+    },
+    {
+      "rank": 10,
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 5
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "에잇세컨즈",
+      "keyword": "무배당발",
       "rankIncrement": 124
     },
     {
       "rank": 2,
-      "keyword": "스파오 바람막이",
-      "rankIncrement": 221
+      "keyword": "더바이닐하우스",
+      "rankIncrement": 164
     },
     {
       "rank": 3,
-      "keyword": "메디힐",
-      "rankIncrement": 151
+      "keyword": "스웨이드",
+      "rankIncrement": 103
     },
     {
       "rank": 4,
-      "keyword": "무스탕",
-      "rankIncrement": 273
+      "keyword": "온러닝",
+      "rankIncrement": 117
     },
     {
       "rank": 5,
-      "keyword": "유니온블루",
-      "rankIncrement": 155
+      "keyword": "더플백",
+      "rankIncrement": 196
     },
     {
       "rank": 6,
-      "keyword": "여름바지",
-      "rankIncrement": 109
+      "keyword": "더뮤지엄비지터",
+      "rankIncrement": 122
     },
     {
       "rank": 7,
-      "keyword": "체험단",
-      "rankIncrement": 152
+      "keyword": "아이폰 케이스",
+      "rankIncrement": 325
     },
     {
       "rank": 8,
-      "keyword": "베럴",
-      "rankIncrement": 131
+      "keyword": "지프 후드집업",
+      "rankIncrement": 159
     },
     {
       "rank": 9,
-      "keyword": "오클리",
-      "rankIncrement": 168
+      "keyword": "스커트",
+      "rankIncrement": 108
     },
     {
       "rank": 10,
-      "keyword": "배럴",
-      "rankIncrement": 127
+      "keyword": "송이송이",
+      "rankIncrement": 190
     }
   ]
 }
