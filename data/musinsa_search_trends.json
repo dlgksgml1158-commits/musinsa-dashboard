@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-13T05:40:38.469033+00:00",
+  "updatedAt": "2026-08-13T09:55:23.377468+00:00",
   "popular": [
     {
       "rank": 1,
@@ -19,17 +19,17 @@
     {
       "rank": 4,
       "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "바람막이",
       "rankIncrement": 1
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "모자",
       "rankIncrement": -1
+    },
+    {
+      "rank": 6,
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
@@ -39,69 +39,69 @@
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": -1
+      "rankIncrement": -2
     },
     {
       "rank": 9,
-      "keyword": "후드티",
-      "rankIncrement": 0
+      "keyword": "백팩",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "블루종",
-      "rankIncrement": 103
+      "keyword": "무센트",
+      "rankIncrement": 108
     },
     {
       "rank": 2,
-      "keyword": "레이브",
-      "rankIncrement": 169
+      "keyword": "블랙야크 스톤마스터",
+      "rankIncrement": 131
     },
     {
       "rank": 3,
-      "keyword": "커브드팬츠",
-      "rankIncrement": 124
+      "keyword": "나이키 신발",
+      "rankIncrement": 126
     },
     {
       "rank": 4,
-      "keyword": "테켓",
-      "rankIncrement": 141
+      "keyword": "후브스",
+      "rankIncrement": 108
     },
     {
       "rank": 5,
-      "keyword": "더바넷",
-      "rankIncrement": 117
+      "keyword": "남자 팔찌",
+      "rankIncrement": 123
     },
     {
       "rank": 6,
-      "keyword": "더플백",
-      "rankIncrement": 209
+      "keyword": "블러셔",
+      "rankIncrement": 111
     },
     {
       "rank": 7,
-      "keyword": "mlb 모자",
-      "rankIncrement": 113
+      "keyword": "아디다스 반팔",
+      "rankIncrement": 227
     },
     {
       "rank": 8,
-      "keyword": "젝시믹스",
-      "rankIncrement": 102
+      "keyword": "리에티",
+      "rankIncrement": 215
     },
     {
       "rank": 9,
-      "keyword": "후브스",
-      "rankIncrement": 119
+      "keyword": "호카",
+      "rankIncrement": 142
     },
     {
       "rank": 10,
-      "keyword": "어바웃톤",
-      "rankIncrement": 196
+      "keyword": "엠엘비",
+      "rankIncrement": 132
     }
   ]
 }
