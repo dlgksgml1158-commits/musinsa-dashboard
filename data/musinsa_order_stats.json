@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T05:38:14.042016+00:00",
+  "updatedAt": "2026-08-14T09:52:45.838464+00:00",
   "items": [
     {
       "date": "2026-05-16",
@@ -222,7 +222,7 @@
       "date": "2026-06-16",
       "qtyAll": 126,
       "priceAll": 6654350,
-      "qtySale": 86,
+      "qtySale": 85,
       "priceSale": 3694960
     },
     {
@@ -285,7 +285,7 @@
       "date": "2026-06-25",
       "qtyAll": 23,
       "priceAll": 997860,
-      "qtySale": 16,
+      "qtySale": 15,
       "priceSale": 676280
     },
     {
@@ -334,7 +334,7 @@
       "date": "2026-07-02",
       "qtyAll": 37,
       "priceAll": 2025590,
-      "qtySale": 25,
+      "qtySale": 24,
       "priceSale": 1011920
     },
     {
@@ -509,8 +509,8 @@
       "date": "2026-07-27",
       "qtyAll": 20,
       "priceAll": 994860,
-      "qtySale": 16,
-      "priceSale": 791820
+      "qtySale": 15,
+      "priceSale": 403740
     },
     {
       "date": "2026-07-28",
@@ -572,8 +572,8 @@
       "date": "2026-08-05",
       "qtyAll": 10,
       "priceAll": 663060,
-      "qtySale": 9,
-      "priceSale": 523160
+      "qtySale": 8,
+      "priceSale": 478130
     },
     {
       "date": "2026-08-06",
@@ -633,10 +633,10 @@
     },
     {
       "date": "2026-08-14",
-      "qtyAll": 4,
-      "priceAll": 85942,
-      "qtySale": 2,
-      "priceSale": 85942
+      "qtyAll": 6,
+      "priceAll": 189972,
+      "qtySale": 4,
+      "priceSale": 189972
     }
   ]
 }
