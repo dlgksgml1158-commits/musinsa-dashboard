@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T09:52:45.630403+00:00",
+  "updatedAt": "2026-08-14T14:17:28.227417+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,99 +9,99 @@
     {
       "rank": 2,
       "keyword": "후드집업",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "반팔",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": -2
     },
     {
       "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "가방",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
+      "keyword": "백팩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "코드그라피",
-      "rankIncrement": 205
+      "keyword": "뉴에라 모자",
+      "rankIncrement": 106
     },
     {
       "rank": 2,
-      "keyword": "노매뉴얼",
-      "rankIncrement": 100
+      "keyword": "레더자켓",
+      "rankIncrement": 129
     },
     {
       "rank": 3,
-      "keyword": "산산기어",
-      "rankIncrement": 102
+      "keyword": "에스트라",
+      "rankIncrement": 254
     },
     {
       "rank": 4,
-      "keyword": "오드타입",
-      "rankIncrement": 114
+      "keyword": "브라",
+      "rankIncrement": 176
     },
     {
       "rank": 5,
-      "keyword": "키츠네",
-      "rankIncrement": 126
+      "keyword": "시눈",
+      "rankIncrement": 135
     },
     {
       "rank": 6,
-      "keyword": "메종 키츠네",
-      "rankIncrement": 136
+      "keyword": "페리페라",
+      "rankIncrement": 147
     },
     {
       "rank": 7,
-      "keyword": "9999아카이브",
-      "rankIncrement": 170
-    },
-    {
-      "rank": 8,
-      "keyword": "폴로 반팔",
-      "rankIncrement": 170
-    },
-    {
-      "rank": 9,
-      "keyword": "무드인사이드",
+      "keyword": "클로그",
       "rankIncrement": 115
     },
     {
+      "rank": 8,
+      "keyword": "노스페이스 경량패딩",
+      "rankIncrement": 218
+    },
+    {
+      "rank": 9,
+      "keyword": "귀걸이",
+      "rankIncrement": 104
+    },
+    {
       "rank": 10,
-      "keyword": "헨리넥 롱슬리브",
-      "rankIncrement": 203
+      "keyword": "캘빈클라인 언더웨어",
+      "rankIncrement": 111
     }
   ]
 }
