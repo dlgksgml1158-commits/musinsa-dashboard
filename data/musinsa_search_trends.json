@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-08-15T09:17:50.951728+00:00",
+  "updatedAt": "2026-08-15T13:32:58.505177+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "꺼먹살이",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "후드집업",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "반팔",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "바람막이",
+      "rankIncrement": 2
+    },
+    {
       "rank": 6,
-      "keyword": "모자",
+      "keyword": "꺼먹살이",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "무배당발",
+      "rankIncrement": -2
     },
     {
       "rank": 8,
-      "keyword": "후드티",
+      "keyword": "가방",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "가방",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "모자",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "킨치",
-      "rankIncrement": 115
+      "keyword": "부츠",
+      "rankIncrement": 109
     },
     {
       "rank": 2,
-      "keyword": "이미스",
-      "rankIncrement": 107
+      "keyword": "비키니",
+      "rankIncrement": 124
     },
     {
       "rank": 3,
-      "keyword": "노티카",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 4,
-      "keyword": "팀버랜드",
-      "rankIncrement": 162
-    },
-    {
-      "rank": 5,
-      "keyword": "마리끌레르",
+      "keyword": "속옷",
       "rankIncrement": 143
     },
     {
+      "rank": 4,
+      "keyword": "더플백",
+      "rankIncrement": 139
+    },
+    {
+      "rank": 5,
+      "keyword": "에스트라",
+      "rankIncrement": 106
+    },
+    {
       "rank": 6,
-      "keyword": "샴푸",
+      "keyword": "크롭 셔츠",
       "rankIncrement": 118
     },
     {
       "rank": 7,
-      "keyword": "아디다스 트랙팬츠",
-      "rankIncrement": 137
+      "keyword": "슈프림",
+      "rankIncrement": 204
     },
     {
       "rank": 8,
-      "keyword": "스웨이드",
-      "rankIncrement": 111
+      "keyword": "투에이엔",
+      "rankIncrement": 242
     },
     {
       "rank": 9,
-      "keyword": "르아르",
-      "rankIncrement": 105
+      "keyword": "최저가 도전",
+      "rankIncrement": 142
     },
     {
       "rank": 10,
-      "keyword": "챔피온 후드집업",
-      "rankIncrement": 136
+      "keyword": "긴바지",
+      "rankIncrement": 106
     }
   ]
 }
