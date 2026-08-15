@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-08-15T01:07:15.313894+00:00",
+  "updatedAt": "2026-08-15T04:32:39.628014+00:00",
   "items": [
     {
       "rank": 1,
@@ -414,8 +414,8 @@
       "name": "에어리 에센셜 카라 하프 니트 [IVORY] / WBE2L05513",
       "price": 63000,
       "originalPrice": 63000,
-      "discountRate": 49,
-      "finalPrice": 32390,
+      "discountRate": 47,
+      "finalPrice": 33180,
       "category": "001006",
       "categoryLabel": "니트/스웨터",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20260403/6254021/6254021_17852921896496_500.jpg",
@@ -867,8 +867,8 @@
         "name": "에어리 에센셜 카라 하프 니트 [IVORY] / WBE2L05513",
         "price": 63000,
         "originalPrice": 63000,
-        "discountRate": 49,
-        "finalPrice": 32390,
+        "discountRate": 47,
+        "finalPrice": 33180,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260403/6254021/6254021_17852921896496_500.jpg",
@@ -2570,8 +2570,8 @@
         "name": "경량 퀵드라이 자외선차단 후드 긴팔 티셔츠",
         "price": 45800,
         "originalPrice": 45800,
-        "discountRate": 38,
-        "finalPrice": 28190,
+        "discountRate": 37,
+        "finalPrice": 28820,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251203/5799261/5799261_17857313647636_500.jpg",
@@ -3204,8 +3204,8 @@
         "name": "에어리 에센셜 카라 하프 니트 [IVORY] / WBE2L05513",
         "price": 63000,
         "originalPrice": 63000,
-        "discountRate": 49,
-        "finalPrice": 32390,
+        "discountRate": 47,
+        "finalPrice": 33180,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260403/6254021/6254021_17852921896496_500.jpg",
@@ -3414,8 +3414,8 @@
         "name": "에어리 에센셜 카라 하프 니트 [NAVY] / WBE2L05513",
         "price": 63000,
         "originalPrice": 63000,
-        "discountRate": 49,
-        "finalPrice": 32390,
+        "discountRate": 48,
+        "finalPrice": 32800,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260403/6254017/6254017_17852922665068_500.jpg",
@@ -4223,21 +4223,6 @@
       },
       {
         "rank": 11,
-        "id": "ms-2447802",
-        "brand": "무신사 스탠다드",
-        "name": "데님 와이드 벌룬 팬츠 [크림]",
-        "price": 59900,
-        "originalPrice": 59900,
-        "discountRate": 80,
-        "finalPrice": 11990,
-        "category": "003001",
-        "categoryLabel": "데님 팬츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20220328/2447802/2447802_1_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/2447802",
-        "change": 0
-      },
-      {
-        "rank": 12,
         "id": "ms-5310275",
         "brand": "플랙 우먼",
         "name": "그린 와이드 스트레이트 데님팬츠 미드 블루",
@@ -4249,10 +4234,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250811/5310275/5310275_17840785898489_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5310275",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "ms-2796118",
         "brand": "밀리언코르",
         "name": "7160 캣 브러쉬 슬림 진청 부츠컷 데님팬츠",
@@ -4264,10 +4249,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220915/2796118/2796118_17809663324954_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2796118",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-6148718",
         "brand": "데케트 우먼",
         "name": "[린넨라이크]Linen Like Barrel Jeans DCWPT029CPINDIGO",
@@ -4279,10 +4264,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260317/6148718/6148718_17773547920190_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6148718",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-858911",
         "brand": "토피",
         "name": "와이드 데님 팬츠 (LIGHT BLUE)",
@@ -4294,10 +4279,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20180914/858911/858911_6_500.jpg",
         "productUrl": "https://www.musinsa.com/products/858911",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-6850948",
         "brand": "그레일즈",
         "name": "[GRAILZ X KOIN SEOUL] CARPENTER RAW PANTS [COATED BLACK]",
@@ -4309,10 +4294,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260715/6850948/6850948_17841751966633_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6850948",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-3134738",
         "brand": "무신사 스탠다드 우먼",
         "name": "[쿨탠다드] 우먼즈 와이드 데님 팬츠 [딥 인디고]",
@@ -4324,10 +4309,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230309/3134738/3134738_17134913646755_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3134738",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-5372427",
         "brand": "캘빈클라인 진",
         "name": "여성 와이드 레그핏 미드 블루 데님 47D848G 2J6",
@@ -4339,10 +4324,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250828/5372427/5372427_17593886317435_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5372427",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-5537853",
         "brand": "코이리스",
         "name": "위티 원턱 화이트 스티치 와이드 데님 팬츠",
@@ -4354,10 +4339,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250926/5537853/5537853_17697544917032_500.png",
         "productUrl": "https://www.musinsa.com/products/5537853",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-3046300",
         "brand": "아웃스탠딩",
         "name": "30S CINCH BACK SELVEDGE WIDE PANTS_INDIGO",
@@ -4369,10 +4354,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230130/3046300/3046300_17682655726680_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3046300",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-5944323",
         "brand": "르아르",
         "name": "가먼트 다잉 커브드 카고 팬츠 [베이지]",
@@ -4384,10 +4369,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260127/5944323/5944323_17772685768578_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5944323",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-5487571",
         "brand": "밀리언코르",
         "name": "포미 다크블루 스판 부츠컷 데님팬츠",
@@ -4399,10 +4384,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250918/5487571/5487571_17810604748080_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5487571",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-2711142",
         "brand": "트릴리온",
         "name": "바이오스톤 워싱 와이드 데님 팬츠 (CREAM)",
@@ -4414,10 +4399,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220810/2711142/2711142_1_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2711142",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-6365940",
         "brand": "108파운드",
         "name": "Elloy Low-rise Jean_Nonfade indigo",
@@ -4429,10 +4414,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260423/6365940/6365940_17812402951109_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6365940",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-4149670",
         "brand": "토피",
         "name": "SL01 섬머 데님 와이드 팬츠 (FADE LIGHT BLUE)",
@@ -4444,10 +4429,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240523/4149670/4149670_17164526388049_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4149670",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-6355069",
         "brand": "와르",
         "name": "M284 썸머 카치온 커브드 팬츠_실버 베이지",
@@ -4459,10 +4444,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260422/6355069/6355069_17768374423880_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6355069",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-6897428",
         "brand": "아디다스",
         "name": "SST 스트레이트 레그 데님 진 - 라이트그레이데님 / KQ8853",
@@ -4474,10 +4459,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260722/6897428/6897428_17848616926843_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6897428",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-7021764",
         "brand": "다이닛",
         "name": "SLIM SEMI BOOTCUT DENIM IN BLUE",
@@ -4489,10 +4474,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260807/7021764/7021764_17860783376251_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7021764",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-3098405",
         "brand": "플랙",
         "name": "깡스타일리스트 X 플랙 스티즈 K45 미드 블루",
@@ -4504,10 +4489,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230221/3098405/3098405_17574710622969_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3098405",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-6102668",
         "brand": "마인드브릿지",
         "name": "[오정규 PICK] 린넨 라이크 풀 밴딩 와이드 데님 팬츠 - 3color",
@@ -4519,7 +4504,22 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260309/6102668/6102668_17757941630545_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6102668",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-4953846",
+        "brand": "디키즈",
+        "name": "1993 카펜터 데님 팬츠 Tinted Khaki",
+        "price": 79000,
+        "originalPrice": 79000,
+        "discountRate": 46,
+        "finalPrice": 42660,
+        "category": "003001",
+        "categoryLabel": "데님 팬츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20250327/4953846/4953846_17470341606442_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/4953846",
+        "change": "NEW"
       }
     ],
     "003002": [
@@ -5644,8 +5644,8 @@
         "name": "원턱 버뮤다 트랙 반바지 4Color GP-509",
         "price": 42800,
         "originalPrice": 42800,
-        "discountRate": 77,
-        "finalPrice": 9900,
+        "discountRate": 42,
+        "finalPrice": 24900,
         "category": "003005",
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240510/4121511/4121511_17827814442475_500.jpg",
@@ -5882,7 +5882,7 @@
   "priceStats": {
     "": {
       "label": "전체",
-      "avg": 62509,
+      "avg": 62535,
       "min": 9800,
       "max": 239000,
       "count": 30
@@ -5910,7 +5910,7 @@
     },
     "001004": {
       "label": "후드 티셔츠",
-      "avg": 56661,
+      "avg": 56682,
       "min": 19900,
       "max": 158940,
       "count": 30
@@ -5924,7 +5924,7 @@
     },
     "001006": {
       "label": "니트/스웨터",
-      "avg": 40105,
+      "avg": 40145,
       "min": 9800,
       "max": 231990,
       "count": 30
@@ -5938,8 +5938,8 @@
     },
     "003001": {
       "label": "데님 팬츠",
-      "avg": 70750,
-      "min": 11990,
+      "avg": 71772,
+      "min": 29990,
       "max": 206100,
       "count": 30
     },
@@ -5959,7 +5959,7 @@
     },
     "003005": {
       "label": "반바지",
-      "avg": 35884,
+      "avg": 36384,
       "min": 7900,
       "max": 150000,
       "count": 30
