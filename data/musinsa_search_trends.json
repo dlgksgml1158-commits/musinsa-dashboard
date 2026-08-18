@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-08-18T04:35:06.182719+00:00",
+  "updatedAt": "2026-08-18T09:23:38.971096+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "롱슬리브",
-      "rankIncrement": 1
+      "keyword": "후드집업",
+      "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
-      "rankIncrement": 1
+      "keyword": "롱슬리브",
+      "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "반팔",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "모자",
-      "rankIncrement": 4
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "바람막이",
+      "keyword": "모자",
       "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "래플",
-      "rankIncrement": -5
+      "keyword": "아디다스",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "큐어",
+      "rankIncrement": -2
     },
     {
       "rank": 8,
       "keyword": "가방",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 4
+      "keyword": "백팩",
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "경량패딩",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "긴팔",
-      "rankIncrement": 104
+      "keyword": "벨리에",
+      "rankIncrement": 144
     },
     {
       "rank": 2,
-      "keyword": "아모우",
-      "rankIncrement": 186
-    },
-    {
-      "rank": 3,
-      "keyword": "무센트",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 4,
-      "keyword": "노이어",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 5,
-      "keyword": "탄산",
-      "rankIncrement": 186
-    },
-    {
-      "rank": 6,
-      "keyword": "유니온블루",
-      "rankIncrement": 124
-    },
-    {
-      "rank": 7,
-      "keyword": "넥타이",
-      "rankIncrement": 286
-    },
-    {
-      "rank": 8,
-      "keyword": "마스마룰즈",
+      "keyword": "파르티멘토",
       "rankIncrement": 104
     },
     {
-      "rank": 9,
+      "rank": 3,
+      "keyword": "스커트",
+      "rankIncrement": 135
+    },
+    {
+      "rank": 4,
+      "keyword": "디지몬",
+      "rankIncrement": 285
+    },
+    {
+      "rank": 5,
+      "keyword": "여름바지",
+      "rankIncrement": 128
+    },
+    {
+      "rank": 6,
+      "keyword": "롱패딩",
+      "rankIncrement": 273
+    },
+    {
+      "rank": 7,
+      "keyword": "아디다스 슈퍼스타",
+      "rankIncrement": 352
+    },
+    {
+      "rank": 8,
       "keyword": "크롭",
-      "rankIncrement": 160
+      "rankIncrement": 114
+    },
+    {
+      "rank": 9,
+      "keyword": "스톤아일랜드",
+      "rankIncrement": 112
     },
     {
       "rank": 10,
-      "keyword": "노스페이스 후드",
-      "rankIncrement": 136
+      "keyword": "남자 반팔티",
+      "rankIncrement": 188
     }
   ]
 }
