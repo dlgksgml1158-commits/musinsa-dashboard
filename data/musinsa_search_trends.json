@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-19T01:08:49.573198+00:00",
+  "updatedAt": "2026-08-19T04:39:13.247505+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "후드집업",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 2,
       "keyword": "반팔",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
@@ -24,84 +24,84 @@
     {
       "rank": 5,
       "keyword": "바람막이",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 6,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": 2
     },
     {
       "rank": 7,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "가방",
+      "keyword": "셔츠",
       "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "경량패딩",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 2
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "꺼먹살이 키링",
-      "rankIncrement": 225
+      "keyword": "조선미녀",
+      "rankIncrement": 397
     },
     {
       "rank": 2,
-      "keyword": "동궁",
-      "rankIncrement": 222
+      "keyword": "에스피오나지",
+      "rankIncrement": 100
     },
     {
       "rank": 3,
-      "keyword": "팬티",
-      "rankIncrement": 101
+      "keyword": "넥타이",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "키티버니포니",
-      "rankIncrement": 176
+      "keyword": "스카프",
+      "rankIncrement": 201
     },
     {
       "rank": 5,
-      "keyword": "캘빈클라인",
-      "rankIncrement": 139
+      "keyword": "브라운브레스",
+      "rankIncrement": 113
     },
     {
       "rank": 6,
-      "keyword": "트레이닝 팬츠",
-      "rankIncrement": 120
+      "keyword": "틴트",
+      "rankIncrement": 117
     },
     {
       "rank": 7,
-      "keyword": "아디다스 트랙팬츠",
-      "rankIncrement": 164
+      "keyword": "레이어드",
+      "rankIncrement": 111
     },
     {
       "rank": 8,
-      "keyword": "마스크팩",
-      "rankIncrement": 131
+      "keyword": "캘빈클라인",
+      "rankIncrement": 211
     },
     {
       "rank": 9,
-      "keyword": "노스페이스 바람막이",
-      "rankIncrement": 145
+      "keyword": "스커트",
+      "rankIncrement": 194
     },
     {
       "rank": 10,
-      "keyword": "그라미치",
-      "rankIncrement": 179
+      "keyword": "트리밍버드",
+      "rankIncrement": 147
     }
   ]
 }
