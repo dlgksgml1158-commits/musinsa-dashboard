@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T09:25:29.940723+00:00",
+  "updatedAt": "2026-08-19T13:46:48.470027+00:00",
   "startDate": "2026-05-21",
   "endDate": "2026-08-19",
   "items": [
@@ -245,6 +245,136 @@
     }
   ],
   "byDate": {
+    "2026-08-18": [
+      {
+        "rank": 1,
+        "goodsNo": "6065790",
+        "name": "에센셜 스탠다드 슬랙스 [블랙]",
+        "styleNo": "ELP02L010",
+        "qty": 1,
+        "salesAmt": 35850
+      },
+      {
+        "rank": 2,
+        "goodsNo": "3782452",
+        "name": "코튼/나일론 에센셜 셔츠 (화이트)",
+        "styleNo": "EGD59L018",
+        "qty": 1,
+        "salesAmt": 49500
+      }
+    ],
+    "2026-08-17": [
+      {
+        "rank": 1,
+        "goodsNo": "4827321",
+        "name": "위시앤웨어 시어서커 카라티 (그레이)",
+        "styleNo": "EJI16S010",
+        "qty": 1,
+        "salesAmt": 37690
+      },
+      {
+        "rank": 2,
+        "goodsNo": "4813902",
+        "name": "루즈핏 시어서커 반팔셔츠 (화이트)",
+        "styleNo": "EJI10S010",
+        "qty": 1,
+        "salesAmt": 44220
+      },
+      {
+        "rank": 3,
+        "goodsNo": "3782367",
+        "name": "[스트레이트] 데님 팬츠 (워시드 블랙)",
+        "styleNo": "ELP60L018",
+        "qty": 1,
+        "salesAmt": 45030
+      },
+      {
+        "rank": 4,
+        "goodsNo": "4047159",
+        "name": "[2PACK][스트레이트] 데님 팬츠 (5Color)",
+        "styleNo": "EGP6064",
+        "qty": 1,
+        "salesAmt": 71100
+      }
+    ],
+    "2026-08-16": [
+      {
+        "rank": 1,
+        "goodsNo": "5357918",
+        "name": "[리얼 레더] 스웨이드 해링턴 재킷 [브라운]",
+        "styleNo": "EKX02L119",
+        "qty": 1,
+        "salesAmt": 247410
+      },
+      {
+        "rank": 2,
+        "goodsNo": "3782367",
+        "name": "[스트레이트] 데님 팬츠 (워시드 블랙)",
+        "styleNo": "ELP60L018",
+        "qty": 1,
+        "salesAmt": 45030
+      },
+      {
+        "rank": 3,
+        "goodsNo": "6175577",
+        "name": "수피마 코튼 오버사이즈 티셔츠 (11Color)",
+        "styleNo": "EHT0111",
+        "qty": 1,
+        "salesAmt": 22050
+      }
+    ],
+    "2026-08-15": [
+      {
+        "rank": 1,
+        "goodsNo": "6065796",
+        "name": "워시드 코튼 루즈핏 투턱 팬츠 [블랙]",
+        "styleNo": "ELP40L210",
+        "qty": 1,
+        "salesAmt": 51900
+      },
+      {
+        "rank": 2,
+        "goodsNo": "3782367",
+        "name": "[스트레이트] 데님 팬츠 (워시드 블랙)",
+        "styleNo": "ELP60L018",
+        "qty": 1,
+        "salesAmt": 45030
+      },
+      {
+        "rank": 3,
+        "goodsNo": "6299698",
+        "name": "[SET] 에센셜 스탠다드 셋업 [블랙]",
+        "styleNo": "ELJ02_ELP0203",
+        "qty": 1,
+        "salesAmt": 75990
+      }
+    ],
+    "2026-08-14": [
+      {
+        "rank": 1,
+        "goodsNo": "3782367",
+        "name": "[스트레이트] 데님 팬츠 (워시드 블랙)",
+        "styleNo": "ELP60L018",
+        "qty": 1,
+        "salesAmt": 45030
+      },
+      {
+        "rank": 2,
+        "goodsNo": "6065791",
+        "name": "에센셜 플레어 슬랙스 [블랙]",
+        "styleNo": "ELP03L010",
+        "qty": 1,
+        "salesAmt": 53240
+      },
+      {
+        "rank": 3,
+        "goodsNo": "4379795",
+        "name": "[리뉴얼] 스트레이트 데님팬츠 (3color)",
+        "styleNo": "EIP6065",
+        "qty": 1,
+        "salesAmt": 36660
+      }
+    ],
     "2026-08-12": [
       {
         "rank": 1,
@@ -274,6 +404,14 @@
       },
       {
         "rank": 3,
+        "goodsNo": "5357918",
+        "name": "[리얼 레더] 스웨이드 해링턴 재킷 [브라운]",
+        "styleNo": "EKX02L119",
+        "qty": 1,
+        "salesAmt": 207450
+      },
+      {
+        "rank": 4,
         "goodsNo": "6175577",
         "name": "수피마 코튼 오버사이즈 티셔츠 (11Color)",
         "styleNo": "EHT0111",
@@ -281,7 +419,7 @@
         "salesAmt": 22050
       },
       {
-        "rank": 4,
+        "rank": 5,
         "goodsNo": "3782368",
         "name": "[스트레이트] 데님 팬츠 (블랙)",
         "styleNo": "ELP61L018",
@@ -289,7 +427,7 @@
         "salesAmt": 45030
       },
       {
-        "rank": 5,
+        "rank": 6,
         "goodsNo": "4813879",
         "name": "크링클 시어서커 셔켓 (블랙)",
         "styleNo": "EJD15L010",
@@ -363,6 +501,40 @@
         "styleNo": "EKJ10A019",
         "qty": 1,
         "salesAmt": 81990
+      }
+    ],
+    "2026-08-02": [
+      {
+        "rank": 1,
+        "goodsNo": "3782367",
+        "name": "[스트레이트] 데님 팬츠 (워시드 블랙)",
+        "styleNo": "ELP60L018",
+        "qty": 2,
+        "salesAmt": 90060
+      },
+      {
+        "rank": 2,
+        "goodsNo": "4827315",
+        "name": "썸머 스트링 팬츠 (베이지)",
+        "styleNo": "EJP50L010",
+        "qty": 1,
+        "salesAmt": 74250
+      },
+      {
+        "rank": 3,
+        "goodsNo": "3999227",
+        "name": "코튼 스트링 카라 자켓 (옐로우)",
+        "styleNo": "EHJ03B010",
+        "qty": 1,
+        "salesAmt": 71600
+      },
+      {
+        "rank": 4,
+        "goodsNo": "3782368",
+        "name": "[스트레이트] 데님 팬츠 (블랙)",
+        "styleNo": "ELP61L018",
+        "qty": 1,
+        "salesAmt": 45030
       }
     ],
     "2026-08-08": [
@@ -695,40 +867,6 @@
         "styleNo": "EKU0304_EKQ0304",
         "qty": 1,
         "salesAmt": 161810
-      }
-    ],
-    "2026-08-02": [
-      {
-        "rank": 1,
-        "goodsNo": "3782367",
-        "name": "[스트레이트] 데님 팬츠 (워시드 블랙)",
-        "styleNo": "ELP60L018",
-        "qty": 2,
-        "salesAmt": 90060
-      },
-      {
-        "rank": 2,
-        "goodsNo": "4827315",
-        "name": "썸머 스트링 팬츠 (베이지)",
-        "styleNo": "EJP50L010",
-        "qty": 1,
-        "salesAmt": 74250
-      },
-      {
-        "rank": 3,
-        "goodsNo": "3999227",
-        "name": "코튼 스트링 카라 자켓 (옐로우)",
-        "styleNo": "EHJ03B010",
-        "qty": 1,
-        "salesAmt": 71600
-      },
-      {
-        "rank": 4,
-        "goodsNo": "3782368",
-        "name": "[스트레이트] 데님 팬츠 (블랙)",
-        "styleNo": "ELP61L018",
-        "qty": 1,
-        "salesAmt": 45030
       }
     ],
     "2026-08-01": [

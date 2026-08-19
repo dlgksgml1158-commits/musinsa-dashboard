@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T09:25:29.448972+00:00",
+  "updatedAt": "2026-08-19T13:46:47.920231+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,99 +9,99 @@
     {
       "rank": 2,
       "keyword": "롱슬리브",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "반팔",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
+      "keyword": "바람막이",
       "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "모자",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": -3
-    },
-    {
-      "rank": 9,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "가방",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 9,
+      "keyword": "모자",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "셔츠",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "헬리녹스",
-      "rankIncrement": 100
+      "keyword": "틴트",
+      "rankIncrement": 187
     },
     {
       "rank": 2,
-      "keyword": "세터",
-      "rankIncrement": 102
+      "keyword": "캘빈클라인",
+      "rankIncrement": 116
     },
     {
       "rank": 3,
-      "keyword": "하이산",
-      "rankIncrement": 105
+      "keyword": "긴팔티",
+      "rankIncrement": 170
     },
     {
       "rank": 4,
-      "keyword": "노티카",
-      "rankIncrement": 152
+      "keyword": "프로틴",
+      "rankIncrement": 174
     },
     {
       "rank": 5,
-      "keyword": "무센트",
-      "rankIncrement": 113
+      "keyword": "슬링백",
+      "rankIncrement": 145
     },
     {
       "rank": 6,
-      "keyword": "자라",
-      "rankIncrement": 147
+      "keyword": "브라",
+      "rankIncrement": 104
     },
     {
       "rank": 7,
-      "keyword": "슬링백",
-      "rankIncrement": 177
+      "keyword": "해칭룸",
+      "rankIncrement": 116
     },
     {
       "rank": 8,
-      "keyword": "몽벨",
-      "rankIncrement": 108
+      "keyword": "러닝모자",
+      "rankIncrement": 119
     },
     {
       "rank": 9,
-      "keyword": "크롭 셔츠",
-      "rankIncrement": 201
+      "keyword": "아디다스 후드집업",
+      "rankIncrement": 209
     },
     {
       "rank": 10,
-      "keyword": "닉켈하우스",
-      "rankIncrement": 107
+      "keyword": "도프제이슨",
+      "rankIncrement": 149
     }
   ]
 }
