@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-08-18T13:44:42.783498+00:00",
+  "updatedAt": "2026-08-19T01:08:49.573198+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "후드집업",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 2,
+      "keyword": "반팔",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 3,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 3,
-      "keyword": "반팔",
-      "rankIncrement": 0
-    },
-    {
       "rank": 4,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "후드티",
+      "rank": 6,
+      "keyword": "모자",
       "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "가방",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "모자",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 10,
       "keyword": "백팩",
-      "rankIncrement": 0
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "플랫슈즈",
-      "rankIncrement": 136
+      "keyword": "꺼먹살이 키링",
+      "rankIncrement": 225
     },
     {
       "rank": 2,
-      "keyword": "스트라이프 셔츠",
-      "rankIncrement": 105
+      "keyword": "동궁",
+      "rankIncrement": 222
     },
     {
       "rank": 3,
-      "keyword": "키티",
-      "rankIncrement": 145
+      "keyword": "팬티",
+      "rankIncrement": 101
     },
     {
       "rank": 4,
-      "keyword": "무르",
-      "rankIncrement": 119
+      "keyword": "키티버니포니",
+      "rankIncrement": 176
     },
     {
       "rank": 5,
-      "keyword": "무센트",
-      "rankIncrement": 206
+      "keyword": "캘빈클라인",
+      "rankIncrement": 139
     },
     {
       "rank": 6,
-      "keyword": "남자 반팔티",
-      "rankIncrement": 187
-    },
-    {
-      "rank": 7,
-      "keyword": "로라로라",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 8,
-      "keyword": "무어",
-      "rankIncrement": 102
-    },
-    {
-      "rank": 9,
-      "keyword": "아디다스 트랙팬츠",
+      "keyword": "트레이닝 팬츠",
       "rankIncrement": 120
     },
     {
+      "rank": 7,
+      "keyword": "아디다스 트랙팬츠",
+      "rankIncrement": 164
+    },
+    {
+      "rank": 8,
+      "keyword": "마스크팩",
+      "rankIncrement": 131
+    },
+    {
+      "rank": 9,
+      "keyword": "노스페이스 바람막이",
+      "rankIncrement": 145
+    },
+    {
       "rank": 10,
-      "keyword": "아이앱스튜디오",
-      "rankIncrement": 176
+      "keyword": "그라미치",
+      "rankIncrement": 179
     }
   ]
 }
