@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T09:24:50.057805+00:00",
+  "updatedAt": "2026-08-20T13:50:21.731057+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,8 +23,8 @@
     },
     {
       "rank": 5,
-      "keyword": "크록스",
-      "rankIncrement": 7
+      "keyword": "후드티",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "모자",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "후드티",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "꺼먹살이",
-      "rankIncrement": 3
+      "keyword": "백팩",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "후리스",
-      "rankIncrement": 105
+      "keyword": "팬츠",
+      "rankIncrement": 116
     },
     {
       "rank": 2,
-      "keyword": "크롭 셔츠",
-      "rankIncrement": 198
+      "keyword": "야세",
+      "rankIncrement": 128
     },
     {
       "rank": 3,
-      "keyword": "꺼먹살이 굿즈",
-      "rankIncrement": 131
+      "keyword": "에노시",
+      "rankIncrement": 110
     },
     {
       "rank": 4,
-      "keyword": "7부 티셔츠",
-      "rankIncrement": 141
-    },
-    {
-      "rank": 5,
-      "keyword": "남자 가방",
-      "rankIncrement": 138
-    },
-    {
-      "rank": 6,
-      "keyword": "닉켈하우스",
-      "rankIncrement": 157
-    },
-    {
-      "rank": 7,
-      "keyword": "브라운브레스",
-      "rankIncrement": 133
-    },
-    {
-      "rank": 8,
-      "keyword": "후아유",
-      "rankIncrement": 103
-    },
-    {
-      "rank": 9,
-      "keyword": "블레이저",
+      "keyword": "긴팔티",
       "rankIncrement": 101
     },
     {
-      "rank": 10,
-      "keyword": "남자 바지",
+      "rank": 5,
+      "keyword": "잔스포츠 백팩",
+      "rankIncrement": 168
+    },
+    {
+      "rank": 6,
+      "keyword": "스웨이드",
+      "rankIncrement": 101
+    },
+    {
+      "rank": 7,
+      "keyword": "마뗑킴 지갑",
       "rankIncrement": 140
+    },
+    {
+      "rank": 8,
+      "keyword": "코치",
+      "rankIncrement": 162
+    },
+    {
+      "rank": 9,
+      "keyword": "트레이닝 셋업",
+      "rankIncrement": 186
+    },
+    {
+      "rank": 10,
+      "keyword": "코닥",
+      "rankIncrement": 103
     }
   ]
 }
