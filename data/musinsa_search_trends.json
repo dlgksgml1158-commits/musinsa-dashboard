@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T13:50:21.731057+00:00",
+  "updatedAt": "2026-08-21T01:11:38.903416+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "반팔",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "후드티",
+      "rank": 4,
+      "keyword": "반팔",
       "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "경량패딩",
+      "rankIncrement": 1
     },
     {
       "rank": 6,
       "keyword": "바람막이",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "스파오",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "백팩",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": 6
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "바지",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "팬츠",
-      "rankIncrement": 116
+      "keyword": "에스피오나지",
+      "rankIncrement": 249
     },
     {
       "rank": 2,
-      "keyword": "야세",
-      "rankIncrement": 128
+      "keyword": "르아르",
+      "rankIncrement": 116
     },
     {
       "rank": 3,
-      "keyword": "에노시",
-      "rankIncrement": 110
+      "keyword": "뉴에라",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "긴팔티",
-      "rankIncrement": 101
+      "keyword": "매일유업",
+      "rankIncrement": 152
     },
     {
       "rank": 5,
-      "keyword": "잔스포츠 백팩",
-      "rankIncrement": 168
+      "keyword": "트레이닝 바지",
+      "rankIncrement": 202
     },
     {
       "rank": 6,
-      "keyword": "스웨이드",
-      "rankIncrement": 101
+      "keyword": "살로몬 후드",
+      "rankIncrement": 369
     },
     {
       "rank": 7,
-      "keyword": "마뗑킴 지갑",
-      "rankIncrement": 140
+      "keyword": "삐아",
+      "rankIncrement": 138
     },
     {
       "rank": 8,
-      "keyword": "코치",
-      "rankIncrement": 162
+      "keyword": "버건디 반팔",
+      "rankIncrement": 206
     },
     {
       "rank": 9,
-      "keyword": "트레이닝 셋업",
-      "rankIncrement": 186
+      "keyword": "어그",
+      "rankIncrement": 180
     },
     {
       "rank": 10,
-      "keyword": "코닥",
-      "rankIncrement": 103
+      "keyword": "키뮤어",
+      "rankIncrement": 684
     }
   ]
 }
