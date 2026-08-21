@@ -1,29 +1,29 @@
 {
-  "updatedAt": "2026-08-21T01:11:38.903416+00:00",
+  "updatedAt": "2026-08-21T04:37:15.253648+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "아디다스",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 4,
       "keyword": "반팔",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "경량패딩",
+      "keyword": "스파오",
       "rankIncrement": 1
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "스파오",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "백팩",
+      "keyword": "경량패딩",
       "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "후드티",
-      "rankIncrement": 6
+      "keyword": "모자",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 2
+      "keyword": "백팩",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "에스피오나지",
-      "rankIncrement": 249
+      "keyword": "노이어",
+      "rankIncrement": 168
     },
     {
       "rank": 2,
-      "keyword": "르아르",
-      "rankIncrement": 116
+      "keyword": "아디다스 바지",
+      "rankIncrement": 145
     },
     {
       "rank": 3,
-      "keyword": "뉴에라",
-      "rankIncrement": 100
+      "keyword": "반다나",
+      "rankIncrement": 104
     },
     {
       "rank": 4,
-      "keyword": "매일유업",
-      "rankIncrement": 152
+      "keyword": "휠라",
+      "rankIncrement": 207
     },
     {
       "rank": 5,
-      "keyword": "트레이닝 바지",
-      "rankIncrement": 202
+      "keyword": "엄브로",
+      "rankIncrement": 115
     },
     {
       "rank": 6,
-      "keyword": "살로몬 후드",
-      "rankIncrement": 369
+      "keyword": "언더아머",
+      "rankIncrement": 156
     },
     {
       "rank": 7,
-      "keyword": "삐아",
-      "rankIncrement": 138
+      "keyword": "헤라",
+      "rankIncrement": 160
     },
     {
       "rank": 8,
-      "keyword": "버건디 반팔",
-      "rankIncrement": 206
+      "keyword": "오클리",
+      "rankIncrement": 105
     },
     {
       "rank": 9,
-      "keyword": "어그",
-      "rankIncrement": 180
+      "keyword": "파우치",
+      "rankIncrement": 251
     },
     {
       "rank": 10,
-      "keyword": "키뮤어",
-      "rankIncrement": 684
+      "keyword": "유니온블루",
+      "rankIncrement": 113
     }
   ]
 }
