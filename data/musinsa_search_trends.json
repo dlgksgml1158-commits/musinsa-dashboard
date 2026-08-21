@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T04:37:15.253648+00:00",
+  "updatedAt": "2026-08-21T09:27:36.552591+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,18 +13,18 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "반팔",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "반팔",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "스파오",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": 2
     },
     {
       "rank": 6,
@@ -34,74 +34,74 @@
     {
       "rank": 7,
       "keyword": "가방",
-      "rankIncrement": 2
+      "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "경량패딩",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "모자",
-      "rankIncrement": -1
+      "keyword": "경량패딩",
+      "rankIncrement": 4
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "노이어",
-      "rankIncrement": 168
+      "keyword": "아른",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "아디다스 바지",
-      "rankIncrement": 145
+      "keyword": "노스페이스 바람막이",
+      "rankIncrement": 163
     },
     {
       "rank": 3,
-      "keyword": "반다나",
-      "rankIncrement": 104
+      "keyword": "뉴니스",
+      "rankIncrement": 119
     },
     {
       "rank": 4,
-      "keyword": "휠라",
-      "rankIncrement": 207
+      "keyword": "나인위시스",
+      "rankIncrement": 112
     },
     {
       "rank": 5,
-      "keyword": "엄브로",
-      "rankIncrement": 115
+      "keyword": "해칭룸",
+      "rankIncrement": 257
     },
     {
       "rank": 6,
-      "keyword": "언더아머",
-      "rankIncrement": 156
+      "keyword": "스웨이드",
+      "rankIncrement": 124
     },
     {
       "rank": 7,
-      "keyword": "헤라",
-      "rankIncrement": 160
+      "keyword": "썬번 프로젝트",
+      "rankIncrement": 135
     },
     {
       "rank": 8,
-      "keyword": "오클리",
-      "rankIncrement": 105
+      "keyword": "어그",
+      "rankIncrement": 102
     },
     {
       "rank": 9,
-      "keyword": "파우치",
-      "rankIncrement": 251
+      "keyword": "베리웨이",
+      "rankIncrement": 161
     },
     {
       "rank": 10,
-      "keyword": "유니온블루",
-      "rankIncrement": 113
+      "keyword": "맥",
+      "rankIncrement": 195
     }
   ]
 }
