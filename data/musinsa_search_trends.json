@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-21T09:27:36.552591+00:00",
+  "updatedAt": "2026-08-21T13:48:13.783304+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "keyword": "후드집업",
+      "rankIncrement": 1
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": -1
     },
     {
       "rank": 3,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "후드티",
+      "keyword": "바람막이",
       "rankIncrement": 2
     },
     {
-      "rank": 6,
-      "keyword": "바람막이",
+      "rank": 5,
+      "keyword": "경량패딩",
       "rankIncrement": -1
     },
     {
+      "rank": 6,
+      "keyword": "후드티",
+      "rankIncrement": 1
+    },
+    {
       "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": -2
     },
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "경량패딩",
-      "rankIncrement": 4
+      "keyword": "가방",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
       "keyword": "모자",
-      "rankIncrement": 2
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아른",
-      "rankIncrement": 118
+      "keyword": "나이키 신발",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "노스페이스 바람막이",
-      "rankIncrement": 163
+      "keyword": "스톤아일랜드",
+      "rankIncrement": 155
     },
     {
       "rank": 3,
-      "keyword": "뉴니스",
-      "rankIncrement": 119
+      "keyword": "쿨아이템",
+      "rankIncrement": 169
     },
     {
       "rank": 4,
-      "keyword": "나인위시스",
-      "rankIncrement": 112
+      "keyword": "샴푸",
+      "rankIncrement": 128
     },
     {
       "rank": 5,
-      "keyword": "해칭룸",
-      "rankIncrement": 257
+      "keyword": "디오디너리",
+      "rankIncrement": 129
     },
     {
       "rank": 6,
-      "keyword": "스웨이드",
-      "rankIncrement": 124
+      "keyword": "나이키 맨투맨",
+      "rankIncrement": 160
     },
     {
       "rank": 7,
-      "keyword": "썬번 프로젝트",
-      "rankIncrement": 135
+      "keyword": "마뗑킴 가방",
+      "rankIncrement": 101
     },
     {
       "rank": 8,
-      "keyword": "어그",
-      "rankIncrement": 102
+      "keyword": "팬티",
+      "rankIncrement": 100
     },
     {
       "rank": 9,
-      "keyword": "베리웨이",
-      "rankIncrement": 161
+      "keyword": "원숄더",
+      "rankIncrement": 124
     },
     {
       "rank": 10,
-      "keyword": "맥",
-      "rankIncrement": 195
+      "keyword": "슈프림",
+      "rankIncrement": 106
     }
   ]
 }
