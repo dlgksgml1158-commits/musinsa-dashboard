@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T09:18:54.935977+00:00",
+  "updatedAt": "2026-08-22T13:34:33.351157+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,32 +13,32 @@
     },
     {
       "rank": 3,
-      "keyword": "반팔",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "바람막이",
+      "rank": 4,
+      "keyword": "반팔",
       "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "아디다스",
+      "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "무배당발",
+      "rankIncrement": -2
     },
     {
       "rank": 8,
-      "keyword": "모자",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "바지",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아르베",
-      "rankIncrement": 116
+      "keyword": "아디다스 메리제인",
+      "rankIncrement": 143
     },
     {
       "rank": 2,
-      "keyword": "시크릿키",
-      "rankIncrement": 147
+      "keyword": "탄산마그네슘 롱슬리브",
+      "rankIncrement": 150
     },
     {
       "rank": 3,
-      "keyword": "피브",
-      "rankIncrement": 114
+      "keyword": "쿨아이템",
+      "rankIncrement": 126
     },
     {
       "rank": 4,
-      "keyword": "래플",
-      "rankIncrement": 133
+      "keyword": "플라스틱프로덕트",
+      "rankIncrement": 284
     },
     {
       "rank": 5,
-      "keyword": "팁토우",
-      "rankIncrement": 115
+      "keyword": "carhartt",
+      "rankIncrement": 119
     },
     {
       "rank": 6,
-      "keyword": "오헤시오",
-      "rankIncrement": 167
+      "keyword": "바디워시",
+      "rankIncrement": 127
     },
     {
       "rank": 7,
-      "keyword": "한스킨",
-      "rankIncrement": 246
+      "keyword": "토마스모어",
+      "rankIncrement": 120
     },
     {
       "rank": 8,
-      "keyword": "뉴니스",
-      "rankIncrement": 118
+      "keyword": "슈프림 후드티",
+      "rankIncrement": 109
     },
     {
       "rank": 9,
-      "keyword": "인사일런스",
-      "rankIncrement": 270
+      "keyword": "나이키 반바지",
+      "rankIncrement": 111
     },
     {
       "rank": 10,
-      "keyword": "배리웨이",
-      "rankIncrement": 201
+      "keyword": "시너진",
+      "rankIncrement": 302
     }
   ]
 }
