@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T04:31:48.963561+00:00",
+  "updatedAt": "2026-08-22T09:18:54.935977+00:00",
   "popular": [
     {
       "rank": 1,
@@ -24,7 +24,7 @@
     {
       "rank": 5,
       "keyword": "바람막이",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 6,
@@ -34,7 +34,7 @@
     {
       "rank": 7,
       "keyword": "경량패딩",
-      "rankIncrement": -2
+      "rankIncrement": 0
     },
     {
       "rank": 8,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "바지",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "알로",
-      "rankIncrement": 133
+      "keyword": "아르베",
+      "rankIncrement": 116
     },
     {
       "rank": 2,
-      "keyword": "킨치",
-      "rankIncrement": 154
+      "keyword": "시크릿키",
+      "rankIncrement": 147
     },
     {
       "rank": 3,
-      "keyword": "노스페이스 벤투스",
-      "rankIncrement": 138
+      "keyword": "피브",
+      "rankIncrement": 114
     },
     {
       "rank": 4,
-      "keyword": "쓰리타임즈",
-      "rankIncrement": 137
+      "keyword": "래플",
+      "rankIncrement": 133
     },
     {
       "rank": 5,
-      "keyword": "더플백",
-      "rankIncrement": 250
+      "keyword": "팁토우",
+      "rankIncrement": 115
     },
     {
       "rank": 6,
-      "keyword": "치노팬츠",
-      "rankIncrement": 101
+      "keyword": "오헤시오",
+      "rankIncrement": 167
     },
     {
       "rank": 7,
-      "keyword": "아우터",
-      "rankIncrement": 164
+      "keyword": "한스킨",
+      "rankIncrement": 246
     },
     {
       "rank": 8,
-      "keyword": "슬리브리스",
-      "rankIncrement": 155
+      "keyword": "뉴니스",
+      "rankIncrement": 118
     },
     {
       "rank": 9,
-      "keyword": "롱샴",
-      "rankIncrement": 154
+      "keyword": "인사일런스",
+      "rankIncrement": 270
     },
     {
       "rank": 10,
-      "keyword": "코닥",
-      "rankIncrement": 162
+      "keyword": "배리웨이",
+      "rankIncrement": 201
     }
   ]
 }
