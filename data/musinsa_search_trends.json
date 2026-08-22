@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-21T13:48:13.783304+00:00",
+  "updatedAt": "2026-08-22T01:07:54.200770+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "후드집업",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 2,
       "keyword": "롱슬리브",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
+      "keyword": "아디다스",
       "rankIncrement": 2
     },
     {
       "rank": 5,
-      "keyword": "경량패딩",
-      "rankIncrement": -1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "후드티",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 7,
-      "keyword": "아디다스",
+      "keyword": "경량패딩",
       "rankIncrement": -2
     },
     {
-      "rank": 8,
+      "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 1
+      "rankIncrement": 3
+    },
+    {
+      "rank": 8,
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
       "keyword": "가방",
-      "rankIncrement": -1
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "살로몬",
+      "rankIncrement": 5
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "나이키 신발",
+      "keyword": "에스피오나지",
       "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "스톤아일랜드",
-      "rankIncrement": 155
+      "keyword": "블랙야크 스톤마스터",
+      "rankIncrement": 145
     },
     {
       "rank": 3,
-      "keyword": "쿨아이템",
-      "rankIncrement": 169
+      "keyword": "브라운브레스",
+      "rankIncrement": 197
     },
     {
       "rank": 4,
-      "keyword": "샴푸",
-      "rankIncrement": 128
+      "keyword": "향수",
+      "rankIncrement": 123
     },
     {
       "rank": 5,
-      "keyword": "디오디너리",
-      "rankIncrement": 129
+      "keyword": "뉴발란스 1906",
+      "rankIncrement": 136
     },
     {
       "rank": 6,
-      "keyword": "나이키 맨투맨",
-      "rankIncrement": 160
+      "keyword": "리스키",
+      "rankIncrement": 222
     },
     {
       "rank": 7,
-      "keyword": "마뗑킴 가방",
-      "rankIncrement": 101
+      "keyword": "나이키 양말",
+      "rankIncrement": 115
     },
     {
       "rank": 8,
-      "keyword": "팬티",
-      "rankIncrement": 100
+      "keyword": "파르티멘토",
+      "rankIncrement": 117
     },
     {
       "rank": 9,
-      "keyword": "원숄더",
-      "rankIncrement": 124
+      "keyword": "오드타입",
+      "rankIncrement": 272
     },
     {
       "rank": 10,
-      "keyword": "슈프림",
-      "rankIncrement": 106
+      "keyword": "바닐라코",
+      "rankIncrement": 161
     }
   ]
 }
