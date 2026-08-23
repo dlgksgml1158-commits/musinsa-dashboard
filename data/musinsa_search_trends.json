@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T04:36:16.129840+00:00",
+  "updatedAt": "2026-08-23T09:19:47.164816+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,13 +13,13 @@
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "반팔",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "반팔",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
@@ -33,17 +33,17 @@
     },
     {
       "rank": 7,
-      "keyword": "가방",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "모자",
+      "keyword": "가방",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
+      "keyword": "모자",
       "rankIncrement": 0
     },
     {
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "래쉬가드",
-      "rankIncrement": 155
+      "keyword": "스탠드오일",
+      "rankIncrement": 112
     },
     {
       "rank": 2,
-      "keyword": "코드그라피",
-      "rankIncrement": 103
+      "keyword": "라곰",
+      "rankIncrement": 131
     },
     {
       "rank": 3,
-      "keyword": "반팔 셔츠",
-      "rankIncrement": 119
+      "keyword": "유이크",
+      "rankIncrement": 276
     },
     {
       "rank": 4,
-      "keyword": "뉴에라 모자",
-      "rankIncrement": 138
+      "keyword": "몰바니",
+      "rankIncrement": 226
     },
     {
       "rank": 5,
-      "keyword": "미니백",
-      "rankIncrement": 123
+      "keyword": "귀걸이",
+      "rankIncrement": 116
     },
     {
       "rank": 6,
-      "keyword": "팀버랜드",
-      "rankIncrement": 124
+      "keyword": "아디다스 슬리퍼",
+      "rankIncrement": 104
     },
     {
       "rank": 7,
-      "keyword": "생지데님",
-      "rankIncrement": 148
+      "keyword": "아른",
+      "rankIncrement": 462
     },
     {
       "rank": 8,
-      "keyword": "블레이저",
-      "rankIncrement": 111
+      "keyword": "레이어랩",
+      "rankIncrement": 175
     },
     {
       "rank": 9,
-      "keyword": "후아유 후드집업",
-      "rankIncrement": 181
+      "keyword": "시크릿키",
+      "rankIncrement": 158
     },
     {
       "rank": 10,
-      "keyword": "롱스커트",
-      "rankIncrement": 100
+      "keyword": "투쿨포스쿨",
+      "rankIncrement": 131
     }
   ]
 }
