@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T09:19:47.164816+00:00",
+  "updatedAt": "2026-08-23T13:34:36.975980+00:00",
   "popular": [
     {
       "rank": 1,
@@ -28,12 +28,12 @@
     },
     {
       "rank": 6,
-      "keyword": "바람막이",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "바지",
+      "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
@@ -44,64 +44,64 @@
     {
       "rank": 9,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 10,
       "keyword": "백팩",
-      "rankIncrement": 0
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스탠드오일",
-      "rankIncrement": 112
+      "keyword": "아디다스 후드집업",
+      "rankIncrement": 121
     },
     {
       "rank": 2,
-      "keyword": "라곰",
-      "rankIncrement": 131
-    },
-    {
-      "rank": 3,
-      "keyword": "유이크",
-      "rankIncrement": 276
-    },
-    {
-      "rank": 4,
-      "keyword": "몰바니",
-      "rankIncrement": 226
-    },
-    {
-      "rank": 5,
-      "keyword": "귀걸이",
-      "rankIncrement": 116
-    },
-    {
-      "rank": 6,
-      "keyword": "아디다스 슬리퍼",
+      "keyword": "헨리넥 롱슬리브",
       "rankIncrement": 104
     },
     {
+      "rank": 3,
+      "keyword": "베리시",
+      "rankIncrement": 113
+    },
+    {
+      "rank": 4,
+      "keyword": "브라운야드",
+      "rankIncrement": 111
+    },
+    {
+      "rank": 5,
+      "keyword": "긴팔티",
+      "rankIncrement": 208
+    },
+    {
+      "rank": 6,
+      "keyword": "무센트",
+      "rankIncrement": 103
+    },
+    {
       "rank": 7,
-      "keyword": "아른",
-      "rankIncrement": 462
+      "keyword": "플랫슈즈",
+      "rankIncrement": 134
     },
     {
       "rank": 8,
-      "keyword": "레이어랩",
-      "rankIncrement": 175
+      "keyword": "유니폼",
+      "rankIncrement": 130
     },
     {
       "rank": 9,
-      "keyword": "시크릿키",
-      "rankIncrement": 158
+      "keyword": "살로몬 백팩",
+      "rankIncrement": 164
     },
     {
       "rank": 10,
-      "keyword": "투쿨포스쿨",
-      "rankIncrement": 131
+      "keyword": "라코스테",
+      "rankIncrement": 220
     }
   ]
 }
