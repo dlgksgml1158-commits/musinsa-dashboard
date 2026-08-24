@@ -1,6 +1,6 @@
 {
   "platform": "musinsa_male",
-  "updatedAt": "2026-08-23T13:33:59.383209+00:00",
+  "updatedAt": "2026-08-24T01:10:20.675446+00:00",
   "items": [
     {
       "rank": 1,
@@ -94,18 +94,18 @@
     },
     {
       "rank": 7,
-      "id": "ms-6777737",
-      "brand": "무신사 스탠다드",
-      "name": "[SSG랜더스 컬래버] MA-1 보머 재킷 [블랙]",
-      "price": 179900,
-      "originalPrice": 179900,
-      "discountRate": 0,
-      "finalPrice": 179900,
+      "id": "ms-6908583",
+      "brand": "블랙야크",
+      "name": "공용 클라이밍 스톤마스터 라이트 다운자켓#3_(5color)",
+      "price": 299000,
+      "originalPrice": 299000,
+      "discountRate": 20,
+      "finalPrice": 239000,
       "category": "002",
       "categoryLabel": "아우터",
-      "imgUrl": "https://image.msscdn.net/images/goods_img/20260703/6777737/6777737_17863500704703_500.jpg",
-      "productUrl": "https://www.musinsa.com/products/6777737",
-      "change": 0
+      "imgUrl": "https://image.msscdn.net/images/goods_img/20260723/6908583/6908583_17853877119438_500.jpg",
+      "productUrl": "https://www.musinsa.com/products/6908583",
+      "change": "NEW"
     },
     {
       "rank": 8,
@@ -259,18 +259,18 @@
     },
     {
       "rank": 18,
-      "id": "ms-7045054",
-      "brand": "노스페이스",
-      "name": "NJ3NS56L 벤투스 온 자켓 DUSK BLUE",
-      "price": 238000,
-      "originalPrice": 238000,
+      "id": "ms-6777737",
+      "brand": "무신사 스탠다드",
+      "name": "[SSG랜더스 컬래버] MA-1 보머 재킷 [블랙]",
+      "price": 179900,
+      "originalPrice": 179900,
       "discountRate": 0,
-      "finalPrice": 238000,
+      "finalPrice": 179900,
       "category": "002",
       "categoryLabel": "아우터",
-      "imgUrl": "https://image.msscdn.net/images/goods_img/20260811/7045054/7045054_17864158657345_500.jpg",
-      "productUrl": "https://www.musinsa.com/products/7045054",
-      "change": 0
+      "imgUrl": "https://image.msscdn.net/images/goods_img/20260703/6777737/6777737_17863500704703_500.jpg",
+      "productUrl": "https://www.musinsa.com/products/6777737",
+      "change": -11
     },
     {
       "rank": 19,
@@ -424,18 +424,18 @@
     },
     {
       "rank": 29,
-      "id": "ms-7033140",
+      "id": "ms-7033651",
       "brand": "쿠어",
-      "name": "카우 스킨 A-2 레더 자켓 (다크브라운)",
-      "price": 540000,
-      "originalPrice": 540000,
+      "name": "베지터블 스윙탑 플리츠 워시 점퍼 (블랙)",
+      "price": 600000,
+      "originalPrice": 600000,
       "discountRate": 10,
-      "finalPrice": 486000,
+      "finalPrice": 540000,
       "category": "002",
       "categoryLabel": "아우터",
-      "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033140/7033140_17863286266532_500.jpg",
-      "productUrl": "https://www.musinsa.com/products/7033140",
-      "change": 0
+      "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033651/7033651_17863304729673_500.jpg",
+      "productUrl": "https://www.musinsa.com/products/7033651",
+      "change": "NEW"
     },
     {
       "rank": 30,
@@ -959,8 +959,8 @@
         "name": "나일론 사커 롱슬리브_다크 블루",
         "price": 69000,
         "originalPrice": 69000,
-        "discountRate": 75,
-        "finalPrice": 16920,
+        "discountRate": 71,
+        "finalPrice": 19900,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240112/3792319/3792319_17512505355893_500.jpg",
@@ -1049,8 +1049,8 @@
         "name": "공용) 콜라보 레이어드 긴팔티 (블랙 크로우스)_MSF2TS3021",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 80,
-        "finalPrice": 7900,
+        "discountRate": 81,
+        "finalPrice": 7510,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250123/4739529/4739529_17376089401714_500.jpg",
@@ -1756,8 +1756,8 @@
         "name": "Cheesy Bunny 레글런 피그먼트 맨투맨 더스티핑크",
         "price": 72000,
         "originalPrice": 72000,
-        "discountRate": 45,
-        "finalPrice": 39600,
+        "discountRate": 35,
+        "finalPrice": 46800,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20231103/3682659/3682659_17725894503596_500.jpg",
@@ -2184,7 +2184,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250904/5403010/5403010_17827967751148_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5403010",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 26,
@@ -2199,7 +2199,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260721/6885283/6885283_17853739401006_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6885283",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 27,
@@ -2214,7 +2214,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240403/4020795/4020795_17135056346333_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4020795",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 28,
@@ -2229,7 +2229,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260401/6237329/6237329_17756292497572_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6237329",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 29,
@@ -2244,7 +2244,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260127/5944301/5944301_17719867564536_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5944301",
-        "change": -1
+        "change": 0
       },
       {
         "rank": 30,
@@ -2253,13 +2253,13 @@
         "name": "경량 퀵드라이 자외선차단 후드 긴팔 티셔츠",
         "price": 45800,
         "originalPrice": 45800,
-        "discountRate": 36,
-        "finalPrice": 29280,
+        "discountRate": 35,
+        "finalPrice": 29710,
         "category": "001004",
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251203/5799261/5799261_17857313647636_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5799261",
-        "change": -1
+        "change": 0
       }
     ],
     "001005": [
@@ -2345,8 +2345,8 @@
         "name": "웨스턴 리니어 솔리드 크롭 하프 셔츠 [화이트]",
         "price": 65000,
         "originalPrice": 65000,
-        "discountRate": 19,
-        "finalPrice": 52650,
+        "discountRate": 10,
+        "finalPrice": 58500,
         "category": "001005",
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260429/6401724/6401724_17774632565994_500.jpg",
@@ -2887,8 +2887,8 @@
         "name": "[오정규 x 알리스] 쿨 코튼 레이어드 헨리넥 크롭 하프 니트_2COLOR",
         "price": 79000,
         "originalPrice": 79000,
-        "discountRate": 19,
-        "finalPrice": 63990,
+        "discountRate": 10,
+        "finalPrice": 71100,
         "category": "001006",
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260406/6263413/6263413_17788097542676_500.jpg",
@@ -3169,6 +3169,21 @@
     "002": [
       {
         "rank": 1,
+        "id": "ms-6908583",
+        "brand": "블랙야크",
+        "name": "공용 클라이밍 스톤마스터 라이트 다운자켓#3_(5color)",
+        "price": 299000,
+        "originalPrice": 299000,
+        "discountRate": 20,
+        "finalPrice": 239000,
+        "category": "002",
+        "categoryLabel": "아우터",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260723/6908583/6908583_17853877119438_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6908583",
+        "change": "NEW"
+      },
+      {
+        "rank": 2,
         "id": "ms-6777737",
         "brand": "무신사 스탠다드",
         "name": "[SSG랜더스 컬래버] MA-1 보머 재킷 [블랙]",
@@ -3180,10 +3195,25 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260703/6777737/6777737_17863500704703_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6777737",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 2,
+        "rank": 3,
+        "id": "ms-7033651",
+        "brand": "쿠어",
+        "name": "베지터블 스윙탑 플리츠 워시 점퍼 (블랙)",
+        "price": 600000,
+        "originalPrice": 600000,
+        "discountRate": 10,
+        "finalPrice": 540000,
+        "category": "002",
+        "categoryLabel": "아우터",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033651/7033651_17863304729673_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/7033651",
+        "change": "NEW"
+      },
+      {
+        "rank": 4,
         "id": "ms-7045054",
         "brand": "노스페이스",
         "name": "NJ3NS56L 벤투스 온 자켓 DUSK BLUE",
@@ -3195,10 +3225,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260811/7045054/7045054_17864158657345_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7045054",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "ms-7033140",
         "brand": "쿠어",
         "name": "카우 스킨 A-2 레더 자켓 (다크브라운)",
@@ -3210,10 +3240,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033140/7033140_17863286266532_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7033140",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "ms-6814919",
         "brand": "아디다스",
         "name": "아디컬러 트랙탑 KV8875",
@@ -3225,10 +3255,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260709/6814919/6814919_17835847649651_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6814919",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "ms-6686197",
         "brand": "나이키",
         "name": "스포츠웨어 오버사이즈 트랙 재킷 W - 블랙:화이트 / IQ3165-010",
@@ -3240,10 +3270,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6686197/6686197_17847960785031_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6686197",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "ms-6990889",
         "brand": "티엔지티",
         "name": "Faux Leather Trucker (Washed Black) TNJU6F101BK",
@@ -3255,10 +3285,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260804/6990889/6990889_17864329855632_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6990889",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "ms-6823731",
         "brand": "무드인사이드",
         "name": "워시드 프렌치 워크 자켓_Blue",
@@ -3270,10 +3300,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260710/6823731/6823731_17863480049933_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6823731",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "ms-7033647",
         "brand": "쿠어",
         "name": "빈티지 쉘터 넥 카라 레더 점퍼 (블랙브라운)",
@@ -3285,10 +3315,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033647/7033647_17863304545173_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7033647",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "ms-7046980",
         "brand": "파타고니아",
         "name": "멘즈 라이트웨이트 신칠라 스냅-티 풀오버 / 25551R7",
@@ -3300,10 +3330,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260811/7046980/7046980_17864980218955_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7046980",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "ms-6896379",
         "brand": "닉켈하우스",
         "name": "닉켈 26 크로스 플로랄 후드집업",
@@ -3315,10 +3345,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260722/6896379/6896379_17848693396289_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6896379",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "ms-6883772",
         "brand": "파타고니아",
         "name": "멘즈 레트로 파일 재킷 / 22802R7",
@@ -3330,10 +3360,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260721/6883772/6883772_17845915296176_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6883772",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "ms-6686050",
         "brand": "나이키",
         "name": "테크 헬리오스 드라이 핏 풀집 재킷 M - 블랙 / IM1334-010",
@@ -3345,10 +3375,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260617/6686050/6686050_17847949603245_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6686050",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "ms-5329359",
         "brand": "아디다스",
         "name": "후드 집업 - 블랙:크림화이트 / KC9315",
@@ -3360,10 +3390,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5329359/5329359_17569461399483_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5329359",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "ms-6880047",
         "brand": "엄브로",
         "name": "크리스피 타슬란 긴팔 자켓 블루 UR324CJK91",
@@ -3375,10 +3405,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260720/6880047/6880047_17866836756332_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6880047",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "ms-7033653",
         "brand": "쿠어",
         "name": "카우 워시드 바이커 레더 자켓 (워시드블랙)",
@@ -3390,10 +3420,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033653/7033653_17863304891072_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7033653",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "ms-6277260",
         "brand": "무신사 스탠다드 스포츠",
         "name": "엣지 시어로프트 패딩자켓 (4color)",
@@ -3405,10 +3435,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260408/6277260/6277260_17865920107356_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6277260",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "ms-7066761",
         "brand": "파타고니아",
         "name": "멘즈 클래식 레트로-X 재킷 / 23057R7",
@@ -3420,10 +3450,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260813/7066761/7066761_17865795224818_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7066761",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "ms-6277092",
         "brand": "무신사 스탠다드 스포츠",
         "name": "스퀘어 시어로프트 패딩자켓 (2color)",
@@ -3435,10 +3465,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260408/6277092/6277092_17870343736785_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6277092",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 19,
+        "rank": 21,
         "id": "ms-7014547",
         "brand": "무드인사이드",
         "name": "VTG 유틸 웹자켓_Khaki",
@@ -3450,10 +3480,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260806/7014547/7014547_17860140440475_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7014547",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 20,
+        "rank": 22,
         "id": "ms-6910164",
         "brand": "디스이즈네버댓",
         "name": "PERTEX® SP-Logo Windbreaker Reverse Navy",
@@ -3465,10 +3495,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260723/6910164/6910164_17864351794598_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6910164",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 21,
+        "rank": 23,
         "id": "ms-7066756",
         "brand": "파타고니아",
         "name": "멘즈 클래식 레트로-X 베스트 / 23049R7",
@@ -3480,10 +3510,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260813/7066756/7066756_17865791305466_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7066756",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 22,
+        "rank": 24,
         "id": "ms-6838626",
         "brand": "스파오",
         "name": "시어 후드 푸퍼_SPJPG4TC13",
@@ -3495,10 +3525,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6838626/6838626_17865153305005_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6838626",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 23,
+        "rank": 25,
         "id": "ms-6929984",
         "brand": "블랙야크",
         "name": "공용 클라이밍 스톤마스터 다운자켓#3 (5color)",
@@ -3510,10 +3540,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260727/6929984/6929984_17854600289540_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6929984",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 24,
+        "rank": 26,
         "id": "ms-6998028",
         "brand": "아웃스탠딩",
         "name": "THERMORE CIRRUS PADDING JACKET_L.GRAY",
@@ -3525,10 +3555,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260805/6998028/6998028_17860857528151_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6998028",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 25,
+        "rank": 27,
         "id": "ms-6853554",
         "brand": "무신사 스탠다드",
         "name": "[26FW 신상] [시티 레저] 시어 후디드 라이트 다운 재킷 [그레이]",
@@ -3540,10 +3570,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260715/6853554/6853554_17866865062362_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6853554",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 26,
+        "rank": 28,
         "id": "ms-6918905",
         "brand": "나이키",
         "name": "스포츠웨어 데님 트랙 재킷 M - 블랙:아이스 실버 / IQ5914-010",
@@ -3555,10 +3585,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260724/6918905/6918905_17853865501032_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6918905",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 27,
+        "rank": 29,
         "id": "ms-7033126",
         "brand": "쿠어",
         "name": "페이크 스웨이드 심 워시드 바이커 점퍼 (다크브라운)",
@@ -3570,10 +3600,10 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033126/7033126_17863285332401_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7033126",
-        "change": 0
+        "change": -2
       },
       {
-        "rank": 28,
+        "rank": 30,
         "id": "ms-7033461",
         "brand": "쿠어",
         "name": "엠보 워시드 블레이저 (워시드블랙)",
@@ -3585,37 +3615,7 @@
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033461/7033461_17863299020721_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7033461",
-        "change": 0
-      },
-      {
-        "rank": 29,
-        "id": "ms-6886218",
-        "brand": "노티카",
-        "name": "[15% 쿠폰] 프리즘 패디드 레이어 자켓(4colors) NPD1596",
-        "price": 179000,
-        "originalPrice": 179000,
-        "discountRate": 15,
-        "finalPrice": 152150,
-        "category": "002",
-        "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260721/6886218/6886218_17871834982667_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6886218",
-        "change": 0
-      },
-      {
-        "rank": 30,
-        "id": "ms-6884831",
-        "brand": "코드그라피",
-        "name": "빈티지 후디드 필드 야상-카키",
-        "price": 169000,
-        "originalPrice": 169000,
-        "discountRate": 0,
-        "finalPrice": 169000,
-        "category": "002",
-        "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260721/6884831/6884831_17853118727481_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6884831",
-        "change": 0
+        "change": -2
       }
     ],
     "003001": [
@@ -3902,7 +3902,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250825/5358816/5358816_17570455947015_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5358816",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 20,
@@ -3917,7 +3917,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250523/5142714/5142714_17834798647580_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5142714",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 21,
@@ -3932,7 +3932,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5331629/5331629_17579026420899_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5331629",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 22,
@@ -3947,7 +3947,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250324/4933454/4933454_17574709714284_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4933454",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 23,
@@ -3962,7 +3962,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230221/3098405/3098405_17574710622969_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3098405",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -3977,7 +3977,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250317/4902405/4902405_17421735850751_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4902405",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -3992,7 +3992,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260119/5911790/5911790_17703605882229_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5911790",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -4007,7 +4007,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251104/5681967/5681967_17782222591915_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5681967",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -4022,7 +4022,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230208/3070218/3070218_17847883628803_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3070218",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -4037,7 +4037,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033221/7033221_17863289467727_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7033221",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -4052,7 +4052,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250130/4747231/4747231_17745029104425_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4747231",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -4067,7 +4067,7 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260624/6724282/6724282_17824399387577_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6724282",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "003002": [
@@ -4183,8 +4183,8 @@
         "name": "[매일슬랙스]세미와이드핏 스프링 밴딩 슬랙스  블랙",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 76,
-        "finalPrice": 12070,
+        "discountRate": 66,
+        "finalPrice": 16920,
         "category": "003002",
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260121/5921145/5921145_17840632182429_500.jpg",
@@ -4303,8 +4303,8 @@
         "name": "[매일슬랙스]세미와이드핏 스프링 슬랙스  애쉬",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 70,
-        "finalPrice": 11820,
+        "discountRate": 58,
+        "finalPrice": 16920,
         "category": "003002",
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260121/5921131/5921131_17840631048050_500.jpg",
@@ -4393,8 +4393,8 @@
         "name": "쿨 터치 세미 와이드 히든 밴딩 슬랙스 [그레이]",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 28,
-        "finalPrice": 35900,
+        "discountRate": 0,
+        "finalPrice": 49900,
         "category": "003002",
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240125/3823298/3823298_17096088421806_500.jpg",
@@ -5117,8 +5117,8 @@
         "name": "에브리데이 쿨 린넨 라이크 밴딩 버뮤다 쇼츠[2COLORS]",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 50,
-        "finalPrice": 19900,
+        "discountRate": 75,
+        "finalPrice": 9900,
         "category": "003005",
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260604/6608879/6608879_17812453524846_500.jpg",
@@ -5519,18 +5519,18 @@
       },
       {
         "rank": 7,
-        "id": "ms-6777737",
-        "brand": "무신사 스탠다드",
-        "name": "[SSG랜더스 컬래버] MA-1 보머 재킷 [블랙]",
-        "price": 179900,
-        "originalPrice": 179900,
-        "discountRate": 0,
-        "finalPrice": 179900,
+        "id": "ms-6908583",
+        "brand": "블랙야크",
+        "name": "공용 클라이밍 스톤마스터 라이트 다운자켓#3_(5color)",
+        "price": 299000,
+        "originalPrice": 299000,
+        "discountRate": 20,
+        "finalPrice": 239000,
         "category": "002",
         "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260703/6777737/6777737_17863500704703_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6777737",
-        "change": 0
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260723/6908583/6908583_17853877119438_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6908583",
+        "change": "NEW"
       },
       {
         "rank": 8,
@@ -5684,18 +5684,18 @@
       },
       {
         "rank": 18,
-        "id": "ms-7045054",
-        "brand": "노스페이스",
-        "name": "NJ3NS56L 벤투스 온 자켓 DUSK BLUE",
-        "price": 238000,
-        "originalPrice": 238000,
+        "id": "ms-6777737",
+        "brand": "무신사 스탠다드",
+        "name": "[SSG랜더스 컬래버] MA-1 보머 재킷 [블랙]",
+        "price": 179900,
+        "originalPrice": 179900,
         "discountRate": 0,
-        "finalPrice": 238000,
+        "finalPrice": 179900,
         "category": "002",
         "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260811/7045054/7045054_17864158657345_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/7045054",
-        "change": 0
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260703/6777737/6777737_17863500704703_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6777737",
+        "change": -11
       },
       {
         "rank": 19,
@@ -5849,18 +5849,18 @@
       },
       {
         "rank": 29,
-        "id": "ms-7033140",
+        "id": "ms-7033651",
         "brand": "쿠어",
-        "name": "카우 스킨 A-2 레더 자켓 (다크브라운)",
-        "price": 540000,
-        "originalPrice": 540000,
+        "name": "베지터블 스윙탑 플리츠 워시 점퍼 (블랙)",
+        "price": 600000,
+        "originalPrice": 600000,
         "discountRate": 10,
-        "finalPrice": 486000,
+        "finalPrice": 540000,
         "category": "002",
         "categoryLabel": "아우터",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033140/7033140_17863286266532_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/7033140",
-        "change": 0
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7033651/7033651_17863304729673_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/7033651",
+        "change": "NEW"
       },
       {
         "rank": 30,
