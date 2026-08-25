@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-24T13:54:37.070744+00:00",
+  "updatedAt": "2026-08-25T01:10:20.540570+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -19,89 +19,89 @@
     {
       "rank": 4,
       "keyword": "아디다스",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "후드티",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -3
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "백팩",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "가방",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "양말",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "나이키 반팔",
-      "rankIncrement": 107
+      "keyword": "뉴에라",
+      "rankIncrement": 154
     },
     {
       "rank": 2,
-      "keyword": "캘빈클라인",
-      "rankIncrement": 106
+      "keyword": "블루종",
+      "rankIncrement": 119
     },
     {
       "rank": 3,
-      "keyword": "아디다스 반팔",
-      "rankIncrement": 125
+      "keyword": "롱스커트",
+      "rankIncrement": 116
     },
     {
       "rank": 4,
-      "keyword": "아워데이즈",
-      "rankIncrement": 100
+      "keyword": "카시오",
+      "rankIncrement": 125
     },
     {
       "rank": 5,
-      "keyword": "아미",
-      "rankIncrement": 130
+      "keyword": "살로몬 백팩",
+      "rankIncrement": 303
     },
     {
       "rank": 6,
-      "keyword": "블랙야크",
-      "rankIncrement": 126
+      "keyword": "아르반",
+      "rankIncrement": 100
     },
     {
       "rank": 7,
-      "keyword": "아디다스 도쿄",
-      "rankIncrement": 107
+      "keyword": "스웨이드 자켓",
+      "rankIncrement": 206
     },
     {
       "rank": 8,
-      "keyword": "루미르",
-      "rankIncrement": 282
+      "keyword": "한삐우",
+      "rankIncrement": 108
     },
     {
       "rank": 9,
-      "keyword": "어나더 오피스",
-      "rankIncrement": 175
+      "keyword": "빅뱅",
+      "rankIncrement": 113
     },
     {
       "rank": 10,
-      "keyword": "흰티",
-      "rankIncrement": 350
+      "keyword": "프리덤",
+      "rankIncrement": 247
     }
   ]
 }
