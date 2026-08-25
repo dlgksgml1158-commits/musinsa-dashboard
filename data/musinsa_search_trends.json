@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T09:25:48.501656+00:00",
+  "updatedAt": "2026-08-25T13:53:34.126442+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "모자",
+      "keyword": "후드티",
       "rankIncrement": 1
     },
     {
+      "rank": 5,
+      "keyword": "아디다스",
+      "rankIncrement": -1
+    },
+    {
       "rank": 6,
-      "keyword": "후드티",
-      "rankIncrement": 3
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 1
+      "rankIncrement": -1
     },
     {
       "rank": 8,
       "keyword": "가방",
-      "rankIncrement": -3
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "모자",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바람막이",
-      "rankIncrement": -3
+      "keyword": "셔츠",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "나이키 후드집업",
-      "rankIncrement": 105
+      "keyword": "폴로 후드집업",
+      "rankIncrement": 127
     },
     {
       "rank": 2,
-      "keyword": "기능성 반팔",
-      "rankIncrement": 108
+      "keyword": "긴팔티",
+      "rankIncrement": 112
     },
     {
       "rank": 3,
-      "keyword": "보부상가방",
-      "rankIncrement": 180
-    },
-    {
-      "rank": 4,
-      "keyword": "위캔더스",
-      "rankIncrement": 144
-    },
-    {
-      "rank": 5,
-      "keyword": "반다나",
-      "rankIncrement": 114
-    },
-    {
-      "rank": 6,
-      "keyword": "위켄더스",
-      "rankIncrement": 147
-    },
-    {
-      "rank": 7,
-      "keyword": "남자 나시",
+      "keyword": "그라미치",
       "rankIncrement": 101
     },
     {
+      "rank": 4,
+      "keyword": "락케이크",
+      "rankIncrement": 103
+    },
+    {
+      "rank": 5,
+      "keyword": "알로",
+      "rankIncrement": 126
+    },
+    {
+      "rank": 6,
+      "keyword": "Lee",
+      "rankIncrement": 146
+    },
+    {
+      "rank": 7,
+      "keyword": "노티카",
+      "rankIncrement": 134
+    },
+    {
       "rank": 8,
-      "keyword": "언타이틀 서울",
-      "rankIncrement": 178
+      "keyword": "나이키 슬리퍼",
+      "rankIncrement": 120
     },
     {
       "rank": 9,
-      "keyword": "롤업 반팔",
-      "rankIncrement": 152
+      "keyword": "블랙야크 스톤마스터",
+      "rankIncrement": 127
     },
     {
       "rank": 10,
-      "keyword": "축구 유니폼",
-      "rankIncrement": 128
+      "keyword": "책가방",
+      "rankIncrement": 364
     }
   ]
 }
