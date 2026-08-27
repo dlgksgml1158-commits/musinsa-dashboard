@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-08-27T07:22:02.880488+00:00",
+  "updatedAt": "2026-08-27T15:01:17.305364+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "모자",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "가방",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "백팩",
+      "keyword": "가방",
       "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "후드티",
+      "keyword": "백팩",
       "rankIncrement": -1
     },
     {
       "rank": 10,
       "keyword": "셔츠",
-      "rankIncrement": 0
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "혼다",
-      "rankIncrement": 102
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 139
     },
     {
       "rank": 2,
-      "keyword": "귀걸이",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 3,
-      "keyword": "유희",
-      "rankIncrement": 129
-    },
-    {
-      "rank": 4,
-      "keyword": "키츠네",
-      "rankIncrement": 265
-    },
-    {
-      "rank": 5,
-      "keyword": "메종 키츠네",
-      "rankIncrement": 290
-    },
-    {
-      "rank": 6,
-      "keyword": "스웨이드 자켓",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 7,
-      "keyword": "락케이크",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 8,
-      "keyword": "매든",
-      "rankIncrement": 101
-    },
-    {
-      "rank": 9,
-      "keyword": "스톤마스터",
+      "keyword": "롤업 반팔",
       "rankIncrement": 122
     },
     {
+      "rank": 3,
+      "keyword": "노운",
+      "rankIncrement": 118
+    },
+    {
+      "rank": 4,
+      "keyword": "앤더슨벨",
+      "rankIncrement": 151
+    },
+    {
+      "rank": 5,
+      "keyword": "스투시 반팔",
+      "rankIncrement": 307
+    },
+    {
+      "rank": 6,
+      "keyword": "책가방",
+      "rankIncrement": 119
+    },
+    {
+      "rank": 7,
+      "keyword": "카프리팬츠",
+      "rankIncrement": 172
+    },
+    {
+      "rank": 8,
+      "keyword": "트랙팬츠",
+      "rankIncrement": 145
+    },
+    {
+      "rank": 9,
+      "keyword": "지프",
+      "rankIncrement": 150
+    },
+    {
       "rank": 10,
-      "keyword": "해칭룸",
-      "rankIncrement": 110
+      "keyword": "숏팬츠",
+      "rankIncrement": 203
     }
   ]
 }
