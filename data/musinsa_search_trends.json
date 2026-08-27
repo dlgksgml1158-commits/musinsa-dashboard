@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-27T19:21:06.679798+00:00",
+  "updatedAt": "2026-08-27T22:53:11.634678+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "keyword": "후드집업",
+      "rankIncrement": 1
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": -1
     },
     {
       "rank": 3,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "후드티",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "가방",
+      "keyword": "헬리녹스",
       "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "모자",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "아디다스",
+      "keyword": "바람막이",
       "rankIncrement": 1
     },
     {
+      "rank": 7,
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": -2
+    },
+    {
+      "rank": 8,
+      "keyword": "후드티",
+      "rankIncrement": 2
+    },
+    {
       "rank": 9,
-      "keyword": "바람막이",
-      "rankIncrement": -5
+      "keyword": "백팩",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "노스페이스",
-      "rankIncrement": 125
+      "keyword": "반지",
+      "rankIncrement": 134
     },
     {
       "rank": 2,
-      "keyword": "구두",
-      "rankIncrement": 159
+      "keyword": "선글라스",
+      "rankIncrement": 130
     },
     {
       "rank": 3,
-      "keyword": "긴팔",
-      "rankIncrement": 130
+      "keyword": "기능성 반팔",
+      "rankIncrement": 175
     },
     {
       "rank": 4,
-      "keyword": "엄브로",
-      "rankIncrement": 158
+      "keyword": "샌들",
+      "rankIncrement": 113
     },
     {
       "rank": 5,
-      "keyword": "크롭 반팔",
-      "rankIncrement": 141
+      "keyword": "노매뉴얼",
+      "rankIncrement": 371
     },
     {
       "rank": 6,
-      "keyword": "르아르",
-      "rankIncrement": 130
+      "keyword": "스톤아일랜드",
+      "rankIncrement": 110
     },
     {
       "rank": 7,
-      "keyword": "선글라스",
-      "rankIncrement": 184
+      "keyword": "시계",
+      "rankIncrement": 136
     },
     {
       "rank": 8,
-      "keyword": "잔스포츠 백팩",
-      "rankIncrement": 189
+      "keyword": "레이어드",
+      "rankIncrement": 131
     },
     {
       "rank": 9,
-      "keyword": "킨",
-      "rankIncrement": 206
+      "keyword": "여름 셔츠",
+      "rankIncrement": 222
     },
     {
       "rank": 10,
-      "keyword": "7부 티셔츠",
-      "rankIncrement": 117
+      "keyword": "탄산마그네슘",
+      "rankIncrement": 144
     }
   ]
 }
