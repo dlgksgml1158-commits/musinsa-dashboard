@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T13:57:40.302782+00:00",
+  "updatedAt": "2026-08-27T07:22:01.292728+00:00",
   "musinsa": [
     {
       "keyword": "티셔츠",
@@ -16,11 +16,11 @@
       "change": null
     },
     {
-      "keyword": "여성나시",
+      "keyword": "여성티셔츠",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 3,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "스투시반팔",
@@ -30,11 +30,11 @@
       "change": null
     },
     {
-      "keyword": "여성티셔츠",
+      "keyword": "여성나시",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 5,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "여성반바지",
@@ -88,11 +88,11 @@
       "change": null
     },
     {
-      "keyword": "여성나시",
+      "keyword": "여성티셔츠",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 3,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "스투시반팔",
@@ -102,11 +102,11 @@
       "change": null
     },
     {
-      "keyword": "여성티셔츠",
+      "keyword": "여성나시",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 5,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "여성반바지",
