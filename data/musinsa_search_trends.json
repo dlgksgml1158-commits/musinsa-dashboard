@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-08-28T15:56:14.367691+00:00",
+  "updatedAt": "2026-08-28T20:31:10.125877+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 2,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 3,
-      "keyword": "후드티",
+      "rank": 2,
+      "keyword": "후드집업",
       "rankIncrement": 0
+    },
+    {
+      "rank": 3,
+      "keyword": "반팔",
+      "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "반팔",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "백팩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
+      "rank": 6,
       "keyword": "가방",
       "rankIncrement": 0
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 8,
       "keyword": "모자",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 9,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "백팩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "긴팔티",
-      "rankIncrement": 129
+      "keyword": "긴팔",
+      "rankIncrement": 102
     },
     {
       "rank": 2,
-      "keyword": "생지데님",
-      "rankIncrement": 104
+      "keyword": "노티카",
+      "rankIncrement": 105
     },
     {
       "rank": 3,
-      "keyword": "시너진",
-      "rankIncrement": 130
+      "keyword": "노스페이스 경량패딩",
+      "rankIncrement": 168
     },
     {
       "rank": 4,
-      "keyword": "벨리에",
-      "rankIncrement": 108
+      "keyword": "캘빈클라인",
+      "rankIncrement": 147
     },
     {
       "rank": 5,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 132
+      "keyword": "플리스",
+      "rankIncrement": 114
     },
     {
       "rank": 6,
-      "keyword": "스탠리",
-      "rankIncrement": 146
+      "keyword": "러닝",
+      "rankIncrement": 159
     },
     {
       "rank": 7,
-      "keyword": "분크",
-      "rankIncrement": 117
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 102
     },
     {
       "rank": 8,
-      "keyword": "아더에러",
-      "rankIncrement": 135
+      "keyword": "디젤",
+      "rankIncrement": 217
     },
     {
       "rank": 9,
-      "keyword": "흰티",
-      "rankIncrement": 141
+      "keyword": "남자 목걸이",
+      "rankIncrement": 178
     },
     {
       "rank": 10,
-      "keyword": "블랙야크",
-      "rankIncrement": 135
+      "keyword": "보라끌레르",
+      "rankIncrement": 190
     }
   ]
 }
