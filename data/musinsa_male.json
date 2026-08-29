@@ -1,6 +1,6 @@
 {
   "platform": "musinsa_male",
-  "updatedAt": "2026-08-29T05:41:16.002486+00:00",
+  "updatedAt": "2026-08-29T10:49:10.785862+00:00",
   "items": [
     {
       "rank": 1,
@@ -787,6 +787,21 @@
       },
       {
         "rank": 23,
+        "id": "ms-6927377",
+        "brand": "쿠톤",
+        "name": "폴라리스 롤업 세미크롭 반팔 티셔츠 [딥네이비]",
+        "price": 44000,
+        "originalPrice": 44000,
+        "discountRate": 25,
+        "finalPrice": 33000,
+        "category": "001001",
+        "categoryLabel": "반소매 티셔츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260727/6927377/6927377_17851229137987_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6927377",
+        "change": "NEW"
+      },
+      {
+        "rank": 24,
         "id": "ms-6814292",
         "brand": "디스커스 애슬레틱",
         "name": "2026 PENTAPORT 라인업 티셔츠 블랙",
@@ -798,10 +813,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260709/6814292/6814292_17851171982029_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6814292",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 24,
+        "rank": 25,
         "id": "ms-6507901",
         "brand": "르아르",
         "name": "컬러 레이어드 롤업 티셔츠 [차콜]",
@@ -813,10 +828,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260519/6507901/6507901_17803676929481_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6507901",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 25,
+        "rank": 26,
         "id": "ms-6708161",
         "brand": "필루미네이트",
         "name": "데일리 롤업 레이어드 ST 크롭 티셔츠-3Color",
@@ -828,10 +843,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260622/6708161/6708161_17826934723027_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6708161",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 26,
+        "rank": 27,
         "id": "ms-4798852",
         "brand": "브론슨",
         "name": "Knight Motorcycle Short Sleeve Tee White",
@@ -843,10 +858,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250218/4798852/4798852_17780472048478_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4798852",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 27,
+        "rank": 28,
         "id": "ms-4797799",
         "brand": "커버낫",
         "name": "[2PACK] 스몰 아치 로고 티셔츠 White",
@@ -858,10 +873,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250218/4797799/4797799_17726768170132_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4797799",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 28,
+        "rank": 29,
         "id": "ms-6842608",
         "brand": "나이키",
         "name": "스트라이드 에어로 핏 반소매 러닝 탑 M - 볼트:라이트 실버 / IH0746-702",
@@ -873,10 +888,10 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6842608/6842608_17847938928615_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6842608",
-        "change": 0
+        "change": -1
       },
       {
-        "rank": 29,
+        "rank": 30,
         "id": "ms-5251491",
         "brand": "엑스오엑스",
         "name": "디스토티드 에러 그래픽 크롭 티셔츠(4color)",
@@ -888,22 +903,7 @@
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250716/5251491/5251491_17835652936593_500.png",
         "productUrl": "https://www.musinsa.com/products/5251491",
-        "change": 0
-      },
-      {
-        "rank": 30,
-        "id": "ms-7031986",
-        "brand": "빅뱅",
-        "name": "[COSMOS] BIGBANG T-SHIRT_CHARCOAL",
-        "price": 54000,
-        "originalPrice": 54000,
-        "discountRate": 0,
-        "finalPrice": 54000,
-        "category": "001001",
-        "categoryLabel": "반소매 티셔츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260809/7031986/7031986_17864334632515_500.png",
-        "productUrl": "https://www.musinsa.com/products/7031986",
-        "change": 0
+        "change": -1
       }
     ],
     "001002": [

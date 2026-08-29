@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-08-29T05:41:08.176426+00:00",
+  "updatedAt": "2026-08-29T10:49:02.257314+00:00",
   "items": [
     {
       "rank": 1,
@@ -1426,8 +1426,8 @@
         "name": "베이직 언발 오프숄더 긴팔티 차콜",
         "price": 58000,
         "originalPrice": 58000,
-        "discountRate": 5,
-        "finalPrice": 55000,
+        "discountRate": 15,
+        "finalPrice": 49500,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260723/6912802/6912802_17851391692120_500.jpg",
@@ -4213,8 +4213,8 @@
         "name": "7160 캣 브러쉬 슬림 진청 부츠컷 데님팬츠",
         "price": 59000,
         "originalPrice": 59000,
-        "discountRate": 31,
-        "finalPrice": 40450,
+        "discountRate": 32,
+        "finalPrice": 40390,
         "category": "003001",
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220915/2796118/2796118_17809663324954_500.jpg",
@@ -4303,8 +4303,8 @@
         "name": "[간절기준비]르체 다크그레이 원 턱 와이드 팬츠",
         "price": 59000,
         "originalPrice": 59000,
-        "discountRate": 44,
-        "finalPrice": 33040,
+        "discountRate": 30,
+        "finalPrice": 41300,
         "category": "003001",
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260428/6390295/6390295_17872800481375_500.jpg",
@@ -5896,7 +5896,7 @@
     },
     "001002": {
       "label": "긴소매 티셔츠",
-      "avg": 45354,
+      "avg": 45171,
       "min": 17910,
       "max": 117000,
       "count": 30
@@ -5938,7 +5938,7 @@
     },
     "003001": {
       "label": "데님 팬츠",
-      "avg": 73203,
+      "avg": 73476,
       "min": 24950,
       "max": 159000,
       "count": 30
