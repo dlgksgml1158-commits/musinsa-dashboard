@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-08-29T14:05:27.869355+00:00",
+  "updatedAt": "2026-08-29T17:01:54.332641+00:00",
   "items": [
     {
       "rank": 1,
@@ -989,8 +989,8 @@
         "name": "스위프트 에어로 핏 반소매 러닝 탑 W - 블랙:라이트 그린 스파크 / IH8115-014",
         "price": 95000,
         "originalPrice": 95000,
-        "discountRate": 10,
-        "finalPrice": 85500,
+        "discountRate": 0,
+        "finalPrice": 95000,
         "category": "001001",
         "categoryLabel": "반소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260714/6842612/6842612_17847949033163_500.jpg",
@@ -2148,8 +2148,8 @@
         "name": "스튜디오 플리스 라이트웨이트 크루 W - 다크 그레이 헤더:세일 / IM8113-063",
         "price": 75000,
         "originalPrice": 75000,
-        "discountRate": 10,
-        "finalPrice": 67500,
+        "discountRate": 0,
+        "finalPrice": 75000,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260605/6618032/6618032_17841674349935_500.jpg",
@@ -2445,21 +2445,6 @@
       },
       {
         "rank": 13,
-        "id": "ms-4399140",
-        "brand": "와키윌리",
-        "name": "레터링 헤비쭈리 후드 그레이",
-        "price": 99000,
-        "originalPrice": 99000,
-        "discountRate": 75,
-        "finalPrice": 25000,
-        "category": "001004",
-        "categoryLabel": "후드 티셔츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20240903/4399140/4399140_17255041454072_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/4399140",
-        "change": 0
-      },
-      {
-        "rank": 14,
         "id": "ms-6907649",
         "brand": "잔스포츠",
         "name": "베이직 로고 후디 Navy",
@@ -2471,10 +2456,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260723/6907649/6907649_17860690575058_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6907649",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-4670667",
         "brand": "리트리버클럽",
         "name": "ALIVE HOODIE [PIGMENT BLACK]",
@@ -2486,10 +2471,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241217/4670667/4670667_17351851648231_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4670667",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-3863997",
         "brand": "디스이즈네버댓",
         "name": "Raglan Jersey Hoodie Ultramarine",
@@ -2501,10 +2486,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240213/3863997/3863997_17078136743323_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3863997",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-6853344",
         "brand": "무드인사이드 우먼",
         "name": "(woman) 버튼 헨리넥 후드 티셔츠_4Color",
@@ -2516,10 +2501,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260715/6853344/6853344_17859997215456_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6853344",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-5429074",
         "brand": "라이크더모스트",
         "name": "레오파드 패턴 볼링 8 트레이닝 셋업_3colors",
@@ -2531,10 +2516,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250909/5429074/5429074_17574699783472_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5429074",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-5657185",
         "brand": "쏘비",
         "name": "캥거루 보카시 후드티 (세미크롭) 차콜",
@@ -2546,10 +2531,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251029/5657185/5657185_17616995417740_500.png",
         "productUrl": "https://www.musinsa.com/products/5657185",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-5968628",
         "brand": "칙스",
         "name": "멀티 스트라이프 배색 후드 3color",
@@ -2561,10 +2546,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260202/5968628/5968628_17700141237149_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5968628",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-4260118",
         "brand": "자크뮈스",
         "name": "르 후디 타이포 후드 - 블랙 / 245JS2342341990",
@@ -2576,10 +2561,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240719/4260118/4260118_17240369568685_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4260118",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-3876972",
         "brand": "무아무아",
         "name": "[쭈리/기모] 스티치 콤비 후디 [6color]",
@@ -2591,10 +2576,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240216/3876972/3876972_17514208391640_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3876972",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-5815090",
         "brand": "쏘비",
         "name": "바라클라바 후드티 (세미크롭) 라이트",
@@ -2606,10 +2591,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251209/5815090/5815090_17863410959128_500.png",
         "productUrl": "https://www.musinsa.com/products/5815090",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-5932636",
         "brand": "크랭크",
         "name": "소프트 립 후드 탑_네이비",
@@ -2621,10 +2606,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260123/5932636/5932636_17714187454426_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5932636",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-3469860",
         "brand": "챔피온",
         "name": "여성 스티치 루즈핏 와플 후드 티셔츠 Black",
@@ -2636,10 +2621,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230817/3469860/3469860_17470130466316_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3469860",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-6977493",
         "brand": "브라운브레스",
         "name": "BB 20TH DOODLE TAG HOODIE - BLACK",
@@ -2651,10 +2636,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260803/6977493/6977493_17864255658906_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6977493",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-5892118",
         "brand": "아웃스탠딩",
         "name": "[LOONEY TUNES] HOOD SWEAT(BEEP BEEP)_NAVY",
@@ -2666,10 +2651,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260114/5892118/5892118_17697435502608_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5892118",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-7045806",
         "brand": "키쇼르",
         "name": "오프코스 스트라이프 후드티 (3color)",
@@ -2681,10 +2666,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260811/7045806/7045806_17864202694226_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7045806",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-7108767",
         "brand": "디미트리블랙",
         "name": "VLAD 피그먼트 머스탱 후드 티셔츠_2 COLOR",
@@ -2696,10 +2681,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260819/7108767/7108767_17872952121196_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7108767",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-5350035",
         "brand": "디스이즈네버댓",
         "name": "T-Logo LT Hoodie Olive",
@@ -2711,7 +2696,22 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250821/5350035/5350035_17562602205996_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5350035",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-6967268",
+        "brand": "뉴발란스",
+        "name": "NBNDG3W812 / WOMEN AIRY 와플 후드 긴팔티 (CHARCOAL)",
+        "price": 79900,
+        "originalPrice": 79900,
+        "discountRate": 0,
+        "finalPrice": 79900,
+        "category": "001004",
+        "categoryLabel": "후드 티셔츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260731/6967268/6967268_17854745562398_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/6967268",
+        "change": "NEW"
       }
     ],
     "001005": [
@@ -4303,8 +4303,8 @@
         "name": "[간절기준비]르체 다크그레이 원 턱 와이드 팬츠",
         "price": 59000,
         "originalPrice": 59000,
-        "discountRate": 30,
-        "finalPrice": 41300,
+        "discountRate": 44,
+        "finalPrice": 33040,
         "category": "003001",
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260428/6390295/6390295_17872800481375_500.jpg",
@@ -5889,7 +5889,7 @@
     },
     "001001": {
       "label": "반소매 티셔츠",
-      "avg": 35442,
+      "avg": 35759,
       "min": 9990,
       "max": 100000,
       "count": 30
@@ -5903,14 +5903,14 @@
     },
     "001003": {
       "label": "맨투맨/스웨트",
-      "avg": 61864,
+      "avg": 62114,
       "min": 12950,
       "max": 148990,
       "count": 30
     },
     "001004": {
       "label": "후드 티셔츠",
-      "avg": 60798,
+      "avg": 62628,
       "min": 24800,
       "max": 181990,
       "count": 30
@@ -5938,7 +5938,7 @@
     },
     "003001": {
       "label": "데님 팬츠",
-      "avg": 73476,
+      "avg": 73201,
       "min": 24950,
       "max": 159000,
       "count": 30
