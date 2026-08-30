@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T17:02:48.744705+00:00",
+  "updatedAt": "2026-08-30T03:42:38.505507+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "반팔",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "아디다스",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
       "keyword": "모자",
       "rankIncrement": 0
     },
     {
+      "rank": 9,
+      "keyword": "셔츠",
+      "rankIncrement": 2
+    },
+    {
       "rank": 10,
       "keyword": "백팩",
-      "rankIncrement": 1
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "오헤시오",
-      "rankIncrement": 109
+      "keyword": "다이브인",
+      "rankIncrement": 135
     },
     {
       "rank": 2,
-      "keyword": "나이키 반팔",
-      "rankIncrement": 196
+      "keyword": "후리스",
+      "rankIncrement": 152
     },
     {
       "rank": 3,
-      "keyword": "텀블러",
-      "rankIncrement": 190
+      "keyword": "디오디너리",
+      "rankIncrement": 166
     },
     {
       "rank": 4,
-      "keyword": "르아르",
-      "rankIncrement": 109
+      "keyword": "무스탕",
+      "rankIncrement": 101
     },
     {
       "rank": 5,
-      "keyword": "코드그라피",
-      "rankIncrement": 108
+      "keyword": "라피타",
+      "rankIncrement": 644
     },
     {
       "rank": 6,
-      "keyword": "레이브",
-      "rankIncrement": 128
+      "keyword": "토트백",
+      "rankIncrement": 168
     },
     {
       "rank": 7,
-      "keyword": "디미트리블랙",
-      "rankIncrement": 150
+      "keyword": "롱스커트",
+      "rankIncrement": 129
     },
     {
       "rank": 8,
-      "keyword": "회색 반팔",
-      "rankIncrement": 134
+      "keyword": "크롭 롱슬리브",
+      "rankIncrement": 267
     },
     {
       "rank": 9,
-      "keyword": "윈드브레이커",
-      "rankIncrement": 187
+      "keyword": "mlb 모자",
+      "rankIncrement": 102
     },
     {
       "rank": 10,
-      "keyword": "런닝화",
-      "rankIncrement": 125
+      "keyword": "위캔더스",
+      "rankIncrement": 142
     }
   ]
 }
