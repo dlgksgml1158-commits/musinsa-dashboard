@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T09:46:04.644367+00:00",
+  "updatedAt": "2026-08-30T14:06:04.521011+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "아디다스",
+      "keyword": "반팔",
       "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "반팔",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "바람막이",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 8,
-      "keyword": "모자",
+      "keyword": "아디다스",
       "rankIncrement": -1
     },
     {
-      "rank": 9,
+      "rank": 8,
       "keyword": "가방",
-      "rankIncrement": 1
+      "rankIncrement": 0
+    },
+    {
+      "rank": 9,
+      "keyword": "모자",
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
+      "keyword": "백팩",
       "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "허그유어스킨",
-      "rankIncrement": 118
-    },
-    {
-      "rank": 2,
-      "keyword": "페리페라",
-      "rankIncrement": 106
-    },
-    {
-      "rank": 3,
-      "keyword": "롱패딩",
-      "rankIncrement": 148
-    },
-    {
-      "rank": 4,
-      "keyword": "뉴발란스 운동화",
+      "keyword": "오프숄더",
       "rankIncrement": 150
     },
     {
+      "rank": 2,
+      "keyword": "정장",
+      "rankIncrement": 114
+    },
+    {
+      "rank": 3,
+      "keyword": "우포스",
+      "rankIncrement": 116
+    },
+    {
+      "rank": 4,
+      "keyword": "코치",
+      "rankIncrement": 130
+    },
+    {
       "rank": 5,
-      "keyword": "어바웃톤",
-      "rankIncrement": 170
+      "keyword": "데스노트",
+      "rankIncrement": 106
     },
     {
       "rank": 6,
-      "keyword": "커브드 팬츠",
-      "rankIncrement": 197
+      "keyword": "에이치덱스",
+      "rankIncrement": 107
     },
     {
       "rank": 7,
-      "keyword": "zara",
-      "rankIncrement": 420
+      "keyword": "럭비티",
+      "rankIncrement": 175
     },
     {
       "rank": 8,
-      "keyword": "키뮤어",
-      "rankIncrement": 263
+      "keyword": "토피",
+      "rankIncrement": 146
     },
     {
       "rank": 9,
-      "keyword": "트렌치코트",
-      "rankIncrement": 101
+      "keyword": "숏팬츠",
+      "rankIncrement": 116
     },
     {
       "rank": 10,
-      "keyword": "디스커버리 익스페디션",
-      "rankIncrement": 117
+      "keyword": "플레어진",
+      "rankIncrement": 122
     }
   ]
 }
