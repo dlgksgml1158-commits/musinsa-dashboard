@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T03:42:38.505507+00:00",
+  "updatedAt": "2026-08-30T09:46:04.644367+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "반팔",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": 1
     },
     {
       "rank": 4,
       "keyword": "아디다스",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "후드티",
+      "keyword": "반팔",
       "rankIncrement": 0
     },
     {
@@ -34,74 +34,74 @@
     {
       "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "셔츠",
-      "rankIncrement": 2
+      "keyword": "가방",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "다이브인",
-      "rankIncrement": 135
+      "keyword": "허그유어스킨",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "후리스",
-      "rankIncrement": 152
+      "keyword": "페리페라",
+      "rankIncrement": 106
     },
     {
       "rank": 3,
-      "keyword": "디오디너리",
-      "rankIncrement": 166
+      "keyword": "롱패딩",
+      "rankIncrement": 148
     },
     {
       "rank": 4,
-      "keyword": "무스탕",
-      "rankIncrement": 101
+      "keyword": "뉴발란스 운동화",
+      "rankIncrement": 150
     },
     {
       "rank": 5,
-      "keyword": "라피타",
-      "rankIncrement": 644
+      "keyword": "어바웃톤",
+      "rankIncrement": 170
     },
     {
       "rank": 6,
-      "keyword": "토트백",
-      "rankIncrement": 168
+      "keyword": "커브드 팬츠",
+      "rankIncrement": 197
     },
     {
       "rank": 7,
-      "keyword": "롱스커트",
-      "rankIncrement": 129
+      "keyword": "zara",
+      "rankIncrement": 420
     },
     {
       "rank": 8,
-      "keyword": "크롭 롱슬리브",
-      "rankIncrement": 267
+      "keyword": "키뮤어",
+      "rankIncrement": 263
     },
     {
       "rank": 9,
-      "keyword": "mlb 모자",
-      "rankIncrement": 102
+      "keyword": "트렌치코트",
+      "rankIncrement": 101
     },
     {
       "rank": 10,
-      "keyword": "위캔더스",
-      "rankIncrement": 142
+      "keyword": "디스커버리 익스페디션",
+      "rankIncrement": 117
     }
   ]
 }
