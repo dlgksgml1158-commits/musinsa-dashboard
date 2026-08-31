@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-08-30T17:16:14.551356+00:00",
+  "updatedAt": "2026-08-31T03:43:19.874724+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 2,
       "keyword": "후드집업",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "반팔",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "바지",
+      "rank": 4,
+      "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
-      "keyword": "모자",
+      "rank": 5,
+      "keyword": "반팔",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "후드티",
       "rankIncrement": 1
+    },
+    {
+      "rank": 7,
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 3
+    },
+    {
+      "rank": 8,
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "가방",
-      "rankIncrement": -1
+      "keyword": "백팩",
+      "rankIncrement": 3
     },
     {
       "rank": 10,
-      "keyword": "백팩",
-      "rankIncrement": 1
+      "keyword": "스파오",
+      "rankIncrement": -4
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "슈프림",
-      "rankIncrement": 115
+      "keyword": "래플",
+      "rankIncrement": 173
     },
     {
       "rank": 2,
-      "keyword": "아디다스 트랙팬츠",
-      "rankIncrement": 118
+      "keyword": "벤투스",
+      "rankIncrement": 145
     },
     {
       "rank": 3,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 175
+      "keyword": "스파오 진격의거인",
+      "rankIncrement": 112
     },
     {
       "rank": 4,
-      "keyword": "챔피온 후드집업",
-      "rankIncrement": 148
+      "keyword": "비키니",
+      "rankIncrement": 214
     },
     {
       "rank": 5,
-      "keyword": "포터리",
-      "rankIncrement": 195
+      "keyword": "hdex",
+      "rankIncrement": 184
     },
     {
       "rank": 6,
-      "keyword": "ma-1",
-      "rankIncrement": 147
+      "keyword": "파르티멘토 우먼",
+      "rankIncrement": 185
     },
     {
       "rank": 7,
-      "keyword": "라피타",
-      "rankIncrement": 230
+      "keyword": "무탠다드 양말",
+      "rankIncrement": 107
     },
     {
       "rank": 8,
-      "keyword": "오클리",
-      "rankIncrement": 147
+      "keyword": "런닝화",
+      "rankIncrement": 134
     },
     {
       "rank": 9,
-      "keyword": "반팔 카라티",
-      "rankIncrement": 109
+      "keyword": "탄산마그네슘 롱슬리브",
+      "rankIncrement": 113
     },
     {
       "rank": 10,
-      "keyword": "노티카",
-      "rankIncrement": 277
+      "keyword": "트레이닝 셋업",
+      "rankIncrement": 126
     }
   ]
 }
