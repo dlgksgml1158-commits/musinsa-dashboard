@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T16:32:25.595503+00:00",
+  "updatedAt": "2026-08-31T19:27:07.538195+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "반팔",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "바지",
       "rankIncrement": 1
     },
     {
-      "rank": 7,
+      "rank": 5,
+      "keyword": "후드티",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 6,
       "keyword": "아디다스",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 7,
+      "keyword": "가방",
       "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "백팩",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "모자",
+      "keyword": "백팩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "후아유 후드집업",
-      "rankIncrement": 105
+      "keyword": "오헤시오",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "carhartt",
-      "rankIncrement": 177
+      "keyword": "킨치",
+      "rankIncrement": 115
     },
     {
       "rank": 3,
-      "keyword": "더바이닐하우스",
-      "rankIncrement": 304
+      "keyword": "보부상가방",
+      "rankIncrement": 120
     },
     {
       "rank": 4,
-      "keyword": "체험단",
-      "rankIncrement": 118
+      "keyword": "버건디",
+      "rankIncrement": 123
     },
     {
       "rank": 5,
-      "keyword": "토리든",
-      "rankIncrement": 110
+      "keyword": "카고바지",
+      "rankIncrement": 139
     },
     {
       "rank": 6,
-      "keyword": "앤더슨벨",
-      "rankIncrement": 119
+      "keyword": "미스치프",
+      "rankIncrement": 207
     },
     {
       "rank": 7,
-      "keyword": "롱 슬리브",
-      "rankIncrement": 273
+      "keyword": "크롭 후드집업",
+      "rankIncrement": 219
     },
     {
       "rank": 8,
-      "keyword": "남자 반팔",
-      "rankIncrement": 103
+      "keyword": "스트라이프 셔츠",
+      "rankIncrement": 160
     },
     {
       "rank": 9,
-      "keyword": "네이밍",
-      "rankIncrement": 101
+      "keyword": "디올",
+      "rankIncrement": 217
     },
     {
       "rank": 10,
-      "keyword": "엄브로 바람막이",
-      "rankIncrement": 188
+      "keyword": "반팔 셔츠",
+      "rankIncrement": 168
     }
   ]
 }
