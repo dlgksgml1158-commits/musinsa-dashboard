@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T10:34:43.930469+00:00",
+  "updatedAt": "2026-08-31T16:32:25.595503+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,12 +13,12 @@
     },
     {
       "rank": 3,
-      "keyword": "반팔",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "후드티",
+      "keyword": "반팔",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "모자",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "백팩",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 9,
       "keyword": "바지",
       "rankIncrement": 1
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "keyword": "아디다스",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
       "keyword": "가방",
-      "rankIncrement": -2
+      "rankIncrement": 0
+    },
+    {
+      "rank": 9,
+      "keyword": "백팩",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "모자",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "탄산마그네슘 롱슬리브",
-      "rankIncrement": 104
+      "keyword": "후아유 후드집업",
+      "rankIncrement": 105
     },
     {
       "rank": 2,
-      "keyword": "유니온블루",
-      "rankIncrement": 110
+      "keyword": "carhartt",
+      "rankIncrement": 177
     },
     {
       "rank": 3,
-      "keyword": "아디다스 도쿄",
-      "rankIncrement": 191
+      "keyword": "더바이닐하우스",
+      "rankIncrement": 304
     },
     {
       "rank": 4,
-      "keyword": "보부상가방",
-      "rankIncrement": 103
+      "keyword": "체험단",
+      "rankIncrement": 118
     },
     {
       "rank": 5,
-      "keyword": "클로그",
-      "rankIncrement": 145
+      "keyword": "토리든",
+      "rankIncrement": 110
     },
     {
       "rank": 6,
-      "keyword": "레이어드 롱슬리브",
-      "rankIncrement": 109
+      "keyword": "앤더슨벨",
+      "rankIncrement": 119
     },
     {
       "rank": 7,
-      "keyword": "아디다스 바람막이",
-      "rankIncrement": 134
+      "keyword": "롱 슬리브",
+      "rankIncrement": 273
     },
     {
       "rank": 8,
-      "keyword": "배드블러드",
-      "rankIncrement": 231
+      "keyword": "남자 반팔",
+      "rankIncrement": 103
     },
     {
       "rank": 9,
-      "keyword": "스카프",
-      "rankIncrement": 107
+      "keyword": "네이밍",
+      "rankIncrement": 101
     },
     {
       "rank": 10,
-      "keyword": "아노락",
-      "rankIncrement": 180
+      "keyword": "엄브로 바람막이",
+      "rankIncrement": 188
     }
   ]
 }
