@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T03:38:24.113315+00:00",
+  "updatedAt": "2026-09-01T09:17:04.400385+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,23 +18,23 @@
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "반팔",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "바람막이",
+      "rankIncrement": 0
+    },
+    {
       "rank": 6,
-      "keyword": "가방",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "모자",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "후드티",
-      "rankIncrement": -2
+      "keyword": "모자",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": -2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "언더아머",
-      "rankIncrement": 126
+      "keyword": "분크",
+      "rankIncrement": 347
     },
     {
       "rank": 2,
-      "keyword": "아디다스 저지",
-      "rankIncrement": 306
+      "keyword": "키뮤어",
+      "rankIncrement": 112
     },
     {
       "rank": 3,
-      "keyword": "비긴202",
-      "rankIncrement": 106
-    },
-    {
-      "rank": 4,
-      "keyword": "살로몬 백팩",
-      "rankIncrement": 147
-    },
-    {
-      "rank": 5,
-      "keyword": "애플워치 스트랩",
-      "rankIncrement": 119
-    },
-    {
-      "rank": 6,
-      "keyword": "트레이닝",
+      "keyword": "스키즘 인듀싱",
       "rankIncrement": 110
     },
     {
+      "rank": 4,
+      "keyword": "애프터 프레이",
+      "rankIncrement": 140
+    },
+    {
+      "rank": 5,
+      "keyword": "허그유어스킨",
+      "rankIncrement": 149
+    },
+    {
+      "rank": 6,
+      "keyword": "스웨이드 자켓",
+      "rankIncrement": 117
+    },
+    {
       "rank": 7,
-      "keyword": "기능성 반팔",
-      "rankIncrement": 111
+      "keyword": "아디다스 반바지",
+      "rankIncrement": 100
     },
     {
       "rank": 8,
-      "keyword": "스커트",
-      "rankIncrement": 170
+      "keyword": "카키포인트",
+      "rankIncrement": 271
     },
     {
       "rank": 9,
-      "keyword": "항공점퍼",
-      "rankIncrement": 243
+      "keyword": "시도",
+      "rankIncrement": 246
     },
     {
       "rank": 10,
-      "keyword": "슈퍼서브",
-      "rankIncrement": 123
+      "keyword": "파르티멘토 우먼",
+      "rankIncrement": 221
     }
   ]
 }
