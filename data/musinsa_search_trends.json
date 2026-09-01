@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T19:27:07.538195+00:00",
+  "updatedAt": "2026-09-01T03:38:24.113315+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "반팔",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "바람막이",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 5,
-      "keyword": "후드티",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 7,
-      "keyword": "가방",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 8,
-      "keyword": "모자",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 9,
-      "keyword": "바지",
       "rankIncrement": 0
     },
     {
-      "rank": 10,
+      "rank": 5,
+      "keyword": "반팔",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "가방",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "모자",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
       "keyword": "백팩",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 9,
+      "keyword": "후드티",
+      "rankIncrement": -2
+    },
+    {
+      "rank": 10,
+      "keyword": "바지",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "오헤시오",
-      "rankIncrement": 111
+      "keyword": "언더아머",
+      "rankIncrement": 126
     },
     {
       "rank": 2,
-      "keyword": "킨치",
-      "rankIncrement": 115
+      "keyword": "아디다스 저지",
+      "rankIncrement": 306
     },
     {
       "rank": 3,
-      "keyword": "보부상가방",
-      "rankIncrement": 120
+      "keyword": "비긴202",
+      "rankIncrement": 106
     },
     {
       "rank": 4,
-      "keyword": "버건디",
-      "rankIncrement": 123
+      "keyword": "살로몬 백팩",
+      "rankIncrement": 147
     },
     {
       "rank": 5,
-      "keyword": "카고바지",
-      "rankIncrement": 139
+      "keyword": "애플워치 스트랩",
+      "rankIncrement": 119
     },
     {
       "rank": 6,
-      "keyword": "미스치프",
-      "rankIncrement": 207
+      "keyword": "트레이닝",
+      "rankIncrement": 110
     },
     {
       "rank": 7,
-      "keyword": "크롭 후드집업",
-      "rankIncrement": 219
+      "keyword": "기능성 반팔",
+      "rankIncrement": 111
     },
     {
       "rank": 8,
-      "keyword": "스트라이프 셔츠",
-      "rankIncrement": 160
+      "keyword": "스커트",
+      "rankIncrement": 170
     },
     {
       "rank": 9,
-      "keyword": "디올",
-      "rankIncrement": 217
+      "keyword": "항공점퍼",
+      "rankIncrement": 243
     },
     {
       "rank": 10,
-      "keyword": "반팔 셔츠",
-      "rankIncrement": 168
+      "keyword": "슈퍼서브",
+      "rankIncrement": 123
     }
   ]
 }
