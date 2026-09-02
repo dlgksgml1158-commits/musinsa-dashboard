@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T02:56:25.108165+00:00",
+  "updatedAt": "2026-09-02T08:25:19.658780+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "히로",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "반팔",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
+      "rank": 6,
       "keyword": "가방",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
-      "keyword": "백팩",
+      "rank": 7,
+      "keyword": "모자",
       "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "후드티",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "백팩",
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "모자",
-      "rankIncrement": -2
+      "keyword": "가을옷",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "버뮤다",
-      "rankIncrement": 100
+      "keyword": "온러닝",
+      "rankIncrement": 150
     },
     {
       "rank": 2,
-      "keyword": "나그랑티",
-      "rankIncrement": 103
+      "keyword": "파르티멘토",
+      "rankIncrement": 109
     },
     {
       "rank": 3,
-      "keyword": "치노팬츠",
-      "rankIncrement": 107
+      "keyword": "헤어밴드",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "슬렉스",
-      "rankIncrement": 103
+      "keyword": "아디다스 후드집업",
+      "rankIncrement": 121
     },
     {
       "rank": 5,
-      "keyword": "져지",
-      "rankIncrement": 105
+      "keyword": "청자켓",
+      "rankIncrement": 167
     },
     {
       "rank": 6,
-      "keyword": "헨리넥 반팔",
-      "rankIncrement": 206
+      "keyword": "분크",
+      "rankIncrement": 126
     },
     {
       "rank": 7,
-      "keyword": "코이세이오",
-      "rankIncrement": 113
+      "keyword": "헨리넥 긴팔",
+      "rankIncrement": 118
     },
     {
       "rank": 8,
-      "keyword": "무센트",
-      "rankIncrement": 228
+      "keyword": "비긴202",
+      "rankIncrement": 101
     },
     {
       "rank": 9,
-      "keyword": "데님",
-      "rankIncrement": 117
+      "keyword": "hdex",
+      "rankIncrement": 173
     },
     {
       "rank": 10,
-      "keyword": "에잇세컨즈",
-      "rankIncrement": 188
+      "keyword": "샌들",
+      "rankIncrement": 140
     }
   ]
 }
