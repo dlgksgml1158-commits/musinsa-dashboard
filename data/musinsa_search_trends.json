@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T17:13:40.313796+00:00",
+  "updatedAt": "2026-09-02T02:56:25.108165+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
+      "keyword": "히로",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 5,
-      "keyword": "반팔",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 6,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "반팔",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "바람막이",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "바지",
+      "keyword": "가방",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "셔츠",
-      "rankIncrement": 0
+      "keyword": "백팩",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": -2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "999휴머니티",
+      "keyword": "버뮤다",
       "rankIncrement": 100
     },
     {
       "rank": 2,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 108
+      "keyword": "나그랑티",
+      "rankIncrement": 103
     },
     {
       "rank": 3,
-      "keyword": "에이치덱스",
-      "rankIncrement": 124
+      "keyword": "치노팬츠",
+      "rankIncrement": 107
     },
     {
       "rank": 4,
-      "keyword": "보스턴백",
-      "rankIncrement": 117
+      "keyword": "슬렉스",
+      "rankIncrement": 103
     },
     {
       "rank": 5,
-      "keyword": "헬리녹스",
-      "rankIncrement": 106
+      "keyword": "져지",
+      "rankIncrement": 105
     },
     {
       "rank": 6,
-      "keyword": "르아브",
-      "rankIncrement": 108
+      "keyword": "헨리넥 반팔",
+      "rankIncrement": 206
     },
     {
       "rank": 7,
-      "keyword": "더니트컴퍼니",
-      "rankIncrement": 157
+      "keyword": "코이세이오",
+      "rankIncrement": 113
     },
     {
       "rank": 8,
-      "keyword": "브라운야드",
-      "rankIncrement": 102
+      "keyword": "무센트",
+      "rankIncrement": 228
     },
     {
       "rank": 9,
-      "keyword": "베리시",
-      "rankIncrement": 147
+      "keyword": "데님",
+      "rankIncrement": 117
     },
     {
       "rank": 10,
-      "keyword": "니트집업",
-      "rankIncrement": 100
+      "keyword": "에잇세컨즈",
+      "rankIncrement": 188
     }
   ]
 }
