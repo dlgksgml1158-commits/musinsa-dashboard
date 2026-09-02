@@ -1,35 +1,35 @@
 {
-  "updatedAt": "2026-09-02T13:05:58.967646+00:00",
+  "updatedAt": "2026-09-02T17:04:38.943899+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "후드집업",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 2,
       "keyword": "롱슬리브",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "반팔",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 5,
-      "keyword": "후드티",
       "rankIncrement": 1
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": -1
+    },
+    {
+      "rank": 6,
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "가을옷",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "팬츠",
-      "rankIncrement": 101
+      "keyword": "슬리브리스",
+      "rankIncrement": 114
     },
     {
       "rank": 2,
-      "keyword": "슬링백",
-      "rankIncrement": 150
+      "keyword": "뮬",
+      "rankIncrement": 100
     },
     {
       "rank": 3,
-      "keyword": "어뮤즈",
-      "rankIncrement": 230
+      "keyword": "트랙탑",
+      "rankIncrement": 127
     },
     {
       "rank": 4,
       "keyword": "아이폰 케이스",
-      "rankIncrement": 213
+      "rankIncrement": 107
     },
     {
       "rank": 5,
-      "keyword": "위켄더스",
-      "rankIncrement": 106
+      "keyword": "버건디",
+      "rankIncrement": 172
     },
     {
       "rank": 6,
-      "keyword": "바우프",
-      "rankIncrement": 165
+      "keyword": "윈드브레이커",
+      "rankIncrement": 173
     },
     {
       "rank": 7,
-      "keyword": "정장",
-      "rankIncrement": 117
+      "keyword": "에잇세컨즈",
+      "rankIncrement": 128
     },
     {
       "rank": 8,
-      "keyword": "혼다",
-      "rankIncrement": 118
+      "keyword": "플레어진",
+      "rankIncrement": 102
     },
     {
       "rank": 9,
-      "keyword": "펜필드",
-      "rankIncrement": 174
+      "keyword": "쏘비",
+      "rankIncrement": 107
     },
     {
       "rank": 10,
-      "keyword": "마리떼",
-      "rankIncrement": 101
+      "keyword": "래플",
+      "rankIncrement": 252
     }
   ]
 }
