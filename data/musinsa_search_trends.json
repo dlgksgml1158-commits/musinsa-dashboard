@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-09-03T16:59:00.918779+00:00",
+  "updatedAt": "2026-09-04T02:58:20.528393+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "keyword": "살로몬",
+      "rankIncrement": 2
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": -1
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
+      "keyword": "후드집업",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "반팔",
-      "rankIncrement": -1
+      "keyword": "후드티",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "살로몬 인슐레이션",
+      "rankIncrement": 4
     },
     {
       "rank": 8,
       "keyword": "모자",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "셔츠",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "넥타이",
+      "keyword": "운동복",
       "rankIncrement": 129
     },
     {
       "rank": 2,
-      "keyword": "남자 목걸이",
-      "rankIncrement": 105
+      "keyword": "노이어",
+      "rankIncrement": 106
     },
     {
       "rank": 3,
-      "keyword": "스키즘 인듀싱",
-      "rankIncrement": 113
+      "keyword": "노스페이스 백팩",
+      "rankIncrement": 110
     },
     {
       "rank": 4,
-      "keyword": "정장",
-      "rankIncrement": 102
+      "keyword": "에이치덱스",
+      "rankIncrement": 113
     },
     {
       "rank": 5,
-      "keyword": "홀터넥",
-      "rankIncrement": 246
+      "keyword": "넥타이",
+      "rankIncrement": 120
     },
     {
       "rank": 6,
-      "keyword": "메리제인",
-      "rankIncrement": 155
+      "keyword": "향수",
+      "rankIncrement": 121
     },
     {
       "rank": 7,
-      "keyword": "나이키 신발",
-      "rankIncrement": 102
+      "keyword": "남자 셔츠",
+      "rankIncrement": 170
     },
     {
       "rank": 8,
-      "keyword": "코이리스",
-      "rankIncrement": 109
+      "keyword": "살로몬 경량패딩",
+      "rankIncrement": 112
     },
     {
       "rank": 9,
-      "keyword": "닉켈하우스 후드집업",
-      "rankIncrement": 129
+      "keyword": "플레어진",
+      "rankIncrement": 130
     },
     {
       "rank": 10,
-      "keyword": "컬럼비아",
-      "rankIncrement": 133
+      "keyword": "미니백",
+      "rankIncrement": 136
     }
   ]
 }
