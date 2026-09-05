@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-09-05T03:00:15.001673+00:00",
+  "updatedAt": "2026-09-05T08:04:26.831768+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "데스노트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 2,
-      "keyword": "스파오",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
-      "keyword": "스파오 데스노트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "후드집업",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 2,
+      "keyword": "후드집업",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 3,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
+      "rank": 4,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
+      "rank": 5,
+      "keyword": "스파오",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "데스노트",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "스파오 데스노트",
+      "rankIncrement": 1
+    },
+    {
       "rank": 9,
-      "keyword": "가을옷",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "벨리에",
-      "rankIncrement": 167
-    },
-    {
-      "rank": 2,
-      "keyword": "토마스모어",
-      "rankIncrement": 118
-    },
-    {
-      "rank": 3,
-      "keyword": "블레이저",
-      "rankIncrement": 133
-    },
-    {
-      "rank": 4,
-      "keyword": "스커트",
+      "keyword": "노이어",
       "rankIncrement": 101
     },
     {
+      "rank": 2,
+      "keyword": "프리덤",
+      "rankIncrement": 151
+    },
+    {
+      "rank": 3,
+      "keyword": "포터리",
+      "rankIncrement": 110
+    },
+    {
+      "rank": 4,
+      "keyword": "크롭 후드집업",
+      "rankIncrement": 100
+    },
+    {
       "rank": 5,
-      "keyword": "스파오 이토준지",
-      "rankIncrement": 191
+      "keyword": "애즈온",
+      "rankIncrement": 105
     },
     {
       "rank": 6,
-      "keyword": "휠라",
-      "rankIncrement": 219
+      "keyword": "스트라이프 셔츠",
+      "rankIncrement": 292
     },
     {
       "rank": 7,
-      "keyword": "반팔셔츠",
-      "rankIncrement": 163
+      "keyword": "미니백팩",
+      "rankIncrement": 123
     },
     {
       "rank": 8,
-      "keyword": "와이드 팬츠",
-      "rankIncrement": 166
+      "keyword": "살로몬 백팩",
+      "rankIncrement": 121
     },
     {
       "rank": 9,
-      "keyword": "비긴202",
-      "rankIncrement": 277
+      "keyword": "혼다",
+      "rankIncrement": 152
     },
     {
       "rank": 10,
-      "keyword": "슈펜",
-      "rankIncrement": 142
+      "keyword": "위켄더스",
+      "rankIncrement": 101
     }
   ]
 }
