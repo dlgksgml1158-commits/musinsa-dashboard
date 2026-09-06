@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-06T08:23:30.659952+00:00",
+  "updatedAt": "2026-09-06T12:28:33.529312+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "롱슬리브",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 3
     },
     {
       "rank": 6,
-      "keyword": "가을옷",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
       "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "가방",
-      "rankIncrement": -1
+      "keyword": "셔츠",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "코삿",
-      "rankIncrement": 101
+      "keyword": "후드 집업",
+      "rankIncrement": 294
     },
     {
       "rank": 2,
-      "keyword": "와이드 팬츠",
-      "rankIncrement": 113
+      "keyword": "상의",
+      "rankIncrement": 127
     },
     {
       "rank": 3,
-      "keyword": "슬링백",
-      "rankIncrement": 129
+      "keyword": "트레이닝바지",
+      "rankIncrement": 146
     },
     {
       "rank": 4,
-      "keyword": "노스페이스 플리스",
-      "rankIncrement": 227
+      "keyword": "론론",
+      "rankIncrement": 145
     },
     {
       "rank": 5,
-      "keyword": "보부상가방",
-      "rankIncrement": 117
+      "keyword": "조셉트",
+      "rankIncrement": 164
     },
     {
       "rank": 6,
-      "keyword": "헨리넥 긴팔",
-      "rankIncrement": 155
+      "keyword": "스커트",
+      "rankIncrement": 205
     },
     {
       "rank": 7,
-      "keyword": "모드나인",
-      "rankIncrement": 108
+      "keyword": "어반드레스",
+      "rankIncrement": 130
     },
     {
       "rank": 8,
-      "keyword": "파르티멘토",
-      "rankIncrement": 301
+      "keyword": "스트라이프",
+      "rankIncrement": 102
     },
     {
       "rank": 9,
-      "keyword": "세컨드솔트",
-      "rankIncrement": 176
+      "keyword": "매드해피",
+      "rankIncrement": 127
     },
     {
       "rank": 10,
-      "keyword": "아디다스 슬리퍼",
-      "rankIncrement": 107
+      "keyword": "스탠리",
+      "rankIncrement": 100
     }
   ]
 }
