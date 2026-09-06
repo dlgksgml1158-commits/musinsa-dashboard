@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-06T12:28:33.529312+00:00",
+  "updatedAt": "2026-09-06T16:02:18.601142+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "바지",
-      "rankIncrement": 3
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": -1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 8,
+      "keyword": "셔츠",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 9,
       "keyword": "가을옷",
       "rankIncrement": -1
     },
     {
-      "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 9,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
-    },
-    {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": 2
+      "keyword": "가방",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "후드 집업",
-      "rankIncrement": 294
+      "keyword": "수영복",
+      "rankIncrement": 104
     },
     {
       "rank": 2,
-      "keyword": "상의",
-      "rankIncrement": 127
+      "keyword": "트랙탑",
+      "rankIncrement": 106
     },
     {
       "rank": 3,
-      "keyword": "트레이닝바지",
-      "rankIncrement": 146
+      "keyword": "카고바지",
+      "rankIncrement": 112
     },
     {
       "rank": 4,
-      "keyword": "론론",
-      "rankIncrement": 145
+      "keyword": "클로그",
+      "rankIncrement": 169
     },
     {
       "rank": 5,
-      "keyword": "조셉트",
-      "rankIncrement": 164
+      "keyword": "필드자켓",
+      "rankIncrement": 148
     },
     {
       "rank": 6,
-      "keyword": "스커트",
-      "rankIncrement": 205
+      "keyword": "롱패딩",
+      "rankIncrement": 116
     },
     {
       "rank": 7,
-      "keyword": "어반드레스",
-      "rankIncrement": 130
+      "keyword": "스웨트팬츠",
+      "rankIncrement": 152
     },
     {
       "rank": 8,
-      "keyword": "스트라이프",
-      "rankIncrement": 102
+      "keyword": "아메스 월드와이드",
+      "rankIncrement": 115
     },
     {
       "rank": 9,
-      "keyword": "매드해피",
-      "rankIncrement": 127
+      "keyword": "스컬프터",
+      "rankIncrement": 122
     },
     {
       "rank": 10,
-      "keyword": "스탠리",
-      "rankIncrement": 100
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 104
     }
   ]
 }
