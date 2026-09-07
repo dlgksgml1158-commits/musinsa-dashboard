@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T14:36:22.966240+00:00",
+  "updatedAt": "2026-09-07T18:09:32.575505+00:00",
   "popular": [
     {
       "rank": 1,
@@ -34,12 +34,12 @@
     {
       "rank": 7,
       "keyword": "맨투맨",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "가디건",
-      "rankIncrement": 1
+      "keyword": "가방",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "야세",
-      "rankIncrement": 150
+      "keyword": "니트집업",
+      "rankIncrement": 124
     },
     {
       "rank": 2,
-      "keyword": "더플백",
-      "rankIncrement": 111
+      "keyword": "와이드 팬츠",
+      "rankIncrement": 124
     },
     {
       "rank": 3,
-      "keyword": "흰티",
-      "rankIncrement": 206
+      "keyword": "포터리",
+      "rankIncrement": 115
     },
     {
       "rank": 4,
-      "keyword": "코이리스",
-      "rankIncrement": 233
+      "keyword": "긴바지",
+      "rankIncrement": 125
     },
     {
       "rank": 5,
-      "keyword": "마하그리드",
-      "rankIncrement": 295
+      "keyword": "크롭 반팔",
+      "rankIncrement": 134
     },
     {
       "rank": 6,
-      "keyword": "오버핏 셔츠",
-      "rankIncrement": 209
+      "keyword": "락케이크",
+      "rankIncrement": 221
     },
     {
       "rank": 7,
-      "keyword": "남자 벨트",
-      "rankIncrement": 118
+      "keyword": "나이키 신발",
+      "rankIncrement": 131
     },
     {
       "rank": 8,
-      "keyword": "세미와이드 슬랙스",
-      "rankIncrement": 164
+      "keyword": "삐아",
+      "rankIncrement": 193
     },
     {
       "rank": 9,
-      "keyword": "오버핏 반팔",
-      "rankIncrement": 138
+      "keyword": "머슬핏 반팔",
+      "rankIncrement": 114
     },
     {
       "rank": 10,
-      "keyword": "스파오 바람막이",
-      "rankIncrement": 139
+      "keyword": "르아브",
+      "rankIncrement": 115
     }
   ]
 }
