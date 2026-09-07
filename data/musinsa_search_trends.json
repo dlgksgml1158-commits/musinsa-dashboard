@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T08:56:55.559435+00:00",
+  "updatedAt": "2026-09-07T14:36:22.966240+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "바람막이",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
@@ -33,13 +33,13 @@
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "가방",
-      "rankIncrement": 0
+      "keyword": "가디건",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "마리떼",
-      "rankIncrement": 103
+      "keyword": "야세",
+      "rankIncrement": 150
     },
     {
       "rank": 2,
-      "keyword": "와이드 슬랙스",
-      "rankIncrement": 117
+      "keyword": "더플백",
+      "rankIncrement": 111
     },
     {
       "rank": 3,
-      "keyword": "향수",
-      "rankIncrement": 127
+      "keyword": "흰티",
+      "rankIncrement": 206
     },
     {
       "rank": 4,
-      "keyword": "팬티",
-      "rankIncrement": 126
+      "keyword": "코이리스",
+      "rankIncrement": 233
     },
     {
       "rank": 5,
-      "keyword": "조거팬츠",
-      "rankIncrement": 108
+      "keyword": "마하그리드",
+      "rankIncrement": 295
     },
     {
       "rank": 6,
-      "keyword": "블랙야크",
-      "rankIncrement": 194
+      "keyword": "오버핏 셔츠",
+      "rankIncrement": 209
     },
     {
       "rank": 7,
-      "keyword": "꺼먹살이",
-      "rankIncrement": 234
-    },
-    {
-      "rank": 8,
-      "keyword": "후아유",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 9,
-      "keyword": "오클리",
+      "keyword": "남자 벨트",
       "rankIncrement": 118
     },
     {
+      "rank": 8,
+      "keyword": "세미와이드 슬랙스",
+      "rankIncrement": 164
+    },
+    {
+      "rank": 9,
+      "keyword": "오버핏 반팔",
+      "rankIncrement": 138
+    },
+    {
       "rank": 10,
-      "keyword": "후브스",
-      "rankIncrement": 100
+      "keyword": "스파오 바람막이",
+      "rankIncrement": 139
     }
   ]
 }
