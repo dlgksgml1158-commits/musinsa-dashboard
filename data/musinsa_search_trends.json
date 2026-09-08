@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-09-07T18:09:32.575505+00:00",
+  "updatedAt": "2026-09-08T03:06:58.854433+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
+      "keyword": "스파오",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
+      "keyword": "블리치",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "후드티",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "가을옷",
+      "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "셔츠",
+      "keyword": "치이카와",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "가방",
+      "keyword": "셔츠",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "니트집업",
-      "rankIncrement": 124
+      "keyword": "살로몬 패딩",
+      "rankIncrement": 130
     },
     {
       "rank": 2,
-      "keyword": "와이드 팬츠",
-      "rankIncrement": 124
+      "keyword": "치마",
+      "rankIncrement": 112
     },
     {
       "rank": 3,
-      "keyword": "포터리",
-      "rankIncrement": 115
+      "keyword": "수영복",
+      "rankIncrement": 130
     },
     {
       "rank": 4,
-      "keyword": "긴바지",
-      "rankIncrement": 125
-    },
-    {
-      "rank": 5,
-      "keyword": "크롭 반팔",
-      "rankIncrement": 134
-    },
-    {
-      "rank": 6,
-      "keyword": "락케이크",
-      "rankIncrement": 221
-    },
-    {
-      "rank": 7,
-      "keyword": "나이키 신발",
+      "keyword": "하이넥",
       "rankIncrement": 131
     },
     {
+      "rank": 5,
+      "keyword": "락케이크",
+      "rankIncrement": 196
+    },
+    {
+      "rank": 6,
+      "keyword": "칼하트 후드집업",
+      "rankIncrement": 167
+    },
+    {
+      "rank": 7,
+      "keyword": "더플백",
+      "rankIncrement": 270
+    },
+    {
       "rank": 8,
-      "keyword": "삐아",
-      "rankIncrement": 193
+      "keyword": "닥터마틴 1461",
+      "rankIncrement": 304
     },
     {
       "rank": 9,
-      "keyword": "머슬핏 반팔",
-      "rankIncrement": 114
+      "keyword": "애즈온",
+      "rankIncrement": 119
     },
     {
       "rank": 10,
-      "keyword": "르아브",
-      "rankIncrement": 115
+      "keyword": "롱부츠",
+      "rankIncrement": 182
     }
   ]
 }
