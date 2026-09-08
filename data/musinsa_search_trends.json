@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T08:37:48.248517+00:00",
+  "updatedAt": "2026-09-08T13:11:05.965592+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,43 +8,43 @@
     },
     {
       "rank": 2,
-      "keyword": "블리치",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "롱슬리브",
+      "keyword": "가을옷",
       "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "스파오",
+      "keyword": "바람막이",
       "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "치이카와",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
+      "rank": 6,
       "keyword": "아디다스",
-      "rankIncrement": 0
+      "rankIncrement": 1
+    },
+    {
+      "rank": 7,
+      "keyword": "바지",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
+      "keyword": "스파오",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 9,
+      "keyword": "치이카와",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "토리든",
-      "rankIncrement": 506
+      "keyword": "드로우핏",
+      "rankIncrement": 109
     },
     {
       "rank": 2,
-      "keyword": "노이스",
-      "rankIncrement": 131
+      "keyword": "흰티",
+      "rankIncrement": 126
     },
     {
       "rank": 3,
-      "keyword": "카코트",
-      "rankIncrement": 103
+      "keyword": "남자 가디건",
+      "rankIncrement": 110
     },
     {
       "rank": 4,
-      "keyword": "아디다스 삼바",
-      "rankIncrement": 108
+      "keyword": "Gap",
+      "rankIncrement": 166
     },
     {
       "rank": 5,
-      "keyword": "뉴발란스 운동화",
-      "rankIncrement": 248
-    },
-    {
-      "rank": 6,
-      "keyword": "남자 바지",
+      "keyword": "후아유",
       "rankIncrement": 142
     },
     {
+      "rank": 6,
+      "keyword": "마르디 메크르디",
+      "rankIncrement": 192
+    },
+    {
       "rank": 7,
-      "keyword": "스트라이프",
-      "rankIncrement": 102
+      "keyword": "러프사이드",
+      "rankIncrement": 108
     },
     {
       "rank": 8,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 271
+      "keyword": "로우클래식",
+      "rankIncrement": 117
     },
     {
       "rank": 9,
-      "keyword": "헨리넥 니트",
-      "rankIncrement": 106
+      "keyword": "우포스",
+      "rankIncrement": 118
     },
     {
       "rank": 10,
-      "keyword": "남자 백팩",
-      "rankIncrement": 116
+      "keyword": "알리스",
+      "rankIncrement": 121
     }
   ]
 }
