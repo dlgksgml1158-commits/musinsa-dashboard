@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-08T03:06:58.854433+00:00",
+  "updatedAt": "2026-09-08T08:37:48.248517+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "스파오",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "keyword": "스파오",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "바람막이",
+      "keyword": "치이카와",
       "rankIncrement": 0
     },
     {
@@ -33,17 +33,17 @@
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
       "keyword": "후드티",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "치이카와",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "살로몬 패딩",
-      "rankIncrement": 130
+      "keyword": "토리든",
+      "rankIncrement": 506
     },
     {
       "rank": 2,
-      "keyword": "치마",
-      "rankIncrement": 112
-    },
-    {
-      "rank": 3,
-      "keyword": "수영복",
-      "rankIncrement": 130
-    },
-    {
-      "rank": 4,
-      "keyword": "하이넥",
+      "keyword": "노이스",
       "rankIncrement": 131
     },
     {
+      "rank": 3,
+      "keyword": "카코트",
+      "rankIncrement": 103
+    },
+    {
+      "rank": 4,
+      "keyword": "아디다스 삼바",
+      "rankIncrement": 108
+    },
+    {
       "rank": 5,
-      "keyword": "락케이크",
-      "rankIncrement": 196
+      "keyword": "뉴발란스 운동화",
+      "rankIncrement": 248
     },
     {
       "rank": 6,
-      "keyword": "칼하트 후드집업",
-      "rankIncrement": 167
+      "keyword": "남자 바지",
+      "rankIncrement": 142
     },
     {
       "rank": 7,
-      "keyword": "더플백",
-      "rankIncrement": 270
+      "keyword": "스트라이프",
+      "rankIncrement": 102
     },
     {
       "rank": 8,
-      "keyword": "닥터마틴 1461",
-      "rankIncrement": 304
+      "keyword": "코튼 팬츠",
+      "rankIncrement": 271
     },
     {
       "rank": 9,
-      "keyword": "애즈온",
-      "rankIncrement": 119
+      "keyword": "헨리넥 니트",
+      "rankIncrement": 106
     },
     {
       "rank": 10,
-      "keyword": "롱부츠",
-      "rankIncrement": 182
+      "keyword": "남자 백팩",
+      "rankIncrement": 116
     }
   ]
 }

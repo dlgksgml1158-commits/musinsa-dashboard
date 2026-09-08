@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T03:06:57.456802+00:00",
+  "updatedAt": "2026-09-08T08:37:46.797417+00:00",
   "musinsa": [
     {
       "keyword": "티셔츠",
@@ -41,7 +41,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 6,
-      "change": 4
+      "change": null
     },
     {
       "keyword": "남자반바지",
@@ -69,7 +69,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -4
+      "change": null
     }
   ],
   "cm29": [
@@ -113,7 +113,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 6,
-      "change": 4
+      "change": null
     },
     {
       "keyword": "남자반바지",
@@ -141,7 +141,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -4
+      "change": null
     }
   ]
 }
