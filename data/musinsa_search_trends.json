@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T08:39:27.950367+00:00",
+  "updatedAt": "2026-09-09T13:15:58.419722+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,12 +14,12 @@
     {
       "rank": 3,
       "keyword": "바람막이",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "후드티",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 5,
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "엘무드",
+      "rankIncrement": -3
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": -1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "오프숄더",
-      "rankIncrement": 109
+      "keyword": "필루미네이트",
+      "rankIncrement": 119
     },
     {
       "rank": 2,
-      "keyword": "후아유",
-      "rankIncrement": 109
+      "keyword": "carhartt",
+      "rankIncrement": 111
     },
     {
       "rank": 3,
-      "keyword": "아식스 젤카야노 14",
-      "rankIncrement": 110
+      "keyword": "데케트",
+      "rankIncrement": 130
     },
     {
       "rank": 4,
-      "keyword": "필드자켓",
-      "rankIncrement": 138
+      "keyword": "잔스포츠 백팩",
+      "rankIncrement": 125
     },
     {
       "rank": 5,
-      "keyword": "매든",
-      "rankIncrement": 194
+      "keyword": "무신사 스탠다드 경량패딩",
+      "rankIncrement": 132
     },
     {
       "rank": 6,
-      "keyword": "가을 아우터",
-      "rankIncrement": 160
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 116
     },
     {
       "rank": 7,
-      "keyword": "헨리넥 니트",
-      "rankIncrement": 202
+      "keyword": "오픈야드",
+      "rankIncrement": 100
     },
     {
       "rank": 8,
-      "keyword": "먼작귀",
-      "rankIncrement": 162
+      "keyword": "크롭 롱슬리브",
+      "rankIncrement": 126
     },
     {
       "rank": 9,
-      "keyword": "아디다스 트랙팬츠",
-      "rankIncrement": 121
+      "keyword": "아크테릭스 바람막이",
+      "rankIncrement": 189
     },
     {
       "rank": 10,
-      "keyword": "탑텐",
-      "rankIncrement": 116
+      "keyword": "온러닝",
+      "rankIncrement": 140
     }
   ]
 }
