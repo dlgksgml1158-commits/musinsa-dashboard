@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T17:08:02.324896+00:00",
+  "updatedAt": "2026-09-09T03:08:42.877411+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "가을옷",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "가디건",
+      "rankIncrement": 3
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "셔츠",
-      "rankIncrement": 1
+      "keyword": "경량패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
       "keyword": "스파오",
-      "rankIncrement": -1
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "노티카",
-      "rankIncrement": 191
+      "keyword": "시티레저",
+      "rankIncrement": 281
     },
     {
       "rank": 2,
-      "keyword": "크롭 자켓",
-      "rankIncrement": 153
+      "keyword": "헬리녹스",
+      "rankIncrement": 114
     },
     {
       "rank": 3,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 164
+      "keyword": "트랙팬츠",
+      "rankIncrement": 102
     },
     {
       "rank": 4,
-      "keyword": "그라미치",
-      "rankIncrement": 136
+      "keyword": "트래블",
+      "rankIncrement": 191
     },
     {
       "rank": 5,
-      "keyword": "아디다스 저지",
-      "rankIncrement": 153
+      "keyword": "글런든",
+      "rankIncrement": 145
     },
     {
       "rank": 6,
-      "keyword": "르아브",
-      "rankIncrement": 131
+      "keyword": "젝시믹스",
+      "rankIncrement": 117
     },
     {
       "rank": 7,
-      "keyword": "mlb 모자",
-      "rankIncrement": 210
+      "keyword": "오클리",
+      "rankIncrement": 121
     },
     {
       "rank": 8,
-      "keyword": "아디다스 도쿄",
-      "rankIncrement": 164
+      "keyword": "뉴발란스 530",
+      "rankIncrement": 170
     },
     {
       "rank": 9,
-      "keyword": "아노락",
-      "rankIncrement": 131
+      "keyword": "코드그라피",
+      "rankIncrement": 180
     },
     {
       "rank": 10,
-      "keyword": "트레이닝",
-      "rankIncrement": 203
+      "keyword": "오버핏 반팔",
+      "rankIncrement": 117
     }
   ]
 }
