@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T13:13:52.436819+00:00",
+  "updatedAt": "2026-09-10T16:56:30.273366+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,22 +13,22 @@
     },
     {
       "rank": 3,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "바람막이",
+      "rankIncrement": 0
+    },
+    {
       "rank": 5,
-      "keyword": "가을옷",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
@@ -38,13 +38,13 @@
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "가디건",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "가디건",
-      "rankIncrement": 1
+      "keyword": "바지",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "남자 가디건",
-      "rankIncrement": 200
+      "keyword": "청자켓",
+      "rankIncrement": 115
     },
     {
       "rank": 2,
-      "keyword": "호카",
-      "rankIncrement": 116
+      "keyword": "롤슬리브",
+      "rankIncrement": 167
     },
     {
       "rank": 3,
-      "keyword": "버던트",
-      "rankIncrement": 189
+      "keyword": "레이어드 롱슬리브",
+      "rankIncrement": 105
     },
     {
       "rank": 4,
-      "keyword": "키츠네",
-      "rankIncrement": 192
+      "keyword": "스트라이프 롱슬리브",
+      "rankIncrement": 106
     },
     {
       "rank": 5,
-      "keyword": "메종 키츠네",
-      "rankIncrement": 196
+      "keyword": "디젤",
+      "rankIncrement": 241
     },
     {
       "rank": 6,
-      "keyword": "플레어진",
-      "rankIncrement": 254
+      "keyword": "스웨트팬츠",
+      "rankIncrement": 101
     },
     {
       "rank": 7,
-      "keyword": "7부 티셔츠",
-      "rankIncrement": 142
+      "keyword": "나일론 팬츠",
+      "rankIncrement": 165
     },
     {
       "rank": 8,
-      "keyword": "슬링백",
-      "rankIncrement": 140
+      "keyword": "무탠다드 오헤시오",
+      "rankIncrement": 137
     },
     {
       "rank": 9,
-      "keyword": "진격의거인",
-      "rankIncrement": 104
+      "keyword": "아이앱스튜디오",
+      "rankIncrement": 206
     },
     {
       "rank": 10,
-      "keyword": "정장",
-      "rankIncrement": 117
+      "keyword": "포켓몬스터",
+      "rankIncrement": 108
     }
   ]
 }
