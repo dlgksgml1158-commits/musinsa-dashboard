@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T08:40:37.663156+00:00",
+  "updatedAt": "2026-09-10T13:13:52.436819+00:00",
   "popular": [
     {
       "rank": 1,
@@ -28,7 +28,7 @@
     },
     {
       "rank": 6,
-      "keyword": "아디다스",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "맨투맨",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 9,
       "keyword": "가디건",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 3
+      "keyword": "아디다스",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "벌룬팬츠",
-      "rankIncrement": 111
+      "keyword": "남자 가디건",
+      "rankIncrement": 200
     },
     {
       "rank": 2,
-      "keyword": "슬림핏 후드집업",
-      "rankIncrement": 241
-    },
-    {
-      "rank": 3,
-      "keyword": "허그유어스킨",
+      "keyword": "호카",
       "rankIncrement": 116
     },
     {
+      "rank": 3,
+      "keyword": "버던트",
+      "rankIncrement": 189
+    },
+    {
       "rank": 4,
-      "keyword": "아이앱스튜디오",
-      "rankIncrement": 118
+      "keyword": "키츠네",
+      "rankIncrement": 192
     },
     {
       "rank": 5,
-      "keyword": "위캔더스",
-      "rankIncrement": 159
+      "keyword": "메종 키츠네",
+      "rankIncrement": 196
     },
     {
       "rank": 6,
-      "keyword": "아모우",
-      "rankIncrement": 100
+      "keyword": "플레어진",
+      "rankIncrement": 254
     },
     {
       "rank": 7,
-      "keyword": "런닝화",
-      "rankIncrement": 133
+      "keyword": "7부 티셔츠",
+      "rankIncrement": 142
     },
     {
       "rank": 8,
-      "keyword": "트릴리온",
-      "rankIncrement": 104
+      "keyword": "슬링백",
+      "rankIncrement": 140
     },
     {
       "rank": 9,
-      "keyword": "위켄더스",
-      "rankIncrement": 119
+      "keyword": "진격의거인",
+      "rankIncrement": 104
     },
     {
       "rank": 10,
-      "keyword": "르아브",
-      "rankIncrement": 366
+      "keyword": "정장",
+      "rankIncrement": 117
     }
   ]
 }
