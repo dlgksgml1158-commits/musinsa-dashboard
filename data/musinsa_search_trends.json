@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T03:09:09.622332+00:00",
+  "updatedAt": "2026-09-10T08:40:37.663156+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,12 +8,12 @@
     },
     {
       "rank": 2,
-      "keyword": "바람막이",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "롱슬리브",
+      "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
@@ -28,12 +28,12 @@
     },
     {
       "rank": 6,
-      "keyword": "경량패딩",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 2
+      "keyword": "바지",
+      "rankIncrement": 3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "산산기어",
-      "rankIncrement": 119
-    },
-    {
-      "rank": 2,
-      "keyword": "러닝",
+      "keyword": "벌룬팬츠",
       "rankIncrement": 111
     },
     {
+      "rank": 2,
+      "keyword": "슬림핏 후드집업",
+      "rankIncrement": 241
+    },
+    {
       "rank": 3,
-      "keyword": "캐리어",
-      "rankIncrement": 113
+      "keyword": "허그유어스킨",
+      "rankIncrement": 116
     },
     {
       "rank": 4,
-      "keyword": "향수",
-      "rankIncrement": 143
+      "keyword": "아이앱스튜디오",
+      "rankIncrement": 118
     },
     {
       "rank": 5,
-      "keyword": "치마바지",
-      "rankIncrement": 123
+      "keyword": "위캔더스",
+      "rankIncrement": 159
     },
     {
       "rank": 6,
-      "keyword": "머슬핏 반팔",
-      "rankIncrement": 172
+      "keyword": "아모우",
+      "rankIncrement": 100
     },
     {
       "rank": 7,
-      "keyword": "숏패딩",
-      "rankIncrement": 234
+      "keyword": "런닝화",
+      "rankIncrement": 133
     },
     {
       "rank": 8,
-      "keyword": "마인드브릿지",
-      "rankIncrement": 120
+      "keyword": "트릴리온",
+      "rankIncrement": 104
     },
     {
       "rank": 9,
-      "keyword": "미디스커트",
-      "rankIncrement": 128
+      "keyword": "위켄더스",
+      "rankIncrement": 119
     },
     {
       "rank": 10,
-      "keyword": "카라티",
-      "rankIncrement": 101
+      "keyword": "르아브",
+      "rankIncrement": 366
     }
   ]
 }
