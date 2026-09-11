@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T03:04:08.775897+00:00",
+  "updatedAt": "2026-09-11T08:36:07.049443+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "살로몬",
+      "keyword": "후드티",
       "rankIncrement": 1
     },
     {
-      "rank": 5,
-      "keyword": "후드티",
+      "rank": 4,
+      "keyword": "바람막이",
       "rankIncrement": -1
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
+      "rank": 6,
+      "keyword": "맨투맨",
+      "rankIncrement": 1
+    },
+    {
       "rank": 7,
       "keyword": "아디다스",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "가디건",
-      "rankIncrement": 0
+      "keyword": "경량패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "가디건",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파코서플라이",
-      "rankIncrement": 108
+      "keyword": "나일론 팬츠",
+      "rankIncrement": 116
     },
     {
       "rank": 2,
-      "keyword": "포켓몬스터",
-      "rankIncrement": 115
+      "keyword": "스투시 후드집업",
+      "rankIncrement": 126
     },
     {
       "rank": 3,
-      "keyword": "트랙탑",
-      "rankIncrement": 117
+      "keyword": "반다나",
+      "rankIncrement": 102
     },
     {
       "rank": 4,
-      "keyword": "트릴리온",
-      "rankIncrement": 130
+      "keyword": "슬링백",
+      "rankIncrement": 165
     },
     {
       "rank": 5,
-      "keyword": "알리스",
-      "rankIncrement": 149
+      "keyword": "하프집업",
+      "rankIncrement": 169
     },
     {
       "rank": 6,
-      "keyword": "코스알엑스",
-      "rankIncrement": 135
+      "keyword": "mlb 모자",
+      "rankIncrement": 245
     },
     {
       "rank": 7,
-      "keyword": "아디다스 트랙팬츠",
-      "rankIncrement": 393
+      "keyword": "코스알엑스",
+      "rankIncrement": 374
     },
     {
       "rank": 8,
-      "keyword": "파자마",
-      "rankIncrement": 204
+      "keyword": "러닝",
+      "rankIncrement": 136
     },
     {
       "rank": 9,
-      "keyword": "무배당발",
-      "rankIncrement": 104
+      "keyword": "남자 벨트",
+      "rankIncrement": 164
     },
     {
       "rank": 10,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 152
+      "keyword": "포켓몬스터",
+      "rankIncrement": 264
     }
   ]
 }
