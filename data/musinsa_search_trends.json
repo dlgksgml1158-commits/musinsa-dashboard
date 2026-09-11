@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T13:07:21.018401+00:00",
+  "updatedAt": "2026-09-11T16:57:20.307994+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,18 +18,18 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "가을옷",
+      "rankIncrement": 1
+    },
+    {
       "rank": 6,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 7,
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "경량패딩",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "가디건",
-      "rankIncrement": 0
+      "keyword": "야상",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파브레가",
-      "rankIncrement": 130
+      "keyword": "볼캡",
+      "rankIncrement": 110
     },
     {
       "rank": 2,
-      "keyword": "지프",
-      "rankIncrement": 118
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "브랜디드",
-      "rankIncrement": 117
+      "keyword": "머슬핏",
+      "rankIncrement": 107
     },
     {
       "rank": 4,
-      "keyword": "오프숄더",
-      "rankIncrement": 191
+      "keyword": "기철",
+      "rankIncrement": 102
     },
     {
       "rank": 5,
-      "keyword": "론론",
-      "rankIncrement": 169
+      "keyword": "이미스",
+      "rankIncrement": 102
     },
     {
       "rank": 6,
-      "keyword": "아수라",
-      "rankIncrement": 147
+      "keyword": "니트 집업",
+      "rankIncrement": 171
     },
     {
       "rank": 7,
-      "keyword": "애즈온",
-      "rankIncrement": 158
+      "keyword": "커플티",
+      "rankIncrement": 166
     },
     {
       "rank": 8,
-      "keyword": "aeae",
+      "keyword": "테이크이지",
       "rankIncrement": 147
     },
     {
       "rank": 9,
-      "keyword": "데님자켓",
-      "rankIncrement": 150
+      "keyword": "속옷",
+      "rankIncrement": 102
     },
     {
       "rank": 10,
-      "keyword": "저지",
-      "rankIncrement": 157
+      "keyword": "크롭 가디건",
+      "rankIncrement": 109
     }
   ]
 }
