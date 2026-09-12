@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T12:31:06.225124+00:00",
+  "updatedAt": "2026-09-12T16:05:14.401068+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,18 +18,18 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "바람막이",
-      "rankIncrement": 1
+      "keyword": "가을옷",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "무배당발",
-      "rankIncrement": -2
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
-      "rank": 10,
+      "rank": 9,
       "keyword": "경량패딩",
-      "rankIncrement": 1
+      "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "니트",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아디다스 저지",
-      "rankIncrement": 116
+      "keyword": "버건디 니트",
+      "rankIncrement": 115
     },
     {
       "rank": 2,
-      "keyword": "저지",
-      "rankIncrement": 104
+      "keyword": "브이넥",
+      "rankIncrement": 105
     },
     {
       "rank": 3,
-      "keyword": "브이넥",
-      "rankIncrement": 146
+      "keyword": "파르티멘토",
+      "rankIncrement": 116
     },
     {
       "rank": 4,
-      "keyword": "아모우",
-      "rankIncrement": 103
+      "keyword": "7부 티셔츠",
+      "rankIncrement": 100
     },
     {
       "rank": 5,
-      "keyword": "니트/스웨터",
-      "rankIncrement": 130
+      "keyword": "트랙팬츠",
+      "rankIncrement": 126
     },
     {
       "rank": 6,
-      "keyword": "롱스커트",
-      "rankIncrement": 147
+      "keyword": "데님자켓",
+      "rankIncrement": 133
     },
     {
       "rank": 7,
-      "keyword": "블랙업",
-      "rankIncrement": 104
+      "keyword": "스노우피크",
+      "rankIncrement": 122
     },
     {
       "rank": 8,
-      "keyword": "포터리",
-      "rankIncrement": 121
+      "keyword": "흑청",
+      "rankIncrement": 102
     },
     {
       "rank": 9,
-      "keyword": "먼작귀",
-      "rankIncrement": 124
+      "keyword": "가을 아우터",
+      "rankIncrement": 102
     },
     {
       "rank": 10,
-      "keyword": "나이키 acg",
-      "rankIncrement": 187
+      "keyword": "Lee",
+      "rankIncrement": 276
     }
   ]
 }
