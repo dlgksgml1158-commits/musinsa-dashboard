@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T08:23:29.663913+00:00",
+  "updatedAt": "2026-09-12T12:31:06.225124+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "가을옷",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 6,
+      "keyword": "무배당발",
+      "rankIncrement": -2
+    },
+    {
+      "rank": 7,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
+      "rank": 8,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
+      "rank": 9,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
       "rank": 10,
-      "keyword": "스파오",
-      "rankIncrement": 0
+      "keyword": "경량패딩",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "오니츠카타이거",
-      "rankIncrement": 136
+      "keyword": "아디다스 저지",
+      "rankIncrement": 116
     },
     {
       "rank": 2,
-      "keyword": "스투시 후드집업",
+      "keyword": "저지",
       "rankIncrement": 104
     },
     {
       "rank": 3,
-      "keyword": "데우스 후드집업",
-      "rankIncrement": 338
+      "keyword": "브이넥",
+      "rankIncrement": 146
     },
     {
       "rank": 4,
-      "keyword": "키뮤어",
-      "rankIncrement": 104
+      "keyword": "아모우",
+      "rankIncrement": 103
     },
     {
       "rank": 5,
-      "keyword": "아식스 젤카야노 14",
-      "rankIncrement": 128
-    },
-    {
-      "rank": 6,
-      "keyword": "르아브",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 7,
-      "keyword": "선글라스",
-      "rankIncrement": 106
-    },
-    {
-      "rank": 8,
-      "keyword": "뉴에라 모자",
+      "keyword": "니트/스웨터",
       "rankIncrement": 130
     },
     {
+      "rank": 6,
+      "keyword": "롱스커트",
+      "rankIncrement": 147
+    },
+    {
+      "rank": 7,
+      "keyword": "블랙업",
+      "rankIncrement": 104
+    },
+    {
+      "rank": 8,
+      "keyword": "포터리",
+      "rankIncrement": 121
+    },
+    {
       "rank": 9,
-      "keyword": "커브드 데님 팬츠",
-      "rankIncrement": 108
+      "keyword": "먼작귀",
+      "rankIncrement": 124
     },
     {
       "rank": 10,
-      "keyword": "타미힐피거",
-      "rankIncrement": 171
+      "keyword": "나이키 acg",
+      "rankIncrement": 187
     }
   ]
 }
