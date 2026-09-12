@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T16:57:18.828804+00:00",
+  "updatedAt": "2026-09-12T03:10:54.591069+00:00",
   "musinsa": [
     {
       "keyword": "티셔츠",
@@ -44,32 +44,32 @@
       "change": null
     },
     {
-      "keyword": "남자반바지",
-      "cat": "바지",
-      "catColor": "#45B7D1",
-      "rank": 7,
-      "change": null
-    },
-    {
-      "keyword": "카프리팬츠",
-      "cat": "바지",
-      "catColor": "#45B7D1",
-      "rank": 8,
-      "change": null
-    },
-    {
       "keyword": "남자바지",
       "cat": "바지",
       "catColor": "#45B7D1",
-      "rank": 9,
-      "change": null
+      "rank": 7,
+      "change": 2
     },
     {
       "keyword": "바지",
       "cat": "바지",
       "catColor": "#45B7D1",
+      "rank": 8,
+      "change": 2
+    },
+    {
+      "keyword": "남자반바지",
+      "cat": "바지",
+      "catColor": "#45B7D1",
+      "rank": 9,
+      "change": -2
+    },
+    {
+      "keyword": "카프리팬츠",
+      "cat": "바지",
+      "catColor": "#45B7D1",
       "rank": 10,
-      "change": null
+      "change": -2
     }
   ],
   "cm29": [
@@ -116,32 +116,32 @@
       "change": null
     },
     {
-      "keyword": "남자반바지",
-      "cat": "바지",
-      "catColor": "#45B7D1",
-      "rank": 7,
-      "change": null
-    },
-    {
-      "keyword": "카프리팬츠",
-      "cat": "바지",
-      "catColor": "#45B7D1",
-      "rank": 8,
-      "change": null
-    },
-    {
       "keyword": "남자바지",
       "cat": "바지",
       "catColor": "#45B7D1",
-      "rank": 9,
-      "change": null
+      "rank": 7,
+      "change": 2
     },
     {
       "keyword": "바지",
       "cat": "바지",
       "catColor": "#45B7D1",
+      "rank": 8,
+      "change": 2
+    },
+    {
+      "keyword": "남자반바지",
+      "cat": "바지",
+      "catColor": "#45B7D1",
+      "rank": 9,
+      "change": -2
+    },
+    {
+      "keyword": "카프리팬츠",
+      "cat": "바지",
+      "catColor": "#45B7D1",
       "rank": 10,
-      "change": null
+      "change": -2
     }
   ]
 }
