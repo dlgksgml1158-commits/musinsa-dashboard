@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T03:10:56.063461+00:00",
+  "updatedAt": "2026-09-12T08:23:29.663913+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,32 +8,32 @@
     },
     {
       "rank": 2,
-      "keyword": "가을옷",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "후드티",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "롱슬리브",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "가을옷",
+      "rankIncrement": 0
+    },
+    {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "포코피아",
+      "keyword": "스파오",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "솔리드 CP 커브드 치노 팬츠",
-      "rankIncrement": 113
+      "keyword": "오니츠카타이거",
+      "rankIncrement": 136
     },
     {
       "rank": 2,
-      "keyword": "토트백",
-      "rankIncrement": 109
+      "keyword": "스투시 후드집업",
+      "rankIncrement": 104
     },
     {
       "rank": 3,
-      "keyword": "롱스커트",
-      "rankIncrement": 110
+      "keyword": "데우스 후드집업",
+      "rankIncrement": 338
     },
     {
       "rank": 4,
-      "keyword": "슬림핏 후드집업",
-      "rankIncrement": 108
+      "keyword": "키뮤어",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "스트라이프 셔츠",
-      "rankIncrement": 158
+      "keyword": "아식스 젤카야노 14",
+      "rankIncrement": 128
     },
     {
       "rank": 6,
-      "keyword": "체험단",
-      "rankIncrement": 138
+      "keyword": "르아브",
+      "rankIncrement": 111
     },
     {
       "rank": 7,
-      "keyword": "노이어",
-      "rankIncrement": 115
+      "keyword": "선글라스",
+      "rankIncrement": 106
     },
     {
       "rank": 8,
-      "keyword": "키츠네",
-      "rankIncrement": 116
+      "keyword": "뉴에라 모자",
+      "rankIncrement": 130
     },
     {
       "rank": 9,
-      "keyword": "스트라이프 롱슬리브",
-      "rankIncrement": 141
+      "keyword": "커브드 데님 팬츠",
+      "rankIncrement": 108
     },
     {
       "rank": 10,
-      "keyword": "프릭스토어",
-      "rankIncrement": 157
+      "keyword": "타미힐피거",
+      "rankIncrement": 171
     }
   ]
 }
