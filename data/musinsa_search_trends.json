@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T03:13:37.038634+00:00",
+  "updatedAt": "2026-09-13T13:32:56.017423+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,94 +14,94 @@
     {
       "rank": 3,
       "keyword": "후드티",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": -1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "바람막이",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 7,
       "keyword": "아디다스",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": -2
     },
     {
       "rank": 9,
-      "keyword": "경량패딩",
+      "keyword": "가디건",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "가디건",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "컨버스",
-      "rankIncrement": 105
+      "keyword": "나이스고스트클럽",
+      "rankIncrement": 113
     },
     {
       "rank": 2,
-      "keyword": "코드그라피",
-      "rankIncrement": 118
+      "keyword": "마이초이도쿄",
+      "rankIncrement": 110
     },
     {
       "rank": 3,
-      "keyword": "아노락",
-      "rankIncrement": 156
+      "keyword": "탑텐",
+      "rankIncrement": 109
     },
     {
       "rank": 4,
-      "keyword": "뉴에라",
-      "rankIncrement": 104
-    },
-    {
-      "rank": 5,
-      "keyword": "리",
+      "keyword": "acg",
       "rankIncrement": 103
     },
     {
+      "rank": 5,
+      "keyword": "뉴발란스 운동화",
+      "rankIncrement": 104
+    },
+    {
       "rank": 6,
-      "keyword": "속옷",
-      "rankIncrement": 122
+      "keyword": "매든",
+      "rankIncrement": 116
     },
     {
       "rank": 7,
-      "keyword": "노운",
-      "rankIncrement": 152
+      "keyword": "가을옷 상의",
+      "rankIncrement": 123
     },
     {
       "rank": 8,
-      "keyword": "마인드브릿지",
-      "rankIncrement": 260
+      "keyword": "긴바지",
+      "rankIncrement": 107
     },
     {
       "rank": 9,
-      "keyword": "트래블",
-      "rankIncrement": 281
+      "keyword": "반팔니트",
+      "rankIncrement": 115
     },
     {
       "rank": 10,
-      "keyword": "슬렉스",
-      "rankIncrement": 185
+      "keyword": "롱 슬리브",
+      "rankIncrement": 148
     }
   ]
 }
