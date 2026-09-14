@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T09:35:33.078551+00:00",
+  "updatedAt": "2026-09-14T15:26:04.806658+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": 1
+    },
+    {
+      "rank": 6,
+      "keyword": "가을옷",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
+      "rank": 8,
       "keyword": "가디건",
       "rankIncrement": 0
     },
     {
+      "rank": 9,
+      "keyword": "셔츠",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "경량패딩",
+      "keyword": "아디다스",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "트렌치코트",
-      "rankIncrement": 110
+      "keyword": "롱스커트",
+      "rankIncrement": 125
     },
     {
       "rank": 2,
-      "keyword": "드릭스",
-      "rankIncrement": 104
+      "keyword": "지프",
+      "rankIncrement": 113
     },
     {
       "rank": 3,
-      "keyword": "피노키",
-      "rankIncrement": 238
+      "keyword": "ma-1",
+      "rankIncrement": 205
     },
     {
       "rank": 4,
-      "keyword": "컨버스",
-      "rankIncrement": 122
+      "keyword": "캐리어",
+      "rankIncrement": 113
     },
     {
       "rank": 5,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 103
+      "keyword": "트레이닝팬츠",
+      "rankIncrement": 116
     },
     {
       "rank": 6,
-      "keyword": "스트라이프 셔츠",
-      "rankIncrement": 130
+      "keyword": "아디다스 맨투맨",
+      "rankIncrement": 199
     },
     {
       "rank": 7,
-      "keyword": "무센트",
-      "rankIncrement": 250
+      "keyword": "디키즈 롱슬리브",
+      "rankIncrement": 240
     },
     {
       "rank": 8,
-      "keyword": "팬티",
-      "rankIncrement": 232
+      "keyword": "7부 티셔츠",
+      "rankIncrement": 141
     },
     {
       "rank": 9,
-      "keyword": "메리제인",
-      "rankIncrement": 124
+      "keyword": "아르반",
+      "rankIncrement": 317
     },
     {
       "rank": 10,
-      "keyword": "파브레가",
-      "rankIncrement": 119
+      "keyword": "오버핏 셔츠",
+      "rankIncrement": 183
     }
   ]
 }
