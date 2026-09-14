@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T16:53:45.100017+00:00",
+  "updatedAt": "2026-09-14T03:26:50.310514+00:00",
   "musinsa": [
     {
       "keyword": "티셔츠",
@@ -23,11 +23,11 @@
       "change": null
     },
     {
-      "keyword": "스투시반팔",
+      "keyword": "리버클래시",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": "NEW"
     },
     {
       "keyword": "여성티셔츠",
@@ -51,11 +51,11 @@
       "change": null
     },
     {
-      "keyword": "카프리팬츠",
+      "keyword": "르버터",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 8,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "남자반바지",
@@ -65,11 +65,11 @@
       "change": null
     },
     {
-      "keyword": "르버터",
+      "keyword": "카프리팬츠",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": null
+      "change": -2
     }
   ],
   "cm29": [
@@ -95,11 +95,11 @@
       "change": null
     },
     {
-      "keyword": "스투시반팔",
+      "keyword": "리버클래시",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": "NEW"
     },
     {
       "keyword": "여성티셔츠",
@@ -123,11 +123,11 @@
       "change": null
     },
     {
-      "keyword": "카프리팬츠",
+      "keyword": "르버터",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 8,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "남자반바지",
@@ -137,11 +137,11 @@
       "change": null
     },
     {
-      "keyword": "르버터",
+      "keyword": "카프리팬츠",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": null
+      "change": -2
     }
   ]
 }
