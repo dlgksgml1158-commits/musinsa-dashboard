@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T15:26:04.806658+00:00",
+  "updatedAt": "2026-09-14T18:25:09.090944+00:00",
   "popular": [
     {
       "rank": 1,
@@ -24,84 +24,84 @@
     {
       "rank": 5,
       "keyword": "맨투맨",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "가을옷",
-      "rankIncrement": -1
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "가디건",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "가디건",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -2
     },
     {
       "rank": 9,
-      "keyword": "셔츠",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "아디다스",
+      "keyword": "니트",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "롱스커트",
-      "rankIncrement": 125
+      "keyword": "세터",
+      "rankIncrement": 121
     },
     {
       "rank": 2,
-      "keyword": "지프",
-      "rankIncrement": 113
+      "keyword": "런닝화",
+      "rankIncrement": 251
     },
     {
       "rank": 3,
-      "keyword": "ma-1",
-      "rankIncrement": 205
+      "keyword": "스톤아일랜드",
+      "rankIncrement": 209
     },
     {
       "rank": 4,
-      "keyword": "캐리어",
-      "rankIncrement": 113
+      "keyword": "윈드브레이커",
+      "rankIncrement": 129
     },
     {
       "rank": 5,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 116
+      "keyword": "혼다",
+      "rankIncrement": 130
     },
     {
       "rank": 6,
-      "keyword": "아디다스 맨투맨",
-      "rankIncrement": 199
+      "keyword": "헬리녹스",
+      "rankIncrement": 350
     },
     {
       "rank": 7,
-      "keyword": "디키즈 롱슬리브",
-      "rankIncrement": 240
+      "keyword": "에이치덱스",
+      "rankIncrement": 142
     },
     {
       "rank": 8,
-      "keyword": "7부 티셔츠",
-      "rankIncrement": 141
+      "keyword": "플리즈노팔로우",
+      "rankIncrement": 105
     },
     {
       "rank": 9,
-      "keyword": "아르반",
-      "rankIncrement": 317
+      "keyword": "짐웨어",
+      "rankIncrement": 105
     },
     {
       "rank": 10,
-      "keyword": "오버핏 셔츠",
-      "rankIncrement": 183
+      "keyword": "나이키 신발",
+      "rankIncrement": 253
     }
   ]
 }
