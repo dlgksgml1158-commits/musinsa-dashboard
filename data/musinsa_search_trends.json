@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T13:59:07.274650+00:00",
+  "updatedAt": "2026-09-15T17:32:10.753627+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
+      "rank": 6,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
+      "rank": 7,
+      "keyword": "가디건",
+      "rankIncrement": 2
+    },
+    {
       "rank": 8,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "가디건",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "팬티",
-      "rankIncrement": 102
+      "keyword": "첼시부츠",
+      "rankIncrement": 162
     },
     {
       "rank": 2,
-      "keyword": "밀로 아카이브",
-      "rankIncrement": 146
+      "keyword": "닥터마틴 1461",
+      "rankIncrement": 119
     },
     {
       "rank": 3,
-      "keyword": "크롭 가디건",
-      "rankIncrement": 137
+      "keyword": "아모우",
+      "rankIncrement": 107
     },
     {
       "rank": 4,
-      "keyword": "조셉트",
-      "rankIncrement": 172
+      "keyword": "브이넥",
+      "rankIncrement": 106
     },
     {
       "rank": 5,
-      "keyword": "오버핏 셔츠",
-      "rankIncrement": 149
+      "keyword": "블랙업",
+      "rankIncrement": 171
     },
     {
       "rank": 6,
-      "keyword": "뉴발란스 530",
-      "rankIncrement": 202
+      "keyword": "999휴머니티",
+      "rankIncrement": 178
     },
     {
       "rank": 7,
-      "keyword": "보스턴백",
-      "rankIncrement": 148
+      "keyword": "일리고",
+      "rankIncrement": 184
     },
     {
       "rank": 8,
-      "keyword": "무탠다드 양말",
-      "rankIncrement": 152
+      "keyword": "로라로라",
+      "rankIncrement": 139
     },
     {
       "rank": 9,
-      "keyword": "예일",
-      "rankIncrement": 156
+      "keyword": "데님자켓",
+      "rankIncrement": 158
     },
     {
       "rank": 10,
-      "keyword": "야세",
-      "rankIncrement": 159
+      "keyword": "포켓몬스터",
+      "rankIncrement": 158
     }
   ]
 }
