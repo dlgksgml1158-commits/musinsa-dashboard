@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T18:25:09.090944+00:00",
+  "updatedAt": "2026-09-15T03:27:36.957381+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
       "rank": 5,
-      "keyword": "맨투맨",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "가을옷",
-      "rankIncrement": 1
+      "keyword": "가디건",
+      "rankIncrement": 2
     },
     {
       "rank": 7,
-      "keyword": "가디건",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
+      "keyword": "아디다스",
       "rankIncrement": -2
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "니트",
-      "rankIncrement": 1
+      "keyword": "셔츠",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "세터",
-      "rankIncrement": 121
+      "keyword": "남자 가방",
+      "rankIncrement": 119
     },
     {
       "rank": 2,
-      "keyword": "런닝화",
-      "rankIncrement": 251
+      "keyword": "노스페이스 패딩",
+      "rankIncrement": 151
     },
     {
       "rank": 3,
-      "keyword": "스톤아일랜드",
-      "rankIncrement": 209
+      "keyword": "수영복",
+      "rankIncrement": 102
     },
     {
       "rank": 4,
-      "keyword": "윈드브레이커",
-      "rankIncrement": 129
+      "keyword": "챠미키티",
+      "rankIncrement": 132
     },
     {
       "rank": 5,
-      "keyword": "혼다",
-      "rankIncrement": 130
+      "keyword": "버던트",
+      "rankIncrement": 110
     },
     {
       "rank": 6,
-      "keyword": "헬리녹스",
-      "rankIncrement": 350
+      "keyword": "넥타이",
+      "rankIncrement": 162
     },
     {
       "rank": 7,
-      "keyword": "에이치덱스",
-      "rankIncrement": 142
+      "keyword": "긴팔티셔츠",
+      "rankIncrement": 124
     },
     {
       "rank": 8,
-      "keyword": "플리즈노팔로우",
-      "rankIncrement": 105
+      "keyword": "하프집업",
+      "rankIncrement": 172
     },
     {
       "rank": 9,
-      "keyword": "짐웨어",
-      "rankIncrement": 105
+      "keyword": "카미드",
+      "rankIncrement": 287
     },
     {
       "rank": 10,
-      "keyword": "나이키 신발",
-      "rankIncrement": 253
+      "keyword": "디젤",
+      "rankIncrement": 134
     }
   ]
 }
