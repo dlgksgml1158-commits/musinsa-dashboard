@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T03:27:35.577822+00:00",
+  "updatedAt": "2026-09-15T09:13:17.109513+00:00",
   "musinsa": [
     {
       "keyword": "티셔츠",
@@ -27,7 +27,7 @@
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 4,
-      "change": "NEW"
+      "change": null
     },
     {
       "keyword": "여성티셔츠",
@@ -55,7 +55,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 8,
-      "change": 2
+      "change": null
     },
     {
       "keyword": "남자반바지",
@@ -69,7 +69,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -2
+      "change": null
     }
   ],
   "cm29": [
@@ -99,7 +99,7 @@
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 4,
-      "change": "NEW"
+      "change": null
     },
     {
       "keyword": "여성티셔츠",
@@ -127,7 +127,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 8,
-      "change": 2
+      "change": null
     },
     {
       "keyword": "남자반바지",
@@ -141,7 +141,7 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -2
+      "change": null
     }
   ]
 }
