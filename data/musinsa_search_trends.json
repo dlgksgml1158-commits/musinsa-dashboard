@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T13:53:04.002075+00:00",
+  "updatedAt": "2026-09-16T17:32:16.954632+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,17 +18,17 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "맨투맨",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "경량패딩",
+      "keyword": "아디다스",
       "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
+      "keyword": "경량패딩",
       "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
+      "keyword": "니트",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "레이지비",
-      "rankIncrement": 138
+      "keyword": "호카",
+      "rankIncrement": 160
     },
     {
       "rank": 2,
-      "keyword": "트레이닝",
-      "rankIncrement": 144
+      "keyword": "밀란 7D",
+      "rankIncrement": 109
     },
     {
       "rank": 3,
-      "keyword": "플랫슈즈",
-      "rankIncrement": 141
+      "keyword": "와이프로젝트",
+      "rankIncrement": 234
     },
     {
       "rank": 4,
-      "keyword": "체험단",
-      "rankIncrement": 136
+      "keyword": "코이세이오",
+      "rankIncrement": 101
     },
     {
       "rank": 5,
-      "keyword": "스파오 잠옷",
-      "rankIncrement": 205
+      "keyword": "첼시부츠",
+      "rankIncrement": 120
     },
     {
       "rank": 6,
-      "keyword": "안경테",
-      "rankIncrement": 119
+      "keyword": "짐웨어",
+      "rankIncrement": 105
     },
     {
       "rank": 7,
-      "keyword": "뉴발란스 바람막이",
-      "rankIncrement": 235
+      "keyword": "버건디",
+      "rankIncrement": 103
     },
     {
       "rank": 8,
-      "keyword": "블랙야크",
+      "keyword": "코이리스",
       "rankIncrement": 129
     },
     {
       "rank": 9,
-      "keyword": "스투시 후드티",
-      "rankIncrement": 130
+      "keyword": "트랙탑",
+      "rankIncrement": 144
     },
     {
       "rank": 10,
-      "keyword": "등산화",
-      "rankIncrement": 167
+      "keyword": "아식스 젤카야노 14",
+      "rankIncrement": 202
     }
   ]
 }
