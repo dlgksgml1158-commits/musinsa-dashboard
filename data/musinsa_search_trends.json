@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T17:32:14.933286+00:00",
+  "updatedAt": "2026-09-18T03:15:12.207228+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 5,
-      "keyword": "바람막이",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 6,
       "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "바지",
+      "rank": 3,
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
+      "rank": 4,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "바람막이",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "경량패딩",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "베이프",
+      "rankIncrement": 1
+    },
+    {
       "rank": 9,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "디키즈",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "모자",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "수영복",
-      "rankIncrement": 185
+      "keyword": "마르디 메크르디",
+      "rankIncrement": 131
     },
     {
       "rank": 2,
-      "keyword": "트랙탑",
-      "rankIncrement": 100
+      "keyword": "아이폰18프로 케이스",
+      "rankIncrement": 194
     },
     {
       "rank": 3,
-      "keyword": "마이초이도쿄",
-      "rankIncrement": 105
+      "keyword": "보스턴백",
+      "rankIncrement": 117
     },
     {
       "rank": 4,
-      "keyword": "노스페이스 패딩",
-      "rankIncrement": 106
+      "keyword": "미치코런던",
+      "rankIncrement": 136
     },
     {
       "rank": 5,
-      "keyword": "ma-1",
-      "rankIncrement": 153
+      "keyword": "노이스",
+      "rankIncrement": 109
     },
     {
       "rank": 6,
-      "keyword": "락케이크",
-      "rankIncrement": 129
+      "keyword": "아디다스 도쿄",
+      "rankIncrement": 107
     },
     {
       "rank": 7,
-      "keyword": "파자마",
-      "rankIncrement": 183
+      "keyword": "브이넥니트",
+      "rankIncrement": 132
     },
     {
       "rank": 8,
-      "keyword": "트위드",
-      "rankIncrement": 218
+      "keyword": "배드블러드",
+      "rankIncrement": 134
     },
     {
       "rank": 9,
-      "keyword": "토니웩",
-      "rankIncrement": 154
+      "keyword": "스트라이프 롱슬리브",
+      "rankIncrement": 137
     },
     {
       "rank": 10,
-      "keyword": "이알티알",
-      "rankIncrement": 101
+      "keyword": "상의",
+      "rankIncrement": 115
     }
   ]
 }
