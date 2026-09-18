@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T13:16:12.155488+00:00",
+  "updatedAt": "2026-09-18T16:59:45.301515+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,17 +8,17 @@
     },
     {
       "rank": 2,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
+      "rank": 3,
       "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 4,
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "경량패딩",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "모자",
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "가디건",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "풀밴딩 커브드핏",
-      "rankIncrement": 237
+      "keyword": "헨리넥 니트",
+      "rankIncrement": 113
     },
     {
       "rank": 2,
-      "keyword": "블랙업",
-      "rankIncrement": 225
+      "keyword": "크롭 가디건",
+      "rankIncrement": 127
     },
     {
       "rank": 3,
-      "keyword": "레이어드 롱슬리브",
-      "rankIncrement": 104
+      "keyword": "플레어진",
+      "rankIncrement": 129
     },
     {
       "rank": 4,
-      "keyword": "머슬핏",
-      "rankIncrement": 109
+      "keyword": "주앙옴므",
+      "rankIncrement": 100
     },
     {
       "rank": 5,
-      "keyword": "풀밴딩 커브드핏 데님 팬츠",
-      "rankIncrement": 170
+      "keyword": "머슬핏 반팔",
+      "rankIncrement": 143
     },
     {
       "rank": 6,
-      "keyword": "체험단",
-      "rankIncrement": 172
+      "keyword": "닥터마틴 1461",
+      "rankIncrement": 101
     },
     {
       "rank": 7,
-      "keyword": "매든",
-      "rankIncrement": 130
+      "keyword": "모이프",
+      "rankIncrement": 141
     },
     {
       "rank": 8,
-      "keyword": "베이지 팬츠",
-      "rankIncrement": 136
+      "keyword": "디키즈 후드집업",
+      "rankIncrement": 111
     },
     {
       "rank": 9,
-      "keyword": "포켓몬스터",
-      "rankIncrement": 140
+      "keyword": "정장",
+      "rankIncrement": 249
     },
     {
       "rank": 10,
-      "keyword": "아더에러",
-      "rankIncrement": 114
+      "keyword": "흰티",
+      "rankIncrement": 128
     }
   ]
 }
