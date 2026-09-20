@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T03:28:12.535483+00:00",
+  "updatedAt": "2026-09-20T09:05:39.565602+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,28 +8,28 @@
     },
     {
       "rank": 2,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
+      "rank": 3,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "가을옷",
+      "rankIncrement": 0
+    },
+    {
       "rank": 5,
-      "keyword": "경량패딩",
-      "rankIncrement": 1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "바람막이",
-      "rankIncrement": -1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
@@ -39,12 +39,12 @@
     {
       "rank": 8,
       "keyword": "아디다스",
-      "rankIncrement": 1
+      "rankIncrement": -1
     },
     {
       "rank": 9,
       "keyword": "바지",
-      "rankIncrement": -2
+      "rankIncrement": 0
     },
     {
       "rank": 10,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "포터리",
-      "rankIncrement": 148
+      "keyword": "닉켈하우스",
+      "rankIncrement": 107
     },
     {
       "rank": 2,
-      "keyword": "키츠네",
-      "rankIncrement": 154
+      "keyword": "롱부츠",
+      "rankIncrement": 125
     },
     {
       "rank": 3,
-      "keyword": "코이세이오",
-      "rankIncrement": 115
+      "keyword": "토마스모어",
+      "rankIncrement": 138
     },
     {
       "rank": 4,
-      "keyword": "메종 키츠네",
-      "rankIncrement": 173
+      "keyword": "치마",
+      "rankIncrement": 102
     },
     {
       "rank": 5,
-      "keyword": "카라티",
-      "rankIncrement": 121
+      "keyword": "런닝화",
+      "rankIncrement": 100
     },
     {
       "rank": 6,
-      "keyword": "프리덤",
-      "rankIncrement": 108
+      "keyword": "아디다스 롱슬리브",
+      "rankIncrement": 143
     },
     {
       "rank": 7,
-      "keyword": "aeae",
-      "rankIncrement": 235
+      "keyword": "케이스",
+      "rankIncrement": 136
     },
     {
       "rank": 8,
-      "keyword": "아식스 젤카야노",
-      "rankIncrement": 180
+      "keyword": "첼시부츠",
+      "rankIncrement": 102
     },
     {
       "rank": 9,
-      "keyword": "운동복",
-      "rankIncrement": 192
+      "keyword": "오찌",
+      "rankIncrement": 245
     },
     {
       "rank": 10,
-      "keyword": "파르티멘토",
-      "rankIncrement": 116
+      "keyword": "그라미치",
+      "rankIncrement": 201
     }
   ]
 }
