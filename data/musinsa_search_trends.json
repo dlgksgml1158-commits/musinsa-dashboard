@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T13:19:12.925579+00:00",
+  "updatedAt": "2026-09-20T16:43:34.587120+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,7 +18,7 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "바지",
       "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "바지",
+      "keyword": "가을옷",
       "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "경량패딩",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "가디건",
+      "keyword": "아디다스",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스파오 잠옷",
-      "rankIncrement": 128
+      "keyword": "베이지 팬츠",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "Lee",
-      "rankIncrement": 102
+      "keyword": "스트라이프 셔츠",
+      "rankIncrement": 130
     },
     {
       "rank": 3,
-      "keyword": "스트라이프 셔츠",
-      "rankIncrement": 105
+      "keyword": "바이젝",
+      "rankIncrement": 202
     },
     {
       "rank": 4,
-      "keyword": "마하그리드",
-      "rankIncrement": 102
+      "keyword": "스투시 후드집업",
+      "rankIncrement": 155
     },
     {
       "rank": 5,
-      "keyword": "게스",
-      "rankIncrement": 104
+      "keyword": "아디다스 트랙팬츠",
+      "rankIncrement": 212
     },
     {
       "rank": 6,
-      "keyword": "미디스커트",
-      "rankIncrement": 119
-    },
-    {
-      "rank": 7,
-      "keyword": "스포츠브라",
-      "rankIncrement": 120
-    },
-    {
-      "rank": 8,
-      "keyword": "먼작귀",
-      "rankIncrement": 147
-    },
-    {
-      "rank": 9,
-      "keyword": "넌블랭크",
+      "keyword": "속옷",
       "rankIncrement": 103
     },
     {
+      "rank": 7,
+      "keyword": "조셉트",
+      "rankIncrement": 131
+    },
+    {
+      "rank": 8,
+      "keyword": "아르반",
+      "rankIncrement": 116
+    },
+    {
+      "rank": 9,
+      "keyword": "코이리스",
+      "rankIncrement": 115
+    },
+    {
       "rank": 10,
-      "keyword": "커버낫 후드티",
-      "rankIncrement": 161
+      "keyword": "Lee",
+      "rankIncrement": 169
     }
   ]
 }
