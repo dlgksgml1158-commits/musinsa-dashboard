@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T09:02:05.124615+00:00",
+  "updatedAt": "2026-09-22T13:46:56.020597+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,7 +23,7 @@
     },
     {
       "rank": 5,
-      "keyword": "바람막이",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "바람막이",
+      "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "스파오",
-      "rankIncrement": -2
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "바지",
+      "keyword": "니트",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아디다스 재팬",
-      "rankIncrement": 181
+      "keyword": "코튼 팬츠",
+      "rankIncrement": 126
     },
     {
       "rank": 2,
-      "keyword": "비던트",
-      "rankIncrement": 111
+      "keyword": "아모우",
+      "rankIncrement": 113
     },
     {
       "rank": 3,
-      "keyword": "디젤",
-      "rankIncrement": 193
+      "keyword": "고려대",
+      "rankIncrement": 109
     },
     {
       "rank": 4,
-      "keyword": "럭비티",
-      "rankIncrement": 122
+      "keyword": "마이초이도쿄",
+      "rankIncrement": 169
     },
     {
       "rank": 5,
-      "keyword": "헤라",
-      "rankIncrement": 119
+      "keyword": "노스페이스 패딩",
+      "rankIncrement": 138
     },
     {
       "rank": 6,
-      "keyword": "데님 원턱 와이드 팬츠",
-      "rankIncrement": 146
+      "keyword": "노이스",
+      "rankIncrement": 189
     },
     {
       "rank": 7,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 134
+      "keyword": "파라슈트 팬츠",
+      "rankIncrement": 144
     },
     {
       "rank": 8,
-      "keyword": "귀걸이",
-      "rankIncrement": 186
+      "keyword": "토피",
+      "rankIncrement": 172
     },
     {
       "rank": 9,
-      "keyword": "스탠드오일",
-      "rankIncrement": 135
+      "keyword": "리복",
+      "rankIncrement": 128
     },
     {
       "rank": 10,
-      "keyword": "반집업",
-      "rankIncrement": 237
+      "keyword": "워커",
+      "rankIncrement": 106
     }
   ]
 }
