@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T13:46:56.020597+00:00",
+  "updatedAt": "2026-09-22T17:34:03.361647+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "경량패딩",
+      "rank": 5,
+      "keyword": "바람막이",
       "rankIncrement": 1
     },
     {
-      "rank": 7,
-      "keyword": "바람막이",
+      "rank": 6,
+      "keyword": "바지",
       "rankIncrement": -1
     },
     {
+      "rank": 7,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
       "keyword": "아디다스",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 126
+      "keyword": "미레코",
+      "rankIncrement": 182
     },
     {
       "rank": 2,
-      "keyword": "아모우",
-      "rankIncrement": 113
+      "keyword": "제로",
+      "rankIncrement": 130
     },
     {
       "rank": 3,
-      "keyword": "고려대",
-      "rankIncrement": 109
+      "keyword": "스파오 후리스",
+      "rankIncrement": 107
     },
     {
       "rank": 4,
-      "keyword": "마이초이도쿄",
-      "rankIncrement": 169
+      "keyword": "아디다스 롱슬리브",
+      "rankIncrement": 116
     },
     {
       "rank": 5,
-      "keyword": "노스페이스 패딩",
-      "rankIncrement": 138
+      "keyword": "데님 후드집업",
+      "rankIncrement": 101
     },
     {
       "rank": 6,
-      "keyword": "노이스",
-      "rankIncrement": 189
+      "keyword": "아디다스 재팬",
+      "rankIncrement": 166
     },
     {
       "rank": 7,
-      "keyword": "파라슈트 팬츠",
-      "rankIncrement": 144
+      "keyword": "오클리",
+      "rankIncrement": 223
     },
     {
       "rank": 8,
-      "keyword": "토피",
-      "rankIncrement": 172
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 101
     },
     {
       "rank": 9,
-      "keyword": "리복",
-      "rankIncrement": 128
+      "keyword": "크롭 셔츠",
+      "rankIncrement": 229
     },
     {
       "rank": 10,
-      "keyword": "워커",
-      "rankIncrement": 106
+      "keyword": "코드그라피",
+      "rankIncrement": 237
     }
   ]
 }
