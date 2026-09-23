@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T13:58:36.743945+00:00",
+  "updatedAt": "2026-09-23T17:46:20.693258+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "아디다스",
+      "rankIncrement": 1
+    },
+    {
       "rank": 6,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 3
     },
     {
       "rank": 8,
-      "keyword": "바람막이",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": -3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "노이어",
-      "rankIncrement": 112
+      "keyword": "캡모자",
+      "rankIncrement": 139
     },
     {
       "rank": 2,
-      "keyword": "스트라이프",
-      "rankIncrement": 158
+      "keyword": "머슬핏 반팔",
+      "rankIncrement": 106
     },
     {
       "rank": 3,
-      "keyword": "로맨틱무브",
-      "rankIncrement": 163
+      "keyword": "어뮤즈",
+      "rankIncrement": 171
     },
     {
       "rank": 4,
-      "keyword": "벌룬팬츠",
-      "rankIncrement": 131
+      "keyword": "스파오 잠옷",
+      "rankIncrement": 121
     },
     {
       "rank": 5,
-      "keyword": "푸마 스피드캣",
-      "rankIncrement": 150
+      "keyword": "오클리",
+      "rankIncrement": 160
     },
     {
       "rank": 6,
-      "keyword": "어뮤즈",
-      "rankIncrement": 174
+      "keyword": "남자 가방",
+      "rankIncrement": 162
     },
     {
       "rank": 7,
-      "keyword": "시티레저",
-      "rankIncrement": 105
+      "keyword": "로우라이즈",
+      "rankIncrement": 126
     },
     {
       "rank": 8,
-      "keyword": "수아레 니트",
-      "rankIncrement": 218
+      "keyword": "ma-1",
+      "rankIncrement": 103
     },
     {
       "rank": 9,
-      "keyword": "스트라이프 셔츠",
-      "rankIncrement": 143
+      "keyword": "카라티",
+      "rankIncrement": 172
     },
     {
       "rank": 10,
-      "keyword": "carhartt",
-      "rankIncrement": 107
+      "keyword": "키츠네",
+      "rankIncrement": 149
     }
   ]
 }
