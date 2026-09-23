@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T17:34:01.978862+00:00",
+  "updatedAt": "2026-09-23T03:23:16.501202+00:00",
   "musinsa": [
     {
       "keyword": "티셔츠",
@@ -9,11 +9,11 @@
       "change": null
     },
     {
-      "keyword": "남자반팔티",
+      "keyword": "남자긴팔티",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 2,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "레이스나시",
@@ -23,11 +23,11 @@
       "change": null
     },
     {
-      "keyword": "남자긴팔티",
+      "keyword": "남자반팔티",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "나그랑티셔츠",
@@ -81,11 +81,11 @@
       "change": null
     },
     {
-      "keyword": "남자반팔티",
+      "keyword": "남자긴팔티",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 2,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "레이스나시",
@@ -95,11 +95,11 @@
       "change": null
     },
     {
-      "keyword": "남자긴팔티",
+      "keyword": "남자반팔티",
       "cat": "상의",
       "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "나그랑티셔츠",
