@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T09:01:04.956884+00:00",
+  "updatedAt": "2026-09-24T13:54:55.156218+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,28 +23,28 @@
     },
     {
       "rank": 5,
-      "keyword": "아디다스",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
       "keyword": "바람막이",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "해칭룸",
-      "rankIncrement": 119
+      "keyword": "아디다스 오즈가이아",
+      "rankIncrement": 277
     },
     {
       "rank": 2,
-      "keyword": "배드블러드",
-      "rankIncrement": 143
+      "keyword": "롤슬리브",
+      "rankIncrement": 112
     },
     {
       "rank": 3,
-      "keyword": "허그유어스킨",
-      "rankIncrement": 101
+      "keyword": "마르니",
+      "rankIncrement": 122
     },
     {
       "rank": 4,
-      "keyword": "아더에러",
-      "rankIncrement": 121
+      "keyword": "파코서플라이",
+      "rankIncrement": 114
     },
     {
       "rank": 5,
-      "keyword": "숏패딩",
-      "rankIncrement": 175
+      "keyword": "미디스커트",
+      "rankIncrement": 140
     },
     {
       "rank": 6,
-      "keyword": "시어 후디드 라이트 다운 재킷",
-      "rankIncrement": 115
+      "keyword": "수영복",
+      "rankIncrement": 121
     },
     {
       "rank": 7,
-      "keyword": "마하그리드",
-      "rankIncrement": 152
+      "keyword": "세미 오버 크롭핏 라운드 가디건",
+      "rankIncrement": 179
     },
     {
       "rank": 8,
-      "keyword": "시티 레저 후디드 라이트 다운 재킷",
-      "rankIncrement": 161
+      "keyword": "더비",
+      "rankIncrement": 210
     },
     {
       "rank": 9,
-      "keyword": "체험단",
-      "rankIncrement": 174
+      "keyword": "스켈리웩",
+      "rankIncrement": 110
     },
     {
       "rank": 10,
-      "keyword": "슬림핏 후드집업",
-      "rankIncrement": 160
+      "keyword": "경량 패딩",
+      "rankIncrement": 130
     }
   ]
 }
