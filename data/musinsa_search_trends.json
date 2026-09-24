@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T03:12:54.152446+00:00",
+  "updatedAt": "2026-09-24T09:01:04.956884+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,32 +14,32 @@
     {
       "rank": 3,
       "keyword": "후드티",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "가을옷",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "맨투맨",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "경량패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 8,
       "keyword": "바람막이",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 9,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "버뮤다팬츠",
-      "rankIncrement": 334
+      "keyword": "해칭룸",
+      "rankIncrement": 119
     },
     {
       "rank": 2,
-      "keyword": "스트라이프 롱슬리브",
-      "rankIncrement": 115
+      "keyword": "배드블러드",
+      "rankIncrement": 143
     },
     {
       "rank": 3,
-      "keyword": "에잇세컨즈",
-      "rankIncrement": 109
+      "keyword": "허그유어스킨",
+      "rankIncrement": 101
     },
     {
       "rank": 4,
-      "keyword": "헤라",
-      "rankIncrement": 114
+      "keyword": "아더에러",
+      "rankIncrement": 121
     },
     {
       "rank": 5,
-      "keyword": "오클리",
-      "rankIncrement": 194
+      "keyword": "숏패딩",
+      "rankIncrement": 175
     },
     {
       "rank": 6,
-      "keyword": "해링턴자켓",
-      "rankIncrement": 137
+      "keyword": "시어 후디드 라이트 다운 재킷",
+      "rankIncrement": 115
     },
     {
       "rank": 7,
-      "keyword": "목도리",
-      "rankIncrement": 265
+      "keyword": "마하그리드",
+      "rankIncrement": 152
     },
     {
       "rank": 8,
-      "keyword": "클리오",
-      "rankIncrement": 204
+      "keyword": "시티 레저 후디드 라이트 다운 재킷",
+      "rankIncrement": 161
     },
     {
       "rank": 9,
-      "keyword": "애즈온",
-      "rankIncrement": 123
+      "keyword": "체험단",
+      "rankIncrement": 174
     },
     {
       "rank": 10,
-      "keyword": "폴로 니트",
-      "rankIncrement": 247
+      "keyword": "슬림핏 후드집업",
+      "rankIncrement": 160
     }
   ]
 }
