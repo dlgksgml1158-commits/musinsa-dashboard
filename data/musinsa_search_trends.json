@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T17:46:20.693258+00:00",
+  "updatedAt": "2026-09-24T03:12:54.152446+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,94 +14,94 @@
     {
       "rank": 3,
       "keyword": "후드티",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 4,
+      "keyword": "가을옷",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 5,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "아디다스",
-      "rankIncrement": 1
-    },
-    {
       "rank": 6,
-      "keyword": "바지",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 7,
-      "keyword": "바람막이",
-      "rankIncrement": 3
-    },
-    {
-      "rank": 8,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
       "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 7,
+      "keyword": "아디다스",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "바람막이",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "가을옷",
-      "rankIncrement": -3
+      "keyword": "니트",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "캡모자",
-      "rankIncrement": 139
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 334
     },
     {
       "rank": 2,
-      "keyword": "머슬핏 반팔",
-      "rankIncrement": 106
+      "keyword": "스트라이프 롱슬리브",
+      "rankIncrement": 115
     },
     {
       "rank": 3,
-      "keyword": "어뮤즈",
-      "rankIncrement": 171
+      "keyword": "에잇세컨즈",
+      "rankIncrement": 109
     },
     {
       "rank": 4,
-      "keyword": "스파오 잠옷",
-      "rankIncrement": 121
+      "keyword": "헤라",
+      "rankIncrement": 114
     },
     {
       "rank": 5,
       "keyword": "오클리",
-      "rankIncrement": 160
+      "rankIncrement": 194
     },
     {
       "rank": 6,
-      "keyword": "남자 가방",
-      "rankIncrement": 162
+      "keyword": "해링턴자켓",
+      "rankIncrement": 137
     },
     {
       "rank": 7,
-      "keyword": "로우라이즈",
-      "rankIncrement": 126
+      "keyword": "목도리",
+      "rankIncrement": 265
     },
     {
       "rank": 8,
-      "keyword": "ma-1",
-      "rankIncrement": 103
+      "keyword": "클리오",
+      "rankIncrement": 204
     },
     {
       "rank": 9,
-      "keyword": "카라티",
-      "rankIncrement": 172
+      "keyword": "애즈온",
+      "rankIncrement": 123
     },
     {
       "rank": 10,
-      "keyword": "키츠네",
-      "rankIncrement": 149
+      "keyword": "폴로 니트",
+      "rankIncrement": 247
     }
   ]
 }
