@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T03:29:54.663586+00:00",
+  "updatedAt": "2026-09-25T09:24:11.631623+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,33 +18,33 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "바람막이",
       "rankIncrement": 1
     },
     {
-      "rank": 9,
+      "rank": 5,
+      "keyword": "경량패딩",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 6,
+      "keyword": "가을옷",
+      "rankIncrement": -2
+    },
+    {
+      "rank": 7,
       "keyword": "바지",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "아디다스",
       "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "롱패딩",
-      "rankIncrement": 147
-    },
-    {
-      "rank": 2,
-      "keyword": "키쇼르",
-      "rankIncrement": 166
-    },
-    {
-      "rank": 3,
-      "keyword": "론론",
+      "keyword": "어바웃톤",
       "rankIncrement": 118
     },
     {
-      "rank": 4,
-      "keyword": "스컬프터",
-      "rankIncrement": 140
+      "rank": 2,
+      "keyword": "긴바지",
+      "rankIncrement": 107
     },
     {
-      "rank": 5,
-      "keyword": "남자 가죽자켓",
-      "rankIncrement": 105
-    },
-    {
-      "rank": 6,
-      "keyword": "페리페라",
+      "rank": 3,
+      "keyword": "유희",
       "rankIncrement": 168
     },
     {
+      "rank": 4,
+      "keyword": "파라슈트 팬츠",
+      "rankIncrement": 235
+    },
+    {
+      "rank": 5,
+      "keyword": "와플 헨리넥",
+      "rankIncrement": 138
+    },
+    {
+      "rank": 6,
+      "keyword": "브라운야드",
+      "rankIncrement": 136
+    },
+    {
       "rank": 7,
-      "keyword": "라코스테",
-      "rankIncrement": 207
-    },
-    {
-      "rank": 8,
-      "keyword": "스투시 후드티",
-      "rankIncrement": 182
-    },
-    {
-      "rank": 9,
-      "keyword": "조거팬츠",
+      "keyword": "미디스커트",
       "rankIncrement": 145
     },
     {
+      "rank": 8,
+      "keyword": "아르반",
+      "rankIncrement": 129
+    },
+    {
+      "rank": 9,
+      "keyword": "크롭 반팔",
+      "rankIncrement": 205
+    },
+    {
       "rank": 10,
-      "keyword": "마하그리드",
-      "rankIncrement": 187
+      "keyword": "스투시 후드티",
+      "rankIncrement": 106
     }
   ]
 }
