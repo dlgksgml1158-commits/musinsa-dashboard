@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T14:19:15.640326+00:00",
+  "updatedAt": "2026-09-25T17:49:31.017026+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
-      "keyword": "니트",
       "rankIncrement": 1
     },
     {
-      "rank": 10,
-      "keyword": "아디다스",
+      "rank": 6,
+      "keyword": "바람막이",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 7,
+      "keyword": "경량패딩",
+      "rankIncrement": -2
+    },
+    {
+      "rank": 8,
+      "keyword": "니트",
       "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "아디다스",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "가을옷",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "롱스커트",
-      "rankIncrement": 110
+      "keyword": "인사일런스",
+      "rankIncrement": 198
     },
     {
       "rank": 2,
-      "keyword": "유희",
-      "rankIncrement": 112
+      "keyword": "먼작귀",
+      "rankIncrement": 179
     },
     {
       "rank": 3,
-      "keyword": "런닝화",
-      "rankIncrement": 156
+      "keyword": "치마바지",
+      "rankIncrement": 137
     },
     {
       "rank": 4,
-      "keyword": "코튼팬츠",
-      "rankIncrement": 108
+      "keyword": "버건디 니트",
+      "rankIncrement": 125
     },
     {
       "rank": 5,
-      "keyword": "저지",
-      "rankIncrement": 117
+      "keyword": "알리스",
+      "rankIncrement": 102
     },
     {
       "rank": 6,
-      "keyword": "스투시 후드티",
-      "rankIncrement": 114
+      "keyword": "트러커 자켓",
+      "rankIncrement": 223
     },
     {
       "rank": 7,
-      "keyword": "버뮤다",
-      "rankIncrement": 103
+      "keyword": "아이필블루씨에스엠",
+      "rankIncrement": 131
     },
     {
       "rank": 8,
-      "keyword": "구동화",
-      "rankIncrement": 124
+      "keyword": "휠라",
+      "rankIncrement": 205
     },
     {
       "rank": 9,
-      "keyword": "리스키",
-      "rankIncrement": 138
+      "keyword": "아더에러",
+      "rankIncrement": 170
     },
     {
       "rank": 10,
-      "keyword": "몽돌",
-      "rankIncrement": 112
+      "keyword": "도프제이슨",
+      "rankIncrement": 141
     }
   ]
 }
