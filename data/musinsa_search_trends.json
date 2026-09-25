@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T17:47:50.370874+00:00",
+  "updatedAt": "2026-09-25T03:29:54.663586+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "롱슬리브",
+      "rankIncrement": 0
+    },
+    {
       "rank": 4,
-      "keyword": "맨투맨",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "경량패딩",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "니트",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
+      "keyword": "바람막이",
       "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "가을옷",
+      "keyword": "바지",
       "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "바람막이",
+      "keyword": "니트",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아메스 월드와이드",
-      "rankIncrement": 158
+      "keyword": "롱패딩",
+      "rankIncrement": 147
     },
     {
       "rank": 2,
-      "keyword": "얼터너티브스테레오",
-      "rankIncrement": 215
+      "keyword": "키쇼르",
+      "rankIncrement": 166
     },
     {
       "rank": 3,
-      "keyword": "원숄더",
-      "rankIncrement": 101
+      "keyword": "론론",
+      "rankIncrement": 118
     },
     {
       "rank": 4,
-      "keyword": "어뮤즈",
-      "rankIncrement": 104
+      "keyword": "스컬프터",
+      "rankIncrement": 140
     },
     {
       "rank": 5,
-      "keyword": "디키즈 롱슬리브",
-      "rankIncrement": 150
+      "keyword": "남자 가죽자켓",
+      "rankIncrement": 105
     },
     {
       "rank": 6,
-      "keyword": "키뮤어",
-      "rankIncrement": 190
+      "keyword": "페리페라",
+      "rankIncrement": 168
     },
     {
       "rank": 7,
-      "keyword": "니티드",
-      "rankIncrement": 106
+      "keyword": "라코스테",
+      "rankIncrement": 207
     },
     {
       "rank": 8,
-      "keyword": "크롭 가디건",
-      "rankIncrement": 109
+      "keyword": "스투시 후드티",
+      "rankIncrement": 182
     },
     {
       "rank": 9,
-      "keyword": "아디다스 저지",
-      "rankIncrement": 124
+      "keyword": "조거팬츠",
+      "rankIncrement": 145
     },
     {
       "rank": 10,
-      "keyword": "폴로 맨투맨",
-      "rankIncrement": 182
+      "keyword": "마하그리드",
+      "rankIncrement": 187
     }
   ]
 }
