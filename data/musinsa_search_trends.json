@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T13:29:12.263317+00:00",
+  "updatedAt": "2026-09-26T16:55:53.148584+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
+      "rank": 5,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
+      "rank": 6,
+      "keyword": "바람막이",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 7,
+      "keyword": "경량패딩",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 8,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 9,
-      "keyword": "아디다스",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "니트",
+      "keyword": "아디다스",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "어반드레스",
-      "rankIncrement": 111
+      "keyword": "스니커즈",
+      "rankIncrement": 132
     },
     {
       "rank": 2,
-      "keyword": "등산화",
-      "rankIncrement": 161
+      "keyword": "크롭 후드티",
+      "rankIncrement": 153
     },
     {
       "rank": 3,
-      "keyword": "론론",
-      "rankIncrement": 109
+      "keyword": "크롭 셔츠",
+      "rankIncrement": 146
     },
     {
       "rank": 4,
-      "keyword": "유희",
-      "rankIncrement": 115
+      "keyword": "스투시 후드집업",
+      "rankIncrement": 105
     },
     {
       "rank": 5,
-      "keyword": "acg",
-      "rankIncrement": 261
+      "keyword": "데케트",
+      "rankIncrement": 195
     },
     {
       "rank": 6,
-      "keyword": "플레이스 스튜디오",
-      "rankIncrement": 142
+      "keyword": "크롭",
+      "rankIncrement": 209
     },
     {
       "rank": 7,
-      "keyword": "무지티",
-      "rankIncrement": 144
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 102
     },
     {
       "rank": 8,
-      "keyword": "롤슬리브",
-      "rankIncrement": 145
+      "keyword": "구동화",
+      "rankIncrement": 152
     },
     {
       "rank": 9,
-      "keyword": "두마로",
-      "rankIncrement": 167
+      "keyword": "주앙옴므",
+      "rankIncrement": 107
     },
     {
       "rank": 10,
-      "keyword": "스노우피크",
-      "rankIncrement": 161
+      "keyword": "아이필블루씨에스엠",
+      "rankIncrement": 100
     }
   ]
 }
