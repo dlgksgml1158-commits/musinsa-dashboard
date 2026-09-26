@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T17:49:31.017026+00:00",
+  "updatedAt": "2026-09-26T03:35:25.409747+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "후드티",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": 1
     },
     {
       "rank": 3,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "맨투맨",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "바람막이",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": -2
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "니트",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 9,
       "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
+      "rank": 9,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "가을옷",
+      "keyword": "폴로 랄프 로렌",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "인사일런스",
-      "rankIncrement": 198
+      "keyword": "신칠라",
+      "rankIncrement": 196
     },
     {
       "rank": 2,
-      "keyword": "먼작귀",
-      "rankIncrement": 179
+      "keyword": "락피쉬웨더웨어",
+      "rankIncrement": 184
     },
     {
       "rank": 3,
-      "keyword": "치마바지",
-      "rankIncrement": 137
+      "keyword": "숏코트",
+      "rankIncrement": 123
     },
     {
       "rank": 4,
-      "keyword": "버건디 니트",
-      "rankIncrement": 125
+      "keyword": "롱 슬리브",
+      "rankIncrement": 135
     },
     {
       "rank": 5,
-      "keyword": "알리스",
-      "rankIncrement": 102
+      "keyword": "러프사이드",
+      "rankIncrement": 103
     },
     {
       "rank": 6,
-      "keyword": "트러커 자켓",
-      "rankIncrement": 223
+      "keyword": "토마스모어",
+      "rankIncrement": 166
     },
     {
       "rank": 7,
-      "keyword": "아이필블루씨에스엠",
-      "rankIncrement": 131
+      "keyword": "제너럴아이디어",
+      "rankIncrement": 193
     },
     {
       "rank": 8,
-      "keyword": "휠라",
-      "rankIncrement": 205
+      "keyword": "벤힛",
+      "rankIncrement": 143
     },
     {
       "rank": 9,
-      "keyword": "아더에러",
-      "rankIncrement": 170
+      "keyword": "나일론 팬츠",
+      "rankIncrement": 125
     },
     {
       "rank": 10,
-      "keyword": "도프제이슨",
-      "rankIncrement": 141
+      "keyword": "브라운야드",
+      "rankIncrement": 147
     }
   ]
 }
