@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T03:35:25.409747+00:00",
+  "updatedAt": "2026-09-26T09:08:41.115579+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,12 +9,12 @@
     {
       "rank": 2,
       "keyword": "롱슬리브",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "후드티",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
@@ -23,18 +23,18 @@
     },
     {
       "rank": 5,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 2
     },
     {
       "rank": 6,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "경량패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": -1
     },
     {
       "rank": 8,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "폴로 랄프 로렌",
+      "keyword": "니트",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "신칠라",
-      "rankIncrement": 196
-    },
-    {
-      "rank": 2,
-      "keyword": "락피쉬웨더웨어",
-      "rankIncrement": 184
-    },
-    {
-      "rank": 3,
-      "keyword": "숏코트",
-      "rankIncrement": 123
-    },
-    {
-      "rank": 4,
-      "keyword": "롱 슬리브",
-      "rankIncrement": 135
-    },
-    {
-      "rank": 5,
-      "keyword": "러프사이드",
+      "keyword": "아메스 월드와이드",
       "rankIncrement": 103
     },
     {
+      "rank": 2,
+      "keyword": "롤슬리브",
+      "rankIncrement": 154
+    },
+    {
+      "rank": 3,
+      "keyword": "체험단",
+      "rankIncrement": 126
+    },
+    {
+      "rank": 4,
+      "keyword": "숏패딩",
+      "rankIncrement": 152
+    },
+    {
+      "rank": 5,
+      "keyword": "아노락",
+      "rankIncrement": 124
+    },
+    {
       "rank": 6,
-      "keyword": "토마스모어",
-      "rankIncrement": 166
+      "keyword": "긴팔티셔츠",
+      "rankIncrement": 264
     },
     {
       "rank": 7,
-      "keyword": "제너럴아이디어",
-      "rankIncrement": 193
-    },
-    {
-      "rank": 8,
-      "keyword": "벤힛",
-      "rankIncrement": 143
-    },
-    {
-      "rank": 9,
-      "keyword": "나일론 팬츠",
+      "keyword": "파우치",
       "rankIncrement": 125
     },
     {
+      "rank": 8,
+      "keyword": "헬리녹스",
+      "rankIncrement": 139
+    },
+    {
+      "rank": 9,
+      "keyword": "우먼즈 코튼 커브드 팬츠",
+      "rankIncrement": 181
+    },
+    {
       "rank": 10,
-      "keyword": "브라운야드",
-      "rankIncrement": 147
+      "keyword": "롱 슬리브",
+      "rankIncrement": 124
     }
   ]
 }
