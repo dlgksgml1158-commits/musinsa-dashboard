@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T09:08:41.115579+00:00",
+  "updatedAt": "2026-09-26T13:29:12.263317+00:00",
   "popular": [
     {
       "rank": 1,
@@ -24,26 +24,26 @@
     {
       "rank": 5,
       "keyword": "맨투맨",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "경량패딩",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "바람막이",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "아메스 월드와이드",
-      "rankIncrement": 103
+      "keyword": "어반드레스",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "롤슬리브",
-      "rankIncrement": 154
+      "keyword": "등산화",
+      "rankIncrement": 161
     },
     {
       "rank": 3,
-      "keyword": "체험단",
-      "rankIncrement": 126
+      "keyword": "론론",
+      "rankIncrement": 109
     },
     {
       "rank": 4,
-      "keyword": "숏패딩",
-      "rankIncrement": 152
+      "keyword": "유희",
+      "rankIncrement": 115
     },
     {
       "rank": 5,
-      "keyword": "아노락",
-      "rankIncrement": 124
+      "keyword": "acg",
+      "rankIncrement": 261
     },
     {
       "rank": 6,
-      "keyword": "긴팔티셔츠",
-      "rankIncrement": 264
+      "keyword": "플레이스 스튜디오",
+      "rankIncrement": 142
     },
     {
       "rank": 7,
-      "keyword": "파우치",
-      "rankIncrement": 125
+      "keyword": "무지티",
+      "rankIncrement": 144
     },
     {
       "rank": 8,
-      "keyword": "헬리녹스",
-      "rankIncrement": 139
+      "keyword": "롤슬리브",
+      "rankIncrement": 145
     },
     {
       "rank": 9,
-      "keyword": "우먼즈 코튼 커브드 팬츠",
-      "rankIncrement": 181
+      "keyword": "두마로",
+      "rankIncrement": 167
     },
     {
       "rank": 10,
-      "keyword": "롱 슬리브",
-      "rankIncrement": 124
+      "keyword": "스노우피크",
+      "rankIncrement": 161
     }
   ]
 }
