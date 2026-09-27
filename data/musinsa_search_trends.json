@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T14:25:13.108135+00:00",
+  "updatedAt": "2026-09-27T17:35:47.633464+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "경량패딩",
       "rankIncrement": 1
     },
     {
+      "rank": 5,
+      "keyword": "맨투맨",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 6,
+      "keyword": "니트",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 7,
+      "keyword": "바지",
+      "rankIncrement": -1
+    },
+    {
       "rank": 8,
-      "keyword": "가을옷",
+      "keyword": "경량패딩",
       "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "니트",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "아디다스",
-      "rankIncrement": -1
+      "keyword": "가디건",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "롱 슬리브",
-      "rankIncrement": 120
+      "keyword": "휠라",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "플라워노즈",
-      "rankIncrement": 127
+      "keyword": "룰루레몬",
+      "rankIncrement": 110
     },
     {
       "rank": 3,
-      "keyword": "에이치덱스",
-      "rankIncrement": 123
-    },
-    {
-      "rank": 4,
-      "keyword": "트레이닝바지",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 5,
-      "keyword": "루즈핏 스웨트 팬츠",
+      "keyword": "선글라스",
       "rankIncrement": 107
     },
     {
+      "rank": 4,
+      "keyword": "펜필드",
+      "rankIncrement": 168
+    },
+    {
+      "rank": 5,
+      "keyword": "나그랑티",
+      "rankIncrement": 111
+    },
+    {
       "rank": 6,
-      "keyword": "세미와이드 슬랙스",
-      "rankIncrement": 126
+      "keyword": "블러셔",
+      "rankIncrement": 135
     },
     {
       "rank": 7,
-      "keyword": "ma-1",
-      "rankIncrement": 189
+      "keyword": "먼작귀",
+      "rankIncrement": 107
     },
     {
       "rank": 8,
-      "keyword": "나그랑 롱슬리브",
-      "rankIncrement": 104
+      "keyword": "봄버자켓",
+      "rankIncrement": 112
     },
     {
       "rank": 9,
-      "keyword": "효지",
-      "rankIncrement": 124
+      "keyword": "후아유 후드집업",
+      "rankIncrement": 131
     },
     {
       "rank": 10,
-      "keyword": "흑청",
-      "rankIncrement": 119
+      "keyword": "인사일런스",
+      "rankIncrement": 205
     }
   ]
 }
