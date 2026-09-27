@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T09:50:28.608432+00:00",
+  "updatedAt": "2026-09-27T14:25:13.108135+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "가을옷",
+      "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "바람막이",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "경량패딩",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "하이넥",
-      "rankIncrement": 171
+      "keyword": "롱 슬리브",
+      "rankIncrement": 120
     },
     {
       "rank": 2,
-      "keyword": "파브레가",
-      "rankIncrement": 105
-    },
-    {
-      "rank": 3,
-      "keyword": "유희",
-      "rankIncrement": 138
-    },
-    {
-      "rank": 4,
-      "keyword": "아디다스 집업",
-      "rankIncrement": 104
-    },
-    {
-      "rank": 5,
-      "keyword": "hdex",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 6,
-      "keyword": "슈펜",
-      "rankIncrement": 115
-    },
-    {
-      "rank": 7,
-      "keyword": "디스이즈네버댓 후드티",
-      "rankIncrement": 169
-    },
-    {
-      "rank": 8,
-      "keyword": "크롭",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 9,
-      "keyword": "귀걸이",
+      "keyword": "플라워노즈",
       "rankIncrement": 127
     },
     {
+      "rank": 3,
+      "keyword": "에이치덱스",
+      "rankIncrement": 123
+    },
+    {
+      "rank": 4,
+      "keyword": "트레이닝바지",
+      "rankIncrement": 109
+    },
+    {
+      "rank": 5,
+      "keyword": "루즈핏 스웨트 팬츠",
+      "rankIncrement": 107
+    },
+    {
+      "rank": 6,
+      "keyword": "세미와이드 슬랙스",
+      "rankIncrement": 126
+    },
+    {
+      "rank": 7,
+      "keyword": "ma-1",
+      "rankIncrement": 189
+    },
+    {
+      "rank": 8,
+      "keyword": "나그랑 롱슬리브",
+      "rankIncrement": 104
+    },
+    {
+      "rank": 9,
+      "keyword": "효지",
+      "rankIncrement": 124
+    },
+    {
       "rank": 10,
-      "keyword": "와플",
-      "rankIncrement": 112
+      "keyword": "흑청",
+      "rankIncrement": 119
     }
   ]
 }
