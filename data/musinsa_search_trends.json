@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T03:44:06.076550+00:00",
+  "updatedAt": "2026-09-27T09:50:28.608432+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,22 +18,22 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
+      "keyword": "가을옷",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "경량패딩",
-      "rankIncrement": -1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "바람막이",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "런닝화",
-      "rankIncrement": 120
+      "keyword": "하이넥",
+      "rankIncrement": 171
     },
     {
       "rank": 2,
-      "keyword": "파르티멘토",
-      "rankIncrement": 118
+      "keyword": "파브레가",
+      "rankIncrement": 105
     },
     {
       "rank": 3,
-      "keyword": "레이어드 롱슬리브",
-      "rankIncrement": 126
+      "keyword": "유희",
+      "rankIncrement": 138
     },
     {
       "rank": 4,
-      "keyword": "데케트",
-      "rankIncrement": 128
+      "keyword": "아디다스 집업",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "알리스",
-      "rankIncrement": 134
-    },
-    {
-      "rank": 6,
-      "keyword": "첼시부츠",
-      "rankIncrement": 118
-    },
-    {
-      "rank": 7,
-      "keyword": "파브레가",
+      "keyword": "hdex",
       "rankIncrement": 109
     },
     {
+      "rank": 6,
+      "keyword": "슈펜",
+      "rankIncrement": 115
+    },
+    {
+      "rank": 7,
+      "keyword": "디스이즈네버댓 후드티",
+      "rankIncrement": 169
+    },
+    {
       "rank": 8,
-      "keyword": "모드나인",
-      "rankIncrement": 136
+      "keyword": "크롭",
+      "rankIncrement": 107
     },
     {
       "rank": 9,
-      "keyword": "로라로라",
-      "rankIncrement": 218
+      "keyword": "귀걸이",
+      "rankIncrement": 127
     },
     {
       "rank": 10,
-      "keyword": "블랙업",
-      "rankIncrement": 117
+      "keyword": "와플",
+      "rankIncrement": 112
     }
   ]
 }
