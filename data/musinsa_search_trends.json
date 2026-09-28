@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-27T17:35:47.633464+00:00",
+  "updatedAt": "2026-09-28T03:43:06.509446+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,33 +8,33 @@
     },
     {
       "rank": 2,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "keyword": "래플",
+      "rankIncrement": 57
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "바람막이",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "가을옷",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "니트",
-      "rankIncrement": 2
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "수원삼성",
+      "rankIncrement": -3
     },
     {
       "rank": 8,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "가디건",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "휠라",
-      "rankIncrement": 103
+      "keyword": "무신사래플",
+      "rankIncrement": 505
     },
     {
       "rank": 2,
-      "keyword": "룰루레몬",
-      "rankIncrement": 110
-    },
-    {
-      "rank": 3,
-      "keyword": "선글라스",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 4,
-      "keyword": "펜필드",
-      "rankIncrement": 168
-    },
-    {
-      "rank": 5,
-      "keyword": "나그랑티",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 6,
-      "keyword": "블러셔",
-      "rankIncrement": 135
-    },
-    {
-      "rank": 7,
-      "keyword": "먼작귀",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 8,
-      "keyword": "봄버자켓",
-      "rankIncrement": 112
-    },
-    {
-      "rank": 9,
-      "keyword": "후아유 후드집업",
+      "keyword": "체험단",
       "rankIncrement": 131
     },
     {
+      "rank": 3,
+      "keyword": "트랙팬츠",
+      "rankIncrement": 127
+    },
+    {
+      "rank": 4,
+      "keyword": "윈드브레이커",
+      "rankIncrement": 239
+    },
+    {
+      "rank": 5,
+      "keyword": "최저가 도전",
+      "rankIncrement": 324
+    },
+    {
+      "rank": 6,
+      "keyword": "머슬핏",
+      "rankIncrement": 137
+    },
+    {
+      "rank": 7,
+      "keyword": "등산화",
+      "rankIncrement": 177
+    },
+    {
+      "rank": 8,
+      "keyword": "남자 가방",
+      "rankIncrement": 108
+    },
+    {
+      "rank": 9,
+      "keyword": "비비안 웨스트우드",
+      "rankIncrement": 137
+    },
+    {
       "rank": 10,
-      "keyword": "인사일런스",
-      "rankIncrement": 205
+      "keyword": "남자 바지",
+      "rankIncrement": 124
     }
   ]
 }
