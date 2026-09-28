@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T17:10:44.286610+00:00",
+  "updatedAt": "2026-09-28T20:02:17.322102+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
+      "rank": 5,
       "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
-      "rank": 10,
-      "keyword": "아디다스",
+      "rank": 6,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "니트",
       "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "맨투맨",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "경량패딩",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 10,
+      "keyword": "모자",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스컬프터",
-      "rankIncrement": 106
+      "keyword": "남자 목걸이",
+      "rankIncrement": 133
     },
     {
       "rank": 2,
-      "keyword": "디미트리블랙",
-      "rankIncrement": 119
+      "keyword": "구두",
+      "rankIncrement": 102
     },
     {
       "rank": 3,
-      "keyword": "칼하트 후드집업",
-      "rankIncrement": 131
-    },
-    {
-      "rank": 4,
-      "keyword": "일리윤",
-      "rankIncrement": 131
-    },
-    {
-      "rank": 5,
-      "keyword": "아식스 젤카야노 14",
-      "rankIncrement": 209
-    },
-    {
-      "rank": 6,
-      "keyword": "남자 바지",
+      "keyword": "노이즈",
       "rankIncrement": 112
     },
     {
+      "rank": 4,
+      "keyword": "후브스",
+      "rankIncrement": 114
+    },
+    {
+      "rank": 5,
+      "keyword": "스트라이프 롱슬리브",
+      "rankIncrement": 115
+    },
+    {
+      "rank": 6,
+      "keyword": "롱부츠",
+      "rankIncrement": 119
+    },
+    {
       "rank": 7,
-      "keyword": "정장",
-      "rankIncrement": 137
+      "keyword": "헬리녹스",
+      "rankIncrement": 293
     },
     {
       "rank": 8,
-      "keyword": "릴리바이레드",
-      "rankIncrement": 117
+      "keyword": "혼다",
+      "rankIncrement": 255
     },
     {
       "rank": 9,
-      "keyword": "브라운브레스 후드티",
+      "keyword": "브렌슨",
       "rankIncrement": 108
     },
     {
       "rank": 10,
-      "keyword": "워커",
-      "rankIncrement": 105
+      "keyword": "버뮤다팬츠",
+      "rankIncrement": 114
     }
   ]
 }
