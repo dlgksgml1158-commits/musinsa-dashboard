@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T04:18:10.508010+00:00",
+  "updatedAt": "2026-09-29T10:25:44.077329+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,18 +8,18 @@
     },
     {
       "rank": 2,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "가을옷",
+      "rankIncrement": 1
+    },
+    {
       "rank": 4,
       "keyword": "후드티",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
@@ -28,22 +28,22 @@
     },
     {
       "rank": 6,
-      "keyword": "경량패딩",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "스파오",
-      "rankIncrement": -2
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
+      "keyword": "아디다스",
       "rankIncrement": 0
     },
     {
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "벤투스",
-      "rankIncrement": 124
+      "keyword": "신병",
+      "rankIncrement": 130
     },
     {
       "rank": 2,
-      "keyword": "노스페이스 벤투스",
-      "rankIncrement": 176
+      "keyword": "리복",
+      "rankIncrement": 174
     },
     {
       "rank": 3,
-      "keyword": "미니백",
-      "rankIncrement": 120
+      "keyword": "선글라스",
+      "rankIncrement": 142
     },
     {
       "rank": 4,
-      "keyword": "일리고",
-      "rankIncrement": 112
+      "keyword": "디스이즈네버댓 후드티",
+      "rankIncrement": 114
     },
     {
       "rank": 5,
-      "keyword": "미스치프",
-      "rankIncrement": 145
+      "keyword": "캘빈클라인 언더웨어",
+      "rankIncrement": 111
     },
     {
       "rank": 6,
-      "keyword": "후아유",
-      "rankIncrement": 230
+      "keyword": "나이키 에어포스",
+      "rankIncrement": 113
     },
     {
       "rank": 7,
-      "keyword": "크롭 자켓",
-      "rankIncrement": 238
+      "keyword": "커브드 팬츠",
+      "rankIncrement": 131
     },
     {
       "rank": 8,
-      "keyword": "수원삼성",
-      "rankIncrement": 138
+      "keyword": "디스커버리 익스페디션",
+      "rankIncrement": 130
     },
     {
       "rank": 9,
       "keyword": "트레이닝",
-      "rankIncrement": 212
+      "rankIncrement": 106
     },
     {
       "rank": 10,
-      "keyword": "hdex",
-      "rankIncrement": 165
+      "keyword": "브라운야드",
+      "rankIncrement": 145
     }
   ]
 }
