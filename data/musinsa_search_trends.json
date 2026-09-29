@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T10:25:44.077329+00:00",
+  "updatedAt": "2026-09-29T15:14:23.894481+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,22 +13,22 @@
     },
     {
       "rank": 3,
-      "keyword": "가을옷",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "후드티",
-      "rankIncrement": -1
+      "keyword": "가을옷",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "바람막이",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "니트",
+      "keyword": "셔츠",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "신병",
-      "rankIncrement": 130
+      "keyword": "스웨트팬츠",
+      "rankIncrement": 120
     },
     {
       "rank": 2,
-      "keyword": "리복",
-      "rankIncrement": 174
+      "keyword": "미스치프",
+      "rankIncrement": 117
     },
     {
       "rank": 3,
-      "keyword": "선글라스",
-      "rankIncrement": 142
+      "keyword": "숏패딩",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "디스이즈네버댓 후드티",
-      "rankIncrement": 114
+      "keyword": "런닝화",
+      "rankIncrement": 117
     },
     {
       "rank": 5,
-      "keyword": "캘빈클라인 언더웨어",
-      "rankIncrement": 111
+      "keyword": "정장",
+      "rankIncrement": 140
     },
     {
       "rank": 6,
-      "keyword": "나이키 에어포스",
-      "rankIncrement": 113
+      "keyword": "리복",
+      "rankIncrement": 282
     },
     {
       "rank": 7,
-      "keyword": "커브드 팬츠",
-      "rankIncrement": 131
+      "keyword": "목도리",
+      "rankIncrement": 138
     },
     {
       "rank": 8,
-      "keyword": "디스커버리 익스페디션",
-      "rankIncrement": 130
+      "keyword": "어반드레스",
+      "rankIncrement": 115
     },
     {
       "rank": 9,
-      "keyword": "트레이닝",
-      "rankIncrement": 106
+      "keyword": "롤슬리브",
+      "rankIncrement": 195
     },
     {
       "rank": 10,
-      "keyword": "브라운야드",
-      "rankIncrement": 145
+      "keyword": "아르반",
+      "rankIncrement": 103
     }
   ]
 }
