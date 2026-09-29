@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T15:14:23.894481+00:00",
+  "updatedAt": "2026-09-29T18:30:27.096432+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
+      "keyword": "니트",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 6,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
       "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "가디건",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스웨트팬츠",
-      "rankIncrement": 120
+      "keyword": "미세키서울",
+      "rankIncrement": 124
     },
     {
       "rank": 2,
-      "keyword": "미스치프",
-      "rankIncrement": 117
+      "keyword": "남자 목걸이",
+      "rankIncrement": 218
     },
     {
       "rank": 3,
-      "keyword": "숏패딩",
-      "rankIncrement": 100
+      "keyword": "에트오소메",
+      "rankIncrement": 110
     },
     {
       "rank": 4,
-      "keyword": "런닝화",
-      "rankIncrement": 117
+      "keyword": "운동복",
+      "rankIncrement": 118
     },
     {
       "rank": 5,
-      "keyword": "정장",
-      "rankIncrement": 140
+      "keyword": "르아르",
+      "rankIncrement": 144
     },
     {
       "rank": 6,
-      "keyword": "리복",
-      "rankIncrement": 282
+      "keyword": "팀버랜드",
+      "rankIncrement": 150
     },
     {
       "rank": 7,
-      "keyword": "목도리",
-      "rankIncrement": 138
+      "keyword": "롱 슬리브",
+      "rankIncrement": 152
     },
     {
       "rank": 8,
-      "keyword": "어반드레스",
-      "rankIncrement": 115
+      "keyword": "롱패딩",
+      "rankIncrement": 151
     },
     {
       "rank": 9,
-      "keyword": "롤슬리브",
-      "rankIncrement": 195
+      "keyword": "배드블러드",
+      "rankIncrement": 162
     },
     {
       "rank": 10,
-      "keyword": "아르반",
-      "rankIncrement": 103
+      "keyword": "스톤아일랜드",
+      "rankIncrement": 168
     }
   ]
 }
