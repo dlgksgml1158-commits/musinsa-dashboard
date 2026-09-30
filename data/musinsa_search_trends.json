@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-09-29T18:30:27.096432+00:00",
+  "updatedAt": "2026-09-30T04:02:19.519386+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": 1
     },
     {
       "rank": 2,
+      "keyword": "후드집업",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 3,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
-      "keyword": "바람막이",
-      "rankIncrement": 1
-    },
-    {
       "rank": 5,
-      "keyword": "니트",
-      "rankIncrement": -1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "가을옷",
-      "rankIncrement": 2
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "가디건",
-      "rankIncrement": -1
+      "keyword": "니트",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "셔츠",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "미세키서울",
-      "rankIncrement": 124
+      "keyword": "이미스",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "남자 목걸이",
-      "rankIncrement": 218
+      "keyword": "어뮤즈",
+      "rankIncrement": 111
     },
     {
       "rank": 3,
-      "keyword": "에트오소메",
-      "rankIncrement": 110
+      "keyword": "스웨트팬츠",
+      "rankIncrement": 139
     },
     {
       "rank": 4,
-      "keyword": "운동복",
-      "rankIncrement": 118
+      "keyword": "카고바지",
+      "rankIncrement": 143
     },
     {
       "rank": 5,
-      "keyword": "르아르",
-      "rankIncrement": 144
+      "keyword": "스카프",
+      "rankIncrement": 102
     },
     {
       "rank": 6,
-      "keyword": "팀버랜드",
-      "rankIncrement": 150
+      "keyword": "앤더슨벨",
+      "rankIncrement": 242
     },
     {
       "rank": 7,
-      "keyword": "롱 슬리브",
-      "rankIncrement": 152
+      "keyword": "트레이닝팬츠",
+      "rankIncrement": 375
     },
     {
       "rank": 8,
-      "keyword": "롱패딩",
-      "rankIncrement": 151
+      "keyword": "아메스 월드와이드",
+      "rankIncrement": 116
     },
     {
       "rank": 9,
-      "keyword": "배드블러드",
-      "rankIncrement": 162
+      "keyword": "긴팔티셔츠",
+      "rankIncrement": 185
     },
     {
       "rank": 10,
-      "keyword": "스톤아일랜드",
-      "rankIncrement": 168
+      "keyword": "노스페이스 경량패딩",
+      "rankIncrement": 351
     }
   ]
 }
