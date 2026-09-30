@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-09-30T10:18:30.976476+00:00",
+  "updatedAt": "2026-09-30T15:28:45.974166+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "가을옷",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -18,18 +18,18 @@
     },
     {
       "rank": 4,
-      "keyword": "후드티",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 5,
       "keyword": "맨투맨",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "바람막이",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "아디다스",
+      "keyword": "가디건",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "휠라",
-      "rankIncrement": 132
+      "keyword": "알리스",
+      "rankIncrement": 131
     },
     {
       "rank": 2,
-      "keyword": "디스이즈네버댓 후드티",
-      "rankIncrement": 100
+      "keyword": "나이키 신발",
+      "rankIncrement": 190
     },
     {
       "rank": 3,
-      "keyword": "아식스 젤카야노 14",
-      "rankIncrement": 119
+      "keyword": "마인드",
+      "rankIncrement": 186
     },
     {
       "rank": 4,
-      "keyword": "아수라",
-      "rankIncrement": 103
+      "keyword": "프리즘웍스",
+      "rankIncrement": 107
     },
     {
       "rank": 5,
-      "keyword": "그라미치",
-      "rankIncrement": 111
+      "keyword": "나이키 마인드",
+      "rankIncrement": 107
     },
     {
       "rank": 6,
-      "keyword": "슬렉스",
-      "rankIncrement": 105
+      "keyword": "드릭스",
+      "rankIncrement": 151
     },
     {
       "rank": 7,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 143
+      "keyword": "마스마룰즈",
+      "rankIncrement": 159
     },
     {
       "rank": 8,
-      "keyword": "피노키",
-      "rankIncrement": 145
+      "keyword": "키츠네",
+      "rankIncrement": 147
     },
     {
       "rank": 9,
-      "keyword": "무드인사이드",
-      "rankIncrement": 111
+      "keyword": "어널러코드",
+      "rankIncrement": 120
     },
     {
       "rank": 10,
-      "keyword": "데님셔츠",
-      "rankIncrement": 116
+      "keyword": "아디다스 롱슬리브",
+      "rankIncrement": 184
     }
   ]
 }
