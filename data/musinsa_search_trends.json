@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T15:28:45.974166+00:00",
+  "updatedAt": "2026-09-30T18:26:04.068325+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "바람막이",
-      "rankIncrement": 0
+      "rankIncrement": 1
+    },
+    {
+      "rank": 6,
+      "keyword": "경량패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "가디건",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "가디건",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "알리스",
-      "rankIncrement": 131
+      "keyword": "윈드브레이커",
+      "rankIncrement": 116
     },
     {
       "rank": 2,
-      "keyword": "나이키 신발",
-      "rankIncrement": 190
+      "keyword": "르아르",
+      "rankIncrement": 141
     },
     {
       "rank": 3,
-      "keyword": "마인드",
-      "rankIncrement": 186
+      "keyword": "워커",
+      "rankIncrement": 191
     },
     {
       "rank": 4,
-      "keyword": "프리즘웍스",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 5,
-      "keyword": "나이키 마인드",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 6,
-      "keyword": "드릭스",
+      "keyword": "르아브",
       "rankIncrement": 151
     },
     {
+      "rank": 5,
+      "keyword": "아메스 월드와이드",
+      "rankIncrement": 128
+    },
+    {
+      "rank": 6,
+      "keyword": "꼼데가르송",
+      "rankIncrement": 195
+    },
+    {
       "rank": 7,
-      "keyword": "마스마룰즈",
-      "rankIncrement": 159
+      "keyword": "숏패딩",
+      "rankIncrement": 131
     },
     {
       "rank": 8,
-      "keyword": "키츠네",
-      "rankIncrement": 147
+      "keyword": "롱패딩",
+      "rankIncrement": 151
     },
     {
       "rank": 9,
-      "keyword": "어널러코드",
-      "rankIncrement": 120
+      "keyword": "크롭 셔츠",
+      "rankIncrement": 105
     },
     {
       "rank": 10,
-      "keyword": "아디다스 롱슬리브",
-      "rankIncrement": 184
+      "keyword": "나이키 마인드",
+      "rankIncrement": 177
     }
   ]
 }
