@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-09-30T04:02:19.519386+00:00",
+  "updatedAt": "2026-09-30T10:18:30.976476+00:00",
   "popular": [
     {
       "rank": 1,
       "keyword": "가을옷",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 2,
       "keyword": "후드집업",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
@@ -23,22 +23,22 @@
     },
     {
       "rank": 5,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 6,
+      "keyword": "바람막이",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 7,
       "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
       "rank": 8,
-      "keyword": "아디다스",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "셔츠",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "이미스",
-      "rankIncrement": 101
+      "keyword": "휠라",
+      "rankIncrement": 132
     },
     {
       "rank": 2,
-      "keyword": "어뮤즈",
-      "rankIncrement": 111
+      "keyword": "디스이즈네버댓 후드티",
+      "rankIncrement": 100
     },
     {
       "rank": 3,
-      "keyword": "스웨트팬츠",
-      "rankIncrement": 139
+      "keyword": "아식스 젤카야노 14",
+      "rankIncrement": 119
     },
     {
       "rank": 4,
-      "keyword": "카고바지",
-      "rankIncrement": 143
+      "keyword": "아수라",
+      "rankIncrement": 103
     },
     {
       "rank": 5,
-      "keyword": "스카프",
-      "rankIncrement": 102
+      "keyword": "그라미치",
+      "rankIncrement": 111
     },
     {
       "rank": 6,
-      "keyword": "앤더슨벨",
-      "rankIncrement": 242
+      "keyword": "슬렉스",
+      "rankIncrement": 105
     },
     {
       "rank": 7,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 375
+      "keyword": "트랙팬츠",
+      "rankIncrement": 143
     },
     {
       "rank": 8,
-      "keyword": "아메스 월드와이드",
-      "rankIncrement": 116
+      "keyword": "피노키",
+      "rankIncrement": 145
     },
     {
       "rank": 9,
-      "keyword": "긴팔티셔츠",
-      "rankIncrement": 185
+      "keyword": "무드인사이드",
+      "rankIncrement": 111
     },
     {
       "rank": 10,
-      "keyword": "노스페이스 경량패딩",
-      "rankIncrement": 351
+      "keyword": "데님셔츠",
+      "rankIncrement": 116
     }
   ]
 }
