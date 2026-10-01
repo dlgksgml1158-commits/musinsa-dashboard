@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-09-30T18:26:04.068325+00:00",
+  "updatedAt": "2026-10-01T04:13:40.160902+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
+      "keyword": "마인드001",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "후드티",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "롱슬리브",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "바람막이",
       "rankIncrement": 1
     },
     {
+      "rank": 4,
+      "keyword": "후드티",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 5,
+      "keyword": "마인드",
+      "rankIncrement": -2
+    },
+    {
       "rank": 6,
-      "keyword": "경량패딩",
+      "keyword": "바람막이",
       "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "가을옷",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "니트",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 9,
-      "keyword": "가디건",
+      "keyword": "나이키 마인드",
       "rankIncrement": 1
     },
     {
-      "rank": 10,
-      "keyword": "가을옷",
+      "rank": 9,
+      "keyword": "나이키",
       "rankIncrement": -1
+    },
+    {
+      "rank": 10,
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "윈드브레이커",
-      "rankIncrement": 116
+      "keyword": "버건디",
+      "rankIncrement": 214
     },
     {
       "rank": 2,
-      "keyword": "르아르",
-      "rankIncrement": 141
+      "keyword": "리복",
+      "rankIncrement": 124
     },
     {
       "rank": 3,
-      "keyword": "워커",
-      "rankIncrement": 191
+      "keyword": "드롭",
+      "rankIncrement": 175
     },
     {
       "rank": 4,
-      "keyword": "르아브",
-      "rankIncrement": 151
+      "keyword": "아디다스 트랙탑",
+      "rankIncrement": 155
     },
     {
       "rank": 5,
-      "keyword": "아메스 월드와이드",
-      "rankIncrement": 128
+      "keyword": "스탠드오일",
+      "rankIncrement": 124
     },
     {
       "rank": 6,
-      "keyword": "꼼데가르송",
-      "rankIncrement": 195
+      "keyword": "후브스",
+      "rankIncrement": 170
     },
     {
       "rank": 7,
-      "keyword": "숏패딩",
-      "rankIncrement": 131
+      "keyword": "데이",
+      "rankIncrement": 326
     },
     {
       "rank": 8,
-      "keyword": "롱패딩",
-      "rankIncrement": 151
+      "keyword": "트러커 자켓",
+      "rankIncrement": 109
     },
     {
       "rank": 9,
-      "keyword": "크롭 셔츠",
-      "rankIncrement": 105
+      "keyword": "정장",
+      "rankIncrement": 113
     },
     {
       "rank": 10,
-      "keyword": "나이키 마인드",
-      "rankIncrement": 177
+      "keyword": "스파오 케로로",
+      "rankIncrement": 152
     }
   ]
 }
