@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T10:44:47.897637+00:00",
+  "updatedAt": "2026-10-01T15:50:05.404118+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,22 +18,22 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
       "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
+      "rank": 5,
       "keyword": "맨투맨",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "바람막이",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "가을옷",
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "후리스",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "드로우핏",
-      "rankIncrement": 114
+      "keyword": "먼작귀",
+      "rankIncrement": 210
     },
     {
       "rank": 2,
-      "keyword": "생지데님",
-      "rankIncrement": 163
-    },
-    {
-      "rank": 3,
-      "keyword": "해칭룸",
-      "rankIncrement": 122
-    },
-    {
-      "rank": 4,
-      "keyword": "허그유어스킨",
-      "rankIncrement": 102
-    },
-    {
-      "rank": 5,
-      "keyword": "브이넥",
-      "rankIncrement": 205
-    },
-    {
-      "rank": 6,
-      "keyword": "스톤아일랜드",
-      "rankIncrement": 203
-    },
-    {
-      "rank": 7,
-      "keyword": "슈프림",
-      "rankIncrement": 161
-    },
-    {
-      "rank": 8,
-      "keyword": "치마",
+      "keyword": "숏코트",
       "rankIncrement": 100
     },
     {
+      "rank": 3,
+      "keyword": "바라클라바",
+      "rankIncrement": 184
+    },
+    {
+      "rank": 4,
+      "keyword": "트레이닝팬츠",
+      "rankIncrement": 107
+    },
+    {
+      "rank": 5,
+      "keyword": "파우치",
+      "rankIncrement": 148
+    },
+    {
+      "rank": 6,
+      "keyword": "스트라이프 셔츠",
+      "rankIncrement": 131
+    },
+    {
+      "rank": 7,
+      "keyword": "마이초이도쿄",
+      "rankIncrement": 110
+    },
+    {
+      "rank": 8,
+      "keyword": "조끼",
+      "rankIncrement": 116
+    },
+    {
       "rank": 9,
-      "keyword": "일리고",
-      "rankIncrement": 270
+      "keyword": "봄버자켓",
+      "rankIncrement": 130
     },
     {
       "rank": 10,
-      "keyword": "르아르",
-      "rankIncrement": 184
+      "keyword": "페리페라",
+      "rankIncrement": 132
     }
   ]
 }
