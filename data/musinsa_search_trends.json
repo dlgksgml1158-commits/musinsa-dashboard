@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01T15:50:05.404118+00:00",
+  "updatedAt": "2026-10-01T18:44:52.424073+00:00",
   "popular": [
     {
       "rank": 1,
@@ -28,13 +28,13 @@
     },
     {
       "rank": 6,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": 1
     },
     {
       "rank": 7,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": -1
     },
     {
       "rank": 8,
@@ -44,64 +44,64 @@
     {
       "rank": 9,
       "keyword": "가을옷",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "후리스",
-      "rankIncrement": -1
+      "keyword": "자켓",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "먼작귀",
-      "rankIncrement": 210
+      "keyword": "넥타이",
+      "rankIncrement": 290
     },
     {
       "rank": 2,
-      "keyword": "숏코트",
-      "rankIncrement": 100
+      "keyword": "러브이즈트루",
+      "rankIncrement": 108
     },
     {
       "rank": 3,
-      "keyword": "바라클라바",
-      "rankIncrement": 184
+      "keyword": "딥브이넥",
+      "rankIncrement": 146
     },
     {
       "rank": 4,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 107
+      "keyword": "니트 집업",
+      "rankIncrement": 150
     },
     {
       "rank": 5,
-      "keyword": "파우치",
-      "rankIncrement": 148
+      "keyword": "나일론 팬츠",
+      "rankIncrement": 171
     },
     {
       "rank": 6,
-      "keyword": "스트라이프 셔츠",
-      "rankIncrement": 131
+      "keyword": "컨버스",
+      "rankIncrement": 100
     },
     {
       "rank": 7,
-      "keyword": "마이초이도쿄",
-      "rankIncrement": 110
+      "keyword": "코튼팬츠",
+      "rankIncrement": 131
     },
     {
       "rank": 8,
-      "keyword": "조끼",
-      "rankIncrement": 116
+      "keyword": "노스페이스 패딩",
+      "rankIncrement": 142
     },
     {
       "rank": 9,
-      "keyword": "봄버자켓",
-      "rankIncrement": 130
+      "keyword": "인사일런스",
+      "rankIncrement": 274
     },
     {
       "rank": 10,
-      "keyword": "페리페라",
-      "rankIncrement": 132
+      "keyword": "acg",
+      "rankIncrement": 119
     }
   ]
 }
