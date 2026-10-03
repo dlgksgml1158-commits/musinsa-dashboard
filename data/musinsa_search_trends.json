@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T09:41:48.294857+00:00",
+  "updatedAt": "2026-10-03T14:04:36.326234+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,12 +9,12 @@
     {
       "rank": 2,
       "keyword": "후드티",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 3,
       "keyword": "무배당발",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 4,
@@ -29,12 +29,12 @@
     {
       "rank": 6,
       "keyword": "맨투맨",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "가을옷",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "꼼파뇨",
-      "rankIncrement": 104
+      "keyword": "팬티",
+      "rankIncrement": 128
     },
     {
       "rank": 2,
-      "keyword": "조끼",
-      "rankIncrement": 156
+      "keyword": "트러커 자켓",
+      "rankIncrement": 138
     },
     {
       "rank": 3,
-      "keyword": "러프사이드",
-      "rankIncrement": 160
+      "keyword": "하이넥 자켓",
+      "rankIncrement": 105
     },
     {
       "rank": 4,
-      "keyword": "zara",
-      "rankIncrement": 191
+      "keyword": "나이키 acg",
+      "rankIncrement": 124
     },
     {
       "rank": 5,
-      "keyword": "코닥",
-      "rankIncrement": 104
+      "keyword": "프리덤",
+      "rankIncrement": 145
     },
     {
       "rank": 6,
-      "keyword": "스투시 후드집업",
-      "rankIncrement": 167
+      "keyword": "수아레 경량패딩",
+      "rankIncrement": 206
     },
     {
       "rank": 7,
-      "keyword": "후아유 후드집업",
-      "rankIncrement": 120
+      "keyword": "플리스 집업",
+      "rankIncrement": 251
     },
     {
       "rank": 8,
-      "keyword": "벨리에",
-      "rankIncrement": 118
+      "keyword": "메리제인",
+      "rankIncrement": 143
     },
     {
       "rank": 9,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 118
+      "keyword": "온러닝",
+      "rankIncrement": 184
     },
     {
       "rank": 10,
-      "keyword": "디젤",
-      "rankIncrement": 178
+      "keyword": "아르반",
+      "rankIncrement": 110
     }
   ]
 }
