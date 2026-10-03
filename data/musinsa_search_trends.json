@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T14:04:36.326234+00:00",
+  "updatedAt": "2026-10-03T17:03:15.601926+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,21 +9,21 @@
     {
       "rank": 2,
       "keyword": "후드티",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
+      "keyword": "롱슬리브",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 4,
       "keyword": "무배당발",
       "rankIncrement": -1
     },
     {
-      "rank": 4,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
       "rank": 5,
-      "keyword": "롱슬리브",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "가을옷",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바람막이",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
-      "rank": 10,
-      "keyword": "니트",
+      "rank": 9,
+      "keyword": "바람막이",
       "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "후리스",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "팬티",
-      "rankIncrement": 128
+      "keyword": "일리고",
+      "rankIncrement": 123
     },
     {
       "rank": 2,
-      "keyword": "트러커 자켓",
-      "rankIncrement": 138
+      "keyword": "키링",
+      "rankIncrement": 130
     },
     {
       "rank": 3,
-      "keyword": "하이넥 자켓",
-      "rankIncrement": 105
+      "keyword": "데님셔츠",
+      "rankIncrement": 115
     },
     {
       "rank": 4,
-      "keyword": "나이키 acg",
-      "rankIncrement": 124
+      "keyword": "아이폰 케이스",
+      "rankIncrement": 144
     },
     {
       "rank": 5,
-      "keyword": "프리덤",
-      "rankIncrement": 145
+      "keyword": "첼시부츠",
+      "rankIncrement": 106
     },
     {
       "rank": 6,
-      "keyword": "수아레 경량패딩",
-      "rankIncrement": 206
+      "keyword": "반팔티",
+      "rankIncrement": 105
     },
     {
       "rank": 7,
-      "keyword": "플리스 집업",
-      "rankIncrement": 251
+      "keyword": "헬리녹스",
+      "rankIncrement": 115
     },
     {
       "rank": 8,
-      "keyword": "메리제인",
-      "rankIncrement": 143
+      "keyword": "코드그라피",
+      "rankIncrement": 162
     },
     {
       "rank": 9,
-      "keyword": "온러닝",
-      "rankIncrement": 184
+      "keyword": "트러커 자켓",
+      "rankIncrement": 140
     },
     {
       "rank": 10,
-      "keyword": "아르반",
-      "rankIncrement": 110
+      "keyword": "남자 바지",
+      "rankIncrement": 120
     }
   ]
 }
