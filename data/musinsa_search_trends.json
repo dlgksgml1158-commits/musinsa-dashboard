@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T17:03:15.601926+00:00",
+  "updatedAt": "2026-10-04T04:22:21.463432+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,13 +13,13 @@
     },
     {
       "rank": 3,
-      "keyword": "롱슬리브",
-      "rankIncrement": 1
+      "keyword": "무배당발",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "무배당발",
-      "rankIncrement": -1
+      "keyword": "가을옷",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "후리스",
-      "rankIncrement": 2
+      "keyword": "니트",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "일리고",
-      "rankIncrement": 123
+      "keyword": "나이키 이니시에이터",
+      "rankIncrement": 150
     },
     {
       "rank": 2,
-      "keyword": "키링",
-      "rankIncrement": 130
+      "keyword": "슬리브",
+      "rankIncrement": 103
     },
     {
       "rank": 3,
-      "keyword": "데님셔츠",
-      "rankIncrement": 115
+      "keyword": "ma-1",
+      "rankIncrement": 139
     },
     {
       "rank": 4,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 144
+      "keyword": "토트백",
+      "rankIncrement": 135
     },
     {
       "rank": 5,
-      "keyword": "첼시부츠",
-      "rankIncrement": 106
+      "keyword": "치마",
+      "rankIncrement": 126
     },
     {
       "rank": 6,
-      "keyword": "반팔티",
-      "rankIncrement": 105
+      "keyword": "카라티",
+      "rankIncrement": 112
     },
     {
       "rank": 7,
-      "keyword": "헬리녹스",
-      "rankIncrement": 115
+      "keyword": "워커",
+      "rankIncrement": 219
     },
     {
       "rank": 8,
-      "keyword": "코드그라피",
-      "rankIncrement": 162
+      "keyword": "피노키",
+      "rankIncrement": 150
     },
     {
       "rank": 9,
-      "keyword": "트러커 자켓",
-      "rankIncrement": 140
+      "keyword": "버건디 후드티",
+      "rankIncrement": 291
     },
     {
       "rank": 10,
-      "keyword": "남자 바지",
-      "rankIncrement": 120
+      "keyword": "레이어드 티",
+      "rankIncrement": 127
     }
   ]
 }
