@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T17:21:20.358990+00:00",
+  "updatedAt": "2026-10-05T04:07:42.889578+00:00",
   "musinsa": [
     {
       "keyword": "레이스나시",
@@ -51,11 +51,11 @@
       "change": null
     },
     {
-      "keyword": "카프리팬츠",
+      "keyword": "르버터",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 8,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "남성면바지",
@@ -65,11 +65,11 @@
       "change": null
     },
     {
-      "keyword": "르버터",
+      "keyword": "카프리팬츠",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": null
+      "change": -2
     }
   ],
   "cm29": [
@@ -123,11 +123,11 @@
       "change": null
     },
     {
-      "keyword": "카프리팬츠",
+      "keyword": "르버터",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 8,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "남성면바지",
@@ -137,11 +137,11 @@
       "change": null
     },
     {
-      "keyword": "르버터",
+      "keyword": "카프리팬츠",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": null
+      "change": -2
     }
   ]
 }

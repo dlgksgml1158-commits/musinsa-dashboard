@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T17:21:21.787404+00:00",
+  "updatedAt": "2026-10-05T04:07:44.218755+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,22 +13,22 @@
     },
     {
       "rank": 3,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "가을옷",
+      "rankIncrement": 0
+    },
+    {
       "rank": 5,
-      "keyword": "맨투맨",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "니트",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "가디건",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "롱코트",
-      "rankIncrement": 127
-    },
-    {
-      "rank": 2,
-      "keyword": "스카프",
-      "rankIncrement": 108
-    },
-    {
-      "rank": 3,
-      "keyword": "엘리엇 에밀",
-      "rankIncrement": 138
-    },
-    {
-      "rank": 4,
-      "keyword": "일리고",
-      "rankIncrement": 126
-    },
-    {
-      "rank": 5,
-      "keyword": "머플러",
-      "rankIncrement": 122
-    },
-    {
-      "rank": 6,
-      "keyword": "블러셔",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 7,
-      "keyword": "스키즘 인듀싱",
+      "keyword": "무신사 스탠다드 경량패딩",
       "rankIncrement": 129
     },
     {
-      "rank": 8,
-      "keyword": "야세",
+      "rank": 2,
+      "keyword": "나이키 acg",
+      "rankIncrement": 128
+    },
+    {
+      "rank": 3,
+      "keyword": "시티레저",
+      "rankIncrement": 204
+    },
+    {
+      "rank": 4,
+      "keyword": "더바넷",
+      "rankIncrement": 181
+    },
+    {
+      "rank": 5,
+      "keyword": "이미스",
       "rankIncrement": 100
     },
     {
+      "rank": 6,
+      "keyword": "인사일런스",
+      "rankIncrement": 136
+    },
+    {
+      "rank": 7,
+      "keyword": "파자마",
+      "rankIncrement": 105
+    },
+    {
+      "rank": 8,
+      "keyword": "플리스 집업",
+      "rankIncrement": 157
+    },
+    {
       "rank": 9,
-      "keyword": "등산화",
-      "rankIncrement": 188
+      "keyword": "아디다스 트랙팬츠",
+      "rankIncrement": 129
     },
     {
       "rank": 10,
-      "keyword": "페리페라",
-      "rankIncrement": 121
+      "keyword": "남자 청바지",
+      "rankIncrement": 172
     }
   ]
 }
