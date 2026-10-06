@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T11:02:02.551803+00:00",
+  "updatedAt": "2026-10-06T15:33:58.216002+00:00",
   "popular": [
     {
       "rank": 1,
@@ -19,16 +19,16 @@
     {
       "rank": 4,
       "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 5,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "가을옷",
+      "keyword": "니트",
       "rankIncrement": 1
     },
     {
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "니트",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "스파오",
+      "keyword": "자켓",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "크롭 후드티",
-      "rankIncrement": 209
+      "keyword": "후브스",
+      "rankIncrement": 170
     },
     {
       "rank": 2,
-      "keyword": "아메스 월드와이드",
-      "rankIncrement": 165
+      "keyword": "베이지 팬츠",
+      "rankIncrement": 112
     },
     {
       "rank": 3,
-      "keyword": "남자 셔츠",
+      "keyword": "무드인사이드",
       "rankIncrement": 175
     },
     {
       "rank": 4,
-      "keyword": "디스이즈네버댓 후드티",
-      "rankIncrement": 101
+      "keyword": "컬럼비아",
+      "rankIncrement": 141
     },
     {
       "rank": 5,
-      "keyword": "헨리넥 긴팔",
-      "rankIncrement": 133
+      "keyword": "드릭스",
+      "rankIncrement": 146
     },
     {
       "rank": 6,
-      "keyword": "탑텐 경량패딩",
-      "rankIncrement": 116
+      "keyword": "야세",
+      "rankIncrement": 110
     },
     {
       "rank": 7,
-      "keyword": "헤어밴드",
-      "rankIncrement": 152
+      "keyword": "디키즈 후드티",
+      "rankIncrement": 211
     },
     {
       "rank": 8,
-      "keyword": "파자마",
-      "rankIncrement": 158
+      "keyword": "디스커스 애슬레틱",
+      "rankIncrement": 115
     },
     {
       "rank": 9,
-      "keyword": "후아유 후드집업",
-      "rankIncrement": 107
+      "keyword": "발마칸 코트",
+      "rankIncrement": 149
     },
     {
       "rank": 10,
-      "keyword": "커버낫 후드집업",
-      "rankIncrement": 139
+      "keyword": "토니웩",
+      "rankIncrement": 118
     }
   ]
 }
