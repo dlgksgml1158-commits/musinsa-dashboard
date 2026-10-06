@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T15:33:58.216002+00:00",
+  "updatedAt": "2026-10-06T18:50:29.256154+00:00",
   "popular": [
     {
       "rank": 1,
@@ -19,88 +19,88 @@
     {
       "rank": 4,
       "keyword": "롱슬리브",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "니트",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "니트",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "바람막이",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "후리스",
-      "rankIncrement": 0
+      "keyword": "패딩",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "자켓",
+      "keyword": "후리스",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "후브스",
-      "rankIncrement": 170
+      "keyword": "치이카와",
+      "rankIncrement": 114
     },
     {
       "rank": 2,
-      "keyword": "베이지 팬츠",
-      "rankIncrement": 112
+      "keyword": "언더아머",
+      "rankIncrement": 104
     },
     {
       "rank": 3,
-      "keyword": "무드인사이드",
-      "rankIncrement": 175
+      "keyword": "벨리에",
+      "rankIncrement": 132
     },
     {
       "rank": 4,
-      "keyword": "컬럼비아",
-      "rankIncrement": 141
+      "keyword": "스커트",
+      "rankIncrement": 154
     },
     {
       "rank": 5,
-      "keyword": "드릭스",
-      "rankIncrement": 146
+      "keyword": "뉴에라",
+      "rankIncrement": 112
     },
     {
       "rank": 6,
-      "keyword": "야세",
-      "rankIncrement": 110
+      "keyword": "오니츠카타이거",
+      "rankIncrement": 172
     },
     {
       "rank": 7,
-      "keyword": "디키즈 후드티",
-      "rankIncrement": 211
+      "keyword": "남자 가디건",
+      "rankIncrement": 145
     },
     {
       "rank": 8,
-      "keyword": "디스커스 애슬레틱",
-      "rankIncrement": 115
+      "keyword": "룰루레몬",
+      "rankIncrement": 107
     },
     {
       "rank": 9,
-      "keyword": "발마칸 코트",
-      "rankIncrement": 149
+      "keyword": "토피",
+      "rankIncrement": 116
     },
     {
       "rank": 10,
-      "keyword": "토니웩",
+      "keyword": "캘빈클라인",
       "rankIncrement": 118
     }
   ]
