@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T15:58:01.792901+00:00",
+  "updatedAt": "2026-10-08T19:11:34.171491+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 6,
-      "keyword": "가을옷",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 7,
       "keyword": "니트",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
-      "keyword": "바지",
+      "rank": 6,
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
+      "rank": 7,
+      "keyword": "가을옷",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "바지",
+      "rankIncrement": -1
+    },
+    {
       "rank": 9,
-      "keyword": "스파오",
+      "keyword": "후리스",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바람막이",
-      "rankIncrement": 1
+      "keyword": "스파오",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "슈프림",
-      "rankIncrement": 124
+      "keyword": "롱패딩",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 108
+      "keyword": "넥타이",
+      "rankIncrement": 207
     },
     {
       "rank": 3,
-      "keyword": "체험단",
-      "rankIncrement": 153
+      "keyword": "노스페이스 바람막이",
+      "rankIncrement": 137
     },
     {
       "rank": 4,
-      "keyword": "파우치",
-      "rankIncrement": 240
+      "keyword": "식스핏",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "아르반",
-      "rankIncrement": 138
+      "keyword": "뉴에라",
+      "rankIncrement": 107
     },
     {
       "rank": 6,
-      "keyword": "봄버자켓",
-      "rankIncrement": 131
+      "keyword": "러닝화",
+      "rankIncrement": 109
     },
     {
       "rank": 7,
-      "keyword": "라이더자켓",
-      "rankIncrement": 162
+      "keyword": "레이어드 롱슬리브",
+      "rankIncrement": 146
     },
     {
       "rank": 8,
-      "keyword": "아메스 월드와이드",
-      "rankIncrement": 101
+      "keyword": "도프제이슨",
+      "rankIncrement": 116
     },
     {
       "rank": 9,
-      "keyword": "로우라이즈",
-      "rankIncrement": 103
+      "keyword": "아식스 젤카야노 14",
+      "rankIncrement": 124
     },
     {
       "rank": 10,
-      "keyword": "어그부츠",
-      "rankIncrement": 114
+      "keyword": "무지 후드티",
+      "rankIncrement": 137
     }
   ]
 }
