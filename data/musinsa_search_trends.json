@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T04:34:28.000572+00:00",
+  "updatedAt": "2026-10-08T11:09:45.137030+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,94 +14,94 @@
     {
       "rank": 3,
       "keyword": "후드티",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "가을옷",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "먼작귀",
-      "rankIncrement": -2
-    },
-    {
-      "rank": 6,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
+      "rank": 6,
+      "keyword": "니트",
+      "rankIncrement": 1
+    },
+    {
       "rank": 7,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 8,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "스파오",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "스파오",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
+      "keyword": "바지",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "롱부츠",
-      "rankIncrement": 105
+      "keyword": "로라로라",
+      "rankIncrement": 112
     },
     {
       "rank": 2,
-      "keyword": "일리고",
-      "rankIncrement": 161
+      "keyword": "더콜디스트모먼트",
+      "rankIncrement": 138
     },
     {
       "rank": 3,
-      "keyword": "ma-1",
-      "rankIncrement": 101
+      "keyword": "해칭룸",
+      "rankIncrement": 188
     },
     {
       "rank": 4,
-      "keyword": "레이어드",
-      "rankIncrement": 117
+      "keyword": "롱스커트",
+      "rankIncrement": 156
     },
     {
       "rank": 5,
-      "keyword": "온러닝",
-      "rankIncrement": 131
+      "keyword": "이미스",
+      "rankIncrement": 301
     },
     {
       "rank": 6,
-      "keyword": "꼼데가르송",
-      "rankIncrement": 132
+      "keyword": "토마스모어",
+      "rankIncrement": 100
     },
     {
       "rank": 7,
-      "keyword": "스트라이프",
-      "rankIncrement": 160
+      "keyword": "브랜디드",
+      "rankIncrement": 108
     },
     {
       "rank": 8,
-      "keyword": "아식스 조그100",
-      "rankIncrement": 162
+      "keyword": "헤링턴 자켓",
+      "rankIncrement": 201
     },
     {
       "rank": 9,
-      "keyword": "커브드팬츠",
-      "rankIncrement": 127
+      "keyword": "벨리에",
+      "rankIncrement": 100
     },
     {
       "rank": 10,
-      "keyword": "단독",
-      "rankIncrement": 137
+      "keyword": "트레이닝팬츠",
+      "rankIncrement": 204
     }
   ]
 }
