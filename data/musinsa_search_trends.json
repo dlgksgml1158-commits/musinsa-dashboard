@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T11:09:45.137030+00:00",
+  "updatedAt": "2026-10-08T15:58:01.792901+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "니트",
+      "rank": 5,
+      "keyword": "맨투맨",
       "rankIncrement": 1
+    },
+    {
+      "rank": 6,
+      "keyword": "가을옷",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "니트",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "스파오",
-      "rankIncrement": 1
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바람막이",
-      "rankIncrement": -1
+      "keyword": "스파오",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "로라로라",
-      "rankIncrement": 112
+      "keyword": "슈프림",
+      "rankIncrement": 124
     },
     {
       "rank": 2,
-      "keyword": "더콜디스트모먼트",
-      "rankIncrement": 138
-    },
-    {
-      "rank": 3,
-      "keyword": "해칭룸",
-      "rankIncrement": 188
-    },
-    {
-      "rank": 4,
-      "keyword": "롱스커트",
-      "rankIncrement": 156
-    },
-    {
-      "rank": 5,
-      "keyword": "이미스",
-      "rankIncrement": 301
-    },
-    {
-      "rank": 6,
-      "keyword": "토마스모어",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 7,
-      "keyword": "브랜디드",
+      "keyword": "코튼 팬츠",
       "rankIncrement": 108
     },
     {
+      "rank": 3,
+      "keyword": "체험단",
+      "rankIncrement": 153
+    },
+    {
+      "rank": 4,
+      "keyword": "파우치",
+      "rankIncrement": 240
+    },
+    {
+      "rank": 5,
+      "keyword": "아르반",
+      "rankIncrement": 138
+    },
+    {
+      "rank": 6,
+      "keyword": "봄버자켓",
+      "rankIncrement": 131
+    },
+    {
+      "rank": 7,
+      "keyword": "라이더자켓",
+      "rankIncrement": 162
+    },
+    {
       "rank": 8,
-      "keyword": "헤링턴 자켓",
-      "rankIncrement": 201
+      "keyword": "아메스 월드와이드",
+      "rankIncrement": 101
     },
     {
       "rank": 9,
-      "keyword": "벨리에",
-      "rankIncrement": 100
+      "keyword": "로우라이즈",
+      "rankIncrement": 103
     },
     {
       "rank": 10,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 204
+      "keyword": "어그부츠",
+      "rankIncrement": 114
     }
   ]
 }
