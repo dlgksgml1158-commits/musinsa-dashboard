@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-10-12T11:41:13.091413+00:00",
+  "updatedAt": "2026-10-12T18:22:17.680371+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "가을옷",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 2,
       "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
-      "rank": 3,
+      "rank": 2,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
+      "rank": 3,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 4,
+      "keyword": "니트",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 5,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": 1
+    },
+    {
+      "rank": 6,
+      "keyword": "경량패딩",
+      "rankIncrement": -2
     },
     {
       "rank": 7,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "바람막이",
-      "rankIncrement": 0
+      "keyword": "자켓",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
+      "keyword": "가을옷",
       "rankIncrement": 0
     },
     {
       "rank": 10,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": -3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "향수",
-      "rankIncrement": 185
+      "keyword": "뉴에라",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "롱패딩",
-      "rankIncrement": 103
+      "keyword": "남자 가방",
+      "rankIncrement": 133
     },
     {
       "rank": 3,
-      "keyword": "등산화",
-      "rankIncrement": 170
+      "keyword": "노스페이스 패딩",
+      "rankIncrement": 107
     },
     {
       "rank": 4,
-      "keyword": "반다나",
-      "rankIncrement": 179
+      "keyword": "아디다스 바람막이",
+      "rankIncrement": 111
     },
     {
       "rank": 5,
-      "keyword": "에이치덱스",
-      "rankIncrement": 150
+      "keyword": "숏패딩",
+      "rankIncrement": 128
     },
     {
       "rank": 6,
-      "keyword": "슈펜",
-      "rankIncrement": 110
+      "keyword": "커브드팬츠",
+      "rankIncrement": 145
     },
     {
       "rank": 7,
-      "keyword": "블랙업",
-      "rankIncrement": 137
+      "keyword": "립밤",
+      "rankIncrement": 107
     },
     {
       "rank": 8,
-      "keyword": "더바넷",
-      "rankIncrement": 151
+      "keyword": "데님셔츠",
+      "rankIncrement": 217
     },
     {
       "rank": 9,
-      "keyword": "안다르",
-      "rankIncrement": 153
+      "keyword": "플리스 집업",
+      "rankIncrement": 222
     },
     {
       "rank": 10,
-      "keyword": "프로젝트웨이브",
-      "rankIncrement": 319
+      "keyword": "니티드",
+      "rankIncrement": 109
     }
   ]
 }
