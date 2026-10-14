@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T14:11:43.492284+00:00",
+  "updatedAt": "2026-10-14T17:50:38.920158+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "후리스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
-      "keyword": "바람막이",
+      "rank": 5,
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
+      "rank": 6,
+      "keyword": "후리스",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "맨투맨",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 8,
       "keyword": "바지",
       "rankIncrement": 0
     },
     {
+      "rank": 9,
+      "keyword": "자켓",
+      "rankIncrement": 3
+    },
+    {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
+      "keyword": "바람막이",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "플노팔",
-      "rankIncrement": 197
+      "keyword": "스탠리",
+      "rankIncrement": 215
     },
     {
       "rank": 2,
-      "keyword": "하티",
-      "rankIncrement": 296
+      "keyword": "리스키",
+      "rankIncrement": 119
     },
     {
       "rank": 3,
-      "keyword": "경량 패딩",
-      "rankIncrement": 180
+      "keyword": "러닝",
+      "rankIncrement": 193
     },
     {
       "rank": 4,
-      "keyword": "니트패딩",
-      "rankIncrement": 162
+      "keyword": "크롭 자켓",
+      "rankIncrement": 206
     },
     {
       "rank": 5,
-      "keyword": "무탠다드 슬랙스",
-      "rankIncrement": 110
+      "keyword": "알리스",
+      "rankIncrement": 157
     },
     {
       "rank": 6,
-      "keyword": "트릴리온",
-      "rankIncrement": 152
+      "keyword": "블랙업",
+      "rankIncrement": 138
     },
     {
       "rank": 7,
-      "keyword": "크롭 자켓",
-      "rankIncrement": 133
+      "keyword": "피쉬테일",
+      "rankIncrement": 124
     },
     {
       "rank": 8,
-      "keyword": "레이어드 롱슬리브",
-      "rankIncrement": 145
+      "keyword": "스트라이프",
+      "rankIncrement": 199
     },
     {
       "rank": 9,
-      "keyword": "트렌치코트",
-      "rankIncrement": 122
+      "keyword": "야상자켓",
+      "rankIncrement": 110
     },
     {
       "rank": 10,
-      "keyword": "등산바지",
-      "rankIncrement": 149
+      "keyword": "스커트",
+      "rankIncrement": 115
     }
   ]
 }
