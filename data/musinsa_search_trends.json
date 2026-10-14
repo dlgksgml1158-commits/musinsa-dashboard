@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T03:35:37.705514+00:00",
+  "updatedAt": "2026-10-14T09:18:41.959687+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,18 +18,18 @@
     },
     {
       "rank": 4,
-      "keyword": "후리스",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "롱슬리브",
+      "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "keyword": "후리스",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "탄산마그네슘",
-      "rankIncrement": 148
+      "keyword": "아디다스 바지",
+      "rankIncrement": 130
     },
     {
       "rank": 2,
-      "keyword": "애즈온",
-      "rankIncrement": 177
+      "keyword": "코드그라피",
+      "rankIncrement": 120
     },
     {
       "rank": 3,
-      "keyword": "라네즈",
-      "rankIncrement": 186
+      "keyword": "배드블러드",
+      "rankIncrement": 182
     },
     {
       "rank": 4,
-      "keyword": "남자 가죽자켓",
-      "rankIncrement": 172
+      "keyword": "리스키",
+      "rankIncrement": 158
     },
     {
       "rank": 5,
-      "keyword": "러닝모자",
-      "rankIncrement": 177
+      "keyword": "스트라이프 셔츠",
+      "rankIncrement": 190
     },
     {
       "rank": 6,
-      "keyword": "클락스",
-      "rankIncrement": 155
+      "keyword": "도프제이슨",
+      "rankIncrement": 113
     },
     {
       "rank": 7,
-      "keyword": "마뗑킴 가방",
-      "rankIncrement": 185
+      "keyword": "남자 맨투맨",
+      "rankIncrement": 143
     },
     {
       "rank": 8,
-      "keyword": "로라로라",
-      "rankIncrement": 209
+      "keyword": "칼하트 후드집업",
+      "rankIncrement": 136
     },
     {
       "rank": 9,
-      "keyword": "뉴발란스 530",
-      "rankIncrement": 422
+      "keyword": "운동복",
+      "rankIncrement": 108
     },
     {
       "rank": 10,
-      "keyword": "나이키 에어포스",
-      "rankIncrement": 137
+      "keyword": "플리스 자켓",
+      "rankIncrement": 144
     }
   ]
 }
