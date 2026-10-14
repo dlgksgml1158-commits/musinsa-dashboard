@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-13T19:49:36.230817+00:00",
+  "updatedAt": "2026-10-14T03:35:37.705514+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "후드집업",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "경량패딩",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
+      "keyword": "후리스",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 5,
+      "keyword": "맨투맨",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 6,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
       "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
       "keyword": "바람막이",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 9,
-      "keyword": "자켓",
-      "rankIncrement": 1
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "패딩",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "푸마",
-      "rankIncrement": 103
+      "keyword": "탄산마그네슘",
+      "rankIncrement": 148
     },
     {
       "rank": 2,
-      "keyword": "매든",
-      "rankIncrement": 155
+      "keyword": "애즈온",
+      "rankIncrement": 177
     },
     {
       "rank": 3,
-      "keyword": "다이브인",
-      "rankIncrement": 128
+      "keyword": "라네즈",
+      "rankIncrement": 186
     },
     {
       "rank": 4,
-      "keyword": "스파오 먼작귀",
-      "rankIncrement": 100
+      "keyword": "남자 가죽자켓",
+      "rankIncrement": 172
     },
     {
       "rank": 5,
-      "keyword": "언더아머",
-      "rankIncrement": 101
+      "keyword": "러닝모자",
+      "rankIncrement": 177
     },
     {
       "rank": 6,
-      "keyword": "니트 집업",
-      "rankIncrement": 161
+      "keyword": "클락스",
+      "rankIncrement": 155
     },
     {
       "rank": 7,
-      "keyword": "반팔티",
-      "rankIncrement": 189
+      "keyword": "마뗑킴 가방",
+      "rankIncrement": 185
     },
     {
       "rank": 8,
-      "keyword": "안경",
-      "rankIncrement": 207
+      "keyword": "로라로라",
+      "rankIncrement": 209
     },
     {
       "rank": 9,
-      "keyword": "세미와이드 슬랙스",
-      "rankIncrement": 207
+      "keyword": "뉴발란스 530",
+      "rankIncrement": 422
     },
     {
       "rank": 10,
-      "keyword": "스탠리",
-      "rankIncrement": 124
+      "keyword": "나이키 에어포스",
+      "rankIncrement": 137
     }
   ]
 }
