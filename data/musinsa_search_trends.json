@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-10-16T13:38:22.612082+00:00",
+  "updatedAt": "2026-10-16T17:13:47.053474+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "경량패딩",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "후드집업",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -18,18 +18,18 @@
     },
     {
       "rank": 4,
-      "keyword": "롱슬리브",
-      "rankIncrement": 2
+      "keyword": "니트",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "니트",
+      "keyword": "롱슬리브",
       "rankIncrement": -1
     },
     {
       "rank": 6,
       "keyword": "맨투맨",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바람막이",
-      "rankIncrement": 1
+      "keyword": "패딩",
+      "rankIncrement": 3
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 2
+      "keyword": "자켓",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "나이키 맨투맨",
-      "rankIncrement": 102
+      "keyword": "노매뉴얼",
+      "rankIncrement": 106
     },
     {
       "rank": 2,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 103
+      "keyword": "브이넥",
+      "rankIncrement": 172
     },
     {
       "rank": 3,
-      "keyword": "스커트",
-      "rankIncrement": 184
+      "keyword": "노운",
+      "rankIncrement": 116
     },
     {
       "rank": 4,
-      "keyword": "허그유어스킨",
-      "rankIncrement": 158
+      "keyword": "선글라스",
+      "rankIncrement": 161
     },
     {
       "rank": 5,
-      "keyword": "오니츠카타이거",
-      "rankIncrement": 235
+      "keyword": "크롭",
+      "rankIncrement": 171
     },
     {
       "rank": 6,
-      "keyword": "스트라이프",
-      "rankIncrement": 138
+      "keyword": "cp컴퍼니",
+      "rankIncrement": 252
     },
     {
       "rank": 7,
-      "keyword": "선글라스",
-      "rankIncrement": 215
+      "keyword": "세컨드솔트",
+      "rankIncrement": 174
     },
     {
       "rank": 8,
-      "keyword": "도프제이슨",
-      "rankIncrement": 230
+      "keyword": "맥",
+      "rankIncrement": 124
     },
     {
       "rank": 9,
-      "keyword": "피그먼트",
-      "rankIncrement": 115
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 293
     },
     {
       "rank": 10,
-      "keyword": "기모바지",
-      "rankIncrement": 117
+      "keyword": "버켄스탁",
+      "rankIncrement": 106
     }
   ]
 }
