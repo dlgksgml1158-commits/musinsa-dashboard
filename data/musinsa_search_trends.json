@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T08:16:43.019883+00:00",
+  "updatedAt": "2026-10-17T12:35:05.130443+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,27 +23,27 @@
     },
     {
       "rank": 5,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 2
+      "keyword": "무배당발",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "롱슬리브",
-      "rankIncrement": -2
+      "keyword": "아디다스",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "니트",
-      "rankIncrement": -2
+      "keyword": "롱슬리브",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "후리스",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 0
     },
     {
@@ -55,52 +55,52 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "치노팬츠",
-      "rankIncrement": 117
+      "keyword": "아디다스 트랙탑",
+      "rankIncrement": 122
     },
     {
       "rank": 2,
-      "keyword": "워커",
-      "rankIncrement": 110
+      "keyword": "첼시부츠",
+      "rankIncrement": 104
     },
     {
       "rank": 3,
-      "keyword": "레이어드",
-      "rankIncrement": 167
+      "keyword": "치마",
+      "rankIncrement": 132
     },
     {
       "rank": 4,
-      "keyword": "lee",
-      "rankIncrement": 121
+      "keyword": "하프코트",
+      "rankIncrement": 133
     },
     {
       "rank": 5,
-      "keyword": "롱스커트",
-      "rankIncrement": 106
-    },
-    {
-      "rank": 6,
-      "keyword": "에이치덱스",
-      "rankIncrement": 164
-    },
-    {
-      "rank": 7,
-      "keyword": "흰티",
+      "keyword": "바라클라바",
       "rankIncrement": 112
     },
     {
+      "rank": 6,
+      "keyword": "acg",
+      "rankIncrement": 117
+    },
+    {
+      "rank": 7,
+      "keyword": "스투시 후드집업",
+      "rankIncrement": 144
+    },
+    {
       "rank": 8,
-      "keyword": "파르티멘토",
-      "rankIncrement": 151
+      "keyword": "츄리닝 바지",
+      "rankIncrement": 128
     },
     {
       "rank": 9,
-      "keyword": "블랙진",
-      "rankIncrement": 209
+      "keyword": "오프숄더",
+      "rankIncrement": 103
     },
     {
       "rank": 10,
-      "keyword": "아디다스 삼바",
+      "keyword": "트레이닝팬츠",
       "rankIncrement": 103
     }
   ]
