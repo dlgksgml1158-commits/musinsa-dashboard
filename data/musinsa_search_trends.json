@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T03:02:17.129063+00:00",
+  "updatedAt": "2026-10-17T08:16:43.019883+00:00",
   "popular": [
     {
       "rank": 1,
@@ -19,89 +19,89 @@
     {
       "rank": 4,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": 2
     },
     {
       "rank": 5,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 2
     },
     {
       "rank": 6,
       "keyword": "롱슬리브",
-      "rankIncrement": 0
+      "rankIncrement": -2
     },
     {
       "rank": 7,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "keyword": "니트",
+      "rankIncrement": -2
     },
     {
       "rank": 8,
-      "keyword": "후리스",
-      "rankIncrement": -1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
+      "keyword": "후리스",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바람막이",
+      "keyword": "바지",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "글로니",
-      "rankIncrement": 135
+      "keyword": "치노팬츠",
+      "rankIncrement": 117
     },
     {
       "rank": 2,
-      "keyword": "점퍼",
-      "rankIncrement": 151
-    },
-    {
-      "rank": 3,
-      "keyword": "수아레 경량패딩",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 4,
-      "keyword": "래플",
-      "rankIncrement": 136
-    },
-    {
-      "rank": 5,
-      "keyword": "메리제인",
-      "rankIncrement": 102
-    },
-    {
-      "rank": 6,
-      "keyword": "퍼티그팬츠",
-      "rankIncrement": 103
-    },
-    {
-      "rank": 7,
-      "keyword": "기철",
-      "rankIncrement": 138
-    },
-    {
-      "rank": 8,
-      "keyword": "팀버랜드",
+      "keyword": "워커",
       "rankIncrement": 110
     },
     {
+      "rank": 3,
+      "keyword": "레이어드",
+      "rankIncrement": 167
+    },
+    {
+      "rank": 4,
+      "keyword": "lee",
+      "rankIncrement": 121
+    },
+    {
+      "rank": 5,
+      "keyword": "롱스커트",
+      "rankIncrement": 106
+    },
+    {
+      "rank": 6,
+      "keyword": "에이치덱스",
+      "rankIncrement": 164
+    },
+    {
+      "rank": 7,
+      "keyword": "흰티",
+      "rankIncrement": 112
+    },
+    {
+      "rank": 8,
+      "keyword": "파르티멘토",
+      "rankIncrement": 151
+    },
+    {
       "rank": 9,
-      "keyword": "런닝화",
+      "keyword": "블랙진",
       "rankIncrement": 209
     },
     {
       "rank": 10,
-      "keyword": "아디다스 후드집업",
-      "rankIncrement": 184
+      "keyword": "아디다스 삼바",
+      "rankIncrement": 103
     }
   ]
 }
