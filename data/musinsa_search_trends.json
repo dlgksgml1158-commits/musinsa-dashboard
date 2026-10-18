@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T08:34:07.755643+00:00",
+  "updatedAt": "2026-10-18T12:53:23.691131+00:00",
   "popular": [
     {
       "rank": 1,
@@ -24,84 +24,84 @@
     {
       "rank": 5,
       "keyword": "니트",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "롱슬리브",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "후리스",
-      "rankIncrement": 2
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": -1
+      "keyword": "후리스",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "아디다스",
-      "rankIncrement": -1
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "머슬핏",
-      "rankIncrement": 107
+      "keyword": "탑텐 경량패딩",
+      "rankIncrement": 110
     },
     {
       "rank": 2,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 116
-    },
-    {
-      "rank": 3,
-      "keyword": "세미와이드 슬랙스",
+      "keyword": "헤라",
       "rankIncrement": 101
     },
     {
+      "rank": 3,
+      "keyword": "롬앤",
+      "rankIncrement": 103
+    },
+    {
       "rank": 4,
-      "keyword": "젠플록스",
-      "rankIncrement": 279
+      "keyword": "카라티",
+      "rankIncrement": 107
     },
     {
       "rank": 5,
-      "keyword": "아디다스 은석",
-      "rankIncrement": 130
+      "keyword": "노이어",
+      "rankIncrement": 217
     },
     {
       "rank": 6,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 193
-    },
-    {
-      "rank": 7,
-      "keyword": "레이브",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 8,
-      "keyword": "하이넥 자켓",
+      "keyword": "정샘물",
       "rankIncrement": 140
     },
     {
+      "rank": 7,
+      "keyword": "긴바지",
+      "rankIncrement": 165
+    },
+    {
+      "rank": 8,
+      "keyword": "에이치덱스",
+      "rankIncrement": 120
+    },
+    {
       "rank": 9,
-      "keyword": "아디다스 트랙탑",
-      "rankIncrement": 115
+      "keyword": "코듀로이 자켓",
+      "rankIncrement": 238
     },
     {
       "rank": 10,
-      "keyword": "코듀로이 자켓",
-      "rankIncrement": 154
+      "keyword": "네이밍",
+      "rankIncrement": 103
     }
   ]
 }
