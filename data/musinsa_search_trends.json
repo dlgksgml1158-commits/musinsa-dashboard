@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T16:01:26.724976+00:00",
+  "updatedAt": "2026-10-19T19:07:14.216529+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "니트",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 5,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 6,
       "keyword": "롱슬리브",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "후리스",
+      "rank": 5,
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
+      "rank": 6,
+      "keyword": "후리스",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "아디다스",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
       "keyword": "패딩",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "자켓",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "더콜디스트모먼트",
-      "rankIncrement": 100
+      "keyword": "남자 바지",
+      "rankIncrement": 123
     },
     {
       "rank": 2,
-      "keyword": "남자 가방",
-      "rankIncrement": 156
+      "keyword": "아비에무아",
+      "rankIncrement": 108
     },
     {
       "rank": 3,
-      "keyword": "미니백",
-      "rankIncrement": 115
+      "keyword": "와이드 슬랙스",
+      "rankIncrement": 106
     },
     {
       "rank": 4,
-      "keyword": "노이즈",
-      "rankIncrement": 129
+      "keyword": "코드그라피",
+      "rankIncrement": 277
     },
     {
       "rank": 5,
-      "keyword": "키링",
-      "rankIncrement": 138
+      "keyword": "오버핏 후드집업",
+      "rankIncrement": 521
     },
     {
       "rank": 6,
-      "keyword": "커플링",
-      "rankIncrement": 158
+      "keyword": "정장",
+      "rankIncrement": 198
     },
     {
       "rank": 7,
-      "keyword": "무지티",
-      "rankIncrement": 187
+      "keyword": "야세",
+      "rankIncrement": 145
     },
     {
       "rank": 8,
-      "keyword": "살로몬 패딩",
-      "rankIncrement": 122
+      "keyword": "나이키 후드티",
+      "rankIncrement": 146
     },
     {
       "rank": 9,
-      "keyword": "나이키 에어포스",
-      "rankIncrement": 137
+      "keyword": "트레이닝",
+      "rankIncrement": 158
     },
     {
       "rank": 10,
-      "keyword": "러프사이드",
-      "rankIncrement": 116
+      "keyword": "크롭 반팔",
+      "rankIncrement": 110
     }
   ]
 }
