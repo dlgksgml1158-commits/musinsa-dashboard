@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T09:36:45.614599+00:00",
+  "updatedAt": "2026-10-19T16:01:26.724976+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,13 +18,13 @@
     },
     {
       "rank": 4,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "후리스",
-      "rankIncrement": 2
+      "keyword": "맨투맨",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
@@ -33,74 +33,74 @@
     },
     {
       "rank": 7,
-      "keyword": "아디다스",
-      "rankIncrement": -2
+      "keyword": "후리스",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "니트",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "무신사 스탠다드",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "아디다스",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "엑스톤즈",
-      "rankIncrement": 248
+      "keyword": "더콜디스트모먼트",
+      "rankIncrement": 100
     },
     {
       "rank": 2,
-      "keyword": "지오다노",
-      "rankIncrement": 186
+      "keyword": "남자 가방",
+      "rankIncrement": 156
     },
     {
       "rank": 3,
-      "keyword": "팬츠",
-      "rankIncrement": 121
-    },
-    {
-      "rank": 4,
-      "keyword": "벨리에",
+      "keyword": "미니백",
       "rankIncrement": 115
     },
     {
+      "rank": 4,
+      "keyword": "노이즈",
+      "rankIncrement": 129
+    },
+    {
       "rank": 5,
-      "keyword": "남자 가방",
-      "rankIncrement": 106
+      "keyword": "키링",
+      "rankIncrement": 138
     },
     {
       "rank": 6,
-      "keyword": "토마스모어",
-      "rankIncrement": 165
+      "keyword": "커플링",
+      "rankIncrement": 158
     },
     {
       "rank": 7,
-      "keyword": "퍼글러",
-      "rankIncrement": 120
+      "keyword": "무지티",
+      "rankIncrement": 187
     },
     {
       "rank": 8,
-      "keyword": "세컨드솔트",
-      "rankIncrement": 176
+      "keyword": "살로몬 패딩",
+      "rankIncrement": 122
     },
     {
       "rank": 9,
-      "keyword": "에스트라",
-      "rankIncrement": 112
+      "keyword": "나이키 에어포스",
+      "rankIncrement": 137
     },
     {
       "rank": 10,
-      "keyword": "스컬프터",
+      "keyword": "러프사이드",
       "rankIncrement": 116
     }
   ]
