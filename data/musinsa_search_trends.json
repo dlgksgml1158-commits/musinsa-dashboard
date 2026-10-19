@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-10-18T16:25:12.315250+00:00",
+  "updatedAt": "2026-10-19T03:18:49.032837+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "아디다스",
+      "rankIncrement": 1
     },
     {
       "rank": 2,
+      "keyword": "경량패딩",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 3,
       "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
-      "rank": 3,
+      "rank": 4,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
       "rank": 5,
-      "keyword": "롱슬리브",
-      "rankIncrement": 1
+      "keyword": "은석",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "맨투맨",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "후리스",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "무신사 스탠다드",
+      "keyword": "아디다스 은석",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "아디다스",
-      "rankIncrement": 2
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 5
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "바시티 자켓",
-      "rankIncrement": 102
+      "keyword": "팔찌",
+      "rankIncrement": 106
     },
     {
       "rank": 2,
-      "keyword": "남자 니트",
-      "rankIncrement": 122
+      "keyword": "코치",
+      "rankIncrement": 132
     },
     {
       "rank": 3,
-      "keyword": "아이폰 케이스",
-      "rankIncrement": 107
+      "keyword": "블랙야크",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "슈프림",
-      "rankIncrement": 135
+      "keyword": "배드블러드",
+      "rankIncrement": 136
     },
     {
       "rank": 5,
-      "keyword": "데님자켓",
-      "rankIncrement": 141
+      "keyword": "스파오 먼작귀",
+      "rankIncrement": 109
     },
     {
       "rank": 6,
-      "keyword": "흑청데님",
-      "rankIncrement": 162
-    },
-    {
-      "rank": 7,
-      "keyword": "아식스 젤카야노 14",
-      "rankIncrement": 196
-    },
-    {
-      "rank": 8,
-      "keyword": "레이어드 반팔",
-      "rankIncrement": 194
-    },
-    {
-      "rank": 9,
-      "keyword": "남자 블레이저",
+      "keyword": "코듀로이 팬츠",
       "rankIncrement": 141
     },
     {
+      "rank": 7,
+      "keyword": "키뮤어",
+      "rankIncrement": 114
+    },
+    {
+      "rank": 8,
+      "keyword": "머플러",
+      "rankIncrement": 162
+    },
+    {
+      "rank": 9,
+      "keyword": "조끼",
+      "rankIncrement": 185
+    },
+    {
       "rank": 10,
-      "keyword": "트레이닝팬츠",
-      "rankIncrement": 261
+      "keyword": "유니폼브릿지",
+      "rankIncrement": 160
     }
   ]
 }
