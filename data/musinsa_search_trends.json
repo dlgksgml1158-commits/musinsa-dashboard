@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T13:58:34.000683+00:00",
+  "updatedAt": "2026-10-20T17:50:07.899236+00:00",
   "popular": [
     {
       "rank": 1,
@@ -19,12 +19,12 @@
     {
       "rank": 4,
       "keyword": "니트",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "롱슬리브",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "롱슬리브",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
       "keyword": "패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 9,
+      "keyword": "자켓",
+      "rankIncrement": 1
+    },
+    {
       "rank": 10,
-      "keyword": "스파오",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "일리고",
-      "rankIncrement": 234
+      "keyword": "토트백",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "뽀글이",
-      "rankIncrement": 119
+      "keyword": "퍼자켓",
+      "rankIncrement": 113
     },
     {
       "rank": 3,
-      "keyword": "나이키 후드집업",
-      "rankIncrement": 133
+      "keyword": "에어포스",
+      "rankIncrement": 116
     },
     {
       "rank": 4,
-      "keyword": "러프사이드",
-      "rankIncrement": 117
+      "keyword": "디키즈 더블니",
+      "rankIncrement": 113
     },
     {
       "rank": 5,
-      "keyword": "수영복",
-      "rankIncrement": 158
+      "keyword": "머슬핏",
+      "rankIncrement": 129
     },
     {
       "rank": 6,
-      "keyword": "워커",
-      "rankIncrement": 153
+      "keyword": "혼다",
+      "rankIncrement": 159
     },
     {
       "rank": 7,
-      "keyword": "트렌치코트",
-      "rankIncrement": 106
+      "keyword": "노스페이스 바람막이",
+      "rankIncrement": 101
     },
     {
       "rank": 8,
-      "keyword": "토마스모어",
-      "rankIncrement": 103
+      "keyword": "블랙업",
+      "rankIncrement": 116
     },
     {
       "rank": 9,
-      "keyword": "남자 블레이저",
-      "rankIncrement": 140
+      "keyword": "스무무",
+      "rankIncrement": 176
     },
     {
       "rank": 10,
-      "keyword": "살로몬 패딩",
-      "rankIncrement": 126
+      "keyword": "나이키 바람막이",
+      "rankIncrement": 122
     }
   ]
 }
