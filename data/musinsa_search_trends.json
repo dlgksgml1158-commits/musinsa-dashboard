@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T03:27:24.704994+00:00",
+  "updatedAt": "2026-10-20T09:08:41.128167+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
+      "keyword": "후리스",
+      "rankIncrement": 2
+    },
+    {
+      "rank": 5,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
       "rank": 6,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 4
+      "keyword": "니트",
+      "rankIncrement": -2
     },
     {
       "rank": 7,
-      "keyword": "바람막이",
-      "rankIncrement": 1
+      "keyword": "스파오",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "후리스",
-      "rankIncrement": -2
+      "keyword": "롱슬리브",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
       "keyword": "패딩",
-      "rankIncrement": -2
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "아디다스",
-      "rankIncrement": 1
+      "keyword": "바람막이",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "목도리",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 2,
-      "keyword": "르아르",
-      "rankIncrement": 106
-    },
-    {
-      "rank": 3,
-      "keyword": "펜필드",
+      "keyword": "마리떼",
       "rankIncrement": 111
     },
     {
+      "rank": 2,
+      "keyword": "지프",
+      "rankIncrement": 214
+    },
+    {
+      "rank": 3,
+      "keyword": "스파오 치이카와",
+      "rankIncrement": 146
+    },
+    {
       "rank": 4,
-      "keyword": "스웨트팬츠",
-      "rankIncrement": 109
+      "keyword": "파우치",
+      "rankIncrement": 153
     },
     {
       "rank": 5,
-      "keyword": "남자 가죽자켓",
-      "rankIncrement": 174
+      "keyword": "마인드브릿지",
+      "rankIncrement": 101
     },
     {
       "rank": 6,
-      "keyword": "디키즈 873",
-      "rankIncrement": 104
+      "keyword": "크롭 니트",
+      "rankIncrement": 103
     },
     {
       "rank": 7,
-      "keyword": "팬츠",
-      "rankIncrement": 115
+      "keyword": "스웨이드 가방",
+      "rankIncrement": 136
     },
     {
       "rank": 8,
-      "keyword": "포터리",
-      "rankIncrement": 172
+      "keyword": "오프숄더",
+      "rankIncrement": 106
     },
     {
       "rank": 9,
-      "keyword": "선글라스",
-      "rankIncrement": 115
+      "keyword": "트렌치코트",
+      "rankIncrement": 174
     },
     {
       "rank": 10,
-      "keyword": "와이드 팬츠",
-      "rankIncrement": 199
+      "keyword": "인사일런스",
+      "rankIncrement": 222
     }
   ]
 }
