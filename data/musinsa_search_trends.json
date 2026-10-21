@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T03:22:10.878995+00:00",
+  "updatedAt": "2026-10-21T09:08:28.783846+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
       "rank": 5,
-      "keyword": "맨투맨",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
@@ -33,7 +33,7 @@
     },
     {
       "rank": 7,
-      "keyword": "패딩",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "롱슬리브",
+      "keyword": "바지",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "브라운야드",
-      "rankIncrement": 377
+      "keyword": "플라스틱프로덕트",
+      "rankIncrement": 126
     },
     {
       "rank": 2,
-      "keyword": "디스커버리 익스페디션",
-      "rankIncrement": 135
+      "keyword": "프렌다",
+      "rankIncrement": 352
     },
     {
       "rank": 3,
-      "keyword": "첼시부츠",
-      "rankIncrement": 163
+      "keyword": "캐리어",
+      "rankIncrement": 146
     },
     {
       "rank": 4,
-      "keyword": "키즈 경량패딩",
-      "rankIncrement": 114
+      "keyword": "조끼패딩",
+      "rankIncrement": 111
     },
     {
       "rank": 5,
-      "keyword": "와이드 슬랙스",
-      "rankIncrement": 128
-    },
-    {
-      "rank": 6,
-      "keyword": "트랙팬츠",
-      "rankIncrement": 110
-    },
-    {
-      "rank": 7,
-      "keyword": "스쿠도",
+      "keyword": "운동복",
       "rankIncrement": 175
     },
     {
-      "rank": 8,
-      "keyword": "애즈온",
-      "rankIncrement": 117
+      "rank": 6,
+      "keyword": "디미트리블랙",
+      "rankIncrement": 121
     },
     {
-      "rank": 9,
-      "keyword": "스웨트팬츠",
+      "rank": 7,
+      "keyword": "썬러브",
+      "rankIncrement": 405
+    },
+    {
+      "rank": 8,
+      "keyword": "스투시 후드집업",
       "rankIncrement": 106
     },
     {
+      "rank": 9,
+      "keyword": "기모바지",
+      "rankIncrement": 149
+    },
+    {
       "rank": 10,
-      "keyword": "뉴에라",
-      "rankIncrement": 141
+      "keyword": "아디다스 신발",
+      "rankIncrement": 113
     }
   ]
 }
