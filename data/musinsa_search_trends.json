@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T17:50:07.899236+00:00",
+  "updatedAt": "2026-10-21T03:22:10.878995+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
-      "keyword": "롱슬리브",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
+      "rank": 5,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
+      "rank": 6,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
       "keyword": "패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "스파오",
+      "rankIncrement": 0
+    },
+    {
       "rank": 9,
-      "keyword": "자켓",
-      "rankIncrement": 1
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "롱슬리브",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "토트백",
-      "rankIncrement": 111
+      "keyword": "브라운야드",
+      "rankIncrement": 377
     },
     {
       "rank": 2,
-      "keyword": "퍼자켓",
-      "rankIncrement": 113
+      "keyword": "디스커버리 익스페디션",
+      "rankIncrement": 135
     },
     {
       "rank": 3,
-      "keyword": "에어포스",
-      "rankIncrement": 116
+      "keyword": "첼시부츠",
+      "rankIncrement": 163
     },
     {
       "rank": 4,
-      "keyword": "디키즈 더블니",
-      "rankIncrement": 113
+      "keyword": "키즈 경량패딩",
+      "rankIncrement": 114
     },
     {
       "rank": 5,
-      "keyword": "머슬핏",
-      "rankIncrement": 129
+      "keyword": "와이드 슬랙스",
+      "rankIncrement": 128
     },
     {
       "rank": 6,
-      "keyword": "혼다",
-      "rankIncrement": 159
+      "keyword": "트랙팬츠",
+      "rankIncrement": 110
     },
     {
       "rank": 7,
-      "keyword": "노스페이스 바람막이",
-      "rankIncrement": 101
+      "keyword": "스쿠도",
+      "rankIncrement": 175
     },
     {
       "rank": 8,
-      "keyword": "블랙업",
-      "rankIncrement": 116
+      "keyword": "애즈온",
+      "rankIncrement": 117
     },
     {
       "rank": 9,
-      "keyword": "스무무",
-      "rankIncrement": 176
+      "keyword": "스웨트팬츠",
+      "rankIncrement": 106
     },
     {
       "rank": 10,
-      "keyword": "나이키 바람막이",
-      "rankIncrement": 122
+      "keyword": "뉴에라",
+      "rankIncrement": 141
     }
   ]
 }
