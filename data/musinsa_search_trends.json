@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T03:25:57.926772+00:00",
+  "updatedAt": "2026-10-23T09:07:22.615244+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,32 +8,32 @@
     },
     {
       "rank": 2,
-      "keyword": "후리스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "무신사 스탠다드",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
-      "keyword": "패딩",
+      "rank": 3,
+      "keyword": "후리스",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "후드티",
       "rankIncrement": 1
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "후드집업",
       "rankIncrement": -1
     },
     {
+      "rank": 6,
+      "keyword": "패딩",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "스파오",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
+      "keyword": "스파오",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "플리스",
+      "keyword": "스파오 경량패딩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "커브드팬츠",
-      "rankIncrement": 106
+      "keyword": "스노우피크",
+      "rankIncrement": 196
     },
     {
       "rank": 2,
-      "keyword": "aeae",
-      "rankIncrement": 166
+      "keyword": "체험단",
+      "rankIncrement": 110
     },
     {
       "rank": 3,
-      "keyword": "나이키 에어포스",
-      "rankIncrement": 116
+      "keyword": "썬러브",
+      "rankIncrement": 137
     },
     {
       "rank": 4,
-      "keyword": "정장",
-      "rankIncrement": 181
+      "keyword": "조끼패딩",
+      "rankIncrement": 105
     },
     {
       "rank": 5,
-      "keyword": "컨버스",
-      "rankIncrement": 117
+      "keyword": "내셔널지오그래픽",
+      "rankIncrement": 206
     },
     {
       "rank": 6,
-      "keyword": "피쉬테일",
-      "rankIncrement": 160
+      "keyword": "코이세이오",
+      "rankIncrement": 128
     },
     {
       "rank": 7,
-      "keyword": "토마스모어",
-      "rankIncrement": 123
+      "keyword": "킨",
+      "rankIncrement": 137
     },
     {
       "rank": 8,
-      "keyword": "레그워머",
-      "rankIncrement": 177
+      "keyword": "프리즘웍스",
+      "rankIncrement": 113
     },
     {
       "rank": 9,
-      "keyword": "헨리넥 니트",
-      "rankIncrement": 102
+      "keyword": "노스페이스 후리스",
+      "rankIncrement": 180
     },
     {
       "rank": 10,
-      "keyword": "정장 셋업",
-      "rankIncrement": 266
+      "keyword": "로맨틱무브",
+      "rankIncrement": 371
     }
   ]
 }
