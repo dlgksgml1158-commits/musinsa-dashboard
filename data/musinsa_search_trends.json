@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-23T13:56:44.320940+00:00",
+  "updatedAt": "2026-10-23T17:46:29.913825+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,32 +8,32 @@
     },
     {
       "rank": 2,
-      "keyword": "후리스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "후리스",
+      "rankIncrement": 0
+    },
+    {
       "rank": 4,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "keyword": "후드집업",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "후드집업",
-      "rankIncrement": -1
+      "keyword": "니트",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "패딩",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "니트",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "스파오",
+      "keyword": "롱슬리브",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "운동복",
-      "rankIncrement": 115
+      "keyword": "젠지",
+      "rankIncrement": 751
     },
     {
       "rank": 2,
-      "keyword": "구스다운",
-      "rankIncrement": 111
+      "keyword": "스카프",
+      "rankIncrement": 102
     },
     {
       "rank": 3,
-      "keyword": "눕시",
-      "rankIncrement": 158
-    },
-    {
-      "rank": 4,
-      "keyword": "리",
-      "rankIncrement": 160
-    },
-    {
-      "rank": 5,
-      "keyword": "나이키 후드티",
-      "rankIncrement": 123
-    },
-    {
-      "rank": 6,
-      "keyword": "디스커버리 패딩",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 7,
-      "keyword": "시에라디자인",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 8,
-      "keyword": "남자 가방",
+      "keyword": "데님자켓",
       "rankIncrement": 140
     },
     {
+      "rank": 4,
+      "keyword": "크롭 후드집업",
+      "rankIncrement": 109
+    },
+    {
+      "rank": 5,
+      "keyword": "프릭스토어",
+      "rankIncrement": 127
+    },
+    {
+      "rank": 6,
+      "keyword": "레이즈미야",
+      "rankIncrement": 205
+    },
+    {
+      "rank": 7,
+      "keyword": "아더에러",
+      "rankIncrement": 116
+    },
+    {
+      "rank": 8,
+      "keyword": "유니클로 경량패딩",
+      "rankIncrement": 153
+    },
+    {
       "rank": 9,
-      "keyword": "모드나인",
-      "rankIncrement": 321
+      "keyword": "파르티멘토 1950",
+      "rankIncrement": 242
     },
     {
       "rank": 10,
-      "keyword": "디젤",
-      "rankIncrement": 115
+      "keyword": "패딩자켓",
+      "rankIncrement": 132
     }
   ]
 }
