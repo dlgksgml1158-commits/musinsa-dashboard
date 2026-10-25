@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T08:58:16.339322+00:00",
+  "updatedAt": "2026-10-25T13:27:38.157798+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,16 +9,16 @@
     {
       "rank": 2,
       "keyword": "후드티",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": -1
+      "keyword": "후드집업",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "후드집업",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 0
     },
     {
@@ -28,12 +28,12 @@
     },
     {
       "rank": 6,
-      "keyword": "니트",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
@@ -44,64 +44,64 @@
     {
       "rank": 9,
       "keyword": "스파오",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 10,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "후브스",
-      "rankIncrement": 214
+      "keyword": "첼시부츠",
+      "rankIncrement": 155
     },
     {
       "rank": 2,
-      "keyword": "프리즘웍스",
+      "keyword": "챔피온 플리스",
       "rankIncrement": 139
     },
     {
       "rank": 3,
-      "keyword": "마시모두띠",
-      "rankIncrement": 111
+      "keyword": "야상패딩",
+      "rankIncrement": 145
     },
     {
       "rank": 4,
-      "keyword": "포터리",
-      "rankIncrement": 115
+      "keyword": "미디스커트",
+      "rankIncrement": 127
     },
     {
       "rank": 5,
-      "keyword": "히트텍",
-      "rankIncrement": 130
+      "keyword": "베이프",
+      "rankIncrement": 147
     },
     {
       "rank": 6,
-      "keyword": "시에라디자인",
+      "keyword": "피쉬테일",
       "rankIncrement": 155
     },
     {
       "rank": 7,
-      "keyword": "체험단",
-      "rankIncrement": 186
+      "keyword": "cp컴퍼니",
+      "rankIncrement": 133
     },
     {
       "rank": 8,
-      "keyword": "레이어드",
-      "rankIncrement": 143
+      "keyword": "살로몬 경량패딩",
+      "rankIncrement": 189
     },
     {
       "rank": 9,
-      "keyword": "바버",
-      "rankIncrement": 100
+      "keyword": "유니폼브릿지",
+      "rankIncrement": 135
     },
     {
       "rank": 10,
-      "keyword": "스탠다드에러",
-      "rankIncrement": 140
+      "keyword": "무드인사이드",
+      "rankIncrement": 137
     }
   ]
 }
