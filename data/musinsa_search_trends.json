@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T13:27:38.157798+00:00",
+  "updatedAt": "2026-10-25T16:59:45.528368+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,12 +18,12 @@
     },
     {
       "rank": 4,
-      "keyword": "무신사 스탠다드",
+      "keyword": "후리스",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "후리스",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
       "keyword": "패딩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
-      "keyword": "스파오",
       "rankIncrement": 1
     },
     {
-      "rank": 10,
-      "keyword": "바지",
+      "rank": 8,
+      "keyword": "무신사 스탠다드",
       "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "롱슬리브",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "첼시부츠",
-      "rankIncrement": 155
+      "keyword": "뮬",
+      "rankIncrement": 115
     },
     {
       "rank": 2,
-      "keyword": "챔피온 플리스",
-      "rankIncrement": 139
+      "keyword": "기모바지",
+      "rankIncrement": 191
     },
     {
       "rank": 3,
-      "keyword": "야상패딩",
-      "rankIncrement": 145
+      "keyword": "오프숄더 니트",
+      "rankIncrement": 205
     },
     {
       "rank": 4,
-      "keyword": "미디스커트",
-      "rankIncrement": 127
+      "keyword": "메리제인",
+      "rankIncrement": 105
     },
     {
       "rank": 5,
-      "keyword": "베이프",
-      "rankIncrement": 147
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 105
     },
     {
       "rank": 6,
-      "keyword": "피쉬테일",
-      "rankIncrement": 155
+      "keyword": "남자 가방",
+      "rankIncrement": 125
     },
     {
       "rank": 7,
-      "keyword": "cp컴퍼니",
-      "rankIncrement": 133
+      "keyword": "귀걸이",
+      "rankIncrement": 154
     },
     {
       "rank": 8,
-      "keyword": "살로몬 경량패딩",
-      "rankIncrement": 189
+      "keyword": "하이넥 코트",
+      "rankIncrement": 153
     },
     {
       "rank": 9,
-      "keyword": "유니폼브릿지",
-      "rankIncrement": 135
+      "keyword": "로우로우",
+      "rankIncrement": 183
     },
     {
       "rank": 10,
-      "keyword": "무드인사이드",
-      "rankIncrement": 137
+      "keyword": "하티",
+      "rankIncrement": 163
     }
   ]
 }
