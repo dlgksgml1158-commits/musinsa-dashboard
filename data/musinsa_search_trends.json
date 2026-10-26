@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T16:59:45.528368+00:00",
+  "updatedAt": "2026-10-26T03:20:51.679548+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "후드티",
+      "rankIncrement": 1
+    },
+    {
       "rank": 4,
       "keyword": "후리스",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "니트",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "패딩",
+      "keyword": "맨투맨",
       "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
+      "keyword": "패딩",
       "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "바지",
+      "keyword": "스파오",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "롱슬리브",
+      "keyword": "바지",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "뮬",
-      "rankIncrement": 115
+      "keyword": "리센느",
+      "rankIncrement": 343
     },
     {
       "rank": 2,
-      "keyword": "기모바지",
-      "rankIncrement": 191
+      "keyword": "점퍼",
+      "rankIncrement": 121
     },
     {
       "rank": 3,
-      "keyword": "오프숄더 니트",
-      "rankIncrement": 205
+      "keyword": "산산기어",
+      "rankIncrement": 130
     },
     {
       "rank": 4,
-      "keyword": "메리제인",
-      "rankIncrement": 105
+      "keyword": "킨",
+      "rankIncrement": 110
     },
     {
       "rank": 5,
-      "keyword": "밀로 아카이브",
-      "rankIncrement": 105
+      "keyword": "스투시 후드집업",
+      "rankIncrement": 111
     },
     {
       "rank": 6,
-      "keyword": "남자 가방",
-      "rankIncrement": 125
+      "keyword": "기모바지",
+      "rankIncrement": 101
     },
     {
       "rank": 7,
-      "keyword": "귀걸이",
-      "rankIncrement": 154
+      "keyword": "식스핏",
+      "rankIncrement": 101
     },
     {
       "rank": 8,
-      "keyword": "하이넥 코트",
-      "rankIncrement": 153
+      "keyword": "눕시",
+      "rankIncrement": 434
     },
     {
       "rank": 9,
-      "keyword": "로우로우",
-      "rankIncrement": 183
+      "keyword": "코닥",
+      "rankIncrement": 368
     },
     {
       "rank": 10,
-      "keyword": "하티",
-      "rankIncrement": 163
+      "keyword": "시계",
+      "rankIncrement": 264
     }
   ]
 }
