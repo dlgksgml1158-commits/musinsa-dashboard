@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T15:48:48.261826+00:00",
+  "updatedAt": "2026-10-26T19:04:31.062233+00:00",
   "popular": [
     {
       "rank": 1,
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "패딩",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
       "keyword": "무신사 스탠다드",
-      "rankIncrement": -1
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "롱슬리브",
+      "keyword": "바지",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스컬프터",
-      "rankIncrement": 136
+      "keyword": "캡모자",
+      "rankIncrement": 114
     },
     {
       "rank": 2,
-      "keyword": "아식스 젤카야노 14",
-      "rankIncrement": 102
+      "keyword": "티셔츠",
+      "rankIncrement": 118
     },
     {
       "rank": 3,
-      "keyword": "신칠라",
-      "rankIncrement": 107
+      "keyword": "기철",
+      "rankIncrement": 197
     },
     {
       "rank": 4,
-      "keyword": "남자 가방",
-      "rankIncrement": 116
+      "keyword": "코튼 팬츠",
+      "rankIncrement": 316
     },
     {
       "rank": 5,
-      "keyword": "코듀로이 패딩",
-      "rankIncrement": 102
+      "keyword": "유니온블루",
+      "rankIncrement": 113
     },
     {
       "rank": 6,
-      "keyword": "워크팬츠",
-      "rankIncrement": 141
+      "keyword": "와이드 팬츠",
+      "rankIncrement": 113
     },
     {
       "rank": 7,
-      "keyword": "헤어밴드",
-      "rankIncrement": 106
+      "keyword": "해링턴자켓",
+      "rankIncrement": 193
     },
     {
       "rank": 8,
-      "keyword": "데님자켓",
-      "rankIncrement": 169
+      "keyword": "애즈온",
+      "rankIncrement": 425
     },
     {
       "rank": 9,
-      "keyword": "남자 바지",
-      "rankIncrement": 109
+      "keyword": "운동복",
+      "rankIncrement": 192
     },
     {
       "rank": 10,
-      "keyword": "기철",
-      "rankIncrement": 137
+      "keyword": "목폴라",
+      "rankIncrement": 200
     }
   ]
 }
