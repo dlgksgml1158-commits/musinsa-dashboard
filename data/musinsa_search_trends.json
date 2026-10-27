@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T19:04:31.062233+00:00",
+  "updatedAt": "2026-10-27T03:46:00.817481+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
-      "keyword": "후드집업",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 3,
       "keyword": "패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "후드집업",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 5,
+      "keyword": "후드티",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 6,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "맨투맨",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "롱슬리브",
-      "rankIncrement": -1
+      "keyword": "스파오",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바지",
+      "keyword": "플리스",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "캡모자",
-      "rankIncrement": 114
+      "keyword": "토마스모어",
+      "rankIncrement": 265
     },
     {
       "rank": 2,
-      "keyword": "티셔츠",
-      "rankIncrement": 118
+      "keyword": "긴팔",
+      "rankIncrement": 147
     },
     {
       "rank": 3,
-      "keyword": "기철",
-      "rankIncrement": 197
+      "keyword": "스웨이드 무스탕 코트",
+      "rankIncrement": 163
     },
     {
       "rank": 4,
-      "keyword": "코튼 팬츠",
-      "rankIncrement": 316
+      "keyword": "스톤아일랜드",
+      "rankIncrement": 123
     },
     {
       "rank": 5,
-      "keyword": "유니온블루",
-      "rankIncrement": 113
+      "keyword": "지프",
+      "rankIncrement": 106
     },
     {
       "rank": 6,
-      "keyword": "와이드 팬츠",
-      "rankIncrement": 113
+      "keyword": "코듀로이 자켓",
+      "rankIncrement": 148
     },
     {
       "rank": 7,
-      "keyword": "해링턴자켓",
-      "rankIncrement": 193
+      "keyword": "반다나",
+      "rankIncrement": 107
     },
     {
       "rank": 8,
-      "keyword": "애즈온",
-      "rankIncrement": 425
+      "keyword": "오니츠카타이거",
+      "rankIncrement": 133
     },
     {
       "rank": 9,
-      "keyword": "운동복",
-      "rankIncrement": 192
+      "keyword": "에이이에이이",
+      "rankIncrement": 230
     },
     {
       "rank": 10,
-      "keyword": "목폴라",
-      "rankIncrement": 200
+      "keyword": "카비시",
+      "rankIncrement": 195
     }
   ]
 }
