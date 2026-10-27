@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T15:02:01.978431+00:00",
+  "updatedAt": "2026-10-27T18:38:23.632007+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,28 +8,28 @@
     },
     {
       "rank": 2,
-      "keyword": "후리스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "후리스",
+      "rankIncrement": 0
+    },
+    {
       "rank": 4,
-      "keyword": "후드티",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 5,
       "keyword": "니트",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "keyword": "코트",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "스파오",
+      "keyword": "바지",
       "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "스파오 경량패딩",
-      "rankIncrement": 0
+      "keyword": "롱슬리브",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "노운",
-      "rankIncrement": 565
+      "keyword": "데우스 엑스 마키나",
+      "rankIncrement": 247
     },
     {
       "rank": 2,
-      "keyword": "세미와이드 슬랙스",
-      "rankIncrement": 137
+      "keyword": "퍼 후드집업",
+      "rankIncrement": 111
     },
     {
       "rank": 3,
-      "keyword": "코듀로이 자켓",
-      "rankIncrement": 120
+      "keyword": "로맨틱무브",
+      "rankIncrement": 117
     },
     {
       "rank": 4,
-      "keyword": "디스커버리 패딩",
-      "rankIncrement": 105
+      "keyword": "커브드팬츠",
+      "rankIncrement": 193
     },
     {
       "rank": 5,
-      "keyword": "플리즈노팔로우",
-      "rankIncrement": 145
+      "keyword": "일리고",
+      "rankIncrement": 119
     },
     {
       "rank": 6,
-      "keyword": "일리고",
-      "rankIncrement": 173
+      "keyword": "캘빈클라인",
+      "rankIncrement": 155
     },
     {
       "rank": 7,
-      "keyword": "덕다운 경량패딩",
-      "rankIncrement": 133
+      "keyword": "기모 맨투맨",
+      "rankIncrement": 157
     },
     {
       "rank": 8,
-      "keyword": "겨울 자켓",
-      "rankIncrement": 213
+      "keyword": "정장",
+      "rankIncrement": 157
     },
     {
       "rank": 9,
-      "keyword": "레이어드 롱슬리브",
-      "rankIncrement": 197
+      "keyword": "트레이닝팬츠",
+      "rankIncrement": 120
     },
     {
       "rank": 10,
-      "keyword": "스키즘 인듀싱",
-      "rankIncrement": 150
+      "keyword": "아수라",
+      "rankIncrement": 124
     }
   ]
 }
