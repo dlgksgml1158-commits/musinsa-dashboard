@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T03:46:00.817481+00:00",
+  "updatedAt": "2026-10-27T09:37:42.195731+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,23 +18,23 @@
     },
     {
       "rank": 4,
-      "keyword": "후드집업",
+      "keyword": "후드티",
       "rankIncrement": 1
     },
     {
       "rank": 5,
-      "keyword": "후드티",
+      "keyword": "후드집업",
       "rankIncrement": -1
     },
     {
       "rank": 6,
       "keyword": "니트",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 7,
       "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 8,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "플리스",
+      "keyword": "스파오 경량패딩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "토마스모어",
-      "rankIncrement": 265
+      "keyword": "CN 오버사이즈 셔츠",
+      "rankIncrement": 146
     },
     {
       "rank": 2,
-      "keyword": "긴팔",
-      "rankIncrement": 147
+      "keyword": "울자켓",
+      "rankIncrement": 184
     },
     {
       "rank": 3,
-      "keyword": "스웨이드 무스탕 코트",
-      "rankIncrement": 163
-    },
-    {
-      "rank": 4,
-      "keyword": "스톤아일랜드",
+      "keyword": "하이넥",
       "rankIncrement": 123
     },
     {
+      "rank": 4,
+      "keyword": "노티카 경량패딩",
+      "rankIncrement": 149
+    },
+    {
       "rank": 5,
-      "keyword": "지프",
-      "rankIncrement": 106
+      "keyword": "하이넥 자켓",
+      "rankIncrement": 109
     },
     {
       "rank": 6,
-      "keyword": "코듀로이 자켓",
-      "rankIncrement": 148
+      "keyword": "기모 후드티",
+      "rankIncrement": 251
     },
     {
       "rank": 7,
-      "keyword": "반다나",
-      "rankIncrement": 107
+      "keyword": "후리스집업",
+      "rankIncrement": 128
     },
     {
       "rank": 8,
-      "keyword": "오니츠카타이거",
-      "rankIncrement": 133
+      "keyword": "러브이즈트루",
+      "rankIncrement": 116
     },
     {
       "rank": 9,
-      "keyword": "에이이에이이",
-      "rankIncrement": 230
+      "keyword": "레이브",
+      "rankIncrement": 101
     },
     {
       "rank": 10,
-      "keyword": "카비시",
-      "rankIncrement": 195
+      "keyword": "스키즘 인듀싱",
+      "rankIncrement": 142
     }
   ]
 }
