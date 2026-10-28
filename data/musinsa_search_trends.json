@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T15:38:08.609318+00:00",
+  "updatedAt": "2026-10-28T18:42:02.838027+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,12 +8,12 @@
     },
     {
       "rank": 2,
-      "keyword": "후리스",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "패딩",
+      "keyword": "후리스",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "플리스",
-      "rankIncrement": 1
+      "keyword": "코트",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "무신사 스탠다드",
+      "keyword": "바지",
       "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "스파오",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "체험단",
-      "rankIncrement": 110
-    },
-    {
-      "rank": 2,
-      "keyword": "코이세이오",
-      "rankIncrement": 123
-    },
-    {
-      "rank": 3,
-      "keyword": "시에라디자인",
-      "rankIncrement": 116
-    },
-    {
-      "rank": 4,
-      "keyword": "무센트",
+      "keyword": "기모",
       "rankIncrement": 198
     },
     {
+      "rank": 2,
+      "keyword": "코듀로이 팬츠",
+      "rankIncrement": 100
+    },
+    {
+      "rank": 3,
+      "keyword": "스부",
+      "rankIncrement": 109
+    },
+    {
+      "rank": 4,
+      "keyword": "깔깔이",
+      "rankIncrement": 153
+    },
+    {
       "rank": 5,
-      "keyword": "더바이닐하우스",
-      "rankIncrement": 103
+      "keyword": "니트 가디건",
+      "rankIncrement": 233
     },
     {
       "rank": 6,
-      "keyword": "m65",
-      "rankIncrement": 111
+      "keyword": "레이어드 롱슬리브",
+      "rankIncrement": 184
     },
     {
       "rank": 7,
-      "keyword": "폴로 후드집업",
-      "rankIncrement": 114
+      "keyword": "겨울바지",
+      "rankIncrement": 339
     },
     {
       "rank": 8,
-      "keyword": "단톤",
-      "rankIncrement": 161
+      "keyword": "스웨이드 가방",
+      "rankIncrement": 274
     },
     {
       "rank": 9,
-      "keyword": "지프",
-      "rankIncrement": 107
+      "keyword": "ma1",
+      "rankIncrement": 135
     },
     {
       "rank": 10,
-      "keyword": "야상자켓",
-      "rankIncrement": 205
+      "keyword": "스니커즈",
+      "rankIncrement": 210
     }
   ]
 }
