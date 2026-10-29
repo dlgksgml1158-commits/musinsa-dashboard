@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T18:42:02.838027+00:00",
+  "updatedAt": "2026-10-29T04:26:11.540396+00:00",
   "popular": [
     {
       "rank": 1,
@@ -19,89 +19,89 @@
     {
       "rank": 4,
       "keyword": "후드티",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 5,
       "keyword": "니트",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 6,
       "keyword": "후드집업",
-      "rankIncrement": 0
+      "rankIncrement": -2
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "코트",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 9,
-      "keyword": "바지",
+      "keyword": "맨투맨",
       "rankIncrement": -1
     },
     {
+      "rank": 9,
+      "keyword": "스파오",
+      "rankIncrement": 1
+    },
+    {
       "rank": 10,
-      "keyword": "비니",
-      "rankIncrement": 2
+      "keyword": "플리스",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "기모",
-      "rankIncrement": 198
+      "keyword": "스노우피크",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "코듀로이 팬츠",
-      "rankIncrement": 100
+      "keyword": "패딩슬리퍼",
+      "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "스부",
-      "rankIncrement": 109
+      "keyword": "무신사 경량패딩",
+      "rankIncrement": 119
     },
     {
       "rank": 4,
-      "keyword": "깔깔이",
-      "rankIncrement": 153
+      "keyword": "마인드브릿지",
+      "rankIncrement": 114
     },
     {
       "rank": 5,
-      "keyword": "니트 가디건",
-      "rankIncrement": 233
+      "keyword": "방한화",
+      "rankIncrement": 115
     },
     {
       "rank": 6,
-      "keyword": "레이어드 롱슬리브",
-      "rankIncrement": 184
+      "keyword": "토트백",
+      "rankIncrement": 137
     },
     {
       "rank": 7,
-      "keyword": "겨울바지",
-      "rankIncrement": 339
+      "keyword": "마리떼",
+      "rankIncrement": 123
     },
     {
       "rank": 8,
-      "keyword": "스웨이드 가방",
-      "rankIncrement": 274
+      "keyword": "팬티",
+      "rankIncrement": 163
     },
     {
       "rank": 9,
-      "keyword": "ma1",
-      "rankIncrement": 135
+      "keyword": "노스페이스 눕시",
+      "rankIncrement": 120
     },
     {
       "rank": 10,
-      "keyword": "스니커즈",
-      "rankIncrement": 210
+      "keyword": "야세",
+      "rankIncrement": 114
     }
   ]
 }
