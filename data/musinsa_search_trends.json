@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T18:50:20.975291+00:00",
+  "updatedAt": "2026-10-30T04:26:36.302568+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "코트",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 2
-    },
-    {
-      "rank": 9,
       "keyword": "맨투맨",
       "rankIncrement": -1
     },
     {
+      "rank": 9,
+      "keyword": "어그",
+      "rankIncrement": 0
+    },
+    {
       "rank": 10,
-      "keyword": "비니",
-      "rankIncrement": -1
+      "keyword": "코트",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아더에러",
-      "rankIncrement": 179
+      "keyword": "넥워머",
+      "rankIncrement": 128
     },
     {
       "rank": 2,
-      "keyword": "구스다운",
-      "rankIncrement": 163
-    },
-    {
-      "rank": 3,
-      "keyword": "상의",
+      "keyword": "기모 후드집업",
       "rankIncrement": 118
     },
     {
+      "rank": 3,
+      "keyword": "코이세이오",
+      "rankIncrement": 124
+    },
+    {
       "rank": 4,
-      "keyword": "패디드 자켓",
-      "rankIncrement": 115
+      "keyword": "커브드팬츠",
+      "rankIncrement": 143
     },
     {
       "rank": 5,
-      "keyword": "비긴202",
-      "rankIncrement": 129
+      "keyword": "패딩슬리퍼",
+      "rankIncrement": 119
     },
     {
       "rank": 6,
-      "keyword": "플리스 후드",
-      "rankIncrement": 186
+      "keyword": "킨",
+      "rankIncrement": 202
     },
     {
       "rank": 7,
-      "keyword": "하프 코트",
-      "rankIncrement": 129
+      "keyword": "향수",
+      "rankIncrement": 108
     },
     {
       "rank": 8,
-      "keyword": "배드블러드",
-      "rankIncrement": 213
+      "keyword": "안다르",
+      "rankIncrement": 107
     },
     {
       "rank": 9,
-      "keyword": "노운",
-      "rankIncrement": 162
+      "keyword": "키링",
+      "rankIncrement": 107
     },
     {
       "rank": 10,
-      "keyword": "체크셔츠",
-      "rankIncrement": 259
+      "keyword": "탄산마그네슘",
+      "rankIncrement": 189
     }
   ]
 }
