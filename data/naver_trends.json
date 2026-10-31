@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T04:06:38.610783+00:00",
+  "updatedAt": "2026-10-31T10:12:34.538972+00:00",
   "musinsa": [
     {
       "keyword": "레이스나시",
@@ -62,14 +62,14 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": 1
+      "change": null
     },
     {
       "keyword": "조거팬츠",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -1
+      "change": null
     }
   ],
   "cm29": [
@@ -134,14 +134,14 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": 1
+      "change": null
     },
     {
       "keyword": "조거팬츠",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -1
+      "change": null
     }
   ]
 }
