@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T04:30:01.171218+00:00",
+  "updatedAt": "2026-11-02T12:00:42.743171+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "압도",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "패딩",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
+      "rank": 3,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "후드티",
+      "rankIncrement": 1
+    },
+    {
       "rank": 5,
       "keyword": "니트",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 6,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
       "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
+      "rank": 7,
+      "keyword": "맨투맨",
+      "rankIncrement": 0
+    },
+    {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 1
+      "keyword": "스파오",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "스파오",
+      "keyword": "어그",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "휠라",
-      "rankIncrement": 168
-    },
-    {
-      "rank": 2,
-      "keyword": "르아브",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 3,
-      "keyword": "mimthe",
-      "rankIncrement": 107
-    },
-    {
-      "rank": 4,
-      "keyword": "레그워머",
-      "rankIncrement": 119
-    },
-    {
-      "rank": 5,
-      "keyword": "래플",
-      "rankIncrement": 108
-    },
-    {
-      "rank": 6,
-      "keyword": "스톤아일랜드",
-      "rankIncrement": 131
-    },
-    {
-      "rank": 7,
-      "keyword": "코드그라피",
+      "keyword": "깔깔이",
       "rankIncrement": 129
     },
     {
+      "rank": 2,
+      "keyword": "브이넥",
+      "rankIncrement": 110
+    },
+    {
+      "rank": 3,
+      "keyword": "코이세이오",
+      "rankIncrement": 127
+    },
+    {
+      "rank": 4,
+      "keyword": "터틀넥",
+      "rankIncrement": 186
+    },
+    {
+      "rank": 5,
+      "keyword": "산리오",
+      "rankIncrement": 118
+    },
+    {
+      "rank": 6,
+      "keyword": "다이브인",
+      "rankIncrement": 110
+    },
+    {
+      "rank": 7,
+      "keyword": "나이키 에어포스",
+      "rankIncrement": 171
+    },
+    {
       "rank": 8,
-      "keyword": "허그유어스킨",
-      "rankIncrement": 213
+      "keyword": "제로",
+      "rankIncrement": 225
     },
     {
       "rank": 9,
       "keyword": "휠라 경량패딩",
-      "rankIncrement": 174
+      "rankIncrement": 119
     },
     {
       "rank": 10,
-      "keyword": "브이넥",
-      "rankIncrement": 110
+      "keyword": "퀼팅자켓",
+      "rankIncrement": 177
     }
   ]
 }
