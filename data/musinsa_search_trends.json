@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T05:10:55.745332+00:00",
+  "updatedAt": "2026-11-05T11:53:01.480879+00:00",
   "popular": [
     {
       "rank": 1,
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "하이큐",
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "코트",
-      "rankIncrement": 0
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "반집업",
-      "rankIncrement": 100
+      "keyword": "스웨트팬츠",
+      "rankIncrement": 138
     },
     {
       "rank": 2,
-      "keyword": "캡모자",
-      "rankIncrement": 111
+      "keyword": "컴프레션",
+      "rankIncrement": 142
     },
     {
       "rank": 3,
-      "keyword": "최저가 도전",
-      "rankIncrement": 137
+      "keyword": "시티레저",
+      "rankIncrement": 107
     },
     {
       "rank": 4,
-      "keyword": "캐리어",
-      "rankIncrement": 186
+      "keyword": "프리즘웍스",
+      "rankIncrement": 101
     },
     {
       "rank": 5,
-      "keyword": "더바넷",
-      "rankIncrement": 159
+      "keyword": "와이드 슬랙스",
+      "rankIncrement": 100
     },
     {
       "rank": 6,
-      "keyword": "오니츠카타이거",
-      "rankIncrement": 100
+      "keyword": "남자 가디건",
+      "rankIncrement": 176
     },
     {
       "rank": 7,
-      "keyword": "썬러브",
-      "rankIncrement": 100
+      "keyword": "이미스",
+      "rankIncrement": 118
     },
     {
       "rank": 8,
-      "keyword": "언더아머",
-      "rankIncrement": 135
+      "keyword": "휠라",
+      "rankIncrement": 228
     },
     {
       "rank": 9,
-      "keyword": "와이드 슬랙스",
-      "rankIncrement": 168
+      "keyword": "조셉트",
+      "rankIncrement": 121
     },
     {
       "rank": 10,
-      "keyword": "브랜디드",
-      "rankIncrement": 233
+      "keyword": "지프",
+      "rankIncrement": 107
     }
   ]
 }

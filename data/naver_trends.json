@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T05:10:54.254872+00:00",
+  "updatedAt": "2026-11-05T11:52:59.911309+00:00",
   "musinsa": [
     {
       "keyword": "레이스나시",
@@ -62,14 +62,14 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": 1
+      "change": null
     },
     {
       "keyword": "탑텐",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -1
+      "change": null
     }
   ],
   "cm29": [
@@ -134,14 +134,14 @@
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": 1
+      "change": null
     },
     {
       "keyword": "탑텐",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 10,
-      "change": -1
+      "change": null
     }
   ]
 }
