@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T16:57:50.290674+00:00",
+  "updatedAt": "2026-11-05T20:30:37.863006+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 1
+      "keyword": "니트",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "니트",
-      "rankIncrement": -1
+      "keyword": "후리스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "후리스",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -33,75 +33,75 @@
     },
     {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "코트",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "코트",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "비니",
-      "rankIncrement": 0
+      "keyword": "자켓",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "퍼",
-      "rankIncrement": 179
+      "keyword": "항공점퍼",
+      "rankIncrement": 111
     },
     {
       "rank": 2,
-      "keyword": "트릴리온",
-      "rankIncrement": 115
+      "keyword": "아크테릭스",
+      "rankIncrement": 111
     },
     {
       "rank": 3,
-      "keyword": "디키즈 폴라텍",
-      "rankIncrement": 174
+      "keyword": "하객룩",
+      "rankIncrement": 185
     },
     {
       "rank": 4,
-      "keyword": "이너티",
-      "rankIncrement": 160
+      "keyword": "볼캡",
+      "rankIncrement": 137
     },
     {
       "rank": 5,
-      "keyword": "팀버랜드",
-      "rankIncrement": 121
+      "keyword": "스웨이드",
+      "rankIncrement": 309
     },
     {
       "rank": 6,
-      "keyword": "노르딕 니트",
-      "rankIncrement": 115
+      "keyword": "퍼",
+      "rankIncrement": 210
     },
     {
       "rank": 7,
-      "keyword": "나이키 후드집업",
-      "rankIncrement": 105
+      "keyword": "슬리브",
+      "rankIncrement": 258
     },
     {
       "rank": 8,
-      "keyword": "하이넥 자켓",
-      "rankIncrement": 169
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 301
     },
     {
       "rank": 9,
-      "keyword": "울 블루종",
-      "rankIncrement": 149
+      "keyword": "남자 가죽자켓",
+      "rankIncrement": 306
     },
     {
       "rank": 10,
-      "keyword": "겨울 자켓",
-      "rankIncrement": 106
+      "keyword": "코드그라피",
+      "rankIncrement": 747
     }
   ]
 }
