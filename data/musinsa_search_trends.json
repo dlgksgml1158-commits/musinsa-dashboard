@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T11:53:01.480879+00:00",
+  "updatedAt": "2026-11-05T16:57:50.290674+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "후리스",
-      "rankIncrement": 0
+      "keyword": "후드티",
+      "rankIncrement": 1
     },
     {
       "rank": 4,
-      "keyword": "후드티",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "니트",
+      "keyword": "후리스",
       "rankIncrement": 0
     },
     {
@@ -34,74 +34,74 @@
     {
       "rank": 7,
       "keyword": "맨투맨",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 2
+      "keyword": "코트",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "하이큐",
-      "rankIncrement": -2
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": -1
+      "keyword": "비니",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스웨트팬츠",
-      "rankIncrement": 138
+      "keyword": "퍼",
+      "rankIncrement": 179
     },
     {
       "rank": 2,
-      "keyword": "컴프레션",
-      "rankIncrement": 142
+      "keyword": "트릴리온",
+      "rankIncrement": 115
     },
     {
       "rank": 3,
-      "keyword": "시티레저",
-      "rankIncrement": 107
+      "keyword": "디키즈 폴라텍",
+      "rankIncrement": 174
     },
     {
       "rank": 4,
-      "keyword": "프리즘웍스",
-      "rankIncrement": 101
+      "keyword": "이너티",
+      "rankIncrement": 160
     },
     {
       "rank": 5,
-      "keyword": "와이드 슬랙스",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 6,
-      "keyword": "남자 가디건",
-      "rankIncrement": 176
-    },
-    {
-      "rank": 7,
-      "keyword": "이미스",
-      "rankIncrement": 118
-    },
-    {
-      "rank": 8,
-      "keyword": "휠라",
-      "rankIncrement": 228
-    },
-    {
-      "rank": 9,
-      "keyword": "조셉트",
+      "keyword": "팀버랜드",
       "rankIncrement": 121
     },
     {
+      "rank": 6,
+      "keyword": "노르딕 니트",
+      "rankIncrement": 115
+    },
+    {
+      "rank": 7,
+      "keyword": "나이키 후드집업",
+      "rankIncrement": 105
+    },
+    {
+      "rank": 8,
+      "keyword": "하이넥 자켓",
+      "rankIncrement": 169
+    },
+    {
+      "rank": 9,
+      "keyword": "울 블루종",
+      "rankIncrement": 149
+    },
+    {
       "rank": 10,
-      "keyword": "지프",
-      "rankIncrement": 107
+      "keyword": "겨울 자켓",
+      "rankIncrement": 106
     }
   ]
 }
