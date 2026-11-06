@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T16:29:39.188007+00:00",
+  "updatedAt": "2026-11-06T19:53:48.685872+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 1
+      "keyword": "니트",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "니트",
-      "rankIncrement": -1
+      "keyword": "후리스",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "후리스",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -34,17 +34,17 @@
     {
       "rank": 7,
       "keyword": "코트",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "무스탕",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "어그",
-      "rankIncrement": -1
+      "keyword": "비니",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "블랙업",
-      "rankIncrement": 110
+      "keyword": "반팔티",
+      "rankIncrement": 138
     },
     {
       "rank": 2,
-      "keyword": "프리즘웍스",
-      "rankIncrement": 113
+      "keyword": "파자마",
+      "rankIncrement": 177
     },
     {
       "rank": 3,
-      "keyword": "비긴202",
-      "rankIncrement": 115
+      "keyword": "패딩바지",
+      "rankIncrement": 118
     },
     {
       "rank": 4,
-      "keyword": "수아레 니트",
-      "rankIncrement": 114
+      "keyword": "벌룬팬츠",
+      "rankIncrement": 191
     },
     {
       "rank": 5,
-      "keyword": "머슬핏",
-      "rankIncrement": 129
-    },
-    {
-      "rank": 6,
-      "keyword": "에스트라",
+      "keyword": "압도",
       "rankIncrement": 135
     },
     {
+      "rank": 6,
+      "keyword": "키뮤어",
+      "rankIncrement": 154
+    },
+    {
       "rank": 7,
-      "keyword": "코듀로이 패딩",
-      "rankIncrement": 116
+      "keyword": "스웨트팬츠",
+      "rankIncrement": 230
     },
     {
       "rank": 8,
-      "keyword": "패딩 베스트",
-      "rankIncrement": 126
+      "keyword": "반스",
+      "rankIncrement": 154
     },
     {
       "rank": 9,
-      "keyword": "내복",
-      "rankIncrement": 126
+      "keyword": "아이더",
+      "rankIncrement": 235
     },
     {
       "rank": 10,
-      "keyword": "패딩바지",
-      "rankIncrement": 179
+      "keyword": "엘무드",
+      "rankIncrement": 163
     }
   ]
 }
