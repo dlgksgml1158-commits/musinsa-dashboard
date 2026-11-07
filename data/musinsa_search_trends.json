@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T15:16:59.926942+00:00",
+  "updatedAt": "2026-11-07T17:58:42.601082+00:00",
   "popular": [
     {
       "rank": 1,
@@ -28,13 +28,13 @@
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
+      "keyword": "코트",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "코트",
-      "rankIncrement": 0
+      "keyword": "어그",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
@@ -43,65 +43,65 @@
     },
     {
       "rank": 9,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": -2
     },
     {
       "rank": 10,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "휠라",
-      "rankIncrement": 110
+      "keyword": "파르티멘토",
+      "rankIncrement": 127
     },
     {
       "rank": 2,
-      "keyword": "아디다스 패딩",
-      "rankIncrement": 115
+      "keyword": "오프숄더",
+      "rankIncrement": 154
     },
     {
       "rank": 3,
-      "keyword": "패딩슬리퍼",
-      "rankIncrement": 107
+      "keyword": "무센트",
+      "rankIncrement": 101
     },
     {
       "rank": 4,
-      "keyword": "스웨트팬츠",
-      "rankIncrement": 145
+      "keyword": "에어포스",
+      "rankIncrement": 204
     },
     {
       "rank": 5,
-      "keyword": "블랙컴뱃",
-      "rankIncrement": 120
+      "keyword": "플레어진",
+      "rankIncrement": 137
     },
     {
       "rank": 6,
-      "keyword": "신칠라",
-      "rankIncrement": 122
+      "keyword": "크롭 후드티",
+      "rankIncrement": 111
     },
     {
       "rank": 7,
-      "keyword": "유니온블루",
-      "rankIncrement": 112
+      "keyword": "피쉬테일",
+      "rankIncrement": 117
     },
     {
       "rank": 8,
-      "keyword": "아디다스 져지",
-      "rankIncrement": 124
+      "keyword": "크롭 후드집업",
+      "rankIncrement": 292
     },
     {
       "rank": 9,
-      "keyword": "리",
-      "rankIncrement": 180
+      "keyword": "터틀넥",
+      "rankIncrement": 100
     },
     {
       "rank": 10,
-      "keyword": "퍼",
-      "rankIncrement": 105
+      "keyword": "기철",
+      "rankIncrement": 131
     }
   ]
 }
