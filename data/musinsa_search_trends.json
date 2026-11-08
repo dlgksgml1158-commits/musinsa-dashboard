@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T15:40:48.038264+00:00",
+  "updatedAt": "2026-11-08T18:15:53.720973+00:00",
   "popular": [
     {
       "rank": 1,
@@ -28,18 +28,18 @@
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
       "keyword": "코트",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
+      "rank": 7,
       "keyword": "후드집업",
-      "rankIncrement": 0
+      "rankIncrement": 1
+    },
+    {
+      "rank": 8,
+      "keyword": "맨투맨",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "스파오",
-      "rankIncrement": 1
+      "keyword": "어그",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "일리고",
-      "rankIncrement": 107
+      "keyword": "팀버랜드",
+      "rankIncrement": 104
     },
     {
       "rank": 2,
-      "keyword": "체험단",
-      "rankIncrement": 132
+      "keyword": "힛탠다드",
+      "rankIncrement": 122
     },
     {
       "rank": 3,
-      "keyword": "더콜디스트모먼트",
-      "rankIncrement": 111
+      "keyword": "파르티멘토",
+      "rankIncrement": 124
     },
     {
       "rank": 4,
-      "keyword": "247시리즈",
+      "keyword": "일리고",
       "rankIncrement": 111
     },
     {
       "rank": 5,
-      "keyword": "무신사 패딩",
-      "rankIncrement": 236
+      "keyword": "배드블러드",
+      "rankIncrement": 108
     },
     {
       "rank": 6,
-      "keyword": "몽벨 경량패딩",
-      "rankIncrement": 120
+      "keyword": "피쉬테일",
+      "rankIncrement": 138
     },
     {
       "rank": 7,
-      "keyword": "패딩 자켓",
-      "rankIncrement": 111
+      "keyword": "무센트",
+      "rankIncrement": 269
     },
     {
       "rank": 8,
-      "keyword": "슬리브",
-      "rankIncrement": 115
+      "keyword": "알로",
+      "rankIncrement": 122
     },
     {
       "rank": 9,
-      "keyword": "필루미네이트",
-      "rankIncrement": 180
+      "keyword": "오픈야드",
+      "rankIncrement": 156
     },
     {
       "rank": 10,
-      "keyword": "스타킹",
-      "rankIncrement": 170
+      "keyword": "패딩부츠",
+      "rankIncrement": 122
     }
   ]
 }
