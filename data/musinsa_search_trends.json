@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T17:58:42.601082+00:00",
+  "updatedAt": "2026-11-08T04:30:33.282485+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
+      "rank": 4,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 6,
-      "keyword": "코트",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "어그",
-      "rankIncrement": 2
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "코트",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": -2
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "스파오",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파르티멘토",
-      "rankIncrement": 127
+      "keyword": "러닝",
+      "rankIncrement": 112
     },
     {
       "rank": 2,
-      "keyword": "오프숄더",
-      "rankIncrement": 154
-    },
-    {
-      "rank": 3,
-      "keyword": "무센트",
-      "rankIncrement": 101
-    },
-    {
-      "rank": 4,
-      "keyword": "에어포스",
-      "rankIncrement": 204
-    },
-    {
-      "rank": 5,
-      "keyword": "플레어진",
-      "rankIncrement": 137
-    },
-    {
-      "rank": 6,
-      "keyword": "크롭 후드티",
-      "rankIncrement": 111
-    },
-    {
-      "rank": 7,
-      "keyword": "피쉬테일",
-      "rankIncrement": 117
-    },
-    {
-      "rank": 8,
-      "keyword": "크롭 후드집업",
-      "rankIncrement": 292
-    },
-    {
-      "rank": 9,
-      "keyword": "터틀넥",
+      "keyword": "크롭 니트",
       "rankIncrement": 100
     },
     {
+      "rank": 3,
+      "keyword": "지오다노",
+      "rankIncrement": 122
+    },
+    {
+      "rank": 4,
+      "keyword": "시에라디자인",
+      "rankIncrement": 103
+    },
+    {
+      "rank": 5,
+      "keyword": "제너럴 아이디어",
+      "rankIncrement": 125
+    },
+    {
+      "rank": 6,
+      "keyword": "스니커즈",
+      "rankIncrement": 106
+    },
+    {
+      "rank": 7,
+      "keyword": "어그 타스만",
+      "rankIncrement": 110
+    },
+    {
+      "rank": 8,
+      "keyword": "선글라스",
+      "rankIncrement": 222
+    },
+    {
+      "rank": 9,
+      "keyword": "먼작귀",
+      "rankIncrement": 141
+    },
+    {
       "rank": 10,
-      "keyword": "기철",
-      "rankIncrement": 131
+      "keyword": "코이세이오",
+      "rankIncrement": 214
     }
   ]
 }
