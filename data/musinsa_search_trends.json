@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T12:32:32.712015+00:00",
+  "updatedAt": "2026-11-09T19:20:17.652571+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "후리스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "니트",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
+      "rank": 4,
       "keyword": "코트",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "후리스",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "맨투맨",
+      "keyword": "후드집업",
       "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "하이큐",
-      "rankIncrement": -1
+      "keyword": "어그",
+      "rankIncrement": 3
     },
     {
       "rank": 9,
-      "keyword": "어그",
-      "rankIncrement": 1
+      "keyword": "바지",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "후드집업",
-      "rankIncrement": 1
+      "keyword": "비니",
+      "rankIncrement": -3
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "티셔츠",
-      "rankIncrement": 259
-    },
-    {
-      "rank": 2,
-      "keyword": "스니커즈",
-      "rankIncrement": 166
-    },
-    {
-      "rank": 3,
-      "keyword": "스웨이드",
-      "rankIncrement": 110
-    },
-    {
-      "rank": 4,
-      "keyword": "러닝화",
-      "rankIncrement": 119
-    },
-    {
-      "rank": 5,
-      "keyword": "토트백",
-      "rankIncrement": 145
-    },
-    {
-      "rank": 6,
-      "keyword": "뉴에라",
-      "rankIncrement": 149
-    },
-    {
-      "rank": 7,
-      "keyword": "살로몬 경량패딩",
+      "keyword": "팬티",
       "rankIncrement": 111
     },
     {
-      "rank": 8,
-      "keyword": "스커트",
+      "rank": 2,
+      "keyword": "언더아머",
+      "rankIncrement": 129
+    },
+    {
+      "rank": 3,
+      "keyword": "플리스 아노락",
+      "rankIncrement": 268
+    },
+    {
+      "rank": 4,
+      "keyword": "휠라",
       "rankIncrement": 105
     },
     {
+      "rank": 5,
+      "keyword": "살로몬 경량패딩",
+      "rankIncrement": 133
+    },
+    {
+      "rank": 6,
+      "keyword": "zara",
+      "rankIncrement": 330
+    },
+    {
+      "rank": 7,
+      "keyword": "코드그라피",
+      "rankIncrement": 141
+    },
+    {
+      "rank": 8,
+      "keyword": "alo",
+      "rankIncrement": 154
+    },
+    {
       "rank": 9,
-      "keyword": "조셉트",
-      "rankIncrement": 135
+      "keyword": "노이스",
+      "rankIncrement": 262
     },
     {
       "rank": 10,
-      "keyword": "비긴202",
-      "rankIncrement": 127
+      "keyword": "상의",
+      "rankIncrement": 102
     }
   ]
 }
