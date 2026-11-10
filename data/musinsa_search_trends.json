@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T16:41:04.410074+00:00",
+  "updatedAt": "2026-11-10T20:19:55.269682+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "코트",
+      "rankIncrement": 1
     },
     {
       "rank": 4,
+      "keyword": "니트",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 5,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 6,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "코트",
-      "rankIncrement": 0
-    },
-    {
       "rank": 7,
-      "keyword": "맨투맨",
+      "keyword": "비니",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "비니",
+      "keyword": "어그",
       "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "후드집업",
+      "keyword": "무스탕",
       "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "바지",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "KE3496",
-      "rankIncrement": 167
+      "keyword": "스투시",
+      "rankIncrement": 119
     },
     {
       "rank": 2,
-      "keyword": "선글라스",
-      "rankIncrement": 118
+      "keyword": "몽벨",
+      "rankIncrement": 126
     },
     {
       "rank": 3,
-      "keyword": "인사일런스",
-      "rankIncrement": 217
+      "keyword": "크롭 니트",
+      "rankIncrement": 137
     },
     {
       "rank": 4,
-      "keyword": "슬리브",
-      "rankIncrement": 114
+      "keyword": "마리떼",
+      "rankIncrement": 168
     },
     {
       "rank": 5,
-      "keyword": "알파 인더스트리",
-      "rankIncrement": 136
+      "keyword": "아크테릭스",
+      "rankIncrement": 124
     },
     {
       "rank": 6,
-      "keyword": "배드블러드",
-      "rankIncrement": 115
+      "keyword": "cp컴퍼니",
+      "rankIncrement": 187
     },
     {
       "rank": 7,
-      "keyword": "낫포너드",
-      "rankIncrement": 119
+      "keyword": "퍼",
+      "rankIncrement": 105
     },
     {
       "rank": 8,
-      "keyword": "후드패딩",
-      "rankIncrement": 119
+      "keyword": "스커트",
+      "rankIncrement": 112
     },
     {
       "rank": 9,
-      "keyword": "어그 타스만",
-      "rankIncrement": 123
+      "keyword": "나이키 acg",
+      "rankIncrement": 117
     },
     {
       "rank": 10,
-      "keyword": "생지데님",
-      "rankIncrement": 143
+      "keyword": "데우스 엑스 마키나",
+      "rankIncrement": 153
     }
   ]
 }
