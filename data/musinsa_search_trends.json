@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T05:58:57.404313+00:00",
+  "updatedAt": "2026-11-10T12:07:33.416303+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,94 +14,94 @@
     {
       "rank": 3,
       "keyword": "니트",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 4,
       "keyword": "후리스",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "코트",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "후드티",
-      "rankIncrement": 1
+      "keyword": "코트",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "어그",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 2
     },
     {
       "rank": 8,
-      "keyword": "스파오",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "후드집업",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "후드집업",
+      "keyword": "어그",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "르아르",
-      "rankIncrement": 100
+      "keyword": "티셔츠",
+      "rankIncrement": 170
     },
     {
       "rank": 2,
-      "keyword": "헨리넥 니트",
-      "rankIncrement": 106
+      "keyword": "스니커즈",
+      "rankIncrement": 108
     },
     {
       "rank": 3,
-      "keyword": "털부츠",
-      "rankIncrement": 103
+      "keyword": "던스트",
+      "rankIncrement": 116
     },
     {
       "rank": 4,
-      "keyword": "언더아머",
-      "rankIncrement": 334
+      "keyword": "해군",
+      "rankIncrement": 141
     },
     {
       "rank": 5,
-      "keyword": "론론",
-      "rankIncrement": 221
+      "keyword": "살로몬 경량패딩",
+      "rankIncrement": 107
     },
     {
       "rank": 6,
-      "keyword": "스파오 잠옷",
-      "rankIncrement": 126
+      "keyword": "패딩부츠",
+      "rankIncrement": 167
     },
     {
       "rank": 7,
-      "keyword": "acg",
-      "rankIncrement": 344
+      "keyword": "노스페이스 벤투스",
+      "rankIncrement": 144
     },
     {
       "rank": 8,
-      "keyword": "패딩부츠",
-      "rankIncrement": 160
+      "keyword": "남자 패딩",
+      "rankIncrement": 309
     },
     {
       "rank": 9,
-      "keyword": "노스페이스 키즈",
-      "rankIncrement": 218
+      "keyword": "어그 타스만",
+      "rankIncrement": 136
     },
     {
       "rank": 10,
-      "keyword": "후아유",
-      "rankIncrement": 110
+      "keyword": "치이카와",
+      "rankIncrement": 119
     }
   ]
 }
