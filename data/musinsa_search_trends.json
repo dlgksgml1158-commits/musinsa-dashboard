@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T04:45:50.415700+00:00",
+  "updatedAt": "2026-11-11T11:42:03.974603+00:00",
   "popular": [
     {
       "rank": 1,
@@ -14,7 +14,7 @@
     {
       "rank": 3,
       "keyword": "니트",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "코트",
-      "rankIncrement": 1
+      "keyword": "후드티",
+      "rankIncrement": -1
     },
     {
       "rank": 6,
+      "keyword": "코트",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "맨투맨",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 8,
       "keyword": "어그",
       "rankIncrement": 1
     },
     {
-      "rank": 7,
-      "keyword": "후드티",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 8,
-      "keyword": "해군",
-      "rankIncrement": 1
-    },
-    {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
+      "keyword": "후드집업",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "스파오",
+      "keyword": "무신사 스탠다드",
       "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "더콜디스트모먼트",
-      "rankIncrement": 131
+      "keyword": "더니트컴퍼니",
+      "rankIncrement": 169
     },
     {
       "rank": 2,
-      "keyword": "노스페이스 키즈",
-      "rankIncrement": 106
+      "keyword": "블랙야크",
+      "rankIncrement": 122
     },
     {
       "rank": 3,
-      "keyword": "코닥",
-      "rankIncrement": 142
+      "keyword": "아디다스 패딩",
+      "rankIncrement": 132
     },
     {
       "rank": 4,
-      "keyword": "등산화",
-      "rankIncrement": 139
+      "keyword": "스파오 잠옷",
+      "rankIncrement": 106
     },
     {
       "rank": 5,
-      "keyword": "나이키 에어포스",
-      "rankIncrement": 142
+      "keyword": "노스페이스 마테호른",
+      "rankIncrement": 153
     },
     {
       "rank": 6,
-      "keyword": "디미트리블랙",
-      "rankIncrement": 186
+      "keyword": "폴로 니트",
+      "rankIncrement": 108
     },
     {
       "rank": 7,
-      "keyword": "넥워머",
-      "rankIncrement": 351
+      "keyword": "니트 가디건",
+      "rankIncrement": 181
     },
     {
       "rank": 8,
-      "keyword": "마리끌레르",
-      "rankIncrement": 142
+      "keyword": "파타고니아 신칠라",
+      "rankIncrement": 212
     },
     {
       "rank": 9,
-      "keyword": "펜필드",
-      "rankIncrement": 116
+      "keyword": "파르티멘토",
+      "rankIncrement": 367
     },
     {
       "rank": 10,
-      "keyword": "크롭니트",
-      "rankIncrement": 167
+      "keyword": "어그 슬리퍼",
+      "rankIncrement": 140
     }
   ]
 }
