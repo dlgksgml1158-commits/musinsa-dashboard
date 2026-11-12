@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T17:14:33.823260+00:00",
+  "updatedAt": "2026-11-12T20:41:30.499372+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,22 +8,22 @@
     },
     {
       "rank": 2,
-      "keyword": "니트",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 3,
       "keyword": "패딩",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 4,
-      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 3,
       "keyword": "코트",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 4,
+      "keyword": "니트",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 5,
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -34,74 +34,74 @@
     {
       "rank": 7,
       "keyword": "후드집업",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "무스탕",
+      "rankIncrement": 4
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "키링",
-      "rankIncrement": 132
+      "keyword": "카드지갑",
+      "rankIncrement": 168
     },
     {
       "rank": 2,
-      "keyword": "패딩부츠",
-      "rankIncrement": 104
+      "keyword": "부츠컷",
+      "rankIncrement": 189
     },
     {
       "rank": 3,
-      "keyword": "커플링",
-      "rankIncrement": 217
+      "keyword": "지갑",
+      "rankIncrement": 159
     },
     {
       "rank": 4,
-      "keyword": "애즈온",
-      "rankIncrement": 102
+      "keyword": "카고바지",
+      "rankIncrement": 204
     },
     {
       "rank": 5,
-      "keyword": "포터리",
-      "rankIncrement": 114
+      "keyword": "구스다운패딩",
+      "rankIncrement": 111
     },
     {
       "rank": 6,
-      "keyword": "무센트",
-      "rankIncrement": 140
+      "keyword": "혼다",
+      "rankIncrement": 222
     },
     {
       "rank": 7,
-      "keyword": "남자 바지",
-      "rankIncrement": 105
+      "keyword": "패딩자켓",
+      "rankIncrement": 116
     },
     {
       "rank": 8,
-      "keyword": "남자 니트",
-      "rankIncrement": 105
+      "keyword": "크롭 후드티",
+      "rankIncrement": 243
     },
     {
       "rank": 9,
-      "keyword": "에잇세컨즈",
-      "rankIncrement": 154
+      "keyword": "반바지",
+      "rankIncrement": 248
     },
     {
       "rank": 10,
-      "keyword": "오클리",
-      "rankIncrement": 155
+      "keyword": "카시오",
+      "rankIncrement": 116
     }
   ]
 }
