@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T20:03:06.747127+00:00",
+  "updatedAt": "2026-11-12T05:48:21.216479+00:00",
   "musinsa": [
     {
       "keyword": "레이스나시",
@@ -16,18 +16,18 @@
       "change": null
     },
     {
-      "keyword": "티셔츠",
-      "cat": "상의",
-      "catColor": "#4ECDC4",
-      "rank": 3,
-      "change": null
-    },
-    {
       "keyword": "후드티",
       "cat": "상의",
       "catColor": "#4ECDC4",
+      "rank": 3,
+      "change": 1
+    },
+    {
+      "keyword": "티셔츠",
+      "cat": "상의",
+      "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": -1
     },
     {
       "keyword": "남자긴팔티",
@@ -44,11 +44,11 @@
       "change": null
     },
     {
-      "keyword": "남자바지",
+      "keyword": "남성기모바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 7,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "바지",
@@ -58,11 +58,11 @@
       "change": null
     },
     {
-      "keyword": "남성기모바지",
+      "keyword": "남자바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "탑텐",
@@ -88,18 +88,18 @@
       "change": null
     },
     {
-      "keyword": "티셔츠",
-      "cat": "상의",
-      "catColor": "#4ECDC4",
-      "rank": 3,
-      "change": null
-    },
-    {
       "keyword": "후드티",
       "cat": "상의",
       "catColor": "#4ECDC4",
+      "rank": 3,
+      "change": 1
+    },
+    {
+      "keyword": "티셔츠",
+      "cat": "상의",
+      "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": -1
     },
     {
       "keyword": "남자긴팔티",
@@ -116,11 +116,11 @@
       "change": null
     },
     {
-      "keyword": "남자바지",
+      "keyword": "남성기모바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 7,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "바지",
@@ -130,11 +130,11 @@
       "change": null
     },
     {
-      "keyword": "남성기모바지",
+      "keyword": "남자바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "탑텐",
