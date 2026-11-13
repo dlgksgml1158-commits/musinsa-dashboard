@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T20:41:30.499372+00:00",
+  "updatedAt": "2026-11-13T05:07:56.333937+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,38 +13,38 @@
     },
     {
       "rank": 3,
-      "keyword": "코트",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 4,
       "keyword": "니트",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 5,
-      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 4,
+      "keyword": "코트",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
+      "rank": 6,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "후드집업",
-      "rankIncrement": 1
+      "keyword": "어그",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "비니",
-      "rankIncrement": -1
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 2
     },
     {
       "rank": 9,
-      "keyword": "무스탕",
-      "rankIncrement": 4
+      "keyword": "후드집업",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "카드지갑",
-      "rankIncrement": 168
+      "keyword": "남자 가방",
+      "rankIncrement": 120
     },
     {
       "rank": 2,
-      "keyword": "부츠컷",
-      "rankIncrement": 189
+      "keyword": "리복",
+      "rankIncrement": 180
     },
     {
       "rank": 3,
-      "keyword": "지갑",
-      "rankIncrement": 159
+      "keyword": "나시",
+      "rankIncrement": 134
     },
     {
       "rank": 4,
-      "keyword": "카고바지",
-      "rankIncrement": 204
+      "keyword": "목폴라",
+      "rankIncrement": 277
     },
     {
       "rank": 5,
-      "keyword": "구스다운패딩",
-      "rankIncrement": 111
+      "keyword": "포터리",
+      "rankIncrement": 187
     },
     {
       "rank": 6,
-      "keyword": "혼다",
-      "rankIncrement": 222
+      "keyword": "머슬핏",
+      "rankIncrement": 141
     },
     {
       "rank": 7,
-      "keyword": "패딩자켓",
-      "rankIncrement": 116
+      "keyword": "스노우피크",
+      "rankIncrement": 166
     },
     {
       "rank": 8,
-      "keyword": "크롭 후드티",
-      "rankIncrement": 243
+      "keyword": "경량",
+      "rankIncrement": 237
     },
     {
       "rank": 9,
-      "keyword": "반바지",
-      "rankIncrement": 248
+      "keyword": "캘빈클라인",
+      "rankIncrement": 135
     },
     {
       "rank": 10,
-      "keyword": "카시오",
-      "rankIncrement": 116
+      "keyword": "크롭 니트",
+      "rankIncrement": 102
     }
   ]
 }
