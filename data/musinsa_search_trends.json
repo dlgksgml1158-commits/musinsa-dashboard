@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T16:52:06.329264+00:00",
+  "updatedAt": "2026-11-13T20:22:46.739556+00:00",
   "popular": [
     {
       "rank": 1,
@@ -29,79 +29,79 @@
     {
       "rank": 6,
       "keyword": "후리스",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 7,
       "keyword": "후드집업",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 8,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 9,
       "keyword": "비니",
-      "rankIncrement": 1
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "어그",
-      "rankIncrement": -1
+      "keyword": "바지",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파우치",
-      "rankIncrement": 136
+      "keyword": "브론슨",
+      "rankIncrement": 123
     },
     {
       "rank": 2,
-      "keyword": "기모 맨투맨",
-      "rankIncrement": 121
+      "keyword": "아디다스 신발",
+      "rankIncrement": 133
     },
     {
       "rank": 3,
-      "keyword": "르아브",
-      "rankIncrement": 161
+      "keyword": "신칠라",
+      "rankIncrement": 313
     },
     {
       "rank": 4,
-      "keyword": "블랙야크 스톤마스터",
-      "rankIncrement": 113
+      "keyword": "브라",
+      "rankIncrement": 190
     },
     {
       "rank": 5,
-      "keyword": "기모 후드집업",
-      "rankIncrement": 101
+      "keyword": "노티카",
+      "rankIncrement": 192
     },
     {
       "rank": 6,
-      "keyword": "킨",
-      "rankIncrement": 113
+      "keyword": "수아레 경량패딩",
+      "rankIncrement": 109
     },
     {
       "rank": 7,
-      "keyword": "남자 가디건",
-      "rankIncrement": 213
+      "keyword": "폰케이스",
+      "rankIncrement": 131
     },
     {
       "rank": 8,
-      "keyword": "레이어드 롱슬리브",
-      "rankIncrement": 119
+      "keyword": "고어텍스",
+      "rankIncrement": 245
     },
     {
       "rank": 9,
-      "keyword": "더바넷",
-      "rankIncrement": 226
+      "keyword": "도프제이슨",
+      "rankIncrement": 255
     },
     {
       "rank": 10,
-      "keyword": "유니온블루",
-      "rankIncrement": 144
+      "keyword": "후디",
+      "rankIncrement": 155
     }
   ]
 }
