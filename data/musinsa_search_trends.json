@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T04:58:35.523580+00:00",
+  "updatedAt": "2026-11-14T11:13:56.236590+00:00",
   "popular": [
     {
       "rank": 1,
@@ -29,21 +29,21 @@
     {
       "rank": 6,
       "keyword": "후리스",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "맨투맨",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "어그",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
+      "keyword": "어그",
       "rankIncrement": 0
     },
     {
@@ -55,53 +55,53 @@
   "rising": [
     {
       "rank": 1,
-      "keyword": "점퍼",
-      "rankIncrement": 128
-    },
-    {
-      "rank": 2,
-      "keyword": "신칠라",
-      "rankIncrement": 114
-    },
-    {
-      "rank": 3,
-      "keyword": "세터",
-      "rankIncrement": 126
-    },
-    {
-      "rank": 4,
-      "keyword": "아노락",
+      "keyword": "리버시블",
       "rankIncrement": 136
     },
     {
+      "rank": 2,
+      "keyword": "발마칸",
+      "rankIncrement": 128
+    },
+    {
+      "rank": 3,
+      "keyword": "컬럼비아",
+      "rankIncrement": 171
+    },
+    {
+      "rank": 4,
+      "keyword": "라코스테",
+      "rankIncrement": 142
+    },
+    {
       "rank": 5,
-      "keyword": "치노팬츠",
-      "rankIncrement": 118
+      "keyword": "아식스 젤카야노 14",
+      "rankIncrement": 114
     },
     {
       "rank": 6,
-      "keyword": "무센트",
-      "rankIncrement": 120
+      "keyword": "acg",
+      "rankIncrement": 122
     },
     {
       "rank": 7,
-      "keyword": "퀼팅자켓",
-      "rankIncrement": 132
+      "keyword": "누녹",
+      "rankIncrement": 374
     },
     {
       "rank": 8,
-      "keyword": "배드블러드",
-      "rankIncrement": 151
+      "keyword": "로라로라",
+      "rankIncrement": 122
     },
     {
       "rank": 9,
-      "keyword": "노스페이스 벤투스",
-      "rankIncrement": 178
+      "keyword": "브이넥",
+      "rankIncrement": 608
     },
     {
       "rank": 10,
-      "keyword": "cp컴퍼니",
-      "rankIncrement": 195
+      "keyword": "무신사 스탠다드 패딩",
+      "rankIncrement": 189
     }
   ]
 }
