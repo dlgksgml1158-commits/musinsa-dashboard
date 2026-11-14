@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-14T15:25:42.435007+00:00",
+  "updatedAt": "2026-11-14T18:41:29.435397+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,12 +8,12 @@
     },
     {
       "rank": 2,
-      "keyword": "패딩",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "니트",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "후리스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
       "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
-      "rank": 9,
+      "rank": 7,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 2
+    },
+    {
+      "rank": 8,
+      "keyword": "후리스",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "맨투맨",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "마리떼",
-      "rankIncrement": 100
+      "keyword": "블라우스",
+      "rankIncrement": 335
     },
     {
       "rank": 2,
-      "keyword": "잔스포츠",
-      "rankIncrement": 155
+      "keyword": "나이키 에어포스",
+      "rankIncrement": 215
     },
     {
       "rank": 3,
-      "keyword": "더콜디스트모먼트",
-      "rankIncrement": 122
+      "keyword": "스웨터",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "캘빈클라인",
-      "rankIncrement": 133
+      "keyword": "선글라스",
+      "rankIncrement": 104
     },
     {
       "rank": 5,
-      "keyword": "커플링",
-      "rankIncrement": 286
+      "keyword": "로라로라",
+      "rankIncrement": 140
     },
     {
       "rank": 6,
-      "keyword": "갭",
-      "rankIncrement": 131
+      "keyword": "블랙프라이데이",
+      "rankIncrement": 109
     },
     {
       "rank": 7,
-      "keyword": "후브스",
-      "rankIncrement": 103
+      "keyword": "비긴202",
+      "rankIncrement": 166
     },
     {
       "rank": 8,
-      "keyword": "첼시부츠",
-      "rankIncrement": 112
+      "keyword": "노이즈",
+      "rankIncrement": 177
     },
     {
       "rank": 9,
-      "keyword": "야세",
-      "rankIncrement": 136
+      "keyword": "오클리",
+      "rankIncrement": 193
     },
     {
       "rank": 10,
-      "keyword": "털신발",
-      "rankIncrement": 108
+      "keyword": "체크셔츠",
+      "rankIncrement": 141
     }
   ]
 }
