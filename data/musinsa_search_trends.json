@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T04:52:43.550760+00:00",
+  "updatedAt": "2026-11-15T11:46:24.220454+00:00",
   "popular": [
     {
       "rank": 1,
@@ -24,84 +24,84 @@
     {
       "rank": 5,
       "keyword": "코트",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "어그",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 7,
       "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
-      "rank": 8,
+      "rank": 7,
       "keyword": "후리스",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "어그",
+      "rankIncrement": 0
+    },
+    {
       "rank": 9,
-      "keyword": "후드집업",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "바지",
+      "keyword": "후드집업",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "비터셀즈",
-      "rankIncrement": 197
+      "keyword": "나이키 맨투맨",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "코듀로이",
-      "rankIncrement": 174
+      "keyword": "체험단",
+      "rankIncrement": 119
     },
     {
       "rank": 3,
-      "keyword": "하이넥 코트",
-      "rankIncrement": 215
+      "keyword": "토마스모어",
+      "rankIncrement": 118
     },
     {
       "rank": 4,
-      "keyword": "스웨트팬츠",
-      "rankIncrement": 166
+      "keyword": "남자 가방",
+      "rankIncrement": 119
     },
     {
       "rank": 5,
-      "keyword": "와이드 슬랙스",
-      "rankIncrement": 124
+      "keyword": "블라우스",
+      "rankIncrement": 174
     },
     {
       "rank": 6,
-      "keyword": "미쏘 코트",
-      "rankIncrement": 152
+      "keyword": "스커트",
+      "rankIncrement": 247
     },
     {
       "rank": 7,
-      "keyword": "아디다스 바지",
-      "rankIncrement": 112
+      "keyword": "와이드 슬랙스",
+      "rankIncrement": 104
     },
     {
       "rank": 8,
-      "keyword": "엠엘비",
-      "rankIncrement": 126
+      "keyword": "스웨터",
+      "rankIncrement": 158
     },
     {
       "rank": 9,
-      "keyword": "파르티멘토",
-      "rankIncrement": 117
+      "keyword": "폴리스",
+      "rankIncrement": 132
     },
     {
       "rank": 10,
-      "keyword": "데상트",
-      "rankIncrement": 166
+      "keyword": "스케쳐스",
+      "rankIncrement": 135
     }
   ]
 }
