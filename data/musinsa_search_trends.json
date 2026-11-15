@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-15T15:59:07.914407+00:00",
+  "updatedAt": "2026-11-15T19:17:19.218831+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,23 +13,23 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "패딩",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "코트",
       "rankIncrement": 1
     },
     {
-      "rank": 6,
-      "keyword": "맨투맨",
+      "rank": 5,
+      "keyword": "후드티",
       "rankIncrement": -1
+    },
+    {
+      "rank": 6,
+      "keyword": "후드집업",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": 3
     },
     {
       "rank": 9,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "무스탕",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "첼시부츠",
-      "rankIncrement": 105
+      "keyword": "뽀글이",
+      "rankIncrement": 102
     },
     {
       "rank": 2,
-      "keyword": "트릴리온",
+      "keyword": "브론슨",
       "rankIncrement": 103
     },
     {
       "rank": 3,
-      "keyword": "털신발",
-      "rankIncrement": 181
+      "keyword": "파르티멘토",
+      "rankIncrement": 204
     },
     {
       "rank": 4,
-      "keyword": "캐시미어 코트",
-      "rankIncrement": 137
+      "keyword": "뮬",
+      "rankIncrement": 101
     },
     {
       "rank": 5,
-      "keyword": "나이키 에어포스",
-      "rankIncrement": 105
+      "keyword": "스카프",
+      "rankIncrement": 109
     },
     {
       "rank": 6,
-      "keyword": "하이넥",
-      "rankIncrement": 123
+      "keyword": "하프 코트",
+      "rankIncrement": 283
     },
     {
       "rank": 7,
-      "keyword": "아디다스 무스탕",
-      "rankIncrement": 145
+      "keyword": "울 블루종",
+      "rankIncrement": 196
     },
     {
       "rank": 8,
-      "keyword": "머슬핏",
-      "rankIncrement": 113
+      "keyword": "아모우",
+      "rankIncrement": 148
     },
     {
       "rank": 9,
-      "keyword": "하이넥 코트",
-      "rankIncrement": 128
+      "keyword": "베스트",
+      "rankIncrement": 151
     },
     {
       "rank": 10,
-      "keyword": "하이넥 자켓",
-      "rankIncrement": 100
+      "keyword": "기모 팬츠",
+      "rankIncrement": 151
     }
   ]
 }
