@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T22:47:29.703539+00:00",
+  "updatedAt": "2026-11-17T06:36:26.116351+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,12 +8,12 @@
     },
     {
       "rank": 2,
-      "keyword": "니트",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "패딩",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "후리스",
+      "keyword": "코트",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
+      "keyword": "어그",
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "코트",
-      "rankIncrement": 1
+      "keyword": "후리스",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "무신사 스탠다드",
-      "rankIncrement": -2
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
       "keyword": "후드집업",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 10,
       "keyword": "바지",
-      "rankIncrement": 0
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "디스이즈네버댓",
-      "rankIncrement": 210
+      "keyword": "상의",
+      "rankIncrement": 103
     },
     {
       "rank": 2,
-      "keyword": "볼캡",
-      "rankIncrement": 600
+      "keyword": "락피쉬웨더웨어",
+      "rankIncrement": 113
     },
     {
       "rank": 3,
-      "keyword": "경량 패딩",
-      "rankIncrement": 140
+      "keyword": "하이넥",
+      "rankIncrement": 164
     },
     {
       "rank": 4,
-      "keyword": "언더아머",
-      "rankIncrement": 236
+      "keyword": "어그 타스만",
+      "rankIncrement": 111
     },
     {
       "rank": 5,
-      "keyword": "챔피온 콜라보",
-      "rankIncrement": 100
+      "keyword": "남자 패딩",
+      "rankIncrement": 182
     },
     {
       "rank": 6,
-      "keyword": "남자 기모바지",
-      "rankIncrement": 190
+      "keyword": "블랙진",
+      "rankIncrement": 210
     },
     {
       "rank": 7,
-      "keyword": "아이더",
-      "rankIncrement": 118
+      "keyword": "더플백",
+      "rankIncrement": 225
     },
     {
       "rank": 8,
-      "keyword": "에노시",
-      "rankIncrement": 470
+      "keyword": "오클리",
+      "rankIncrement": 166
     },
     {
       "rank": 9,
-      "keyword": "카고팬츠",
-      "rankIncrement": 140
+      "keyword": "경량 패딩",
+      "rankIncrement": 115
     },
     {
       "rank": 10,
-      "keyword": "이미스",
-      "rankIncrement": 110
+      "keyword": "등산화",
+      "rankIncrement": 129
     }
   ]
 }
