@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T06:36:26.116351+00:00",
+  "updatedAt": "2026-11-17T12:48:21.525781+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,12 +8,12 @@
     },
     {
       "rank": 2,
-      "keyword": "패딩",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "니트",
+      "keyword": "패딩",
       "rankIncrement": 0
     },
     {
@@ -23,17 +23,17 @@
     },
     {
       "rank": 5,
-      "keyword": "코트",
+      "keyword": "후리스",
       "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "어그",
+      "keyword": "코트",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "후리스",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 1
+      "keyword": "어그",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "상의",
-      "rankIncrement": 103
+      "keyword": "탑텐 경량패딩",
+      "rankIncrement": 134
     },
     {
       "rank": 2,
-      "keyword": "락피쉬웨더웨어",
-      "rankIncrement": 113
-    },
-    {
-      "rank": 3,
-      "keyword": "하이넥",
-      "rankIncrement": 164
-    },
-    {
-      "rank": 4,
-      "keyword": "어그 타스만",
+      "keyword": "모드나인",
       "rankIncrement": 111
     },
     {
+      "rank": 3,
+      "keyword": "기모 후드티",
+      "rankIncrement": 106
+    },
+    {
+      "rank": 4,
+      "keyword": "메리제인",
+      "rankIncrement": 255
+    },
+    {
       "rank": 5,
-      "keyword": "남자 패딩",
-      "rankIncrement": 182
+      "keyword": "코이세이오",
+      "rankIncrement": 121
     },
     {
       "rank": 6,
-      "keyword": "블랙진",
-      "rankIncrement": 210
+      "keyword": "시어 후디드 라이트 다운 재킷",
+      "rankIncrement": 164
     },
     {
       "rank": 7,
-      "keyword": "더플백",
-      "rankIncrement": 225
+      "keyword": "스컬프터",
+      "rankIncrement": 228
     },
     {
       "rank": 8,
-      "keyword": "오클리",
-      "rankIncrement": 166
+      "keyword": "내셔널지오그래픽",
+      "rankIncrement": 181
     },
     {
       "rank": 9,
-      "keyword": "경량 패딩",
-      "rankIncrement": 115
+      "keyword": "슈펜",
+      "rankIncrement": 157
     },
     {
       "rank": 10,
-      "keyword": "등산화",
-      "rankIncrement": 129
+      "keyword": "젝시믹스",
+      "rankIncrement": 130
     }
   ]
 }
