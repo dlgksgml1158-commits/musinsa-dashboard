@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-11-17T12:48:21.525781+00:00",
+  "updatedAt": "2026-11-17T18:00:18.389760+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "경량패딩",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "니트",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "패딩",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 4,
       "keyword": "후드티",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
-      "keyword": "후리스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
       "keyword": "코트",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "바지",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
+      "rank": 6,
       "keyword": "후드집업",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "후리스",
       "rankIncrement": 1
     },
     {
+      "rank": 8,
+      "keyword": "바지",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 9,
+      "keyword": "맨투맨",
+      "rankIncrement": -2
+    },
+    {
       "rank": 10,
-      "keyword": "어그",
-      "rankIncrement": -1
+      "keyword": "비니",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "탑텐 경량패딩",
-      "rankIncrement": 134
+      "keyword": "키뮤어",
+      "rankIncrement": 105
     },
     {
       "rank": 2,
-      "keyword": "모드나인",
-      "rankIncrement": 111
+      "keyword": "다이브인",
+      "rankIncrement": 113
     },
     {
       "rank": 3,
-      "keyword": "기모 후드티",
-      "rankIncrement": 106
+      "keyword": "하이넥",
+      "rankIncrement": 172
     },
     {
       "rank": 4,
-      "keyword": "메리제인",
-      "rankIncrement": 255
+      "keyword": "더플백",
+      "rankIncrement": 142
     },
     {
       "rank": 5,
-      "keyword": "코이세이오",
-      "rankIncrement": 121
+      "keyword": "스카프",
+      "rankIncrement": 109
     },
     {
       "rank": 6,
-      "keyword": "시어 후디드 라이트 다운 재킷",
-      "rankIncrement": 164
+      "keyword": "모드나인",
+      "rankIncrement": 112
     },
     {
       "rank": 7,
-      "keyword": "스컬프터",
-      "rankIncrement": 228
+      "keyword": "노이어",
+      "rankIncrement": 259
     },
     {
       "rank": 8,
-      "keyword": "내셔널지오그래픽",
-      "rankIncrement": 181
+      "keyword": "하이넥 코트",
+      "rankIncrement": 110
     },
     {
       "rank": 9,
-      "keyword": "슈펜",
-      "rankIncrement": 157
+      "keyword": "레이어드",
+      "rankIncrement": 112
     },
     {
       "rank": 10,
-      "keyword": "젝시믹스",
-      "rankIncrement": 130
+      "keyword": "아노락",
+      "rankIncrement": 201
     }
   ]
 }
