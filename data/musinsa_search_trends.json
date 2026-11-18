@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T17:42:01.690634+00:00",
+  "updatedAt": "2026-11-18T21:09:41.050570+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "니트",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 3,
       "keyword": "경량패딩",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 4,
-      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 3,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 4,
       "keyword": "코트",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "맨투맨",
+      "rank": 5,
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
+      "rank": 6,
       "keyword": "후드집업",
-      "rankIncrement": 1
+      "rankIncrement": 3
+    },
+    {
+      "rank": 7,
+      "keyword": "어그",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": 3
+      "keyword": "스타벅스",
+      "rankIncrement": 6
     },
     {
       "rank": 9,
       "keyword": "후리스",
-      "rankIncrement": -2
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "어그",
-      "rankIncrement": -1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "챔피온",
-      "rankIncrement": 167
-    },
-    {
-      "rank": 2,
-      "keyword": "플리스 팬츠",
-      "rankIncrement": 109
-    },
-    {
-      "rank": 3,
-      "keyword": "글로니",
-      "rankIncrement": 143
-    },
-    {
-      "rank": 4,
-      "keyword": "푸마",
-      "rankIncrement": 143
-    },
-    {
-      "rank": 5,
-      "keyword": "유니온블루",
+      "keyword": "잠옷",
       "rankIncrement": 132
     },
     {
+      "rank": 2,
+      "keyword": "데님",
+      "rankIncrement": 138
+    },
+    {
+      "rank": 3,
+      "keyword": "무진장",
+      "rankIncrement": 114
+    },
+    {
+      "rank": 4,
+      "keyword": "젠플록스 아워데이즈",
+      "rankIncrement": 137
+    },
+    {
+      "rank": 5,
+      "keyword": "키티",
+      "rankIncrement": 328
+    },
+    {
       "rank": 6,
-      "keyword": "에어포스",
-      "rankIncrement": 141
+      "keyword": "패딩코트",
+      "rankIncrement": 173
     },
     {
       "rank": 7,
-      "keyword": "킨",
-      "rankIncrement": 169
+      "keyword": "플리스 자켓",
+      "rankIncrement": 105
     },
     {
       "rank": 8,
-      "keyword": "지오다노",
-      "rankIncrement": 143
+      "keyword": "스파오 경량패딩",
+      "rankIncrement": 111
     },
     {
       "rank": 9,
-      "keyword": "니트 가디건",
-      "rankIncrement": 133
+      "keyword": "젠플록스",
+      "rankIncrement": 267
     },
     {
       "rank": 10,
-      "keyword": "리버시블 무스탕",
-      "rankIncrement": 585
+      "keyword": "내복",
+      "rankIncrement": 151
     }
   ]
 }
