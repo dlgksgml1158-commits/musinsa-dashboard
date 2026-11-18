@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T12:40:57.222960+00:00",
+  "updatedAt": "2026-11-18T17:42:01.690634+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,13 +8,13 @@
     },
     {
       "rank": 2,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": 1
     },
     {
       "rank": 3,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "경량패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
@@ -29,79 +29,79 @@
     {
       "rank": 6,
       "keyword": "맨투맨",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "후리스",
-      "rankIncrement": -1
+      "keyword": "후드집업",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 3
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "후리스",
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "비니",
-      "rankIncrement": 0
+      "keyword": "어그",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파자마",
-      "rankIncrement": 102
+      "keyword": "챔피온",
+      "rankIncrement": 167
     },
     {
       "rank": 2,
-      "keyword": "나이키 맨투맨",
-      "rankIncrement": 106
+      "keyword": "플리스 팬츠",
+      "rankIncrement": 109
     },
     {
       "rank": 3,
-      "keyword": "에잇세컨즈",
-      "rankIncrement": 106
+      "keyword": "글로니",
+      "rankIncrement": 143
     },
     {
       "rank": 4,
-      "keyword": "코듀로이 자켓",
-      "rankIncrement": 272
+      "keyword": "푸마",
+      "rankIncrement": 143
     },
     {
       "rank": 5,
-      "keyword": "여성패딩",
-      "rankIncrement": 101
+      "keyword": "유니온블루",
+      "rankIncrement": 132
     },
     {
       "rank": 6,
-      "keyword": "털슬리퍼",
-      "rankIncrement": 193
+      "keyword": "에어포스",
+      "rankIncrement": 141
     },
     {
       "rank": 7,
-      "keyword": "조끼패딩",
-      "rankIncrement": 142
+      "keyword": "킨",
+      "rankIncrement": 169
     },
     {
       "rank": 8,
-      "keyword": "포터리",
-      "rankIncrement": 123
+      "keyword": "지오다노",
+      "rankIncrement": 143
     },
     {
       "rank": 9,
-      "keyword": "치이카와",
-      "rankIncrement": 146
+      "keyword": "니트 가디건",
+      "rankIncrement": 133
     },
     {
       "rank": 10,
-      "keyword": "키링",
-      "rankIncrement": 114
+      "keyword": "리버시블 무스탕",
+      "rankIncrement": 585
     }
   ]
 }
