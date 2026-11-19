@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T05:57:33.219428+00:00",
+  "updatedAt": "2026-11-19T12:31:26.361340+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,17 +13,17 @@
     },
     {
       "rank": 3,
-      "keyword": "스타벅스",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
       "keyword": "니트",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 5,
+      "keyword": "코트",
       "rankIncrement": 0
     },
     {
@@ -33,13 +33,13 @@
     },
     {
       "rank": 7,
-      "keyword": "코트",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "후리스",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 9,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "무스탕",
+      "keyword": "롱패딩",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "무신사",
-      "rankIncrement": 113
+      "keyword": "하이큐",
+      "rankIncrement": 170
     },
     {
       "rank": 2,
-      "keyword": "ma-1",
-      "rankIncrement": 177
+      "keyword": "츄리닝 바지",
+      "rankIncrement": 204
     },
     {
       "rank": 3,
-      "keyword": "산산기어",
-      "rankIncrement": 115
+      "keyword": "무센트",
+      "rankIncrement": 158
     },
     {
       "rank": 4,
-      "keyword": "스니커즈",
-      "rankIncrement": 117
+      "keyword": "남자 가디건",
+      "rankIncrement": 159
     },
     {
       "rank": 5,
-      "keyword": "마리떼",
-      "rankIncrement": 163
+      "keyword": "캘빈클라인 패딩",
+      "rankIncrement": 127
     },
     {
       "rank": 6,
-      "keyword": "아디다스 바지",
-      "rankIncrement": 147
+      "keyword": "무신사 패딩",
+      "rankIncrement": 212
     },
     {
       "rank": 7,
-      "keyword": "토트백",
-      "rankIncrement": 283
+      "keyword": "나이키 acg",
+      "rankIncrement": 100
     },
     {
       "rank": 8,
-      "keyword": "리바이스",
-      "rankIncrement": 165
+      "keyword": "슬리브",
+      "rankIncrement": 100
     },
     {
       "rank": 9,
-      "keyword": "츄리닝",
-      "rankIncrement": 175
+      "keyword": "패딩슬리퍼",
+      "rankIncrement": 102
     },
     {
       "rank": 10,
-      "keyword": "비터셀즈",
-      "rankIncrement": 101
+      "keyword": "슈프림",
+      "rankIncrement": 149
     }
   ]
 }
