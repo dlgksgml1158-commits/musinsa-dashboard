@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T12:31:32.345650+00:00",
+  "updatedAt": "2026-11-20T17:26:18.082478+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,12 +8,12 @@
     },
     {
       "rank": 2,
-      "keyword": "경량패딩",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "니트",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "코트",
+      "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "롱패딩",
-      "rankIncrement": 0
+      "keyword": "어그",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "코트",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "롱패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 9,
       "keyword": "바지",
-      "rankIncrement": 3
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "후리스",
-      "rankIncrement": -1
+      "keyword": "비니",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "지오다노",
-      "rankIncrement": 120
+      "keyword": "스파오 패딩",
+      "rankIncrement": 123
     },
     {
       "rank": 2,
-      "keyword": "퍼 패딩",
-      "rankIncrement": 149
+      "keyword": "아이더 패딩",
+      "rankIncrement": 193
     },
     {
       "rank": 3,
-      "keyword": "락피쉬웨더웨어",
-      "rankIncrement": 128
+      "keyword": "뉴에라",
+      "rankIncrement": 100
     },
     {
       "rank": 4,
-      "keyword": "귀걸이",
-      "rankIncrement": 191
+      "keyword": "아캄 챔피온",
+      "rankIncrement": 180
     },
     {
       "rank": 5,
-      "keyword": "로맨틱무브",
-      "rankIncrement": 143
+      "keyword": "하프 코트",
+      "rankIncrement": 189
     },
     {
       "rank": 6,
-      "keyword": "워커",
-      "rankIncrement": 110
+      "keyword": "커플링",
+      "rankIncrement": 147
     },
     {
       "rank": 7,
-      "keyword": "키즈패딩",
-      "rankIncrement": 154
+      "keyword": "썬러브",
+      "rankIncrement": 187
     },
     {
       "rank": 8,
-      "keyword": "비비안 웨스트우드",
-      "rankIncrement": 169
+      "keyword": "군밤모자",
+      "rankIncrement": 118
     },
     {
       "rank": 9,
-      "keyword": "단톤",
-      "rankIncrement": 218
+      "keyword": "남자 아우터",
+      "rankIncrement": 119
     },
     {
       "rank": 10,
-      "keyword": "더콜디스트모먼트",
-      "rankIncrement": 184
+      "keyword": "블랙야크 스톤마스터",
+      "rankIncrement": 201
     }
   ]
 }
