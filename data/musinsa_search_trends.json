@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T17:26:18.082478+00:00",
+  "updatedAt": "2026-11-20T21:03:06.532091+00:00",
   "popular": [
     {
       "rank": 1,
@@ -18,90 +18,90 @@
     },
     {
       "rank": 4,
-      "keyword": "후드티",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "코트",
       "rankIncrement": 1
     },
     {
-      "rank": 6,
-      "keyword": "어그",
+      "rank": 5,
+      "keyword": "후드티",
       "rankIncrement": -1
     },
     {
+      "rank": 6,
+      "keyword": "롱패딩",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "맨투맨",
+      "keyword": "무스탕",
       "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "롱패딩",
+      "keyword": "어그",
       "rankIncrement": -1
     },
     {
       "rank": 9,
-      "keyword": "바지",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "비니",
-      "rankIncrement": 1
+      "keyword": "바지",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스파오 패딩",
-      "rankIncrement": 123
+      "keyword": "파자마",
+      "rankIncrement": 139
     },
     {
       "rank": 2,
-      "keyword": "아이더 패딩",
-      "rankIncrement": 193
+      "keyword": "살로몬",
+      "rankIncrement": 249
     },
     {
       "rank": 3,
-      "keyword": "뉴에라",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 4,
-      "keyword": "아캄 챔피온",
-      "rankIncrement": 180
-    },
-    {
-      "rank": 5,
-      "keyword": "하프 코트",
-      "rankIncrement": 189
-    },
-    {
-      "rank": 6,
-      "keyword": "커플링",
-      "rankIncrement": 147
-    },
-    {
-      "rank": 7,
-      "keyword": "썬러브",
+      "keyword": "파타고니아",
       "rankIncrement": 187
     },
     {
+      "rank": 4,
+      "keyword": "겨울모자",
+      "rankIncrement": 164
+    },
+    {
+      "rank": 5,
+      "keyword": "플리스 팬츠",
+      "rankIncrement": 100
+    },
+    {
+      "rank": 6,
+      "keyword": "브론슨",
+      "rankIncrement": 133
+    },
+    {
+      "rank": 7,
+      "keyword": "트레이닝 셋업",
+      "rankIncrement": 141
+    },
+    {
       "rank": 8,
-      "keyword": "군밤모자",
-      "rankIncrement": 118
+      "keyword": "기모 후드티",
+      "rankIncrement": 161
     },
     {
       "rank": 9,
-      "keyword": "남자 아우터",
-      "rankIncrement": 119
+      "keyword": "패딩코트",
+      "rankIncrement": 288
     },
     {
       "rank": 10,
-      "keyword": "블랙야크 스톤마스터",
-      "rankIncrement": 201
+      "keyword": "캐리어",
+      "rankIncrement": 103
     }
   ]
 }
