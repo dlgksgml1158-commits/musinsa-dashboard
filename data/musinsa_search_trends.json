@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T16:30:29.335489+00:00",
+  "updatedAt": "2026-11-21T19:59:28.599201+00:00",
   "popular": [
     {
       "rank": 1,
@@ -19,89 +19,89 @@
     {
       "rank": 4,
       "keyword": "경량패딩",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 5,
       "keyword": "코트",
-      "rankIncrement": 1
+      "rankIncrement": -1
     },
     {
       "rank": 6,
       "keyword": "어그",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "비니",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "무스탕",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "무스탕",
-      "rankIncrement": 0
+      "keyword": "바지",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "잔스포츠",
-      "rankIncrement": 101
+      "keyword": "스투시",
+      "rankIncrement": 119
     },
     {
       "rank": 2,
-      "keyword": "코이세이오",
-      "rankIncrement": 132
+      "keyword": "아크테릭스",
+      "rankIncrement": 104
     },
     {
       "rank": 3,
-      "keyword": "치마",
-      "rankIncrement": 132
+      "keyword": "노이어",
+      "rankIncrement": 110
     },
     {
       "rank": 4,
-      "keyword": "남자 바지",
-      "rankIncrement": 123
+      "keyword": "남자 맨투맨",
+      "rankIncrement": 135
     },
     {
       "rank": 5,
-      "keyword": "퍼 자켓",
-      "rankIncrement": 103
+      "keyword": "블레이저",
+      "rankIncrement": 142
     },
     {
       "rank": 6,
-      "keyword": "기모 청바지",
-      "rankIncrement": 106
+      "keyword": "인사일런스",
+      "rankIncrement": 146
     },
     {
       "rank": 7,
       "keyword": "휠라",
-      "rankIncrement": 110
+      "rankIncrement": 106
     },
     {
       "rank": 8,
-      "keyword": "파우치",
-      "rankIncrement": 130
+      "keyword": "하이넥 코트",
+      "rankIncrement": 108
     },
     {
       "rank": 9,
-      "keyword": "봄버",
-      "rankIncrement": 102
+      "keyword": "아미",
+      "rankIncrement": 114
     },
     {
       "rank": 10,
-      "keyword": "폴리스",
-      "rankIncrement": 103
+      "keyword": "아디다스 패딩",
+      "rankIncrement": 185
     }
   ]
 }

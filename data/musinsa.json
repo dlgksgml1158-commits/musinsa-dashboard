@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-11-21T16:29:42.910973+00:00",
+  "updatedAt": "2026-11-21T19:58:41.187911+00:00",
   "items": [
     {
       "rank": 1,
@@ -4388,21 +4388,6 @@
       },
       {
         "rank": 22,
-        "id": "ms-5941781",
-        "brand": "트릴리온",
-        "name": "스트레이트 워싱 데님 팬츠_5color",
-        "price": 49800,
-        "originalPrice": 49800,
-        "discountRate": 70,
-        "finalPrice": 14970,
-        "category": "003001",
-        "categoryLabel": "데님 팬츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20260127/5941781/5941781_17695901084152_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/5941781",
-        "change": 0
-      },
-      {
-        "rank": 23,
         "id": "ms-7599494",
         "brand": "디스이즈네버댓",
         "name": "60 Selvedge Denim Pant One Wash",
@@ -4414,10 +4399,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261023/7599494/7599494_17927205847591_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7599494",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-4909307",
         "brand": "유라이프지",
         "name": "노멀 우먼 와이드 데님 팬츠 6 Color [ULZD_1001]",
@@ -4429,10 +4414,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250318/4909307/4909307_17896056158998_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4909307",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-3076306",
         "brand": "밀로 아카이브",
         "name": "리플렉트 커브드 팬츠 [블랙]",
@@ -4444,10 +4429,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230210/3076306/3076306_16762672518722_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3076306",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-5717317",
         "brand": "워크온바디오프",
         "name": "[패션플래닛PICK] [사계절/기모] 에즈 릴렉스 세미 와이드 데님 팬츠 (12color)",
@@ -4459,10 +4444,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251111/5717317/5717317_17918569973877_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5717317",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-3779120",
         "brand": "무신사 스탠다드",
         "name": "와이드 멀티 포켓 카고 데님 팬츠 [워시드 블랙]",
@@ -4474,10 +4459,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240105/3779120/3779120_17297486278747_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3779120",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-5266007",
         "brand": "엑스톤즈",
         "name": "XP172 빅 와이드 벌룬 데님 팬츠 (INDIGO)",
@@ -4489,10 +4474,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250723/5266007/5266007_17677663743799_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5266007",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-5487571",
         "brand": "밀리언코르",
         "name": "포미 다크블루 스판 부츠컷 데님팬츠",
@@ -4504,10 +4489,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250918/5487571/5487571_17810604748080_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5487571",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-5627721",
         "brand": "낫유즈얼",
         "name": "유즈얼 와이드 데님 팬츠_[D.BLUE]",
@@ -4519,7 +4504,22 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251022/5627721/5627721_17732844283701_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5627721",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-2823284",
+        "brand": "무신사 스탠다드",
+        "name": "벨티드 세미 벌룬 데님 팬츠 [로우 블랙]",
+        "price": 56900,
+        "originalPrice": 56900,
+        "discountRate": 89,
+        "finalPrice": 5990,
+        "category": "003001",
+        "categoryLabel": "데님 팬츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20220927/2823284/2823284_16733393488071_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/2823284",
+        "change": "NEW"
       }
     ],
     "003002": [
@@ -5153,7 +5153,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260727/6930802/6930802_17923930772644_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6930802",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 13,
@@ -5168,7 +5168,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240528/4161068/4161068_17187665436828_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4161068",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 14,
@@ -5183,7 +5183,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260930/7430105/7430105_17924943857724_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7430105",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 15,
@@ -5198,7 +5198,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261016/7543884/7543884_17921391645282_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7543884",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 16,
@@ -5213,7 +5213,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260106/5872180/5872180_17677532970518_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5872180",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 17,
@@ -5228,7 +5228,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260325/6193410/6193410_17899687826216_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6193410",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 18,
@@ -5243,7 +5243,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261016/7544432/7544432_17939515995570_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7544432",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 19,
@@ -5258,7 +5258,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261021/7573815/7573815_17925599494235_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7573815",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 20,
@@ -5273,7 +5273,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261102/7676504/7676504_17935822984624_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7676504",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 21,
@@ -5288,7 +5288,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7670626/7670626_17933529400693_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7670626",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 22,
@@ -5303,7 +5303,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261023/7601933/7601933_17927322828383_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7601933",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 23,
@@ -5318,7 +5318,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261027/7632898/7632898_17936057364069_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7632898",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -5333,7 +5333,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261001/7436276/7436276_17931646712859_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7436276",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -5348,7 +5348,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261020/7569347/7569347_17935860550674_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7569347",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -5363,7 +5363,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261028/7646465/7646465_17932588820668_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7646465",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -5378,7 +5378,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261028/7643086/7643086_17931682415283_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7643086",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -5393,7 +5393,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261021/7573818/7573818_17925579811918_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7573818",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -5408,7 +5408,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261106/7727262/7727262_17939402559735_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7727262",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -5423,7 +5423,7 @@
         "categoryLabel": "트레이닝/조거",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260907/7261859/7261859_17888496875997_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7261859",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "003005": [
@@ -5938,8 +5938,8 @@
     },
     "003001": {
       "label": "데님 팬츠",
-      "avg": 68281,
-      "min": 9900,
+      "avg": 67981,
+      "min": 5990,
       "max": 339000,
       "count": 30
     },
