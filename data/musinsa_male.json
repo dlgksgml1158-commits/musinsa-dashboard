@@ -1,6 +1,6 @@
 {
   "platform": "musinsa_male",
-  "updatedAt": "2026-11-20T21:02:27.646151+00:00",
+  "updatedAt": "2026-11-21T05:40:38.853635+00:00",
   "items": [
     {
       "rank": 1,
@@ -205,7 +205,7 @@
       "price": 79000,
       "originalPrice": 79000,
       "discountRate": 84,
-      "finalPrice": 12710,
+      "finalPrice": 12700,
       "category": "001003",
       "categoryLabel": "맨투맨/스웨트",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20240816/4335513/4335513_17260404158725_500.jpg",
@@ -1382,7 +1382,7 @@
         "price": 79000,
         "originalPrice": 79000,
         "discountRate": 84,
-        "finalPrice": 12710,
+        "finalPrice": 12700,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240816/4335513/4335513_17260404158725_500.jpg",
@@ -2008,21 +2008,6 @@
       },
       {
         "rank": 14,
-        "id": "ms-2803351",
-        "brand": "컬럼비아 유니버시티",
-        "name": "CU PHYS.ED. LOGO FLEECE HOODY 블랙",
-        "price": 79000,
-        "originalPrice": 79000,
-        "discountRate": 63,
-        "finalPrice": 29000,
-        "category": "001004",
-        "categoryLabel": "후드 티셔츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20220919/2803351/2803351_17241428495980_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/2803351",
-        "change": 0
-      },
-      {
-        "rank": 15,
         "id": "ms-7458680",
         "brand": "라퍼",
         "name": "리트와메트 시그니처 모먼츠 후드 - 블랙",
@@ -2034,10 +2019,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261006/7458680/7458680_17914454044434_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7458680",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-1615829",
         "brand": "제멋",
         "name": "로그 오버핏 기모 후드 그레이 YHHD2302",
@@ -2049,10 +2034,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20200922/1615829/1615829_1_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1615829",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-4284616",
         "brand": "엑스오엑스",
         "name": "세미 오버핏 후드 스웻 셔츠 [BLACK]",
@@ -2064,10 +2049,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240731/4284616/4284616_17884211286151_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4284616",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-7561211",
         "brand": "원헌드레드퍼센트",
         "name": "OHPxMOAI b어쎄신and걸 피그먼트 후드",
@@ -2079,10 +2064,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261020/7561211/7561211_17924629151209_500.png",
         "productUrl": "https://www.musinsa.com/products/7561211",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-4342727",
         "brand": "고스트리퍼블릭",
         "name": "타이푼 스포티 배색 후드티 GHT-482",
@@ -2094,10 +2079,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240819/4342727/4342727_17289532339728_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4342727",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-7590931",
         "brand": "후브스",
         "name": "피치 웜 후드 롱슬리브 [그레이]",
@@ -2109,10 +2094,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261022/7590931/7590931_17932561687741_500.png",
         "productUrl": "https://www.musinsa.com/products/7590931",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-7653116",
         "brand": "1989스탠다드",
         "name": "CAT CHEESE 후드 (STHSTD-0279)",
@@ -2124,10 +2109,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7653116/7653116_17941911997789_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7653116",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-5701357",
         "brand": "에드리엘로스",
         "name": "커버 스웻 후드 [블랙]",
@@ -2139,10 +2124,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251107/5701357/5701357_17630245416522_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5701357",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-7347618",
         "brand": "퍼스텝",
         "name": "인버스 와플 레이어 후드 블랙 HSHD4782",
@@ -2154,10 +2139,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260916/7347618/7347618_17905740111847_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7347618",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-7337509",
         "brand": "디미트리블랙",
         "name": "VLAD 바라클라바 플리스 풀오버_3 COLOR",
@@ -2169,10 +2154,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260915/7337509/7337509_17924648244672_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7337509",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-4385282",
         "brand": "아메스 월드와이드",
         "name": "BASIC LOGO HOODIE NAVY",
@@ -2184,10 +2169,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240829/4385282/4385282_17720841345739_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4385282",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-2112558",
         "brand": "에즈카톤",
         "name": "유니온 후드 블랙 KMHD6617",
@@ -2199,10 +2184,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210907/2112558/2112558_1_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2112558",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-4735383",
         "brand": "디스이즈네버댓",
         "name": "Quarter Button Hoodie Steel Blue",
@@ -2214,10 +2199,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250122/4735383/4735383_17386556708153_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4735383",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-7415334",
         "brand": "브렌슨",
         "name": "780g 블리치 크롭 후드티 ( 페이디드 네이비 )",
@@ -2229,10 +2214,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260929/7415334/7415334_17943791899968_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7415334",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-7217502",
         "brand": "요세미티",
         "name": "아노락 레더패치 세미크롭 후드티 3Color YHT-4Y08",
@@ -2244,10 +2229,10 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260901/7217502/7217502_17894516127415_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7217502",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-4829401",
         "brand": "엘런아시",
         "name": "체크무늬고양이 오버핏 후드티",
@@ -2259,7 +2244,22 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250225/4829401/4829401_17404619374342_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4829401",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-4698056",
+        "brand": "그루브라임",
+        "name": "유니) C100 3단쭈리 -  LOCATION 후드 (세미오버핏) [LRARCTH732P]",
+        "price": 69000,
+        "originalPrice": 69000,
+        "discountRate": 57,
+        "finalPrice": 29900,
+        "category": "001004",
+        "categoryLabel": "후드 티셔츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20250103/4698056/4698056_17663827453347_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/4698056",
+        "change": "NEW"
       }
     ],
     "001005": [
@@ -5630,7 +5630,7 @@
         "price": 79000,
         "originalPrice": 79000,
         "discountRate": 84,
-        "finalPrice": 12710,
+        "finalPrice": 12700,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240816/4335513/4335513_17260404158725_500.jpg",

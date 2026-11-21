@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T21:03:06.532091+00:00",
+  "updatedAt": "2026-11-21T05:41:18.539843+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 4,
-      "keyword": "코트",
-      "rankIncrement": 1
+      "keyword": "어그",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
       "keyword": "후드티",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "롱패딩",
+      "keyword": "코트",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "무스탕",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 8,
-      "keyword": "어그",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 9,
-      "keyword": "후드집업",
+      "keyword": "롱패딩",
       "rankIncrement": 0
     },
     {
-      "rank": 10,
+      "rank": 8,
+      "keyword": "맨투맨",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 9,
       "keyword": "바지",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 10,
+      "keyword": "무스탕",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파자마",
-      "rankIncrement": 139
+      "keyword": "디미트리블랙",
+      "rankIncrement": 138
     },
     {
       "rank": 2,
-      "keyword": "살로몬",
-      "rankIncrement": 249
+      "keyword": "스카프",
+      "rankIncrement": 171
     },
     {
       "rank": 3,
-      "keyword": "파타고니아",
-      "rankIncrement": 187
+      "keyword": "베스트",
+      "rankIncrement": 120
     },
     {
       "rank": 4,
-      "keyword": "겨울모자",
-      "rankIncrement": 164
+      "keyword": "남자 바지",
+      "rankIncrement": 126
     },
     {
       "rank": 5,
-      "keyword": "플리스 팬츠",
-      "rankIncrement": 100
+      "keyword": "와이드 슬랙스",
+      "rankIncrement": 139
     },
     {
       "rank": 6,
-      "keyword": "브론슨",
-      "rankIncrement": 133
+      "keyword": "무신사 스탠다드 패딩",
+      "rankIncrement": 114
     },
     {
       "rank": 7,
-      "keyword": "트레이닝 셋업",
-      "rankIncrement": 141
+      "keyword": "오프숄더",
+      "rankIncrement": 174
     },
     {
       "rank": 8,
-      "keyword": "기모 후드티",
-      "rankIncrement": 161
+      "keyword": "시에라디자인",
+      "rankIncrement": 105
     },
     {
       "rank": 9,
-      "keyword": "패딩코트",
-      "rankIncrement": 288
+      "keyword": "최저가 도전",
+      "rankIncrement": 131
     },
     {
       "rank": 10,
-      "keyword": "캐리어",
-      "rankIncrement": 103
+      "keyword": "기모팬츠",
+      "rankIncrement": 453
     }
   ]
 }

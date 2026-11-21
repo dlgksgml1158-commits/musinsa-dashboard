@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-11-20T21:02:19.632592+00:00",
+  "updatedAt": "2026-11-21T05:40:30.057850+00:00",
   "items": [
     {
       "rank": 1,
@@ -1924,7 +1924,7 @@
         "price": 79000,
         "originalPrice": 79000,
         "discountRate": 84,
-        "finalPrice": 12710,
+        "finalPrice": 12700,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240816/4335513/4335513_17260404158725_500.jpg",
@@ -1998,8 +1998,8 @@
         "name": "로스 맨투맨 - 에크루:카키 / SW0093FAA1M07EECKI",
         "price": 699000,
         "originalPrice": 699000,
-        "discountRate": 64,
-        "finalPrice": 250990,
+        "discountRate": 66,
+        "finalPrice": 238500,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240821/4354748/4354748_17254426890167_500.jpg",
@@ -3137,21 +3137,6 @@
       },
       {
         "rank": 29,
-        "id": "ms-7593787",
-        "brand": "에잇세컨즈",
-        "name": "니트 베스트 패치 체크 블라우스  애쉬",
-        "price": 54900,
-        "originalPrice": 54900,
-        "discountRate": 43,
-        "finalPrice": 31110,
-        "category": "001005",
-        "categoryLabel": "셔츠/블라우스",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20261022/7593787/7593787_17926672751239_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/7593787",
-        "change": 0
-      },
-      {
-        "rank": 30,
         "id": "ms-6270384",
         "brand": "메르고",
         "name": "벨르 코튼 크롭 셔츠 [화이트]",
@@ -3163,7 +3148,22 @@
         "categoryLabel": "셔츠/블라우스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260407/6270384/6270384_17894509878212_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6270384",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-5367157",
+        "brand": "플레이스 스튜디오",
+        "name": "오버핏 셔링 플리츠 코튼 블라우스_3COLOR",
+        "price": 42000,
+        "originalPrice": 42000,
+        "discountRate": 36,
+        "finalPrice": 26880,
+        "category": "001005",
+        "categoryLabel": "셔츠/블라우스",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20250827/5367157/5367157_17562631098533_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/5367157",
+        "change": "NEW"
       }
     ],
     "001006": [
@@ -3912,7 +3912,7 @@
         "price": 129000,
         "originalPrice": 129000,
         "discountRate": 19,
-        "finalPrice": 104890,
+        "finalPrice": 104880,
         "category": "002",
         "categoryLabel": "아우터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261019/7552788/7552788_17930625900676_500.jpg",
@@ -5903,7 +5903,7 @@
     },
     "001003": {
       "label": "맨투맨/스웨트",
-      "avg": 58389,
+      "avg": 57972,
       "min": 12000,
       "max": 299000,
       "count": 30
@@ -5917,7 +5917,7 @@
     },
     "001005": {
       "label": "셔츠/블라우스",
-      "avg": 45335,
+      "avg": 45194,
       "min": 15900,
       "max": 96580,
       "count": 30
@@ -5931,7 +5931,7 @@
     },
     "002": {
       "label": "아우터",
-      "avg": 134866,
+      "avg": 134865,
       "min": 48800,
       "max": 359200,
       "count": 30
