@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T12:08:20.383396+00:00",
+  "updatedAt": "2026-11-21T16:30:29.335489+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,33 +13,33 @@
     },
     {
       "rank": 3,
-      "keyword": "경량패딩",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 4,
-      "keyword": "어그",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 5,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "코트",
+      "rank": 4,
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "코트",
+      "rankIncrement": 1
+    },
+    {
+      "rank": 6,
+      "keyword": "어그",
+      "rankIncrement": -1
+    },
+    {
       "rank": 7,
-      "keyword": "롱패딩",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
       "keyword": "맨투맨",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 9,
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "노스페이스",
-      "rankIncrement": 3
+      "keyword": "무스탕",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "비비안 웨스트우드",
-      "rankIncrement": 119
+      "keyword": "잔스포츠",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "나이키 맨투맨",
-      "rankIncrement": 113
+      "keyword": "코이세이오",
+      "rankIncrement": 132
     },
     {
       "rank": 3,
-      "keyword": "지오다노",
-      "rankIncrement": 112
+      "keyword": "치마",
+      "rankIncrement": 132
     },
     {
       "rank": 4,
-      "keyword": "라카",
-      "rankIncrement": 118
+      "keyword": "남자 바지",
+      "rankIncrement": 123
     },
     {
       "rank": 5,
-      "keyword": "오클리",
-      "rankIncrement": 125
+      "keyword": "퍼 자켓",
+      "rankIncrement": 103
     },
     {
       "rank": 6,
-      "keyword": "후브스",
-      "rankIncrement": 162
+      "keyword": "기모 청바지",
+      "rankIncrement": 106
     },
     {
       "rank": 7,
-      "keyword": "털슬리퍼",
+      "keyword": "휠라",
       "rankIncrement": 110
     },
     {
       "rank": 8,
-      "keyword": "기모 슬랙스",
-      "rankIncrement": 124
+      "keyword": "파우치",
+      "rankIncrement": 130
     },
     {
       "rank": 9,
-      "keyword": "어뮤즈",
-      "rankIncrement": 181
+      "keyword": "봄버",
+      "rankIncrement": 102
     },
     {
       "rank": 10,
-      "keyword": "패딩점퍼",
-      "rankIncrement": 120
+      "keyword": "폴리스",
+      "rankIncrement": 103
     }
   ]
 }
