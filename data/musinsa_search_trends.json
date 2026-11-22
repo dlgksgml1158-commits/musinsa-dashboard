@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T16:47:42.271362+00:00",
+  "updatedAt": "2026-11-22T20:13:06.874827+00:00",
   "popular": [
     {
       "rank": 1,
@@ -9,99 +9,99 @@
     {
       "rank": 2,
       "keyword": "니트",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "어그",
-      "rankIncrement": -1
+      "keyword": "코트",
+      "rankIncrement": 2
     },
     {
       "rank": 4,
       "keyword": "후드티",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
+      "keyword": "어그",
+      "rankIncrement": -1
+    },
+    {
+      "rank": 6,
       "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
-      "keyword": "코트",
-      "rankIncrement": 0
-    },
-    {
       "rank": 7,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
       "keyword": "비니",
       "rankIncrement": 0
     },
     {
+      "rank": 8,
+      "keyword": "바지",
+      "rankIncrement": 0
+    },
+    {
       "rank": 9,
-      "keyword": "무스탕",
+      "keyword": "맨투맨",
       "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "나이키",
-      "rankIncrement": -1
+      "keyword": "무스탕",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "코드그라피 패딩",
-      "rankIncrement": 107
+      "keyword": "레드윙",
+      "rankIncrement": 133
     },
     {
       "rank": 2,
-      "keyword": "오프숄더",
-      "rankIncrement": 127
+      "keyword": "레드윙슈즈",
+      "rankIncrement": 137
     },
     {
       "rank": 3,
-      "keyword": "코드그라피 덕다운",
-      "rankIncrement": 131
+      "keyword": "보메로",
+      "rankIncrement": 298
     },
     {
       "rank": 4,
-      "keyword": "챔피온 패딩",
-      "rankIncrement": 167
-    },
-    {
-      "rank": 5,
-      "keyword": "스타킹",
-      "rankIncrement": 225
-    },
-    {
-      "rank": 6,
-      "keyword": "에이치덱스",
-      "rankIncrement": 113
-    },
-    {
-      "rank": 7,
-      "keyword": "롱스커트",
-      "rankIncrement": 117
-    },
-    {
-      "rank": 8,
-      "keyword": "아수라",
+      "keyword": "피그먼트 후드티",
       "rankIncrement": 107
     },
     {
+      "rank": 5,
+      "keyword": "떡볶이코트",
+      "rankIncrement": 155
+    },
+    {
+      "rank": 6,
+      "keyword": "무탠다드 패딩",
+      "rankIncrement": 106
+    },
+    {
+      "rank": 7,
+      "keyword": "아캄 챔피온",
+      "rankIncrement": 199
+    },
+    {
+      "rank": 8,
+      "keyword": "더블코트",
+      "rankIncrement": 266
+    },
+    {
       "rank": 9,
-      "keyword": "헬로키티",
-      "rankIncrement": 182
+      "keyword": "베스트",
+      "rankIncrement": 118
     },
     {
       "rank": 10,
-      "keyword": "하이넥 코트",
-      "rankIncrement": 103
+      "keyword": "던스트 포 우먼",
+      "rankIncrement": 118
     }
   ]
 }
