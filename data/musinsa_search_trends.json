@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T05:08:48.855938+00:00",
+  "updatedAt": "2026-11-22T12:18:43.472109+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,17 +8,17 @@
     },
     {
       "rank": 2,
-      "keyword": "니트",
+      "keyword": "어그",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "경량패딩",
+      "keyword": "니트",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "어그",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -34,74 +34,74 @@
     {
       "rank": 7,
       "keyword": "맨투맨",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "바지",
-      "rankIncrement": -1
+      "keyword": "나이키",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "비니",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "롱패딩",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "래플",
-      "rankIncrement": 115
+      "keyword": "컬럼비아",
+      "rankIncrement": 100
     },
     {
       "rank": 2,
-      "keyword": "블레이저",
-      "rankIncrement": 117
+      "keyword": "워셔블 니트",
+      "rankIncrement": 115
     },
     {
       "rank": 3,
-      "keyword": "글로니",
-      "rankIncrement": 188
+      "keyword": "데이",
+      "rankIncrement": 118
     },
     {
       "rank": 4,
-      "keyword": "코닥",
-      "rankIncrement": 132
+      "keyword": "리버시블",
+      "rankIncrement": 130
     },
     {
       "rank": 5,
-      "keyword": "시티레저",
-      "rankIncrement": 182
+      "keyword": "디비에이트 나이트로 엘리트4",
+      "rankIncrement": 112
     },
     {
       "rank": 6,
-      "keyword": "경량 패딩",
-      "rankIncrement": 126
+      "keyword": "남자 가디건",
+      "rankIncrement": 107
     },
     {
       "rank": 7,
-      "keyword": "노스페이스 뮬",
-      "rankIncrement": 106
+      "keyword": "아워데이즈",
+      "rankIncrement": 332
     },
     {
       "rank": 8,
-      "keyword": "레드윙",
-      "rankIncrement": 196
+      "keyword": "무탠다드 코트",
+      "rankIncrement": 113
     },
     {
       "rank": 9,
-      "keyword": "리버시블 무스탕",
-      "rankIncrement": 166
+      "keyword": "구스다운패딩",
+      "rankIncrement": 150
     },
     {
       "rank": 10,
-      "keyword": "레드윙슈즈",
-      "rankIncrement": 200
+      "keyword": "오픈야드",
+      "rankIncrement": 332
     }
   ]
 }
