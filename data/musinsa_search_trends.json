@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T19:59:28.599201+00:00",
+  "updatedAt": "2026-11-22T05:08:48.855938+00:00",
   "popular": [
     {
       "rank": 1,
@@ -13,95 +13,95 @@
     },
     {
       "rank": 3,
-      "keyword": "후드티",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "경량패딩",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 5,
-      "keyword": "코트",
-      "rankIncrement": -1
-    },
-    {
-      "rank": 6,
       "keyword": "어그",
       "rankIncrement": 0
     },
     {
+      "rank": 5,
+      "keyword": "후드티",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 6,
+      "keyword": "코트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "비니",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 8,
-      "keyword": "무스탕",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 9,
       "keyword": "맨투맨",
       "rankIncrement": 1
     },
     {
-      "rank": 10,
+      "rank": 8,
       "keyword": "바지",
       "rankIncrement": -1
+    },
+    {
+      "rank": 9,
+      "keyword": "비니",
+      "rankIncrement": 0
+    },
+    {
+      "rank": 10,
+      "keyword": "롱패딩",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "스투시",
-      "rankIncrement": 119
+      "keyword": "래플",
+      "rankIncrement": 115
     },
     {
       "rank": 2,
-      "keyword": "아크테릭스",
-      "rankIncrement": 104
+      "keyword": "블레이저",
+      "rankIncrement": 117
     },
     {
       "rank": 3,
-      "keyword": "노이어",
-      "rankIncrement": 110
+      "keyword": "글로니",
+      "rankIncrement": 188
     },
     {
       "rank": 4,
-      "keyword": "남자 맨투맨",
-      "rankIncrement": 135
+      "keyword": "코닥",
+      "rankIncrement": 132
     },
     {
       "rank": 5,
-      "keyword": "블레이저",
-      "rankIncrement": 142
+      "keyword": "시티레저",
+      "rankIncrement": 182
     },
     {
       "rank": 6,
-      "keyword": "인사일런스",
-      "rankIncrement": 146
+      "keyword": "경량 패딩",
+      "rankIncrement": 126
     },
     {
       "rank": 7,
-      "keyword": "휠라",
+      "keyword": "노스페이스 뮬",
       "rankIncrement": 106
     },
     {
       "rank": 8,
-      "keyword": "하이넥 코트",
-      "rankIncrement": 108
+      "keyword": "레드윙",
+      "rankIncrement": 196
     },
     {
       "rank": 9,
-      "keyword": "아미",
-      "rankIncrement": 114
+      "keyword": "리버시블 무스탕",
+      "rankIncrement": 166
     },
     {
       "rank": 10,
-      "keyword": "아디다스 패딩",
-      "rankIncrement": 185
+      "keyword": "레드윙슈즈",
+      "rankIncrement": 200
     }
   ]
 }
