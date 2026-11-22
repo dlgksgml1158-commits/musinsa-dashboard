@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T12:18:43.472109+00:00",
+  "updatedAt": "2026-11-22T16:47:42.271362+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,22 +8,22 @@
     },
     {
       "rank": 2,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "니트",
+      "rankIncrement": 1
     },
     {
       "rank": 3,
-      "keyword": "니트",
-      "rankIncrement": 0
+      "keyword": "어그",
+      "rankIncrement": -1
     },
     {
       "rank": 4,
-      "keyword": "경량패딩",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "후드티",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "나이키",
+      "keyword": "비니",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "무스탕",
+      "rankIncrement": 1
     },
     {
       "rank": 10,
-      "keyword": "비니",
-      "rankIncrement": 1
+      "keyword": "나이키",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "컬럼비아",
-      "rankIncrement": 100
-    },
-    {
-      "rank": 2,
-      "keyword": "워셔블 니트",
-      "rankIncrement": 115
-    },
-    {
-      "rank": 3,
-      "keyword": "데이",
-      "rankIncrement": 118
-    },
-    {
-      "rank": 4,
-      "keyword": "리버시블",
-      "rankIncrement": 130
-    },
-    {
-      "rank": 5,
-      "keyword": "디비에이트 나이트로 엘리트4",
-      "rankIncrement": 112
-    },
-    {
-      "rank": 6,
-      "keyword": "남자 가디건",
+      "keyword": "코드그라피 패딩",
       "rankIncrement": 107
     },
     {
-      "rank": 7,
-      "keyword": "아워데이즈",
-      "rankIncrement": 332
+      "rank": 2,
+      "keyword": "오프숄더",
+      "rankIncrement": 127
     },
     {
-      "rank": 8,
-      "keyword": "무탠다드 코트",
+      "rank": 3,
+      "keyword": "코드그라피 덕다운",
+      "rankIncrement": 131
+    },
+    {
+      "rank": 4,
+      "keyword": "챔피온 패딩",
+      "rankIncrement": 167
+    },
+    {
+      "rank": 5,
+      "keyword": "스타킹",
+      "rankIncrement": 225
+    },
+    {
+      "rank": 6,
+      "keyword": "에이치덱스",
       "rankIncrement": 113
     },
     {
+      "rank": 7,
+      "keyword": "롱스커트",
+      "rankIncrement": 117
+    },
+    {
+      "rank": 8,
+      "keyword": "아수라",
+      "rankIncrement": 107
+    },
+    {
       "rank": 9,
-      "keyword": "구스다운패딩",
-      "rankIncrement": 150
+      "keyword": "헬로키티",
+      "rankIncrement": 182
     },
     {
       "rank": 10,
-      "keyword": "오픈야드",
-      "rankIncrement": 332
+      "keyword": "하이넥 코트",
+      "rankIncrement": 103
     }
   ]
 }
