@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T20:13:06.874827+00:00",
+  "updatedAt": "2026-11-23T05:49:59.361866+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,27 +8,27 @@
     },
     {
       "rank": 2,
-      "keyword": "니트",
+      "keyword": "어그",
       "rankIncrement": 0
     },
     {
       "rank": 3,
-      "keyword": "코트",
-      "rankIncrement": 2
+      "keyword": "니트",
+      "rankIncrement": 0
     },
     {
       "rank": 4,
-      "keyword": "후드티",
-      "rankIncrement": -1
+      "keyword": "경량패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 5,
-      "keyword": "어그",
-      "rankIncrement": -1
+      "keyword": "코트",
+      "rankIncrement": 0
     },
     {
       "rank": 6,
-      "keyword": "경량패딩",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
@@ -38,70 +38,70 @@
     },
     {
       "rank": 8,
-      "keyword": "바지",
+      "keyword": "무스탕",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": 1
+      "keyword": "나이키",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "무스탕",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "레드윙",
-      "rankIncrement": 133
+      "keyword": "아캄 챔피온",
+      "rankIncrement": 303
     },
     {
       "rank": 2,
-      "keyword": "레드윙슈즈",
-      "rankIncrement": 137
+      "keyword": "락피쉬웨더웨어",
+      "rankIncrement": 104
     },
     {
       "rank": 3,
-      "keyword": "보메로",
-      "rankIncrement": 298
+      "keyword": "키뮤어",
+      "rankIncrement": 119
     },
     {
       "rank": 4,
-      "keyword": "피그먼트 후드티",
-      "rankIncrement": 107
+      "keyword": "코드그라피 덕다운",
+      "rankIncrement": 100
     },
     {
       "rank": 5,
-      "keyword": "떡볶이코트",
-      "rankIncrement": 155
-    },
-    {
-      "rank": 6,
-      "keyword": "무탠다드 패딩",
+      "keyword": "토마스모어",
       "rankIncrement": 106
     },
     {
+      "rank": 6,
+      "keyword": "긴팔",
+      "rankIncrement": 121
+    },
+    {
       "rank": 7,
-      "keyword": "아캄 챔피온",
-      "rankIncrement": 199
+      "keyword": "버켄스탁",
+      "rankIncrement": 132
     },
     {
       "rank": 8,
-      "keyword": "더블코트",
-      "rankIncrement": 266
+      "keyword": "메리제인",
+      "rankIncrement": 120
     },
     {
       "rank": 9,
-      "keyword": "베스트",
-      "rankIncrement": 118
+      "keyword": "남자 코트",
+      "rankIncrement": 208
     },
     {
       "rank": 10,
-      "keyword": "던스트 포 우먼",
-      "rankIncrement": 118
+      "keyword": "팬시클럽",
+      "rankIncrement": 116
     }
   ]
 }
