@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T05:49:59.361866+00:00",
+  "updatedAt": "2026-11-23T14:02:45.718354+00:00",
   "popular": [
     {
       "rank": 1,
@@ -23,85 +23,85 @@
     },
     {
       "rank": 5,
-      "keyword": "코트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 6,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
+      "rank": 6,
+      "keyword": "코트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 7,
-      "keyword": "비니",
+      "keyword": "맨투맨",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "무스탕",
+      "keyword": "바지",
       "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "나이키",
-      "rankIncrement": 0
+      "keyword": "후리스",
+      "rankIncrement": 2
     },
     {
       "rank": 10,
-      "keyword": "맨투맨",
-      "rankIncrement": 0
+      "keyword": "무스탕",
+      "rankIncrement": -1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "아캄 챔피온",
-      "rankIncrement": 303
+      "keyword": "아디다스 패딩",
+      "rankIncrement": 101
     },
     {
       "rank": 2,
-      "keyword": "락피쉬웨더웨어",
-      "rankIncrement": 104
+      "keyword": "유라고",
+      "rankIncrement": 101
     },
     {
       "rank": 3,
-      "keyword": "키뮤어",
-      "rankIncrement": 119
+      "keyword": "칙스",
+      "rankIncrement": 134
     },
     {
       "rank": 4,
-      "keyword": "코드그라피 덕다운",
-      "rankIncrement": 100
+      "keyword": "파브레가",
+      "rankIncrement": 138
     },
     {
       "rank": 5,
-      "keyword": "토마스모어",
-      "rankIncrement": 106
+      "keyword": "남자 코트",
+      "rankIncrement": 142
     },
     {
       "rank": 6,
-      "keyword": "긴팔",
-      "rankIncrement": 121
+      "keyword": "시티 레저 후디드 라이트 다운 재킷",
+      "rankIncrement": 201
     },
     {
       "rank": 7,
-      "keyword": "버켄스탁",
-      "rankIncrement": 132
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 146
     },
     {
       "rank": 8,
-      "keyword": "메리제인",
-      "rankIncrement": 120
+      "keyword": "쿠폰",
+      "rankIncrement": 163
     },
     {
       "rank": 9,
-      "keyword": "남자 코트",
-      "rankIncrement": 208
+      "keyword": "블랙업",
+      "rankIncrement": 144
     },
     {
       "rank": 10,
-      "keyword": "팬시클럽",
-      "rankIncrement": 116
+      "keyword": "커버낫 패딩",
+      "rankIncrement": 148
     }
   ]
 }
