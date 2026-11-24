@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-11-24T00:38:37.748347+00:00",
+  "updatedAt": "2026-11-24T08:33:07.473160+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "어그",
-      "rankIncrement": 1
+      "keyword": "패딩",
+      "rankIncrement": 0
     },
     {
       "rank": 2,
-      "keyword": "패딩",
-      "rankIncrement": -1
+      "keyword": "어그",
+      "rankIncrement": 0
     },
     {
       "rank": 3,
       "keyword": "니트",
-      "rankIncrement": 1
+      "rankIncrement": 0
     },
     {
       "rank": 4,
       "keyword": "경량패딩",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 5,
       "keyword": "코트",
-      "rankIncrement": 2
+      "rankIncrement": 0
     },
     {
       "rank": 6,
       "keyword": "롱패딩",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 7,
       "keyword": "후드티",
-      "rankIncrement": -1
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "후리스",
-      "rankIncrement": 1
+      "keyword": "무스탕",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": -1
+      "keyword": "비니",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "목도리",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "래플",
-      "rankIncrement": 118
-    },
-    {
-      "rank": 2,
-      "keyword": "아더에러",
-      "rankIncrement": 195
-    },
-    {
-      "rank": 3,
-      "keyword": "카고팬츠",
+      "keyword": "남자 코트",
       "rankIncrement": 116
     },
     {
+      "rank": 2,
+      "keyword": "나이키 경량패딩",
+      "rankIncrement": 154
+    },
+    {
+      "rank": 3,
+      "keyword": "클락스",
+      "rankIncrement": 179
+    },
+    {
       "rank": 4,
-      "keyword": "도프제이슨",
-      "rankIncrement": 151
+      "keyword": "타입서비스",
+      "rankIncrement": 116
     },
     {
       "rank": 5,
-      "keyword": "고어텍스",
-      "rankIncrement": 130
+      "keyword": "아디다스 삼바",
+      "rankIncrement": 102
     },
     {
       "rank": 6,
-      "keyword": "니트 가디건",
-      "rankIncrement": 156
+      "keyword": "수아레 니트",
+      "rankIncrement": 105
     },
     {
       "rank": 7,
-      "keyword": "남자 코트",
-      "rankIncrement": 130
+      "keyword": "파카",
+      "rankIncrement": 236
     },
     {
       "rank": 8,
-      "keyword": "글로니",
-      "rankIncrement": 225
+      "keyword": "k2",
+      "rankIncrement": 108
     },
     {
       "rank": 9,
-      "keyword": "무탠다드 코트",
-      "rankIncrement": 191
+      "keyword": "밀로 아카이브",
+      "rankIncrement": 170
     },
     {
       "rank": 10,
-      "keyword": "이너티",
-      "rankIncrement": 113
+      "keyword": "무센트",
+      "rankIncrement": 200
     }
   ]
 }
