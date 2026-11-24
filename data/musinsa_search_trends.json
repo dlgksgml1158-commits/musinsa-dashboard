@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T14:34:59.931890+00:00",
+  "updatedAt": "2026-11-24T19:49:26.931378+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,37 +8,37 @@
     },
     {
       "rank": 2,
-      "keyword": "어그",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "니트",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "어그",
+      "rankIncrement": 0
+    },
+    {
       "rank": 4,
-      "keyword": "경량패딩",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
       "rank": 5,
       "keyword": "코트",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 6,
-      "keyword": "롱패딩",
-      "rankIncrement": 0
+      "keyword": "경량패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "후드티",
+      "keyword": "비니",
       "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "무스탕",
+      "keyword": "후드집업",
       "rankIncrement": 0
     },
     {
@@ -48,60 +48,60 @@
     },
     {
       "rank": 10,
-      "keyword": "후리스",
+      "keyword": "무스탕",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "데우스 엑스 마키나",
-      "rankIncrement": 221
+      "keyword": "코튼 미니멀 라운드 니트",
+      "rankIncrement": 141
     },
     {
       "rank": 2,
-      "keyword": "락피쉬웨더웨어",
-      "rankIncrement": 100
+      "keyword": "매든",
+      "rankIncrement": 133
     },
     {
       "rank": 3,
-      "keyword": "더니트컴퍼니",
-      "rankIncrement": 104
+      "keyword": "스카프",
+      "rankIncrement": 180
     },
     {
       "rank": 4,
       "keyword": "엘리엇 에밀",
-      "rankIncrement": 155
+      "rankIncrement": 149
     },
     {
       "rank": 5,
-      "keyword": "아모우",
-      "rankIncrement": 102
+      "keyword": "겨울신발",
+      "rankIncrement": 185
     },
     {
       "rank": 6,
-      "keyword": "잔스포츠",
-      "rankIncrement": 102
+      "keyword": "토마스모어",
+      "rankIncrement": 123
     },
     {
       "rank": 7,
-      "keyword": "타입서비스",
-      "rankIncrement": 141
+      "keyword": "반바지",
+      "rankIncrement": 121
     },
     {
       "rank": 8,
-      "keyword": "노이어",
+      "keyword": "러닝",
       "rankIncrement": 116
     },
     {
       "rank": 9,
-      "keyword": "봄버",
-      "rankIncrement": 108
+      "keyword": "유니온블루",
+      "rankIncrement": 139
     },
     {
       "rank": 10,
-      "keyword": "루에브르",
-      "rankIncrement": 154
+      "keyword": "와이드 슬랙스",
+      "rankIncrement": 162
     }
   ]
 }
