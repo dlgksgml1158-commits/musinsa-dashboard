@@ -1,107 +1,107 @@
 {
-  "updatedAt": "2026-11-23T20:43:45.764120+00:00",
+  "updatedAt": "2026-11-24T00:38:37.748347+00:00",
   "popular": [
     {
       "rank": 1,
-      "keyword": "패딩",
-      "rankIncrement": 0
+      "keyword": "어그",
+      "rankIncrement": 1
     },
     {
       "rank": 2,
-      "keyword": "어그",
-      "rankIncrement": 0
+      "keyword": "패딩",
+      "rankIncrement": -1
     },
     {
       "rank": 3,
       "keyword": "니트",
-      "rankIncrement": 0
+      "rankIncrement": 1
     },
     {
       "rank": 4,
       "keyword": "경량패딩",
-      "rankIncrement": 0
+      "rankIncrement": -1
     },
     {
       "rank": 5,
       "keyword": "코트",
-      "rankIncrement": 1
+      "rankIncrement": 2
     },
     {
       "rank": 6,
-      "keyword": "후드티",
+      "keyword": "롱패딩",
       "rankIncrement": -1
     },
     {
       "rank": 7,
-      "keyword": "비니",
-      "rankIncrement": 1
-    },
-    {
-      "rank": 8,
-      "keyword": "무스탕",
+      "keyword": "후드티",
       "rankIncrement": -1
     },
     {
+      "rank": 8,
+      "keyword": "후리스",
+      "rankIncrement": 1
+    },
+    {
       "rank": 9,
-      "keyword": "후드집업",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": -1
     },
     {
       "rank": 10,
-      "keyword": "바지",
+      "keyword": "목도리",
       "rankIncrement": 0
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "패딩코트",
-      "rankIncrement": 157
+      "keyword": "래플",
+      "rankIncrement": 118
     },
     {
       "rank": 2,
-      "keyword": "리버시블",
-      "rankIncrement": 132
+      "keyword": "아더에러",
+      "rankIncrement": 195
     },
     {
       "rank": 3,
-      "keyword": "남자 맨투맨",
-      "rankIncrement": 196
+      "keyword": "카고팬츠",
+      "rankIncrement": 116
     },
     {
       "rank": 4,
-      "keyword": "패딩부츠",
-      "rankIncrement": 152
+      "keyword": "도프제이슨",
+      "rankIncrement": 151
     },
     {
       "rank": 5,
-      "keyword": "어그부츠",
-      "rankIncrement": 101
+      "keyword": "고어텍스",
+      "rankIncrement": 130
     },
     {
       "rank": 6,
-      "keyword": "뮬",
-      "rankIncrement": 206
+      "keyword": "니트 가디건",
+      "rankIncrement": 156
     },
     {
       "rank": 7,
-      "keyword": "깔깔이",
-      "rankIncrement": 149
+      "keyword": "남자 코트",
+      "rankIncrement": 130
     },
     {
       "rank": 8,
-      "keyword": "ugg",
-      "rankIncrement": 100
+      "keyword": "글로니",
+      "rankIncrement": 225
     },
     {
       "rank": 9,
-      "keyword": "반팔티",
-      "rankIncrement": 110
+      "keyword": "무탠다드 코트",
+      "rankIncrement": 191
     },
     {
       "rank": 10,
-      "keyword": "디젤",
-      "rankIncrement": 119
+      "keyword": "이너티",
+      "rankIncrement": 113
     }
   ]
 }
