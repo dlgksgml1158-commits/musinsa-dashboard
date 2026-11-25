@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T18:55:08.487457+00:00",
+  "updatedAt": "2026-11-25T22:11:59.939229+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,17 +8,17 @@
     },
     {
       "rank": 2,
-      "keyword": "니트",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "어그",
       "rankIncrement": 0
     },
     {
+      "rank": 3,
+      "keyword": "니트",
+      "rankIncrement": 0
+    },
+    {
       "rank": 4,
-      "keyword": "후드티",
+      "keyword": "경량패딩",
       "rankIncrement": 0
     },
     {
@@ -28,80 +28,80 @@
     },
     {
       "rank": 6,
-      "keyword": "후드집업",
+      "keyword": "후드티",
       "rankIncrement": 0
     },
     {
       "rank": 7,
-      "keyword": "경량패딩",
-      "rankIncrement": 1
+      "keyword": "무신사 스탠다드",
+      "rankIncrement": 0
     },
     {
       "rank": 8,
-      "keyword": "비니",
-      "rankIncrement": 1
+      "keyword": "맨투맨",
+      "rankIncrement": 0
     },
     {
       "rank": 9,
-      "keyword": "맨투맨",
-      "rankIncrement": -2
+      "keyword": "나이키",
+      "rankIncrement": 0
     },
     {
       "rank": 10,
-      "keyword": "무스탕",
-      "rankIncrement": 1
+      "keyword": "롱패딩",
+      "rankIncrement": 2
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "파자마",
-      "rankIncrement": 128
+      "keyword": "집업",
+      "rankIncrement": 157
     },
     {
       "rank": 2,
-      "keyword": "낫포너드",
-      "rankIncrement": 102
+      "keyword": "피노키",
+      "rankIncrement": 107
     },
     {
       "rank": 3,
-      "keyword": "몽돌",
-      "rankIncrement": 161
+      "keyword": "패딩부츠",
+      "rankIncrement": 187
     },
     {
       "rank": 4,
-      "keyword": "스카프",
-      "rankIncrement": 109
+      "keyword": "아디다스 신발",
+      "rankIncrement": 136
     },
     {
       "rank": 5,
-      "keyword": "하객룩",
-      "rankIncrement": 133
+      "keyword": "마시모두띠",
+      "rankIncrement": 174
     },
     {
       "rank": 6,
-      "keyword": "휠라",
-      "rankIncrement": 117
+      "keyword": "락피쉬웨더웨어",
+      "rankIncrement": 124
     },
     {
       "rank": 7,
-      "keyword": "갭",
-      "rankIncrement": 133
+      "keyword": "헌터",
+      "rankIncrement": 206
     },
     {
       "rank": 8,
-      "keyword": "남자 가방",
-      "rankIncrement": 106
+      "keyword": "플리스 아노락",
+      "rankIncrement": 696
     },
     {
       "rank": 9,
-      "keyword": "어나더 오피스",
-      "rankIncrement": 148
+      "keyword": "남자 벨트",
+      "rankIncrement": 233
     },
     {
       "rank": 10,
-      "keyword": "베스트",
-      "rankIncrement": 148
+      "keyword": "에잇세컨즈",
+      "rankIncrement": 123
     }
   ]
 }
