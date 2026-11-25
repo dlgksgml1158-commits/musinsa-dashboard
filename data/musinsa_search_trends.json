@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T13:54:54.350012+00:00",
+  "updatedAt": "2026-11-25T18:55:08.487457+00:00",
   "popular": [
     {
       "rank": 1,
@@ -8,100 +8,100 @@
     },
     {
       "rank": 2,
-      "keyword": "어그",
-      "rankIncrement": 0
-    },
-    {
-      "rank": 3,
       "keyword": "니트",
       "rankIncrement": 0
     },
     {
-      "rank": 4,
-      "keyword": "경량패딩",
+      "rank": 3,
+      "keyword": "어그",
       "rankIncrement": 0
     },
     {
-      "rank": 5,
+      "rank": 4,
       "keyword": "후드티",
       "rankIncrement": 0
     },
     {
-      "rank": 6,
+      "rank": 5,
       "keyword": "코트",
       "rankIncrement": 0
     },
     {
-      "rank": 7,
-      "keyword": "맨투맨",
+      "rank": 6,
+      "keyword": "후드집업",
       "rankIncrement": 0
+    },
+    {
+      "rank": 7,
+      "keyword": "경량패딩",
+      "rankIncrement": 1
     },
     {
       "rank": 8,
-      "keyword": "아디다스",
-      "rankIncrement": 0
+      "keyword": "비니",
+      "rankIncrement": 1
     },
     {
       "rank": 9,
-      "keyword": "롱패딩",
-      "rankIncrement": 0
+      "keyword": "맨투맨",
+      "rankIncrement": -2
     },
     {
       "rank": 10,
-      "keyword": "바지",
-      "rankIncrement": 0
+      "keyword": "무스탕",
+      "rankIncrement": 1
     }
   ],
   "rising": [
     {
       "rank": 1,
-      "keyword": "캐시미어 코트",
-      "rankIncrement": 127
+      "keyword": "파자마",
+      "rankIncrement": 128
     },
     {
       "rank": 2,
-      "keyword": "버건디 니트",
-      "rankIncrement": 105
+      "keyword": "낫포너드",
+      "rankIncrement": 102
     },
     {
       "rank": 3,
-      "keyword": "츄리닝",
-      "rankIncrement": 106
+      "keyword": "몽돌",
+      "rankIncrement": 161
     },
     {
       "rank": 4,
-      "keyword": "지오다노",
-      "rankIncrement": 104
+      "keyword": "스카프",
+      "rankIncrement": 109
     },
     {
       "rank": 5,
-      "keyword": "나이키 경량패딩",
-      "rankIncrement": 145
+      "keyword": "하객룩",
+      "rankIncrement": 133
     },
     {
       "rank": 6,
-      "keyword": "기철",
-      "rankIncrement": 110
+      "keyword": "휠라",
+      "rankIncrement": 117
     },
     {
       "rank": 7,
-      "keyword": "아디다스 롱패딩",
-      "rankIncrement": 107
+      "keyword": "갭",
+      "rankIncrement": 133
     },
     {
       "rank": 8,
-      "keyword": "제너럴 아이디어",
-      "rankIncrement": 111
+      "keyword": "남자 가방",
+      "rankIncrement": 106
     },
     {
       "rank": 9,
-      "keyword": "케이투",
-      "rankIncrement": 181
+      "keyword": "어나더 오피스",
+      "rankIncrement": 148
     },
     {
       "rank": 10,
-      "keyword": "폴리스",
-      "rankIncrement": 111
+      "keyword": "베스트",
+      "rankIncrement": 148
     }
   ]
 }
