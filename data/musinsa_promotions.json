@@ -1,140 +1,140 @@
 {
-  "updatedAt": "2026-08-27T22:53:10.318039+00:00",
+  "updatedAt": "2026-11-25T13:54:52.963802+00:00",
   "items": [
     {
-      "promotionId": 18048,
-      "name": "실버위크/4일특가 - 4일 특가",
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 쿠폰 할인 브랜드",
       "status": "READY",
-      "from": "2026-09-17T02:00:00.000Z",
-      "to": "2026-09-21T02:00:00.000Z",
-      "minPercent": 20,
-      "recruitDeadline": "2026-09-14"
+      "from": "2026-12-17T02:00:00.000Z",
+      "to": "2026-12-27T15:00:00.000Z",
+      "minPercent": 10,
+      "recruitDeadline": "2026-12-08"
     },
     {
-      "promotionId": 18048,
-      "name": "실버위크/4일특가 - 일반세일",
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 일반세일",
       "status": "READY",
-      "from": "2026-09-17T02:00:00.000Z",
-      "to": "2026-09-21T02:00:00.000Z",
+      "from": "2026-12-17T02:00:00.000Z",
+      "to": "2026-12-27T15:00:00.000Z",
       "minPercent": null,
       "recruitDeadline": null
     },
     {
-      "promotionId": 18003,
-      "name": "OO시간 특가 모집 (9/10 - 9/14) - 48시간 특가 (9/12 - 9/14)",
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 브랜드데이(전기간)",
       "status": "READY",
-      "from": "2026-09-12T02:00:00.000Z",
-      "to": "2026-09-14T02:00:00.000Z",
-      "minPercent": 10,
-      "recruitDeadline": "2026-09-09"
-    },
-    {
-      "promotionId": 18003,
-      "name": "OO시간 특가 모집 (9/10 - 9/14) - 48시간 특가 (9/10 - 9/12)",
-      "status": "READY",
-      "from": "2026-09-10T02:00:00.000Z",
-      "to": "2026-09-12T02:00:00.000Z",
-      "minPercent": 10,
-      "recruitDeadline": "2026-09-07"
-    },
-    {
-      "promotionId": 17921,
-      "name": "9월 글로벌 멤버스데이 - 하루특가(9/3) 3일차",
-      "status": "READY",
-      "from": "2026-09-02T15:00:00.000Z",
-      "to": "2026-09-03T15:00:00.000Z",
-      "minPercent": 25,
-      "recruitDeadline": "2026-08-31"
-    },
-    {
-      "promotionId": 17921,
-      "name": "9월 글로벌 멤버스데이 - 하루특가(9/2) 2일차",
-      "status": "READY",
-      "from": "2026-09-01T15:00:00.000Z",
-      "to": "2026-09-02T15:00:00.000Z",
-      "minPercent": 25,
-      "recruitDeadline": "2026-08-30"
-    },
-    {
-      "promotionId": 17921,
-      "name": "9월 글로벌 멤버스데이 - 하루특가(9/1) 1일차",
-      "status": "READY",
-      "from": "2026-08-31T15:00:00.000Z",
-      "to": "2026-09-01T15:00:00.000Z",
-      "minPercent": 25,
-      "recruitDeadline": "2026-08-29"
-    },
-    {
-      "promotionId": 17907,
-      "name": "여행 잡화위크 - 일반세일",
-      "status": "READY",
-      "from": "2026-09-14T02:00:00.000Z",
-      "to": "2026-09-21T02:00:00.000Z",
+      "from": "2026-12-17T02:00:00.000Z",
+      "to": "2026-12-27T15:00:00.000Z",
       "minPercent": null,
       "recruitDeadline": null
     },
     {
-      "promotionId": 17855,
-      "name": "경량패딩 페스티벌 - 일반세일",
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 브랜드데이 1회차 (12/17 11:00~12/18 23:59)",
       "status": "READY",
-      "from": "2026-09-09T02:00:00.000Z",
-      "to": "2026-09-19T02:00:00.000Z",
-      "minPercent": 5,
+      "from": "2026-12-17T02:00:00.000Z",
+      "to": "2026-12-18T15:00:00.000Z",
+      "minPercent": null,
       "recruitDeadline": null
     },
     {
-      "promotionId": 17854,
-      "name": "OO시간 특가 모집 (8/24 - 8/31) - 72시간 특가 (8/28 - 8/31)",
-      "status": "RECRUIT_END",
-      "from": "2026-08-28T02:00:00.000Z",
-      "to": "2026-08-31T02:00:00.000Z",
-      "minPercent": 10,
-      "recruitDeadline": "2026-08-25"
-    },
-    {
-      "promotionId": 17854,
-      "name": "OO시간 특가 모집 (8/24 - 8/31) - 48시간 특가 (8/26 - 8/28)",
-      "status": "RUNNING",
-      "from": "2026-08-26T02:00:00.000Z",
-      "to": "2026-08-28T02:00:00.000Z",
-      "minPercent": 10,
-      "recruitDeadline": "2026-08-23"
-    },
-    {
-      "promotionId": 17854,
-      "name": "OO시간 특가 모집 (8/24 - 8/31) - 48시간 특가 (8/24 - 8/26)",
-      "status": "END",
-      "from": "2026-08-24T02:00:00.000Z",
-      "to": "2026-08-26T02:00:00.000Z",
-      "minPercent": 10,
-      "recruitDeadline": "2026-08-21"
-    },
-    {
-      "promotionId": 17852,
-      "name": "9,900원 균일가 하루특가 모집 (8/24 - 8/31) - 8/24",
-      "status": "END",
-      "from": "2026-08-24T02:00:00.000Z",
-      "to": "2026-08-25T02:00:00.000Z",
-      "minPercent": 30,
-      "recruitDeadline": "2026-08-21"
-    },
-    {
-      "promotionId": 17852,
-      "name": "9,900원 균일가 하루특가 모집 (8/24 - 8/31) - 8/30",
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 브랜드데이 2회차 (12/19 00:00~12/20 23:59)",
       "status": "READY",
-      "from": "2026-08-30T02:00:00.000Z",
-      "to": "2026-08-31T02:00:00.000Z",
-      "minPercent": 30,
-      "recruitDeadline": "2026-08-27"
+      "from": "2026-12-18T15:00:00.000Z",
+      "to": "2026-12-20T15:00:00.000Z",
+      "minPercent": null,
+      "recruitDeadline": null
     },
     {
-      "promotionId": 17852,
-      "name": "9,900원 균일가 하루특가 모집 (8/24 - 8/31) - 8/29",
-      "status": "RECRUIT_END",
-      "from": "2026-08-29T02:00:00.000Z",
-      "to": "2026-08-30T02:00:00.000Z",
-      "minPercent": 30,
-      "recruitDeadline": "2026-08-26"
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 브랜드데이 3회차 (12/21 00:00~12/22 23:59)",
+      "status": "READY",
+      "from": "2026-12-20T15:00:00.000Z",
+      "to": "2026-12-22T15:00:00.000Z",
+      "minPercent": null,
+      "recruitDeadline": null
+    },
+    {
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 브랜드데이 4회차 (12/23 00:00~12/25 23:59)",
+      "status": "READY",
+      "from": "2026-12-22T15:00:00.000Z",
+      "to": "2026-12-25T15:00:00.000Z",
+      "minPercent": null,
+      "recruitDeadline": null
+    },
+    {
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 브랜드데이 5회차 (12/26 00:00~12/27 23:59)",
+      "status": "READY",
+      "from": "2026-12-25T15:00:00.000Z",
+      "to": "2026-12-27T15:00:00.000Z",
+      "minPercent": null,
+      "recruitDeadline": null
+    },
+    {
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 타임특가 1회차 (12/17 11:00~12/18 11:00)",
+      "status": "READY",
+      "from": "2026-12-17T02:00:00.000Z",
+      "to": "2026-12-18T02:00:00.000Z",
+      "minPercent": 15,
+      "recruitDeadline": "2026-12-14"
+    },
+    {
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 타임특가 2회차 (12/18 11:00~12/20 11:00)",
+      "status": "READY",
+      "from": "2026-12-18T02:00:00.000Z",
+      "to": "2026-12-20T02:00:00.000Z",
+      "minPercent": 15,
+      "recruitDeadline": "2026-12-15"
+    },
+    {
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 타임특가 3회차 (12/20 11:00~12/22 11:00)",
+      "status": "READY",
+      "from": "2026-12-20T02:00:00.000Z",
+      "to": "2026-12-22T02:00:00.000Z",
+      "minPercent": 15,
+      "recruitDeadline": "2026-12-17"
+    },
+    {
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 타임특가 4회차 (12/22 11:00~12/24 11:00)",
+      "status": "READY",
+      "from": "2026-12-22T02:00:00.000Z",
+      "to": "2026-12-24T02:00:00.000Z",
+      "minPercent": 15,
+      "recruitDeadline": "2026-12-19"
+    },
+    {
+      "promotionId": 18955,
+      "name": "[글로벌] 12월 도쿄 팝업 연계 캠페인 - 타임특가 5회차 앵콜 (12/24 11:00~12/27 23:59)",
+      "status": "READY",
+      "from": "2026-12-24T02:00:00.000Z",
+      "to": "2026-12-27T15:00:00.000Z",
+      "minPercent": 15,
+      "recruitDeadline": "2026-12-21"
+    },
+    {
+      "promotionId": 18931,
+      "name": "무신사 킥스위크 - 일반세일",
+      "status": "READY",
+      "from": "2026-12-21T02:00:00.000Z",
+      "to": "2026-12-31T02:00:00.000Z",
+      "minPercent": 10,
+      "recruitDeadline": null
+    },
+    {
+      "promotionId": 18913,
+      "name": "[글로벌] 26 연말 결산 빅세일 캠페인 - 쿠폰 할인 브랜드_20% 전기간 쿠폰",
+      "status": "READY",
+      "from": "2026-12-07T02:00:00.000Z",
+      "to": "2026-12-17T02:00:00.000Z",
+      "minPercent": 15,
+      "recruitDeadline": null
     }
   ]
 }
