@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T22:11:58.642819+00:00",
+  "updatedAt": "2026-11-26T06:59:29.941805+00:00",
   "musinsa": [
     {
       "keyword": "레이스나시",
@@ -16,18 +16,18 @@
       "change": null
     },
     {
-      "keyword": "후드티",
-      "cat": "상의",
-      "catColor": "#4ECDC4",
-      "rank": 3,
-      "change": null
-    },
-    {
       "keyword": "티셔츠",
       "cat": "상의",
       "catColor": "#4ECDC4",
+      "rank": 3,
+      "change": 1
+    },
+    {
+      "keyword": "후드티",
+      "cat": "상의",
+      "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": -1
     },
     {
       "keyword": "맨투맨",
@@ -44,11 +44,11 @@
       "change": null
     },
     {
-      "keyword": "남성기모바지",
+      "keyword": "남성패딩바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 7,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "코듀로이팬츠",
@@ -58,11 +58,11 @@
       "change": null
     },
     {
-      "keyword": "남성패딩바지",
+      "keyword": "남성기모바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "바지",
@@ -88,18 +88,18 @@
       "change": null
     },
     {
-      "keyword": "후드티",
-      "cat": "상의",
-      "catColor": "#4ECDC4",
-      "rank": 3,
-      "change": null
-    },
-    {
       "keyword": "티셔츠",
       "cat": "상의",
       "catColor": "#4ECDC4",
+      "rank": 3,
+      "change": 1
+    },
+    {
+      "keyword": "후드티",
+      "cat": "상의",
+      "catColor": "#4ECDC4",
       "rank": 4,
-      "change": null
+      "change": -1
     },
     {
       "keyword": "맨투맨",
@@ -116,11 +116,11 @@
       "change": null
     },
     {
-      "keyword": "남성기모바지",
+      "keyword": "남성패딩바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 7,
-      "change": null
+      "change": 2
     },
     {
       "keyword": "코듀로이팬츠",
@@ -130,11 +130,11 @@
       "change": null
     },
     {
-      "keyword": "남성패딩바지",
+      "keyword": "남성기모바지",
       "cat": "바지",
       "catColor": "#45B7D1",
       "rank": 9,
-      "change": null
+      "change": -2
     },
     {
       "keyword": "바지",
