@@ -1,6 +1,6 @@
 {
   "platform": "musinsa",
-  "updatedAt": "2026-11-28T06:20:45.984114+00:00",
+  "updatedAt": "2026-11-28T12:43:11.809603+00:00",
   "items": [
     {
       "rank": 1,
@@ -24,8 +24,8 @@
       "name": "배색 헨리넥 긴소매 티셔츠  라이트 그레이",
       "price": 39900,
       "originalPrice": 39900,
-      "discountRate": 25,
-      "finalPrice": 29930,
+      "discountRate": 19,
+      "finalPrice": 32320,
       "category": "001002",
       "categoryLabel": "긴소매 티셔츠",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7659451/7659451_17932598216656_500.jpg",
@@ -90,7 +90,7 @@
       "categoryLabel": "니트/스웨터",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7669826/7669826_17933465706584_500.jpg",
       "productUrl": "https://www.musinsa.com/products/7669826",
-      "change": 11
+      "change": 0
     },
     {
       "rank": 7,
@@ -255,7 +255,7 @@
       "categoryLabel": "니트/스웨터",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7667210/7667210_17933280539689_500.jpg",
       "productUrl": "https://www.musinsa.com/products/7667210",
-      "change": 11
+      "change": 0
     },
     {
       "rank": 18,
@@ -375,7 +375,7 @@
       "categoryLabel": "맨투맨/스웨트",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7698860/7698860_17937182928521_500.png",
       "productUrl": "https://www.musinsa.com/products/7698860",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 26,
@@ -420,7 +420,7 @@
       "categoryLabel": "니트/스웨터",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7704070/7704070_17937706044648_500.jpg",
       "productUrl": "https://www.musinsa.com/products/7704070",
-      "change": "NEW"
+      "change": 0
     },
     {
       "rank": 29,
@@ -477,8 +477,8 @@
         "name": "배색 헨리넥 긴소매 티셔츠  라이트 그레이",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 25,
-        "finalPrice": 29930,
+        "discountRate": 19,
+        "finalPrice": 32320,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7659451/7659451_17932598216656_500.jpg",
@@ -543,7 +543,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7669826/7669826_17933465706584_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7669826",
-        "change": 11
+        "change": 0
       },
       {
         "rank": 7,
@@ -708,7 +708,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7667210/7667210_17933280539689_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7667210",
-        "change": 11
+        "change": 0
       },
       {
         "rank": 18,
@@ -828,7 +828,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7698860/7698860_17937182928521_500.png",
         "productUrl": "https://www.musinsa.com/products/7698860",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 26,
@@ -873,7 +873,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7704070/7704070_17937706044648_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7704070",
-        "change": "NEW"
+        "change": 0
       },
       {
         "rank": 29,
@@ -1366,8 +1366,8 @@
         "name": "배색 헨리넥 긴소매 티셔츠  라이트 그레이",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 25,
-        "finalPrice": 29930,
+        "discountRate": 19,
+        "finalPrice": 32320,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7659451/7659451_17932598216656_500.jpg",
@@ -1466,21 +1466,6 @@
       },
       {
         "rank": 8,
-        "id": "ms-7621445",
-        "brand": "엘엠알",
-        "name": "[FLNYOUNGEE X LMR] 플뇽이 블루밍 래글런 긴팔 티셔츠 LIGHT GREY",
-        "price": 55000,
-        "originalPrice": 55000,
-        "discountRate": 45,
-        "finalPrice": 30030,
-        "category": "001002",
-        "categoryLabel": "긴소매 티셔츠",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20261026/7621445/7621445_17931713946655_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/7621445",
-        "change": 0
-      },
-      {
-        "rank": 9,
         "id": "ms-7074247",
         "brand": "레더리",
         "name": "페이디드 헨리넥 롱슬리브 [BLACK]",
@@ -1492,10 +1477,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260813/7074247/7074247_17866931399040_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7074247",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 10,
+        "rank": 9,
         "id": "ms-7622996",
         "brand": "썸플레이스",
         "name": "도트 배색 반팔 레이어드 레이스 셔링 퍼프 소매 포인트 루즈핏 긴팔 티셔츠_2COLOR",
@@ -1507,10 +1492,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261026/7622996/7622996_17938536064249_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7622996",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 11,
+        "rank": 10,
         "id": "ms-7399135",
         "brand": "하이스쿨디스코",
         "name": "레글런 와플 오버핏 롱슬리브 (5 colors)",
@@ -1522,10 +1507,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/prd_img/20260923/7399135/detail_7399135_17923797632489_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7399135",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "ms-7506362",
         "brand": "마하그리드",
         "name": "[진격의거인] AOT BASIC LOGO WAFFLE HENLEY NECK LS TEE[CHARCOAL]",
@@ -1537,10 +1522,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261013/7506362/7506362_17943582905240_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7506362",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "ms-7566848",
         "brand": "렌세",
         "name": "Stripe Oversized Tee Purple",
@@ -1552,10 +1537,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261020/7566848/7566848_17926524249239_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7566848",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-7394881",
         "brand": "레세터",
         "name": "버튼 모크넥 롱 슬리브_(2COLOR)",
@@ -1567,10 +1552,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260922/7394881/7394881_17900641944056_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7394881",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-7682295",
         "brand": "노매뉴얼",
         "name": "HTS X NOMANUAL DAY OF HANGUL LONG SLEEVE - BLACK",
@@ -1582,10 +1567,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261102/7682295/7682295_17936051650787_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7682295",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-5338925",
         "brand": "쏘비",
         "name": "세미크롭 Kyooo 긴팔티",
@@ -1597,10 +1582,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250819/5338925/5338925_17556490719825_500.png",
         "productUrl": "https://www.musinsa.com/products/5338925",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-5340044",
         "brand": "지오다노",
         "name": "슬림핏 골지 긴팔티 325905 [5color]",
@@ -1612,10 +1597,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250819/5340044/5340044_17593673591833_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5340044",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-7296122",
         "brand": "무아무아",
         "name": "오버랩 헨리넥 피그먼트 와플 긴팔티 [차콜]",
@@ -1627,10 +1612,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260910/7296122/7296122_17949875605665_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7296122",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-7564037",
         "brand": "하츠코시",
         "name": "SCULPTED U-NECK LONG SLEEVE , BLACK",
@@ -1642,10 +1627,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261020/7564037/7564037_17927441514871_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7564037",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-7729669",
         "brand": "쿄이",
         "name": "[정보배 Pick] MICRO EMBROIDERY TEE (MOCHA)",
@@ -1657,10 +1642,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261106/7729669/7729669_17949920029148_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7729669",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-4803061",
         "brand": "플레이스 스튜디오",
         "name": "올인원 언발 더블 배색 레이어드 롱슬리브 티 세트_2COLOR",
@@ -1672,10 +1657,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250219/4803061/4803061_17682096499629_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4803061",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-4766701",
         "brand": "라이크더모스트",
         "name": "U 라운드 베이직 롱 슬리브 티셔츠_블랙",
@@ -1687,10 +1672,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250207/4766701/4766701_17388908232679_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4766701",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-7603764",
         "brand": "레이브",
         "name": "High Neck Button Top VW6WEA62_2color",
@@ -1702,10 +1687,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261023/7603764/7603764_17944661026363_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7603764",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-6517564",
         "brand": "미쏘",
         "name": "버튼업 시스루 긴팔 티셔츠 RE LWG44MS_MIWLWG70QA MIWLWG98QA",
@@ -1717,10 +1702,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260520/6517564/6517564_17890876933760_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6517564",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-5923693",
         "brand": "칙스",
         "name": "소프트 브이넥 소매 버튼 롱슬리브 네이비",
@@ -1732,10 +1717,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260122/5923693/5923693_17690619956810_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5923693",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-7654695",
         "brand": "테슬라",
         "name": "그리드 폴라 플리스 후드 티셔츠 YKH45",
@@ -1747,10 +1732,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7654695/7654695_17932565341866_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7654695",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-5973433",
         "brand": "레더리",
         "name": "[레더리X아네딘] 슬림핏 브이넥 리브드 롱슬리브 [BLACK]",
@@ -1762,10 +1747,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260203/5973433/5973433_17730429263733_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5973433",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-5913281",
         "brand": "페이지플린",
         "name": "베이직골지브이넥티셔츠_P6ATS005C",
@@ -1777,10 +1762,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260120/5913281/5913281_17876388685758_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5913281",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-7437959",
         "brand": "에이이에이이",
         "name": "HELLO KITTY IN SUBWAY GRAPHIC RAGLAN TEE [CHARCOAL]",
@@ -1792,10 +1777,10 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261001/7437959/7437959_17921347036906_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7437959",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-7671224",
         "brand": "허그유어스킨",
         "name": "HYS X YOON SOAP 크로스 프린트 보트넥 티 (차콜)",
@@ -1807,7 +1792,22 @@
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7671224/7671224_17948171871623_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7671224",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-7697918",
+        "brand": "이네기",
+        "name": "Waist-Shaped Buckle Top (black)",
+        "price": 74000,
+        "originalPrice": 74000,
+        "discountRate": 19,
+        "finalPrice": 59940,
+        "category": "001002",
+        "categoryLabel": "긴소매 티셔츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20261103/7697918/7697918_17941995602421_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/7697918",
+        "change": "NEW"
       }
     ],
     "001003": [
@@ -1854,7 +1854,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7698860/7698860_17937182928521_500.png",
         "productUrl": "https://www.musinsa.com/products/7698860",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 4,
@@ -1869,7 +1869,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7764767/7764767_17948063763264_500.png",
         "productUrl": "https://www.musinsa.com/products/7764767",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 5,
@@ -1884,7 +1884,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718438/7718438_17945582182722_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7718438",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 6,
@@ -1899,7 +1899,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261101/7675634/7675634_17936930242944_500.png",
         "productUrl": "https://www.musinsa.com/products/7675634",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 7,
@@ -1914,7 +1914,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5333367/5333367_17687888171653_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5333367",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 8,
@@ -1929,7 +1929,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7708111/7708111_17951527152177_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7708111",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 9,
@@ -1944,7 +1944,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220915/2795625/2795625_16728842673432_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2795625",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 10,
@@ -1959,7 +1959,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261120/7861283/7861283_17951496748642_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7861283",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 11,
@@ -1974,7 +1974,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718439/7718439_17945583184353_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7718439",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 12,
@@ -1989,7 +1989,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7659654/7659654_17938604698128_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7659654",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 13,
@@ -2004,7 +2004,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7658382/7658382_17942961827368_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7658382",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 14,
@@ -2019,7 +2019,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7707958/7707958_17937824641788_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7707958",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 15,
@@ -2034,7 +2034,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261119/7859252/7859252_17950882134486_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7859252",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 16,
@@ -2049,7 +2049,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7708105/7708105_17951526886275_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7708105",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 17,
@@ -2064,7 +2064,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20200818/1552421/1552421_17646597591076_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1552421",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 18,
@@ -2079,7 +2079,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241007/4492307/4492307_17576419893877_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4492307",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 19,
@@ -2094,7 +2094,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261117/7812276/7812276_17948937584082_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7812276",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 20,
@@ -2109,7 +2109,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261002/7444092/7444092_17909067659051_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7444092",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 21,
@@ -2124,7 +2124,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261119/7859773/7859773_17950887602595_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7859773",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 22,
@@ -2139,7 +2139,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260911/7306608/7306608_17930846426692_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7306608",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 23,
@@ -2154,7 +2154,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5332680/5332680_17684613635068_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5332680",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -2169,7 +2169,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250307/4867881/4867881_17413098032716_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4867881",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -2184,7 +2184,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20180907/851670/851670_2_500.jpg",
         "productUrl": "https://www.musinsa.com/products/851670",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -2199,7 +2199,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260907/7259492/7259492_17897146152223_500.png",
         "productUrl": "https://www.musinsa.com/products/7259492",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -2214,7 +2214,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20221217/2986574/2986574_1_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2986574",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -2229,7 +2229,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210924/2143914/2143914_17248124318594_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2143914",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -2244,7 +2244,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250813/5320371/5320371_17687908790672_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5320371",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -2259,7 +2259,7 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250819/5337039/5337039_17576455395398_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5337039",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "001004": [
@@ -2711,7 +2711,7 @@
         "categoryLabel": "후드 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251015/5594926/5594926_17648360424399_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5594926",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "001005": [
@@ -3180,7 +3180,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7669826/7669826_17933465706584_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7669826",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 2,
@@ -3195,7 +3195,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7667210/7667210_17933280539689_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7667210",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 3,
@@ -3210,7 +3210,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7704070/7704070_17937706044648_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7704070",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 4,
@@ -3225,7 +3225,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261027/7630891/7630891_17930835730198_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7630891",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 5,
@@ -3240,7 +3240,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261015/7530175/7530175_17945481185647_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7530175",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 6,
@@ -3255,7 +3255,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261109/7738842/7738842_17941905729044_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7738842",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 7,
@@ -3270,7 +3270,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7714421/7714421_17951582818761_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7714421",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 8,
@@ -3285,7 +3285,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261113/7788164/7788164_17951586258726_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7788164",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 9,
@@ -3300,7 +3300,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261026/7618970/7618970_17936710324832_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7618970",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 10,
@@ -3315,7 +3315,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/prd_img/20261102/7681428/detail_7681428_17936101891722_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7681428",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 11,
@@ -3330,7 +3330,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261103/7690974/7690974_17956753361446_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7690974",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 12,
@@ -3345,7 +3345,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260918/7367696/7367696_17942969496508_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7367696",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 13,
@@ -3360,7 +3360,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261028/7642328/7642328_17931647150607_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7642328",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 14,
@@ -3375,7 +3375,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7665255/7665255_17932973696887_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7665255",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 15,
@@ -3390,7 +3390,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261023/7601582/7601582_17927288406363_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7601582",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 16,
@@ -3405,7 +3405,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261023/7605580/7605580_17927417342059_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7605580",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 17,
@@ -3420,7 +3420,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261015/7529457/7529457_17945481241166_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7529457",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 18,
@@ -3435,7 +3435,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261012/7493901/7493901_17920675279983_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7493901",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 19,
@@ -3450,7 +3450,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7703944/7703944_17937700075614_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7703944",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 20,
@@ -3465,7 +3465,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261110/7749948/7749948_17949923457101_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7749948",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 21,
@@ -3480,7 +3480,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7762982/7762982_17943634668343_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7762982",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 22,
@@ -3495,7 +3495,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261025/7613085/7613085_17938577740445_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7613085",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 23,
@@ -3510,7 +3510,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261027/7635451/7635451_17930959168258_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7635451",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -3525,7 +3525,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261027/7630727/7630727_17930829165164_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7630727",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -3540,7 +3540,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7658567/7658567_17932615660167_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7658567",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -3555,7 +3555,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7767728/7767728_17943840693026_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7767728",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -3570,7 +3570,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261028/7642570/7642570_17931655656423_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7642570",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -3585,7 +3585,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/prd_img/20261015/7521752/detail_7521752_17920712245006_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7521752",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -3600,7 +3600,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261012/7495406/7495406_17936094905461_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7495406",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -3615,7 +3615,7 @@
         "categoryLabel": "니트/스웨터",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261021/7576965/7576965_17925642408602_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7576965",
-        "change": "NEW"
+        "change": 0
       }
     ],
     "002": [
@@ -4163,21 +4163,6 @@
       },
       {
         "rank": 7,
-        "id": "ms-6002638",
-        "brand": "테이크이지",
-        "name": "듀얼포켓 배럴 데님팬츠 (미디움블루)",
-        "price": 69000,
-        "originalPrice": 69000,
-        "discountRate": 71,
-        "finalPrice": 19900,
-        "category": "003001",
-        "categoryLabel": "데님 팬츠",
-        "imgUrl": "https://image.msscdn.net/images/prd_img/20260210/6002638/detail_6002638_17937661660037_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/6002638",
-        "change": 0
-      },
-      {
-        "rank": 8,
         "id": "ms-5901995",
         "brand": "테이크이지",
         "name": "앤티크 버튼플라이 데님팬츠 (더스티그레이)",
@@ -4189,10 +4174,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260116/5901995/5901995_17956598688634_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5901995",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 9,
+        "rank": 8,
         "id": "ms-5480110",
         "brand": "어스아카이브",
         "name": "US101 레귤러 플레어핏 데님 (생지)",
@@ -4204,10 +4189,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250917/5480110/5480110_17580947232878_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5480110",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 10,
+        "rank": 9,
         "id": "ms-3467190",
         "brand": "에이지오디",
         "name": "와이드 데님 팬츠 [그레이]",
@@ -4219,10 +4204,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230816/3467190/3467190_17894572589834_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3467190",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 11,
+        "rank": 10,
         "id": "ms-7792328",
         "brand": "카고브로스 포 우먼",
         "name": "[기모선택] 빈티지 워싱 플레어 데님 팬츠 (옐로우)",
@@ -4234,10 +4219,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261113/7792328/7792328_17949718300021_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7792328",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "ms-7381872",
         "brand": "밀리언코르",
         "name": "마티 로우라이즈 폴딩 와이드 데님팬츠 (다크블루)",
@@ -4249,10 +4234,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260921/7381872/7381872_17899718524777_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7381872",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "ms-3793227",
         "brand": "무신사 스탠다드",
         "name": "딥 턱 오버랩 와이드 데님 팬츠 [그레이]",
@@ -4264,10 +4249,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240112/3793227/3793227_17079831599887_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3793227",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-7347413",
         "brand": "시아오시코",
         "name": "페이디드 블루 로우라이즈 데님",
@@ -4279,10 +4264,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260916/7347413/7347413_17936907943718_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7347413",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-5333371",
         "brand": "아티스트웨어",
         "name": "하버핏 워시드 와이드 데님팬츠",
@@ -4294,10 +4279,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5333371/5333371_17865007862522_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5333371",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-5956411",
         "brand": "놈브레",
         "name": "뒷밴딩 무지 워싱 와이드 데님 팬츠[라이트블루]",
@@ -4309,10 +4294,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260129/5956411/5956411_17744091176747_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5956411",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-7765262",
         "brand": "진마니아",
         "name": "여성 보온 밍크기모 스판 와이드 데님 팬츠 (블루)",
@@ -4324,10 +4309,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7765262/7765262_17943751145789_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7765262",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-6507751",
         "brand": "세컨드솔트",
         "name": "벌룬 데미지 데님 팬츠 (빈티지블루)",
@@ -4339,10 +4324,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260519/6507751/6507751_17889162794558_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6507751",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-7861491",
         "brand": "드로우핏 우먼",
         "name": "[드로우핏우먼 X 주미니] 세미 부츠컷 데님 팬츠 기모 VER [BLACK]",
@@ -4354,10 +4339,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261120/7861491/7861491_17951532212244_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7861491",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-5367152",
         "brand": "후어",
         "name": "카펜터 원턱 와이드 데님 팬츠_인디고블루",
@@ -4369,10 +4354,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250827/5367152/5367152_17562551640175_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5367152",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-3328930",
         "brand": "람",
         "name": "RC003 릴랙스 보이핏 데님 팬츠 (5color, 일반/기모ver.)",
@@ -4384,10 +4369,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230526/3328930/3328930_17890013036696_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3328930",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-3460277",
         "brand": "무신사 스탠다드 우먼",
         "name": "우먼즈 속기모 스트레이트 데님 팬츠 [미디엄 인디고]",
@@ -4399,10 +4384,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230811/3460277/3460277_16970880750661_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3460277",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-5874297",
         "brand": "아워데이즈",
         "name": "아르노 커브드 와이드 데님 팬츠 [LIGHT BLUE]",
@@ -4414,10 +4399,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260107/5874297/5874297_17715710292325_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5874297",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-5629324",
         "brand": "에잇세컨즈",
         "name": "오버틴 워싱 와이드 데님  스카이 블루",
@@ -4429,10 +4414,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251022/5629324/5629324_17611179514947_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5629324",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-4368611",
         "brand": "무신사 스탠다드",
         "name": "피그먼트 와이드 데님 팬츠 [차콜 그레이]",
@@ -4444,10 +4429,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240826/4368611/4368611_17278335454366_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4368611",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-3898248",
         "brand": "칙스",
         "name": "MWP 모던 와이드 데님 팬츠 중청",
@@ -4459,10 +4444,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240223/3898248/3898248_17664497084887_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3898248",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-4909307",
         "brand": "유라이프지",
         "name": "노멀 우먼 와이드 데님 팬츠 6 Color [ULZD_1001]",
@@ -4474,10 +4459,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250318/4909307/4909307_17896056158998_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4909307",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-5312177",
         "brand": "미쏘",
         "name": "핏업데님 와이드_MIWTJG950J/60J/GV50J/60J",
@@ -4489,10 +4474,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250812/5312177/5312177_17918732621878_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5312177",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-7627120",
         "brand": "브랜디드",
         "name": "[V2] 1680 PURE CREAM JEANS [NEW STRAIGHT]",
@@ -4504,10 +4489,10 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261027/7627120/7627120_17933390822394_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7627120",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-3076306",
         "brand": "밀로 아카이브",
         "name": "리플렉트 커브드 팬츠 [블랙]",
@@ -4519,7 +4504,22 @@
         "categoryLabel": "데님 팬츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230210/3076306/3076306_16762672518722_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3076306",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-5717317",
+        "brand": "워크온바디오프",
+        "name": "[패션플래닛PICK] [사계절/기모] 에즈 릴렉스 세미 와이드 데님 팬츠 (12color)",
+        "price": 57000,
+        "originalPrice": 57000,
+        "discountRate": 45,
+        "finalPrice": 31350,
+        "category": "003001",
+        "categoryLabel": "데님 팬츠",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20251111/5717317/5717317_17918569973877_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/5717317",
+        "change": "NEW"
       }
     ],
     "003002": [
@@ -4690,21 +4690,6 @@
       },
       {
         "rank": 12,
-        "id": "ms-2568742",
-        "brand": "무신사 스탠다드",
-        "name": "사이드 어드저스트 투 턱 와이드 슬랙스 [블랙]",
-        "price": 45900,
-        "originalPrice": 45900,
-        "discountRate": 60,
-        "finalPrice": 18290,
-        "category": "003002",
-        "categoryLabel": "슬랙스",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20220518/2568742/2568742_1_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/2568742",
-        "change": 0
-      },
-      {
-        "rank": 13,
         "id": "ms-7656172",
         "brand": "프렌치시크",
         "name": "[인생360] [3단기장]모직라이크 기모 벌룬 와이드 슬랙스_F6F772SL",
@@ -4716,10 +4701,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261029/7656172/7656172_17932499105650_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7656172",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-4035806",
         "brand": "리메인세컨드",
         "name": "이지 세미 와이드 밴딩 슬랙스 [블랙]",
@@ -4731,10 +4716,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/prd_img/20240408/4035806/detail_4035806_17846849431266_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4035806",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-4505835",
         "brand": "토마스모어",
         "name": "울 스트링 팬츠-블랙",
@@ -4746,10 +4731,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241010/4505835/4505835_17285593381956_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4505835",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-5358777",
         "brand": "드로우핏",
         "name": "[서강준 PICK] 투 턱 와이드 핀 스트라이프 슬랙스 [BLACK]",
@@ -4761,10 +4746,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250825/5358777/5358777_17697402757584_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5358777",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-5928541",
         "brand": "트릴리온",
         "name": "투턱 라이크 데님 와이드 슬랙스_블랙",
@@ -4776,10 +4761,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260122/5928541/5928541_17695030750651_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5928541",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-5249721",
         "brand": "탑텐",
         "name": "여성) TR 와이드 슬랙스_MSF4PP2503",
@@ -4791,10 +4776,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250716/5249721/5249721_17909244210059_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5249721",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-7477701",
         "brand": "시그니처",
         "name": "450G 겨울 세미 와이드 슬랙스[2COLOR]",
@@ -4806,10 +4791,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/prd_img/20261008/7477701/detail_7477701_17917678834373_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7477701",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-6433565",
         "brand": "바이모노",
         "name": "모노 편안한 뒷밴딩 투핀턱 슬랙스",
@@ -4821,10 +4806,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260507/6433565/6433565_17894577426335_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6433565",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-7291671",
         "brand": "유젠",
         "name": "어드저스트 와이드 밴딩 슬랙스_스트라이프 차콜",
@@ -4836,10 +4821,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260909/7291671/7291671_17939422217297_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7291671",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-7789824",
         "brand": "시그니처",
         "name": "[2PACK]450G 겨울 세미 와이드 슬랙스[2COLOR]",
@@ -4851,10 +4836,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261113/7789824/7789824_17945573774941_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7789824",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-2551389",
         "brand": "무신사 스탠다드 우먼",
         "name": "우먼즈 스트레이트 히든 밴딩 슬랙스 [미디엄 그레이]",
@@ -4866,10 +4851,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220511/2551389/2551389_17676662014272_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2551389",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-4459431",
         "brand": "몽돌",
         "name": "윈터ver) 원 턱 와이드 슬랙스 차콜 MDPT025FWCHARCOAL",
@@ -4881,10 +4866,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240924/4459431/4459431_17586016698086_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4459431",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-2060743",
         "brand": "굿라이프웍스",
         "name": "이지 와이드 밴딩 슬랙스 블랙",
@@ -4896,10 +4881,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210812/2060743/2060743_17086551586279_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2060743",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-5275839",
         "brand": "트릴리온",
         "name": "브러쉬 인시전 포켓 와이드 헤링본 팬츠_3color",
@@ -4911,25 +4896,25 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250728/5275839/5275839_17545444989206_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5275839",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-5921131",
         "brand": "에잇세컨즈",
         "name": "[매일슬랙스]세미와이드핏 스프링 슬랙스  애쉬",
         "price": 39900,
         "originalPrice": 39900,
-        "discountRate": 78,
-        "finalPrice": 8930,
+        "discountRate": 76,
+        "finalPrice": 9640,
         "category": "003002",
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260121/5921131/5921131_17840631048050_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5921131",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-6092525",
         "brand": "레테르코모",
         "name": "감탄 와이드 슬랙스 블랙",
@@ -4941,10 +4926,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260306/6092525/6092525_17781374005262_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6092525",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-1717388",
         "brand": "후러브스아트",
         "name": "[ 속기모 ] 유니섹스 세미 와이드 밴딩 슬랙스 블랙 or 그레이",
@@ -4956,10 +4941,10 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20201209/1717388/1717388_17942039683268_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1717388",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-5945210",
         "brand": "디미트리블랙",
         "name": "[10주년기획] © 모두의 밴딩 커브드 슬랙스_3 COLOR",
@@ -4971,7 +4956,22 @@
         "categoryLabel": "슬랙스",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260127/5945210/5945210_17696887586961_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5945210",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-5263143",
+        "brand": "탑텐",
+        "name": "여성) 컴포트 슬림 슬랙스_MSF4PP2502",
+        "price": 59900,
+        "originalPrice": 59900,
+        "discountRate": 75,
+        "finalPrice": 15110,
+        "category": "003002",
+        "categoryLabel": "슬랙스",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20250722/5263143/5263143_17909246781207_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/5263143",
+        "change": "NEW"
       }
     ],
     "003003": [
@@ -5515,7 +5515,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250115/4720624/4720624_17369073207634_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4720624",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 7,
@@ -5530,7 +5530,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261118/7834348/7834348_17950523117236_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7834348",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 8,
@@ -5545,7 +5545,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250721/5260737/5260737_17566906377499_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5260737",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 9,
@@ -5560,7 +5560,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261016/7539801/7539801_17936115902601_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7539801",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 10,
@@ -5575,7 +5575,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261030/7671120/7671120_17948078391985_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7671120",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 11,
@@ -5590,7 +5590,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261019/7554699/7554699_17939267712429_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7554699",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 12,
@@ -5605,7 +5605,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5330964/5330964_17554946392062_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5330964",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 13,
@@ -5620,7 +5620,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241020/4536956/4536956_17301790445614_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4536956",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 14,
@@ -5635,7 +5635,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260805/7000662/7000662_17901275442560_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7000662",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 15,
@@ -5650,7 +5650,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260818/7094960/7094960_17871105442515_500.png",
         "productUrl": "https://www.musinsa.com/products/7094960",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 16,
@@ -5665,7 +5665,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240827/4374046/4374046_17357784780772_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4374046",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 17,
@@ -5680,7 +5680,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251125/5773785/5773785_17640973438752_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5773785",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 18,
@@ -5695,7 +5695,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20230210/3074974/3074974_16818092685747_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3074974",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 19,
@@ -5710,7 +5710,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260917/7357696/7357696_17908378106751_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7357696",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 20,
@@ -5725,7 +5725,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260520/6519732/6519732_17794391993164_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6519732",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 21,
@@ -5740,7 +5740,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251010/5573363/5573363_17600690880290_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5573363",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 22,
@@ -5755,7 +5755,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240214/3868162/3868162_17084924878082_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3868162",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 23,
@@ -5770,7 +5770,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250313/4896638/4896638_17430458701875_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4896638",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 24,
@@ -5785,7 +5785,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260619/6704435/6704435_17877306927953_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6704435",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 25,
@@ -5800,7 +5800,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260810/7037271/7037271_17885135724814_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7037271",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 26,
@@ -5815,7 +5815,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7705762/7705762_17939497741682_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7705762",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 27,
@@ -5830,7 +5830,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250317/4903285/4903285_17745902249337_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4903285",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 28,
@@ -5845,7 +5845,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240826/4370644/4370644_17246549514054_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4370644",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 29,
@@ -5860,7 +5860,7 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260818/7095642/7095642_17896076129990_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7095642",
-        "change": 1
+        "change": 0
       },
       {
         "rank": 30,
@@ -5875,14 +5875,14 @@
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250922/5504963/5504963_17721592092382_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5504963",
-        "change": "NEW"
+        "change": 0
       }
     ]
   },
   "priceStats": {
     "": {
       "label": "전체",
-      "avg": 58582,
+      "avg": 58662,
       "min": 18000,
       "max": 290790,
       "count": 30
@@ -5896,7 +5896,7 @@
     },
     "001002": {
       "label": "긴소매 티셔츠",
-      "avg": 38417,
+      "avg": 39494,
       "min": 11910,
       "max": 93200,
       "count": 30
@@ -5938,15 +5938,15 @@
     },
     "003001": {
       "label": "데님 팬츠",
-      "avg": 38804,
+      "avg": 39186,
       "min": 5990,
       "max": 90860,
       "count": 30
     },
     "003002": {
       "label": "슬랙스",
-      "avg": 46358,
-      "min": 8930,
+      "avg": 46275,
+      "min": 9640,
       "max": 151200,
       "count": 30
     },
