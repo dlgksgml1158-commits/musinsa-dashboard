@@ -1,13 +1,6 @@
 {
-  "updatedAt": "2026-11-27T21:51:32.689012+00:00",
+  "updatedAt": "2026-11-28T06:21:31.140074+00:00",
   "items": [
-    {
-      "date": "2026-08-29",
-      "qtyAll": 22,
-      "priceAll": 1199960,
-      "qtySale": 18,
-      "priceSale": 784480
-    },
     {
       "date": "2026-08-30",
       "qtyAll": 26,
@@ -633,10 +626,17 @@
     },
     {
       "date": "2026-11-27",
-      "qtyAll": 52,
-      "priceAll": 2850928,
-      "qtySale": 48,
-      "priceSale": 2638628
+      "qtyAll": 58,
+      "priceAll": 3327523,
+      "qtySale": 53,
+      "priceSale": 3098073
+    },
+    {
+      "date": "2026-11-28",
+      "qtyAll": 23,
+      "priceAll": 811300,
+      "qtySale": 22,
+      "priceSale": 786810
     }
   ]
 }

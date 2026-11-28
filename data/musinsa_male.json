@@ -1,6 +1,6 @@
 {
   "platform": "musinsa_male",
-  "updatedAt": "2026-11-27T21:50:52.086942+00:00",
+  "updatedAt": "2026-11-28T06:20:53.810855+00:00",
   "items": [
     {
       "rank": 1,
@@ -34,18 +34,18 @@
     },
     {
       "rank": 3,
-      "id": "ms-7858989",
-      "brand": "앤드어게인",
-      "name": "스트라이프 헤비 플리스 풀오버 (그레이/퍼플",
-      "price": 105900,
-      "originalPrice": 105900,
-      "discountRate": 60,
-      "finalPrice": 42700,
+      "id": "ms-7764767",
+      "brand": "코소",
+      "name": "코소 비치 아트웍 기모 맨투맨 (2COLOR)",
+      "price": 89000,
+      "originalPrice": 89000,
+      "discountRate": 70,
+      "finalPrice": 26710,
       "category": "001003",
       "categoryLabel": "맨투맨/스웨트",
-      "imgUrl": "https://image.msscdn.net/images/goods_img/20261119/7858989/7858989_17950732190252_500.jpg",
-      "productUrl": "https://www.musinsa.com/products/7858989",
-      "change": 0
+      "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7764767/7764767_17948063763264_500.png",
+      "productUrl": "https://www.musinsa.com/products/7764767",
+      "change": 11
     },
     {
       "rank": 4,
@@ -199,18 +199,18 @@
     },
     {
       "rank": 14,
-      "id": "ms-7764767",
-      "brand": "코소",
-      "name": "코소 비치 아트웍 기모 맨투맨 (2COLOR)",
-      "price": 89000,
-      "originalPrice": 89000,
-      "discountRate": 70,
-      "finalPrice": 26710,
+      "id": "ms-7718438",
+      "brand": "시그니처",
+      "name": "플리스 하프 스냅 풀오버[블랙]",
+      "price": 49900,
+      "originalPrice": 49900,
+      "discountRate": 20,
+      "finalPrice": 39900,
       "category": "001003",
       "categoryLabel": "맨투맨/스웨트",
-      "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7764767/7764767_17948063763264_500.png",
-      "productUrl": "https://www.musinsa.com/products/7764767",
-      "change": 0
+      "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718438/7718438_17945582182722_500.jpg",
+      "productUrl": "https://www.musinsa.com/products/7718438",
+      "change": 11
     },
     {
       "rank": 15,
@@ -324,8 +324,8 @@
       "name": "[2팩] 퀵드라이 스포츠 7인치 쇼츠 (7color)",
       "price": 49800,
       "originalPrice": 49800,
-      "discountRate": 29,
-      "finalPrice": 35470,
+      "discountRate": 20,
+      "finalPrice": 39900,
       "category": "003005",
       "categoryLabel": "반바지",
       "imgUrl": "https://image.msscdn.net/images/goods_img/20250317/4903285/4903285_17745902249337_500.jpg",
@@ -364,18 +364,18 @@
     },
     {
       "rank": 25,
-      "id": "ms-7718438",
-      "brand": "시그니처",
-      "name": "플리스 하프 스냅 풀오버[블랙]",
-      "price": 49900,
-      "originalPrice": 49900,
-      "discountRate": 20,
-      "finalPrice": 39900,
+      "id": "ms-5333367",
+      "brand": "버던트",
+      "name": "가먼트다잉 하프 집업 플리스 스웨트 티셔츠 [블랙]",
+      "price": 60000,
+      "originalPrice": 60000,
+      "discountRate": 70,
+      "finalPrice": 18000,
       "category": "001003",
       "categoryLabel": "맨투맨/스웨트",
-      "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718438/7718438_17945582182722_500.jpg",
-      "productUrl": "https://www.musinsa.com/products/7718438",
-      "change": 0
+      "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5333367/5333367_17687888171653_500.jpg",
+      "productUrl": "https://www.musinsa.com/products/5333367",
+      "change": "NEW"
     },
     {
       "rank": 26,
@@ -1199,8 +1199,8 @@
         "name": "퀵드라이 퓨즈 롱슬리브 (4color)",
         "price": 49900,
         "originalPrice": 49900,
-        "discountRate": 29,
-        "finalPrice": 35470,
+        "discountRate": 20,
+        "finalPrice": 39900,
         "category": "001002",
         "categoryLabel": "긴소매 티셔츠",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240607/4184745/4184745_17866678053711_500.jpg",
@@ -1361,21 +1361,6 @@
     "001003": [
       {
         "rank": 1,
-        "id": "ms-7858989",
-        "brand": "앤드어게인",
-        "name": "스트라이프 헤비 플리스 풀오버 (그레이/퍼플",
-        "price": 105900,
-        "originalPrice": 105900,
-        "discountRate": 60,
-        "finalPrice": 42700,
-        "category": "001003",
-        "categoryLabel": "맨투맨/스웨트",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20261119/7858989/7858989_17950732190252_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/7858989",
-        "change": 0
-      },
-      {
-        "rank": 2,
         "id": "ms-7764767",
         "brand": "코소",
         "name": "코소 비치 아트웍 기모 맨투맨 (2COLOR)",
@@ -1387,10 +1372,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7764767/7764767_17948063763264_500.png",
         "productUrl": "https://www.musinsa.com/products/7764767",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 3,
+        "rank": 2,
         "id": "ms-7718438",
         "brand": "시그니처",
         "name": "플리스 하프 스냅 풀오버[블랙]",
@@ -1402,10 +1387,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718438/7718438_17945582182722_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7718438",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 4,
+        "rank": 3,
         "id": "ms-5333367",
         "brand": "버던트",
         "name": "가먼트다잉 하프 집업 플리스 스웨트 티셔츠 [블랙]",
@@ -1417,10 +1402,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5333367/5333367_17687888171653_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5333367",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 5,
+        "rank": 4,
         "id": "ms-7708111",
         "brand": "유니온스튜디오",
         "name": "[헤비기모] 로프트 세미크롭 루즈핏 기모 스웨트 하프집업 ( 블랙 )",
@@ -1432,10 +1417,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7708111/7708111_17951527152177_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7708111",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 6,
+        "rank": 5,
         "id": "ms-2795625",
         "brand": "무신사 스탠다드",
         "name": "리사이클 오버사이즈 스웨트셔츠 [블랙]",
@@ -1447,10 +1432,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20220915/2795625/2795625_16728842673432_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2795625",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 7,
+        "rank": 6,
         "id": "ms-7861283",
         "brand": "노스페이스",
         "name": "NM5MS52C 남성 캠프그리드 플리스 스웻셔츠 NAVY",
@@ -1462,10 +1447,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261120/7861283/7861283_17951496748642_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7861283",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 8,
+        "rank": 7,
         "id": "ms-7718439",
         "brand": "시그니처",
         "name": "플리스 하프 스냅 풀오버[그레이]",
@@ -1477,10 +1462,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718439/7718439_17945583184353_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7718439",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 9,
+        "rank": 8,
         "id": "ms-7707958",
         "brand": "무센트",
         "name": "레센 사이드 래더패치 맨투맨 남녀공용",
@@ -1492,10 +1477,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7707958/7707958_17937824641788_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7707958",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 10,
+        "rank": 9,
         "id": "ms-7859252",
         "brand": "플랙",
         "name": "[2PACK] 플랙진 그래픽 스웨트 셔츠",
@@ -1507,10 +1492,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261119/7859252/7859252_17950882134486_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7859252",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 11,
+        "rank": 10,
         "id": "ms-7708105",
         "brand": "유니온스튜디오",
         "name": "[헤비기모] 로프트 세미크롭 루즈핏 기모 스웨트 하프집업 ( 멜란지 )",
@@ -1522,10 +1507,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261104/7708105/7708105_17951526886275_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7708105",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 12,
+        "rank": 11,
         "id": "ms-1552421",
         "brand": "트릴리온",
         "name": "에센셜 절개 오버핏 맨투맨_8color",
@@ -1537,10 +1522,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20200818/1552421/1552421_17646597591076_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1552421",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "ms-4492307",
         "brand": "코드그라피",
         "name": "스퀘어 로고 맨투맨_블랙",
@@ -1552,10 +1537,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20241007/4492307/4492307_17576419893877_500.jpg",
         "productUrl": "https://www.musinsa.com/products/4492307",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "ms-7444092",
         "brand": "모더먼트",
         "name": "썸홀 래글런 스웨트셔츠 [블루그레이]",
@@ -1567,10 +1552,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261002/7444092/7444092_17909067659051_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7444092",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "ms-7859773",
         "brand": "플랙",
         "name": "[2PACK] 블리치 로고 스웻셔츠 5colors",
@@ -1582,10 +1567,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261119/7859773/7859773_17950887602595_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7859773",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "ms-7306608",
         "brand": "폴로 랄프 로렌",
         "name": "라이트웨이트 플리스 쿼터 지퍼",
@@ -1597,10 +1582,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260911/7306608/7306608_17930846426692_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7306608",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "ms-7259492",
         "brand": "히루카 아카이브",
         "name": "로스트 유스 포에버 맨투맨",
@@ -1612,10 +1597,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260907/7259492/7259492_17897146152223_500.png",
         "productUrl": "https://www.musinsa.com/products/7259492",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "ms-2986574",
         "brand": "아티스트웨어",
         "name": "[ATW X LEODAV] 니케 맨투맨",
@@ -1627,10 +1612,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20221217/2986574/2986574_1_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2986574",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "ms-2143914",
         "brand": "쿨트",
         "name": "811 스탠다드핏 래더 아이콘 스웨트 셔츠 맨투맨 멜란지그레이",
@@ -1642,10 +1627,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210924/2143914/2143914_17248124318594_500.jpg",
         "productUrl": "https://www.musinsa.com/products/2143914",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "ms-5320371",
         "brand": "버던트",
         "name": "가먼트다잉 절개 라인 스웨트 셔츠 [블랙]",
@@ -1657,10 +1642,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250813/5320371/5320371_17687908790672_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5320371",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 21,
+        "rank": 20,
         "id": "ms-7445286",
         "brand": "나이키",
         "name": "조던 브루클린 크루넥 스웻셔츠 M - 뉴트럴 그레이:헤더:유니버시티 레드 / IU0257-054",
@@ -1672,10 +1657,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261002/7445286/7445286_17932647857538_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7445286",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 22,
+        "rank": 21,
         "id": "ms-1817394",
         "brand": "트래블",
         "name": "[3-PACK]베이직 트래블러 피그먼트 스웨트셔츠",
@@ -1687,10 +1672,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20210226/1817394/1817394_17152436181527_500.jpg",
         "productUrl": "https://www.musinsa.com/products/1817394",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 23,
+        "rank": 22,
         "id": "ms-3940085",
         "brand": "캔바츠",
         "name": "CVAS 스웻셔츠 (블랙)",
@@ -1702,10 +1687,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20240311/3940085/3940085_17288903802713_500.jpg",
         "productUrl": "https://www.musinsa.com/products/3940085",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 24,
+        "rank": 23,
         "id": "ms-7718080",
         "brand": "빈웨드",
         "name": "72ND The Tail Chasers FTR SQ 미공군 빈티지 건메탈 헤비웨이트 스웻셔츠",
@@ -1717,10 +1702,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718080/7718080_17938634298311_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7718080",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 25,
+        "rank": 24,
         "id": "ms-5683168",
         "brand": "더마일",
         "name": "MILE GARMENT NYC SWEAT MTM_PIGMENT D.GRAY",
@@ -1732,10 +1717,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20251104/5683168/5683168_17932433839190_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5683168",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 26,
+        "rank": 25,
         "id": "ms-5309622",
         "brand": "언더오프",
         "name": "데일리 버튼 카라 맨투맨 블랙",
@@ -1747,10 +1732,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250811/5309622/5309622_17548945129919_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5309622",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "id": "ms-6005680",
         "brand": "코이리스",
         "name": "톤드 스몰 로고 배색 맨투맨 남녀공용 (2컬러)",
@@ -1762,10 +1747,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20260210/6005680/6005680_17707049140464_500.jpg",
         "productUrl": "https://www.musinsa.com/products/6005680",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 28,
+        "rank": 27,
         "id": "ms-7675619",
         "brand": "이지스티치",
         "name": "다이렉션 기모 맨투맨 티셔츠 5COLOR",
@@ -1777,10 +1762,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20261101/7675619/7675619_17934596653067_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7675619",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 29,
+        "rank": 28,
         "id": "ms-7037060",
         "brand": "인템포무드",
         "name": "캠프 하프집 스웨트셔츠 : 3컬러",
@@ -1792,10 +1777,10 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/prd_img/20260810/7037060/detail_7037060_17885012067184_500.jpg",
         "productUrl": "https://www.musinsa.com/products/7037060",
-        "change": 0
+        "change": 1
       },
       {
-        "rank": 30,
+        "rank": 29,
         "id": "ms-5276013",
         "brand": "트릴리온",
         "name": "[기모추가] 레더 패치 데님 카라 럭비 맨투맨_네이비",
@@ -1807,7 +1792,22 @@
         "categoryLabel": "맨투맨/스웨트",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250728/5276013/5276013_17545474942483_500.jpg",
         "productUrl": "https://www.musinsa.com/products/5276013",
-        "change": 0
+        "change": 1
+      },
+      {
+        "rank": 30,
+        "id": "ms-7259518",
+        "brand": "아르벤클럽",
+        "name": "로스트 드림 라이더스 맨투맨",
+        "price": 63900,
+        "originalPrice": 63900,
+        "discountRate": 49,
+        "finalPrice": 32900,
+        "category": "001003",
+        "categoryLabel": "맨투맨/스웨트",
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20260907/7259518/7259518_17894437840377_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/7259518",
+        "change": "NEW"
       }
     ],
     "001004": [
@@ -4997,8 +4997,8 @@
         "name": "[2팩] 퀵드라이 스포츠 7인치 쇼츠 (7color)",
         "price": 49800,
         "originalPrice": 49800,
-        "discountRate": 29,
-        "finalPrice": 35470,
+        "discountRate": 20,
+        "finalPrice": 39900,
         "category": "003005",
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250317/4903285/4903285_17745902249337_500.jpg",
@@ -5459,18 +5459,18 @@
       },
       {
         "rank": 3,
-        "id": "ms-7858989",
-        "brand": "앤드어게인",
-        "name": "스트라이프 헤비 플리스 풀오버 (그레이/퍼플",
-        "price": 105900,
-        "originalPrice": 105900,
-        "discountRate": 60,
-        "finalPrice": 42700,
+        "id": "ms-7764767",
+        "brand": "코소",
+        "name": "코소 비치 아트웍 기모 맨투맨 (2COLOR)",
+        "price": 89000,
+        "originalPrice": 89000,
+        "discountRate": 70,
+        "finalPrice": 26710,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20261119/7858989/7858989_17950732190252_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/7858989",
-        "change": 0
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7764767/7764767_17948063763264_500.png",
+        "productUrl": "https://www.musinsa.com/products/7764767",
+        "change": 11
       },
       {
         "rank": 4,
@@ -5624,18 +5624,18 @@
       },
       {
         "rank": 14,
-        "id": "ms-7764767",
-        "brand": "코소",
-        "name": "코소 비치 아트웍 기모 맨투맨 (2COLOR)",
-        "price": 89000,
-        "originalPrice": 89000,
-        "discountRate": 70,
-        "finalPrice": 26710,
+        "id": "ms-7718438",
+        "brand": "시그니처",
+        "name": "플리스 하프 스냅 풀오버[블랙]",
+        "price": 49900,
+        "originalPrice": 49900,
+        "discountRate": 20,
+        "finalPrice": 39900,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20261111/7764767/7764767_17948063763264_500.png",
-        "productUrl": "https://www.musinsa.com/products/7764767",
-        "change": 0
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718438/7718438_17945582182722_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/7718438",
+        "change": 11
       },
       {
         "rank": 15,
@@ -5749,8 +5749,8 @@
         "name": "[2팩] 퀵드라이 스포츠 7인치 쇼츠 (7color)",
         "price": 49800,
         "originalPrice": 49800,
-        "discountRate": 29,
-        "finalPrice": 35470,
+        "discountRate": 20,
+        "finalPrice": 39900,
         "category": "003005",
         "categoryLabel": "반바지",
         "imgUrl": "https://image.msscdn.net/images/goods_img/20250317/4903285/4903285_17745902249337_500.jpg",
@@ -5789,18 +5789,18 @@
       },
       {
         "rank": 25,
-        "id": "ms-7718438",
-        "brand": "시그니처",
-        "name": "플리스 하프 스냅 풀오버[블랙]",
-        "price": 49900,
-        "originalPrice": 49900,
-        "discountRate": 20,
-        "finalPrice": 39900,
+        "id": "ms-5333367",
+        "brand": "버던트",
+        "name": "가먼트다잉 하프 집업 플리스 스웨트 티셔츠 [블랙]",
+        "price": 60000,
+        "originalPrice": 60000,
+        "discountRate": 70,
+        "finalPrice": 18000,
         "category": "001003",
         "categoryLabel": "맨투맨/스웨트",
-        "imgUrl": "https://image.msscdn.net/images/goods_img/20261105/7718438/7718438_17945582182722_500.jpg",
-        "productUrl": "https://www.musinsa.com/products/7718438",
-        "change": 0
+        "imgUrl": "https://image.msscdn.net/images/goods_img/20250818/5333367/5333367_17687888171653_500.jpg",
+        "productUrl": "https://www.musinsa.com/products/5333367",
+        "change": "NEW"
       },
       {
         "rank": 26,
